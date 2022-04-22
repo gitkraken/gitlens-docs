@@ -2,6 +2,8 @@
 
 title: GitLens Sidebar
 description: GitLens sidebar views
+taxonomy:
+    category: gitlens
 
 ---
 
