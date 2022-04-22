@@ -1,7 +1,7 @@
 ---
 
-title: GitLens Sidebar
-description: GitLens sidebar views
+title: GitLens Settings
+description: GitLens Settings
 taxonomy:
     category: gitlens
 
