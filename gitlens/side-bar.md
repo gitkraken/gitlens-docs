@@ -15,14 +15,14 @@ GitLens adds many [side bar views](/gitlens/side-bar) to provide additional rich
 - Source Control Layout — shows all the views together on the Source Control side bar
 - GitLens Layout — shows all the views together on the GitLens side bar
 
-<img src="/img/documentation/gitlens/views-layout-scm-gitlens.png" class="img-responsive left"> 
+<img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
 
 ***
  
 ##Commits view
 
 
-<img src="/img/documentation/gitlens/commits-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commits-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#commits-view-settings) view to visualize, explore, and manage Git commits
 
@@ -42,17 +42,17 @@ The Commits view lists all of the commits on the current branch, and additionall
     - Changes to pull from <remote> — lists all of the commits waiting to be pulled when the current branch has commits that are waiting to be pulled from the upstream remote
     - Changes to push to <remote> — lists of all the files changed in the unpublished commits when the current branch has (unpublished) commits that waiting to be pushed to the upstream remote
     - Merging into <branch> or Resolve conflicts before merging into <branch> — lists any conflicted files. Conflicted files show comparisons with the common base of the current and incoming changes to aid in resolving the conflict by making it easier to see where changes originated Merging
-<img src="/img/documentation/gitlens/commits-view-merge.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commits-view-merge.png" class="img-bordered img-responsive center">
 
     - Rebasing <branch> or Resolve conflicts to continue rebasing <branch> — shows the number of rebase steps left, the commit the rebase is paused at, and lists any conflicted files. Conflicted files show comparisons with the common base of the current and incoming changes to aid in resolving the conflict by making it easier to see where changes originated Rebasing
-<img src="/img/documentation/gitlens/commits-view-rebase.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commits-view-rebase.png" class="img-bordered img-responsive center">
 
 - any associated pull request — shows any opened or merged pull request associated with the current branch
 
 ***
 ##Repositories view
 
-<img src="/img/documentation/gitlens/repositories-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/repositories-view.png" class="img-bordered img-responsive center">
 
 A hidden by default, [customizable](/gitlens/settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories
 
@@ -91,7 +91,7 @@ The **Repositories view** lists opened Git repositories, and additionally provid
 
 ##File History view
 
-<img src="/img/documentation/gitlens/file-history-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/file-history-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#file-history-view-settings) view to visualize, navigate, and explore the revision history of the current file or just the selected lines of the current file
 
@@ -105,13 +105,13 @@ The file history view lists all of the commits that changed the current file on 
 - merge conflict status when applicable
     - Merge Changes — show comparisons with the common base of the current and incoming changes to aid in resolving the conflict by making it easier to see where changes originated
 
-<img src="/img/documentation/gitlens/file-history-view-merge-conflict.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/file-history-view-merge-conflict.png" class="img-bordered img-responsive center">
 
 ***
 
 ##Line History view
 
-<img src="/img/documentation/gitlens/line-history-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/line-history-view.png" class="img-bordered img-responsive center">
 
 A hidden by default, [customizable](/gitlens/settings/#line-history-view-settings) view to visualize, navigate, and explore the revision history of the selected lines of the current file
 
@@ -127,7 +127,7 @@ The line history view lists all of the commits that changed the selected lines o
 
 ##Branches view
 
-<img src="/img/documentation/gitlens/branches-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/branches-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#branches-view-settings)  view to visualize, explore, and manage Git branches
 
@@ -163,7 +163,7 @@ The Branches view lists all of the local branches, and additionally provides:
 
 ##Remotes view
 
-<img src="/img/documentation/gitlens/remotes-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/remotes-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches
 
@@ -177,7 +177,7 @@ The Remotes view lists all of the remotes and their remote branches, and additio
 
 ##Stashes view
 
-<img src="/img/documentation/gitlens/stashes-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/stashes-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#stashes-view-settings)  view to visualize, explore, and manage Git stashes
 
@@ -189,7 +189,7 @@ The Stashes view lists all of the stashes, and additionally provides:
 
 ##Tags view
 
-<img src="/img/documentation/gitlens/tags-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/tags-view.png" class="img-bordered img-responsive center">
 
 A [customizable](/gitlens/settings/#tags-view-settings) view to visualize, explore, and manage Git tags
 
@@ -203,7 +203,7 @@ The Tags view lists all of the tags, and additionally provides:
 
 ##Contributors view
 
-<img src="/img/documentation/gitlens/contributors-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/contributors-view.png" class="img-bordered img-responsive center">
 
 A hidden by default, [customizable](/gitlens/settings/#contributors-view-settings) view to visualize, navigate, and explore contributors
 
@@ -215,7 +215,7 @@ The Contributors view lists all of the contributors, and additionally provides:
 
 ##Search & Compare view
 
-<img src="/img/documentation/gitlens/search-and-compare-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/search-and-compare-view.png" class="img-bordered img-responsive center">
 
 A hidden by default, [customizable](/gitlens/settings/#search-and-compare-view-settings) view to search and explore commit histories by message, author, files, id, etc, or visualize comparisons between branches, tags, commits, and more
 

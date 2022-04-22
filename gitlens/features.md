@@ -16,7 +16,7 @@ Core features availible to both free and paid GitLens users.
 ##Revision Navigation
 
 
-<img src="/img/documentation/gitlens/revision-navigation.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/revision-navigation.gif" class="img-bordered img-responsive center">
 
 - Adds an Open Changes with Previous Revision command (`gitlens.diffWithPrevious`) to compare the current file or revision with the previous commit revision
 - Adds an Open Changes with Next Revision command (`gitlens.diffWithNext`) to compare the current file or revision with the next commit revision
@@ -30,7 +30,7 @@ Core features availible to both free and paid GitLens users.
 
 ##Current Line Blame
 
-<img src="/img/documentation/gitlens/current-line-blame.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/current-line-blame.png" class="img-bordered img-responsive center">
 
 Adds an unobtrusive, [customizable](/gitlens/settings/#current-line-blame-settings), and [themable](/gitlens/settings/#themable-colors), blame annotation at the end of the current line.
 
@@ -41,7 +41,7 @@ Adds an unobtrusive, [customizable](/gitlens/settings/#current-line-blame-settin
 
 ##Git CodeLens
 
-<img src="/img/documentation/gitlens/code-lens.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/code-lens.png" class="img-bordered img-responsive center">
 
 
 Adds Git authorship CodeLens to the top of the file and on code blocks ([optional](/gitlens/settings/#git-codelens-settings), on by default)
@@ -68,7 +68,7 @@ Adds Git authorship CodeLens to the top of the file and on code blocks ([optiona
 
 ##Status Bar Blame
 
-<img src="/img/documentation/gitlens/status-bar.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/status-bar.png" class="img-bordered img-responsive center">
 
 Adds a customizable Git blame annotation showing the commit and author who last modified the current line to the status bar (optional, on by default)
 
@@ -93,13 +93,13 @@ Adds a customizable Git blame annotation showing the commit and author who last 
 
 ###Current Line Hovers
 
-<img src="/img/documentation/gitlens/hovers-current-line.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-current-line.png" class="img-bordered img-responsive center">
 
 Adds [customizable](/gitlens/settings/#hover-settings) Git blame hovers accessible over the current line
 
 ####Details Hover
 
-<img src="/img/documentation/gitlens/hovers-current-line-details.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-current-line-details.png" class="img-bordered img-responsive center">
 
 Adds a details hover annotation to the current line to show more commit details (optional, on by default)
 
@@ -109,7 +109,7 @@ Adds a details hover annotation to the current line to show more commit details 
 
 ####Changes (diff) Hover
 
-<img src="/img/documentation/gitlens/hovers-current-line-changes.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-current-line-changes.png" class="img-bordered img-responsive center">
 
 
 Adds a changes (diff) hover annotation to the current line to show the line's previous version ([optional](/gitlens/settings/#hover-settings), on by default)
@@ -118,14 +118,14 @@ Adds a changes (diff) hover annotation to the current line to show the line's pr
 
 ###Annotation Hovers
 
-<img src="/img/documentation/gitlens/hovers-annotations.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-annotations.png" class="img-bordered img-responsive center">
 
 Adds [customizable](/gitlens/settings/#hover-settings)  Git blame hovers accessible when annotating
 
 
 ####Details Hover
 
-<img src="/img/documentation/gitlens/hovers-annotations-details.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-annotations-details.png" class="img-bordered img-responsive center">
 
 Adds a details hover annotation to each line while annotating to show more commit details ([optional](/gitlens/settings/#hover-settings), on by default)
 
@@ -135,7 +135,7 @@ Adds a details hover annotation to each line while annotating to show more commi
 
 ####Changes (diff) Hover
 
-<img src="/img/documentation/gitlens/hovers-annotations-changes.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/hovers-annotations-changes.png" class="img-bordered img-responsive center">
 
 Adds a changes (diff) hover annotation to each line while annotating to show the line's previous version ([optional](/gitlens/settings/#hover-settings), on by default)
 
@@ -147,7 +147,7 @@ Adds a changes (diff) hover annotation to each line while annotating to show the
 
 ##Gutter Blame
 
-<img src="/img/documentation/gitlens/gutter-blame.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
 Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [themable](/gitlens/settings/#themable-colors), gutter blame annotations to show the commit and author who last modified each line of a file
 
@@ -161,7 +161,7 @@ Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [t
 
 ##Gutter Changes
 
-<img src="/img/documentation/gitlens/gutter-blame.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
 Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), and [themable](/gitlens/settings/#themable-colors), gutter changes annotation to highlight any local (unpublished) changes or lines changed by the most recent commit.
 
@@ -172,7 +172,7 @@ Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), a
 
 ##Gutter Heatmap
 
-<img src="/img/documentation/gitlens/gutter-heatmap.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gutter-heatmap.png" class="img-bordered img-responsive center">
 
 Adds an on-demand heatmap to the edge of the gutter to show how recently lines were changed
 
@@ -190,7 +190,7 @@ GitLens adds many [side bar views](/gitlens/side-bar) to provide additional rich
 - Source Control Layout — shows all the views together on the Source Control side bar
 - GitLens Layout — shows all the views together on the GitLens side bar
 
-<img src="/img/documentation/gitlens/views-layout-scm-gitlens.png" class="img-responsive left"> 
+<img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
 
 Check out [Side Bar Sections](/gitlens/side-bar/) for more information.
 
@@ -198,7 +198,7 @@ Check out [Side Bar Sections](/gitlens/side-bar/) for more information.
 
 ##Git Command Palette
 
-<img src="/img/documentation/gitlens/git-command-palette.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/git-command-palette.png" class="img-bordered img-responsive center">
 
 Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Command Palette command (`gitlens.gitCommands`) to provide guided (step-by-step) access to many common Git commands, as well as quick access to commit history and search, stashes, and more
 
@@ -209,11 +209,11 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 - Adds a Show Branch History command (`gitlens.showQuickBranchHistory`) to show a quick pick menu to explore the commit history of the selected branch
 - Adds a Show Current Branch History command (`gitlens.showQuickRepoHistory`) to show a quick pick menu to explore the commit history of the current branch
 
-<img src="/img/documentation/gitlens/menu-branch-history.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-branch-history.png" class="img-bordered img-responsive center">
 
 - Adds a Show File History command (`gitlens.showQuickFileHistory`) to show quick pick menu to explore the commit history of the current file
 
-<img src="/img/documentation/gitlens/menu-file-history.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-file-history.png" class="img-bordered img-responsive center">
 
 Adds a Search Commits command (`gitlens.showCommitSearch`) to show quick pick menu to search for commits
 
@@ -223,21 +223,21 @@ Adds a Search Commits command (`gitlens.showCommitSearch`) to show quick pick me
 - or, by files — use :<path/glob> to find commits with file names that match <path/glob> — See  <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---ltpathgt82308203' target='_blank'>Git docs</a>
 - or, by changes — use ~<pattern> to find commits with differences whose patch text contains added/removed lines that match <pattern> — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt' target='_blank'>Git docs</a>
 
-<img src="/img/documentation/gitlens/menu-commit-search.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-commit-search.png" class="img-bordered img-responsive center">
 
 - Adds a Show Commit command (`gitlens.showQuickCommitDetails`) to show a quick pick menu to explore a commit and take action upon it
 
-<img src="/img/documentation/gitlens/menu-commit-details.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-commit-details.png" class="img-bordered img-responsive center">
 
 Adds a Show Line Commit command `(gitlens.showQuickCommitFileDetails`) to show a quick pick menu to explore a file of a commit and take action upon it
 
-<img src="/img/documentation/gitlens/menu-commit-file-details.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-commit-file-details.png" class="img-bordered img-responsive center">
 
 ###Quick Stash Access
 
-<img src="/img/documentation/gitlens/menu-stash-list.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
 
-<img src="/img/documentation/gitlens/menu-stash-list.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
 
 - Adds a Show Stashes command (gitlens.showQuickStashList) to show a quick pick menu to explore your stashes
 
@@ -245,13 +245,13 @@ Adds a Show Line Commit command `(gitlens.showQuickCommitFileDetails`) to show a
 
 - Adds a Show Repository Status command (`gitlens.showQuickRepoStatus`) to show a quick pick menu to for visualizing the current repository status
 
-<img src="/img/documentation/gitlens/menu-stash-list.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
 
 ***
 
 ##Interactive Rebase Editor
 
-<img src="/img/documentation/gitlens/rebase.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/rebase.gif" class="img-bordered img-responsive center">
 
 Adds a user-friendly interactive rebase editor to more easily configure an interactive rebase session
 
@@ -271,7 +271,7 @@ To use the Insiders edition of VS Code, replace `code` in the above with `code-i
 
 ##Terminal Links
 
-<img src="/img/documentation/gitlens/terminal-links.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/terminal-links.gif" class="img-bordered img-responsive center">
 
 - [Optionally](/gitlens/settings/#terminal-links-settings) adds autolinks for branches, tags, and commit ranges in the integrated terminal to quickly explore their commit history
 - [Optionally](/gitlens/settings/#terminal-links-settings) adds autolinks for commits in the integrated terminal to quickly explore the commit and take action upon it
@@ -351,12 +351,12 @@ Adds a Disable Debug Logging command (`gitlens.disableDebugLogging`) to disable 
 
 ##Menus & Toolbars
 
-<img src="/img/documentation/gitlens/menus.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menus.png" class="img-bordered img-responsive center">
 
 GitLens provides customizable menu and toolbar contributions to put you in control over where GitLens' commands are shown. The easiest way to configure these settings is via the GitLens interactive settings editor.
 
 For example, if you uncheck the Add to the editor group toolbar you will see the following items removed from the toolbar:
 
-<img src="/img/documentation/gitlens/menus-example.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menus-example.png" class="img-bordered img-responsive center">
 
 You can also expand each group to control each area more granularly.
