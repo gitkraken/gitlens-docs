@@ -7,14 +7,9 @@ taxonomy:
 
 ---
 
-
-#GitLens Features
-
-
 Core features availible to both free and paid GitLens users. 
 
 ##Revision Navigation
-
 
 <img src="/wp-content/uploads/revision-navigation.gif" class="img-bordered img-responsive center">
 
