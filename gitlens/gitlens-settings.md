@@ -7,9 +7,6 @@ taxonomy:
 
 ---
 
-
-#GitLens Settings
-
 GitLens is highly customizable and provides many configuration settings to allow the personalization of almost all features.
 
 ##Current Line Blame Settings

@@ -7,9 +7,6 @@ taxonomy:
 
 ---
 
-
-#GitLens+ Features
-
 <img src="/wp-content/uploads/gl-graphic-image.png" class="img-bordered img-responsive center">
 
 

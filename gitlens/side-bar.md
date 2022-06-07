@@ -7,9 +7,6 @@ taxonomy:
 
 ---
 
-
-#GitLens Sidebar Views
-
 GitLens adds many [side bar views](/gitlens/side-bar) to provide additional rich functionality. The default layout (location) of these views can be quickly customized via the GitLens: Set Views Layout (`gitlens.setViewsLayout`) command from the <a href='https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette' target='_blank'>VS Code Command Palette</a>.
 
 - Source Control Layout — shows all the views together on the Source Control side bar
