@@ -61,5 +61,3 @@ GitLens+ is a set of exciting new visualization and code collaboration capabilit
 ###Is GitLens still free?
 
 Yes, GitLens is free. All core features will continue to be free without an account. In fact, we’re still adding many core features to GitLens. GitLens+ features are purely additive and provide a richer, more powerful experience.
-
-***

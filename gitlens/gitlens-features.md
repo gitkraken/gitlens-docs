@@ -14,13 +14,13 @@ Core features availible to both free and paid GitLens users.
 
 <img src="/wp-content/uploads/revision-navigation.gif" class="img-bordered img-responsive center">
 
-- Adds an Open Changes with Previous Revision command (`gitlens.diffWithPrevious`) to compare the current file or revision with the previous commit revision
-- Adds an Open Changes with Next Revision command (`gitlens.diffWithNext`) to compare the current file or revision with the next commit revision
-- Adds an Open Line Changes with Previous Revision command (`gitlens.diffLineWithPrevious`) to compare the current file or revision with the previous line commit revision
-- Adds an Open Changes with Working File command (`gitlens.diffWithWorking`) to compare the current revision or most recent commit revision of the current file with the working tree
-- Adds an Open Line Changes with Working File command (`gitlens.diffLineWithWorking`) to compare the commit revision of the current line with the working tree
-- Adds an Open Changes with Branch or Tag... command (`gitlens.diffWithRevisionFrom`) to compare the current file or revision with another revision of the same file on the selected reference
-- Adds an Open Changes with Revision... command (`gitlens.diffWithRevision`) to compare the current file or revision with another revision of the same file
+- Adds an _Open Changes with Previous Revision_ command (`gitlens.diffWithPrevious`) to compare the current file or revision with the previous commit revision
+- Adds an _Open Changes with Next Revision_ command (`gitlens.diffWithNext`) to compare the current file or revision with the next commit revision
+- Adds an _Open Line Changes with Previous Revision_ command (`gitlens.diffLineWithPrevious`) to compare the current file or revision with the previous line commit revision
+- Adds an _Open Changes with Working File_ command (`gitlens.diffWithWorking`) to compare the current revision or most recent commit revision of the current file with the working tree
+- Adds an _Open Line Changes with Working File_ command (`gitlens.diffLineWithWorking`) to compare the commit revision of the current line with the working tree
+- Adds an _Open Changes with Branch or Tag..._ command (`gitlens.diffWithRevisionFrom`) to compare the current file or revision with another revision of the same file on the selected reference
+- Adds an _Open Changes with Revision..._ command (`gitlens.diffWithRevision`) to compare the current file or revision with another revision of the same file
 
 ***
 
@@ -28,10 +28,10 @@ Core features availible to both free and paid GitLens users.
 
 <img src="/wp-content/uploads/current-line-blame.png" class="img-bordered img-responsive center">
 
-Adds an unobtrusive, [customizable](/gitlens/settings/#current-line-blame-settings), and [themable](/gitlens/settings/#themable-colors), blame annotation at the end of the current line.
+Adds an unobtrusive, [customizable](/gitlens/settings/#current-line-blame-settings), and [themable](/gitlens/settings/#themable-colors), **blame annotation** at the end of the current line.
 
 - Contains the author, date, and message of the current line's most recent commit (by [default](/gitlens/settings/#current-line-blame-settings))
-- Adds a Toggle Line Blame Annotations command (`gitlens.toggleLineBlame`) to toggle the blame annotation on and off
+- Adds a _Toggle Line Blame Annotations_ (`gitlens.toggleLineBlame`) to toggle the blame annotation on and off
 
 ***
 
@@ -42,11 +42,11 @@ Adds an unobtrusive, [customizable](/gitlens/settings/#current-line-blame-settin
 
 Adds Git authorship CodeLens to the top of the file and on code blocks ([optional](/gitlens/settings/#git-codelens-settings), on by default)
 
-- Recent Change — author and date of the most recent commit for the file or code block
+- **Recent Change** — author and date of the most recent commit for the file or code block
 
-    - Click the CodeLens to show a commit file details quick pick menu with commands for comparing, navigating and exploring commits, and more (by [default](/gitlens/settings/#git-codelens-settings))
+    - Click the CodeLens to show a **commit file details quick pick menu** with commands for comparing, navigating and exploring commits, and more (by [default](/gitlens/settings/#git-codelens-settings))
 
-- Authors — number of authors of the file or code block and the most prominent author (if there is more than one)
+- **Authors** — number of authors of the file or code block and the most prominent author (if there is more than one)
     - Click the CodeLens to toggle the file Git blame annotations on and off of the whole file (by [default](/gitlens/settings/#git-codelens-settings))
     - Will be hidden if the author of the most recent commit is also the only author of the file or block, to avoid duplicate information and reduce visual noise
 
@@ -58,7 +58,7 @@ Adds Git authorship CodeLens to the top of the file and on code blocks ([optiona
     - Show a quick pick menu with the commit history of the file
     - Show a quick pick menu with the commit history of the current branch
 
-- Adds a Toggle Git CodeLens command (`gitlens.toggleCodeLen`s) with a shortcut of `shift+alt+b` to toggle the CodeLens on and off
+- Adds a _Toggle Git CodeLens_ command (`gitlens.toggleCodeLens`) with a shortcut of `shift+alt+b` to toggle the CodeLens on and off
 
 ***
 
@@ -66,11 +66,11 @@ Adds Git authorship CodeLens to the top of the file and on code blocks ([optiona
 
 <img src="/wp-content/uploads/status-bar.png" class="img-bordered img-responsive center">
 
-Adds a customizable Git blame annotation showing the commit and author who last modified the current line to the status bar (optional, on by default)
+Adds a customizable **Git blame annotation** showing the commit and author who last modified the current line to the status bar (optional, on by default)
 
 - Contains the commit author and date (by default)
 
-- Click the status bar item to show a commit details quick pick menu with commands for comparing, navigating and exploring commits, and more (by default)
+- Click the status bar item to show a **commit details quick pick menu** with commands for comparing, navigating and exploring commits, and more (by default)
 
 - Provides customizable click behavior — choose between one of the following
 
@@ -97,11 +97,11 @@ Adds [customizable](/gitlens/settings/#hover-settings) Git blame hovers accessib
 
 <img src="/wp-content/uploads/hovers-current-line-details.png" class="img-bordered img-responsive center">
 
-Adds a details hover annotation to the current line to show more commit details (optional, on by default)
+Adds a **details hover** annotation to the current line to show more commit details (optional, on by default)
 
-- Provides automatic issue linking to Bitbucket, Gerrit, Gitea, GitHub, GitLab, and Azure DevOps in commit messages
-- Provides a quick-access command bar with Open Changes, Blame Previous Revision, Open on Remote, Invite to Live Share (if available), and Show More Actions command buttons
-- Click the commit SHA to execute the Show Commit command
+- Provides **automatic issue linking** to Bitbucket, Gerrit, Gitea, GitHub, GitLab, and Azure DevOps in commit messages
+- Provides a **quick-access command bar** with _Open Changes_, _Blame Previous Revision_, _Open on Remote_, _Invite to Live Share_ (if available), and _Show More Actions_ command buttons
+- Click the commit SHA to execute the _Show Commit_ command
 
 ####Changes (diff) Hover
 
@@ -109,8 +109,8 @@ Adds a details hover annotation to the current line to show more commit details 
 
 
 Adds a changes (diff) hover annotation to the current line to show the line's previous version ([optional](/gitlens/settings/#hover-settings), on by default)
-- Click the Changes to execute the Open Changes command
-- Click the current and previous commit SHAs to execute the Show Commit command
+- Click the Changes to execute the _Open Changes_ command
+- Click the current and previous commit SHAs to execute the _Show Commit_ command
 
 ###Annotation Hovers
 
@@ -123,25 +123,25 @@ Adds [customizable](/gitlens/settings/#hover-settings)  Git blame hovers accessi
 
 <img src="/wp-content/uploads/hovers-annotations-details.png" class="img-bordered img-responsive center">
 
-Adds a details hover annotation to each line while annotating to show more commit details ([optional](/gitlens/settings/#hover-settings), on by default)
+Adds a **details hover** annotation to each line while annotating to show more commit details ([optional](/gitlens/settings/#hover-settings), on by default)
 
-- Provides automatic issue linking to Bitbucket, Gerrit, Gitea, GitHub, GitLab, and Azure DevOps in commit messages
-- Provides a quick-access command bar with Open Changes, Blame Previous Revision, Open on Remote, Invite to Live Share (if available), and Show More Actions command buttons
-- Click the commit SHA to execute the Show Commit command
+- Provides **automatic issue linking** to Bitbucket, Gerrit, Gitea, GitHub, GitLab, and Azure DevOps in commit messages
+- Provides a quick-access command bar with _Open Changes_, _Blame Previous Revision_, _Open on Remote_, _Invite to Live Share_ (if available), and _Show More Actions_ command buttons
+- Click the commit SHA to execute the _Show Commit_ command
 
 ####Changes (diff) Hover
 
 <img src="/wp-content/uploads/hovers-annotations-changes.png" class="img-bordered img-responsive center">
 
-Adds a changes (diff) hover annotation to each line while annotating to show the line's previous version ([optional](/gitlens/settings/#hover-settings), on by default)
+Adds a **changes (diff) hover** annotation to each line while annotating to show the line's previous version ([optional](/gitlens/settings/#hover-settings), on by default)
 
-- Click the Changes to execute the Open Changes command
-- Click the current and previous commit SHAs to execute the Show Commit command
+- Click the **Changes** to execute the _Open Changes_ command
+- Click the current and previous commit SHAs to execute the _Show Commit_ command
 
 
 ***
 
-##Gutter Blame
+##File Blame
 
 <img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
@@ -188,7 +188,7 @@ GitLens adds many [side bar views](/gitlens/side-bar) to provide additional rich
 
 <img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
 
-Check out [Side Bar Sections](/gitlens/side-bar/) for more information.
+Check out the [Side Bar documentation](/gitlens/side-bar/) for more information.
 
 ***
 
@@ -213,19 +213,19 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 
 Adds a Search Commits command (`gitlens.showCommitSearch`) to show quick pick menu to search for commits
 
-- by message — use <message> to find commits with messages that match <message> — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt' target='_blank'>Git docs</a>
-- or, by author — use @<pattern> to find commits with authors that match <pattern> — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt' target='_blank'>Git docs</a>
-- or, by commit SHA — use #<sha> to find a commit with id of <sha> — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt' target='_blank'>Git docs</a>
-- or, by files — use :<path/glob> to find commits with file names that match <path/glob> — See  <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---ltpathgt82308203' target='_blank'>Git docs</a>
-- or, by changes — use ~<pattern> to find commits with differences whose patch text contains added/removed lines that match <pattern> — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt' target='_blank'>Git docs</a>
+- by message — use `<message>` to find commits with messages that match `<message>` — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt' target='_blank'>Git docs</a>
+- or, by author — use `@<pattern>` to find commits with authors that match `<pattern>` — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt' target='_blank'>Git docs</a>
+- or, by commit SHA — use `#<sha>` to find a commit with id of `<sha>` — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt' target='_blank'>Git docs</a>
+- or, by files — use `:<path/glob>` to find commits with file names that match `<path/glob>` — See  <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt---ltpathgt82308203' target='_blank'>Git docs</a>
+- or, by changes — use `~<pattern>` to find commits with differences whose patch text contains added/removed lines that match `<pattern>` — See <a href='https://git-scm.com/docs/git-log#Documentation/git-log.txt--Gltregexgt' target='_blank'>Git docs</a>
 
 <img src="/wp-content/uploads/menu-commit-search.png" class="img-bordered img-responsive center">
 
-- Adds a Show Commit command (`gitlens.showQuickCommitDetails`) to show a quick pick menu to explore a commit and take action upon it
+- Adds a _Show Commit_ command (`gitlens.showQuickCommitDetails`) to show a quick pick menu to explore a commit and take action upon it
 
 <img src="/wp-content/uploads/menu-commit-details.png" class="img-bordered img-responsive center">
 
-Adds a Show Line Commit command `(gitlens.showQuickCommitFileDetails`) to show a quick pick menu to explore a file of a commit and take action upon it
+Adds a _Show Line Commit_ command `(gitlens.showQuickCommitFileDetails`) to show a quick pick menu to explore a file of a commit and take action upon it
 
 <img src="/wp-content/uploads/menu-commit-file-details.png" class="img-bordered img-responsive center">
 
@@ -233,15 +233,15 @@ Adds a Show Line Commit command `(gitlens.showQuickCommitFileDetails`) to show a
 
 <img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
 
-<img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-stash-details.png" class="img-bordered img-responsive center">
 
-- Adds a Show Stashes command (gitlens.showQuickStashList) to show a quick pick menu to explore your stashes
+- Adds a _Show Stashes_ command (`gitlens.showQuickStashList`) to show a quick pick menu to explore your stashes
 
 ###Quick Status Access
 
-- Adds a Show Repository Status command (`gitlens.showQuickRepoStatus`) to show a quick pick menu to for visualizing the current repository status
+- Adds a _Show Repository Status_ command (`gitlens.showQuickRepoStatus`) to show a quick pick menu to for visualizing the current repository status
 
-<img src="/wp-content/uploads/menu-stash-list.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/menu-repo-status.png" class="img-bordered img-responsive center">
 
 ***
 
@@ -281,67 +281,67 @@ Basic integrations provide issue and pull request auto-linking, while richer int
 
 Additionally, these integrations provide commands to copy the url of or open, files, commits, branches, and the repository on the remote provider.
 
-- Open File from Remote command (`gitlens.openFileFromRemote`) — opens the local file from a url of a file on a remote provider
-- Open File on Remote command (`gitlens.openFileOnRemote`) — opens a file or revision on the remote provider
-- Copy Remote File Url command (`gitlens.copyRemoteFileUrlToClipboard`) — copies the url of a file or revision on the remote provider
-- Open File on Remote From... command (`gitlens.openFileOnRemoteFrom`) — opens a file or revision on a specific branch or tag on the remote provider
-- Copy Remote File Url From... command (`gitlens.copyRemoteFileUrlFrom`) — copies the url of a file or revision on a specific branch or tag the remote provider
-- Open Commit on Remote command (`gitlens.openCommitOnRemote`) — opens a commit on the remote provider
-- Copy Remote Commit Url command (`gitlens.copyRemoteCommitUrl`) — copies the url of a commit on the remote provider
-- Open Branch on Remote command (`gitlens.openBranchOnRemote`) — opens the branch on the remote provider
-- Copy Remote Branch Url command (`gitlens.copyRemoteBranchUrl`) — copies the url of a branch on the remote provider
-- Open Branches on Remote command (`gitlens.openBranchesOnRemote`) — opens the branches on the remote provider
-- Copy Remote Branches Url command (`gitlens.copyRemoteBranchesUrl`) — copies the url of the branches on the remote provider
-- Open Comparison on Remote command (`gitlens.openComparisonOnRemote`) — opens the comparison on the remote provider
-- Copy Remote Comparison Url command (`gitlens.copyRemoteComparisonUrl`) — copies the url of the comparison on the remote provider
-- Open Pull Request command (`gitlens.openPullRequestOnRemote`) — opens the pull request on the remote provider
-- Copy Pull Request Url command (`gitlens.copyRemotePullRequestUrl`) — copies the url of the pull request on the remote provider
-- Open Repository on Remote command (`gitlens.openRepoOnRemote`) — opens the repository on the remote provider
-- Copy Remote Repository Url command (`gitlens.copyRemoteRepositoryUrl`) — copies the url of the repository on the remote provider
+- Open _File from Remote_ command (`gitlens.openFileFromRemote`) — opens the local file from a url of a file on a remote provider
+- Open _File on Remote_ command (`gitlens.openFileOnRemote`) — opens a file or revision on the remote provider
+- Copy _Remote File Url_ command (`gitlens.copyRemoteFileUrlToClipboard`) — copies the url of a file or revision on the remote provider
+- Open _File on Remote From..._ command (`gitlens.openFileOnRemoteFrom`) — opens a file or revision on a specific branch or tag on the remote provider
+- Copy _Remote File Url From... command (`gitlens.copyRemoteFileUrlFrom`) — copies the url of a file or revision on a specific branch or tag the remote provider
+- Open _Commit on Remote_ command (`gitlens.openCommitOnRemote`) — opens a commit on the remote provider
+- Copy _Remote Commit Url_ command (`gitlens.copyRemoteCommitUrl`) — copies the url of a commit on the remote provider
+- Open _Branch on Remote_ command (`gitlens.openBranchOnRemote`) — opens the branch on the remote provider
+- Copy _Remote Branch Url_ command (`gitlens.copyRemoteBranchUrl`) — copies the url of a branch on the remote provider
+- Open _Branches on Remote_ command (`gitlens.openBranchesOnRemote`) — opens the branches on the remote provider
+- Copy _Remote Branches Url_ command (`gitlens.copyRemoteBranchesUrl`) — copies the url of the branches on the remote provider
+- Open _Comparison on Remote_ command (`gitlens.openComparisonOnRemote`) — opens the comparison on the remote provider
+- Copy _Remote Comparison Url_ command (`gitlens.copyRemoteComparisonUrl`) — copies the url of the comparison on the remote provider
+- Open _Pull Request_ command (`gitlens.openPullRequestOnRemote`) — opens the pull request on the remote provider
+- Copy _Pull Request Url_ command (`gitlens.copyRemotePullRequestUrl`) — copies the url of the pull request on the remote provider
+- Open _Repository on Remote_ command (`gitlens.openRepoOnRemote`) — opens the repository on the remote provider
+- Copy _Remote Repository Url_ command (`gitlens.copyRemoteRepositoryUrl`) — copies the url of the repository on the remote provider
 
 ***
 
 ##Powerful Commands
 
-Adds an Add Co-authors command (`gitlens.addAuthors`) to add a co-author to the commit message input box
+- Adds an _Add Co-authors_ command (`gitlens.addAuthors`) to add a co-author to the commit message input box
 
-Adds a Copy SHA command (`gitlens.copyShaToClipboard`) to copy the commit SHA of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
+- Adds a _Copy SH_A command (`gitlens.copyShaToClipboard`) to copy the commit SHA of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
 
-Adds a Copy Message command (`gitlens.copyMessageToClipboard`) to copy the commit message of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
+- Adds a _Copy Message_ command (`gitlens.copyMessageToClipboard`) to copy the commit message of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
 
-Adds a Copy Current Branch command (`gitlens.copyCurrentBranch`) to copy the name of the current branch to the clipboard
+- Adds a _Copy Current Branch_ command (`gitlens.copyCurrentBranch`) to copy the name of the current branch to the clipboard
 
-Adds a Switch to Another Branch (`gitlens.views.switchToAnotherBranch`) command — to quickly switch the current branch
+- Adds a _Switch to Another Branch_ (`gitlens.views.switchToAnotherBranch`) command — to quickly switch the current branch
 
-Adds a Compare References... command (`gitlens.compareWith`) to compare two selected references
+- Adds a _Compare References..._ command (`gitlens.compareWith`) to compare two selected references
 
-Adds a Compare HEAD with... command (`gitlens.compareHeadWith`) to compare the index (HEAD) with the selected reference
+- Adds a _Compare HEAD with..._ command (`gitlens.compareHeadWith`) to compare the index (HEAD) with the selected reference
 
-Adds a Compare Working Tree with... command (`gitlens.compareWorkingWith`) to compare the working tree with the selected reference
+- Adds a _Compare Working Tree with..._ command (`gitlens.compareWorkingWith`) to compare the working tree with the selected reference
 
-Adds an Open Changes (difftool) command (`gitlens.externalDiff`) to open the changes of a file or set of files with the configured git difftool
+- Adds an _Open Changes (difftool)_ command (`gitlens.externalDiff`) to open the changes of a file or set of files with the configured git difftool
 
-Adds an Open All Changes (difftool) command (`gitlens.externalDiffAll`) to open all working changes with the configured git difftool
+- Adds an _Open All Changes (difftool)_ command (`gitlens.externalDiffAll`) to open all working changes with the configured git difftool
 
-Adds an Open Directory Compare (difftool) command (`gitlens.diffDirectoryWithHead`) to compare the working tree with HEAD with the configured Git difftool
+- Adds an _Open Directory Compare (difftool)_ command (`gitlens.diffDirectoryWithHead`) to compare the working tree with HEAD with the configured Git difftool
 
-Adds an Open Directory Compare (difftool) with... command (`gitlens.diffDirectory`) to compare the working tree with the selected reference with the configured Git difftool
+- Adds an _Open Directory Compare (difftool) with..._ command (`gitlens.diffDirectory`) to compare the working tree with the selected reference with the configured Git difftool
 
-Adds an Open File command (`gitlens.openWorkingFile`) to open the working file for the current file revision
+- Adds an _Open File_ command (`gitlens.openWorkingFile`) to open the working file for the current file revision
 
-Adds an Open Revision... command (`gitlens.openFileRevision`) to open the selected revision for the current file
+- Adds an _Open Revision..._ command (`gitlens.openFileRevision`) to open the selected revision for the current file
 
-Adds an Open Revision from... command (`gitlens.openFileRevisionFrom`) to open the revision of the current file from the selected reference
+- Adds an _Open Revision from..._ command (`gitlens.openFileRevisionFrom`) to open the revision of the current file from the selected reference
 
-Adds an Open Blame Prior to Change command (`gitlens.openBlamePriorToChange`) to open the blame of prior revision of the selected line in the current file
+- Adds an _Open Blame Prior to Change_ command (`gitlens.openBlamePriorToChange`) to open the blame of prior revision of the selected line in the current file
 
-Adds a Open Changed Files command (`gitlens.openChangedFiles`) to open any files with working tree changes
+- Adds a _Open Changed Files_ command (`gitlens.openChangedFiles`) to open any files with working tree changes
 
-Adds a Close Unchanged Files command (`gitlens.closeUnchangedFiles`) to close any files without working tree changes
+- Adds a _Close Unchanged Files_ command (`gitlens.closeUnchangedFiles`) to close any files without working tree changes
 
-Adds an Enable Debug Logging command (`gitlens.enableDebugLogging`) to enable debug logging to the GitLens output channel
+- Adds an _Enable Debug Logging_ command (`gitlens.enableDebugLogging`) to enable debug logging to the GitLens output channel
 
-Adds a Disable Debug Logging command (`gitlens.disableDebugLogging`) to disable debug logging to the GitLens output channel
+- Adds a _Disable Debug Logging_ command (`gitlens.disableDebugLogging`) to disable debug logging to the GitLens output channel
 
 ***
 
@@ -349,9 +349,9 @@ Adds a Disable Debug Logging command (`gitlens.disableDebugLogging`) to disable 
 
 <img src="/wp-content/uploads/menus.png" class="img-bordered img-responsive center">
 
-GitLens provides customizable menu and toolbar contributions to put you in control over where GitLens' commands are shown. The easiest way to configure these settings is via the GitLens interactive settings editor.
+GitLens provides [customizable](/gitlens/gitlens-settings/#elementor-toc__heading-anchor-16) menu and toolbar contributions to put you in control over where GitLens' commands are shown. The easiest way to configure these settings is via the GitLens [interactive settings editor](/gitlens/gitlens-settings/).
 
-For example, if you uncheck the Add to the editor group toolbar you will see the following items removed from the toolbar:
+For example, if you uncheck the _Add to the editor group toolbar_ you will see the following items removed from the toolbar:
 
 <img src="/wp-content/uploads/menus-example.png" class="img-bordered img-responsive center">
 

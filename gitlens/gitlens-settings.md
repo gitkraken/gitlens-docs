@@ -7,6 +7,10 @@ taxonomy:
 
 ---
 
+<img src="/wp-content/uploads/settings.png" class="img-bordered img-responsive center">
+
+GitLens provides a rich **interactive settings editor**, an easy-to-use interface, to configure many of GitLens' powerful features. It can be accessed via the _GitLens: Open Settings_ (`gitlens.showSettingsPage`) command from the [_Command Palette_](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+
 GitLens is highly customizable and provides many configuration settings to allow the personalization of almost all features.
 
 ##Current Line Blame Settings
@@ -634,6 +638,58 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </table>
 ***
 
+##Worktrees View Settings
+
+See also [View Settings](/gitlens/settings/#view-settings)
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.views.worktrees.avatars</code></td>
+<td>Specifies whether to show avatar images instead of commit (or status) icons in the _Worktrees_ view</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.files.compact</code></td>
+<td>Specifies whether to compact (flatten) unnecessary file nesting in the _Worktrees_ view.<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>tree</code> or <code>auto</code></td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.files.layout</code></td>
+<td>Specifies how the _Worktrees_ view will display files<br /><br />`auto` - automatically switches between displaying files as a <code>tree</code> or <code>list</code> based on the <code>gitlens.views.commits.files.threshold</code> value and the number of files at each nesting level<br />`list` - displays files as a list<br />`tree` - displays files as a tree</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.files.threshold</code></td>
+<td>Specifies when to switch between displaying files as a <code>tree</code> or <code>list</code> based on the number of files in a nesting level in the _Worktrees_ view<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>auto</code></td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.pullRequests.enabled</code></td>
+<td>Specifies whether to query for pull requests associated with the worktree branch and commits in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.pullRequests.showForBranches</code></td>
+<td>Specifies whether to query for pull requests associated with the worktree branch in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub) </td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.pullRequests.showForCommits</code></td>
+<td>Specifies whether to show pull requests (if any) associated with commits in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.reveal</code></td>
+<td>Specifies whether to reveal worktrees in the _Worktrees_ view, otherwise they will be revealed in the _Repositories_ view</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.showBranchComparison</code></td>
+<td>Specifies whether to show a comparison of the worktree branch with a user-selected reference (branch, tag. etc) in the _Worktrees_ view<br /><br /><code>false</code> - hides the branch comparison<br /><code>branch</code> - compares the current branch with a user-selected reference</td>
+</tr>
+</tbody>
+</table>
+***
+
 ##Contributors View Settings
 
 See also [View Settings](/gitlens/settings/#view-settings)
@@ -939,6 +995,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tr>
 <td><code>gitlens.defaultDateFormat</code></td>
 <td>Specifies how absolute dates will be formatted by default. See the <a href="https://momentjs.com/docs/#/displaying/format/" rel="nofollow">Moment.js docs</a> for valid formats</td>
+</tr>
+<tr>
+<td><code>gitlens.defaultDateLocale</code></td>
+<td>Specifies the locale, a [BCP 47 language tag](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_major_primary_language_subtags), to use for date formatting, defaults to the VS Code locale. Use <code>system</code> to follow the current system locale, or choose a specific locale, e.g <code>en-US</code> — US English, <code>en-GB</code> — British English, <code>de-DE</code> — German, <code>ja-JP</code> - Japanese, etc.</td>
 </tr>
 <tr>
 <td><code>gitlens.defaultDateShortFormat</code></td>
