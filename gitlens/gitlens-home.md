@@ -2,7 +2,9 @@
 
 title: GitLens Support home page
 description: GitLens Support
-
+taxonomy:
+    category: gitlens
+    
 ---
 
 Welcome to the GitLens Support Documentation site! 
