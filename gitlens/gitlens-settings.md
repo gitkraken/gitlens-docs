@@ -1,6 +1,6 @@
 ---
 
-title: GitLens Settings
+title: Settings
 description: GitLens Settings
 taxonomy:
     category: gitlens
