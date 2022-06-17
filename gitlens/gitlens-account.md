@@ -13,25 +13,25 @@ Whether a solo user on a personal license, or an owner managing multiple teams a
 
 ## Sign-up and Purchase
 
-You can [register](https://app.gitkraken.com/register) a GitKraken account to give you access to GitLens+. Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github) which will pull in your related email address to make an account.
+You can [register](https://app.gitkraken.com/register) a GitKraken account to give you access to GitLens+. Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github). Using an alternate sign-in source will automatically pull in your related email address to make an account.
 
-Once your account is created, you can purchase a plan by clicking 🚀 **Purchase License**. You can then select "see GitLens Pricing" to be presented with options for purchasing. 
+Once your account is created, you can purchase a plan by clicking 🚀 **Purchase License**, and then select **See GitLens Pricing** to be presented with options for purchasing. 
 
 Next you will be promted to select how many licenses you want and enter your billing information. Fill out all relevant fields and click <button class='button button--success button--ui button--nolink'>Complete purchase</button>.
 
 <div class='callout callout--warning'>
-    <p><strong>Note: If you are purchasing a license for just your personal use or otherwise not part of an organization, you can eter a value of your choice. Most use "Personal" or "Self."</strong></p>
+    <p><strong>Note:</strong> If you are purchasing a license for just your personal use or otherwise not part of an organization, you can eter a value of your choice. Most use "Personal" or "Self."</p>
 </div>
 
-If you already have an **Organization** or **Trail Organization**, you can click on the existing organization instead and navigate to `Subscription` to change the license or add users.
+If you already have an **Organization** or **Trial Organization**, you can click on the existing organization instead and navigate to `Subscription` to change the license or add users.
 
 
 ***
 
 ## Organizations
-The <kbd>Organizations</kbd> section shows your organization(s). Click on an organization to manage the [Users](/organizations/#manage-users), [Teams](/glo/teams/), and Subscriptions.
+The <kbd>Organizations</kbd> section shows your organization(s). Click on an organization to manage the [Users](/organizations/#manage-users), Teams, and Subscriptions.
 
-To access your account and manage your organization(s), navigate to [https://app.gitkraken.com](https://app.gitkraken.com), or click <kbd>Manage Account</kbd> from the user menu dropdown <em class="context-menu"><i class="fa fa-bars"> </i>  </em> in GitKraken.
+To access your account and manage your organization(s), navigate to [https://app.gitkraken.com](https://app.gitkraken.com) and login.
 
 Once you log into your account, click <em class="context-menu">Organization  <i class="fa fa-caret-right"></i> [Your organization name]</em> to add users.
 
@@ -40,7 +40,7 @@ Once you log into your account, click <em class="context-menu">Organization  <i 
 ### Subscriptions
 Subsriptions can be added to an organization by clicking the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>New Organization</span></button> tab.
 
-<img src="/wp-content/uploads/gk-plans.png"  class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gk-plans1.png"  class="img-responsive center img-bordered">
 
 Once a subscription is added to the organization owner or admin roles may add users to the account using their email address (see [Manage Users](/account/organizations/#manage-users) section below).
 
@@ -122,14 +122,14 @@ From the *Users* pane in the left panel, click to <button class='button button--
 
 To import users click the `Add User` button. From here you can import users via a `.csv` file.
 
-<img src="/wp-content/uploads/importing-exporting-users/import/account-site-import-button.png"/>
+<img src="/wp-content/uploads/account-site-import-button.png"/>
 
 When importing users, be sure to have columns for `Email`, `Username`, `Role`, `User License`.
 
 
 If you need to export users, you may access this option from the Users list on [https://app.gitkraken.com](https://app.gitkraken.com).
 
-<img src="/wp-content/uploads/importing-exporting-users/import/account-site-export-arrow.png"/>
+<img src="/wp-content/uploads/account-site-export-arrow.png"/>
 
 The export will contain columns for `Email`, `Username`, `Role`, `User License`.
 
@@ -179,5 +179,3 @@ Click on <kbd>Organizations</kbd> and then click on the name of the expired or c
 <img src="/wp-content/uploads/org-expired.png" srcset="/wp-content/uploads/org-expired@2x.png 2x" class="img-responsive center img-bordered">
 
 Then click on <kbd>Subscription</kbd> in the left panel, where you may update the license total or billing details before hitting <button class='button button--success button--ui button--nolink'>Reactivate</button>.
-
-<img src="/wp-content/uploads/reactivate-pro-suite.png" srcset="/wp-content/uploads/reactivate-pro-suite@2x.png 2x" class="img-responsive center img-bordered">
