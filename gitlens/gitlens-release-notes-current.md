@@ -1,6 +1,6 @@
 ---
 
-title: Release Notes
+title: GitLens Release Notes
 description: GitLens Release Notes 
 taxonomy:
     category: gitlens
@@ -37,7 +37,7 @@ This beloved feature from GitKraken Client helps visualize your repo commit hist
 
 <img src="/wp-content/uploads/1-commit-graph.png" class="img-responsive center img-bordered">
 
-To open the Commit Graph, open the command palette using the keyboard shortcut <kbd>Cmd</kbd> <kdb>Shift</kbd> <kbd>P</kbd> and type `Show Commit Graph`.
+To open the Commit Graph, open the command palette using the keyboard shortcut <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>P</kbd> and type `Show Commit Graph`.
 
 <img src="/wp-content/uploads/2-commit-graph.gif" class="img-responsive center img-bordered">
 
@@ -49,23 +49,23 @@ You may also access the Commit Graph by clicking this graph icon from the Source
 
 The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. 
 
-For those on vscode.dev or github.dev, this also means you can open the Commit Graph on a web browser. 
+For those on [vscode.dev](vscode.dev) or [github.dev](github.dev), this also means you can open the Commit Graph on a web browser. 
 
-The Commit Graph is in Preview mode, and we’d love to hear your feedback in the [Commit Graph discussion on GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
+The Commit Graph is in `Preview` mode, and we’d love to hear your feedback in the [Commit Graph discussion on GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
 
 
 
 ## Commit Details View
 
-GitLens 12.2 also ships with a Commit Details View, which gives you contextual change info about your code.
+GitLens 12.2 also ships with a `Commit Details View`, which gives you contextual change info about your code.
 
 <img src="/wp-content/uploads/3-commit-details-view.png" class="img-responsive center img-bordered">
 
-To open the Commit Details View, open the command palette using <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>P</kbd> and this time type: `Show Commit Details View`”` or navigate to the Commit Details view in the Sidebar.
+To open the `Commit Details View`, open the command palette using <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>P</kbd> and this time type: `Show Commit Details View` or navigate to the Commit Details View in the Sidebar.
 
 <img src="/wp-content/uploads/4-commit-details-view.gif" class="img-responsive center img-bordered">
 
-The Commit Details View updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
+The `Commit Details View` updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
 
 Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
 
@@ -90,10 +90,10 @@ Single Sign On is here, providing GitLens+ users with a more secure sign in meth
 
 Your GitKraken account may now initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
 
-    - Azure Active Directory
-    - Okta
-    - Google Identity Platform
-    - Ping Identity
+- Azure Active Directory
+- Okta
+- Google Identity Platform
+- Ping Identity
 
 
 <img src="/wp-content/uploads/SSO-setup.png" class="img-responsive center img-bordered">
@@ -112,7 +112,7 @@ GitLens+ users should see a new option to Sign in with SSO from the login screen
 
 <img src="/wp-content/uploads/9-GitLens-SSO.png" class="img-responsive center img-bordered">
 
-After clicking “Sign in with SSO”, the SSO form will open and ask for an email address to use for SSO login. The app will then check the email and determine whether the email address belongs to a single IdP for SSO. When the email address is successfully identified, the user will be taken to that IdP to login.
+After clicking `Sign in with SSO`, the SSO form will open and ask for an email address to use for SSO login. The app will then check the email and determine whether the email address belongs to a single IdP for SSO. When the email address is successfully identified, the user will be taken to that IdP to login.
 
 Once authenticated, the user may use GitLens+
 
@@ -129,13 +129,13 @@ And when stashing changes, the stash name will now default to any entry in the c
 
 ### Stats in comparisons
 
-There are now stats about additions & deletions in files nodes in comparisons. To get these stats, navigate to the Search & Compare view in the Sidebar and create a comparison between commits.
+There are now stats about additions & deletions in files nodes in comparisons. To get these stats, navigate to the `Search & Compare` view in the Sidebar and create a comparison between commits.
 
 <img src="/wp-content/uploads/11-comparison-stats.png" class="img-responsive center img-bordered">
 
 ### Search for text in Interactive Rebase Editor
 
-And users may now search for text on the Interactive Rebase Editor using <kbd>Ctrl</kbd> <kbd>F</kbd>.
+And users may now search for text on the `Interactive Rebase Editor` using <kbd>Ctrl</kbd> <kbd>F</kbd>.
 
 <img src="/wp-content/uploads/12-interactive-rebase-text-search.png" class="img-responsive center img-bordered">
 
