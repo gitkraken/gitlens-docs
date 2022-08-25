@@ -39,15 +39,6 @@ Gain addditional insights on hover.
 
 ***
 
-
-##Coming Soon
-
-You can expect more features like the GitKraken commit graph, which will help you visualize branch structure and commit history. It not only helps verify your recent Git actions on the repo, but also shows who made what code changes and when.
-
-<img src="/wp-content/uploads/coming-soon-gk-graph.png" class="img-bordered img-responsive center">
-
-***
-
 ##FAQ
 
 ###What are GitLens+ features?
