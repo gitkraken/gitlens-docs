@@ -357,22 +357,6 @@ For example, if you uncheck the _Add to the editor group toolbar_ you will see t
 
 You can also expand each group to control each area more granularly.
 
-##Commit Graph - Preview
-
-The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
-
-<img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
-
-To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
-
-<img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
-
-<div class='callout callout--basic'>
-    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
-    
-    The Commit Graph is in Preview mode, and we’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
-</div>
-
 ##Commit Details View
 
 The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
@@ -384,30 +368,3 @@ Click on a file to open the diff, and see what changed. You may also hover over 
 To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
 
 <img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
-
-##Single Sign On
-
-Single Sign on offers a secure and easy way to sign into your account. To configure Single Sign On for your account, refer to the Single Sign On guide <a href='https://help.gitkraken.com/gitkraken-client/single-sign-on/' target='_blank'>here</a>.
-
-###Requirements and Configuration
-
-Your GitKraken account may initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
-
-- Azure Active Directory
-- Okta
-- Google Identity Platform
-- Ping Identity
-
-Please note that your IdP will first need to be configured before setting up the connection in your GitKraken account. For assistance, please contact your IdP administrator or consult the IdP documentation for help. 
-
-Additional requirements:
-- Configurable only by GitKraken Owner or Admin
-- Subscribed to either the <a href='https://www.gitkraken.com/gitlens/pricing' target='_blank'>Teams or Enterprise plan</a>
-
-###Signing in with Single Sign On
-
-GitLens+ users will see the option to Sign in with SSO from the login screen.
-
-<img src="/wp-content/uploads/single-sign-on.png" class="img-bordered img-responsive center">
-
-After clicking “Sign in with SSO”, the SSO form will open and ask for an email address to use for SSO login. The app will then check the email and determine whether the email address belongs to a single IdP for SSO. When the email address is successfully identified, the user will be taken to that IdP to login.
