@@ -98,6 +98,18 @@ After clicking “Sign in with SSO”, the SSO form will open and ask for an ema
 
 ***
 
+GitHub Enterprise Integration
+
+GitLens+ offers a richer integration with GitHub Enterprise.
+
+Once authenticated, GitLens will enrich GitHub autolinks in the hovers. You’ll see your GitHub Enterprise avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+
+<img src="/wp-content/uploads/github-enterprise-integration.png" class="img-bordered img-responsive center">
+
+See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure GitHub Enterprise.
+
+***
+
 ##FAQ
 
 ###What are GitLens+ features?
