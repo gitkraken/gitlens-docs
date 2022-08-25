@@ -35,7 +35,7 @@ Users may now view the Commit Graph of their repository through GitLens.
 
 This beloved feature from GitKraken Client helps visualize your repo commit history and give you information about branches, commits, and collaborators all in one view — making it easier to see contributions and help you make faster, more informed decisions.
 
-<img src="/wp-content/uploads/1-commit-graph-1600x900.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/1-commit-graph.png" class="img-responsive center img-bordered">
 
 To open the Commit Graph, open the command palette using the keyboard shortcut <kbd>Cmd</kbd> <kdb>Shift</kbd> <kbd>P</kbd> and type `Show Commit Graph`.
 
