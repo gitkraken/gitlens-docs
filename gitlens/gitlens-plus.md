@@ -17,6 +17,24 @@ The introduction of GitLens+ has no impact on existing GitLens features. You’r
 
 ***
 
+##Commit Graph - Preview
+
+The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
+
+<img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
+
+To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
+
+<img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
+
+<div class='callout callout--basic'>
+    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
+    
+    The Commit Graph is in Preview mode, and we’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
+</div>
+
+***
+
 ##Worktrees
 Create <a href="https://www.gitkraken.com/learn/git/git-worktree" target="_blank">Git Worktrees</a> that allow multiple branches to be checked-out at once on the same repository. This makes it easier to develop on, or test multiple branches, by minimizing the context switching between branches.
 
@@ -38,22 +56,6 @@ Gain addditional insights on hover.
 <img src="/wp-content/uploads/visual-file-history-hover.png" class="img-bordered img-responsive center">
 
 ***
-
-##Commit Graph - Preview
-
-The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
-
-<img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
-
-To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
-
-<img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
-
-<div class='callout callout--basic'>
-    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
-    
-    The Commit Graph is in Preview mode, and we’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
-</div>
 
 ##Commit Details View
 
@@ -98,15 +100,15 @@ After clicking “Sign in with SSO”, the SSO form will open and ask for an ema
 
 ***
 
-GitHub Enterprise Integration
+##GitHub Enterprise and GitLab Self-Managed Integration
 
-GitLens+ offers a richer integration with GitHub Enterprise.
+GitLens+ offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
 
-Once authenticated, GitLens will enrich GitHub autolinks in the hovers. You’ll see your GitHub Enterprise avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
 
-<img src="/wp-content/uploads/github-enterprise-integration.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
 
-See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure GitHub Enterprise.
+See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
 
 ***
 
