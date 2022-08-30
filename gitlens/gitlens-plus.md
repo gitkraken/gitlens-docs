@@ -17,6 +17,24 @@ The introduction of GitLens+ has no impact on existing GitLens features. You’r
 
 ***
 
+##Commit Graph - Preview
+
+The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
+
+<img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
+
+To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
+
+<img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
+
+<div class='callout callout--basic'>
+    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
+    
+    The Commit Graph is in Preview mode, and we’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
+</div>
+
+***
+
 ##Worktrees
 Create <a href="https://www.gitkraken.com/learn/git/git-worktree" target="_blank">Git Worktrees</a> that allow multiple branches to be checked-out at once on the same repository. This makes it easier to develop on, or test multiple branches, by minimizing the context switching between branches.
 
@@ -39,12 +57,58 @@ Gain addditional insights on hover.
 
 ***
 
+##Commit Details View
 
-##Coming Soon
+The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
 
-You can expect more features like the GitKraken commit graph, which will help you visualize branch structure and commit history. It not only helps verify your recent Git actions on the repo, but also shows who made what code changes and when.
+Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
 
-<img src="/wp-content/uploads/coming-soon-gk-graph.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commit-details-view.png" class="img-bordered img-responsive center">
+
+To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
+
+<img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
+
+***
+
+##Single Sign On
+
+Single Sign on offers a secure and easy way to sign into your account. To configure Single Sign On for your organization, refer to the Single Sign On guide <a href='https://help.gitkraken.com/gitkraken-client/single-sign-on/' target='_blank'>here</a>.
+
+###Requirements and Configuration
+
+Your GitKraken account may initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
+
+- Azure Active Directory
+- Okta
+- Google Identity Platform
+- Ping Identity
+
+Please note that your IdP will first need to be configured before setting up the connection in your GitKraken account. For assistance, please contact your IdP administrator or consult the IdP documentation for help. 
+
+Additional requirements:
+- Configurable only by GitKraken Owner or Admin
+- Subscribed to either the <a href='https://www.gitkraken.com/gitlens/pricing' target='_blank'>Teams or Enterprise plan</a>
+
+###Signing in with Single Sign On
+
+GitLens+ users will see the option to Sign in with SSO from the login screen.
+
+<img src="/wp-content/uploads/single-sign-on.png" class="img-bordered img-responsive center">
+
+After clicking “Sign in with SSO”, the SSO form will open and ask for an email address to use for SSO login. The app will then check the email and determine whether the email address belongs to a single IdP for SSO. When the email address is successfully identified, the user will be taken to that IdP to login.
+
+***
+
+##GitHub Enterprise and GitLab Self-Managed Integration
+
+GitLens+ offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
+
+Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+
+<img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
+
+See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
 
 ***
 

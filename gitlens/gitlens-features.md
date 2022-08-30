@@ -1,6 +1,6 @@
 ---
 
-title: Features
+title: GitLens Features
 description: GitLens Features
 taxonomy:
     category: gitlens
@@ -356,3 +356,15 @@ For example, if you uncheck the _Add to the editor group toolbar_ you will see t
 <img src="/wp-content/uploads/menus-example.png" class="img-bordered img-responsive center">
 
 You can also expand each group to control each area more granularly.
+
+##Commit Details View
+
+The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
+
+Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
+
+<img src="/wp-content/uploads/commit-details-view.png" class="img-bordered img-responsive center">
+
+To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
+
+<img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
