@@ -35,4 +35,4 @@ Join our public slack community and interact with other GitKraken GitLens users 
 [GitKraken Slack](https://slack.gitkraken.com/)
 
 Didn't find what you're looking for in all of our documentation and help articles? Paid users can reach out to our support team.
-[Contact Support ✉](https://www.gitkraken.com/gitlens-support)
+[Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support)
