@@ -10,9 +10,7 @@ taxonomy:
 <img src="/wp-content/uploads/gl-graphic-image.png" class="img-bordered img-responsive center">
 
 
-Sign up for GitLens+ to unlock powerful additional features like Worktrees and Visual File History – with more coming soon! It’s completely free to create your account, which enables you to utilize GitLens+ features with public repos indefinitely and private repos during your automatic 7-day trial of GitLens+ Pro. After your Pro trial, your account will enable you to upgrade to a <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>paid plan</a>  if you’d like, or you can simply continue using GitLens+ features with public repos for free. 
-
-The introduction of GitLens+ has no impact on existing GitLens features. You’re not losing access to any of the features you know and love. In fact, more core features will continue to be added to GitLens. Signing up for GitLens+ simply gives you access to certain additional features that enable you to get even more out of Git in VS Code!
+GitLens+ is powerful set of additional features like Worktrees, Visual File History, the Commit Graph – with more coming soon! You may use GitLens+ features with public repos indefinitely and private repos during your automatic 7-day trial of GitLens+ Pro. After your Pro trial, your account will enable you to upgrade to a <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>paid plan</a>  if you’d like, or you can simply continue using GitLens+ features with public repos for free. 
 
 
 ***
