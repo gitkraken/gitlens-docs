@@ -17,14 +17,14 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
-<a id="v12-2"></a>
+<a id="v13-0"></a>
 ## Version 13.0
 
 ### Monday, October 17th, 2022
 
 Find what you seek. 
 
-<img src="/wp-content/uploads/GitLens-Hero-2.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlens-13-social.png" class="img-responsive center img-bordered">
 
 ## ✨GitLens+ Features for All on Local & Public Repos
 
