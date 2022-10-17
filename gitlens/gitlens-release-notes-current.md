@@ -15,6 +15,126 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="button button--basic ">Install Current Version Now</a>
 
+***
+
+<a id="v12-2"></a>
+## Version 13.0
+
+### Monday, October 17th, 2022
+
+Find what you seek. 
+
+<img src="/wp-content/uploads/GitLens-Hero-2.png" class="img-responsive center img-bordered">
+
+## ✨GitLens+ Features for All on Local & Public Repos
+
+With GitLens 13.0, we are excited to bring the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL  users on local and public repos. No account required. 
+
+Here’s how to get started with each of the GitLens+ features with your local or public repos:
+
+- [Commit Graph](https://help.gitkraken.com/gitlens/gitlens-plus/#commit-graph)
+- [Worktrees](https://help.gitkraken.com/gitlens/gitlens-plus/#visual-file-history)
+- [Visual File History](https://help.gitkraken.com/gitlens/gitlens-plus/#visual-file-history)
+
+## ✨Commit Graph  - Now out of Preview!
+
+We’re delighted to announce that the Commit Graph is out of Preview, and is full featured! This means you may now interact with the Commit Graph directly and take actions like:
+
+- Interact with branches, commits, tags and more with right-click context menus
+- Double click a branch to checkout a branch
+- Search and filter for commits
+- Get information about Pull Requests
+
+### Full context menu support
+
+Interact with your branches, commits, and more! Context menus are now available when you right click on any branch, tag, commit, or author in the Commit Graph. You may even interact with the Commit Graph column headers to the author, date or SHA columns. So much power! 
+
+<img src="/wp-content/uploads/Commit-Search-Context-Menus.gif" class="img-responsive center img-bordered">
+
+Context menu actions include but are not limited to:
+
+- Switch to Branch
+- Revert Commit
+- Switch to Commit
+- Create Branch
+- Merge
+- Rebase
+- Create Worktree
+- Create Pull Request
+
+### Rich commit search
+
+Find exactly what you are looking for with the rich search on the powerful new Commit Graph. 
+
+Whether searching for a specific commit, message, author, a changed file or files, or even a specific code change, the Commit Graph will highlight matching results across your entire repository. Use shortcut keys or the up/down arrows on the search bar  to navigate the search results; `F3` (also `Cmd+G` on macOS) goes to the next result from your selection while  `Shift+F3`  ( also `Shift+Cmd+G` on macOS) goes to the previous. Additionally you can quickly jump to the first or  last result, by holding `Shift` while clicking on the up/down arrows respectively – to make it easy to see when a file or change was introduced into the codebase.
+
+<img src="/wp-content/uploads/Rich-Commit-Search.png" class="img-responsive center img-bordered">
+
+Once you type search filtering criteria, use the arrow icons to move through each result.
+
+<img src="/wp-content/uploads/Commit-Search-Moving-Arrow-Keys.gif" class="img-responsive center img-bordered">
+
+### PR information in form of icon
+
+Wait, which branch has that PR? 
+
+If connected to one of the rich integrations with GitHub or GitLab, the Commit Graph will display a PR icon for any branch currently in PR. Right-click on the PR icon to open the PR on the GitHub or GitLab, or copy the URL.
+
+<img src="/wp-content/uploads/PR-Icon.png" class="img-responsive center img-bordered">
+
+### Hiding remotes, branches or tags
+
+Need to focus and have too many remotes or just want to curate how much is shown in your Commit Graph? Now you can hide entire remotes, or specific branches and tags. Hover over any  branch or tag to access the “Hide” button  or right-click to hide the whole remote, or just the local or remote branch, to help focus your Commit Graph.
+
+<img src="/wp-content/uploads/Branch-Hide.png" class="img-responsive center img-bordered">
+
+### All new home view
+
+It’s a homecoming! Our GitLens home view has a new look, with quick links to our Getting Started guides, Integrations, Trial info, and Feature spotlights. 
+
+<img src="/wp-content/uploads/GitLens-Home.png" class="img-responsive center img-bordered">
+
+### List or tree view in Commit Details View
+
+The Commit Details View, which gives you contextual change info about your code, got a new toggle for List and Tree view.
+
+<img src="/wp-content/uploads/view-as-list.png" class="img-responsive center img-bordered">
+
+To open the Commit Details view, open the command palette using <kbd>Cmd+Shift+P</kbd> and type: Show Commit Details view or navigate to the Commit Details view in the Side Bar.
+
+# Change Log
+
+### Added
+
+- ✨ All GitLens+ features on public and local repos are now available to everyone -- no account required!
+  - We want to bring the power of GitLens+ features to more people without any gates.
+- ✨ Commit Graph is out of preview!
+  - Rich search features to find exactly what you're looking for:
+    - Powerful filters to search by commit, message, author, a changed file or files, or even a specific code change
+    - Searches look at ALL commits in a repository, not just what's shown in the graph
+  - PR support for connected rich integrations (GitHub/GitLab)
+  - Contextual right-click menus with popular actions for commits, branches, tags, and authors
+  - Personalization of your graph experience
+    - Show and hide branches and columns
+    - Settings UI for easy fine-grain control over advanced settings
+- Adds `View as Tree` option for changed files in the _Commit Details_ view
+- Adds an `Open in Commit Graph` action to the hovers and commit quick pick menus
+
+### Changed
+
+- Updates the `Home View` with all new design and content
+- Changes the `Show Commit` action in the hovers to `Show Details` and opens the _Commit Details_ view
+
+### Fixed
+
+- Fixes [#2203](https://github.com/gitkraken/vscode-gitlens/issues/2203) - Autolinks missing under commit details
+- Fixes [#2230](https://github.com/gitkraken/vscode-gitlens/issues/2230) - j and k are inverted in ascending rebase order
+- Fixes [#2195](https://github.com/gitkraken/vscode-gitlens/issues/2195) - Cannot open new files from commit details
+- Fixes Commit Details view showing incorrect diffs for certain commits
+- Fixes Commit Details view showing incorrect actions for uncommitted changes
+- Fixes prioritization of multiple PRs associated with the same commit to choose a merged PR over others
+- Fixes Graph not showing account banners when access is not allowed and trial banners were previously dismissed
+
 
 ***
 
