@@ -24,7 +24,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 Find what you seek. 
 
-<img src="/wp-content/uploads/gitlens-13-social.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlens-13-social-3x.png" class="img-responsive center img-bordered">
 
 ## ✨GitLens+ Features for All on Local & Public Repos
 
