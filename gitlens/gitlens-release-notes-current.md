@@ -28,12 +28,12 @@ Find what you seek.
 
 ## ✨GitLens+ Features for All on Local & Public Repos
 
-With GitLens 13.0, we are excited to bring the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL  users on local and public repos. No account required. 
+With GitLens 13.0, we are excited to bring the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL  users on local and public repos. No account required. Learn more about the changes happening with GitLens in this [article](https://www.gitkraken.com/blog/gitlens-13).
 
 Here’s how to get started with each of the GitLens+ features with your local or public repos:
 
 - [Commit Graph](https://help.gitkraken.com/gitlens/gitlens-plus/#commit-graph)
-- [Worktrees](https://help.gitkraken.com/gitlens/gitlens-plus/#visual-file-history)
+- [Worktrees](https://help.gitkraken.com/gitlens/gitlens-plus/#worktrees)
 - [Visual File History](https://help.gitkraken.com/gitlens/gitlens-plus/#visual-file-history)
 
 ## ✨Commit Graph  - Now out of Preview!
