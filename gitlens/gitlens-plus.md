@@ -160,7 +160,7 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 
 ###What are GitLens+ features?
 
-Initially, in GitLens 12 we introduced new GitLens+ features that include Worktrees and Visual File History. But we have tons of new visualization and collaboration features in the pipeline.
+Initially, in GitLens 12 we introduced new GitLens+ features that include Worktrees and Visual File History. Later we added the Commit Graph, see above all the additions we have made, with more to come!
 
 ###What is GitLens+?
 
@@ -169,3 +169,12 @@ GitLens+ is a set of exciting new visualization and code collaboration capabilit
 ###Is GitLens still free?
 
 Yes, GitLens is free. All core features will continue to be free without an account. In fact, we’re still adding many core features to GitLens. GitLens+ features are purely additive and provide a richer, more powerful experience.
+
+
+###Is GitLens+ free?
+
+GitLens+ requires a paid license when working with private repoistories. For local and public repositories it is free. To summarize: 
+
++ GitLens is COMPLETELY FREE, no account is required, and can be used on any local repository.
++ GitLens+ features on local & public repositories are also COMPLETELY FREE.
++ GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
