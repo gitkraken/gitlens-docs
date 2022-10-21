@@ -15,7 +15,7 @@ The first question to answer: do I need an account to use GitLens or GitLens+?
 + GitLens+ features on local & public repositories are also COMPLETELY FREE.
 + GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
 
-If you are working with GitLens+ features on private repositories, you will need to create an acount and purchase a license. See below for more information.
+If you are working with GitLens+ features on private repositories, you will need to create an account and purchase a license. See below for more information.
 
 ***
 
