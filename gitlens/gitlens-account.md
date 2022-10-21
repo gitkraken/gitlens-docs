@@ -9,6 +9,14 @@ taxonomy:
 
 Whether a solo user on a personal license, or an owner managing multiple teams across organizations, learn how to manage your GitKraken GitLens account(s), subscription(s), and organization(s).
 
+The first question to answer: do I need an account to use GitLens or GitLens+? 
+
++ GitLens is COMPLETELY FREE, no account is required, and can be used on any local repository.
++ GitLens+ features on local & public repositories are also COMPLETELY FREE.
++ GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
+
+If you are working with GitLens+ features on private repositories, you will need to create an account and purchase a license. See below for more information.
+
 ***
 
 ## Sign-up and Purchase
@@ -20,7 +28,7 @@ Once your account is created, you can purchase a plan by clicking 🚀 **Purchas
 Next you will be promted to select how many licenses you want and enter your billing information. Fill out all relevant fields and click <button class='button button--success button--ui button--nolink'>Complete purchase</button>.
 
 <div class='callout callout--warning'>
-    <p><strong>Note:</strong> If you are purchasing a license for just your personal use or otherwise not part of an organization, you can eter a value of your choice. Most use "Personal" or "Self."</p>
+    <p><strong>Note:</strong> If you are purchasing a license for just your personal use or otherwise not part of an organization, you can enter a value of your choice. Most use "Personal" or "Self."</p>
 </div>
 
 If you already have an **Organization** or **Trial Organization**, you can click on the existing organization instead and navigate to `Subscription` to change the license or add users.
