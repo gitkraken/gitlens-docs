@@ -175,6 +175,6 @@ Yes, GitLens is free. All core features will continue to be free without an acco
 
 GitLens+ requires a paid license when working with private repoistories. For local and public repositories it is free. To summarize: 
 
-+ GitLens is COMPLETELY FREE, no account is required, and can be used on any local repository.
-+ GitLens+ features on local & public repositories are also COMPLETELY FREE.
++ GitLens is **free**, no account required, and can be used on any local repository.
++ GitLens+ features on local & public repositories are also **free**.
 + GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
