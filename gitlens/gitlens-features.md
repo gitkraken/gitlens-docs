@@ -299,6 +299,30 @@ Additionally, these integrations provide commands to copy the url of or open, fi
 - Open _Repository on Remote_ command (`gitlens.openRepoOnRemote`) — opens the repository on the remote provider
 - Copy _Remote Repository Url_ command (`gitlens.copyRemoteRepositoryUrl`) — copies the url of the repository on the remote provider
 
+###Connecting the GitHub Integration
+
+To connect the GitHub integration, open a GitHub.com repository in Visual Studio Code. Then, select a file and hover over the line blame to get the details hover. From here, select `Connect to GitHub`.
+
+<img src="/wp-content/uploads/gl-connect-to-github.png" class="img-bordered img-responsive center">
+
+If you are prompted to sign in using GitHub, select `Allow`.
+
+<img src="/wp-content/uploads/gh-sign-in.png" class="img-bordered img-responsive center">
+
+Finally, you will be taken to a browser where you will be prompted to sign into GitHub and `Authorize Visual-Studio-Code` to finish connecting. 
+
+<img src="/wp-content/uploads/gh-authorize.png" class="img-bordered img-responsive center">
+
+###Connecting the GitLab Integration
+
+To connect the GitLab integration, open a GitLab.com repository in Visual Studio Code. Then, select a file and hover over the line blame to get the details hover. From here, select the option to `Connect to GitLab`.
+
+<img src="/wp-content/uploads/gl-connect-to-gitlab.png" class="img-bordered img-responsive center">
+
+Next, you will be prompted to provide a Personal Access Token from GitLab.com. If you do not have one already with the required scopes, [follow these instructions](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) to create one. The required scopes for the token are `read_api`, `read_user`, and `read_repository`. Once you have your token, copy and paste it into the prompt and hit `Enter` to finish connecting. 
+
+<img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
+
 ***
 
 ##Powerful Commands
