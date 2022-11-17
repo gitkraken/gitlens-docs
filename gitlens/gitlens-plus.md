@@ -48,6 +48,7 @@ The following options can be used to search:
 - `Author:`
 - `File:`
 - `Change:`
+- `@me`
 
 Additionally, the options on the right side of the search bar can be used to match all, match case, or use regular expression.
 
