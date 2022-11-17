@@ -11,9 +11,9 @@ The answers to your important frequently asked questions.
 
 ***
 
-### How do I sign in or out of my GitKraken GitLens+ account?
+### How do I sign in or out of GitLens?
 
-To sign into your GitKraken GitLens+ account, click the GitLens icon in the left sidebar and select `Sign In`.
+To sign into your GitLens account, click the GitLens icon in the left sidebar and select `Sign In`.
 
 <img src="/wp-content/uploads/gl-sign-in-1.png" class="img-bordered img-responsive center">
 
