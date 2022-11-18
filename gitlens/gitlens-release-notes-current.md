@@ -26,44 +26,54 @@ With GitLens 13, we released the power of GitLens+ features like the Commit Grap
 
 <img src="/wp-content/uploads/GitLens-13-1-Hero.png" class="img-responsive center img-bordered">
 
-## Commit Graph Enhancements 
+## Commit Graph Enhancements
+
 ### Search History
+
 Find what you seek with ease! Quickly navigate through your search history by using the  UP⇧ or DOWN⇩ arrow keys.
 
 <img src="/wp-content/uploads/New-Search-History.gif" class="img-responsive center img-bordered">
 
 ### New Search Filter @me
+
 Want to see only your commits? Search For  @me to highlight only your commits.
 
 <img src="/wp-content/uploads/atmegif.gif" class="img-responsive center img-bordered">
 
-## Faster Interactive Rebase Editor - 
+## Faster Interactive Rebase Editor
+
 With GitLens 13.1, we overhauled the Interactive Rebase Editor. It is now dramatically faster, especially for large rebases. We also streamlined the user experience with a persistent header and footer to ensure you always have important context visible and can quickly start or abort the rebase. Also, anytime the commit author and committer are different, you will see both of their avatars.
 
 <img src="/wp-content/uploads/Faster-Interactive-Rebase-Editor.png" class="img-responsive center img-bordered">
 
-### Commit Details View Usage -
+### Commit Details View Usage
+
 Need additional details to complete your rebase more efficiently? Now, as you navigate commits, we show the selected commit details in the Commit Details view.
 
-## Commit Details View Improvements  -
+## Commit Details View Improvements
 
-### Custom Autolinks -
+### Custom Autolinks
+
 Custom and basic provider-based autolinks are now shown in the Autolinks section.
 
-### Customizable Settings - 
+### Customizable Settings
+
 You can now customize the Commit Details view from the GitLens Settings editor to personalize how it looks and behaves so you can focus on the most  important details.
 
 <img src="/wp-content/uploads/commit-details-view-1.png" class="img-responsive center img-bordered">
 
-## Terminal Links Can Use the Commit Details View - 
+## Terminal Links Can Use the Commit Details View
+
 Terminal Links for commits in VS Code’s integrated terminal now use the Commit Details view to provide rich details about the selected commit.
 
 ## GitLens Home View Updates
+
 Keeping a home tidy is important! We’ve streamlined the Home view to make it even easier to get started with GitLens, learn about its features, and how to personalize your experience.
 
 <img src="/wp-content/uploads/New-Home-Side-Panel.png" class="img-responsive center img-bordered">
 
 ## Added 
+
 - Adds Commit Graph enhancements
   - Adds the ability to set keyboard shortcuts to commits and stashes on the Commit Graph — closes [#2345](https://github.com/gitkraken/vscode-gitlens/issues/2345)
     - Keyboard shortcuts can be applied to many of the gitlens.graph.* commands and should use gitlens:webview:graph:focus && !gitlens:webview:graph:inputFocus for their "When Expression" to only apply when the Commit Graph is focused
@@ -103,6 +113,7 @@ Keeping a home tidy is important! We’ve streamlined the Home view to make it e
   - Honors the overall VS Code telemetry settings and add a gitlens.telemetry.enabled setting opt-out specifically for GitLens
 
 ## Changed
+
 - Changes the Home view to always be available and polishes the experience
 - Changes SHA terminal links to use the Commit Details view — closes [#2320](https://github.com/gitkraken/vscode-gitlens/issues/2320)
   - Adds a gitlens.terminalLinks.showDetailsView setting to specify whether to show the Commit Details view when clicking on a commit link
@@ -111,6 +122,7 @@ Keeping a home tidy is important! We’ve streamlined the Home view to make it e
 - Polishes webview (Commit Graph, Interactive Rebase Editor, etc) scroll bars to match VS Code's style and behavior
 
 ## Fixed
+
 - Fixes [#2339](https://github.com/gitkraken/vscode-gitlens/issues/2339) - Commit details "Autolinks" group shows wrong count
 - Fixes [#2346](https://github.com/gitkraken/vscode-gitlens/issues/2346) - Multiple cursors on the same line duplicate inline annotations; thanks to PR [#2347](https://github.com/gitkraken/vscode-gitlens/pull/2347) by Yonatan Greenfeld [@YonatanGreenfeld](https://github.com/YonatanGreenfeld)
 - Fixes [#2344](https://github.com/gitkraken/vscode-gitlens/issues/2344) - copying abbreviated commit SHAs is not working
