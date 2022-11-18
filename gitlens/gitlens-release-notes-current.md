@@ -22,7 +22,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ### Thursday, November 17th, 2022
 
-With GitLens 13, we released the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL users on local and public repos. No account required. Learn more about the changes happening with GitLens in this article.
+With GitLens 13, we released the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL users on local and public repos. No account required. Learn more about the changes happening with GitLens in this [article](https://www.gitkraken.com/blog/gitlens-13).
 
 <img src="/wp-content/uploads/GitLens-13-1-Hero.png" class="img-responsive center img-bordered">
 
