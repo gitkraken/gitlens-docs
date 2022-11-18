@@ -7,13 +7,132 @@ taxonomy:
 
 ---
 
-Find out what’s new, what’s fixed, or just take a trip down memory lane with a nostalgic swagger, remembering those bugs of yesterday.
+Find out what’s new, what’s fixed, or just take a trip down memory lane remembering those bugs of yesterday.
 
 
 Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/CHANGELOG.md) to see linked issues and past changes.
 
 
 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="button button--basic ">Install Current Version Now</a>
+
+***
+
+<a id="v13-1"></a>
+## Version 13.1
+
+### Thursday, November 17th, 2022
+...
+
+With GitLens 13, we released the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL users on local and public repos. No account required. Learn more about the changes happening with GitLens in this article.
+
+<img src="/wp-content/uploads/GitLens-13-1-Hero.png" class="img-responsive center img-bordered">
+
+## Commit Graph Enhancements 
+### Search History
+Find what you seek with ease! Quickly navigate through your search history by using the  UP⇧ or DOWN⇩ arrow keys.
+
+<img src="/wp-content/uploads/New-Search-History.gif" class="img-responsive center img-bordered">
+
+### New Search Filter @me
+Want to see only your commits? Search For  @me to highlight only your commits.
+
+<img src="/wp-content/uploads/atmegif.gif" class="img-responsive center img-bordered">
+
+## Faster Interactive Rebase Editor - 
+With GitLens 13.1, we overhauled the Interactive Rebase Editor. It is now dramatically faster, especially for large rebases. We also streamlined the user experience with a persistent header and footer to ensure you always have important context visible and can quickly start or abort the rebase. Also, anytime the commit author and committer are different, you will see both of their avatars.
+
+<img src="/wp-content/uploads/Faster-Interactive-Rebase-Editor.png" class="img-responsive center img-bordered">
+
+### Commit Details View Usage -
+Need additional details to complete your rebase more efficiently? Now, as you navigate commits, we show the selected commit details in the Commit Details view.
+
+## Commit Details View Improvements  -
+
+### Custom Autolinks -
+Custom and basic provider-based autolinks are now shown in the Autolinks section.
+
+### Customizable Settings - 
+You can now customize the Commit Details view from the GitLens Settings editor to personalize how it looks and behaves so you can focus on the most  important details.
+
+<img src="/wp-content/uploads/commit-details-view.png" class="img-responsive center img-bordered">
+
+## Terminal Links Can Use the Commit Details View - 
+Terminal Links for commits in VS Code’s integrated terminal now use the Commit Details view to provide rich details about the selected commit.
+
+## GitLens Home View Updates
+Keeping a home tidy is important! We’ve streamlined the Home view to make it even easier to get started with GitLens, learn about its features, and how to personalize your experience.
+
+<img src="/wp-content/uploads/New-Home-Side-Panel.png" class="img-responsive center img-bordered">
+
+## Added 
+- Adds Commit Graph enhancements
+  - Adds the ability to set keyboard shortcuts to commits and stashes on the Commit Graph — closes [#2345](https://github.com/gitkraken/vscode-gitlens/issues/2345)
+    - Keyboard shortcuts can be applied to many of the gitlens.graph.* commands and should use gitlens:webview:graph:focus && !gitlens:webview:graph:inputFocus for their "When Expression" to only apply when the Commit Graph is focused
+    - For example, add the following to your keybindings.json to allow Ctrl+C to copy the selected commit's SHA to the clipboard
+{
+    "key": "ctrl+c",
+    "command": "gitlens.graph.copySha",
+    "when": "gitlens:webview:graph:focus && !gitlens:webview:graph:inputFocus"
+}
+- Automatically selects the HEAD commit in the Commit Graph when switching branches
+- Improves performance of updating the Commit Graph when the repository changes
+- Improves performance by avoiding unnecessary updates to the Commit Details view when selection changes
+- Adds a @me search filter to the search box
+- Adds history navigation to the search box in the Commit Graph
+  - When the search field is focused, use the up arrow and down arrow to navigate through any previous searches that yielded results
+  - Adds ability to reset to any commit in the Commit Graph and GitLens views — closes [#2326](https://github.com/gitkraken/vscode-gitlens/issues/2326)
+- Adds Interactive Rebase Editor performance and UX improvements
+  - Changes the header and footer to always be visible
+  - Shows the Commit Details view on commit selection
+    - Adds a gitlens.rebaseEditor.showDetailsView setting to specify when to show the Commit Details view for the selected row in the Interactive Rebase Editor
+  - Adds full (multiline) commit message
+  - Adds the f fixup shortcut key to UI
+  - Consolidates the UI for author and committer information into a stack of avatars
+  - Adds emoji support for commit messages — closes [#1789](https://github.com/gitkraken/vscode-gitlens/issues/1789)
+  - Ensures that large rebases show rich commit details
+- Adds Commit Details view improvements
+  - Adds custom and non-rich integration-based autolinks and improves autolink display
+  - Improves performance by avoiding unnecessary updates
+  - Avoids "pinning" commits by default when opened from the Commit Graph, Visual File History, quick picks, etc
+  - Adds a Open in Commit Graph button even when showing uncommitted changes
+- Adds new sections and settings to the GitLens Interactive Settings
+  - Adds a new Commit Details view section
+  - Adds a new Terminal Links section
+  - Adds autolink configuration to the Hovers section
+- Adds a @me search filter to commit search in the Search & Compare view and quick pick
+- Adds product usage telemetry
+  - Honors the overall VS Code telemetry settings and add a gitlens.telemetry.enabled setting opt-out specifically for GitLens
+
+## Changed
+- Changes the Home view to always be available and polishes the experience
+- Changes SHA terminal links to use the Commit Details view — closes [#2320](https://github.com/gitkraken/vscode-gitlens/issues/2320)
+  - Adds a gitlens.terminalLinks.showDetailsView setting to specify whether to show the Commit Details view when clicking on a commit link
+- Changes to uses VS Code as Git's core.editor for terminal run commands — closes [#2134](https://github.com/gitkraken/vscode-gitlens/issues/2134) thanks to PR [#2135](https://github.com/gitkraken/vscode-gitlens/pull/2135) by Nafiur Rahman Khadem [@ShafinKhadem](https://github.com/ShafinKhadem)
+  - Adds a gitlens.terminal.overrideGitEditor setting to specify whether to use VS Code as Git's core.editor for GitLens terminal commands
+- Polishes webview (Commit Graph, Interactive Rebase Editor, etc) scroll bars to match VS Code's style and behavior
+
+## Fixed
+- Fixes [#2339](https://github.com/gitkraken/vscode-gitlens/issues/2339) - Commit details "Autolinks" group shows wrong count
+- Fixes [#2346](https://github.com/gitkraken/vscode-gitlens/issues/2346) - Multiple cursors on the same line duplicate inline annotations; thanks to PR [#2347](https://github.com/gitkraken/vscode-gitlens/pull/2347) by Yonatan Greenfeld [@YonatanGreenfeld](https://github.com/YonatanGreenfeld)
+- Fixes [#2344](https://github.com/gitkraken/vscode-gitlens/issues/2344) - copying abbreviated commit SHAs is not working
+- Fixes [#2342](https://github.com/gitkraken/vscode-gitlens/issues/2342) - Local remotes are incorrectly treated as private
+- Fixes [#2052](https://github.com/gitkraken/vscode-gitlens/issues/2052) - Interactive Rebase fails to start when using xonsh shell due to command quoting
+- Fixes [#2141](https://github.com/gitkraken/vscode-gitlens/issues/2141) - GitLens' rebase UI randomly fails loading interactive rebase when performed outside of VSC
+- Fixes [#1732](https://github.com/gitkraken/vscode-gitlens/issues/1732) - Phantom rebase-merge directory (rm -rf ".git/rebase-merge")
+- Fixes [#1652](https://github.com/gitkraken/vscode-gitlens/issues/1652) - Closing interactive rebase editor after "git rebase --edit" aborts rebase-in-progress
+- Fixes [#1549](https://github.com/gitkraken/vscode-gitlens/issues/1549) - Fetch does not work when local branch name differs from remote branch name
+- Fixes [#2292](https://github.com/gitkraken/vscode-gitlens/issues/2292) - Push button in BranchTrackingStatusNode of non-current branch does not trigger "Push force"
+- Fixes [#1488](https://github.com/gitkraken/vscode-gitlens/issues/1488) - Open Folder History not working with non-English language pack
+- Fixes [#2303](https://github.com/gitkraken/vscode-gitlens/issues/2303) - "Googlesource" gerrit only supports two levels of domain — thanks to PR [#2304](https://github.com/gitkraken/vscode-gitlens/pull/2304) by Matt Buckley [@Mattadore](https://github.com/Mattadore)
+- Fixes [#2315](https://github.com/gitkraken/vscode-gitlens/issues/2315) - Commit details secondary side bar banner doesn't stay dismissed
+- Fixes [#2329](https://github.com/gitkraken/vscode-gitlens/issues/2329) - Remember UI settings in Commit Details panel
+- Fixes [#1606](https://github.com/gitkraken/vscode-gitlens/issues/1606) - Adjusts capitalization of "URL" — thanks to PR [#2341](https://github.com/gitkraken/vscode-gitlens/pull/2341) by Dave Nicolson [@dnicolson](https://github.com/dnicolson)
+- Fixes issue where we weren't honoring the default gravatar style (gitlens.defaultGravatarsStyle) in certain cases
+- Fixes graph issue where stashes are sometimes assigned the wrong column
+- Fixes graph issue with commit rows being incorrectly hidden in some cases
+- Fixes graph issue with merge commits not being hidden correctly in some cases
+- Fixes some graph issues with hover on branch/tag labels
+
 
 ***
 
