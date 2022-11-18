@@ -21,7 +21,6 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 ## Version 13.1
 
 ### Thursday, November 17th, 2022
-...
 
 With GitLens 13, we released the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL users on local and public repos. No account required. Learn more about the changes happening with GitLens in this article.
 
@@ -54,7 +53,7 @@ Custom and basic provider-based autolinks are now shown in the Autolinks section
 ### Customizable Settings - 
 You can now customize the Commit Details view from the GitLens Settings editor to personalize how it looks and behaves so you can focus on the most  important details.
 
-<img src="/wp-content/uploads/commit-details-view.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/commit-details-view-1.png" class="img-responsive center img-bordered">
 
 ## Terminal Links Can Use the Commit Details View - 
 Terminal Links for commits in VS Code’s integrated terminal now use the Commit Details view to provide rich details about the selected commit.
