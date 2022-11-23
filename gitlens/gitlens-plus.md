@@ -32,24 +32,31 @@ To open the Commit Graph, open the command palette using the keyboard shortcut `
     We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
 </div>
 
-###Searching Commits
+###Rich Commit Search
 
-You can search for commits using the search bar at the top of the commit graph or by selecting `command/ctrl + F`. This will search all commits within the repository, not just what is shown in the commit graph. The following options can be used to search:
+The Commit Graph will highlight all matching results across your entire repository when searching for a commit, message, author, a changed file or files, or even a specific code change. Use shortcut keys or the up/down arrows on the search bar  to navigate the search results; `F3` (also `Cmd+G` on macOS) goes to the next result from your selection while  `Shift+F3`  ( also `Shift+Cmd+G` on macOS) goes to the previous. 
+
+<img src="/wp-content/uploads/Rich-Commit-Search.png" class="img-responsive center img-bordered">
+
+Once you type search filtering criteria, use the arrow icons to move through each result. Additionally, you can quickly jump to the first or last result, by holding `Shift` while clicking on the up/down arrows respectively.
+
+<img src="/wp-content/uploads/Commit-Search-Moving-Arrow-Keys.gif" class="img-responsive center img-bordered">
+
+The following options can be used to search:
 - `Commit:`
 - `Message:`
 - `Author:`
 - `File:`
 - `Change:`
-
-<img src="/wp-content/uploads/gl-search.png" srcset="/wp-content/uploads/gl-search@2x.png" class="img-bordered img-responsive center">
+- `@me`
 
 Additionally, the options on the right side of the search bar can be used to match all, match case, or use regular expression.
 
 <img src="/wp-content/uploads/search-options.png" class="img-bordered img-responsive center">
 
-###Context Menus
+###Full Context Menu Support
 
-You can right-click branches and commits to interact with them.
+You can right-click a branch, commit, tag, author, or column headers (author, commit date / time, or SHA) to interact with them. 
 
 <img src="/wp-content/uploads/gl-context-menu.gif" class="img-bordered img-responsive center">
 
@@ -70,9 +77,9 @@ For GitHub and GitLab, the commit Graph will display a Pull Request icon for any
 
 <img src="/wp-content/uploads/pull-request-icon.png" class="img-bordered img-responsive center">
 
-### Hiding refs
+### Hiding Remotes, Branches or Tags
 
-The Commit Graph shows refs to your branches and tags. Hover over any of these refs to access the “Hide” option to help focus your Commit Graph. To show them again, hover over the "Hide" option at the top of the commit graph and select the desired refs.
+The Commit Graph shows refs to your remotes, branches and tags. Hover over any of these refs to access the “Hide” option to help focus your Commit Graph. To show them again, hover over the "Hide" option at the top of the commit graph and select the desired refs.
 
 <img src="/wp-content/uploads/gl-hide-refs.gif" class="img-bordered img-responsive center">
 
