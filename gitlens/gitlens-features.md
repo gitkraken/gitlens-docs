@@ -1,7 +1,7 @@
 ---
 
 title: GitLens Features
-description: GitLens Features
+description: GitLens Feature
 taxonomy:
     category: gitlens
 
