@@ -28,15 +28,15 @@ To open the Commit Graph, open the command palette using the keyboard shortcut `
 
 At the top of the commit graph the repository name, the branch name that is currently checked out, and the last fetched time is shown. This section offers the ability to switch branches by selecting the branch name and the abity to fetch by selecting "Fetch".
 
-<img src="/wp-content/uploads/graph-info.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="img-bordered img-responsive center">
 
 The Author, Commit Date / Time, and SHA collumns can be rearranged by dragging + dropping the collumn headers and can be toggled on/off from the settings.
 
-<img src="/wp-content/uploads/graph-collumns.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/graph-collumns.png" srcset="/wp-content/uploads/graph-collumns@2x.png" class="img-bordered img-responsive center">
 
 The commit graph settings can be adjusted by opening the Command Pallete (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
 
-<img src="/wp-content/uploads/graph-collumns.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commit-graph-settings.png" srcset="/wp-content/uploads/commit-graph-settings@2x.png" class="img-bordered img-responsive center">
 
 
 <div class='callout callout--basic'>
@@ -98,7 +98,7 @@ The Commit Graph shows refs to your remotes, branches and tags. Hover over any o
 
 Filter options can be accessed from the filter dropdown. This provides the ability to switch between _Show Current Branch Only_ - to show the current branch and its upstream remote remote - or _Show All Local Branches_ - this is selected by default. Additionally, remote branches, stashes and tags can be hidden or shown. 
 
-<img src="/wp-content/uploads/filter-options.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/filter-options.png" srcset="/wp-content/uploads/filter-options@2x.png" class="img-bordered img-responsive center">
 
 ***
 
