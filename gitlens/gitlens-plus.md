@@ -26,6 +26,19 @@ To open the Commit Graph, open the command palette using the keyboard shortcut `
 
 <img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
 
+At the top of the commit graph the repository name, the branch name that is currently checked out, and the last fetched time is shown. This section offers the ability to switch branches by selecting the branch name and the abity to fetch by selecting "Fetch".
+
+<img src="/wp-content/uploads/graph-info.png" class="img-bordered img-responsive center">
+
+The Author, Commit Date / Time, and SHA collumns can be rearranged by dragging + dropping the collumn headers and can be toggled on/off from the settings.
+
+<img src="/wp-content/uploads/graph-collumns.png" class="img-bordered img-responsive center">
+
+The commit graph settings can be adjusted by opening the Command Pallete (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
+
+<img src="/wp-content/uploads/graph-collumns.png" class="img-bordered img-responsive center">
+
+
 <div class='callout callout--basic'>
     <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
     
@@ -71,7 +84,7 @@ Context menu actions include but are not limited to:
 - Create Worktree
 - Create Pull Request
 
-### Pull Request information
+### Pull Request Information
 
 For GitHub and GitLab, the commit Graph will display a Pull Request icon for any branch that currently has a pull request. You will need to connect the [rich integration](/gitlens/settings/#remote-provider-integration-settings) in order to see this.
 
@@ -82,6 +95,10 @@ For GitHub and GitLab, the commit Graph will display a Pull Request icon for any
 The Commit Graph shows refs to your remotes, branches and tags. Hover over any of these refs to access the “Hide” option to help focus your Commit Graph. To show them again, hover over the "Hide" option at the top of the commit graph and select the desired refs.
 
 <img src="/wp-content/uploads/gl-hide-refs.gif" class="img-bordered img-responsive center">
+
+Filter options can be accessed from the filter dropdown. This provides the ability to switch between _Show Current Branch Only_ - to show the current branch and its upstream remote remote - or _Show All Local Branches_ - this is selected by default. Additionally, remote branches, stashes and tags can be hidden or shown. 
+
+<img src="/wp-content/uploads/filter-options.png" class="img-bordered img-responsive center">
 
 ***
 
