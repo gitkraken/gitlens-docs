@@ -30,7 +30,7 @@ Since the release of [GitLens 13](https://www.gitkraken.com/blog/gitlens-13), we
 
 GitLens 13.2 introduces filtering , which allows you to display a subset of your graph’s information and helps you hone in on specific details of your graph that matter the most.
 
-<img src="/wp-content/uploads/filter-options.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitlens-filter-options.gif" class="img-responsive center img-bordered">
 
 #### Filtering Capabilities
 
