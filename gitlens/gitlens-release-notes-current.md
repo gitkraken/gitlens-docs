@@ -17,6 +17,107 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v13-2"></a>
+## Version 13.2
+
+### Tuesday, Dec 20th, 2022
+
+Since the release of [GitLens 13](https://www.gitkraken.com/blog/gitlens-13), we know how the power of GitLens+ features like the Commit Graph, have been helping supercharge your dev workflow. That’s why we’re excited to present GitLens 13.2, with all new (and highly requested) Graph improvements like filtering, to quickly focus on what is most important to you. We've also streamlined the Commit Graph interface with a new header bar, providing context and quick access to switch between repositories or branches, and even fetch to keep up to date. Get ready to level up your Git game with GitLens 13.2!
+
+<img src="/wp-content/uploads/gitlens-13.2-hero.png" class="img-responsive center img-bordered">
+
+### Filtering
+
+GitLens 13.2 introduces filtering , which allows you to display a subset of your graph’s information and helps you hone in on specific details of your graph that matter the most.
+
+<img src="/wp-content/uploads/gitlens-filter-options.gif" class="img-responsive center img-bordered">
+
+#### Filtering Capabilities
+
+Use graph filtering in GitLens to get laser focused on the branch you're working on and its remote:
+
+- Only Show the Current Branch
+  - Display only the branch that you’re currently working on and it’s remote. In order to focus your attention on the things landing in this branch, and then quickly unfilter to "zoom" back out and see everything in flight. 
+
+- Hide Remote Branches
+  - Hides commits from the graph view that are only on remote branches.
+
+- Hide Tags
+  - Hides all tags that point to commit rows. 
+
+- Hide Stashes
+  - Hides all stash rows.
+
+- Dim Merge Commit Rows
+  - Deemphasizes merge commit rows. 
+
+### Graph UX Improvements
+
+We've updated the user interface, so you can get to all your favorite features even faster. Now, you can access change repo, account status, and filtering from the top of the Commit Graph page.
+
+<img src="/wp-content/uploads/graph-ux-improvements.png" class="img-responsive center img-bordered">
+
+### Header Updates
+
+By merging the contextual information from the footer into the header, including the new Branch Picker and Fetch Action we’ve made it easier for you to manage your branches and work more effectively.
+
+<img src="/wp-content/uploads/drop-down.png" class="img-responsive center img-bordered">
+
+- Branch Picker
+  - Save time, by easily selecting the branch you want from the drop down branch picker.
+
+- Fetch Action
+  - Easily keep your local repo up-to-date and in sync with the fetch action.
+
+### Shortcut Keys
+
+Using the new keyboard shortcuts, `SHIFT+UP` and `SHIFT+DOWN` on the Commit Graph helps you locate what you need more efficiently and effectively by staying within the branch and moving between graph rows. This can be particularly useful if you are working on a complex project with many branches.
+
+<img src="/wp-content/uploads/shift-up-down.gif" class="img-responsive center img-bordered">
+
+### Added
+- Adds many all-new _Commit Graph_ features and improvements
+  - Adds the ability to filter commits, branches, stashes, and tags
+    - Adds a new _Filter Graph_ dropdown button at the start of the search bar
+    - Adds ability to quickly switch between _Show All Local Branches_ and _Show Current Branch Only branch_ filtering options
+      - _Show All Local Branches_ — displays all local branches (default)
+      - _Show Current Branch Only_ — displays only the current branch and it's upstream remote (if exists and _Hide Remote Branches_ isn't enabled)
+    - Adds ability to hide all remote branches, stashes, and tags
+    - Adds the ability to dim (deemphasize) merge commits
+  - Adds a new header bar to provide quick access to common actions
+    - Shows the currently selected repository with the ability to switch repositories when clicked (if multiple repositories are open)
+    - Shows the current branch with the ability to switch branches when clicked
+    - Provides a fetch action which also shows the last fetched time
+    - Also moves GitLens+ feature status and feedback links to the top right
+  - Adds new ability to reorder columns by dragging and dropping column headers (not all columns are reorderable)
+  - Adds new keyboard shortcuts
+      - Use `shift+down arrow`  and `shift+up arrow` to move to the parent/child of the selected commit row
+      - Holding the `ctrl` key with a commit row selected will highlight rows for that commit's branch
+  - Adds new settings
+    - Adds a `gitlens.graph.dimMergeCommits` setting to specify whether to dim (deemphasize) merge commit rows
+    - Adds a `gitlens.graph.scrollRowPadding` setting to specify the number of rows from the edge at which the graph will scroll when using keyboard or search to change the selected row
+
+### Changed
+- In the _Commit Graph_, increases the time to highlight associated rows when hovering over a branch to 1s
+- Removes the status bar from the _Commit Graph_ as it was replaced by the new header bar
+
+### Fixed
+- Fixes [#2394](https://github.com/gitkraken/vscode-gitlens/issues/2394) - Work in progress file diff compares working tree with working tree, instead of working tree with head
+- Fixes [#2207](https://github.com/gitkraken/vscode-gitlens/issues/2207) - Error when trying to push individual commit
+- Fixes [#2301](https://github.com/gitkraken/vscode-gitlens/issues/2301) - Create Worktree button doesn't work in certain cases
+- Fixes [#2382](https://github.com/gitkraken/vscode-gitlens/issues/2382) - commits disappearing from commit details view when they shouldn't
+- Fixes [#2318](https://github.com/gitkraken/vscode-gitlens/issues/2318) - GitLens need to login again after VS Code insiders upgrade every day
+- Fixes [#2377](https://github.com/gitkraken/vscode-gitlens/issues/2377) - Missing Azure Devops Icon
+- Fixes [#2380](https://github.com/gitkraken/vscode-gitlens/issues/2380) - Autolink fails with curly braces
+- Fixes [#2362](https://github.com/gitkraken/vscode-gitlens/issues/2362) - Visual File History becomes unavailable when the workspace contains private repo
+- Fixes [#2381](https://github.com/gitkraken/vscode-gitlens/issues/2381) - can't use scrollbar in 'Commit Graph' view
+- Fixes an issue where focusout hides toolbar actions for the graph
+- Fixes an issue where _Switch to Another Branch..._ doesn't work in the Graph editor toolbar
+- Fixes graph issue with row highlighting/dimming sticking when the graph loses focus
+- Fixes graph issue with branches remaining hovered/extended when the mouse leaves the graph
+
+***
+
 <a id="v13-1"></a>
 ## Version 13.1
 
