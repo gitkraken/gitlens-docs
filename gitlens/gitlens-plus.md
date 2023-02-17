@@ -38,6 +38,9 @@ The Author, Commit Date / Time, SHA columns, and changes column can be rearrange
 
 The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
 
+<img src="/wp-content/uploads/gl-scroll-markers.png" class="img-bordered img-responsive center">
+
+
 <div class='callout callout--basic'>
     <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
     
@@ -48,7 +51,7 @@ The scroll markers indicate points of interest on the commit graph such as check
 
 The Commit Graph settings can be adjusted by opening the Command Palette (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
 
-<img src="/wp-content/uploads/commit-graph-settings.png" srcset="/wp-content/uploads/commit-graph-settings@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/commit-graph-settings.png" class="img-bordered img-responsive center">
 
 ### Rich Commit Search
 
