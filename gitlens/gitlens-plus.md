@@ -137,7 +137,9 @@ Deep Links are links that can be used to open up a ref within the Commit Graph o
 
 ## Focus View
 
-The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests, your issues, and work in progress. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`.
+The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests, your issues, and work in progress. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`. 
+
+Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
 <img src="/wp-content/uploads/gl-focus-view.png" class="img-bordered img-responsive center">
 
