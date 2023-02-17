@@ -119,7 +119,7 @@ Additionally, each commit's additions and deletions are visualized as color-code
 
 <img src="/wp-content/uploads/visual-file-history.png" class="img-bordered img-responsive center">
 
-Gain addditional insights on hover.
+Gain additional insights on hover.
 
 <img src="/wp-content/uploads/visual-file-history-hover.png" class="img-bordered img-responsive center">
 

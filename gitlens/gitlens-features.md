@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-Core features availible to both free and paid GitLens users. 
+Core features available to both free and paid GitLens users. 
 
 ##Revision Navigation
 
