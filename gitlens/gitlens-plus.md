@@ -34,7 +34,7 @@ At the top of the commit graph the repository name, the branch name that is curr
 
 The Author, Commit Date / Time, SHA columns, and changes column can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
 
-<img src="/wp-content/uploads/gl-column-settings.png" srcset="/wp-content/uploads/graph-columns@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
 
 The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
 
