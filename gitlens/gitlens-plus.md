@@ -16,11 +16,13 @@ The introduction of GitLens+ has no impact on existing GitLens features. You’r
 
 ***
 
-##Commit Graph
+## Commit Graph
 
 The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
 
 <img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
+
+### Overview
 
 To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
 
@@ -30,14 +32,11 @@ At the top of the commit graph the repository name, the branch name that is curr
 
 <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="img-bordered img-responsive center">
 
-The Author, Commit Date / Time, and SHA columns can be rearranged by dragging + dropping the column headers and can be toggled on/off from the settings.
+The Author, Commit Date / Time, SHA columns, and changes column can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
 
-<img src="/wp-content/uploads/graph-columns.png" srcset="/wp-content/uploads/graph-columns@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-column-settings.png" srcset="/wp-content/uploads/graph-columns@2x.png" class="img-bordered img-responsive center">
 
-The commit graph settings can be adjusted by opening the Command Palette (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
-
-<img src="/wp-content/uploads/commit-graph-settings.png" srcset="/wp-content/uploads/commit-graph-settings@2x.png" class="img-bordered img-responsive center">
-
+The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
 
 <div class='callout callout--basic'>
     <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
@@ -45,7 +44,13 @@ The commit graph settings can be adjusted by opening the Command Palette (`comma
     We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
 </div>
 
-###Rich Commit Search
+### Settings
+
+The Commit Graph settings can be adjusted by opening the Command Palette (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
+
+<img src="/wp-content/uploads/commit-graph-settings.png" srcset="/wp-content/uploads/commit-graph-settings@2x.png" class="img-bordered img-responsive center">
+
+### Rich Commit Search
 
 The Commit Graph will highlight all matching results across your entire repository when searching for a commit, message, author, a changed file or files, or even a specific code change. Use shortcut keys or the up/down arrows on the search bar  to navigate the search results; `F3` (also `Cmd+G` on macOS) goes to the next result from your selection while  `Shift+F3`  ( also `Shift+Cmd+G` on macOS) goes to the previous. 
 
@@ -67,7 +72,7 @@ Additionally, the options on the right side of the search bar can be used to mat
 
 <img src="/wp-content/uploads/search-options.png" class="img-bordered img-responsive center">
 
-###Full Context Menu Support
+### Full Context Menu Support
 
 You can right-click a branch, commit, tag, author, or column headers (author, commit date / time, or SHA) to interact with them. 
 
@@ -100,16 +105,59 @@ Filter options can be accessed from the filter dropdown. This provides the abili
 
 <img src="/wp-content/uploads/filter-options.png" srcset="/wp-content/uploads/filter-options@2x.png" class="img-bordered img-responsive center">
 
+### Minimap (Experimental)
+
+The Minimap provides an additional dimension to the Commit Graph. You can quickly see the activity of the repository, see the HEAD/upstream, branches (local and remote), and easily jump to them. Select the Toggle Minimap icon in the right corner of the Commit Graph top bar to toggle the Minimap on and off. 
+
+<img src="/wp-content/uploads/gl-minimap.png" class="img-bordered img-responsive center">
+
+Minimap Overview:
+
+- Reads left to right - left is the most recent and the right is older
+- Highlighted Region: Commit Graph area that is in view
+- Green Lines: HEAD and upstream
+- Blue Lines: Tags
+- Short Orange Lines: Remote branches
+- Long Orange Lines: Local branches
+
+<div class='callout callout--basic'>
+    <p>Note: We would love to hear your feedback regarding the Minimap. Please share it on the [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).</p>
+</div>
+
+### Deep Linking
+
+Deep Links are links that can be used to open up a ref within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired ref, hover over _Share_ and select _Copy Link to <ref>_. 
+
+<img src="/wp-content/uploads/gl-deep-link.png" class="img-bordered img-responsive center">
+
 ***
 
-##Worktrees
+## Focus View
+
+The Focus View allows you to stream line your workflow by providing a summarized list of all your pull requests, your issues, and work in progress. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`.
+
+<img src="/wp-content/uploads/gl-focus-view.png" class="img-bordered img-responsive center">
+
+The Focus View includes the following sections:
+- My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
+- My Issues: Shows all issues created by you, assigned to you, or that mention you.
+- Work in Progress: Shows all branches with uncommitted changes
+
+<div class='callout callout--basic'>
+    <p>*Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
+</div>
+
+
+***
+
+## Worktrees
 Create <a href="https://www.gitkraken.com/learn/git/git-worktree" target="_blank">Git Worktrees</a> that allow multiple branches to be checked-out at once on the same repository. This makes it easier to develop on, or test multiple branches, by minimizing the context switching between branches.
 
 <img src="/wp-content/uploads/worktrees-view.png" class="img-bordered img-responsive center">
 
 ***
 
-##Visual File History
+## Visual File History
 
 The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
 
@@ -125,11 +173,11 @@ Gain additional insights on hover.
 
 ***
 
-##Single Sign On
+## Single Sign On
 
 Single Sign on offers a secure and easy way to sign into your account. To configure Single Sign On for your organization, refer to the Single Sign On guide <a href='https://help.gitkraken.com/gitkraken-client/single-sign-on/' target='_blank'>here</a>.
 
-###Requirements and Configuration
+### Requirements and Configuration
 
 Your GitKraken account may initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
 
@@ -144,7 +192,7 @@ Additional requirements:
 - Configurable only by GitKraken Owner or Admin
 - Subscribed to either the <a href='https://www.gitkraken.com/gitlens/pricing' target='_blank'>Teams or Enterprise plan</a>
 
-###Signing in with Single Sign On
+### Signing in with Single Sign On
 
 GitLens+ users will see the option to Sign in with SSO from the login screen.
 
@@ -154,7 +202,7 @@ After clicking “Sign in with SSO”, the SSO form will open and ask for an ema
 
 ***
 
-##GitHub Enterprise and GitLab Self-Managed Integration
+## GitHub Enterprise and GitLab Self-Managed Integration
 
 GitLens+ offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
 
@@ -166,22 +214,22 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 
 ***
 
-##FAQ
+## FAQ
 
-###What are GitLens+ features?
+### What are GitLens+ features?
 
 Initially, in GitLens 12 we introduced new GitLens+ features that include Worktrees and Visual File History. Later we added the Commit Graph, see above all the additions we have made, with more to come!
 
-###What is GitLens+?
+### What is GitLens+?
 
 GitLens+ is a set of exciting new visualization and code collaboration capabilities designed to help devs code faster and more efficiently solo or as a team. These additional features can be used indefinitely with public repositories for any user without or with a GitLens account. You’ll also be able to test drive GitLens+ features with private repos as part of your automatic 7-day free trial of GitLens+ Pro.
 
-###Is GitLens still free?
+### Is GitLens still free?
 
 Yes, GitLens is free. All core features will continue to be free without an account. In fact, we’re still adding many core features to GitLens. GitLens+ features are purely additive and provide a richer, more powerful experience.
 
 
-###Is GitLens+ free?
+### Is GitLens+ free?
 
 GitLens+ requires a paid license when working with private repoistories. For local and public repositories it is free. To summarize: 
 
