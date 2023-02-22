@@ -112,16 +112,20 @@ Filter options can be accessed from the filter dropdown. This provides the abili
 
 The Minimap provides an additional dimension to the Commit Graph. You can quickly see the activity of the repository, see the HEAD/upstream, branches (local and remote), and easily jump to them. Select the Toggle Minimap icon in the right corner of the Commit Graph top bar to toggle the Minimap on and off. 
 
-<img src="/wp-content/uploads/gl-minimap.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-minimap-2.png" class="img-bordered img-responsive center">
 
 Minimap Overview:
 
 - Reads left to right - left is the most recent and the right is older
-- Highlighted Region: Commit Graph area that is in view
-- Green Lines: HEAD and upstream
-- Blue Lines: Tags
-- Short Orange Lines: Remote branches
-- Long Orange Lines: Local branches
+- Highlighted region: Commit Graph area that is in view
+- Green Lines: HEAD
+- Yellow lines: Search results
+- Upper row markers:
+    - Blue blocks: remote branches
+    - Brown blocks: Tags
+- Lower row markers:
+    - Pink blocks: stashes
+    - Blue blocks: local branches
 
 <div class='callout callout--basic'>
     <p>Note: We would love to hear your feedback regarding the Minimap. Please share it on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitHub Discussion board</a>.</p>
@@ -129,7 +133,7 @@ Minimap Overview:
 
 ### Deep Linking
 
-Deep Links are links that can be used to open up a ref within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired ref, hover over _Share_ and select _Copy Link to \<ref\>_. 
+Deep Links are links that can be used to open up a resource within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired resource, hover over _Share_ and select _Copy Link to \<resource\>_. 
 
 <img src="/wp-content/uploads/gl-deep-link.png" class="img-bordered img-responsive center">
 
@@ -137,7 +141,7 @@ Deep Links are links that can be used to open up a ref within the Commit Graph o
 
 ## Focus View
 
-The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests, your issues, and work in progress. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`. 
+The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests and your issues. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`. 
 
 Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
@@ -146,7 +150,6 @@ Currently, this view is supported for GitHub repositories. In order to see the F
 The Focus View includes the following sections:
 - My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
 - My Issues: Shows all issues created by you, assigned to you, or that mention you.
-- Work in Progress: Shows all branches with uncommitted changes
 
 <div class='callout callout--basic'>
     <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
