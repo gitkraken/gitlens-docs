@@ -28,9 +28,9 @@ Supercharge your Git game with GitLens 13.3: the latest update to help you maste
 
 GitLens also just got a whole lot faster with the release of version 13.3! Thanks to some serious bundle slimming, the startup times have significantly improved.
 
-GitLens' extension bundle for desktop (node) is now ~18% smaller
-GitLens' extension bundle for web (vscode.dev/github.dev) is now ~37% smaller
-GitLens' Commit Graph webview bundle is now ~31% smaller
+- GitLens' extension bundle for desktop (node) is now ~18% smaller
+- GitLens' extension bundle for web (vscode.dev/github.dev) is now ~37% smaller
+- GitLens' Commit Graph webview bundle is now ~31% smaller
 
 
 ### ✨Focus View (Preview)
@@ -41,13 +41,12 @@ With the preview of GitLens Focus View, you can streamline your workflow and pri
 
 The new Focus View will provide you with a summary of Pull Requests and Issues relevant to you for the repositories grouped in your Workspace.
 
-My Pull Requests: shows all GitHub PRs opened by you, assigned to you, or awaiting your review
-
-My Issues: shows all issues created by you, assigned to you, or that mention you.
+- My Pull Requests: shows all GitHub PRs opened by you, assigned to you, or awaiting your review
+- My Issues: shows all issues created by you, assigned to you, or that mention you.
 
 Instead of hunting for these pieces of information separately, you can get a holistic view of what you’re working on.
 
-*Note Focus View is currently in a Preview Only state, it is subject to change in the future.
+*_Note Focus View is currently in a Preview Only state, it is subject to change in the future._
 
 ### ✨ Commit Graph improvements
 
@@ -59,12 +58,12 @@ Click the Toggle Minimap icon in the right corner of the Commit Graph top bar to
 
 The idea behind the Minimap is to provide a whole new dimension to the Commit Graph. You can quickly see the activity of the repo, see HEAD/upstream, branches (local and remote), and easily jump to them.
 
-The green line showcases HEAD while search results are depicted by yellow lines. The highlighted region shows the Commit Graph area that is in view. Markers are arranged in two rows of stacked blocks:
+The <span style="color:green">green line</span> showcases HEAD while search results are depicted by <span style="color:yellow">yellow lines</span>. The highlighted region shows the Commit Graph area that is in view. Markers are arranged in two rows of stacked blocks:
 
-In the upper row, the darker blue blocks signify remote branches, while the brown blocks refer to tags. 
-Within the lower row, the pink blocks denote stashes, and the light blue blocks represent local branches. 
+- In the upper row, the <span style="color:green">blue blocks</span> signify remote branches, while the <span style="color:brown">brown blocks</span> refer to tags. 
+- Within the lower row, the <span style="color:pink">pink blocks</span> denote stashes, and the <span style="color:blue">blue blocks</span> represent local branches. 
 
-We really want to hear your feedback - this is still a very early feature and we're currently still playing with colors, and additional features. To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, GitHub Discussion board.
+We really want to hear your feedback - this is still a very early feature and we're currently still playing with colors, and additional features. To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
 
 #### Changes column (lines added/deleted)
 
