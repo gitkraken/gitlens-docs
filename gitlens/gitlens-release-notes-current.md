@@ -17,6 +17,145 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v13-3"></a>
+## Version 13.3
+
+### Tuesday, Feb 21, 2022
+
+Supercharge your Git game with GitLens 13.3: the latest update to help you master Git like a pro. With 13.3 we’re introducing Workspace Focus View, Deep Linking Support, and Commit Graph Improvements featuring the new (experimental) minimap and changes column. 
+
+<img src="/wp-content/uploads/glrn-13.3.png" class="img-responsive center img-bordered">
+
+GitLens also just got a whole lot faster with the release of version 13.3! Thanks to some serious bundle slimming, the startup times have significantly improved.
+
+GitLens' extension bundle for desktop (node) is now ~18% smaller
+GitLens' extension bundle for web (vscode.dev/github.dev) is now ~37% smaller
+GitLens' Commit Graph webview bundle is now ~31% smaller
+
+
+### ✨Focus View (Preview)
+
+<img src="/wp-content/uploads/glrn-focus-view.png" class="img-responsive center img-bordered">
+
+With the preview of GitLens Focus View, you can streamline your workflow and prioritize your tasks with ease. The Focus View feature gives you a comprehensive list of all your most important work across all your GitHub repos. No more jumping back and forth between multiple pages or repos - GitLens Focus View makes it simple and efficient to keep track of and manage your work progress.
+
+The new Focus View will provide you with a summary of Pull Requests and Issues relevant to you for the repositories grouped in your Workspace.
+
+My Pull Requests: shows all GitHub PRs opened by you, assigned to you, or awaiting your review
+
+My Issues: shows all issues created by you, assigned to you, or that mention you.
+
+Instead of hunting for these pieces of information separately, you can get a holistic view of what you’re working on.
+
+*Note Focus View is currently in a Preview Only state, it is subject to change in the future.
+
+### ✨ Commit Graph improvements
+
+#### Minimap (Experimental) 
+
+<img src="/wp-content/uploads/glrn-minimap.png" class="img-responsive center img-bordered">
+
+Click the Toggle Minimap icon in the right corner of the Commit Graph top bar to toggle the Minimap on and off. As this is an experimental feature, it is off by default – and we would love to hear your feedback and suggestions.
+
+The idea behind the Minimap is to provide a whole new dimension to the Commit Graph. You can quickly see the activity of the repo, see HEAD/upstream, branches (local and remote), and easily jump to them.
+
+The green line showcases HEAD while search results are depicted by yellow lines. The highlighted region shows the Commit Graph area that is in view. Markers are arranged in two rows of stacked blocks:
+
+In the upper row, the darker blue blocks signify remote branches, while the brown blocks refer to tags. 
+Within the lower row, the pink blocks denote stashes, and the light blue blocks represent local branches. 
+
+We really want to hear your feedback - this is still a very early feature and we're currently still playing with colors, and additional features. To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, GitHub Discussion board.
+
+#### Changes column (lines added/deleted)
+
+<img src="/wp-content/uploads/glrn-changes-column.png" class="img-responsive center img-bordered">
+
+Reduce time and effort required to navigate through code changes, with the changes column in GitLens. The changes column provides a visual representation of changes made to files in each commit, with green bars indicating added lines and red bars indicating deleted lines. 
+
+This visual display allows you to quickly identify the extent of changes made to files across multiple commits, making it easier to pinpoint specific areas of code that have been modified.
+
+You can toggle the Change Column by right clicking the graph header and clicking "Show Changes".
+
+#### Scroll Markers (Rich scrollbar)
+
+<img src="/wp-content/uploads/glrn-rich-scrollbar.png" class="img-responsive center img-bordered">
+
+Scroll Markers adds a rich layer of information to the Commit Graph scrollbar. Now you can quickly find and jump to checked-out branches, selected rows, search results, as well as important points such as HEAD and refs. Similar to Overview Ruler in VS Code, Scroll Markers provide a visual indicator on the scrollbar.
+
+Our intention with Scroll Markers is to save you time and effort by allowing you to quickly identify and jump to the relevant sections of your Git history. It's a powerful new addition to the Commit Graph to help streamline workflow.
+
+#### Branch upstream status
+
+<img src="/wp-content/uploads/glrn-branch-upstream.png" class="img-responsive center img-bordered">
+
+The Commit Graph now shows the upstream status of local branches with an upstream. You'll be able to quickly identify when your local branch is out of sync with its upstream branch with the new indicator, which shows how many commits are ahead or behind your upstream branch.
+
+You can also double-click on the upstream indicator, to pull or push the pending commits to bring your local branch back in sync with its upstream. This makes it easy to keep track of upstream changes to your local branches and keep them up to date.
+
+#### Work In Progress Row improvements
+
+<img src="/wp-content/uploads/glrn-wip.png" class="img-responsive center img-bordered">
+
+With the latest Work In Progress Row improvements, with a single right click, you can access the WIP contextual menu. Giving you access to a range of useful options, including Stash All Changes, Open Details, and Open Source Control. These features allow you to more effectively manage your WIP.
+
+### Deep linking support
+
+Deep linking provides you with the ability to easily share specific remote repositories, commits, branches, and tags by copying the link to your clipboard and pasting it into a Jira issue or a Slack conversation for example. 
+
+The link will then open in the Commit Graph and can be used to quickly access and review relevant artifacts. With deep linking support, you can improve collaboration and communication by seamless sharing of important information related to your Git repos. 
+
+### Added
+
+- Adds new _Commit Graph_ features and improvements
+  - Adds a new experimental minimap of commit activity to the _Commit Graph_
+  - Adds a new experimental _Changes_ column visualizing commit changes
+  - Adds markers to the _Commit Graph_ scroll area indicating the location of the selected row, search results, current branch, upstream, and more
+  - Adds the ability to show upstream (ahead/behind) status on local branches with an upstream
+    - Adds a double-click action on the status to pull (when behind) or push (when ahead) pending changes
+    - Adds context menu actions to _Push_, _Pull_, and _Fetch_ the local branch
+    - Adds a `gitlens.graph.showUpstreamStatus` setting to toggle upstream (ahead/behind) indicators on branches
+  - Adds the ability to show any associated pull requests with branches
+    - Adds a double-click action on the PR icon to open the PR in the browser
+    - Adds context menu actions to _Open Pull Request on Remote_ and _Copy_ the PR URL
+    - Adds a `gitlens.graph.pullRequests.enabled` setting to toggle PR icons &mdash; closes [#2450](https://github.com/gitkraken/vscode-gitlens/issues/2450)
+  - Adds a context menu to the WIP row &mdash; closes [#2458](https://github.com/gitkraken/vscode-gitlens/issues/2458)
+  - Adds a double-click action on commit rows to open the _Commit Details_ view
+  - Improves Author and Avatar tooltips to now also show the contributor's email address, if available
+  - Improves Date tooltips to now always show both the absolute and relative date
+- Adds the ability to copy and share links directly to repositories, branches, commits, and tags in the _Commit Graph_
+  - Adds context menu actions to copy direct links in the _Share_ submenu
+- Improves the Worktree creation experience
+  - Adds a prompt after the worktree is created to choose how to open the worktree
+    - Adds a `worktrees.openAfterCreate` setting to specify how and when to open a worktree after it is created
+  - Ensures new worktrees are created from the "main" repo, if already in a worktree
+- Adds a new _remote_ command to the _Git Command Palette_ to add, prune, and remove remotes
+- Adds a _Open Worktree for Pull Request via GitLens..._ context menu command on pull requests in the _GitHub Pull Requests and Issues_ extension's views
+  - Opens an associated worktree, if one exists, otherwise it creates a new worktree for the pull request
+- Adds settings to control the format of commits in the GitLens views
+
+### Changed
+
+- Greatly reduces the size of many of GitLens' bundles which improves startup time
+  - GitLens' extension bundle for desktop (node) is now ~18% smaller
+  - GitLens' extension bundle for web (vscode.dev/github.dev) is now ~37% smaller
+  - GitLens' Commit Graph webview bundle is now ~31% smaller
+- Changes the _Contributors_ view to be shown by default on the _GitLens_ sidebar
+
+### Removed
+
+- Removes the use of an external color library for the _File Heatmap_ annotations and webview themes &mdash; reduces the bundled extension size
+
+### Fixed
+
+- Fixes [#2355](https://github.com/gitkraken/vscode-gitlens/issues/2355) - Search by changes stops working in version 13.x.x
+- Fixes [#2473](https://github.com/gitkraken/vscode-gitlens/issues/2473) - Commit graph status bar show wrong last fetched date
+- Fixes [#2409](https://github.com/gitkraken/vscode-gitlens/issues/2409) - Commit Graph Show Current Branch Only shows unrelated commits from other branches
+- Fixes an issue where pinning not being respected in Commit Details view
+- Fixes graph issue where search results that are merge commits are not highlighted when the `gitlens.graph.dimMergeCommits` setting is enabled
+- Fixes graph issue where rows with tags belonging to a hovered branch are not highlighted when the `gitlens.graph.highlightRowsOnRefHover` setting is enabled
+
+***
+
 <a id="v13-2"></a>
 ## Version 13.2
 
