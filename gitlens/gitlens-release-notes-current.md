@@ -15,6 +15,8 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="button button--basic ">Install Current Version Now</a>
 
+✨ indicates [GitLens+ features](/gitlens/gitlens-plus/)
+
 ***
 
 <a id="v13-3"></a>
