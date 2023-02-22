@@ -145,7 +145,7 @@ The Focus View allows you to stream line your workflow by providing a summarized
 
 Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
-<img src="/wp-content/uploads/gl-focus-view.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-focus-view-2.png" class="img-bordered img-responsive center">
 
 The Focus View includes the following sections:
 - My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
