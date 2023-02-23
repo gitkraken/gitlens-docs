@@ -22,7 +22,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 <a id="v13-3"></a>
 ## Version 13.3
 
-### Tuesday, Feb 21, 2022
+### Thursday, Feb 23, 2023
 
 Supercharge your Git game with GitLens 13.3: the latest update to help you master Git like a pro. With 13.3 we’re introducing Workspace Focus View, Deep Linking Support, and Commit Graph Improvements featuring the new (experimental) minimap and changes column. 
 
