@@ -26,11 +26,11 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 With 13.4, we've introduced an experimental new AI feature to assist with writing commit messages, improved GitLens performance by reducing its size, made improvements to the ✨Commit Graph, and accepted community contributions as well as many bug fixes from community feedback.
 
-<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-13.4-banner.png" class="img-responsive center img-bordered">
 
 ### AI-Generated Commit Messages (Experimental)
 
-<img src="/wp-content/uploads/TODO.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-ai-generated-commit-message.gif" class="img-responsive center img-bordered">
 
 We’ve introduced a new experimental feature to assist with writing commit messages by leveraging OpenAI. To start, stage some changes you want to commit and generate a commit message for and then run the “Generate Commit Message (Experimental)” command from the Command Palette. From there you will be guided through the process of accepting to send the diff of your staged changes to OpenAI and the entry of your OpenAI key. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message.
 
@@ -53,7 +53,7 @@ Here are some numbers:
 
 ##### Upstream Tracking
 
-<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-upstream-tracking.png" class="img-responsive center img-bordered">
 
 It's now possible to effortlessly keep track of upstreams of your local branches in the commit graph. The upstreams of visible local branches, along with their corresponding commit history, will be displayed in the graph even if other remote branches are filtered out from your settings.
 
@@ -61,19 +61,19 @@ We've also revised the wording of the remote filter setting to "Hide Remote-only
 
 #### Graph Alignment
 
-<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-graph-alignment.png" class="img-responsive center img-bordered">
 
 The graph column is now more left-aligned, making it easier to read and follow the history of a branch at a glance.
 
 #### Branches and Tags on Remote Repositories
 
-<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-remote-ref-tracking.png" class="img-responsive center img-bordered">
 
 You can now see the tips of your branches and tags in the Commit Graph on remote repositories! Previously, opening a remote repository in the graph would show only the current branch. Currently, we are still limited to only showing commits for the current branch, so the included branches and tags are ones pointing to commits in the current branch’s commit history.
 
 ### Sunsetting GitLens Insiders (Replaced with Pre-release)
 
-<img src="/wp-content/uploads/TODO.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-sunsetting-insiders.gif" class="img-responsive center img-bordered">
 
 We’ve deprecated the GitLens Insiders edition in favor of a Pre-release version which is directly supported inside VS Code and is much easier to opt-in to and out of. Existing users of GitLens Insiders should have been automatically migrated to the Pre-release version. The Pre-release version of GitLens is a nightly build of GitLens, just as the GitLens Insiders edition was.
 
