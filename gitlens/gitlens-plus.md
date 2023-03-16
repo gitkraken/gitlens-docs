@@ -104,9 +104,9 @@ The Commit Graph shows refs to your remotes, branches and tags. Hover over any o
 
 <img src="/wp-content/uploads/gl-hide-refs.gif" class="img-bordered img-responsive center">
 
-Filter options can be accessed from the filter dropdown. This provides the ability to switch between _Show Current Branch Only_ - to show the current branch and its upstream remote remote - or _Show All Local Branches_ - this is selected by default. Additionally, remote branches, stashes and tags can be hidden or shown. 
+Filter options can be accessed from the filter dropdown. This provides the ability to switch between _Show Current Branch Only_ - to show the current branch and its upstream remote - or _Show All Local Branches_ - this is selected by default. Additionally, remote-only branches, stashes and tags can be hidden/shown and merge commit rows can be dimmed. 
 
-<img src="/wp-content/uploads/filter-options.png" srcset="/wp-content/uploads/filter-options@2x.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/filter-options-2.png" class="img-bordered img-responsive center">
 
 ### Minimap (Experimental)
 
@@ -221,6 +221,16 @@ Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed
 See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
 
 ***
+
+## AI-Generated Commit Messages (Experimental)
+
+Commit messages can be automatically generated using [OpenAI](https://openai.com/).
+
+<img src="/wp-content/uploads/todo.gif" class="img-bordered img-responsive center">
+
+To connect OpenAI, stage some changes you want to generate a commit message for and then run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to OpenAI and the entry of your OpenAI key. The OpenAI API key can be created [here](https://platform.openai.com/account/api-keys). Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message.
+
+To remove your OpenAI API key in GitLens, run the command `GitLens: Reset Stored OpenAI Key` from the Command Palette.
 
 ## FAQ
 

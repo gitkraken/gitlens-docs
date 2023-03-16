@@ -1230,6 +1230,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.strings.codeLens.unsavedChanges.authorsOnly</code></td>
 <td>Specifies the string to be shown in place of the <em>authors</em> CodeLens when there are unsaved changes</td>
 </tr>
+<tr>
+<td><code>gitlens.experimental.generateCommitMessagePrompt</code></td>
+<td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
+</tr>
 </tbody>
 </table>
 ***
@@ -1276,3 +1280,5 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tr>
 </tbody>
 </table>
+
+***
