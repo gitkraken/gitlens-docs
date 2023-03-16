@@ -226,7 +226,7 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 
 Commit messages can be automatically generated using [OpenAI](https://openai.com/).
 
-<img src="/wp-content/uploads/todo.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-ai-generated-commit-message.gif" class="img-bordered img-responsive center">
 
 To connect OpenAI, stage some changes you want to generate a commit message for and then run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to OpenAI and the entry of your OpenAI key. The OpenAI API key can be created [here](https://platform.openai.com/account/api-keys). Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message.
 
