@@ -1,7 +1,7 @@
 ---
 
 title: GitLens Release Notes
-description: GitLens Release Notes 
+description: GitLens Release Notes
 taxonomy:
     category: gitlens
 
@@ -19,12 +19,118 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v13-4"></a>
+## Version 13.4
+
+### Thursday, Mar 16, 2023
+
+With 13.4, we've introduced an experimental new AI feature to assist with writing commit messages, improved GitLens performance by reducing its size, made improvements to the ✨Commit Graph, and accepted community contributions as well as many bug fixes from community feedback.
+
+<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+
+### AI-Generated Commit Messages (Experimental)
+
+<img src="/wp-content/uploads/TODO.gif" class="img-responsive center img-bordered">
+
+We’ve introduced a new experimental feature to assist with writing commit messages by leveraging OpenAI. To start, stage some changes you want to commit and generate a commit message for and then run the “Generate Commit Message (Experimental)” command from the Command Palette. From there you will be guided through the process of accepting to send the diff of your staged changes to OpenAI and the entry of your OpenAI key. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message.
+
+Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message. You could have it structure commit messages in the conventional commit style, or you can have fun with it and make your commit messages in the style of a pirate, Shakespeare, etc.
+
+This is a very early peek into features and ideas that can leverage AI – look forward to much more in the near future!
+
+### GitLens Size Reduction
+
+Over the last couple releases we’ve made significant progress on optimizing the footprint of GitLens. We’ve focused a lot on the bundle sizes to allow for faster start-up times of both the extension itself and all of our webviews. These optimizations also help reduce our memory usage. We are continually looking for opportunities to optimize and reduce our footprint so look for more progress in the future!
+
+Here are some numbers:
+  - GitLens desktop bundle has been reduced by ~37% from 1.91MB to 1.21MB
+  - GitLens web bundle (for vscode.dev / github.dev) has been reduced by ~39% from 2.05MB to 1.24MB
+  - GitLens Commit Graph webview has been reduced by ~27% from 1.03MB to 758KB and that is including the new minimap and rich scroll markers
+  - GitLens Home view has been reduced by ~41% from 267KB to 160KB
+  - GitLens Visual File History view has been reduced by ~9% from 508KB to 461KB
+
+### ✨ Commit Graph Enhancements
+
+##### Upstream Tracking
+
+<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+
+It's now possible to effortlessly keep track of upstreams of your local branches in the commit graph. The upstreams of visible local branches, along with their corresponding commit history, will be displayed in the graph even if other remote branches are filtered out from your settings.
+
+We've also revised the wording of the remote filter setting to "Hide Remote-only Branches.
+
+#### Graph Alignment
+
+<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+
+The graph column is now more left-aligned, making it easier to read and follow the history of a branch at a glance.
+
+#### Branches and Tags on Remote Repositories
+
+<img src="/wp-content/uploads/TODO.png" class="img-responsive center img-bordered">
+
+You can now see the tips of your branches and tags in the Commit Graph on remote repositories! Previously, opening a remote repository in the graph would show only the current branch. Currently, we are still limited to only showing commits for the current branch, so the included branches and tags are ones pointing to commits in the current branch’s commit history.
+
+### Sunsetting GitLens Insiders (Replaced with Pre-release)
+
+<img src="/wp-content/uploads/TODO.gif" class="img-responsive center img-bordered">
+
+We’ve deprecated the GitLens Insiders edition in favor of a Pre-release version which is directly supported inside VS Code and is much easier to opt-in to and out of. Existing users of GitLens Insiders should have been automatically migrated to the Pre-release version. The Pre-release version of GitLens is a nightly build of GitLens, just as the GitLens Insiders edition was.
+
+To opt-in to the Pre-release edition, select GitLens from the extensions sidebar and press “Switch to Pre-Release Version”.
+
+### Thank you to our contributors
+
+Shout-out to all of our awesome contributors for this release!
+  - Nafiur Rahman Khadem ([@ShafinKhadem](https://github.com/ShafinKhadem))
+  - Skyler Dawson ([@foxwoods369](https://github.com/foxwoods369))
+  - haha ([@hahaaha](https://github.com/hahaaha))
+
+### Added
+
+- Adds an experimental _Generate Commit Message (Experimental)_ command to use OpenAI to generate a commit message for staged changes
+  - Adds a `gitlens.experimental.generateCommitMessagePrompt` setting to specify the prompt to use to tell OpenAI how to structure or format the generated commit message &mdash; can have fun with it and make your commit messages in the style of a pirate, etc
+- Adds auto-detection for `.git-blame-ignore-revs` files and excludes the commits listed within from the blame annotations
+- Adds a _Open Git Worktree..._ command to jump directly to opening a worktree in the _Git Command Palette_
+- Adds a _Copy Relative Path_ context menu action for active editors and file nodes in sidebar views
+- Adds the ability to see branches and tags on remote repositories (e.g. GitHub) on the _Commit Graph_
+  - Currently limited to only showing them for commits on the current branch, as we aren't yet able to show all commits on all branches
+
+### Changed
+
+- Improves the display of items in the _Commit Graph_
+  - When showing local branches, we now always display the upstream branches in the minimap, scrollbar markers, and graph rows
+  - When laying out lanes in the Graph column, we now bias to be left aligned when possible for an easier to read and compact graph visualization
+- Improves _Open Worktree for Pull Request via GitLens..._ command to use the qualified remote branch name, e.g. `owner/branch`, when creating the worktree
+- Removes Insiders edition in favor of the pre-release edition
+- Reduces the size of the GitLens bundle which improves startup time
+  - GitLens' extension bundle for desktop (node) is now ~24% smaller (1.58MB -> 1.21MB)
+  - GitLens' extension bundle for web (vscode.dev/github.dev) is now ~6% smaller (1.32MB -> 1.24MB)
+
+### Fixed
+
+- Fixes [#2550](https://github.com/gitkraken/vscode-gitlens/issues/2550) - Related pull request disappears after refresh
+- Fixes [#2549](https://github.com/gitkraken/vscode-gitlens/issues/2549) - toggle code lens does not work with gitlens.codeLens.enabled == false
+- Fixes [#2553](https://github.com/gitkraken/vscode-gitlens/issues/2553) - Can't add remote url with git@ format
+- Fixes [#2083](https://github.com/gitkraken/vscode-gitlens/issues/2083), [#2539](https://github.com/gitkraken/vscode-gitlens/issues/2539) - Fix stashing staged changes &mdash; thanks to [PR #2540](https://github.com/gitkraken/vscode-gitlens/pull/2540) by Nafiur Rahman Khadem ([@ShafinKhadem](https://github.com/ShafinKhadem))
+- Fixes [#1968](https://github.com/gitkraken/vscode-gitlens/issues/1968) & [#1027](https://github.com/gitkraken/vscode-gitlens/issues/1027) - Fetch-> fatal: could not read Username &mdash; thanks to [PR #2481](https://github.com/gitkraken/vscode-gitlens/pull/2481) by Skyler Dawson ([@foxwoods369](https://github.com/foxwoods369))
+- Fixes [#2495](https://github.com/gitkraken/vscode-gitlens/issues/2495) - Cannot use gitlens+ feature on public repo in some folders
+- Fixes [#2530](https://github.com/gitkraken/vscode-gitlens/issues/2530) - Error when creating worktrees in certain conditions
+- Fixed [#2566](https://github.com/gitkraken/vscode-gitlens/issues/2566) - hide context menu in output panel &mdash; thanks to [PR #2568](https://github.com/gitkraken/vscode-gitlens/pull/2568) by hahaaha ([@hahaaha](https://github.com/hahaaha))
+- Fixes [#2533](https://github.com/gitkraken/vscode-gitlens/issues/2533) - Current Branch Only graph filter sometimes fails
+- Fixes [#2504](https://github.com/gitkraken/vscode-gitlens/issues/2504) - Graph header theme colors were referencing the titlebar color properties
+- Fixes [#2527](https://github.com/gitkraken/vscode-gitlens/issues/2527) - shows added files for Open All Changes
+- Fixes an issue where trial status can be shown rather than a purchased license
+- Fixes graph issue where scroll markers do not update until mouseover when changing the `gitlens.graph.scrollMarkers.additionalTypes` setting.
+
+***
+
 <a id="v13-3"></a>
 ## Version 13.3
 
 ### Thursday, Feb 23, 2023
 
-Supercharge your Git game with GitLens 13.3: the latest update to help you master Git like a pro. With 13.3 we’re introducing Workspace Focus View, Deep Linking Support, and Commit Graph Improvements featuring the new (experimental) minimap and changes column. 
+Supercharge your Git game with GitLens 13.3: the latest update to help you master Git like a pro. With 13.3 we’re introducing Workspace Focus View, Deep Linking Support, and Commit Graph Improvements featuring the new (experimental) minimap and changes column.
 
 <img src="/wp-content/uploads/glrn-13.3.png" class="img-responsive center img-bordered">
 
@@ -52,7 +158,7 @@ Instead of hunting for these pieces of information separately, you can get a hol
 
 ### ✨ Commit Graph improvements
 
-#### Minimap (Experimental) 
+#### Minimap (Experimental)
 
 <img src="/wp-content/uploads/glrn-minimap.png" class="img-responsive center img-bordered">
 
@@ -62,8 +168,8 @@ The idea behind the Minimap is to provide a whole new dimension to the Commit Gr
 
 The <span style="color:green">green line</span> showcases HEAD while search results are depicted by <span style="color:yellow">yellow lines</span>. The highlighted region shows the Commit Graph area that is in view. Markers are arranged in two rows of stacked blocks:
 
-- In the upper row, the <span style="color:green">blue blocks</span> signify remote branches, while the <span style="color:brown">brown blocks</span> refer to tags. 
-- Within the lower row, the <span style="color:pink">pink blocks</span> denote stashes, and the <span style="color:blue">blue blocks</span> represent local branches. 
+- In the upper row, the <span style="color:green">blue blocks</span> signify remote branches, while the <span style="color:brown">brown blocks</span> refer to tags.
+- Within the lower row, the <span style="color:pink">pink blocks</span> denote stashes, and the <span style="color:blue">blue blocks</span> represent local branches.
 
 We really want to hear your feedback - this is still a very early feature and we're currently still playing with colors, and additional features. To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
 
@@ -71,7 +177,7 @@ We really want to hear your feedback - this is still a very early feature and we
 
 <img src="/wp-content/uploads/glrn-changes-column.png" class="img-responsive center img-bordered">
 
-Reduce time and effort required to navigate through code changes, with the changes column in GitLens. The changes column provides a visual representation of changes made to files in each commit, with green bars indicating added lines and red bars indicating deleted lines. 
+Reduce time and effort required to navigate through code changes, with the changes column in GitLens. The changes column provides a visual representation of changes made to files in each commit, with green bars indicating added lines and red bars indicating deleted lines.
 
 This visual display allows you to quickly identify the extent of changes made to files across multiple commits, making it easier to pinpoint specific areas of code that have been modified.
 
@@ -101,9 +207,9 @@ With the latest Work In Progress Row improvements, with a single right click, yo
 
 ### Deep linking support
 
-Deep linking provides you with the ability to easily share specific remote repositories, commits, branches, and tags by copying the link to your clipboard and pasting it into a Jira issue or a Slack conversation for example. 
+Deep linking provides you with the ability to easily share specific remote repositories, commits, branches, and tags by copying the link to your clipboard and pasting it into a Jira issue or a Slack conversation for example.
 
-The link will then open in the Commit Graph and can be used to quickly access and review relevant artifacts. With deep linking support, you can improve collaboration and communication by seamless sharing of important information related to your Git repos. 
+The link will then open in the Commit Graph and can be used to quickly access and review relevant artifacts. With deep linking support, you can improve collaboration and communication by seamless sharing of important information related to your Git repos.
 
 ### Added
 
@@ -177,19 +283,19 @@ GitLens 13.2 introduces filtering , which allows you to display a subset of your
 Use graph filtering in GitLens to get laser focused on the branch you're working on and its remote:
 
 - Only Show the Current Branch
-  - Display only the branch that you’re currently working on and it’s remote. In order to focus your attention on the things landing in this branch, and then quickly unfilter to "zoom" back out and see everything in flight. 
+  - Display only the branch that you’re currently working on and it’s remote. In order to focus your attention on the things landing in this branch, and then quickly unfilter to "zoom" back out and see everything in flight.
 
 - Hide Remote Branches
   - Hides commits from the graph view that are only on remote branches.
 
 - Hide Tags
-  - Hides all tags that point to commit rows. 
+  - Hides all tags that point to commit rows.
 
 - Hide Stashes
   - Hides all stash rows.
 
 - Dim Merge Commit Rows
-  - Deemphasizes merge commit rows. 
+  - Deemphasizes merge commit rows.
 
 ### Graph UX Improvements
 
@@ -313,7 +419,7 @@ Keeping a home tidy is important! We’ve streamlined the Home view to make it e
 
 <img src="/wp-content/uploads/New-Home-Side-Panel.png" class="img-responsive center img-bordered">
 
-## Added 
+## Added
 
 - Adds Commit Graph enhancements
   - Adds the ability to set keyboard shortcuts to commits and stashes on the Commit Graph — closes [#2345](https://github.com/gitkraken/vscode-gitlens/issues/2345)
@@ -393,7 +499,7 @@ Keeping a home tidy is important! We’ve streamlined the Home view to make it e
 
 ### Monday, October 17th, 2022
 
-Find what you seek. 
+Find what you seek.
 
 <img src="/wp-content/uploads/gitlens-13-social-3x.png" class="img-responsive center img-bordered">
 
@@ -418,7 +524,7 @@ We’re delighted to announce that the Commit Graph is out of Preview, and is fu
 
 ### Full context menu support
 
-Interact with your branches, commits, and more! Context menus are now available when you right click on any branch, tag, commit, or author in the Commit Graph. You may even interact with the Commit Graph column headers to the author, date or SHA columns. So much power! 
+Interact with your branches, commits, and more! Context menus are now available when you right click on any branch, tag, commit, or author in the Commit Graph. You may even interact with the Commit Graph column headers to the author, date or SHA columns. So much power!
 
 <img src="/wp-content/uploads/Commit-Search-Context-Menus.gif" class="img-responsive center img-bordered">
 
@@ -435,7 +541,7 @@ Context menu actions include but are not limited to:
 
 ### Rich commit search
 
-Find exactly what you are looking for with the rich search on the powerful new Commit Graph. 
+Find exactly what you are looking for with the rich search on the powerful new Commit Graph.
 
 Whether searching for a specific commit, message, author, a changed file or files, or even a specific code change, the Commit Graph will highlight matching results across your entire repository. Use shortcut keys or the up/down arrows on the search bar  to navigate the search results; `F3` (also `Cmd+G` on macOS) goes to the next result from your selection while  `Shift+F3`  ( also `Shift+Cmd+G` on macOS) goes to the previous. Additionally you can quickly jump to the first or  last result, by holding `Shift` while clicking on the up/down arrows respectively – to make it easy to see when a file or change was introduced into the codebase.
 
@@ -447,7 +553,7 @@ Once you type search filtering criteria, use the arrow icons to move through eac
 
 ### PR information in form of icon
 
-Wait, which branch has that PR? 
+Wait, which branch has that PR?
 
 If connected to one of the rich integrations with GitHub or GitLab, the Commit Graph will display a PR icon for any branch currently in PR. Right-click on the PR icon to open the PR on the GitHub or GitLab, or copy the URL.
 
@@ -461,7 +567,7 @@ Need to focus and have too many remotes or just want to curate how much is shown
 
 ### All new home view
 
-It’s a homecoming! Our GitLens home view has a new look, with quick links to our Getting Started guides, Integrations, Trial info, and Feature spotlights. 
+It’s a homecoming! Our GitLens home view has a new look, with quick links to our Getting Started guides, Integrations, Trial info, and Feature spotlights.
 
 <img src="/wp-content/uploads/GitLens-Home.png" class="img-responsive center img-bordered">
 
@@ -520,9 +626,9 @@ The new Commit Graph 🎨 in GitLens 12.2 will fix all your commitment problems.
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EsnA4zIUvWY?controls=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## ✨Commit Graph  - Preview 
+## ✨Commit Graph  - Preview
 
-Users may now view the Commit Graph of their repository through GitLens. 
+Users may now view the Commit Graph of their repository through GitLens.
 
 This beloved feature from GitKraken Client helps visualize your repo commit history and give you information about branches, commits, and collaborators all in one view — making it easier to see contributions and help you make faster, more informed decisions.
 
@@ -532,15 +638,15 @@ To open the Commit Graph, open the command palette using the keyboard shortcut <
 
 <img src="/wp-content/uploads/2-commit-graph.gif" class="img-responsive center img-bordered">
 
-This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
+This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths.
 
 You may also access the Commit Graph by clicking this graph icon from the Source Control view in the Sidebar or Status Bar.
 
 <img src="/wp-content/uploads/How-to-open-commit-graph-B.png" class="img-responsive center img-bordered">
 
-The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. 
+The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos.
 
-For those on [vscode.dev](vscode.dev) or [github.dev](github.dev), this also means you can open the Commit Graph on a web browser. 
+For those on [vscode.dev](vscode.dev) or [github.dev](github.dev), this also means you can open the Commit Graph on a web browser.
 
 The Commit Graph is in `Preview` mode, and we’d love to hear your feedback in the [Commit Graph discussion on GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
 
@@ -565,7 +671,7 @@ Click on a file to open the diff, and see what changed. You may also hover over 
 
 Next, GitLens+ now offers a richer integration with GitHub Enterprise.
 
-Once authenticated, GitLens will enrich GitHub autolinks in the hovers. You’ll see your GitHub Enterprise avatar, links to related pull requests, along with a footnote of the pull request or issue details. 
+Once authenticated, GitLens will enrich GitHub autolinks in the hovers. You’ll see your GitHub Enterprise avatar, links to related pull requests, along with a footnote of the pull request or issue details.
 
 <img src="/wp-content/uploads/6-GitHub-Enterprise.png" class="img-responsive center img-bordered">
 
@@ -574,7 +680,7 @@ You’ll see similar details from the Sidebar views for any commit or branch ass
 ## ✨ Single Sign On
 
 
-Single Sign On is here, providing GitLens+ users with a more secure sign in method! 
+Single Sign On is here, providing GitLens+ users with a more secure sign in method!
 
 
 ### Requirements and configuration
@@ -589,7 +695,7 @@ Your GitKraken account may now initiate an Oauth authentication flow with the fo
 
 <img src="/wp-content/uploads/SSO-setup.png" class="img-responsive center img-bordered">
 
-Please note that your IdP will first need to be configured before setting up the connection in your GitKraken account. For assistance, please contact your IdP administrator or consult the IdP documentation for help. 
+Please note that your IdP will first need to be configured before setting up the connection in your GitKraken account. For assistance, please contact your IdP administrator or consult the IdP documentation for help.
 
 Additional requirements:
     - Configurable only by GitKraken Owner or Admin of an organization
@@ -612,7 +718,7 @@ Once authenticated, the user may use GitLens+
 
 ### Stash naming defaults
 
-When applying or popping a stash, GitLens will default the commit message input to the stash message. 
+When applying or popping a stash, GitLens will default the commit message input to the stash message.
 
 <img src="/wp-content/uploads/10-stash-commit-message.gif" class="img-responsive center img-bordered">
 
