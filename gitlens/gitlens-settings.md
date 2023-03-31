@@ -652,39 +652,39 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.views.worktrees.avatars</code></td>
-<td>Specifies whether to show avatar images instead of commit (or status) icons in the _Worktrees_ view</td>
+<td>Specifies whether to show avatar images instead of commit (or status) icons in the <em>Worktrees</em> view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.files.compact</code></td>
-<td>Specifies whether to compact (flatten) unnecessary file nesting in the _Worktrees_ view.<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>tree</code> or <code>auto</code></td>
+<td>Specifies whether to compact (flatten) unnecessary file nesting in the <em>Worktrees</em> view.<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>tree</code> or <code>auto</code></td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.files.layout</code></td>
-<td>Specifies how the _Worktrees_ view will display files<br /><br />`auto` - automatically switches between displaying files as a <code>tree</code> or <code>list</code> based on the <code>gitlens.views.commits.files.threshold</code> value and the number of files at each nesting level<br />`list` - displays files as a list<br />`tree` - displays files as a tree</td>
+<td>Specifies how the <em>Worktrees</em> view will display files<br /><br />`auto` - automatically switches between displaying files as a <code>tree</code> or <code>list</code> based on the <code>gitlens.views.commits.files.threshold</code> value and the number of files at each nesting level<br />`list` - displays files as a list<br />`tree` - displays files as a tree</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.files.threshold</code></td>
-<td>Specifies when to switch between displaying files as a <code>tree</code> or <code>list</code> based on the number of files in a nesting level in the _Worktrees_ view<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>auto</code></td>
+<td>Specifies when to switch between displaying files as a <code>tree</code> or <code>list</code> based on the number of files in a nesting level in the <em>Worktrees</em> view<br />Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>auto</code></td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.pullRequests.enabled</code></td>
-<td>Specifies whether to query for pull requests associated with the worktree branch and commits in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+<td>Specifies whether to query for pull requests associated with the worktree branch and commits in the <em>Worktrees</em> view. Requires a connection to a supported remote service (e.g. GitHub)</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.pullRequests.showForBranches</code></td>
-<td>Specifies whether to query for pull requests associated with the worktree branch in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub) </td>
+<td>Specifies whether to query for pull requests associated with the worktree branch in the <em>Worktrees</em> view. Requires a connection to a supported remote service (e.g. GitHub) </td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.pullRequests.showForCommits</code></td>
-<td>Specifies whether to show pull requests (if any) associated with commits in the _Worktrees_ view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+<td>Specifies whether to show pull requests (if any) associated with commits in the <em>Worktrees</em> view. Requires a connection to a supported remote service (e.g. GitHub)</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.reveal</code></td>
-<td>Specifies whether to reveal worktrees in the _Worktrees_ view, otherwise they will be revealed in the _Repositories_ view</td>
+<td>Specifies whether to reveal worktrees in the <em>Worktrees</em> view, otherwise they will be revealed in the <em>Repositories</em> view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.showBranchComparison</code></td>
-<td>Specifies whether to show a comparison of the worktree branch with a user-selected reference (branch, tag. etc) in the _Worktrees_ view<br /><br /><code>false</code> - hides the branch comparison<br /><code>branch</code> - compares the current branch with a user-selected reference</td>
+<td>Specifies whether to show a comparison of the worktree branch with a user-selected reference (branch, tag. etc) in the <em>Worktrees</em> view<br /><br /><code>false</code> - hides the branch comparison<br /><code>branch</code> - compares the current branch with a user-selected reference</td>
 </tr>
 </tbody>
 </table>
