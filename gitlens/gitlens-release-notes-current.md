@@ -19,6 +19,60 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v13-5"></a>
+## Version 13.5
+
+### Thursday, Apr 6, 2023
+
+With 13.5, we've introduced the ability to render the graph in a compact format, as well as the option to display it in a sidebar or panel view, giving you more control over how you use your workspace. We've also improved the appearance of the commit pinned state, making it more visible so that you can easily keep track of the commits that matter most to you. 13.5 also includes further AI explorations and LLaMA, with the ability to explain commits (diff) and gain deeper insights into your commits.
+
+### ✨ Commit Graph Layouts
+- Editor vs Panel Layout
+  - Panel Layout adds Commit Graph Details view along side it
+- Compact Graph rendering
+- PRs on local branches
+- Publish local branches from Graph
+
+### ✨ Focus view enhancements
+- Take actions (create branch, worktree, etc)
+
+### Commit Detail UX improvements 
+- Make pinned state more visually apparent
+- Soft/editor pin on file open in details view
+
+### Thank you to our contributors 
+Shout-out to all of our awesome contributors for this release!
+  - WofWca ([@WofWca](https://github.com/WofWca))
+
+### Added
+
+- Adds experimental support to show the _Commit Graph_ in the side bar, secondary side bar, or panel
+  - Adds a `gitlens.graph.experimental.location` setting to specify the location in which the _Commit Graph_ will be shown
+    - `tab` - Shows the _Commit Graph_ in a tab in the editor area
+    - `view` - Shows the _Commit Graph_ in the side bar and can be dragged and dropped into any side bar, secondary side bar, or panel locations
+- Adds new _Commit Graph_ features and improvements
+  - Adds a "Compact" layout to the Graph column of the _Commit Graph_
+    - Adds a context menu option to the header to toggle between the "Compact" and "Default" layouts
+  - Shows pull request icons on local branches when their upstream branch is associated with a pull request
+  - Adds tooltips to WIP and stash nodes
+  - Adds a "Publish Branch" context menu action to local branches without an upstream branch
+  - Lowers the minimum width of the "Branch/Tag" column
+
+### Changed
+
+- Changes _Open Associated Pull Request_ command to support opening associated pull requests with the current branch or the HEAD commit if no branch association was found &mdash; closes [#2559](https://github.com/gitkraken/vscode-gitlens/issues/2559)
+- Changes the appearance of the _Commit Details_ pinned state to be more apparaent
+
+### Fixed
+
+- Fixes [#2583](https://github.com/gitkraken/vscode-gitlens/issues/2583) - Regression with _Open Worktree for Pull Request via GitLens..._ command
+- Fixes [#2252](https://github.com/gitkraken/vscode-gitlens/issues/2252) - "Copy As"/"Copy Remote File Url" copies %23 instead of # in case of Gitea &mdash; thanks to [PR #2603](https://github.com/gitkraken/vscode-gitlens/pull/2603) by WofWca ([@WofWca](https://github.com/WofWca))
+- Fixes [#2582](https://github.com/gitkraken/vscode-gitlens/issues/2582) - _Visual File History_ background color when in a panel
+- Fixes [#2609](https://github.com/gitkraken/vscode-gitlens/issues/2609) - If you check out a branch that is hidden, GitLens should show the branch still
+- Fixes tooltips sometimes failing to show in _Commit Graph_ rows when the Date column is hidden
+- Fixes [#2595](https://github.com/gitkraken/vscode-gitlens/issues/2595) - Error when stashing changes
+
+
 <a id="v13-4"></a>
 ## Version 13.4
 
