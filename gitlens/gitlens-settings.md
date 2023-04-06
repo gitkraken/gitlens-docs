@@ -1281,6 +1281,8 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tbody>
 </table>
 
+***
+
 ## Commit Graph Settings
 <table>
 <thead>
@@ -1312,5 +1314,3 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tr>
 </tbody>
 </table>
-
-***
