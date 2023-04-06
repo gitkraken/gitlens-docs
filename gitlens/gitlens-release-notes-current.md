@@ -56,17 +56,15 @@ Publishing local branches directly from the Commit Graph is a nice productivity 
 
 ### ✨ Focus View Pull Request Actions
 
-<!-- INSERT IMAGE -->
 <img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-responsive center img-bordered">
 
 The Focus View is no longer read-only! We've introduced new actions within Focus View, aimed at enhancing your workflow and productivity. You can now easily create a branch or worktree, or switch/open an existing one, for a PR directly from the Focus View page, streamlining the process of reviewing or contributing to pull requests. As a quick worktree refresher, creating a worktree from the PR will let you review or contribute to multiple PRs simultaneously without affecting your current branch and working tree.
 
-### Commit Detail UX Improvements
+### Commit Details Interaction Improvements
 
-<!-- INSERT IMAGE -->
 <img src="/wp-content/uploads/gl-commit-details-pinned-commit-deets.png" class="img-responsive center img-bordered">
 
-Improvements include making the commit details pinned state more visually apparent, making it easier for users to identify the current state of their commit details. Additionally, we introduced a soft/editor pin on file open in the details view, enabling you to easily navigate back to the file you were previously working on, offering greater convenience and usability.
+We've heard your feedback on the Commit Details view and the confusion and difficulty with using the pinning feature. We've updated the visual appearance of the pinned state, so it easier to know when Commit Details is pinned. Additionally, we introduced navigation controls that enable you to move back and forth through the commits you've recently viewed, helping to avoid losing context as you navigate through your code.
 
 ### Thank you to our contributors
 Shout-out to all of our awesome contributors for this release!
