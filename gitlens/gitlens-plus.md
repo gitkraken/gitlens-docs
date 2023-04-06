@@ -43,13 +43,13 @@ The Author, Commit Date / Time, SHA columns, and changes columns can be rearrang
 
 <img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
 
-Select the gear icon in the top right to switch between 
+A Commit Graph Panel Layout is offered to show the commit graph details alongside the editor. To switch between the Editor Layout and Panel Layout, select the Commit Graph settings cog located at the top right of the editor. From there, select the "Switch Commit Graph to Panel Layout" or "Switch Commit Graph to Editor Layout".
 
-<img src="/wp-content/uploads/gl-.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-bordered img-responsive center">
 
-The branch column offers a compact layout, to hide avatars. This can be toggled by right-clicking the header on the commit graph.
+A Compact Graph View if offered in the Commit Graph to hide visual noise of commit avatars. To enable the Compact Graph view, right click on the Graph column header, and select the Compact Graph Layout option.
 
-<img src="/wp-content/uploads/default-compact-layout.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-bordered img-responsive center">
 
 The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
 
@@ -153,12 +153,16 @@ The Focus View allows you to stream line your workflow by providing a summarized
 
 Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
-<img src="/wp-content/uploads/gl-focus-view-2.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-focus-view-3.png" class="img-bordered img-responsive center">
 
 The Focus View includes the following sections:
 - My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
 - My Issues: Shows all issues created by you, assigned to you, or that mention you.
 
+The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and icon folder.
+
+<img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
+  
 <div class='callout callout--basic'>
     <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
 </div>
