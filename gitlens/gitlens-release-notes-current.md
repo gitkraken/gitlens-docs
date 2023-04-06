@@ -24,7 +24,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ### Thursday, Apr 6, 2023
 
-With 13.5, we've introduced the ability to render the graph in a compact format, as well as the option to display it in a sidebar or panel view, giving you more control over how you use your workspace. We've also made it easier to review Pull Requests from the Focus View with new actions to create worktrees or checkout branches. 13.5 also includes an improved the appearance of the commit pinned state, making it more visible so that you can easily keep track of the commits that matter most to you.
+With 13.5, we've added the ability to switch to an alternate panel layout for the Commit Graph, which moves the Commit Graph into the bottom panel and adds a new Commit Graph Details view alongside on the right, for more convenient and persistent access. You can now also switch to a compact layout for the Graph column and shrink the Branch / Tag column to a single icon to reduce the space and allow you to focus on what you deem most important. You can now take action on your pull requests in the Focus View, with the new ability to create or switch branches or worktrees. We've also heard your feedback that the Commit Details view pinning was confusing and hard to work with, so 13.5 includes many improvements to make that experience better. We've also continued our quest to reduce the size and improve performance of GitLens and have shaved another ~7% off the GitLens bundle.
 
 <img src="/wp-content/uploads/gl-13.5-hero.png" class="img-responsive center img-bordered">
 
@@ -32,34 +32,34 @@ With 13.5, we've introduced the ability to render the graph in a compact format,
 
 <img src="/wp-content/uploads/gl-commit-graph-panel-layout-view.png" class="img-responsive center img-bordered">
 
-The Panel Layout brings even more flexibility and customization options to GitLens. While using the Panel Layout, GitLens adds the Commit Graph Details view alongside the editor, enabling you to move the graph around to suit your preferences. Easily visualize your commit details and branch relationships while you work, without sacrificing valuable screen real estate. Whether you prefer to have the commit graph in the editor or in a separate panel, GitLens Panel Layout makes it easy to switch and find the layout that works best for you.
+The new panel layout brings even more flexibility and customization options to GitLens. While using the panel layout, GitLens moves the Commit Graph into the bottom panel and adds a new Commit Graph Details view alongside on the right. If the layout in the bottom panel doesn't suit your needs you can move the Commit Graph around to other locations (side bar, secondary side bar, etc) to suit your preferences. Whether you prefer to have the Commit Graph in the editor or in a separate panel, GitLens makes it easy to switch and find the layout that works best for you.
 
 <img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-responsive center img-bordered">
 
-To switch to the panel layout in GitLens, simply click on the Commit Graph settings cog located at the top right of the editor. From there, select the "Switch Commit Graph to Panel Layout" option, and the commit graph will be displayed in a separate panel, allowing for a more spacious and streamlined coding experience.
+To switch to the panel layout, simply click on the Commit Graph settings cog located at the top right of the Commit Graph. From there, select the "Switch Commit Graph to Panel Layout" option, and if you want to switch back follow the same steps and choose "Switch Commit Graph to Editor Layout".
 
-#### Compact Graph View
+#### Compact Graph Column Layout
 
 <img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-responsive center img-bordered">
 
-With Compact Graph Layout view, you can view commit history and branch relationships in a more streamlined and compact format, enabling you to focus on your code and complete tasks with greater ease. 
+With the new compact Graph column layout, GitLens provides a more streamlined and compact layout to reduce the space required to visualize the commit history and branch relationships.
 
-To enable the new Compact Graph view, right click on the Graph column header, and select the Compact Graph Layout option.
+To enable the new compact Graph Column layout, right click on the Graph column header, and select the "Compact Graph Column Layout" option. If you want to switch back follow the same steps and choose "Default Graph Column Layout".
 
-#### PRs on local branches
+#### Pull Requests on Local Branches
 
-New improvement that allows users to see pull requests (PRs) directly on their local branches. This feature eliminates the need to switch back and forth between GitHub and the local repository since you can now easily view and track the status of your PRs from the Commit Graph.
+You can now see pull requests (PRs) for your local branch upstreams directly on the local branches themselves. You no longer have to hunt for the local branch's upstream on the Commit Graph to see the associated PR.
 
-#### Publish local branches from Graph
+#### Publish Local Branches from Commit Graph
 
-Publishing local branches directly from the Commit Graph is a game-changer. With this feature, you can quickly and easily publish your local changes without having to switch between multiple windows or use the command line
+Publishing local branches directly from the Commit Graph is a nice productivity boost. You can quickly and easily publish your local changes without having to switch to the Branches view or use the command line.
 
-### ✨ Focus view Pull Request Actions
+### ✨ Focus View Pull Request Actions
 
 <!-- INSERT IMAGE -->
 <img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-responsive center img-bordered">
 
-We’ve also introduced two new features within Focus View, aimed at enhancing workflow and productivity. You can now create a branch directly from the Focus View page, streamlining the process of creating and managing branches. We’ve also added a "Create Worktree" feature which enables you to create a new worktree from here as well, providing an efficient way to work on multiple branches simultaneously. 
+The Focus View is no longer read-only! We've introduced new actions within Focus View, aimed at enhancing your workflow and productivity. You can now easily create a branch or worktree, or switch/open an existing one, for a PR directly from the Focus View page, streamlining the process of reviewing or contributing to pull requests. As a quick worktree refresher, creating a worktree from the PR will let you review or contribute to multiple PRs simultaneously without affecting your current branch and working tree.
 
 ### Commit Detail UX Improvements
 
@@ -68,19 +68,19 @@ We’ve also introduced two new features within Focus View, aimed at enhancing w
 
 Improvements include making the commit details pinned state more visually apparent, making it easier for users to identify the current state of their commit details. Additionally, we introduced a soft/editor pin on file open in the details view, enabling you to easily navigate back to the file you were previously working on, offering greater convenience and usability.
 
-### Thank you to our contributors 
+### Thank you to our contributors
 Shout-out to all of our awesome contributors for this release!
   - WofWca ([@WofWca](https://github.com/WofWca))
 
 ### Added
 
-- Adds the ability to switch to an alternate "Panel" layout for the _Commit Graph_ &mdash; closes [#2602](https://github.com/gitkraken/vscode-gitlens/issues/2602) and [#2537](https://github.com/gitkraken/vscode-gitlens/issues/2537)
+- Adds the ability to switch to an alternate panel layout for the _Commit Graph_ &mdash; closes [#2602](https://github.com/gitkraken/vscode-gitlens/issues/2602) and [#2537](https://github.com/gitkraken/vscode-gitlens/issues/2537)
   - Adds a new context menu from the _Commit Graph Settings_ (cog) to switch between the "Editor" and "Panel" layouts
   - Adds a `gitlens.graph.layout` setting to specify the layout of the _Commit Graph_
     - `editor` - Shows the _Commit Graph_ in an editor tab
-    - `panel` - Shows the _Commit Graph_ in the bottom panel with an additional _Commit Graph Details_ view positioned on the right side of the _Commit Graph_
+    - `panel` - Shows the _Commit Graph_ in the bottom panel with an additional _Commit Graph Details_ view alongside on the right
 - Adds new _Commit Graph_ features and improvements
-  - Adds a "Compact" layout to the Graph column of the _Commit Graph_
+  - Adds a compact layout to the Graph column of the _Commit Graph_
     - Adds a context menu option to the header to toggle between the "Compact" and "Default" layouts &mdash; closes [#2611](https://github.com/gitkraken/vscode-gitlens/pull/2611)
   - Shows pull request icons on local branches when their upstream branch is associated with a pull request
   - Adds tooltips to work-in-progress (WIP) and stash nodes
@@ -89,7 +89,7 @@ Shout-out to all of our awesome contributors for this release!
 - Adds actions to _Focus View_ Pull Requests
   - Switch to or create a local branch
   - Create or open a worktree from the branch
-- Adds _Generate Commit Message (Experimental)..._ command to the SCM context menus
+- Adds a _Generate Commit Message (Experimental)..._ command to the SCM context menus
 
 ### Changed
 
