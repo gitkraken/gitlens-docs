@@ -1281,4 +1281,32 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tbody>
 </table>
 
+## Commit Graph Settings
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.graph.showUpstreamStatus</code></td>
+<td>Toggle the upstream (ahead/behind) indicators on branches</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.pullRequests</code></td>
+<td>Toggle pull request icons</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.dimMergeCommits</code></td>
+<td>Specify whether to dim (deemphasize) merge commit rows</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.scrollRowPadding</code></td>
+<td>Specify the number of rows from the edge at which the graph will scroll when using keyboard or search to change the selected row</td>
+</tr>
+</tbody>
+</table>
+
 ***
