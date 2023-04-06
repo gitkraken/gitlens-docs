@@ -159,7 +159,7 @@ The Focus View includes the following sections:
 - My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
 - My Issues: Shows all issues created by you, assigned to you, or that mention you.
 
-The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and icon folder.
+The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and folder icon.
 
 <img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
   
