@@ -64,7 +64,7 @@ The Focus View is no longer read-only! We've introduced new actions within Focus
 
 <img src="/wp-content/uploads/gl-commit-details-pinned-commit-deets.png" class="img-responsive center img-bordered">
 
-We've heard your feedback on the Commit Details view and the confusion and difficulty with using the pinning feature. We've updated the visual appearance of the pinned state, so it easier to know when Commit Details is pinned. Additionally, we introduced navigation controls that enable you to move back and forth through the commits you've recently viewed, helping to avoid losing context as you navigate through your code.
+We've heard your feedback on the Commit Details view and the confusion and difficulty with using the pinning feature. We updated the visual appearance of the pinned state, so its easier to know when Commit Details is pinned. Additionally, we've introduced navigation controls that enable you to move back and forth through the commits you've recently viewed, helping to avoid losing context as you navigate through your code.
 
 ### Thank you to our contributors
 Shout-out to all of our awesome contributors for this release!
