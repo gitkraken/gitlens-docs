@@ -13,7 +13,6 @@ GitLens+ features are available for all users on GitLens version 13+ working wit
 
 The introduction of GitLens+ has no impact on existing GitLens features. You’re not losing access to any of the features you know and love. In fact, more core features will continue to be added to GitLens that enable you to get even more out of Git in VS Code!
 
-
 ***
 
 ## Commit Graph
@@ -21,8 +20,6 @@ The introduction of GitLens+ has no impact on existing GitLens features. You’r
 The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
 
 <img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
-
-### Overview
 
 To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths. 
 
@@ -32,20 +29,31 @@ At the top of the commit graph the repository name, the branch name that is curr
 
 <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="img-bordered img-responsive center">
 
-The Author, Commit Date / Time, SHA columns, and changes columns can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
-
-<img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
-
-The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
-
-<img src="/wp-content/uploads/gl-scroll-markers.png" class="img-bordered img-responsive center">
-
-
 <div class='callout callout--basic'>
     <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
     
     We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
 </div>
+
+### Configuration and Layout
+
+The commit graph can be configured to be shown as desired offering different settings for what to show and how or where to show it.
+
+The Author, Commit Date / Time, SHA columns, and changes columns can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
+
+<img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
+
+A Commit Graph Panel Layout is offered to show the commit graph details alongside the editor. To switch between the Editor Layout and Panel Layout, select the Commit Graph settings cog located at the top right of the editor. From there, select the "Switch Commit Graph to Panel Layout" or "Switch Commit Graph to Editor Layout".
+
+<img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-bordered img-responsive center">
+
+A Compact Graph View if offered in the Commit Graph to hide visual noise of commit avatars. To enable the Compact Graph view, right click on the Graph column header, and select the Compact Graph Layout option.
+
+<img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-bordered img-responsive center">
+
+The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
+
+<img src="/wp-content/uploads/gl-scroll-markers.png" class="img-bordered img-responsive center">
 
 ### Settings
 
@@ -145,12 +153,16 @@ The Focus View allows you to stream line your workflow by providing a summarized
 
 Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
-<img src="/wp-content/uploads/gl-focus-view-2.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-focus-view-3.png" class="img-bordered img-responsive center">
 
 The Focus View includes the following sections:
 - My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
 - My Issues: Shows all issues created by you, assigned to you, or that mention you.
 
+The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and icon folder.
+
+<img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
+  
 <div class='callout callout--basic'>
     <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
 </div>
