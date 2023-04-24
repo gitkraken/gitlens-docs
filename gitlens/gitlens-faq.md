@@ -49,8 +49,8 @@ Yes, you can configure proxy settings from the Visual Studio Code settings. To o
 
 <img src="/wp-content/uploads/proxy-settings.png" class="img-bordered img-responsive center">
 
-Can I use my GitLens paid license on more than one computer?
+***
+
+### Can I use my GitLens paid license on more than one computer?
 
 Yes, your GitLens paid subscription is associated with your email address, not a specific computer. So you can use GitLens on as many computers as you’d like.
-
-***
