@@ -285,7 +285,7 @@ Additionally, these integrations provide commands to copy the url of or open, fi
 - Open _File on Remote_ command (`gitlens.openFileOnRemote`) — opens a file or revision on the remote provider
 - Copy _Remote File Url_ command (`gitlens.copyRemoteFileUrlToClipboard`) — copies the url of a file or revision on the remote provider
 - Open _File on Remote From..._ command (`gitlens.openFileOnRemoteFrom`) — opens a file or revision on a specific branch or tag on the remote provider
-- Copy _Remote File Url From... command (`gitlens.copyRemoteFileUrlFrom`) — copies the url of a file or revision on a specific branch or tag the remote provider
+- Copy _Remote File Url From..._ command (`gitlens.copyRemoteFileUrlFrom`) — copies the url of a file or revision on a specific branch or tag the remote provider
 - Open _Commit on Remote_ command (`gitlens.openCommitOnRemote`) — opens a commit on the remote provider
 - Copy _Remote Commit Url_ command (`gitlens.copyRemoteCommitUrl`) — copies the url of a commit on the remote provider
 - Open _Branch on Remote_ command (`gitlens.openBranchOnRemote`) — opens the branch on the remote provider
@@ -329,7 +329,7 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 - Adds an _Add Co-authors_ command (`gitlens.addAuthors`) to add a co-author to the commit message input box
 
-- Adds a _Copy SH_A command (`gitlens.copyShaToClipboard`) to copy the commit SHA of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
+- Adds a _Copy SHA_ command (`gitlens.copyShaToClipboard`) to copy the commit SHA of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
 
 - Adds a _Copy Message_ command (`gitlens.copyMessageToClipboard`) to copy the commit message of the current line to the clipboard or from the most recent commit to the current branch, if there is no current editor
 
