@@ -19,6 +19,113 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v13-6"></a>
+## Version 13.6
+
+### Thursday, May 11, 2023
+
+GitLens 13.6 brings a range of enhancements and additions to the Commit Graph and refinements to our context menus. We've made improvements to the layout, condensing author names and column titles into avatars and icons when sized to minimums, and added flexibility of rearranging and moving columns as desired. This allows for a more streamlined and personalized GitLens experience. We have also updated the Commit Graph's toolbar to dynamically show a Push or Pull action, depending on a branch's state in relation to its upstream remote.
+
+<img src="/wp-content/uploads/gl-13-6-hero.png" class="img-responsive center img-bordered">
+
+## Context Menu Updates
+
+<img src="/wp-content/uploads/gl-13-6-context-menu-update.gif" class="img-responsive center img-bordered">
+
+To improve structure and findability of our menu options, we’ve made several changes to our context menus. Many Copy Remote URL commands, which were previously in a Copy As submenu, have been moved to a Share submenu within GitLens views, which aligns with VS Code menus. And once [microsoft/vscode#176316](https://github.com/microsoft/vscode/issues/176316) lands we will move the rest of the Copy Remote URL commands into the appropriate Share submenu. This reorganization consolidates related commands and makes it easier to locate and utilize them.
+
+Similarly, the Copy SHA and Copy Message commands, previously nested in submenus, have been promoted to the root of the context menu. This elevates their visibility and enables quick access for performing actions on commits. Additionally, the Copy Relative Path command has been relocated to the root of the context menu. These adjustments enhance convenience when working with file paths.
+
+### ✨ Commit Graph Enhancements
+
+We’ve made it easier to customize your Commit Graph experience as well as improvements for better readability when in compact layouts.
+
+#### Compact Graph Improvements
+
+<img src="/wp-content/uploads/gl-13-6-graph-customize-columns.gif" class="img-responsive center img-bordered">
+
+Previously unmovable columns within the Commit Graph can now be rearranged and customized according to your preferences. This flexibility enables you to arrange the columns in a way that best suits their workflow and priorities.
+
+In addition, we have implemented a more compact layout by removing the commit icon when avatars are hidden. This optimization maximizes the utilization of screen space and results in a cleaner and more streamlined visual representation.
+
+Moreover, the Author column now displays avatars instead of text when sized to its minimum width. That combined with the compact layout for the Graph column provide a nice compact experience with no loss of fidelity.
+
+#### Column Headers
+
+<img src="/wp-content/uploads/gl-13-6-graph-show-hide-columns.gif" class="img-responsive center img-bordered">
+
+Commit Graph column headers have received dynamic behavior for enhanced readability. When the Commit Graph columns are compacted, the column headers seamlessly switch from displaying text to icons. This adaptation ensures that crucial information remains visible, even in constrained display settings.
+
+### Stash Improvements
+
+We've added the ability to rename stashes. If you are like me and often stash changes in a rush with very poor names, e.g. "wip" and then kick yourself later for not providing a more descriptive name, the this feature is for you. You can now rename any stash at any time.
+
+You can now search within stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
+
+
+### Added
+
+- Adds the ability to rename stashes &mdash; closes [#2538](https://github.com/gitkraken/vscode-gitlens/issues/2538)
+  - Adds a new _Rename Stash..._ command to the _Stashes_ view
+- Adds new _Commit Graph_ features and improvements
+  - Adds a _Push_ or _Pull_ toolbar button depending the current branch being ahead or behind it's upstream
+  - Adds support for the _Commit Graph_ over [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) sessions
+  - Adds the ability to move all of the columns, including the ones that were previously unmovable
+  - Automatically switches column headers from text to icons when the column's width is too small for the text to be useful
+  - Automatically switches the Author column to shows avatars rather than text when the column is sized to its minimum width
+- Adds the ability to search stashes when using the commit search via the _Commit Graph_, _Search & Compare_ view, or the _Search Commits_ command
+- Adds an _Open Visual File History_ command to the new _File History_ submenu on existing context menus
+- Allows the _Repositories_ view for virtual repositories
+- Honors the `git.repositoryScanIgnoredFolders` VS Code setting
+- Adds _Share_, _Open Changes_, and _Open on Remote (Web)_ submenus to the new editor line numbers (gutter) context menu
+- Adds an _Open Line Commit Details_ command to the _Open Changes_ submenus on editor context menus
+- Adds an _Open Changes_ submenu to the row context menu on the _Commit Graph_
+
+### Changed
+
+- Refines and reorders many of the GitLens context menus and additions to VS Code context menus
+  - Moves _Copy Remote \* URL_ commands from the _Copy As_ submenu into the _Share_ submenu in GitLens views
+  - Adds a _Share_ submenu to Source Control items
+  - Moves _Copy SHA_ and _Copy Message_ commands on commits from the _Copy As_ submenu into the root of the context menu
+  - Moves _Copy Relative Path_ command on files from the _Copy As_ submenu into the root of the context menu
+  - Moves file history commands into a _File History_ submenu
+  - Moves _Open \* on Remote_ commands into _Open on Remote (Web)_ submenu
+  - Renames the _Commit Changes_ submenu to _Open Changes_
+  - Renames _Show Commit_ command to _Quick Show Commit_ and _Show Line Commit_ command to _Quick Show Line Commit_ for better clarity as it opens a quick pick menu
+- Changes the file icons shown in many GitLens views to use the file type's theme icon (by default) rather than the status icon
+  - Adds a `gitlens.views.commits.files.icon` setting to specify how the _Commits_ view will display file icons
+  - Adds a `gitlens.views.repositories.files.icon` setting to specify how the _Repositories_ view will display file icons
+  - Adds a `gitlens.views.branches.files.icon` setting to specify how the _Branches_ view will display file icons
+  - Adds a `gitlens.views.remotes.files.icon` setting to specify how the _Remotes_ view will display file icons
+  - Adds a `gitlens.views.stashes.files.icon` setting to specify how the _Stashes_ view will display file icons
+  - Adds a `gitlens.views.tags.files.icon` setting to specify how the _Tags_ view will display file icons
+  - Adds a `gitlens.views.worktrees.files.icon` setting to specify how the _Worktrees_ view will display file icons
+  - Adds a `gitlens.views.contributors.files.icon` setting to specify how the _Contributors_ view will display file icons
+  - Adds a `gitlens.views.searchAndCompare.files.icon` setting to specify how the _Search & Compare_ view will display file icons
+- Renames _Delete Stash..._ command to _Drop Stash..._ in the _Stashes_ view
+- Removes the commit icon when hiding avatars in the _Commits_ view to allow for a more compact layout
+- Limits Git CodeLens on docker files &mdash; closes [#2153](https://github.com/gitkraken/vscode-gitlens/issues/2153)
+- Shows progress notification for deep links earlier in the process &mdash; closes [#2662](https://github.com/gitkraken/vscode-gitlens/issues/2662)
+
+### Fixed
+
+- Fixes [#2664](https://github.com/gitkraken/vscode-gitlens/issues/2664) - Terminal run Git command can be "corrupted" if there is previous text waiting in the terminal
+- Fixes [#2660](https://github.com/gitkraken/vscode-gitlens/issues/2660) - Commands executed in the terminal fail to honor found Git path
+- Fixes [#2654](https://github.com/gitkraken/vscode-gitlens/issues/2654) - Toggle zen mode not working until you restart vscode
+- Fixes [#2629](https://github.com/gitkraken/vscode-gitlens/issues/2629) - When on VSCode web, add handling for failing repo discovery
+- Fixes many issues with using GitLens over [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) sessions
+- Fixes mouse scrubbing issues with the minimap on the _Commit Graph_
+- Fixes _Refresh Repository Access_ and _Reset Repository Access Cache_ commands to always be available
+- Fixes state not being restored on the Home webview
+- Fixes getting the oldest unpushed commit when there is more than 1 remote
+- Fixes an issue with the quick input on the _Git Command Palette_ unexpectedly going back to the previous step
+- Fixes GitLens access tooltip not being visible when hovering in the _Commit Graph_
+
+### Removed
+
+- Removes "Open Commit on Remote" command from the VS Code Timeline view as it can no longer be supported &mdash; see [microsoft/vscode#177319](https://github.com/microsoft/vscode/issues/177319)
+
+
 <a id="v13-5"></a>
 ## Version 13.5
 
