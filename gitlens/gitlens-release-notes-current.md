@@ -24,7 +24,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ### Thursday, May 11, 2023
 
-GitLens 13.6 brings a range of enhancements and additions to the Commit Graph and Context Menus. In this latest release, we have made improvements to the layout, condensing author names and column titles into avatars and icons. This allows for a more streamlined and personalized GitLens experience, with the added flexibility of rearranging and moving columns as desired. We have also revamped the Fetch toolbar button, which now dynamically changes to either Push or Pull, depending on the branch's relationship with its upstream counterpart.
+GitLens 13.6 brings a range of enhancements and additions to the Commit Graph and Context Menus. In this latest release, we have made improvements to the layout, condensing author names and column titles into avatars and icons. This allows for a more streamlined and personalized GitLens experience, with the added flexibility of rearranging and moving columns as desired. We have also updated the Commit Graph's repository toolbar buttons, which now dynamically show a Push or Pull action, depending on a branch's state in relation to its upstream remote.
 
 <img src="/wp-content/uploads/gl-13-6-hero.png" class="img-responsive center img-bordered">
 
@@ -32,17 +32,17 @@ GitLens 13.6 brings a range of enhancements and additions to the Commit Graph an
 
 <img src="/wp-content/uploads/gl-13-6-context-menu-update.gif" class="img-responsive center img-bordered">
 
-To enhance the menu structure and improve usability, we’ve made several changes to its context menu. The Copy Remote URL commands, which were previously standalone, have been moved to the Share submenu within GitLens views. This reorganization consolidates related commands and makes it easier to locate and utilize them. 
+To improve structure and findability of our menu options, we’ve made several changes to our context menus. The Copy Remote URL commands, which were previously standalone, have been moved to the Share submenu within GitLens views. This reorganization consolidates related commands and makes it easier to locate and utilize them. 
 
 Similarly, the Copy SHA and Copy Message commands, previously nested in submenus, have been promoted to the root of the context menu. This elevates their visibility and enables quick access for performing actions on commits. Additionally, the Copy Relative Path command has been relocated to the root of the context menu. These adjustments enhance convenience when working with file paths.
 
 ### ✨ Commit Graph Enhancements
 
-We’ve made notable enhancements to the Commit Graph, improving its usability and visual presentation.
+We’ve made it easier to customize your Commit Graph experience as well as improvements for better readability when in compact layouts.
 
 #### Compact Graph Improvements
 
-<img src="/wp-content/uploads/gl-13-6-graph-show-hide-columns.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-13-6-graph-customize-columns.gif" class="img-responsive center img-bordered">
 
 Previously unmovable columns within the Commit Graph can now be rearranged and customized according to your preferences. This flexibility enables you to arrange the columns in a way that best suits their workflow and priorities.
 
@@ -50,13 +50,13 @@ In addition, we have implemented a more compact layout by removing the commit ic
 
 #### Column Headers
 
-<img src="/wp-content/uploads/gl-13-6-graph-customize-columns.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-13-6-graph-show-hide-columns.gif" class="img-responsive center img-bordered">
 
 Commit Graph column headers have received dynamic behavior for enhanced readability. When the Commit Graph columns are compacted, the column headers seamlessly switch from displaying text to icons. This adaptation ensures that crucial information remains visible, even in constrained display settings.
 
 Moreover, the Author column now displays avatars instead of text when sized to its minimum width. 
 
-#### Stashes
+### Stash search
 
 Searching for stashes has become more accessible within 13.6. You can now effortlessly search stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
 
