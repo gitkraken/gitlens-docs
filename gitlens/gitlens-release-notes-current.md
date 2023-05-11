@@ -56,9 +56,11 @@ Commit Graph column headers have received dynamic behavior for enhanced readabil
 
 Moreover, the Author column now displays avatars instead of text when sized to its minimum width. 
 
-### Stash search
+### Stash Improvements
 
-Searching for stashes has become more accessible within 13.6. You can now effortlessly search stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
+We've added renaming stashes
+
+Searching withing stashes has become more accessible within 13.6. You can now effortlessly search stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
 
 
 ### Added
