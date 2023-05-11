@@ -270,7 +270,7 @@ GitLens is highly customizable and provides many configuration settings to allow
 </tr>
 <tr>
 <td><code>gitlens.views.repositories.files.icon</code></td>
-<td>Specifies how the Repositories view will display file icons<td>
+<td>Specifies how the Repositories view will display file icons</td>
 </tr>
 <tr>
 <td><code>gitlens.views.branches.files.icon</code></td>
