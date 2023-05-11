@@ -30,18 +30,19 @@ GitLens 13.6 brings a range of enhancements and additions to the Commit Graph an
 
 ## Context Menu Updates
 
-<!-- insert GIF -->
+<img src="/wp-content/uploads/gl-13-6-context-menu-update.gif" class="img-responsive center img-bordered">
 
 To enhance the menu structure and improve usability, we’ve made several changes to its context menu. The Copy Remote URL commands, which were previously standalone, have been moved to the Share submenu within GitLens views. This reorganization consolidates related commands and makes it easier to locate and utilize them. 
 
 Similarly, the Copy SHA and Copy Message commands, previously nested in submenus, have been promoted to the root of the context menu. This elevates their visibility and enables quick access for performing actions on commits. Additionally, the Copy Relative Path command has been relocated to the root of the context menu. These adjustments enhance convenience when working with file paths.
 
 ### ✨ Commit Graph Enhancements
+
 We’ve made notable enhancements to the Commit Graph, improving its usability and visual presentation.
 
 #### Compact Graph Improvements
 
-<!-- insert GIF -->
+<img src="/wp-content/uploads/gl-13-6-graph-show-hide-columns.gif" class="img-responsive center img-bordered">
 
 Previously unmovable columns within the Commit Graph can now be rearranged and customized according to your preferences. This flexibility enables you to arrange the columns in a way that best suits their workflow and priorities.
 
@@ -49,7 +50,7 @@ In addition, we have implemented a more compact layout by removing the commit ic
 
 #### Column Headers
 
-<!-- insert GIF -->
+<img src="/wp-content/uploads/gl-13-6-graph-customize-columns.gif" class="img-responsive center img-bordered">
 
 Commit Graph column headers have received dynamic behavior for enhanced readability. When the Commit Graph columns are compacted, the column headers seamlessly switch from displaying text to icons. This adaptation ensures that crucial information remains visible, even in constrained display settings.
 
