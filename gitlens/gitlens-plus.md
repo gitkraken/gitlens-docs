@@ -39,7 +39,7 @@ At the top of the commit graph the repository name, the branch name that is curr
 
 The commit graph can be configured to be shown as desired offering different settings for what to show and how or where to show it.
 
-The Author, Commit Date / Time, SHA columns, and changes columns can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
+All columns can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the settings. This enables you to arrange the columns in a way that best suits your workflow and priorities. The changes column represents added (green) and deleted (red) lines made to each file within the commit.
 
 <img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
 
@@ -47,7 +47,7 @@ A Commit Graph Panel Layout is offered to show the commit graph details alongsid
 
 <img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-bordered img-responsive center">
 
-A Compact Graph View if offered in the Commit Graph to hide visual noise of commit avatars. To enable the Compact Graph view, right click on the Graph column header, and select the Compact Graph Layout option.
+A Compact Graph View if offered in the Commit Graph to hide visual noise of commit avatars. To enable the Compact Graph view, right click on the Graph column header, and select the Compact Graph Layout option. When the Commit Graph columns are compacted, the column headers automatically switch from displaying text to icons to ensure that crucial information remains visible, even in constrained display settings. Additionally the Author column displays avatars instead of text when sized to its minimum width
 
 <img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-bordered img-responsive center">
 
