@@ -14,7 +14,7 @@ GitLens provides a rich **interactive settings editor**, an easy-to-use interfac
 GitLens is highly customizable and provides many configuration settings to allow the personalization of almost all features.
 
 ##Current Line Blame Settings
- 
+
 <table>
 <thead>
 <tr>
@@ -265,6 +265,7 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>gitlens.views.showRelativeDateMarkers</code></td>
 <td>Specifies whether to show relative date markers (<em>Less than a week ago</em>, <em>Over a week ago</em>, <em>Over a month ago</em>, etc) on revision (commit) histories in the views</td>
 </tr>
+<tr>
 <td><code>gitlens.views.commits.files.icon</code></td>
 <td>Specifies how the Commits view will display file icons</td>
 </tr>
@@ -294,7 +295,7 @@ GitLens is highly customizable and provides many configuration settings to allow
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.files.icon</code></td>
-<td>Specifies specify how the Contributors view will display file icons</td>
+<td>Specifies how the Contributors view will display file icons</td>
 </tr>
 <tr>
 <td><code>gitlens.views.searchAndCompare.files.icon</code></td>
