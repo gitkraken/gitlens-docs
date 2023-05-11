@@ -14,7 +14,7 @@ GitLens provides a rich **interactive settings editor**, an easy-to-use interfac
 GitLens is highly customizable and provides many configuration settings to allow the personalization of almost all features.
 
 ##Current Line Blame Settings
- 
+
 <table>
 <thead>
 <tr>
@@ -264,6 +264,42 @@ GitLens is highly customizable and provides many configuration settings to allow
 <tr>
 <td><code>gitlens.views.showRelativeDateMarkers</code></td>
 <td>Specifies whether to show relative date markers (<em>Less than a week ago</em>, <em>Over a week ago</em>, <em>Over a month ago</em>, etc) on revision (commit) histories in the views</td>
+</tr>
+<tr>
+<td><code>gitlens.views.commits.files.icon</code></td>
+<td>Specifies how the Commits view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.repositories.files.icon</code></td>
+<td>Specifies how the Repositories view will display file icons<td>
+</tr>
+<tr>
+<td><code>gitlens.views.branches.files.icon</code></td>
+<td>Specifies how the Branches view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.formats.files.label</code></td>
+<td>Specifies specify how the Remotes view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.stashes.files.icon</code></td>
+<td>Specifies how the Stashes view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.tags.files.icon</code></td>
+<td>Specifies how the Tags view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.worktrees.files.icon</code></td>
+<td>Specifies how the Worktrees view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.contributors.files.icon</code></td>
+<td>Specifies how the Contributors view will display file icons</td>
+</tr>
+<tr>
+<td><code>gitlens.views.searchAndCompare.files.icon</code></td>
+<td>Specifies how the Search & Compare view will display file icons</td>
 </tr>
 </tbody>
 </table>
