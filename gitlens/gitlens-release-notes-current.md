@@ -24,7 +24,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ### Thursday, May 11, 2023
 
-GitLens 13.6 brings a range of enhancements and additions to the Commit Graph and Context Menus. In this latest release, we have made improvements to the layout, condensing author names and column titles into avatars and icons. This allows for a more streamlined and personalized GitLens experience, with the added flexibility of rearranging and moving columns as desired. We have also updated the Commit Graph's repository toolbar buttons, which now dynamically show a Push or Pull action, depending on a branch's state in relation to its upstream remote.
+GitLens 13.6 brings a range of enhancements and additions to the Commit Graph and refinements to our context menus. We've made improvements to the layout, condensing author names and column titles into avatars and icons when sized to minimums, and added flexibility of rearranging and moving columns as desired. This allows for a more streamlined and personalized GitLens experience. We have also updated the Commit Graph's toolbar to dynamically show a Push or Pull action, depending on a branch's state in relation to its upstream remote.
 
 <img src="/wp-content/uploads/gl-13-6-hero.png" class="img-responsive center img-bordered">
 
@@ -32,7 +32,7 @@ GitLens 13.6 brings a range of enhancements and additions to the Commit Graph an
 
 <img src="/wp-content/uploads/gl-13-6-context-menu-update.gif" class="img-responsive center img-bordered">
 
-To improve structure and findability of our menu options, we’ve made several changes to our context menus. The Copy Remote URL commands, which were previously standalone, have been moved to the Share submenu within GitLens views. This reorganization consolidates related commands and makes it easier to locate and utilize them. 
+To improve structure and findability of our menu options, we’ve made several changes to our context menus. Many Copy Remote URL commands, which were previously in a Copy As submenu, have been moved to a Share submenu within GitLens views, which aligns with VS Code menus. And once [microsoft/vscode#176316](https://github.com/microsoft/vscode/issues/176316) lands we will move the rest of the Copy Remote URL commands into the appropriate Share submenu. This reorganization consolidates related commands and makes it easier to locate and utilize them.
 
 Similarly, the Copy SHA and Copy Message commands, previously nested in submenus, have been promoted to the root of the context menu. This elevates their visibility and enables quick access for performing actions on commits. Additionally, the Copy Relative Path command has been relocated to the root of the context menu. These adjustments enhance convenience when working with file paths.
 
@@ -48,19 +48,19 @@ Previously unmovable columns within the Commit Graph can now be rearranged and c
 
 In addition, we have implemented a more compact layout by removing the commit icon when avatars are hidden. This optimization maximizes the utilization of screen space and results in a cleaner and more streamlined visual representation.
 
+Moreover, the Author column now displays avatars instead of text when sized to its minimum width. That combined with the compact layout for the Graph column provide a nice compact experience with no loss of fidelity.
+
 #### Column Headers
 
 <img src="/wp-content/uploads/gl-13-6-graph-show-hide-columns.gif" class="img-responsive center img-bordered">
 
 Commit Graph column headers have received dynamic behavior for enhanced readability. When the Commit Graph columns are compacted, the column headers seamlessly switch from displaying text to icons. This adaptation ensures that crucial information remains visible, even in constrained display settings.
 
-Moreover, the Author column now displays avatars instead of text when sized to its minimum width. 
-
 ### Stash Improvements
 
-We've added renaming stashes
+We've added the ability to rename stashes. If you are like me and often stash changes in a rush with very poor names, e.g. "wip" and then kick yourself later for not providing a more descriptive name, the this feature is for you. You can now rename any stash at any time.
 
-Searching withing stashes has become more accessible within 13.6. You can now effortlessly search stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
+You can now search within stashes using the Commit Graph, the Search & Compare view, or the Search Commits command. This improvement facilitates efficient navigation and retrieval of specific stash entries.
 
 
 ### Added
@@ -120,6 +120,10 @@ Searching withing stashes has become more accessible within 13.6. You can now ef
 - Fixes getting the oldest unpushed commit when there is more than 1 remote
 - Fixes an issue with the quick input on the _Git Command Palette_ unexpectedly going back to the previous step
 - Fixes GitLens access tooltip not being visible when hovering in the _Commit Graph_
+
+### Removed
+
+- Removes "Open Commit on Remote" command from the VS Code Timeline view as it can no longer be supported &mdash; see [microsoft/vscode#177319](https://github.com/microsoft/vscode/issues/177319)
 
 
 <a id="v13-5"></a>
