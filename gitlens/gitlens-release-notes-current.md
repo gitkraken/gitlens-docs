@@ -19,6 +19,66 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 ***
 
+<a id="v14-0"></a>
+## Version 14.0
+
+### Tuesday, June 13, 2023
+
+Intro
+
+<img src="/wp-content/uploads/gl-14-0-hero.png" class="img-responsive center img-bordered">
+
+## New views layout for greater focus and productivity
+
+### GitLens Inspect side bar
+
+### GitLens side bar
+
+### Source Control side bar
+
+### (Bottom) Panel
+
+### Updating to the new views layout
+
+## ☁️ Workspaces
+
+## ✨ Commit Graph Enhancements
+We’ve made notable enhancements to the Commit Graph, improving its usability and visual presentation.
+
+### Layouts
+
+### Changes Column
+
+### Branch/Tag Column
+
+### Scroll Markers
+
+
+### Added
+
+- Adds ability to choose the OpenAI model used for GitLens' experimental AI features &mdash; closes [#2636](https://github.com/gitkraken/vscode-gitlens/issues/2636) thanks to [PR #2637](https://github.com/gitkraken/vscode-gitlens/pull/2637) by Daniel Rodríguez ([@sadasant](https://github.com/sadasant))
+  - Adds a `gitlens.ai.experimental.openai.model` setting to specify the OpenAI model (defaults to `gpt-3.5-turbo`)
+- ☁️ Adds the all-new _GitKraken Workspaces_ feature as a sidebar view, supporting interaction with local and cloud GitKraken Workspaces.
+- Adds support for cloning, adding a remote, and fetching from the target remote during a deep link
+- Adds support for deep links using repository disk paths
+- Adds new _Commit Graph_ features and improvements
+  - Adds a file count to the _Changes_ column
+  - Adds two new options to the graph header context menu
+    - `Reset Columns to Default Layout` - resets column widths, ordering, visibility, and graph column mode to default settings
+    - `Reset Columns to Compact Layout` - resets column widths, ordering, visibility, and graph column mode to compact settings
+  - Makes the _Changes_ column visible by default (previously hidden)
+  - Adds extra width to the bar for outlier rows in the _Changes_ column so that they stand out a bit more
+  - Improves tooltips on _Branch/Tag_ icons to be more uniform and descriptive
+  - Fixes a bug where _Branch/Tag_ nodes sometimes wouldn't expand on hover
+  - Moves content in the last column out from behind the scrollbar
+  - Improves alignment of scroll markers with the scrollbar
+  - Adds new context menu options to the _Commit Graph Settings_ (cog) to toggle scroll marker types
+
+### Fixed
+
+- Fixes [#2336](https://github.com/gitkraken/vscode-gitlens/issues/2336) - Apply encodeURIComponent() to pieces of the custom remote URL
+
+
 <a id="v13-6"></a>
 ## Version 13.6
 
