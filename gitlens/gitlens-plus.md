@@ -126,6 +126,10 @@ The Minimap provides an additional dimension to the Commit Graph. You can quickl
 
 <img src="/wp-content/uploads/gl-minimap-2.png" class="img-bordered img-responsive center">
 
+The Minimap can be toggled between showing commits or lines changed by selecting the graph icon dropdown in the top right of the Activity Minimap. Additionally, markers can be toggled on or off from here.
+
+<img src="/wp-content/uploads/gl-minimap-settings.png" class="img-bordered img-responsive center">
+
 Minimap Overview:
 
 - Reads left to right - left is the most recent and the right is older
