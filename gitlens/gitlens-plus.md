@@ -13,6 +13,10 @@ GitLens Pro features are available for all users on GitLens version 13+ working 
 
 The introduction of GitLens Pro features has no impact on existing GitLens features. You’re not losing access to any of the features you know and love. In fact, more core features will continue to be added to GitLens that enable you to get even more out of Git in VS Code!
 
+<div class='callout callout--basic'>
+    <p>Note: ☁️ Requires an account and access is based on your subscription tier, e.g. Free or Pro</p>
+</div>
+
 ***
 
 ## Commit Graph
@@ -144,6 +148,47 @@ Minimap Overview:
 Deep Links are links that can be used to open up a resource within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired resource, hover over _Share_ and select _Copy Link to \<resource\>_.
 
 <img src="/wp-content/uploads/gl-deep-link.png" class="img-bordered img-responsive center">
+
+***
+
+### ☁️ Workspaces
+
+Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
+
+Whether you're working individually or collaborating with a team, these new features are designed to help you work more efficiently and effectively.
+
+To access Workspaces, simply open the GitLens Home menu and you will find them in the panel located at the bottom left. Alternatively, you can access them by performing a search in the command palette.
+
+Please note that while using cloud workspaces requires a free account, shared cloud workspaces require a trial or subscription. Shared Workspaces functionality is coming soon to GitLens.
+
+#### Creating a Workspace
+
+To create a workspace, tap the '+' button next to GitKraken Workspaces, provide a name and a description, and connect a provider if you wish.
+
+#### Adding Repositories
+
+You can add repositories to a workspace by tapping the '+' button under the Workspace tab. And if you want to keep your Workspaces and their repositories up-to-date, simply tap the Refresh icon.
+
+#### Removing Repositories
+
+To remove a repository from a Workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting 'remove repository from Workspace'.
+
+#### Locating Repositories
+
+To locate the disk location of the repositories within the Cloud Workspace, select the 'Locate Repositories' (pin icon) next to the repository name. If you have a folder set up for a Workspace with multiple repositories on your disk, you can select the option and choose the parent folder. GitLens will then find all the repositories within that parent folder.
+
+#### Opening Repositories
+
+To open a repository from a Workspace tap the 'Open Repository in New Window' icon.
+
+_Pro Tip: If you prefer to open the Workspace in your current window, hold down the ALT/OPTION key on a Mac and click 'Open Repo'._
+
+#### Converting to Cloud Workspaces
+
+To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Client, GitLens, and the GitKraken CLI.
+
+#### Understanding Workspace indicators and colors
+Workspaces also include visual indicators to help you understand their status. For example, a green Workspace with an 'O' symbol indicates that it is open in your current window.
 
 ***
 
