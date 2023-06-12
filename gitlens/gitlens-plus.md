@@ -1,7 +1,7 @@
 ---
 
-title: GitLens+ Features
-description: GitLens+ Features
+title: GitLens Pro Features
+description: GitLens Pro Features
 taxonomy:
     category: gitlens
 
@@ -9,9 +9,9 @@ taxonomy:
 
 <img src="/wp-content/uploads/gl-graphic-image.png" class="img-bordered img-responsive center">
 
-GitLens+ features are available for all users on GitLens version 13+ working with public or local repositories. To work with these features on a private repository, you will need a  <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>paid plan</a>.
+GitLens Pro features are available for all users on GitLens version 13+ working with public or local repositories. To work with these features on a private repository, you will need a  <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>paid plan</a>.
 
-The introduction of GitLens+ has no impact on existing GitLens features. You’re not losing access to any of the features you know and love. In fact, more core features will continue to be added to GitLens that enable you to get even more out of Git in VS Code!
+The introduction of GitLens Pro features has no impact on existing GitLens features. You’re not losing access to any of the features you know and love. In fact, more core features will continue to be added to GitLens that enable you to get even more out of Git in VS Code!
 
 ***
 
@@ -30,7 +30,7 @@ At the top of the commit graph the repository name, the branch name that is curr
 <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
-    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens+ subscription can use the Commit Graph with private repos. </br></br>
+    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens subscription or trial can use the Commit Graph with private repos. </br></br>
 
     We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
 </div>
@@ -214,7 +214,7 @@ Additional requirements:
 
 ### Signing in with Single Sign On
 
-GitLens+ users will see the option to Sign in with SSO from the login screen.
+GitLens Teams or Enterprise users will see the option to Sign in with SSO from the login screen.
 
 <img src="/wp-content/uploads/single-sign-on.png" class="img-bordered img-responsive center">
 
@@ -224,7 +224,7 @@ After clicking “Sign in with SSO”, the SSO form will open and ask for an ema
 
 ## GitHub Enterprise and GitLab Self-Managed Integration
 
-GitLens+ offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
+GitLens Pro offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
 
 Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
 
@@ -246,23 +246,14 @@ To remove your OpenAI API key in GitLens, run the command `GitLens: Reset Stored
 
 ## FAQ
 
-### What are GitLens+ features?
-
-Initially, in GitLens 12 we introduced new GitLens+ features that include Worktrees and Visual File History. Later we added the Commit Graph, see above all the additions we have made, with more to come!
-
-### What is GitLens+?
-
-GitLens+ is a set of exciting new visualization and code collaboration capabilities designed to help devs code faster and more efficiently solo or as a team. These additional features can be used indefinitely with public repositories for any user without or with a GitLens account. You’ll also be able to test drive GitLens+ features with private repos as part of your automatic 7-day free trial of GitLens+ Pro.
-
 ### Is GitLens still free?
 
-Yes, GitLens is free. All core features will continue to be free without an account. In fact, we’re still adding many core features to GitLens. GitLens+ features are purely additive and provide a richer, more powerful experience.
+Yes, GitLens is free. All core features will continue to be free without an account. In fact, we’re still adding many core features to GitLens. GitLens Pro features are purely additive and provide a richer, more powerful experience.
 
+### Are GitLens Pro features free?
 
-### Is GitLens+ free?
-
-GitLens+ requires a paid license when working with private repoistories. For local and public repositories it is free. To summarize:
+GitLens Pro features requires a paid license when working with private repoistories. For local and public repositories it is free. To summarize:
 
 + GitLens is **free**, no account required, and can be used on any local repository.
-+ GitLens+ features on local & public repositories are also **free**.
-+ GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
++ GitLens Pro features on local & public repositories are also **free**.
++ GitLens Pro features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
