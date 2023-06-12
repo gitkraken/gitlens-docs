@@ -98,13 +98,15 @@ After upgrading to GitLens 14 (or June 8th's Pre-Release), you'll be prompted to
 
 ## ☁️ Workspaces
 
-With the introduction of Workspaces in GitLens 14, we're taking a giant leap forward in enhancing productivity and streamlining workflows. We're excited for you to experience the benefits of this game-changing feature, and we look forward to continuing to improve GitLens to better serve your needs.
+With the introduction of Workspaces in GitLens 14, we're taking a giant leap forward in enhancing productivity and streamlining workflows. We're excited for you to experience the benefits of this game-changing feature, and we look forward to continuing to improve GitLens to better serve your needs. 
 
 Workspaces in GitLens are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
 
 Please note that while using cloud workspaces requires a free account, shared cloud workspaces require a trial or subscription. Shared Workspaces functionality is coming soon to GitLens.
 
 Whether you're working individually or collaborating with a team, these new features are designed to help you work more efficiently and effectively.
+
+To access Workspaces, simply open the GitLens Home menu and you will find them in the panel located at the bottom left. Alternatively, you can access them by performing a search in the command palette.
 
 ### Creating a Workspace
 
@@ -139,12 +141,24 @@ Workspaces also include visual indicators to help you understand their status. F
 We’ve made notable enhancements to the Commit Graph, improving its usability and visual presentation.
 
 ### Layouts
+As mentioned above, we’ve restructured our views with our New View Layouts for greater focus and productivity, including the new GitLens Inspect side bar, the re-focused GitLens side bar, and the slimmed-down Source Control side bar. Each of these new layouts is designed to provide more contextual information and insights into what you're actively working on, enhancing your overall experience and productivity.
 
 ### Changes Column
+The Changes column is now visible by default. Previously, this column was hidden by default. No more navigating through settings to enable the Changes column – it's right there when you need it, providing immediate insights into the modifications made in each commit. This change is part of our commitment to making GitLens as user-friendly and accessible as possible.
+
+The changes column now also includes a file count. The file account allows you to see at a glance the number of files involved in each commit, helping you quickly grasp the scale of each change. This new count includes files that have been added, modified, or deleted in each commit.
 
 ### Branch/Tag Column
+In our ongoing efforts to enhance the user experience, we've made significant improvements to the tooltips on the Branch/Tag icons. Now, they're more uniform and descriptive, providing clearer and more consistent information. This update will make navigating through your branches and tags easier and more intuitive than ever before.
+
+We've resolved an issue that was sometimes preventing Branch/Tag nodes from expanding when hovered over. This bug fix ensures a smoother and more reliable interaction with the Branch/Tag nodes, enhancing the overall usability and functionality of GitLens. We're continuously working to improve GitLens and your feedback is vital in helping us fix these bugs. Thank you for your support!
 
 ### Scroll Markers
+Scroll markers now display better alignment with the scrollbar. This enhancement ensures that the scroll markers are accurately placed, providing a smoother scrolling experience and making it easier for you to navigate.
+
+We've also introduced toggle on and off options for specific scroll markers, including toggles for local branches, remote branches, stashes, and tags. With these additions, you now have the ability to toggle between different scroll marker types. This feature offers you greater control and customization over how you visualize and navigate your repository's commit history. 
+
+You can easily access these new options by clicking on the graph icon dropdown in the top right of the Activity Minimap, and select the scroll marker type that best suits your needs.
 
 
 ### Added
