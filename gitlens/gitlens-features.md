@@ -381,6 +381,21 @@ For example, if you uncheck the _Add to the editor group toolbar_ you will see t
 
 You can also expand each group to control each area more granularly.
 
+***
+
+##Modes
+
+GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes for quickly toggling between sets of settings.
+
+- Adds _Switch Mode_ command (`gitlens.switchMode`) to quickly switch the active mode
+- Adds a _Zen_ mode which for a zen-like experience, disables many visual features
+  - Adds _Toggle Zen Mode_ command (`gitlens.toggleZenMode`) to toggle Zen mode
+- Adds a _Review_ mode which for reviewing code, enables many visual features
+  - Adds _Toggle Review Mode_ command (`gitlens.toggleReviewMode`) to toggle Review mode
+- Adds the active mode to the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
+
+***
+
 ##Commit Details View
 
 The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
