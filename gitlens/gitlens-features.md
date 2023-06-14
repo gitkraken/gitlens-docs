@@ -7,10 +7,10 @@ taxonomy:
 
 ---
 
-All features are **completely free** for use on all repos, except for ones marked with:
+All features are free to use on all repos, **except** for features:  
 
-- ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- ☁️ require an account and access is based on your plan, e.g. Free, Pro, etc
+- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
 

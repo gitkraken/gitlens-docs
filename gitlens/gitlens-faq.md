@@ -13,10 +13,10 @@ The answers to your important frequently asked questions.
 
 ## Is GitLens Free?
 
-All features are **completely free** for use on all repos, except for ones marked with:
+Yes, all features are free to use on all repos, **except** for features:  
 
-- ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- ☁️ require an account and access is based on your plan, e.g. Free, Pro, etc
+- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 While GitLens offers a remarkable set of free features, a subset of features tailored for professional developers and teams, marked with a ✨, require a trial or paid plan for use on privately hosted repos &mdash; use on local or publicly hosted repos is free for everyone. Additionally some features marked with a ☁️, rely on GitKraken Dev Services which requires an account and access is based on your plan, e.g. Free, Pro, etc.
 
