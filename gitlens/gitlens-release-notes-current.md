@@ -40,11 +40,13 @@ As we continue to evolve and improve GitLens, we hope that these new features an
 
 We're introducing a new layout for our views which includes the new GitLens Inspect side bar, and moves some of our views from their previous home in the Source Control side bar into either the GitLens or the new GitLens Inspect side bar.
 
-<img src="/wp-content/uploads/gl-14-0-inspect-side-bar.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-views-and-features.png" class="img-responsive center img-bordered">
 
 ### GitLens Inspect side bar
 
 The all-new GitLens Inspect is like an x-ray or developer tools inspector into your code, which focuses on providing contextual information and insights to what you're actively working on.
+
+<img src="/wp-content/uploads/gl-inspect-side-bar.png" class="img-responsive center img-bordered">
 
 Views include:
  - Commit Details
@@ -59,6 +61,8 @@ _Pro tip: you can drag the entire GitLens Inspect Side Bar onto your secondary S
 
 We've re-focused this to be the home of GitKraken services (e.g. GitKraken Workspaces) as well as discovery, help, and support.
 
+<img src="/wp-content/uploads/gl-side-bar-v14.png" class="img-responsive center img-bordered">
+
 Views include:
  - Home view
  - GitKraken Workspaces
@@ -67,6 +71,8 @@ Views include:
 ### Source Control side bar
 
 We've slimmed down this side bar to only contain views that are focused on your repositories.
+
+<img src="/wp-content/uploads/gl-side-bar.png" class="img-responsive center img-bordered">
 
 Views include:
  - Commits
@@ -81,6 +87,8 @@ Views include:
 ### (Bottom) Panel
 
 The new home for the Commit Graph, providing convenient and easy access to the graph and the new Commit Graph Details view.
+
+<img src="/wp-content/uploads/gl-bottom-panel.png" class="img-responsive center img-bordered">
 
 Views include:
   - Commit Graph
@@ -109,6 +117,8 @@ We've also enhanced the Welcome and Walkthrough pages to provide a more informat
 
 With the introduction of Workspaces in GitLens 14, we're taking a leap forward in enhancing productivity and streamlining workflows.
 
+<img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="img-responsive center img-bordered">
+
 GitKraken Workspaces are a convenient way to group and manage multiple repositories. These workspaces are a list of repositories tied to your account, saved on our cloud services, and can be accessed across multiple machines or across the line of GitKraken products. They can easily be imported into or created from VS Code workspaces.
 
 Please note that while using cloud workspaces requires a free account, shared cloud workspaces, which are shared between GitKraken organizations and teams, require a trial or subscription. Shared Workspaces functionality is coming soon to GitLens.
@@ -117,17 +127,25 @@ Workspaces can be accessed in the new GitKraken Workspaces view in the GitLens s
 
 ### Creating a Workspace
 
+<img src="/wp-content/uploads/gl-create-workspace.png" class="img-responsive center img-bordered">
+
 Creating a workspace is simple - just tap the '+' button next to the GitKraken Workspaces view title, provide a name, description and provider, and then choose which repositories to add to your new workspace.
 
 ### Adding Repositories
+
+<img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="img-responsive center img-bordered">
 
 After you've created a cloud workspace, you can always add repositories to it directly by tapping the '+' button next to the workspace. And if you want to keep your workspaces and their repositories up-to-date, simply tap the `Refresh` icon on the GitKraken Workspaces view title.
 
 ### Removing Repositories
 
+<img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="img-responsive center img-bordered">
+
 If you need to remove a repository from a workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting `Remove from Workspace`.
 
 ### Locating Repositories
+
+<img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="img-responsive center img-bordered">
 
 Sometimes, GitLens can't automatically locate one or more repositories in a GitKraken workspace on your machine. In these cases, you can specify the location on local disk of the repositories within the cloud workspace. For a single missing repository, you can use the `Locate Repository` context menu option, or if you have a folder set up for a workspace with multiple repositories on your disk, you can select the `Locate Repositories` option on the workspace itself and choose the parent folder. GitLens will then find all repositories within that folder which match repositories in your workspace and link them.
 
@@ -139,13 +157,21 @@ _Pro Tip: If you prefer to open the Workspace in your current window, hold down 
 
 ### Repository indicators and colors
 
+<img src="/wp-content/uploads/gl-workspace-indicators.png" class="img-responsive center img-bordered">
+
 GitKraken workspace repositories also include visual indicators to help you understand their status. For example, a repository highlighted in green under a GitKraken workspace indicates that it is open in your current window.
 
 ### Converting to and from Cloud Workspaces
 
 GitLens offers the ability to convert between your local VS Code workspace and a GitKraken cloud workspace.
 
-To convert your currently opened repositories to a GitKraken cloud workspace, just press the 'Convert to Cloud Workspace' icon next to the Current Window item in the GitKraken Workspaces view, provide a name and a description. Your new GitKraken cloud workspace will be linked to your GitKraken user account, and will appear when you use your account across any GitKraken product, including GitLens, GitKraken Client, and the GitKraken CLI.
+<img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="img-responsive center img-bordered">
+
+To convert your currently opened repositories to a GitKraken cloud workspace, just press the `Convert to Cloud Workspace` icon next to the Current Window item in the GitKraken Workspaces view, provide a name and a description. Your new GitKraken cloud workspace will be linked to your GitKraken user account, and will appear when you use your account across any GitKraken product, including GitLens, GitKraken Client, and the GitKraken CLI.
+
+<img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="img-responsive center img-bordered">
+
+Similarly, to convert a GitKraken cloud workspace to a local VS Code workspace, press the `Open as VS Code Workspace` icon next to the workspace you with to convert.
 
 ## ✨ Commit Graph Enhancements
 We’ve made notable enhancements to the Commit Graph, improving its usability and visual presentation.
@@ -159,6 +185,9 @@ Furthermore, for both the Activity Minimap and the Commit Graph scrollbar, you c
 We've introduced two new layouts for the graph columns: _Default_ and _Compact_. You can reset the Commit Graph to one of these new layouts via the context menu on the graph column headers.
 
 ### Changes Column
+
+<img src="/wp-content/uploads/gl-changes-w-files.png" class="img-responsive center img-bordered">
+
 The _Changes_ column is now visible by default. The column now also includes a file count. The file count allows you to see at a glance the number of files involved in each commit, including added, modified and deleted files, helping you quickly grasp the scale of each change.
 
 ### Branch/Tag Column
