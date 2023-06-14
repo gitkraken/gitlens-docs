@@ -9,19 +9,11 @@ taxonomy:
 
 Whether a solo user on a personal license, or an owner managing multiple teams across organizations, learn how to manage your GitKraken GitLens account(s), subscription(s), and organization(s).
 
-The first question to answer: do I need an account to use GitLens or GitLens+? 
-
-+ GitLens is **free**, no account required, and can be used on any local repository.
-+ GitLens+ features on local & public repositories are also **free**.
-+ GitLens+ features on private repositories require a Pro plan (or greater), view pricing [here](https://www.gitkraken.com/gitlens/pricing).
-
-If you are working with GitLens+ features on private repositories, you will need to create an account and purchase a license. See below for more information.
-
 ***
 
 ## Sign-up and Purchase
 
-You can [register](https://app.gitkraken.com/register) a GitKraken account to give you access to GitLens+. Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github). Using an alternate sign-in source will automatically pull in your related email address to make an account.
+You can register a GitKraken account [here](https://app.gitkraken.com/register). Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github). Using an alternate sign-in source will automatically pull in your related email address to make an account.
 
 Once your account is created, you can purchase a plan by clicking 🚀 **Purchase License**, and then select **See GitLens Pricing** to be presented with options for purchasing. 
 
@@ -33,10 +25,10 @@ Next you will be promted to select how many licenses you want and enter your bil
 
 If you already have an **Organization** or **Trial Organization**, you can click on the existing organization instead and navigate to `Subscription` to change the license or add users.
 
-
 ***
 
 ## Organizations
+
 The <kbd>Organizations</kbd> section shows your organization(s). Click on an organization to manage the [Users](/organizations/#manage-users), Teams, and Subscriptions.
 
 To access your account and manage your organization(s), navigate to [https://app.gitkraken.com](https://app.gitkraken.com) and login.
@@ -46,6 +38,7 @@ Once you log into your account, click <em class="context-menu">Organization  <i 
 <img src="/wp-content/uploads/subscriptions.png" srcset="/wp-content/uploads/subscriptions@2x.png 2x" class="img-responsive center img-bordered">
 
 ### Subscriptions
+
 Subsriptions can be added to an organization by clicking the <button class='button button--primary button--ui button--nolink'><span style='color:#141422;'>New Organization</span></button> tab.
 
 <img src="/wp-content/uploads/gk-plans1.png"  class="img-responsive center img-bordered">
@@ -73,6 +66,34 @@ You can also manually choose to hide an organization in the sidebar from the <em
 
 Click the <kbd>Show Hidden Organizations</kbd> button to show hidden organizations.
 
+***
+
+## Single Sign On
+
+Single Sign on offers a secure and easy way to sign into your account. To configure Single Sign On for your organization, refer to the Single Sign On guide <a href='https://help.gitkraken.com/gitkraken-client/single-sign-on/' target='_blank'>here</a>.
+
+### Requirements and Configuration
+
+Your GitKraken account may initiate an Oauth authentication flow with the following supported Identity Providers (IdPs):
+
+- Azure Active Directory
+- Okta
+- Google Identity Platform
+- Ping Identity
+
+Please note that your IdP will first need to be configured before setting up the connection in your GitKraken account. For assistance, please contact your IdP administrator or consult the IdP documentation for help.
+
+Additional requirements:
+- Configurable only by GitKraken Owner or Admin
+- Subscribed to either the <a href='https://www.gitkraken.com/gitlens/pricing' target='_blank'>Teams or Enterprise plan</a>
+
+### Signing in with Single Sign On
+
+GitLens Teams or Enterprise users will see the option to Sign in with SSO from the login screen.
+
+<img src="/wp-content/uploads/single-sign-on.png" class="img-bordered img-responsive center">
+
+After clicking “Sign in with SSO”, the SSO form will open and ask for an email address to use for SSO login. The app will then check the email and determine whether the email address belongs to a single IdP for SSO. When the email address is successfully identified, the user will be taken to that IdP to login.
 
 ***
 ## Roles

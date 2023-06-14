@@ -1270,6 +1270,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.experimental.generateCommitMessagePrompt</code></td>
 <td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
 </tr>
+<tr>
+<td><code>gitlens.ai.experimental.openai.model</code></td>
+<td>Specifies the OpenAI model (defaults to `gpt-3.5-turbo`)</td>
+</tr>
 </tbody>
 </table>
 ***

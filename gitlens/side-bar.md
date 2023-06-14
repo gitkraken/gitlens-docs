@@ -7,17 +7,57 @@ taxonomy:
 
 ---
 
-GitLens adds many side bar views to provide additional rich functionality. The default layout (location) of these views can be quickly customized via the _GitLens: Set Views Layout_ (`gitlens.setViewsLayout`) command from the <a href='https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette' target='_blank'>VS Code Command Palette</a>.
+GitLens adds many side bar views to provide additional rich functionality. There are three side bars with GitLens views in them: GitLens Inspect, GitLens, and Source Control.
 
-- _Source Control Layout_ — shows all the views together on the Source Control side bar
-- _GitLens Layout_ — shows all the views together on the GitLens side bar
+All views are free to use on all repos, **except** for views:  
 
-<img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
+- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+
+***
+
+## Side Bars
+
+### GitLens Inspect
+
+GitLens Inspect side bar focuses on providing contextual information and insights to what you're actively working on. This side bar includes:
+
+- Commit Details
+- Line History
+- File History
+- Visual File History
+- Search & Compare
+
+<img src="/wp-content/uploads/gl-inspect-side-bar.png" class="img-responsive left"> 
+
+### GitLens
+
+The GitLens side bar is the home of GitKraken teams and collaboration services (e.g. GitKraken Workspaces) as well as discovery, help, and support. This side bar includes:
+
+- Home view
+- GitKraken Workspaces
+- GitKraken Account
+
+<img src="/wp-content/uploads/gl-side-bar-v14.png" class="img-responsive left"> 
+
+### Source Control
+
+Source Control contains side bar that are only focused on your repositories. This side bar includes:
+
+- Commits
+- Branches
+- Remotes
+- Stashes
+- Tags
+- Worktrees
+- Contributors
+- Repositories
+
+<img src="/wp-content/uploads/gl-side-bar.png" class="img-responsive left">
 
 ***
  
 ##Commits view
-
 
 <img src="/wp-content/uploads/commits-view.png" class="img-bordered img-responsive center">
 
@@ -47,6 +87,21 @@ The _Commits_ view lists all of the commits on the current branch, and additiona
 - any associated pull request — shows any opened or merged pull request associated with the current branch
 
 ***
+
+##Commit Details View ✨
+
+The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
+
+Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
+
+<img src="/wp-content/uploads/commit-details-view.png" class="img-bordered img-responsive center">
+
+To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
+
+<img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
+
+***
+
 ##Repositories view
 
 <img src="/wp-content/uploads/repositories-view.png" class="img-bordered img-responsive center">
@@ -195,6 +250,69 @@ The _Tags_ view lists all of the tags, and additionally provides:
 - a toggle to change the tag layout: list or tree
 - a toggle to change the file layout: list, tree, auto
 
+***
+
+## Workspaces ☁️
+
+Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
+
+Whether you're working individually or collaborating with a team, these new features are designed to help you work more efficiently and effectively.
+
+To access Workspaces, simply open the GitLens Home menu and you will find them in the panel located at the bottom left. Alternatively, you can access them by performing a search in the command palette.
+
+Please note that while using cloud workspaces requires a free account, shared cloud workspaces require a trial or subscription.
+
+<img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="img-bordered img-responsive center">
+
+### Creating a Workspace
+
+To create a workspace, tap the '+' button next to GitKraken Workspaces, provide a name and a description, and connect a provider if you wish.
+
+<img src="/wp-content/uploads/gl-create-workspace.png" class="img-bordered img-responsive center">
+
+### Adding Repositories
+
+You can add repositories to a workspace by tapping the '+' button under the Workspace tab. And if you want to keep your Workspaces and their repositories up-to-date, simply tap the Refresh icon.
+
+<img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="img-bordered img-responsive center">
+
+### Locating Repositories
+
+To locate the disk location of the repositories within the Cloud Workspace, select the 'Locate Repositories' (pin icon) next to the repository name. If you have a folder set up for a Workspace with multiple repositories on your disk, you can select the option and choose the parent folder. GitLens will then find all the repositories within that parent folder.
+
+<img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="img-bordered img-responsive center">
+
+### Opening Repositories
+
+To open a repository from a Workspace tap the 'Open Repository in New Window' icon.
+
+_Pro Tip: If you prefer to open the Workspace in your current window, hold down the ALT/OPTION key on a Mac and click 'Open Repo'._
+
+<img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="img-bordered img-responsive center">
+
+### Removing Repositories
+
+To remove a repository from a Workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting 'remove repository from Workspace'.
+
+<img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="img-bordered img-responsive center">
+
+### Converting to Cloud Workspaces
+
+To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Client, GitLens, and the GitKraken CLI.
+
+<img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="img-bordered img-responsive center">
+
+### Understanding Workspace indicators and colors
+Workspaces also include visual indicators to help you understand their status. For example, a green Workspace with an 'O' symbol indicates that it is open in your current window.
+
+<img src="/wp-content/uploads/gl-workspace-indicators.png" class="img-bordered img-responsive center">
+
+***
+
+## Worktrees view✨
+Create <a href="https://www.gitkraken.com/learn/git/git-worktree" target="_blank">Git Worktrees</a> that allow multiple branches to be checked-out at once on the same repository. This makes it easier to develop on, or test multiple branches, by minimizing the context switching between branches.
+
+<img src="/wp-content/uploads/worktrees-view.png" class="img-bordered img-responsive center">
 
 ***
 

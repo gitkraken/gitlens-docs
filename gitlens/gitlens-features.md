@@ -7,10 +7,14 @@ taxonomy:
 
 ---
 
-Core features available to both free and paid GitLens users. 
+All features are free to use on all repos, **except** for features:  
+
+- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+
+***
 
 ##Revision Navigation
-
 
 <img src="/wp-content/uploads/revision-navigation.gif" class="img-bordered img-responsive center">
 
@@ -138,57 +142,229 @@ Adds a **changes (diff) hover** annotation to each line while annotating to show
 - Click the **Changes** to execute the _Open Changes_ command
 - Click the current and previous commit SHAs to execute the _Show Commit_ command
 
-
 ***
 
 ##File Blame
 
 <img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
-Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [themable](/gitlens/settings/#themable-colors), gutter blame annotations to show the commit and author who last modified each line of a file
+Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [themable](/gitlens/settings/#themable-colors), file blame annotations to show the commit and author who last modified each line of a file
 
 - Contains the commit message and date, by [default](/gitlens/settings/#gutter-blame-settings)
-- Adds a heatmap (age) indicator on right edge (by [default](/gitlens/settings/#gutter-blame-settings),) of the gutter to provide an easy, at-a-glance way to tell how recently lines were changed (optional, on by default)
-- See the gutter heatmap section below for more details
+- Adds a heatmap (age) indicator on right edge (by [default](/gitlens/settings/#gutter-blame-settings),) of the file to provide an easy, at-a-glance way to tell how recently lines were changed (optional, on by default)
+- See the [file heatmap](/gitlens/gitlens-features/#file-heatmap) section below for more details
 - Adds a Toggle File Blame Annotations command (`gitlens.toggleFileBlame`) with a shortcut of <kbd>alt+b</kbd> to toggle the blame annotations on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
 
 ***
 
-##Gutter Changes
+##File Changes
 
 <img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
-Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), and [themable](/gitlens/settings/#themable-colors), gutter changes annotation to highlight any local (unpublished) changes or lines changed by the most recent commit.
+Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), and [themable](/gitlens/settings/#themable-colors), file changes annotation to highlight any local (unpublished) changes or lines changed by the most recent commit.
 
-- Adds Toggle File Changes command (`gitlens.toggleFileChanges`) to toggle the changes annotations on and off
+- Adds _Toggle File Changes_ command (`gitlens.toggleFileChanges`) to toggle the changes annotations on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
 
 ***
 
-##Gutter Heatmap
+##File Heatmap
 
 <img src="/wp-content/uploads/gutter-heatmap.png" class="img-bordered img-responsive center">
 
-Adds an on-demand heatmap to the edge of the gutter to show how recently lines were changed
+Adds an on-demand heatmap to the edge of the file to show how recently lines were changed
 
 - The indicator's [customizable](/gitlens/settings/#gutter-heatmap-settings) color will either be hot or cold based on the age of the most recent change (cold after 90 days by [default](/gitlens/settings/#gutter-heatmap-settings))
 - The indicator's brightness ranges from bright (newer) to dim (older) based on the relative age, which is calculated from the median age of all the changes in the file
-- Adds Toggle File Heatmap Annotations command (`gitlens.toggleFileHeatmap`) to toggle the heatmap on and off
+- Adds _Toggle File Heatmap Annotations_ command (`gitlens.toggleFileHeatmap`) to toggle the heatmap on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
 
 ***
 
-##Side Bar Views
+## Commit Graph ✨
 
-GitLens adds many [side bar views](/gitlens/side-bar) to provide additional rich functionality. The default layout (location) of these views can be quickly customized via the GitLens: Set Views Layout (`gitlens.setViewsLayout`) command from the <a href='https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette' target='_blank'>VS Code Command Palette</a>.
+The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
 
-- Source Control Layout — shows all the views together on the Source Control side bar
-- GitLens Layout — shows all the views together on the GitLens side bar
+<img src="/wp-content/uploads/commit-graph.png" class="img-bordered img-responsive center">
 
-<img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
+To open the Commit Graph, open the command palette using the keyboard shortcut `Cmd/ctrl + Shift + P` and type “Show Commit Graph”. This will open a new tab and render your current repo’s commit history, where you may scroll through your history and resize any of the columns widths.
 
-Check out the [Side Bar documentation](/gitlens/side-bar/) for more information.
+<img src="/wp-content/uploads/show-commit-graph.gif" class="img-bordered img-responsive center">
+
+At the top of the commit graph the repository name, the branch name that is currently checked out, and the last fetched time is shown. This section offers the ability to switch branches by selecting the branch name and the ability to fetch by selecting "Fetch".
+
+<img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="img-bordered img-responsive center">
+
+<div class='callout callout--basic'>
+    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens subscription or trial can use the Commit Graph with private repos. </br></br>
+
+    We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
+</div>
+
+### Configuration and Layout
+
+The commit graph can be configured to be shown as desired offering different settings for what to show and how or where to show it.
+
+All columns can be rearranged by dragging and dropping the column headers. The columns can be toggled on/off from the column's context menu via right-click. This enables you to arrange the columns in a way that best suits your workflow and priorities. The Changes column represents added (green) and deleted (red) lines made to each file within the commit.
+
+<img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
+
+A Commit Graph Panel Layout is offered to show the Commit Graph in the bottom Panel (near the Terminal) with a dedicated Commit Graph Details view alongside the Commit Graph. To switch between the Editor Layout and Panel Layout, select the Commit Graph settings cog located at the top right of the editor. From there, select the "Switch Commit Graph to Panel Layout" or "Switch Commit Graph to Editor Layout".
+
+<img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-bordered img-responsive center">
+
+A compact layout for the Graph column is offered in the Commit Graph to reduce the visual complexity and size of the Graph column. To enable the compact layout, right click on the Graph column header, and select the Compact Graph Column Layout option. Additionally the Author column displays avatars instead of text when sized to its minimum width, which pairs nicely with the compact Graph column as you can retain avatars. Also, when the any of the Commit Graph columns are resized small enough so that their text would be truncated, they switch to displaying icons to ensure that crucial information remains visible, even in constrained display settings.
+
+<img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-bordered img-responsive center">
+
+The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-features/#settings).
+
+<img src="/wp-content/uploads/gl-scroll-markers.png" class="img-bordered img-responsive center">
+
+### Settings
+
+The Commit Graph settings can be adjusted by opening the Command Palette (`command/ctrl + shift + P`) and searching "GitLens: Open Settings".
+
+<img src="/wp-content/uploads/commit-graph-settings.png" class="img-bordered img-responsive center">
+
+### Rich Commit Search
+
+The Commit Graph will highlight all matching results across your entire repository when searching for a commit, message, author, a changed file or files, or even a specific code change. Use shortcut keys or the up/down arrows on the search bar  to navigate the search results; `F3` (also `Cmd+G` on macOS) goes to the next result from your selection while  `Shift+F3`  ( also `Shift+Cmd+G` on macOS) goes to the previous.
+
+<img src="/wp-content/uploads/Rich-Commit-Search.png" class="img-responsive center img-bordered">
+
+Once you type search filtering criteria, use the arrow icons to move through each result. Additionally, you can quickly jump to the first or last result, by holding `Shift` while clicking on the up/down arrows respectively.
+
+<img src="/wp-content/uploads/Commit-Search-Moving-Arrow-Keys.gif" class="img-responsive center img-bordered">
+
+The following options can be used to search:
+- `Commit:`
+- `Message:`
+- `Author:`
+- `File:`
+- `Change:`
+- `@me`
+
+Additionally, the options on the right side of the search bar can be used to match all, match case, or use regular expression.
+
+<img src="/wp-content/uploads/search-options.png" class="img-bordered img-responsive center">
+
+### Full Context Menu Support
+
+You can right-click a branch, commit, tag, author, or column headers (author, commit date / time, or SHA) to interact with them.
+
+<img src="/wp-content/uploads/gl-context-menu.gif" class="img-bordered img-responsive center">
+
+Context menu actions include but are not limited to:
+
+- Switch to Branch
+- Revert Commit
+- Switch to Commit
+- Create Branch
+- Merge
+- Rebase
+- Create Worktree
+- Create Pull Request
+
+### Pull Request Information
+
+For GitHub and GitLab, the commit Graph will display a Pull Request icon for any branch that currently has a pull request. You will need to connect the [rich integration](/gitlens/settings/#remote-provider-integration-settings) in order to see this.
+
+<img src="/wp-content/uploads/pull-request-icon.png" class="img-bordered img-responsive center">
+
+### Hiding Remotes, Branches or Tags
+
+The Commit Graph shows refs to your remotes, branches and tags. Hover over any of these refs to access the “Hide” option to help focus your Commit Graph. To show them again, hover over the "Hide" option at the top of the commit graph and select the desired refs.
+
+<img src="/wp-content/uploads/gl-hide-refs.gif" class="img-bordered img-responsive center">
+
+Filter options can be accessed from the filter dropdown. This provides the ability to switch between _Show Current Branch Only_ - to show the current branch and its upstream remote - or _Show All Local Branches_ - this is selected by default. Additionally, remote-only branches, stashes and tags can be hidden/shown and merge commit rows can be dimmed.
+
+<img src="/wp-content/uploads/filter-options-2.png" class="img-bordered img-responsive center">
+
+### Minimap (Experimental)
+
+The Minimap provides an additional dimension to the Commit Graph. You can quickly see the activity of the repository, see the HEAD/upstream, branches (local and remote), and easily jump to them. Select the Toggle Minimap icon in the right corner of the Commit Graph top bar to toggle the Minimap on and off.
+
+<img src="/wp-content/uploads/gl-minimap-2.png" class="img-bordered img-responsive center">
+
+The Minimap can be toggled between showing commits or lines changed by selecting the graph icon dropdown in the top right of the Activity Minimap. Additionally, markers can be toggled on or off from here.
+
+<img src="/wp-content/uploads/gl-minimap-settings.png" class="img-bordered img-responsive center">
+
+Minimap Overview:
+
+- Reads left to right - left is the most recent and the right is older
+- Highlighted region: Commit Graph area that is in view
+- Green Lines: HEAD
+- Yellow lines: Search results
+- Upper row markers:
+    - Blue blocks: remote branches
+    - Brown blocks: Tags
+- Lower row markers:
+    - Pink blocks: stashes
+    - Blue blocks: local branches
+
+<div class='callout callout--basic'>
+    <p>Note: We would love to hear your feedback regarding the Minimap. Please share it on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitHub Discussion board</a>.</p>
+</div>
+
+### Deep Linking
+
+Deep Links are links that can be used to open up a resource within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired resource, hover over _Share_ and select _Copy Link to \<resource\>_.
+
+<img src="/wp-content/uploads/gl-deep-link.png" class="img-bordered img-responsive center">
+
+***
+
+## Focus View ☁️
+
+The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests and your issues. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`.
+
+Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
+
+<img src="/wp-content/uploads/gl-focus-view-3.png" class="img-bordered img-responsive center">
+
+The Focus View includes the following sections:
+- My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
+- My Issues: Shows all issues created by you, assigned to you, or that mention you.
+
+The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and folder icon.
+
+<img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
+
+<div class='callout callout--basic'>
+    <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
+</div>
+
+***
+
+## Visual File History ✨
+
+The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
+
+Authors who have contributed changes to the file are on the left y-axis to create a swim-lane of their commits over time (the x-axis). Commit are plotted as color-coded (per-author) bubbles, whose size represents the relative magnitude of the changes.
+
+Additionally, each commit's additions and deletions are visualized as color-coded, stacked, vertical bars, whose height represents the number of affected lines (right y-axis). Added lines are shown in green, while deleted lines are red.
+
+<img src="/wp-content/uploads/visual-file-history.png" class="img-bordered img-responsive center">
+
+Gain additional insights on hover.
+
+<img src="/wp-content/uploads/visual-file-history-hover.png" class="img-bordered img-responsive center">
+
+***
+
+## AI-Generated Commit Messages (Experimental) ✨
+
+Commit messages can be automatically generated using [OpenAI](https://openai.com/).
+
+<img src="/wp-content/uploads/gl-ai-generated-commit-message.gif" class="img-bordered img-responsive center">
+
+To connect OpenAI, stage some changes you want to generate a commit message for and then run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to OpenAI and the entry of your OpenAI key. The OpenAI API key can be created [here](https://platform.openai.com/account/api-keys). Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message.
+
+To remove your OpenAI API key in GitLens, run the command `GitLens: Reset Stored OpenAI Key` from the Command Palette.
 
 ***
 
@@ -265,6 +441,12 @@ To use the Insiders edition of VS Code, replace `code` in the above with `code-i
 
 ***
 
+## Autolinks
+
+Use autolinks to linkify external references, like Jira issues or Zendesk tickets, in commit messages.
+
+<img src="/wp-content/uploads/gl-autolinks.png" class="img-bordered img-responsive center">
+
 ##Terminal Links
 
 <img src="/wp-content/uploads/terminal-links.gif" class="img-bordered img-responsive center">
@@ -322,6 +504,16 @@ To connect the GitLab integration, open a GitLab.com repository in Visual Studio
 Next, you will be prompted to provide a Personal Access Token from GitLab.com. If you do not have one already with the required scopes, [follow these instructions](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) to create one. The required scopes for the token are `read_api`, `read_user`, and `read_repository`. Once you have your token, copy and paste it into the prompt and hit `Enter` to finish connecting. 
 
 <img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
+
+## GitHub Enterprise and GitLab Self-Managed Integration ✨
+
+GitLens Pro offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
+
+Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+
+<img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
+
+See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
 
 ***
 
@@ -387,23 +579,9 @@ You can also expand each group to control each area more granularly.
 
 GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes for quickly toggling between sets of settings.
 
+- Adds the active mode to the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
+  - Adds _Toggle Review Mode_ command (`gitlens.toggleReviewMode`) to toggle Review mode
 - Adds _Switch Mode_ command (`gitlens.switchMode`) to quickly switch the active mode
 - Adds a _Zen_ mode which for a zen-like experience, disables many visual features
   - Adds _Toggle Zen Mode_ command (`gitlens.toggleZenMode`) to toggle Zen mode
 - Adds a _Review_ mode which for reviewing code, enables many visual features
-  - Adds _Toggle Review Mode_ command (`gitlens.toggleReviewMode`) to toggle Review mode
-- Adds the active mode to the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
-
-***
-
-##Commit Details View
-
-The Commit Details View gives you contextual change info about your code. This view updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
-
-Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
-
-<img src="/wp-content/uploads/commit-details-view.png" class="img-bordered img-responsive center">
-
-To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
-
-<img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
