@@ -7,21 +7,10 @@ taxonomy:
 
 ---
 
-All features offered by GitLens.
+All features are **completely free** for use on all repos, except for ones marked with:
 
-<div class='callout callout--basic'> 
-    <p>
-        ✨ Features require a trial or <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>subscription</a> for use on privately hosted repos
-    </p>
-    <br>
-    <p>
-        ☁️ Features require an account and access is based on your subscription tier, e.g. Free or Pro
-    </p>
-    <br>
-    <p>
-        All other GitLens features can always be used by any user on any repository
-    </p>
-</div>
+- ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- ☁️ require an account and access is based on your plan, e.g. Free, Pro, etc
 
 ***
 

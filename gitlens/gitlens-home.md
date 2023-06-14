@@ -16,7 +16,7 @@ GitLens is an extension built to work with [Visual Studio Code](https://code.vis
 GitLens simply helps you better understand code. Quickly glimpse into whom, why, and when a line or code block was changed. Jump back through history to gain further insights as to how and why the code evolved. Effortlessly explore the history and evolution of a codebase. Dive right in and see how GitLens can help!
 
 
-Check out our [features](/gitlens/gitlens-features/) and [Gitlens+](/gitlens/gitlens-plus/) pages to learn more.
+Check out our [features](/gitlens/gitlens-features/) pages to learn more.
 
 
 <div class='embed-container embed-container--16-9'>

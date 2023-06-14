@@ -14,19 +14,10 @@ GitLens adds many side bar views to provide additional rich functionality. The d
 
 <img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
 
-<div class='callout callout--basic'> 
-    <p>
-        ✨ Features require a trial or <a href='https://www.gitkraken.com/gitlens/plus-features#paid-plans' target='_blank'>subscription</a> for use on privately hosted repos
-    </p>
-    <br>
-    <p>
-        ☁️ Features require an account and access is based on your subscription tier, e.g. Free or Pro
-    </p>
-    <br>
-    <p>
-        All other GitLens features can always be used by any user on any repository
-    </p>
-</div>
+Views marked with:
+
+- ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- ☁️ require an account and access is based on your plan, e.g. Free, Pro, etc
 
 ***
  
