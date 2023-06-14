@@ -7,12 +7,7 @@ taxonomy:
 
 ---
 
-GitLens adds many side bar views to provide additional rich functionality. The default layout (location) of these views can be quickly customized via the _GitLens: Set Views Layout_ (`gitlens.setViewsLayout`) command from the <a href='https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette' target='_blank'>VS Code Command Palette</a>.
-
-- _Source Control Layout_ — shows all the views together on the Source Control side bar
-- _GitLens Layout_ — shows all the views together on the GitLens side bar
-
-<img src="/wp-content/uploads/views-layout-scm-gitlens.png" class="img-responsive left"> 
+GitLens adds many side bar views to provide additional rich functionality. There are three side bars with GitLens views in them: GitLens Inspect, GitLens, and Source Control.
 
 All views are free to use on all repos, **except** for views:  
 
@@ -20,9 +15,49 @@ All views are free to use on all repos, **except** for views:
 - marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
+
+## Side Bars
+
+### GitLens Inspect
+
+GitLens Inspect side bar focuses on providing contextual information and insights to what you're actively working on. This side bar includes:
+
+- Commit Details
+- Line History
+- File History
+- Visual File History
+- Search & Compare
+
+<img src="/wp-content/uploads/gl-inspect-side-bar.png" class="img-responsive left"> 
+
+### GitLens
+
+The GitLens side bar is the home of GitKraken teams and collaboration services (e.g. GitKraken Workspaces) as well as discovery, help, and support. This side bar includes:
+
+- Home view
+- GitKraken Workspaces
+- GitKraken Account
+
+<img src="/wp-content/uploads/gl-side-bar-v14.png" class="img-responsive left"> 
+
+### Source Control
+
+Source Control contains side bar that are only focused on your repositories. This side bar includes:
+
+- Commits
+- Branches
+- Remotes
+- Stashes
+- Tags
+- Worktrees
+- Contributors
+- Repositories
+
+<img src="/wp-content/uploads/gl-side-bar.png" class="img-responsive left">
+
+***
  
 ##Commits view
-
 
 <img src="/wp-content/uploads/commits-view.png" class="img-bordered img-responsive center">
 
