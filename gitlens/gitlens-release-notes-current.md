@@ -97,6 +97,14 @@ After upgrading to GitLens 14, you'll be prompted to change to this layout:
 
 <img src="/wp-content/uploads/gl-14-0-layout-prompt.png" class="img-responsive center img-bordered">
 
+## Home View
+
+GitLens 14 introduces the new Home view, your one-stop hub for all things GitLens. The Home view provides quick access to GitLens features, views, settings, and more. You can access this view with the new `Show Home View` command.
+
+## Welcome Experience
+
+We've also enhanced the Welcome and Walkthrough pages to provide a more informative and interactive experience for new users.
+
 ## ☁️ GitKraken Workspaces
 
 With the introduction of Workspaces in GitLens 14, we're taking a leap forward in enhancing productivity and streamlining workflows.
