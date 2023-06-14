@@ -218,7 +218,7 @@ A compact layout for the Graph column is offered in the Commit Graph to reduce t
 
 <img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="img-bordered img-responsive center">
 
-The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-plus/#settings).
+The scroll markers indicate points of interest on the commit graph such as checked-out branches, selected rows, and search results. This provides the ability to jump to important points like the HEAD or refs. This can be toggled on or off in the [Commit Graph settings](/gitlens/gitlens-features/#settings).
 
 <img src="/wp-content/uploads/gl-scroll-markers.png" class="img-bordered img-responsive center">
 

@@ -13,7 +13,7 @@ Whether a solo user on a personal license, or an owner managing multiple teams a
 
 ## Sign-up and Purchase
 
-You can [register](https://app.gitkraken.com/register) a GitKraken account to give you access to GitLens+. Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github). Using an alternate sign-in source will automatically pull in your related email address to make an account.
+You can register a GitKraken account [here](https://app.gitkraken.com/register). Feel free to use your email address or use another sign-up source like [GitHub](/integrations/github). Using an alternate sign-in source will automatically pull in your related email address to make an account.
 
 Once your account is created, you can purchase a plan by clicking 🚀 **Purchase License**, and then select **See GitLens Pricing** to be presented with options for purchasing. 
 
