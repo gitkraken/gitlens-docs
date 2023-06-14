@@ -22,13 +22,13 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 <a id="v14-0"></a>
 ## Version 14.0
 
-### Tuesday, June 13, 2023
+### Wednesday, June 14, 2023
 
 We're thrilled to announce the release of GitLens 14, packed with exciting new features and enhancements designed to streamline your workflow. This epic update introduces a new Views layout and GitKraken Workspaces, and includes a host of new Commit Graph improvements.
 
 In GitLens 14, we've restructured our views to enhance focus and productivity, including the new GitLens Inspect side bar, the re-focused GitLens side bar, and the slimmed-down Source Control side bar. These new layouts are designed to group views by context, and make it easier to find the information you need at a glance.
 
-In addition, we're introducing GitKraken Workspaces, an innovative way to easily group and manage multiple repositories, whether you're working alone or in a team. GitKraken Workspaces provide easy access to your multi-repository projects through your account, and include the ability to seamlessly convert to and from VSCode workspaces.
+In addition, we're introducing GitKraken Workspaces, an innovative way to easily group and manage multiple repositories. GitKraken Workspaces provide easy access to your multi-repository projects through your account, and include the ability to seamlessly convert to and from VSCode workspaces.
 
 We've also made several enhancements to the Commit Graph, including new settings, customizations, and content to further improve the experience of visually navigating your repositories.
 
@@ -44,7 +44,7 @@ We're introducing a new layout for our views which includes the new GitLens Insp
 
 ### GitLens Inspect side bar
 
-The all new GitLens Inspect is like an x-ray into your code, which focuses on providing contextual information and insights to what you're actively working on. Think about it as the developer tools inspector for your code.
+The all-new GitLens Inspect is like an x-ray or developer tools inspector into your code, which focuses on providing contextual information and insights to what you're actively working on.
 
 Views include:
  - Commit Details
@@ -57,7 +57,7 @@ _Pro tip: you can drag the entire GitLens Inspect Side Bar onto your secondary S
 
 ### GitLens side bar
 
-We've re-focused this to be the home of GitKraken teams and collaboration services (e.g. GitKraken Workspaces) as well as discovery, help, and support.
+We've re-focused this to be the home of GitKraken services (e.g. GitKraken Workspaces) as well as discovery, help, and support.
 
 Views include:
  - Home view
@@ -80,17 +80,18 @@ Views include:
 
 ### (Bottom) Panel
 
-The new home for the Commit Graph which provides convenient and easy access to the Graph. Additionally, this includes a dedicated details view. Quickly toggle the Graph via the new Toggle Commit Graph command.
+The new home for the Commit Graph, providing convenient and easy access to the graph and the new Commit Graph Details view.
 
 Views include:
   - Commit Graph
   - Commit Graph Details
 
 _Pro tip: You can toggle the Commit Graph between Panel and Editor layouts by clicking the "cog" icon on the upper right corner of the Graph view._
+_Pro tip 2: When the Commit Graph is in the Panel Layout, you can quickly toggle it via the new `Toggle Commit Graph` and `Toggle Maximized Commit Graph` commands._
 
 ### Updating to the new views layout
 
-Unless you opt into the new layout, which we recommend, your existing views will stay where they are. You can opt in at any time from Reset Views Layout in the Command Palette.
+Unless you opt into the new layout, which we recommend, your existing views will stay where they are. You can opt in at any time from `Reset Views Layout` in the Command Palette.
 
 After upgrading to GitLens 14, you'll be prompted to change to this layout:
 
@@ -100,33 +101,33 @@ After upgrading to GitLens 14, you'll be prompted to change to this layout:
 
 With the introduction of Workspaces in GitLens 14, we're taking a leap forward in enhancing productivity and streamlining workflows.
 
-GitKraken Workspaces are a convenient way to group and manage multiple repositories. These workspaces are a list of repositories tied to your account, saved on our cloud services, and can be accessed across multiple machines or across the line of GitKraken products. They can easily be imported into or created from VSCode workspaces.
+GitKraken Workspaces are a convenient way to group and manage multiple repositories. These workspaces are a list of repositories tied to your account, saved on our cloud services, and can be accessed across multiple machines or across the line of GitKraken products. They can easily be imported into or created from VS Code workspaces.
 
 Please note that while using cloud workspaces requires a free account, shared cloud workspaces, which are shared between GitKraken organizations and teams, require a trial or subscription. Shared Workspaces functionality is coming soon to GitLens.
 
-Workspaces can be accessed in the new GitKraken Workspaces view in the GitLens side bar. Alternatively, you can access them by performing a search in the command palette.
+Workspaces can be accessed in the new GitKraken Workspaces view in the GitLens side bar. Alternatively, you can access them by performing a search in the Command Palette.
 
 ### Creating a Workspace
 
-Creating a Workspace is simple - just tap the '+' button next to the GitKraken Workspaces view title, provide a name, description and provider, and then choose which repositories to add to your new workspace.
+Creating a workspace is simple - just tap the '+' button next to the GitKraken Workspaces view title, provide a name, description and provider, and then choose which repositories to add to your new workspace.
 
 ### Adding Repositories
 
-After you've created a cloud workspace, you can always add repositories to it directly by tapping the '+' button next to the workspace. And if you want to keep your workspaces and their repositories up-to-date, simply tap the Refresh icon on the GitKraken Workspaces view title.
+After you've created a cloud workspace, you can always add repositories to it directly by tapping the '+' button next to the workspace. And if you want to keep your workspaces and their repositories up-to-date, simply tap the `Refresh` icon on the GitKraken Workspaces view title.
 
 ### Removing Repositories
 
-If you need to remove a repository from a workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting 'Remove from Workspace'.
+If you need to remove a repository from a workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting `Remove from Workspace`.
 
 ### Locating Repositories
 
-Sometimes, GitLens can't automatically locate one or more repositories in a GitKraken workspace on your machine. In these cases, you can specify the location on local disk of the repositories within the cloud workspace. For a single missing repository, you can use the 'Locate Repository' context menu option, or if you have a folder set up for a workspace with multiple repositories on your disk, you can select the 'Locate Repositories' option on the workspace itself and choose the parent folder. GitLens will then find all repositories within that folder which match repositories in your workspace and link them.
+Sometimes, GitLens can't automatically locate one or more repositories in a GitKraken workspace on your machine. In these cases, you can specify the location on local disk of the repositories within the cloud workspace. For a single missing repository, you can use the `Locate Repository` context menu option, or if you have a folder set up for a workspace with multiple repositories on your disk, you can select the `Locate Repositories` option on the workspace itself and choose the parent folder. GitLens will then find all repositories within that folder which match repositories in your workspace and link them.
 
 ### Opening Repositories
 
-Opening a repository from a Workspace is as easy as tapping the 'Open Repository in New Window' icon.
+Opening a repository from a workspace is as easy as tapping the 'Open Repository in New Window' icon.
 
-_Pro Tip: If you prefer to open the Workspace in your current window, hold down the ALT/OPTION key on a Mac and click 'Open Repo'._
+_Pro Tip: If you prefer to open the Workspace in your current window, hold down the ALT/OPTION key on a Mac and click the same icon._
 
 ### Repository indicators and colors
 
@@ -134,7 +135,7 @@ GitKraken workspace repositories also include visual indicators to help you unde
 
 ### Converting to and from Cloud Workspaces
 
-GitLens offers the ability to convert between your local VSCode workspace and a GitKraken cloud workspace.
+GitLens offers the ability to convert between your local VS Code workspace and a GitKraken cloud workspace.
 
 To convert your currently opened repositories to a GitKraken cloud workspace, just press the 'Convert to Cloud Workspace' icon next to the Current Window item in the GitKraken Workspaces view, provide a name and a description. Your new GitKraken cloud workspace will be linked to your GitKraken user account, and will appear when you use your account across any GitKraken product, including GitLens, GitKraken Client, and the GitKraken CLI.
 
@@ -144,16 +145,16 @@ We’ve made notable enhancements to the Commit Graph, improving its usability a
 ### Activity Minimap and Markers
 The Activity Minimap, previously an experimental feature, is now on by default. You can now toggle between 'changes' and 'commits' in the minimap display.
 
-Furthermore, for both the Activity Minimap and the Commit Graph scrollbar, you can toggle specific markers on and off, including local branch, remote branch, stash and tag markers. You can toggle these for the minimap via the dropdown next to the minimap button, and for the scrollbar via the 'Scroll Markers' submenu from the settings cog on the upper right of the column headers.
+Furthermore, for both the Activity Minimap and the Commit Graph scrollbar, you can toggle specific markers on and off, including local branch, remote branch, stash and tag markers. You can toggle these for the minimap via the dropdown next to the minimap button, and for the scrollbar via the `Scroll Markers` submenu from the settings icon on the upper right of the column headers.
 
 ### Graph Column Layouts
-We've introduced two new layouts for the graph columns: Default and Compact. You can reset the Commit Graph to one of these new layouts via the context menu on the graph column headers.
+We've introduced two new layouts for the graph columns: _Default_ and _Compact_. You can reset the Commit Graph to one of these new layouts via the context menu on the graph column headers.
 
 ### Changes Column
-The Changes column is now visible by default. The column now also includes a file count. The file count allows you to see at a glance the number of files involved in each commit, including added, modified and deleted files, helping you quickly grasp the scale of each change.
+The _Changes_ column is now visible by default. The column now also includes a file count. The file count allows you to see at a glance the number of files involved in each commit, including added, modified and deleted files, helping you quickly grasp the scale of each change.
 
 ### Branch/Tag Column
-In our ongoing efforts to enhance the user experience, we've made a few improvements to the tooltips on the Branch/Tag icons. They're now more uniform and descriptive, providing clearer and more consistent information. This update will help users who are new to the graph quickly grasp what the icons in this column represent.
+In our ongoing efforts to enhance the user experience, we've made a few improvements to the tooltips on the _Branch/Tag_ icons. They're now more uniform and descriptive, providing clearer and more consistent information.
 
 
 ### Added
