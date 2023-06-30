@@ -826,7 +826,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </table>
 ***
 
-##Gutter Blame Settings
+##File Blame Settings
 
 <table>
 <thead>
@@ -838,27 +838,27 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.blame.avatars</code></td>
-<td>Specifies whether to show avatar images in the gutter blame annotations</td>
+<td>Specifies whether to show avatar images in the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.compact</code></td>
-<td>Specifies whether to compact (deduplicate) matching adjacent gutter blame annotations</td>
+<td>Specifies whether to compact (deduplicate) matching adjacent file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.dateFormat</code></td>
-<td>Specifies how to format absolute dates (e.g. using the <code>${date}</code> token) in gutter blame annotations. See the <a href="https://momentjs.com/docs/#/displaying/format/" rel="nofollow">Moment.js docs</a> for valid formats</td>
+<td>Specifies how to format absolute dates (e.g. using the <code>${date}</code> token) in file blame annotations. See the <a href="https://momentjs.com/docs/#/displaying/format/" rel="nofollow">Moment.js docs</a> for valid formats</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.format</code></td>
-<td>Specifies the format of the gutter blame annotations. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs. Date formatting is controlled by the <code>gitlens.blame.dateFormat</code> setting</td>
+<td>Specifies the format of the file blame annotations. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs. Date formatting is controlled by the <code>gitlens.blame.dateFormat</code> setting</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.heatmap.enabled</code></td>
-<td>Specifies whether to provide a heatmap indicator in the gutter blame annotations</td>
+<td>Specifies whether to provide a heatmap indicator in the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.heatmap.location</code></td>
-<td>Specifies where the heatmap indicators will be shown in the gutter blame annotations<br><br><code>left</code> - adds a heatmap indicator on the left edge of the gutter blame annotations<br><code>right</code> - adds a heatmap indicator on the right edge of the gutter blame annotations</td>
+<td>Specifies where the heatmap indicators will be shown in the file blame annotations<br><br><code>left</code> - adds a heatmap indicator on the left edge of the file blame annotations<br><code>right</code> - adds a heatmap indicator on the right edge of the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.highlight.enabled</code></td>
@@ -866,7 +866,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </tr>
 <tr>
 <td><code>gitlens.blame.highlight.locations</code></td>
-<td>Specifies where the associated line highlights will be shown<br><br><code>gutter</code> - adds a gutter indicator<br><code>line</code> - adds a full-line highlight background color<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
+<td>Specifies where the associated line highlights will be shown<br><br><code>file</code> - adds a file indicator<br><code>line</code> - adds a full-line highlight background color<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.ignoreWhitespace</code></td>
@@ -874,17 +874,17 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </tr>
 <tr>
 <td><code>gitlens.blame.separateLines</code></td>
-<td>Specifies whether gutter blame annotations will have line separators</td>
+<td>Specifies whether file blame annotations will have line separators</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.toggleMode</code></td>
-<td>Specifies how the gutter blame annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
+<td>Specifies how the file blame annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
 </tr>
 </tbody>
 </table>
 ***
 
-##Gutter Changes Settings
+##File Changes Settings
 
 <table>
 <thead>
@@ -896,17 +896,17 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.changes.locations</code></td>
-<td>Specifies where the indicators of the gutter changes annotations will be shown<br><br><code>gutter</code> - adds a gutter indicator<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
+<td>Specifies where the indicators of the file changes annotations will be shown<br><br><code>gutter</code> - adds a file indicator<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
 </tr>
 <tr>
 <td><code>gitlens.changes.toggleMode</code></td>
-<td>Specifies how the gutter changes annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
+<td>Specifies how the file changes annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
 </tr>
 </tbody>
 </table>
 ***
 
-##Gutter Heatmap Settings
+##File Heatmap Settings
 
 <table>
 <thead>
@@ -918,23 +918,23 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.heatmap.ageThreshold</code></td>
-<td>Specifies the age of the most recent change (in days) after which the gutter heatmap annotations will be cold rather than hot (i.e. will use <code>gitlens.heatmap.coldColor</code> instead of <code>gitlens.heatmap.hotColor</code>)</td>
+<td>Specifies the age of the most recent change (in days) after which the file heatmap annotations will be cold rather than hot (i.e. will use <code>gitlens.heatmap.coldColor</code> instead of <code>gitlens.heatmap.hotColor</code>)</td>
 </tr>
 <tr>
 <td><code>gitlens.heatmap.coldColor</code></td>
-<td>Specifies the base color of the gutter heatmap annotations when the most recent change is older (cold) than the <code>gitlens.heatmap.ageThreshold</code> value</td>
+<td>Specifies the base color of the file heatmap annotations when the most recent change is older (cold) than the <code>gitlens.heatmap.ageThreshold</code> value</td>
 </tr>
 <tr>
 <td><code>gitlens.heatmap.hotColor</code></td>
-<td>Specifies the base color of the gutter heatmap annotations when the most recent change is newer (hot) than the <code>gitlens.heatmap.ageThreshold</code> value</td>
+<td>Specifies the base color of the file heatmap annotations when the most recent change is newer (hot) than the <code>gitlens.heatmap.ageThreshold</code> value</td>
 </tr>
 <tr>
 <td><code>gitlens.heatmap.locations</code></td>
-<td>Specifies where the indicators of the gutter heatmap annotations will be shown<br><br><code>gutter</code> - adds a gutter indicator<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
+<td>Specifies where the indicators of the file heatmap annotations will be shown<br><br><code>gutter</code> - adds a file indicator<br><code>overview</code> - adds a decoration to the overview ruler (scroll bar)</td>
 </tr>
 <tr>
 <td><code>gitlens.heatmap.toggleMode</code></td>
-<td>Specifies how the gutter heatmap annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
+<td>Specifies how the file heatmap annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
 </tr>
 </tbody>
 </table>
@@ -1076,7 +1076,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </tr>
 <tr>
 <td><code>gitlens.fileAnnotations.command</code></td>
-<td>Specifies whether the file annotations button in the editor title shows a menu or immediately toggles the specified file annotations<br><code>null</code> (default) - shows a menu to choose which file annotations to toggle<br><code>blame</code> - toggles gutter blame annotations<br><code>heatmap</code> - toggles gutter heatmap annotations<br><code>changes</code> - toggles gutter changes annotations</td>
+<td>Specifies whether the file annotations button in the editor title shows a menu or immediately toggles the specified file annotations<br><code>null</code> (default) - shows a menu to choose which file annotations to toggle<br><code>blame</code> - toggles file blame annotations<br><code>heatmap</code> - toggles file heatmap annotations<br><code>changes</code> - toggles file changes annotations</td>
 </tr>
 </tbody>
 </table>
@@ -1308,15 +1308,15 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <tbody>
 <tr>
 <td><code>gitlens.gutterBackgroundColor</code></td>
-<td>Specifies the background color of the gutter blame annotations</td>
+<td>Specifies the background color of the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.gutterForegroundColor</code></td>
-<td>Specifies the foreground color of the gutter blame annotations</td>
+<td>Specifies the foreground color of the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.gutterUncommittedForegroundColor</code></td>
-<td>Specifies the foreground color of an uncommitted line in the gutter blame annotations</td>
+<td>Specifies the foreground color of an uncommitted line in the file blame annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.trailingLineBackgroundColor</code></td>
