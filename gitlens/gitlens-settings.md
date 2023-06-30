@@ -43,6 +43,10 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>gitlens.currentLine.scrollable</code></td>
 <td>Specifies whether the current line blame annotation can be scrolled into view when it is outside the viewport. <strong>NOTE</strong>: Setting this to <code>false</code> will inhibit the hovers from showing over the annotation; Set <code>gitlens.hovers.currentLine.over</code> to <code>line</code> to enable the hovers to show anywhere over the line.</td>
 </tr>
+<tr>
+<td><code>gitlens.currentLine.uncommittedChangesFormat</code></td>
+<td>Specifies the uncommitted changes format of the current line blame annotation. <strong>NOTE</strong>: Setting this to an empty string will disable current line blame annotations for uncommitted changes</td>
+</tr>
 </tbody>
 </table>
 
@@ -1271,8 +1275,20 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
 </tr>
 <tr>
+<td><code>gitlens.ai.experimental.provider</code></td>
+<td>Specifies the AI provider to use (defaults to <code>openai</code>)</td>
+</tr>
+<tr>
 <td><code>gitlens.ai.experimental.openai.model</code></td>
-<td>Specifies the OpenAI model (defaults to `gpt-3.5-turbo`)</td>
+<td>Specifies the OpenAI model (defaults to <code>gpt-3.5-turbo</code>)</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.anthropic.model</code></td>
+<td>Specifies the Anthropic model (defaults to <code>claude-v1</code>)</td>
+</tr>
+<tr>
+<td><code>gitlens.worktrees.defaultLocation</code></td>
+<td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
 </tr>
 </tbody>
 </table>
