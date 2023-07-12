@@ -150,8 +150,8 @@ Adds a **changes (diff) hover** annotation to each line while annotating to show
 
 Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [themable](/gitlens/settings/#themable-colors), file blame annotations to show the commit and author who last modified each line of a file
 
-- Contains the commit message and date, by [default](/gitlens/settings/#gutter-blame-settings)
-- Adds a heatmap (age) indicator on right edge (by [default](/gitlens/settings/#gutter-blame-settings),) of the file to provide an easy, at-a-glance way to tell how recently lines were changed (optional, on by default)
+- Contains the commit message and date, by [default](/gitlens/settings/#file-blame-settings)
+- Adds a heatmap (age) indicator on right edge (by [default](/gitlens/settings/#file-blame-settings),) of the file to provide an easy, at-a-glance way to tell how recently lines were changed (optional, on by default)
 - See the [file heatmap](/gitlens/gitlens-features/#file-heatmap) section below for more details
 - Adds a Toggle File Blame Annotations command (`gitlens.toggleFileBlame`) with a shortcut of <kbd>alt+b</kbd> to toggle the blame annotations on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
@@ -162,7 +162,7 @@ Adds on-demand, [customizable](/gitlens/settings/#gutter-blame-settings), and [t
 
 <img src="/wp-content/uploads/gutter-blame.png" class="img-bordered img-responsive center">
 
-Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), and [themable](/gitlens/settings/#themable-colors), file changes annotation to highlight any local (unpublished) changes or lines changed by the most recent commit.
+Adds an on-demand, [customizable](/gitlens/settings/#file-changes-settings), and [themable](/gitlens/settings/#themable-colors), file changes annotation to highlight any local (unpublished) changes or lines changed by the most recent commit.
 
 - Adds _Toggle File Changes_ command (`gitlens.toggleFileChanges`) to toggle the changes annotations on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
@@ -175,7 +175,7 @@ Adds an on-demand, [customizable](/gitlens/settings/#gutter-changes-settings), a
 
 Adds an on-demand heatmap to the edge of the file to show how recently lines were changed
 
-- The indicator's [customizable](/gitlens/settings/#gutter-heatmap-settings) color will either be hot or cold based on the age of the most recent change (cold after 90 days by [default](/gitlens/settings/#gutter-heatmap-settings))
+- The indicator's [customizable](/gitlens/settings/#file-heatmap-settings) color will either be hot or cold based on the age of the most recent change (cold after 90 days by [default](/gitlens/settings/#file-heatmap-settings))
 - The indicator's brightness ranges from bright (newer) to dim (older) based on the relative age, which is calculated from the median age of all the changes in the file
 - Adds _Toggle File Heatmap Annotations_ command (`gitlens.toggleFileHeatmap`) to toggle the heatmap on and off
 - Press <kbd>Escape</kbd> to turn off the annotations
