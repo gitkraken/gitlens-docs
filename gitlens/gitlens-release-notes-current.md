@@ -16,6 +16,67 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-1"></a>
+
+## Version 14.1
+
+### Thursday, July 13, 2023
+
+Intro (small release, main emphasis on workspace syncing, minor mention of comparison deep links)
+
+<img src="/wp-content/uploads/gl-14-1-hero.png" class="img-responsive center img-bordered">
+
+## Workspace Syncing
+
+(Needs images)
+
+When you create a VS Code workspace from a GitKraken Cloud workspace, the two are now linked. You can open a linked VS Code workspace from its cloud workspace using the new `Open VS Code Workspace in New Window` option (hold alt to open in the current window).
+
+When repositories are added to a GitKraken Cloud workspace, you can automatically add those repositories to its linked VS Code workspace when that workspace is opened. You can choose to automatically add the repositories, be prompted to add them, or disable auto-adding repositories altogether for that workspace. This setting is chosen when creating the VS Code workspace, but can be changed at any time using the new `Change Linked Workspace Auto-Add Behavior` command on the `Current Window` item or its linked workspace in the _Workspaces_ view.
+
+You can also manually add repositories to the VS Code workspace at any time using the new `Add Repositories from Linked Workspace` command.
+
+## Comparison Deep Links
+
+You can now deep link into comparisons in GitLens. This includes comparisons between branches, tags, and commits. Opening these deep links will open the comparison in the _Search & Compare_ view. You can also copy a deep link to a comparison to your clipboard using the new `Copy Link to Comparison` command on the `Share` submenu.
+
+### Thank you to our contributors
+
+Shout-out to all of our awesome contributors for this release!
+
+- Neil Ghosh ([@neilghosh](https://github.com/neilghosh))
+- Leo Dan Peña ([@leo9-py](https://github.com/leo9-py))
+
+### Added
+
+- Adds the ability to link a GitKraken Cloud workspace with an associated VS Code workspace
+  - Adds ability to automatically add repositories to the current VS Code workspace that were added to its associated GitKraken Cloud workspace, if desired
+    - Adds a _Change Linked Workspace Auto-Add Behavior..._ context menu command on the _Current Window_ and linked workspace to control the desired behavior
+    - Adds an _Add Repositories from Linked Workspace..._ context menu command on the _Current Window_ item to trigger this manually
+  - Adds a new _Open VS Code Workspace_ command to open an existing VS Code workspace associated with a GitKraken Cloud workspace
+  - Adds a highlight (green) to the linked GitKraken Cloud workspace when the current VS Code workspace is associated with it in the _GitKraken Workspaces_ view
+- Adds deep link support for comparisons in the _Search & Compare_ view
+  - Deep link format: `vscode://eamodio.gitlens/r/{repoId}/compare/{ref1}[..|...]{ref2}?[url={remoteUrl}|path={repoPath}]`
+  - Adds a _Share_ submenu with a _Copy Link to Comparison_ command to comparisions in the _Search & Compare_ view
+- Adds support for Anthropic's Claude 2 AI model
+- Adds a progress notification while repositories are being added to a GitKraken Cloud workspace
+
+### Changed
+
+- Improves scrolling performance on the _Commit Graph_
+- Renames _Convert to VS Code Workspace_ to _Create VS Code Workspace_ for workspaces in the _GitKraken Workspaces_ view to better reflect the behavior of the action
+- Hides _Create VS Code Workspace_ and _Locate All Repositories_ commands on empty workspaces in the _GitKraken Workspaces_ view
+
+### Fixed
+
+- Fixes [#2798](https://github.com/gitkraken/vscode-gitlens/issues/2798) - Improve response from OpenAI if key used is tied to a free account
+- Fixes [#2785](https://github.com/gitkraken/vscode-gitlens/issues/2785) - Remote Provider Integration URL is broken &mdash; thanks to [PR #2786](https://github.com/gitkraken/vscode-gitlens/pull/2786) by Neil Ghosh ([@neilghosh](https://github.com/neilghosh))
+- Fixes [#2791](https://github.com/gitkraken/vscode-gitlens/issues/2791) - Unable to use contributors link in README.md &mdash; thanks to [PR #2792](https://github.com/gitkraken/vscode-gitlens/pull/2792) by Leo Dan Peña ([@leo9-py](https://github.com/leo9-py))
+- Fixes [#2793](https://github.com/gitkraken/vscode-gitlens/issues/2793) - Requesting username change in contributors README page &mdash; thanks to [PR #2794](https://github.com/gitkraken/vscode-gitlens/pull/2794) by Leo Dan Peña ([@leo9-py](https://github.com/leo9-py))
+- Fixes some rendering issues when scrolling in the _Commit Graph_
+- Fixes an issue with some shared workspaces not showing up in the _GitKraken Workspaces_ view when they should
+- Fixes an issue when adding repositories to a workspace in the _GitKraken Workspaces_ view where the added repository would show as missing until refreshing the view
+
 <a id="v14-0"></a>
 
 ## Version 14.0 &mdash; GitLens Reimagined
