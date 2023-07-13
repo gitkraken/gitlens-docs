@@ -22,29 +22,28 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ### Thursday, July 13, 2023
 
-We're delighted to introduce GitLens 14.1. We've enhanced integration between GitKraken Cloud and VS Code workspaces. Now you can effortlessly link a GitKraken Cloud workspace and VS Code workspace and automatically update your VS Code workspace when new repositories are added to its linked counterpart. Want more control over your workspaces? Customize and control your interactions at any time with new context menu commands exclusive to linked workspaces.
-
-Additionally, the Search & Compare View just got even better. We've incorporated deep link support for comparisons, coupled with a `Copy Link to Comparison`` command in the new Share submenu, streamlining navigation and collaboration.
+We're delighted to introduce GitLens 14.1. We've enhanced integration between GitKraken Cloud and VS Code workspaces. You can now link a GitKraken Cloud workspace and VS Code workspace and GitLens can automatically update your VS Code workspace when new repositories are added to its linked counterpart.
+Additionally, we've added deep link support for comparisons in the _Search & Compare_ view, coupled with a new _Copy Link to Comparison_ command in a new _Share_ submenu, streamlining review and collaboration.
 
 <img src="/wp-content/uploads/gl-14-1-hero.png" class="img-responsive center img-bordered">
 
 ## Workspace Linking
 
-When you create a VS Code workspace from a GitKraken Cloud workspace, the two are now linked. You can open a linked VS Code workspace from its cloud workspace using the new `Open VS Code Workspace in New Window` option (hold alt to open in the current window).
+When you create a VS Code workspace from a GitKraken Cloud workspace, the two are now linked. You can open a linked VS Code workspace from its cloud workspace using the new _Open VS Code Workspace in New Window_ option (hold <kbd>alt</kbd> to open in the current window).
 
 <img src="/wp-content/uploads/gl-linked-workspaces-14-1.png" class="img-responsive center img-bordered">
 
-When repositories are added to a GitKraken Cloud workspace, you can automatically add those repositories to its linked VS Code workspace when that workspace is opened. You can choose to automatically add the repositories, be prompted to add them, or disable auto-adding repositories altogether for that workspace. This setting is chosen when creating the VS Code workspace, but can be changed at any time using the new `Change Linked Workspace Auto-Add Behavior` command on the `Current Window` item or its linked workspace in the GitKraken Workspaces View.
+When repositories are added to a GitKraken Cloud workspace, you can automatically add those repositories to its linked VS Code workspace when that workspace is opened. You can choose to automatically add new repositories, be prompted to add them, or disable auto-adding repositories altogether for that workspace. You'll be prompted to choose your desired behavior when creating the VS Code workspace, but it can also be changed at any time via the _Change Linked Workspace Auto-Add Behavior..._ context menu command on the _Current Window_ item or its linked workspace in the _GitKraken Workspaces_ view.
 
 <img src="/wp-content/uploads/gl-linked-auto-add-settings-14-1.png" class="img-responsive center img-bordered">
 
-You can also manually add repositories to the VS Code workspace at any time using the new `Add Repositories from Linked Workspace` command.
+You can also manually add repositories to the VS Code workspace at any time using the new _Add Repositories from Linked Workspace..._ context menu command.
 
 <img src="/wp-content/uploads/gl-linked-add-repositories-14-1.png" class="img-responsive center img-bordered">
 
 ## Comparison Deep Links
 
-You can now deep link into comparisons in GitLens. This includes comparisons between branches, tags, and commits. Opening these deep links will open the comparison in the Search & Compare View. You can also copy a deep link to a comparison to your clipboard using the new `Copy Link to Comparison` command on the `Share` submenu.
+You can now deep link directly into comparisons in the _Search & Compare_ view. This includes comparisons between branches, tags, and commits. You can also copy a deep link to a comparison to your clipboard using the new _Copy Link to Comparison_ context menu command on the _Share_ submenu.
 
 <img src="/wp-content/uploads/gl-deep-link-comparison-14-1.png" class="img-responsive center img-bordered">
 
@@ -160,11 +159,11 @@ Views include:
 - Commit Graph Details
 
 _Pro tip: You can toggle the Commit Graph between Panel and Editor layouts by clicking the "cog" icon on the upper right corner of the Graph view._
-_Pro tip 2: When the Commit Graph is in the Panel Layout, you can quickly toggle it via the new `Toggle Commit Graph` and `Toggle Maximized Commit Graph` commands._
+_Pro tip 2: When the Commit Graph is in the Panel Layout, you can quickly toggle it via the new __Toggle Commit Graph__ and __Toggle Maximized Commit Graph__ commands._
 
 ### Adopting the new views layout
 
-Unless you opt into the new layout, which we recommend, your existing views will stay where they are. You can opt in at any time from `Reset Views Layout` in the Command Palette.
+Unless you opt into the new layout, which we recommend, your existing views will stay where they are. You can opt in at any time from _Reset Views Layout_ in the Command Palette.
 
 ## New Onboarding Experience
 
