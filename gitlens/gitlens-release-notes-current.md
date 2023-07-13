@@ -25,6 +25,8 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 We're delighted to introduce GitLens 14.1. We've enhanced integration between GitKraken Cloud and VS Code workspaces. You can now link a GitKraken Cloud workspace and VS Code workspace and GitLens can automatically update your VS Code workspace when new repositories are added to its linked counterpart.
 Additionally, we've added deep link support for comparisons in the _Search & Compare_ view, coupled with a new _Copy Link to Comparison_ command in a new _Share_ submenu, streamlining review and collaboration.
 
+We've also added support for Anthropic's new Claude 2 model for use with our experimental AI features. You can switch to it using the _Switch AI Model_ command from the Command Palette.
+
 <img src="/wp-content/uploads/gl-14-1-hero.png" class="img-responsive center img-bordered">
 
 ## Workspace Linking
