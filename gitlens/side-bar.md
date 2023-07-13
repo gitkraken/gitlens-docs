@@ -303,9 +303,24 @@ To convert your local VSCode workspace into a GitKraken Workspace, press the 'Co
 <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="img-bordered img-responsive center">
 
 ### Understanding Workspace indicators and colors
+
 Workspaces also include visual indicators to help you understand their status. For example, a green Workspace with an 'O' symbol indicates that it is open in your current window.
 
 <img src="/wp-content/uploads/gl-workspace-indicators.png" class="img-bordered img-responsive center">
+
+### Workspace linking
+
+A VS Code workspace can be created from a GitKraken Workspace to link them.
+
+<img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="img-bordered img-responsive center">
+
+You can open a linked VS Code workspace from its cloud workspace using the new `Open VS Code Workspace in New Window` option (hold alt to open in the current window).
+
+When repositories are added to a GitKraken Cloud workspace, you can automatically add those repositories to its linked VS Code workspace when that workspace is opened. You can choose to automatically add the repositories, be prompted to add them, or disable auto-adding repositories altogether for that workspace. This setting is chosen when creating the VS Code workspace, but can be changed at any time using the new `Change Linked Workspace Auto-Add Behavior` command on the `Current Window` item or its linked workspace in the _Workspaces_ view.
+
+<img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="img-bordered img-responsive center">
+
+You can also manually add repositories to the VS Code workspace at any time using the new `Add Repositories from Linked Workspace` command.
 
 ***
 
@@ -360,3 +375,6 @@ The _Search & Compare_ view lists pinnable (saved) results for searching commit 
         - _Compare with HEAD_ command (`gitlens.views.compareWithHead`)
         - _Compare with Selected_ command (`gitlens.views.compareWithSelected`)
         - _Compare Ancestry with Working Tree_ command (`gitlens.views.compareAncestryWithWorking`)
+- Deep link support
+  - Deep link format: `vscode://eamodio.gitlens/r/{repoId}/compare/{ref1}[..|...]{ref2}?[url={remoteUrl}|path={repoPath}]`
+  - Includes a _Share_ submenu with a _Copy Link to Comparison_ command to comparisions in the _Search & Compare_ view
