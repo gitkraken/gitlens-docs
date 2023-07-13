@@ -377,4 +377,4 @@ The _Search & Compare_ view lists pinnable (saved) results for searching commit 
         - _Compare Ancestry with Working Tree_ command (`gitlens.views.compareAncestryWithWorking`)
 - Deep link support
   - Deep link format: `vscode://eamodio.gitlens/r/{repoId}/compare/{ref1}[..|...]{ref2}?[url={remoteUrl}|path={repoPath}]`
-  - Adds a _Share_ submenu with a _Copy Link to Comparison_ command to comparisions in the _Search & Compare_ view
+  - Includes a _Share_ submenu with a _Copy Link to Comparison_ command to comparisions in the _Search & Compare_ view
