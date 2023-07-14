@@ -55,6 +55,14 @@ Source Control contains side bar that are only focused on your repositories. Thi
 
 <img src="/wp-content/uploads/gl-side-bar.png" class="img-responsive left">
 
+### Moving Views
+
+Any view can be moved between GitLens Inspect, GitLens, and the Source Control Sidebar. To move a view, simply drag and drop the view into the desired sidebar. 
+
+<img src="/wp-content/uploads/move-view.gif" class="img-bordered img-responsive center">
+
+To revert back to the default view locations, open the command palette (<kdb>command/ctrl + shift + P</kdb>) and use the command <kdb>View: Reset View Locations</kdb>
+
 ***
  
 ##Commits view
@@ -376,5 +384,7 @@ The _Search & Compare_ view lists pinnable (saved) results for searching commit 
         - _Compare with Selected_ command (`gitlens.views.compareWithSelected`)
         - _Compare Ancestry with Working Tree_ command (`gitlens.views.compareAncestryWithWorking`)
 - Deep link support
+  - Link directly into comparisons in the _Search & Compare_ view for quickly viewing comparisons between branches, tags, and commits. You can copy a deep link to a comparison to your clipboard using the new _Copy Link to Comparison_ context menu command on the _Share_ submenu.
   - Deep link format: `vscode://eamodio.gitlens/r/{repoId}/compare/{ref1}[..|...]{ref2}?[url={remoteUrl}|path={repoPath}]`
-  - Includes a _Share_ submenu with a _Copy Link to Comparison_ command to comparisions in the _Search & Compare_ view
+
+  <img src="/wp-content/uploads/gl-deep-link-comparison-14-1.png" class="img-responsive center img-bordered">
