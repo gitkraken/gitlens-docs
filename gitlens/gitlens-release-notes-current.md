@@ -16,6 +16,49 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-2"></a>
+
+## Version 14.2
+
+#### Thursday, August 3, 2023
+
+GitLens 14.2 arrives with a few hotly-requested improvements to the Focus View for even greater productivity in your daily workflow.
+
+[Hero image]
+
+## Focus View
+
+The Focus View has been upgraded with a fresh look and includes a few new features to help you navigate pull requests and issues.
+
+[Image showing old and new design]
+
+There are now tabs for pull requests, issues, and the new 'All' tab which combines the two for users who wish to see all their work items in a single list.
+
+[Image showing search feature]
+
+Furthermore, we've added a search bar to the Focus View to help you quickly find the work items you're looking for.
+
+### Thank you to our contributors
+
+Shout-out to all of our awesome contributors for this release!
+
+- Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+
+### Added
+
+- Adds a new command _Open Changed & Close Unchanged Files..._ to the command palette, the context menu of the _Commit Graph_ work-in-progress (WIP) row, and the SCM group context menu to open all changed files and close all unchanged files.
+- Adds a new command _Reset Current Branch to Tip..._ to branch context menus in the _Commit Graph_ and in GitLens views to reset the current branch to the commit at the chosen branch's tip.
+
+### Changed
+
+- Changes _Compact Graph Column Layout_ context menu command to _Use Compact Graph Column_ for better clarity
+- Changes _Default Graph Column Layout_ context menu command to _Use Expanded Graph Column_ for better clarity
+- Improves remote parsing for better integration support for some edge cases
+
+### Fixed
+
+- Fixes [#2823](https://github.com/gitkraken/vscode-gitlens/issues/2823) - Handle stdout/stderr Buffers in shell run() &mdash; thanks to [PR #2824](https://github.com/gitkraken/vscode-gitlens/pull/2824) by Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+
 <a id="v14-1"></a>
 
 ## Version 14.1
