@@ -324,7 +324,7 @@ The Focus View allows you to stream line your workflow by providing a summarized
 
 Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
 
-<img src="/wp-content/uploads/gl-focus-view-3.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
 
 Within the Focus View, you can show Pull Requests and/or Issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all. Additionally, you can filter by mine, opened by me, assigned to me, needs my review, or mentions me. 
 
@@ -335,7 +335,7 @@ The Focus View offers the ability to perform actions on pull requests, issues, a
 * For issues, you can open them on the remote service using the globe icon.
 * For branches, you can click the branch name to open that branch on the commit graph.
 
-<img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
     <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
