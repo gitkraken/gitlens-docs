@@ -24,19 +24,19 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 GitLens 14.2 arrives with a few hotly-requested improvements to the Focus View for even greater productivity in your daily workflow.
 
-[Hero image]
+<img src="/wp-content/uploads/gl-14-2-hero.png" class="img-responsive center img-bordered">
 
 ## Focus View
 
 The Focus View has been upgraded with a fresh look and includes a few new features to help you navigate pull requests and issues.
 
-[Image showing old and new design]
+<img src="/wp-content/uploads/gl-focus-changes-14-2.png" class="img-responsive center img-bordered">
 
-There are now tabs for pull requests, issues, and the new 'All' tab which combines the two for users who wish to see all their work items in a single list.
+There are now tabs for pull requests, issues, and the new 'All' tab which combines the two for users who wish to see all their work items in a single list. Clicking on a branch name will show the branch on the Commit Graph.
 
-[Image showing search feature]
+<img src="/wp-content/uploads/gl-focus-search-14-2.png" class="img-responsive center img-bordered">
 
-Furthermore, we've added a search bar to the Focus View to help you quickly find the work items you're looking for.
+Furthermore, we've added a search bar to the Focus View to help you quickly find pull requests or issues by their title.
 
 ### Thank you to our contributors
 
