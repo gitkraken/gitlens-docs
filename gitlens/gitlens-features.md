@@ -326,11 +326,14 @@ Currently, this view is supported for GitHub repositories. In order to see the F
 
 <img src="/wp-content/uploads/gl-focus-view-3.png" class="img-bordered img-responsive center">
 
-The Focus View includes the following sections:
-- My Pull Requests: Shows all PRs opened by you, assigned to you, or awaiting your review
-- My Issues: Shows all issues created by you, assigned to you, or that mention you.
+Within the Focus View, you can show Pull Requests and/or Issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all. Additionally, you can filter by mine, opened by me, assigned to me, needs my review, or mentions me. 
 
-The Focus View offers the ability to create or open a worktree or branch from Pull Requests using the arrow and folder icon.
+<img src="/wp-content/uploads/gl-focus-view-filters.png" class="img-bordered img-responsive center">
+
+The Focus View offers the ability to perform actions on pull requests, issues, and branches:
+* For pull requests, you can create or open a worktree or branch using the arrow and folder icon under the Actions column.
+* For issues, you can open them on the remote service using the globe icon.
+* For branches, you can click the branch name to open that branch on the commit graph.
 
 <img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-bordered img-responsive center">
 
