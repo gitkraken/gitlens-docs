@@ -326,7 +326,7 @@ Currently, this view is supported for GitHub repositories. In order to see the F
 
 <img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
 
-Within the Focus View, you can show Pull Requests and/or Issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all. Additionally, you can filter by mine, opened by me, assigned to me, needs my review, or mentions me. 
+Within the Focus View, you can show pull requests and/or issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all.
 
 <img src="/wp-content/uploads/gl-focus-view-filters.png" class="img-bordered img-responsive center">
 
