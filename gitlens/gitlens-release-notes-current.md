@@ -28,11 +28,13 @@ GitLens 14.2 arrives with a few hotly-requested improvements to the Focus View f
 
 ## Focus View
 
-The Focus View has been upgraded with a fresh look and includes a few new features to help you navigate pull requests and issues.
+The Focus View has been improved with a new unified experience and includes a few new features to help you navigate pull requests and issues.
 
 <img src="/wp-content/uploads/gl-focus-changes-14-2.png" class="img-responsive center img-bordered">
 
-There are now tabs for pull requests, issues, and the new 'All' tab which combines the two for users who wish to see all their work items in a single list. Clicking on a branch name will show the branch on the Commit Graph.
+Pull Requests and Issues have now been combined into a single view with tabs to quickly toggle between showing all items, pull requests, or issues only.
+
+You can also click on a branch name to show the branch on the Commit Graph, and if you don't already have a remote configured for that branch you'll be guided to add it.
 
 <img src="/wp-content/uploads/gl-focus-search-14-2.png" class="img-responsive center img-bordered">
 
