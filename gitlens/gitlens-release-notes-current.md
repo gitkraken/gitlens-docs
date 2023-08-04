@@ -16,6 +16,57 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-2"></a>
+
+## Version 14.2
+
+#### Friday, August 4, 2023
+
+GitLens 14.2 arrives with a few hotly-requested improvements to the Focus View for even greater productivity in your daily workflow.
+
+<img src="/wp-content/uploads/gl-14-2-hero.png" class="img-responsive center img-bordered">
+
+## Focus View
+
+The Focus View has been improved with a new unified experience and includes a few new features to help you navigate pull requests and issues.
+
+<img src="/wp-content/uploads/gl-focus-changes-14-2.png" class="img-responsive center img-bordered">
+
+Pull Requests and Issues have now been combined into a single view with tabs to quickly toggle between showing all items, pull requests, or issues only.
+
+You can also click on a branch name to show the branch on the Commit Graph, and if you don't already have a remote configured for that branch you'll be guided to add it.
+
+<img src="/wp-content/uploads/gl-focus-search-14-2.png" class="img-responsive center img-bordered">
+
+Furthermore, we've added a search bar to the Focus View to help you quickly find pull requests or issues by their title.
+
+### Thank you to our contributors
+
+Shout-out to all of our awesome contributors for this release!
+
+- Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+
+### Added
+
+- Improves the _Focus_ view experience
+  - Unifies pull requests and issues into a single view
+  - Adds tabs to switch between showing Pull Requests, Issues, or All
+  - Adds a filter/search box to quickly find pull request or issues by title
+  - Adds ability to click on a branch name to show the branch on the _Commit Graph_
+- Adds a new command _Open Changed & Close Unchanged Files..._ to the command palette, the context menu of the _Commit Graph_ work-in-progress (WIP) row, and the SCM group context menu to open all changed files and close all unchanged files.
+- Adds a new command _Reset Current Branch to Tip..._ to branch context menus in the _Commit Graph_ and in GitLens views to reset the current branch to the commit at the chosen branch's tip.
+
+### Changed
+
+- Changes _Compact Graph Column Layout_ context menu command to _Use Compact Graph Column_ for better clarity
+- Changes _Default Graph Column Layout_ context menu command to _Use Expanded Graph Column_ for better clarity
+- Improves remote parsing for better integration support for some edge cases
+
+### Fixed
+
+- Fixes [#2823](https://github.com/gitkraken/vscode-gitlens/issues/2823) - Handle stdout/stderr Buffers in shell run() &mdash; thanks to [PR #2824](https://github.com/gitkraken/vscode-gitlens/pull/2824) by Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+- Fixes issues with missing worktrees breaking the Worktrees view and Worktree quick pick menus
+
 <a id="v14-1"></a>
 
 ## Version 14.1
