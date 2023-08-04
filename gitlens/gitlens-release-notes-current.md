@@ -20,7 +20,7 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ## Version 14.2
 
-#### Thursday, August 3, 2023
+#### Friday, August 4, 2023
 
 GitLens 14.2 arrives with a few hotly-requested improvements to the Focus View for even greater productivity in your daily workflow.
 
