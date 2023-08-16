@@ -9,6 +9,8 @@ taxonomy:
 
 The GitKraken Browser Extension bridges your GitHub or GitLab repositories to GitKraken Client and GitLens in Visual Studio Code. With this browser extension enabled, you get options inside github.com and gitlab.com to open repositories and commits in GitKraken Client or GitLens in Visual Studio Code.
 
+<img src='/wp-content/uploads/gl-be-open-repo.gif' class='img-bordered img-responsive center'>
+
 ***
 ## Requirements
 
