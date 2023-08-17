@@ -38,21 +38,3 @@ Open Compairison in Visual Studio Code: From the pull request view on GitHub or 
 Open with GitKraken button on commit pages: From a commit page on GitHub or GitLab, you can select "Open with GitKraken".
 
 <img src="/wp-content/uploads/be-commit.png" class="img-bordered img-responsive center">
-
-***
-
-## What is included?
-
-Free:
-
-* Open public repositories in GitKraken Client
-* Open public or private repositories with GitLens in Visual Studio Code
-
-With a [GitKraken Client license](https://www.gitkraken.com/git-client/pricing):
-
-* Open private repositories in GitKraken Client
-* Access paid GitKraken Client features
-
-With a [GitLens license](https://www.gitkraken.com/gitlens/pricing):
-
-* Access paid GitLens features
