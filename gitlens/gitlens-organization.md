@@ -14,7 +14,7 @@ A GitKraken organization is a collection of [GitKraken accounts](/gitkraken-clie
 
 ## Create
 
-To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/), or select “Manage Account” in the drop down menu inside of GitKraken Client, and select “Create Organization” in the left side menu. If you are not part of any organization, you can select “New Trial Organization." The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
+To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/) and select “Create Organization” in the left side menu. If you are not part of any organization, you can select “New Trial Organization." The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
 
 <img src="/wp-content/uploads/gitkraken-organization-create.png" class="img-responsive center img-bordered">
 
@@ -63,7 +63,7 @@ To export users to a CSV, select “Export via CSV”. The export will contain c
 ## Roles
 
 Roles grant members permissions within an organization. There are four roles a user may have:
-+ Owner: there must be exactly one owner per organization. Owners have full permission and consume a license.
++ Owner: there is exactly one owner per organization. Owners have full permission and consume a license.
 + Admin: Admins have full permissions and consume a license. Admins cannot remove or edit the owner.
 + User: Users have no administrative permissions but do consume a license.
 + Billing Contact: Billing Contacts have the same permissions as admins, except they do not consume a license.
@@ -125,7 +125,7 @@ Roles grant members permissions within an organization. There are four roles a u
 
 Teams are the best way to organize members of your GitKraken organization. In addition, teams can create Shared Workspaces to bring focus to their collaborative work and help identify conflicts by showing what files and branches your team is working on.
 
-Any member can create a team by visiting the Teams tab within the organization at [app.gitkraken.com](https://app.gitkraken.com/) or within GitKraken Client. For more information on creating and working with teams, see the [Teams](/gitkraken-client/teams/) page.
+Any member can create a team by visiting the Teams tab within the organization at [app.gitkraken.com](https://app.gitkraken.com/). For more information on creating and working with teams, see the [Teams](/gitkraken-client/teams/) page.
 
 <img src="/wp-content/uploads/gitkraken-organization-teams.png" class="img-responsive center img-bordered">
 
@@ -152,7 +152,7 @@ See how to setup SSO by visiting the [Setting up SSO](/gitkraken-client/single-s
 
 ## Settings
 
-Visiting the Settings section of your organization will give you a snapshot of your subscription and allow you to edit a few key aspects of your organization like changing the name and [transferring ownership](/gitkraken-client/gitkraken-organization/#transfer-ownership) of the organization.
+Visiting the Settings section of your organization will give you a snapshot of your subscription and allow you to edit a few key aspects of your organization like changing the name and [transferring ownership](/gitlens/gitlens-organization/#transfer-ownership) of the organization.
 
 You can hide organizations that you do not wish to see from the sidebar view by checking the “Hide organization in the sidebar” box. You can also rename an organization by typing the desired name into **Organization Name** and then selecting "Save."
 
