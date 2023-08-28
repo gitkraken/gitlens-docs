@@ -22,8 +22,8 @@ The GitKraken Browser Extension bridges your GitHub or GitLab repositories to Gi
 ## How to add the extension
 
 To add the browser extension, navigate to the following link for your respective browser and select `Add to [Browser]`:
-* [Google Chrome](TODO)
-* [Firefox](TODO)
+* [Google Chrome](https://chrome.google.com/webstore/detail/gitkraken/egmopflbpgdjmmkeabegohajillnebco)
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
 
 ***
 
