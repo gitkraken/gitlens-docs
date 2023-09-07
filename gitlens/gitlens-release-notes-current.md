@@ -16,6 +16,52 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-3"></a>
+
+## Version 14.3
+
+#### Thursday, September 7, 2023
+
+This release focuses on quality of life improvements to the _Commit Graph_, _Search & Compare_, and File History as well bug fixes around the deep links and viewing diffs.
+
+### Commit Graph Improvements 
+
+<img src="/wp-content/uploads/gl-14-3-multiple-open-graphs.png" class="img-responsive center img-bordered">
+
+You can now have a Commit Graph in the bottom Panel and one in the Editor Area open at the same time. This enables viewing more than repo at time or differnt areas at the same time.
+
+<img src="/wp-content/uploads/gl-14-3-commit-graph-prefers.png" class="img-responsive center img-bordered">
+
+Additionally, you can also set a preference for which mode to use by default, which you can set from the gear icon on the Commit Graph or by adding `gitlens.graph.layout` in settings. _GitLens: Show Commit Graph_ from the command palette will honor that preference.
+
+### Search & Compare Review Checkboxes
+
+<img src="/wp-content/uploads/gl-14-3-search-compare-checkboxes.png" class="img-responsive center img-bordered">
+
+From the _Search & Compare_, you now have checkboxes next to each files to help keep track of files you've reviewed. This was an long sought after request by the community, you asked and we delivered!
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributor for this release!
+
+- Omar Ghazi ([@omarfesal](https://github.com/omarfesal))
+
+### Added
+
+- Adds checkboxes to files in the _Search & Compare_ view to allow for tracking review progress &mdash; closes [#836](https://github.com/gitkraken/vscode-gitlens/issues/836)
+- Allows the _Commit Graph_ to be open in the panel and in the editor area simultaneously
+- Adds an _Open Changes_ button to commits in the file history quick pick menu &mdash; closes [#2641](https://github.com/gitkraken/vscode-gitlens/issues/2641) thanks to [PR #2800](https://github.com/gitkraken/vscode-gitlens/pull/2800) by Omar Ghazi ([@omarfesal](https://github.com/omarfesal))
+
+### Changed
+
+- Changes the `gitlens.graph.layout` setting to be a default preference rather than a mode change
+
+### Fixed
+
+- Fixes [#2885](https://github.com/gitkraken/vscode-gitlens/issues/2885) - Folder History not show changed files of commit
+- Fixes issues with opening changes (diffs) of renamed files
+- Fixes issues with deep links including when opening VS Code from the deep link
+
 <a id="v14-2"></a>
 
 ## Version 14.2
