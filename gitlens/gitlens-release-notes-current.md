@@ -24,6 +24,8 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 This release focuses on quality of life improvements to the _Commit Graph_, _Search & Compare_, and File History as well bug fixes around the deep links and viewing diffs.
 
+<img src="/wp-content/uploads/gl-14-3-hero.png" class="img-responsive center img-bordered">
+
 ### Commit Graph Improvements 
 
 <img src="/wp-content/uploads/gl-14-3-multiple-open-graphs.png" class="img-responsive center img-bordered">
