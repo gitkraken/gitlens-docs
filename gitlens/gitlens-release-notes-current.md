@@ -28,7 +28,7 @@ This release focuses on quality of life improvements to the _Commit Graph_, _Sea
 
 <img src="/wp-content/uploads/gl-14-3-multiple-open-graphs.png" class="img-responsive center img-bordered">
 
-You can now have a Commit Graph in the bottom Panel and one in the Editor Area open at the same time. This enables viewing more than repo at time or differnt areas at the same time.
+You can now have a Commit Graph in the bottom Panel and one in the Editor Area open at the same time. This enables viewing more than repo at a time or different areas of the same repo at the same time.
 
 <img src="/wp-content/uploads/gl-14-3-commit-graph-prefers.png" class="img-responsive center img-bordered">
 
