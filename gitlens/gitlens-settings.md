@@ -1368,5 +1368,9 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <td><code>gitlens.graph.experimental.location</code></td>
 <td> Specify the location in which the Commit Graph will be shown<br><br> <code>tab</code> - Shows the Commit Graph in a tab in the editor area <br><br> <code>view</code> - Shows the Commit Graph in the side bar and can be dragged and dropped into any side bar, secondary side bar, or panel locations</td>
 </tr>
+<tr>
+<td><code>gitlens.graph.layout</code></td>
+<td> Specify the default layout in which the Commit Graph will be shown. Can be `panel` (default) or `editor`. This is honored when opening the commit graph from the command palette.</td>
+</tr>
 </tbody>
 </table>

@@ -210,9 +210,9 @@ All columns can be rearranged by dragging and dropping the column headers. The c
 
 <img src="/wp-content/uploads/gl-column-settings.png" class="img-bordered img-responsive center">
 
-A Commit Graph Panel Layout is offered to show the Commit Graph in the bottom Panel (near the Terminal) with a dedicated Commit Graph Details view alongside the Commit Graph. To switch between the Editor Layout and Panel Layout, select the Commit Graph settings cog located at the top right of the editor. From there, select the "Switch Commit Graph to Panel Layout" or "Switch Commit Graph to Editor Layout".
+A Commit Graph Panel Layout is offered to show the Commit Graph in the bottom Panel (near the Terminal) with a dedicated Commit Graph Details view alongside the Commit Graph. To switch between the Editor Layout and Panel Layout, select the Commit Graph settings gear located at the top right of the editor. From there, select the "Prefer Commit Graph in Panel Layout" or "Prefer Commit Graph in Editor Area". The Commit Graph can also be opened in both the Penel Layout and Editor Area simultaneously. 
 
-<img src="/wp-content/uploads/gl-commit-graph-panel-layout-change.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-prefer-commit-graph-location.png" class="img-bordered img-responsive center">
 
 A compact layout for the Graph column is offered in the Commit Graph to reduce the visual complexity and size of the Graph column. To enable the compact layout, right click on the Graph column header, and select the Compact Graph Column Layout option. Additionally the Author column displays avatars instead of text when sized to its minimum width, which pairs nicely with the compact Graph column as you can retain avatars. Also, when the any of the Commit Graph columns are resized small enough so that their text would be truncated, they switch to displaying icons to ensure that crucial information remains visible, even in constrained display settings.
 
