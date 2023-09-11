@@ -14,16 +14,17 @@ The GitKraken Browser Extension bridges your GitHub or GitLab repositories to Gi
 ***
 ## Requirements
 
-* [Google Chrome](https://www.google.com/chrome/) or [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
-* [GitKraken Client](https://www.gitkraken.com/git-client/try-free) or [GitLens](https://www.gitkraken.com/gitlens/try-free) for Visual Studio Code
+* Google Chrome, Mozilla Firefox or Microsoft Edge
+* [GitLens](https://www.gitkraken.com/gitlens/try-free) for Visual Studio Code or [GitKraken Client](https://www.gitkraken.com/git-client/try-free)
 
 ***
 
 ## How to add the extension
 
-To add the browser extension, navigate to the following link for your respective browser and select `Add to [Browser]`:
+To add the browser extension, navigate to the following link for your respective browser and select `Add to [Browser]` or `Get`:
 * [Google Chrome](https://chrome.google.com/webstore/detail/gitkraken/egmopflbpgdjmmkeabegohajillnebco)
-* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
+* [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitkraken-browser-extension/)
+* [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/gitkraken/eehliiniplilmbgcnghhaneefihofjnl)
 
 ***
 
