@@ -1,15 +1,17 @@
 ---
 
-title:  Buy FAQ
-description: Here are the most common questions to purchasing GitLens licenses.
+title:  Account and License FAQs
+description: Here are the most common questions.
 taxonomy:
     category: gitlens
     
 ---
 
+***
+
 ### Can I transfer account ownership?
 
-Yes. If you are the `Owner` of a <strong>GitKraken Pro</strong> account, then you may transfer ownership to a different user from your account.
+Yes. If you are the `Owner`, then you may transfer ownership to a different user from your account.
 
 <img src="/wp-content/uploads/transfer-ownership.png" srcset="/wp-content/uploads/transfer-ownership.png" class="img-responsive center img-bordered">
 
