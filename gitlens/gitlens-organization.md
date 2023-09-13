@@ -1,7 +1,7 @@
 ---
 
-title: Manage GitLens Organization
-description: Learn about GitLens Organizations
+title: Manage GitKraken Organization
+description: Learn about GitKraken Organizations
 taxonomy:
     category: gitlens
     

@@ -30,19 +30,19 @@ The <kbd>User</kbd> role does not have permission to allocate, edit or remove us
 Invoice copies are emailed to the owner or billing contact from `accounting@gitkraken.com` immediately upon purchase. 
 
 ***
-### I'm just a single-user using GitLens Pro. What do I put for the Organization/Company field?
+### I'm just a single-user using GitLens. What do I put for the Organization/Company field?
 
 Enter a value of your choice. Most use "Personal" or "Self." 
 
 ***
 ### I just purchased a license. Where is my key? Shouldn't I get emailed a license?
 
-Your license is tied to your email and all GitLens licenses are managed from [https://app.gitkraken.com](https://app.gitkraken.com/). Additionally, any users you add to your account will be emailed a link to activate their account automatically.
+Your license is tied to your email and all GitKraken licenses are managed from [https://app.gitkraken.com](https://app.gitkraken.com/). Additionally, any users you add to your account will be emailed a link to activate their account automatically.
 
 ***
-### Can I use my paid GitLens license on more than one computer?
+### Can I use my paid GitKraken license on more than one computer?
 
-Yes, your paid GitLens subscription is associated with your email address, not a specific computer. So you can use GitLens Pro on as many computers as you'd like!
+Yes, your paid GitKraken subscription is associated with your email address, not a specific computer. So you can use GitLens Pro on as many computers as you'd like!
 
 ***
 ### What if I am a reseller?

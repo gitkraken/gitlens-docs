@@ -1,7 +1,7 @@
 ---
 
-title: Manage GitLens Subscriptions
-description: Learn about GitLens Subscriptions
+title: Manage GitKraken Subscriptions
+description: Learn about GitKraken Subscriptions
 taxonomy:
     category: gitlens
     
