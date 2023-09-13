@@ -1,7 +1,7 @@
 ---
 
-title: GitLens Reseller Guide
-description: For resellers to learn about how to purchase and manage GitLens Accounts and Organizations
+title: Reseller Guide
+description: For resellers to learn about how to purchase and manage GitKraken Accounts and Organizations
 taxonomy:
     category: gitlens
     
