@@ -38,6 +38,6 @@ Open Compairison in Visual Studio Code: From the pull request view on GitHub or 
 
 <img src="/wp-content/uploads/be-pull-request.png" class="img-bordered img-responsive center">
 
-Open with GitKraken button on commit pages: From a commit page on GitHub or GitLab, you can select "Open with GitKraken".
+Open with GitKraken button on commit pages: From a commit page on GitHub or GitLab, you can select "Open with GitKraken" to view the commit directly in GitKraken Client or with GitLens in Visual Studio Code.
 
 <img src="/wp-content/uploads/be-commit.png" class="img-bordered img-responsive center">
