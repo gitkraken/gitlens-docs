@@ -16,6 +16,66 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-4"></a>
+
+## Version 14.4
+
+#### Thursday, October 12, 2023
+
+GitLens 14.4 is here, featuring new enhancements to Focus View, Commit Details, performance improvements to Inline and Status Bar Blame, and the all-new experimental Cloud Patches.
+
+<img src="/wp-content/uploads/gl-14-4-hero.png" class="img-responsive center img-bordered">
+
+### Focus View Enhancements
+
+Focus view now includes the ability to pin and snooze items. These options appear as clickable icons in the new snooze/pin column in the view. Pinned issues and pull requests will always show at the top of the list, while snoozed items will be hidden and moved to the new Snoozed section. To unsnooze an item, simply click on the Snoozed section header and select the unsnooze icon for that item in the pin/snooze column.
+
+<img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-responsive center img-bordered">
+
+### WIP Tab in Commit Details
+
+Commit Details now includes a separate tab for your WIP! This allows you to view your work-in-progress changes any time without losing context on your current selected change. You can also easily switch between the WIP and the current commit using the new WIP tab.
+
+<img src="/wp-content/uploads/gl-14-4-commit-details-wip.png" class="img-responsive center img-bordered">
+
+### Cloud Patches (Experimental)
+
+Description - TBD
+
+<img src="/wp-content/uploads/gl-14-4-cloud-patches.png" class="img-responsive center img-bordered">
+
+### Inline and Status Bar Blame Performance Improvements
+
+Description - TBD
+
+### Added
+
+- Adds a _[Show|Hide] Merge Commits_ toggle to the _File History_ view &mdash; closes [#2104](https://github.com/gitkraken/vscode-gitlens/issues/2104) & [#2944](https://github.com/gitkraken/vscode-gitlens/issues/2944)
+  - Adds a `gitlens.advanced.fileHistoryShowMergeCommits` setting to specify whether merge commits will be show in file histories
+- Adds deep link support for workspaces in the _GitKraken Workspaces_ view
+  - Deep link format: `https://gitkraken.dev/link/workspaces/{workspaceId}`
+  - Adds a _Share_ submenu with a _Copy Link to Workspace_ command to workspaces in the _GitKraken Workspaces_ view
+
+### Changed
+
+- Improves performance of inline blame, status bar blame, and hovers especially when working with remotes with connected integrations
+- Changes the _File History_ view to follow renames and filters out merge commits by default &mdash; closes [#2104](https://github.com/gitkraken/vscode-gitlens/issues/2104) & [#2944](https://github.com/gitkraken/vscode-gitlens/issues/2944)
+- Changes to use our own implementation of `fetch`, `push`, and `pull` Git operations, rather than delegating to VS Code to avoid limitations especially with GitKraken Workspaces. Please report any issues and you can revert this (for now) by setting `"gitlens.experimental.nativeGit"` to `"false"` in your settings
+- Relaxes PR autolink detection for Azure DevOps to use `PR <number>` instead of `Merged PR <number>` &mdash; closes [#2908](https://github.com/gitkraken/vscode-gitlens/issues/2908)
+- Changes wording on `Reset Stored OpenAI Key` command to `Reset Stored AI Key` to reflect support for other providers
+
+### Fixed
+
+- Fixes [#2941](https://github.com/gitkraken/vscode-gitlens/issues/2941) - Invalid Request when trying to generate a commit message using Anthropic API
+- Fixes [#2940](https://github.com/gitkraken/vscode-gitlens/issues/2940) - Can't use Azure OpenAI model because i can't save the openai key because of the verification
+- Fixes [#2928](https://github.com/gitkraken/vscode-gitlens/issues/2928) - Apply Changes should create new files when needed
+- Fixes [#2896](https://github.com/gitkraken/vscode-gitlens/issues/2896) - Repositories view stuck in loading state
+- Fixes issue with "View as [List|Tree]" toggle not working in the _Commit Details_ view
+- Fixes an issue with deep links sometimes failing to properly resolve when a matching repository without the remote is found
+- Fixes an issue in the _Commit Graph_ where commits not in the history of a merge commit were showing in the same column
+- Fixes `Reset Stored AI Key` command to work for the current provider
+- Fixes an issue with parsing some renames in log output
+
 <a id="v14-3"></a>
 
 ## Version 14.3
