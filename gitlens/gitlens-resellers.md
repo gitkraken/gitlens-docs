@@ -33,14 +33,9 @@ Once you have created your GitKraken account, your account is tied to the primar
 
 ### 2. Create a New Organization
 
-After account creation, navigate to the left user panel and select “New Organization” under Organizations. If you have no organizations yet, select “Purchase License” instead.
+After account creation, navigate to the left user panel and select “New Organization” under Organizations. If you have no organizations yet, select “Purchase License” instead. Select the number of users and then proceed by selecting `Buy [Subscription]`. 
 
-
-<img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization.png" class="img-responsive center img-bordered">
-
-You will be guided through selecting a product for the customer organization, followed by a tier.
-
-<img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization2.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization-1.png" class="img-responsive center img-bordered">
 
 ***
 
@@ -57,7 +52,7 @@ To complete the purchase, input:
 **This purchase is for someone else:** Check this option and fillout the contact email of the customer
 **Payment information:** Enter reseller billing details
 
-<img src="/wp-content/uploads/gitkraken-reseller-guide-purchase.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-purchase-1.png" class="img-responsive center img-bordered">
 
 Once the purchase is complete you will be emailed a copy of your receipt. The customer will receive an email to accept as owner of the organization. They have 7 days to accept this and you will remain as owner until they accept it. If the 7 days lapse you can always reinitiate [transfer ownership](/gitlens/gitlens-organization/#transfer-ownership).
 
@@ -76,7 +71,7 @@ Follow this reseller guide for purchasing additional licenses on an existing acc
 5. The Billing Summary will populate the cost of add additional users to the customer account. Please utilize this to provide the customer an official quote for adding users
 6. Update your billing details if needed and select “Complete Purchase.” The customer will have immediate access to the additional licenses
 
-<img src="/wp-content/uploads/existing-purchases.gif" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/existing-purchases-1.gif" class="img-responsive center img-bordered">
 
 <div class='callout callout--basic'>
    	<p>The cost to add users to an existing account is prorated against the billing cycle of the initial purchase of the account.</p>
@@ -97,7 +92,7 @@ Here’s how to obtain a quote for an upgrade (either adding licenses or changin
 4. Make the upgrade you would like (either adding licenses or changing plans) but don’t select purchase yet
 5. The Billing Summary will populate the cost of the upgrade on the customer’s subscription. Please use this to provide the customer an official quote for the upgrade
 
-<img src="/wp-content/uploads/gitkraken-reseller-guide-upgrade-quote.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-upgrade-quote-1.png" class="img-responsive center img-bordered">
 
 ### Renewal Quote
 
@@ -106,4 +101,4 @@ Here’s how to obtain a quote for an upgrade (either adding licenses or changin
 3. Navigate to the "Subscriptions" tab
 4. The Billing Summary will indicate the Annual Total. Please use this to provide the customer an official quote for the yearly renewal. The date of the renewal is listed as “Next charge”
 
-<img src="/wp-content/uploads/gitkraken-reseller-guide-renewal-quote.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-renewal-quote-1.png" class="img-responsive center img-bordered">
