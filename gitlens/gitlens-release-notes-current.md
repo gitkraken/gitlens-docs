@@ -22,27 +22,21 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Thursday, October 12, 2023
 
-GitLens 14.4 is here, featuring new enhancements to Focus View, Commit Details, performance improvements to Inline and Status Bar Blame, and the all-new experimental Cloud Patches.
+GitLens 14.4 is here, featuring new enhancements to _Focus View_, _Commit Details_ and _Graph Details_, and some performance improvements to _Inline_ and _Status Bar Blame_.
 
 <img src="/wp-content/uploads/gl-14-4-hero.png" class="img-responsive center img-bordered">
 
 ### Focus View Enhancements
 
-Focus view now includes the ability to pin and snooze items. These options appear as clickable icons in the new snooze/pin column in the view. Pinned issues and pull requests will always show at the top of the list, while snoozed items will be hidden and moved to the new Snoozed section. To unsnooze an item, simply click on the Snoozed section header and select the unsnooze icon for that item in the pin/snooze column.
+_Focus View_ now includes the ability to pin and snooze items. These options appear as clickable icons in the new snooze/pin column in the view. Pinned issues and pull requests will always show at the top of the list, while snoozed items will be hidden and moved to the new Snoozed section. To unsnooze an item, simply click on the Snoozed section header and select the unsnooze icon for that item in the pin/snooze column.
 
 <img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-responsive center img-bordered">
 
-### WIP Tab in Commit Details
+### Working Changes Tab
 
-Commit Details now includes a separate tab for your WIP! This allows you to view your work-in-progress changes any time without losing context on your current selected change. You can also easily switch between the WIP and the current commit using the new WIP tab.
+_Commit Details_ and _Graph Details_ now include a separate _Working Changes_ tab. This allows you to view your work-in-progress changes any time without losing context on your current selected change. The tab includes the ability to stage and unstage changes, open files to view changes, and open the changes in the _Commit Graph_ and SCM view.
 
 <img src="/wp-content/uploads/gl-14-4-commit-details-wip.png" class="img-responsive center img-bordered">
-
-### Cloud Patches (Experimental)
-
-Description - TBD
-
-<img src="/wp-content/uploads/gl-14-4-cloud-patches.png" class="img-responsive center img-bordered">
 
 ### Inline and Status Bar Blame Performance Improvements
 
@@ -50,6 +44,8 @@ Description - TBD
 
 ### Added
 
+- Adds a _Working Changes_ tab to the _Commit Details_ and _Graph Details_ views to show your working tree changes
+  - Adds _Stage Changes_ and _Unstage Changes_ commands to files on the _Working Changes_ tab
 - Adds a _[Show|Hide] Merge Commits_ toggle to the _File History_ view &mdash; closes [#2104](https://github.com/gitkraken/vscode-gitlens/issues/2104) & [#2944](https://github.com/gitkraken/vscode-gitlens/issues/2944)
   - Adds a `gitlens.advanced.fileHistoryShowMergeCommits` setting to specify whether merge commits will be show in file histories
 - Adds deep link support for workspaces in the _GitKraken Workspaces_ view
@@ -70,6 +66,7 @@ Description - TBD
 - Fixes [#2940](https://github.com/gitkraken/vscode-gitlens/issues/2940) - Can't use Azure OpenAI model because i can't save the openai key because of the verification
 - Fixes [#2928](https://github.com/gitkraken/vscode-gitlens/issues/2928) - Apply Changes should create new files when needed
 - Fixes [#2896](https://github.com/gitkraken/vscode-gitlens/issues/2896) - Repositories view stuck in loading state
+- Fixes [#2460](https://github.com/gitkraken/vscode-gitlens/issues/2460) - Gitlens Remote provider doesn't work properly in "Commit graph" view
 - Fixes issue with "View as [List|Tree]" toggle not working in the _Commit Details_ view
 - Fixes an issue with deep links sometimes failing to properly resolve when a matching repository without the remote is found
 - Fixes an issue in the _Commit Graph_ where commits not in the history of a merge commit were showing in the same column
@@ -86,7 +83,7 @@ This release focuses on quality of life improvements to the _Commit Graph_, _Sea
 
 <img src="/wp-content/uploads/gl-14-3-hero.png" class="img-responsive center img-bordered">
 
-### Commit Graph Improvements 
+### Commit Graph Improvements
 
 <img src="/wp-content/uploads/gl-14-3-multiple-open-graphs.png" class="img-responsive center img-bordered">
 
