@@ -22,7 +22,7 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Thursday, October 12, 2023
 
-GitLens 14.4 is here, featuring new enhancements to _Focus View_, _Commit Details_ and _Graph Details_, and some performance improvements to _Inline_ and _Status Bar Blame_.
+GitLens 14.4 is here, featuring new enhancements to _Focus View_, the addition of _Working Changes_ to _Commit Details_ and _Graph Details_, and some performance improvements to _Inline_ and _Status Bar Blame_.
 
 <img src="/wp-content/uploads/gl-14-4-hero.png" class="img-responsive center img-bordered">
 
@@ -40,7 +40,7 @@ _Commit Details_ and _Graph Details_ now include a separate _Working Changes_ ta
 
 ### Inline and Status Bar Blame Performance Improvements
 
-Description - TBD
+Inline blame and status bar blame now appear faster on hover. This performance improvement is especially notable when using connected remote integrations.
 
 ### Added
 
@@ -56,6 +56,7 @@ Description - TBD
 
 - Improves performance of inline blame, status bar blame, and hovers especially when working with remotes with connected integrations
 - Changes the _File History_ view to follow renames and filters out merge commits by default &mdash; closes [#2104](https://github.com/gitkraken/vscode-gitlens/issues/2104) & [#2944](https://github.com/gitkraken/vscode-gitlens/issues/2944)
+- Changes the _File History_ view to allow following renames while showing history across all branches (which was a previous limitation of Git) &mdash; closes [#2828](https://github.com/gitkraken/vscode-gitlens/issues/2828)
 - Changes to use our own implementation of `fetch`, `push`, and `pull` Git operations, rather than delegating to VS Code to avoid limitations especially with GitKraken Workspaces. Please report any issues and you can revert this (for now) by setting `"gitlens.experimental.nativeGit"` to `"false"` in your settings
 - Relaxes PR autolink detection for Azure DevOps to use `PR <number>` instead of `Merged PR <number>` &mdash; closes [#2908](https://github.com/gitkraken/vscode-gitlens/issues/2908)
 - Changes wording on `Reset Stored OpenAI Key` command to `Reset Stored AI Key` to reflect support for other providers
