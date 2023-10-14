@@ -14,12 +14,11 @@ To purchase a subscription for the first time follow these steps:
 1. Visit [app.gitkraken.com](https://app.gitkraken.com/).
 2. Login with your [GitKraken account](/gitlens/gitlens-account/) or create an account.
 3. If there is an existing organization in the left panel to purchase on, select that and select “Subscription” (remember you need to have a [role](/gitlens/gitlens-organization/#roles) with permission to purchase). If no organizations are listed or you intend to purchase on another, select “Create organization.”
-4. Select the products that are going to be used by the organization (GitKraken Client, GitLens, or Bundle them both together). Remember GitKraken Jira products such as Git Integration for Jira do not work with your GitKraken account and do not support bundling.
-5. Select the tier that is best for your organization (Pro, Teams, or Enterprise). There are links at the bottom of each while can further elaborate on the differences.
-6. You will then be taken to the billing form where you can select the quantity of licenses (one for each member of the organization that will be using the product).
-7. Fill out the rest of the form with all the relevant billing information and name your organization.
-8. Select the "<span style='color: green;'>Complete Purchase</span>" button to complete your transaction.
-9. If you added more licenses than there are members in the organization to claim, you will be taken to the "Add Users" screen.
+4. Select the tier that is best for your organization (Pro, Teams, or Enterprise). There are links at the bottom of each while can further elaborate on the differences.
+5. You will then be taken to the billing form where you can select the quantity of licenses (one for each member of the organization that will be using the product).
+6. Fill out the rest of the form with all the relevant billing information and name your organization.
+7. Select the "<span style='color: green;'>Complete Purchase</span>" button to complete your transaction.
+8. If you added more licenses than there are members in the organization to claim, you will be taken to the "Add Users" screen.
 
 <div class='callout callout--basic'>
    	<p>If you encounter trouble while purchasing and you have verified your payment method, please don’t hesitate to <a href="https://www.gitkraken.com/billing-issues">contact us</a> for support.</p>
