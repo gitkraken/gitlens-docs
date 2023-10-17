@@ -470,8 +470,13 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.views.fileHistory.avatars</code></td>
 <td>Specifies whether to show avatar images instead of status icons in the <em>File History</em> view</td>
 </tr>
+<tr>
+<td><code>gitlens.advanced.fileHistoryShowMergeCommits</code></td>
+<td>Specifies whether to <code>show</code> or <code>hide</code> merge commits in file histories</td>
+</tr>
 </tbody>
 </table>
+
 ***
 
 ##Line History View Settings
