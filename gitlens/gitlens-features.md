@@ -337,6 +337,10 @@ The Focus View offers the ability to perform actions on pull requests, issues, a
 
 <img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
 
+Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hide under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon. To unsnooze an item, click on the Snoozed section header and click the unsnooze icon for that item.
+
+<img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-bordered img-responsive center">
+
 <div class='callout callout--basic'>
     <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
 </div>
