@@ -470,8 +470,13 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.views.fileHistory.avatars</code></td>
 <td>Specifies whether to show avatar images instead of status icons in the <em>File History</em> view</td>
 </tr>
+<tr>
+<td><code>gitlens.advanced.fileHistoryShowMergeCommits</code></td>
+<td>Specifies whether to <code>show</code> or <code>hide</code> merge commits in file histories</td>
+</tr>
 </tbody>
 </table>
+
 ***
 
 ##Line History View Settings
@@ -1289,6 +1294,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
 <td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
+</tr>
+<tr>
+<td><code>gitlens.experimental.nativeGit</code></td>
+<td>Specifies to use our own implementation of fetch, push, and pull Git operations, rather than delegating to VS Code to avoid limitations especially with GitKraken Workspaces. Can be set to <code>true</code> or <code>false</code></td>
 </tr>
 </tbody>
 </table>
