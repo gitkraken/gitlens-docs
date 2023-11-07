@@ -1,7 +1,7 @@
 ---
 
-title: Security Information
-description: Data Security Information
+title: Security Information - Gitlens
+description: Data Security Information for GL
 taxonomy:
     category: gitlens
 
