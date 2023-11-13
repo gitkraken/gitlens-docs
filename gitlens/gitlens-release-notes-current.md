@@ -22,18 +22,23 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Monday, November 13, 2023
 
-GitLens 14.5 features the all new Cloud Patches preview ☁️, which allows you to easily share changes with other developers by creating a Cloud Patch from your WIP, commit or stash and sharing the generated link with your teammates. Other notable enhancement includes opening multiple tabs of Commit Graph & Focus.
+GitLens 14.5 features the all new Cloud Patches preview ☁️, which allows you to easily share changes with other developers by creating a Cloud Patch from your WIP, commit or stash and sharing the generated link with your teammates. Other notable enhancements include opening multiple tabs of Commit Graph & Focus.
 
 <img src="/wp-content/uploads/gl-14-5-hero.png" class="img-responsive center img-bordered">
 
 ### Cloud Patches preview ☁️
 
-[Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) aim to shift developer collaboration earlier in the process for faster feedback, cleaner pull requests, and overcoming tricky code challenges as a team. Create Cloud Patches from working changes, commits, stashes, or comparisons, then share the patch URL with others to get feedback and iterate on the changes together. It is currently available across GitKraken Client, GitLens, and CLI, with plans to add commenting and more capabilities soon.
+[Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) aim to shift developer collaboration earlier in the process for faster feedback, cleaner pull requests, and overcoming tricky code challenges as a team. Create Cloud Patches from working changes, commits, stashes, or comparisons  &mdash;  then share the patch URL with others to get feedback and iterate on the changes together. It is currently available across GitLens, GitKraken Client, and GitKraken CLI, with plans to add commenting and more capabilities soon.
 
 ### Open Multiple Commit Graph & Focus Tabs
 
-Open multiple instances of the Commit Graph, Focus, and Visual File History views, side-by-side, to look at multiple repositories at once or just different visualizations of the same repo.
+Open multiple instances of the Commit Graph, Focus, and Visual File History views, side-by-side, to look at multiple repositories at once or just different visualizations of the same repository.
 
+### Thank you to our contributors
+
+Shout-out to all of our awesome contributors for this release!
+
+- Shashank Shastri ([@Shashank-Shastri](https://github.com/Shashank-Shastri))
 
 ### Added
 
@@ -41,6 +46,8 @@ Open multiple instances of the Commit Graph, Focus, and Visual File History view
   - Share your work with others by creating a Cloud Patch from Working Changes, Commits, Stashes or Comparisons
   - View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch
   - Manage your Cloud Patches from the new _Cloud Patches_ view in the GitLens side bar
+  - Adds a _Share as Cloud Patch..._ command to the command palette and to the _Share_ submenu in applicable GitLens views
+  - Adds a `gitlens.cloudPatches.enabled` setting to specificy whether to enable Cloud Patches (defaults to `true`)
 - Adds support to open multiple instances of the _Commit Graph_, _Focus_, and _Visual File History_ in the editor area
   - Adds a _Split Commit Graph_ command to the _Commit Graph_ tab context menu
   - Adds a `gitlens.graph.allowMultiple` setting to specify whether to allow opening multiple instances of the _Commit Graph_ in the editor area
