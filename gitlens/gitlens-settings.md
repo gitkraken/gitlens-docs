@@ -1196,6 +1196,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies how tags are sorted in quick pick menus and views</td>
 </tr>
 <tr>
+<td><code>gitlens.sortRepositoriesBy</code></td>
+<td>Specifies how repositories are sorted in quick pick menus and views</td>
+</tr>
+<tr>
 <td><code>gitlens.advanced.abbreviatedShaLength</code></td>
 <td>Specifies the length of abbreviated commit SHAs (shas)</td>
 </tr>
@@ -1292,12 +1296,24 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies the Anthropic model (defaults to <code>claude-v1</code>)</td>
 </tr>
 <tr>
+<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
+<td>Specifies whether to enable GitLens’ experimental, AI-powered, on-demand commit message generation</code></td>
+</tr>
+<tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
 <td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
 </tr>
 <tr>
 <td><code>gitlens.experimental.nativeGit</code></td>
 <td>Specifies to use our own implementation of fetch, push, and pull Git operations, rather than delegating to VS Code to avoid limitations especially with GitKraken Workspaces. Can be set to <code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>gitlens.visualHistory.allowMultiple</code></td>
+<td>Specifies whether to allow opening multiple instances of the Visual File History in the editor area</td>
+</tr>
+<tr>
+<td><code>gitlens.liveshare.enabled</code></td>
+<td>Specifies whether to enable integration with Visual Studio Live Share</td>
 </tr>
 </tbody>
 </table>
@@ -1343,6 +1359,10 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <td><code>gitlens.lineHighlightOverviewRulerColor</code></td>
 <td>Specifies the overview ruler color of the associated line highlights in blame annotations</td>
 </tr>
+<tr>
+<td><code>gitlens.focus.allowMultiple</code></td>
+<td>Specifies whether to allow opening multiple instances of the Focus in the editor area</td>
+</tr>
 </tbody>
 </table>
 
@@ -1380,6 +1400,27 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <tr>
 <td><code>gitlens.graph.layout</code></td>
 <td> Specify the default layout in which the Commit Graph will be shown. Can be `panel` (default) or `editor`. This is honored when opening the commit graph from the command palette.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.allowMultiple</code></td>
+<td>Specifies whether to allow opening multiple instances of the Commit Graph in the editor area</td>
+</tr>
+</tbody>
+</table>
+
+##Cloud Patches (Preview)
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.cloudPatches.enabled</code></td>
+<td>Specifies whether to enable Cloud Patches (defaults to true)</td>
 </tr>
 </tbody>
 </table>
