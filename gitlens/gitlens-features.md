@@ -186,7 +186,7 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 [Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) allow you to easily share changes with other developers by creating a Cloud Patch from your WIP, commit or stash and sharing the generated link with your teammates.
 
-Manage your Cloud Patches from the Cloud Patches view in the GitLens side bar
+Manage your Cloud Patches from the Cloud Patches view in the GitLens side bar.
 
 <img src="/wp-content/uploads/2023/09/Group-17953-1024x648.png" class="img-bordered img-responsive center">
 
@@ -194,8 +194,7 @@ Create a Cloud Patch from Working Changes, Commits, Stashes or Comparisons by us
 
 <img src="/wp-content/uploads/2023/09/Group-17956-1024x667.png" class="img-bordered img-responsive center">
 
-View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch
-
+View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch.
 
 ## Commit Graph ✨
 
