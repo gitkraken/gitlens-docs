@@ -188,11 +188,11 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 Manage your Cloud Patches from the Cloud Patches view in the GitLens side bar.
 
-<img src="/wp-content/uploads/Group-17953-1024x648-1.webp" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-cloud-patch-create.webp" class="img-bordered img-responsive center">
 
 Create a Cloud Patch from Working Changes, Commits, Stashes or Comparisons by using the "Share as Cloud Patch" option from the command palette or from the Share submenu in applicable gitlens views.
 
-<img src="/wp-content/uploads/Group-17956-1024x667-1.webp" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-cloud-patch-apply.webp" class="img-bordered img-responsive center">
 
 View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch.
 
