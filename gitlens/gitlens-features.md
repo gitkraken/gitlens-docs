@@ -196,6 +196,12 @@ Create a Cloud Patch from Working Changes, Commits, Stashes or Comparisons by us
 
 View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch.
 
+To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
+
+<img src="/wp-content/uploads/gl-delete-cloud-patch.png" class="img-bordered img-responsive center">
+
+To disable cloud patches per client, open the user Settings (`command/ctrl + shift + P` > `Preferences: Open User Settings (JSON)`) and set `gitlens.cloudPatches.enabled` to `false`.
+
 ## Commit Graph ✨
 
 The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
