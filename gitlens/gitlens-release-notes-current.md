@@ -16,6 +16,71 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+
+<a id="v14-6"></a>
+
+## Version 14.6
+
+#### Wednesday, December 13, 2023
+
+GitLens 14.6 marks our last release of 2023 and with it some great enhancements to Cloud Patches, Focus View and much more!
+
+### Cloud Patch Permissions ☁️
+
+### Focus View Timed Snoozing
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributor for this release!
+
+- Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+
+### Added
+
+- Adds an option in _Create Cloud Patch_ to specify who can access the Cloud Patch
+  - _Anyone with the link_ will allow anyone with a GitKraken account to open the Cloud Patch
+  - _Members of my Org with the link_ option will allow anyone in your GitKraken organization to open the Cloud Patch
+  - Selecting specific collaborators is coming soon
+- Adds timed snoozing for items in the _Focus View_ &mdash; choose from a selection of times when snoozing and the item will automatically move out of the snoozed tab when that time expires
+- Adds the ability to open folder changes &mdash; closes [#3020](https://github.com/gitkraken/vscode-gitlens/issues/3020)
+  - Adds _Open Folder Changes with Revision..._ & _Open Folder Changes with Branch or Tag..._ commands to the Command Palette and to the _Explorer_ and _Source Control_ views
+  - Requires VS Code `1.85` or later and `multiDiffEditor.experimental.enabled` to be enabled
+- Adds last modified time of the file when showing blame annotations for uncommitted changes
+- Adds search results to the minimap tooltips on the _Commit Graph_
+- Adds support for Anthropic's Claude 2.1 model for GitLens' experimental AI features
+- Adds a status indicator when the upstream branch is missing in _Commits_ view
+- Adds support for opening renamed/deleted files using the _Open File at Revision..._ & _Open File at Revision from..._ commands by showing a quick pick menu if the requested file doesn't exist in the selected revision &mdash; closes [#708](https://github.com/gitkraken/vscode-gitlens/issues/708) thanks to [PR #2825](https://github.com/gitkraken/vscode-gitlens/pull/2825) by Victor Hallberg ([@mogelbrod](https://github.com/mogelbrod))
+- Adds an _Open Changes_ submenu to comparisons in the _Search & Compare_ view
+- Adds experimental `gitlens.experimental.openChangesInMultiDiffEditor` setting to specify whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs)
+  - Adds an inline _Open All Changes_ command to commits, stashes, and comparisons in the views
+  - Changes _Open All Changes_ & _Open All Changes with Working Tree_ commands to use the new multi-diff editor when enabled
+  - Requires VS Code `1.85` or later and `multiDiffEditor.experimental.enabled` to be enabled
+- Adds a confirmation prompt when attempting to undo a commit with uncommitted changes
+- Adds a _[Show|Hide] Merge Commits_ toggle to the _Contributors_ view
+- Adds _Open in Integrated Terminal_ command to repositories in the views &mdash; closes [#3053](https://github.com/gitkraken/vscode-gitlens/issues/3053)
+- Adds _Open in Terminal_ & _Open in Integrated Terminal_ commands to the upstream status in the _Commits_ view
+- Adds the ability to choose an active GitKraken organization in the _Account View_ for users with multiple GitKraken organizations.
+
+### Changed
+
+- Improves AI model choice selection for GitLens' experimental AI features
+- Improves performance when logging is enabled
+- Changes the contextual view title from GL to GitLens
+
+### Fixed
+
+- Fixes [#3050](https://github.com/gitkraken/vscode-gitlens/issues/3050) - Opening revision of a renamed file is broken
+- Fixes [#3019](https://github.com/gitkraken/vscode-gitlens/issues/3019) - Commits Views not working
+- Fixes [#3026](https://github.com/gitkraken/vscode-gitlens/issues/3026) - Gitlens stopped working in sub-repositories
+- Fixes [#2746](https://github.com/gitkraken/vscode-gitlens/issues/2746) - Remove 'undo commit' command from gitlens inspect
+- Fixes [#2482](https://github.com/gitkraken/vscode-gitlens/issues/2482) - Unresponsive "commits" view and "branches" view update due to git log
+- Fixes duplicate entries in the _Search & Compare_ view when adding a new comparison from outside the view and before the view has loaded
+- Fixes _Load more_ in the _File History_ view when the file has been renamed
+- Fixes broken _Open Changed & Close Unchanged Files_ (`gitlens.views.openOnlyChangedFiles`) command in the views
+- Fixes issues with _Contributors_ view updating when changing toggles
+- Fixes issues with _Open [Previous] Changes with Working File_ command in comparisons
+- Fixes banner styling on the _Commit Graph_
+
 <a id="v14-5"></a>
 
 ## Version 14.5
