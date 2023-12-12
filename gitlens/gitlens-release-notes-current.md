@@ -25,9 +25,25 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 GitLens 14.6 marks our last release of 2023 and with it some great enhancements to Cloud Patches, Focus View and much more!
 
-### Cloud Patch Permissions ☁️
+### Cloud Patch Sharing Options ☁️
+
+Users can now specify who can access shared Cloud Patches, choosing between anyone with a link or only members of your GitKraken organization with the link. 
+
+Support in GitLens is coming soon for selecting and managing individual collaborators. Cloud Patches that you're a collaborator of will appear in the Cloud Patches view under "Shared with Me".
 
 ### Focus View Timed Snoozing
+
+The focus view now supports timed snoozing of items. Select a duration like 1 hour or 4 hours when snoozing a focus item and then that item will automatically move back when the time expires.
+
+### Experimental Multi-diff Editor
+
+You can now open changes in VS Code's new multi-diff editor. This requires VS Code 1.85 or later with the `multiDiffEditor.experimental.enabled` and `gitlens.experimental.openChangesInMultiDiffEditor` settings enabled.
+
+#### Commands using Multi-diff
+
+- `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
+- An inline `Open All Changes` command for commits, stashes, and comparisons in the views
+- `Open All Changes` and `Open All Changes with Working Tree` will 
 
 ### Thank you to our contributors
 
