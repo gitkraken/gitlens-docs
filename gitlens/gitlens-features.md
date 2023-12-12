@@ -218,10 +218,10 @@ To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
 We offer the ability for you to host Cloud Patches on your own AWS S3 storage instances. In order to set this up, please reach out to our [support team](https://help.gitkraken.com/gitlens/gl-contact-support/) and include the following information about your bucket:
  
- * Name of AWS bucket
- * AWS region the bucket is located in
+- Name of AWS bucket
+- AWS region the bucket is located in
 
- Once we have that information, we will provide you with a bucket policy that can be attached to your bucket through the Permissions Bucket Policy Editor. After that is completed, Cloud Patches will be stored on your own bucket. 
+Once we have that information, we will provide you with a bucket policy that can be attached to your bucket through the Permissions Bucket Policy Editor. After that is completed, Cloud Patches will be stored on your own bucket. 
 
 ## Commit Graph ✨
 
