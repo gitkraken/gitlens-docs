@@ -25,11 +25,15 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 GitLens 14.6 marks our last release of 2023 and with it some great enhancements to Cloud Patches, Focus View and much more!
 
+<img src="/wp-content/uploads/gl-14-6-hero.png" class="img-responsive center img-bordered">
+
 ### Cloud Patch Sharing Options ☁️
 
 Users can now specify who can access shared Cloud Patches, choosing between anyone with a link or only members of your GitKraken organization with the link. 
 
-Support in GitLens is coming soon for selecting and managing individual collaborators. Cloud Patches that you're a collaborator of will appear in the Cloud Patches view under "Shared with Me".
+Coming soon is the ability to explicitly select individuals from your organization as collaborators. Cloud Patches explicitly shared to you, i.e. you are a collaborator, will appear in the Cloud Patches view under "Shared with Me".
+
+> Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view.
 
 ### Focus View Timed Snoozing
 
@@ -43,7 +47,9 @@ You can now open changes in VS Code's new multi-diff editor. This requires VS Co
 
 - `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
 - An inline `Open All Changes` command for commits, stashes, and comparisons in the views
-- `Open All Changes` and `Open All Changes with Working Tree` will 
+- `Open All Changes` and `Open All Changes with Working Tree` will use the new multi-diff editor when enabled 
+
+> Note: `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior.
 
 ### Thank you to our contributors
 
@@ -53,11 +59,11 @@ Shout-out to our awesome contributor for this release!
 
 ### Added
 
-- Adds an option in _Create Cloud Patch_ to specify who can access the Cloud Patch
-  - _Anyone with the link_ will allow anyone with a GitKraken account to open the Cloud Patch
-  - _Members of my Org with the link_ option will allow anyone in your GitKraken organization to open the Cloud Patch
-  - Selecting specific collaborators is coming soon
-  - Cloud Patches that have been shared with you now will appear in the _Cloud Patches_ view under _Shared with Me_
+- Adds the ability to specify who can access a Cloud Patch when creating it
+  - _Anyone with the link_ &mdash; allows anyone with the link and a GitKraken account to access the Cloud Patch
+  - _Members of my Org with the link_ &mdash; allows only members of your selected GitKraken organization with the link to access the Cloud Patch
+  - (Coming soon to GitLens) Ability to explicitly share to specific members from your organization and add them as collaborators on a Cloud Patch
+  - Cloud Patches that have been explicitly shared with you, i.e. you are a collaborator, now will appear in the _Cloud Patches_ view under _Shared with Me_
 - Adds timed snoozing for items in the _Focus View_ &mdash; choose from a selection of times when snoozing and the item will automatically move out of the snoozed tab when that time expires
 - Adds the ability to open folder changes &mdash; closes [#3020](https://github.com/gitkraken/vscode-gitlens/issues/3020)
   - Adds _Open Folder Changes with Revision..._ & _Open Folder Changes with Branch or Tag..._ commands to the Command Palette and to the _Explorer_ and _Source Control_ views
@@ -71,6 +77,7 @@ Shout-out to our awesome contributor for this release!
 - Adds experimental `gitlens.experimental.openChangesInMultiDiffEditor` setting to specify whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs)
   - Adds an inline _Open All Changes_ command to commits, stashes, and comparisons in the views
   - Changes _Open All Changes_ & _Open All Changes with Working Tree_ commands to use the new multi-diff editor when enabled
+  - Adds _Open All Changes, Individually_ & _Open All Changes with Working Tree, Individually_ commands to provide access to the previous behavior
   - Requires VS Code `1.85` or later and `multiDiffEditor.experimental.enabled` to be enabled
 - Adds a confirmation prompt when attempting to undo a commit with uncommitted changes
 - Adds a _[Show|Hide] Merge Commits_ toggle to the _Contributors_ view
@@ -86,6 +93,7 @@ Shout-out to our awesome contributor for this release!
 
 ### Fixed
 
+- Fixes [#2663](https://github.com/gitkraken/vscode-gitlens/issues/2663) - Debounce bug: file blame isn't cleared when editing document while text in output window changes
 - Fixes [#3050](https://github.com/gitkraken/vscode-gitlens/issues/3050) - Opening revision of a renamed file is broken
 - Fixes [#3019](https://github.com/gitkraken/vscode-gitlens/issues/3019) - Commits Views not working
 - Fixes [#3026](https://github.com/gitkraken/vscode-gitlens/issues/3026) - Gitlens stopped working in sub-repositories
