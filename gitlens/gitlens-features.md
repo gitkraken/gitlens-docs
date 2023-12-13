@@ -204,6 +204,12 @@ A Cloud Patch can be created from Working Changes, Commits, Stashes or Compariso
 
 <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
+When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between anyone with a link or only members of your GitKraken organization with the link.
+
+> Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view.
+
+<img src="/wp-content/uploads/gl-cloud-patch-sharing-options.png" class="img-bordered img-responsive center">
+
 Cloud Patches can be viewed from URLs shared to you and they can be applied to your working tree or to a new or existing branch. Simply select or open the link and then follow the prompts within GitLens to apply the Cloud Patch.
 
 <img src="/wp-content/uploads/gl-apply-cloud-patch-example.gif" class="img-bordered img-responsive center">
