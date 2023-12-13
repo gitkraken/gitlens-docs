@@ -184,23 +184,44 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 ## Cloud Patches preview ☁️
 
-[Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) allow you to easily share changes with other developers by creating a Cloud Patch from your WIP, commit or stash and sharing the generated link with your teammates.
+### What are Cloud Patches and why would you want to use them
 
-Manage your Cloud Patches from the Cloud Patches view in the GitLens side bar.
+A Cloud Patch is a Git patch that GitKraken securely stores for you so it can be easily shared with others across GitLens, GitKraken Client, and the GitKraken CLI. The patch is directly transferred from your machine into secure storage. 
+
+Cloud Patches allow the ability to engage early with your team before a pull request. They can be created as soon as you have a work in progress. This can help with collaborating on changes prior to a pull request and minimize the delay of pull request reviews.
+
+### How to setup Cloud Patches 
+
+To enable Cloud Patches per client, open the user Settings (`command/ctrl + shift + P` > `Preferences: Open User Settings (JSON)`) and set `gitlens.cloudPatches.enabled` to `true` - this is on by default. To disable Cloud Patches per client, set this setting to `false` .
+
+### How to work with Cloud Patches
+
+Cloud Patches can be managed from the Cloud Patches view in the GitLens side bar.
 
 <img src="/wp-content/uploads/gl-cloud-patch-create.webp" class="img-bordered img-responsive center">
 
-Create a Cloud Patch from Working Changes, Commits, Stashes or Comparisons by using the "Share as Cloud Patch" option from the command palette or from the Share submenu in applicable gitlens views.
+A Cloud Patch can be created from Working Changes, Commits, Stashes or Comparisons by using the "Share as Cloud Patch" option from the command palette or from the Share submenu in applicable gitlens views. 
 
-<img src="/wp-content/uploads/gl-cloud-patch-apply.webp" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
-View Cloud Patches from URLs shared to you and apply them to your working tree or to a new or existing branch.
+Cloud Patches can be viewed from URLs shared to you and they can be applied to your working tree or to a new or existing branch. Simply select or open the link and then follow the prompts within GitLens to apply the Cloud Patch.
+
+<img src="/wp-content/uploads/gl-apply-cloud-patch-example.gif" class="img-bordered img-responsive center">
 
 To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
 <img src="/wp-content/uploads/gl-delete-cloud-patch.png" class="img-bordered img-responsive center">
 
-To disable cloud patches per client, open the user Settings (`command/ctrl + shift + P` > `Preferences: Open User Settings (JSON)`) and set `gitlens.cloudPatches.enabled` to `false`.
+### Known issues and workarounds
+
+*What if I do not want GitKraken to host my Cloud Patches or have my Cloud Patch data stored on your servers?*
+
+We offer the ability for you to host Cloud Patches on your own AWS S3 storage instances. In order to set this up, please reach out to our [support team](https://help.gitkraken.com/gitlens/gl-contact-support/) and include the following information about your bucket:
+ 
+- Name of AWS bucket
+- AWS region the bucket is located in
+
+Once we have that information, we will provide you with a bucket policy that can be attached to your bucket through the Permissions Bucket Policy Editor. After that is completed, Cloud Patches will be stored on your own bucket. 
 
 ## Commit Graph ✨
 
