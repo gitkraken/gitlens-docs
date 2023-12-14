@@ -639,3 +639,15 @@ GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') m
 - Adds a _Zen_ mode which for a zen-like experience, disables many visual features
   - Adds _Toggle Zen Mode_ command (`gitlens.toggleZenMode`) to toggle Zen mode
 - Adds a _Review_ mode which for reviewing code, enables many visual features
+
+### Experimental Multi-diff Editor
+
+You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.85 or later with the `multiDiffEditor.experimental.enabled` and `gitlens.experimental.openChangesInMultiDiffEditor` settings enabled.
+
+#### Commands using Multi-diff
+
+- `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
+- An inline `Open All Changes` command for commits, stashes, and comparisons in the views
+- `Open All Changes` and `Open All Changes with Working Tree` will use the new multi-diff editor when enabled 
+
+> Note: `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior.
