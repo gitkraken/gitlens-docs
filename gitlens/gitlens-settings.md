@@ -305,10 +305,6 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>gitlens.views.searchAndCompare.files.icon</code></td>
 <td>Specifies how the Search & Compare view will display file icons</td>
 </tr>
-<tr>
-<td><code>gitlens.views.openOnlyChangedFiles</code></td>
-<td>TODO: needs description</td>
-</tr>
 </tbody>
 </table>
 
