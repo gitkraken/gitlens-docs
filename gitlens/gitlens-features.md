@@ -204,6 +204,12 @@ A Cloud Patch can be created from Working Changes, Commits, Stashes or Compariso
 
 <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
+When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between anyone with a link or only members of your GitKraken organization with the link.
+
+> Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view.
+
+<img src="/wp-content/uploads/gl-cloud-patch-sharing-options.png" class="img-bordered img-responsive center">
+
 Cloud Patches can be viewed from URLs shared to you and they can be applied to your working tree or to a new or existing branch. Simply select or open the link and then follow the prompts within GitLens to apply the Cloud Patch.
 
 <img src="/wp-content/uploads/gl-apply-cloud-patch-example.gif" class="img-bordered img-responsive center">
@@ -378,7 +384,7 @@ The Focus View offers the ability to perform actions on pull requests, issues, a
 
 <img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
 
-Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hide under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon. To unsnooze an item, click on the Snoozed section header and click the unsnooze icon for that item.
+Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hide under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
 
 <img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-bordered img-responsive center">
 
@@ -633,3 +639,15 @@ GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') m
 - Adds a _Zen_ mode which for a zen-like experience, disables many visual features
   - Adds _Toggle Zen Mode_ command (`gitlens.toggleZenMode`) to toggle Zen mode
 - Adds a _Review_ mode which for reviewing code, enables many visual features
+
+### Experimental Multi-diff Editor
+
+You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.85 or later with the `multiDiffEditor.experimental.enabled` and `gitlens.experimental.openChangesInMultiDiffEditor` settings enabled.
+
+#### Commands using Multi-diff
+
+- `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
+- An inline `Open All Changes` command for commits, stashes, and comparisons in the views
+- `Open All Changes` and `Open All Changes with Working Tree` will use the new multi-diff editor when enabled 
+
+> Note: `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior.

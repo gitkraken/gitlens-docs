@@ -1363,6 +1363,14 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <td><code>gitlens.focus.allowMultiple</code></td>
 <td>Specifies whether to allow opening multiple instances of the Focus in the editor area</td>
 </tr>
+<tr>
+<td><code>multiDiffEditor.experimental.enabled</code></td>
+<td>Specifies whether to enable VS Code's new multi-diff editor. Requires VS Code 1.85+</td>
+</tr>
+<tr>
+<td><code>gitlens.experimental.openChangesInMultiDiffEditor</code></td>
+<td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
+</tr>
 </tbody>
 </table>
 
