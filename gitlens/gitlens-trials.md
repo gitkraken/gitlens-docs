@@ -15,7 +15,7 @@ Both GitKraken Client and GitLens offer 7-day trials of Pro. You can initiate th
  
 ### Organization Trials 
 
-Organization trials are available for groups of users that would like to try GitKraken Client across members of their team, company, or organization. After an organization trial is started, a 30-day trial will be started. The duration of the organization trial is shared by everyone in the organization. 
+Organization trials are available for groups of users that would like to try the [GitKraken Suite](www.gitkraken.com/suite) across members of their team, company, or organization. After an organization trial is started, a 30-day trial will be started. The duration of the organization trial is shared by everyone in the organization. 
  
 To start an organization trial: 
  
