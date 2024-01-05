@@ -30,7 +30,7 @@ To purchase a subscription for the first time follow these steps:
 
 You can cancel your subscription at any time. To do so, login to [app.gitkraken.com](https://app.gitkraken.com/), select the organization, select "Subscription" on the left side, and select "<span style='color: yellow;'>Cancel Subscription</span>." Follow the flow to complete cancelation. Once canceled, you will keep your subscription for the remainder of its billing period. Once the period is up, everyone in the organization will lose access to the subscription.
 
-When your subscription is set to cancel but you can still use it, your organization will be labeled as "<span style='color: red;'>canceled</span>." When your subscription is completely canceled and the billing period has passed, it will be lableld as "<span style='color: red;'>expired</span>."
+When your subscription is set to cancel but you can still use it, your organization will be labeled as "<span style='color: red;'>non-renewing</span>." When your subscription is completely canceled and the billing period has passed, it will be lableld as "<span style='color: red;'>canceled</span>."
 
 <div class='callout callout--basic'>
    	<p>Only the owner, admins, and billing contacts have permission to cancel.</p>
@@ -42,14 +42,11 @@ When your subscription is set to cancel but you can still use it, your organizat
 
 You can always reactivate a canceled subscription. You can reactivate by logging into [app.gitkraken.com](https://app.gitkraken.com/), select the organization, select "Subscription" on the left side, and select "<span style='color: green;'>reactivate</span>." Please note the two cases.
 
-If your subscription is set to cancel but still active, denoted as <span style='color: red;'>canceled</span>:
-+ Reactivation will not charge you until your next renewal or if you decide to upgrade from the plan you already have.
+If your subscription is set to cancel but still active, denoted as <span style='color: red;'>non-renewing</span>, reactivation will not charge you until your next renewal or if you decide to upgrade from the plan you already have.
 
-If your subscription is completely canceled, denoted as <span style='color: red;'>expired</span>:
-+ Selecting reactivation will require you to purchase the exact same plan you had when it was canceled.
-+ If you don’t want the same exact plan you have two options:
-    + [Create a new organization](/gitlens/gitlens-organization/#create).
-    + Contact our [Customer Success](https://www.gitkraken.com/gitlens/contact-sales) team for help selecting the plan you want on your existing expired organization.
+Before reactivating, you can switch your subscription by selecting "<span style='color: green;'>Switch</span>", selecting the desired plan, and then selecting "<span style='color: green;'>Reactivate</span>".
+
+<img src="/wp-content/uploads/gk-switch-and-reactivate.gif" class="img-responsive center img-bordered">
 
 ***
 
@@ -64,3 +61,11 @@ To update your billing method, go to [app.gitkraken.com](https://app.gitkraken.c
 ### Billing History
 
 Each billing cycle, the owner and billing contacts of the organization will receive an email with the receipt attached. If you would like to receive prior receipts, please contact [accounting](https://www.gitkraken.com/billing-issues) for additional copies.
+
+*** 
+ 
+### Leaving an Organization 
+ 
+If you no longer need to be a part of an organization, you can leave an organization by navigating to Settings and selecting `Leave Organization`. If you leave an organization, only an admin can invite you back. You will lose access to collaboration with members of GitKraken and your GitKraken paid license. 
+ 
+<img src="/wp-content/uploads/gk-leave-organization.png" class="img-responsive center img-bordered"> 
