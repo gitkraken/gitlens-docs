@@ -19,7 +19,7 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 - Support requests for GitLens are to be submitted at [Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support/). Interactions with users submitting tickets are done primarily through emails, though other communication services such as phone calls, screenshare services might be used to deliver Support Services. 
 - Support Hours are 7:00am to 4:00pm Monday to Friday, Arizona Time (UTC-7) with a response time of 1 (one) business day. While support requests can be submitted by users at any time, responses to requests and interactions with support are provided during Support Hours only.
 - The following product plans are guaranteed support: Pro, Teams and Enterprise. 
-- GitLens is available for Windows, Mac, and Linux systems.
+- GitLens is available for Visual Studio Code.
 - Best effort support is provided for Students and Education users, we aim to respond quickly and help as much as possible, but we do not have any guaranteed response window.
 - While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are free. We encourage all users to engage in our community and utilize our free resources. [Additional Resources](https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/#additional-resources)
 
