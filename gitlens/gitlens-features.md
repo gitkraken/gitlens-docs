@@ -204,15 +204,17 @@ A Cloud Patch can be created from Working Changes, Commits, Stashes or Compariso
 
 <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
-When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between anyone with a link or only members of your GitKraken organization with the link.
+When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between _Anyone with a link_, _Members of my Org with the link_, or _Collaborators only_ to share with specific members of your organization. When using _Collaborators only_, select the `Invite` button to select desired members - these patches will appear in the _Shared with Me_ section of the _Cloud Patches_ view for the selected members.
 
-> Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view.
+<div class='callout callout--basic'>
+    <p>Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view..</p>
+</div>
 
-<img src="/wp-content/uploads/gl-cloud-patch-sharing-options.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-cloud-patch-sharing-options-2.png" class="img-bordered img-responsive center">
 
-Cloud Patches can be viewed from URLs shared to you and they can be applied to your working tree or to a new or existing branch. Simply select or open the link and then follow the prompts within GitLens to apply the Cloud Patch.
+Cloud Patches can be viewed from URLs shared to you and they can be applied to your working tree or to a new or existing branch. Simply select or open the link and then follow the prompts within GitLens to apply the Cloud Patch. 
 
-<img src="/wp-content/uploads/gl-apply-cloud-patch-example.gif" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-apply-patch-example.gif" class="img-bordered img-responsive center">
 
 To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
@@ -356,12 +358,6 @@ Minimap Overview:
 <div class='callout callout--basic'>
     <p>Note: We would love to hear your feedback regarding the Minimap. Please share it on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitHub Discussion board</a>.</p>
 </div>
-
-### Deep Linking
-
-Deep Links are links that can be used to open up a resource within the Commit Graph of GitLens. This provides the ability to easily share specific remote repositories, commits, branches, and tags. To generate a deep link right-click the desired resource, hover over _Share_ and select _Copy Link to \<resource\>_.
-
-<img src="/wp-content/uploads/gl-deep-link.png" class="img-bordered img-responsive center">
 
 ***
 
@@ -612,6 +608,20 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 - Adds an _Enable Debug Logging_ command (`gitlens.enableDebugLogging`) to enable debug logging to the GitLens output channel
 
 - Adds a _Disable Debug Logging_ command (`gitlens.disableDebugLogging`) to disable debug logging to the GitLens output channel
+
+***
+
+##Deep Links
+
+Deep Links are links that can be used to quickly open up a resource within GitLens. With Deep Linking support, you can improve collaboration and communication by seamless sharing important information related to your Git repositories via a link. There are many resources in GitLens that offer the ability to generate Deep Links:
+
+- _Search & Compare_: Link directly into comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view) for viewing comparisons between branches, tags, and commits. To generate a Deep Link, right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_. 
+- _GitKraken Workspaces_: Link directly to a [GitKraken Workspace](/gitlens/side-bar/#workspaces-☁%ef%b8%8f). To generate a Deep Link, right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_. 
+- _Commit Graph_: Link to open up a resource within the [Commit Graph](gitlens/gitlens-features/#commit-graph-✨) of GitLens such as specific remote repositories, commits, branches, and tags. To generate a Deep Link, right-click the desired resource, hover over _Share_ and select _Copy Link to <resource>_.
+- _Files or Lines_: Link directly to files or lines of code. To generate a Deep Link, right-click highlighted lines of code or a file, hover over _Share_ and select _Copy vscode.dev Link_.
+- _Cloud Patches_: Link directly to open up a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). To generate a Deep Link, generate a Cloud Patch and select _Copy Link_ from the success prompt.
+
+<img src="/wp-content/uploads/gl-deep-link-example.png" class="img-bordered img-responsive center">
 
 ***
 
