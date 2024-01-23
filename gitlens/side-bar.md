@@ -394,8 +394,3 @@ The _Search & Compare_ view lists pinnable (saved) results for searching commit 
         - _Compare with Selected_ command (`gitlens.views.compareWithSelected`)
         - _Compare Ancestry with Working Tree_ command (`gitlens.views.compareAncestryWithWorking`)
 - a checkbox next to files to allow tracking review progress
-- Deep link support
-  - Link directly into comparisons in the _Search & Compare_ view for quickly viewing comparisons between branches, tags, and commits. You can copy a deep link to a comparison to your clipboard using the new _Copy Link to Comparison_ context menu command on the _Share_ submenu.
-  - Deep link format: `vscode://eamodio.gitlens/r/{repoId}/compare/{ref1}[..|...]{ref2}?[url={remoteUrl}|path={repoPath}]`
-
-  <img src="/wp-content/uploads/gl-deep-link-comparison-14-1.png" class="img-responsive center img-bordered">

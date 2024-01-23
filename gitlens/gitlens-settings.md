@@ -1101,6 +1101,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.keymap</code></td>
 <td>Specifies the keymap to use for GitLens shortcut keys<br><br><code>alternate</code> - adds an alternate set of shortcut keys that start with <code>Alt</code> (⌥ on macOS)<br><code>chorded</code> - adds a chorded set of shortcut keys that start with <code>Ctrl+Shift+G</code> (<code>⌥⌘G</code> on macOS)<br><code>none</code> - no shortcut keys will be added</td>
 </tr>
+<tr>
+<td><code>gitlens.fileAnnotations.dismissOnEscape</code></td>
+<td>Specifies whether pressing the <code>ESC</code> key dismisses the active file annotations</td>
+</tr>
 </tbody>
 </table>
 ***
@@ -1205,11 +1209,15 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </tr>
 <tr>
 <td><code>gitlens.advanced.abbreviateShaOnCopy</code></td>
-<td>Specifies whether to copy full or abbreviated commit SHAs to the clipboard. Abbreviates to the length of <code>gitlens.advanced.abbreviatedShaLength</code>..</td>
+<td>Specifies whether to copy full or abbreviated commit SHAs to the clipboard. Abbreviates to the length of <code>gitlens.advanced.abbreviatedShaLength</code></td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.blame.customArguments</code></td>
 <td>Specifies additional arguments to pass to the <code>git blame</code> command</td>
+</tr>
+<tr>
+<td><code>gitlens.experimental.allowAnnotationsWhenDirty</code></td>
+<td>Specifies whether file annotations are allowed on files with unsaved changes (dirty). Use the <code>gitlens.advanced.blame.delayAfterEdit</code> setting to control how long to wait (defaults to 5s) before the annotation will update while the file is still dirty, which only applies if the file is under the <code>gitlens.advanced.sizeThresholdAfterEdit</code> setting threshold (defaults to 5000 lines)</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.blame.delayAfterEdit</code></td>
@@ -1304,16 +1312,20 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
 </tr>
 <tr>
-<td><code>gitlens.experimental.nativeGit</code></td>
-<td>Specifies to use our own implementation of fetch, push, and pull Git operations, rather than delegating to VS Code to avoid limitations especially with GitKraken Workspaces. Can be set to <code>true</code> or <code>false</code></td>
-</tr>
-<tr>
 <td><code>gitlens.visualHistory.allowMultiple</code></td>
 <td>Specifies whether to allow opening multiple instances of the Visual File History in the editor area</td>
 </tr>
 <tr>
 <td><code>gitlens.liveshare.enabled</code></td>
 <td>Specifies whether to enable integration with Visual Studio Live Share</td>
+</tr>
+<tr>
+<td><code>multiDiffEditor.experimental.enabled</code></td>
+<td>Specifies whether to enable VS Code's new multi-diff editor. Requires VS Code 1.85+</td>
+</tr>
+<tr>
+<td><code>gitlens.experimental.openChangesInMultiDiffEditor</code></td>
+<td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
 </tbody>
 </table>
@@ -1362,14 +1374,6 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <tr>
 <td><code>gitlens.focus.allowMultiple</code></td>
 <td>Specifies whether to allow opening multiple instances of the Focus in the editor area</td>
-</tr>
-<tr>
-<td><code>multiDiffEditor.experimental.enabled</code></td>
-<td>Specifies whether to enable VS Code's new multi-diff editor. Requires VS Code 1.85+</td>
-</tr>
-<tr>
-<td><code>gitlens.experimental.openChangesInMultiDiffEditor</code></td>
-<td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
 </tbody>
 </table>
