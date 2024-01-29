@@ -13,19 +13,19 @@ Both GitKraken Client and GitLens offer 7-day trials of Pro. You can initiate th
  
 *** 
  
-### Organization Trials 
+### Multi-User Trials 
 
-Organization trials are available for groups of users that would like to try the [GitKraken Suite](www.gitkraken.com/suite) across members of their team, company, or organization. After an organization trial is started, a 30-day trial will be started. The duration of the organization trial is shared by everyone in the organization. 
+Multi-user trials are available for groups of users that would like to try the [GitKraken Suite](www.gitkraken.com/suite) across members of their team, company, or organization. After a multi-user trial is started, it will be active for 30 days. The duration of the multi-user trial is shared by everyone in the organization. 
  
-To start an organization trial: 
+To start a multi-user trial: 
  
 1. Visit [app.gitkraken.com](https://app.gitkraken.com/) 
 2. Login with your GitKraken account 
-3. Select “New trial organization” (if you already have an organization and have not started a trial organization, select that and continue with step 5) 
+3. Select “New Multi-User Trial (if you already have an organization and have not started a trial, select that and continue with step 5) 
 4. Name the organization when prompted 
 5. [Add users](/gitlens/gitlens-organization/#add-users) 
-6. Once users are added, your extended organization trial has begun 
+6. Once users are added, your extended Multi-user trial has begun 
  
 <div class='callout callout--basic'> 
-   	<p>It is not possible for a user to be a member of more than one organization trial at a time. Once the organization trial has lapsed, an owner cannot start another organization trial.</p> 
+   	<p>It is not possible for a user to be a member of more than one multi-user trial at a time. Once the multi-user trial has lapsed, an owner cannot start another multi-user trial.</p> 
 </div> 
