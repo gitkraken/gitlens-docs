@@ -21,8 +21,7 @@ To start a multi-user trial:
  
 1. Visit [app.gitkraken.com](https://app.gitkraken.com/) 
 2. Login with your GitKraken account 
-3. Select “New Multi-User Trial (if you already have an organization and have not started a trial, select that and continue with step 5) 
-4. Name the organization when prompted 
+3. Select your organization and then “Start Multi-User Trial"
 5. [Add users](/gitlens/gitlens-organization/#add-users) 
 6. Once users are added, your extended Multi-user trial has begun 
  
