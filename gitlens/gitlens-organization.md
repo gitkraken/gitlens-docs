@@ -14,7 +14,7 @@ A GitKraken organization is a collection of [GitKraken accounts](/gitkraken-clie
 
 ## Create
 
-To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/) and select “Create Organization” in the left side menu. If you are not part of any organization, you can select “New Trial Organization". The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
+To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/) and select "New Organization” in the left side menu. Next, select the tier that is best for your organization (Pro, Teams, or Enterprise). The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
 
 <img src="/wp-content/uploads/gitkraken-create-organization-1.png" class="img-responsive center img-bordered">
 
