@@ -33,9 +33,9 @@ Once you have created your GitKraken account, your account is tied to the primar
 
 ### 2. Create a New Organization
 
-After account creation, navigate to the left user panel and select “New Organization” under Organizations. If you have no organizations yet, select “Purchase License” instead. Select the number of users and then proceed by selecting `Buy [Subscription]`. 
+After account creation, navigate to the left user panel, select your organization, and then "Purcahse License". Then select the number of users and proceed by selecting `Buy [Subscription]`.  
 
-<img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization-1.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization-2.png" class="img-responsive center img-bordered">
 
 ***
 
@@ -43,7 +43,7 @@ After account creation, navigate to the left user panel and select “New Organi
 
 
 <div class='callout callout--basic'>
-   	<p>GitKraken Subscriptions only accept card, PayPal, and ACH bank payments. However, invoicing is supported for large purchases of GitKraken Enterprise. Contact our Customer Success team to learn more.</p>
+   	<p>GitKraken Subscriptions only accept card, PayPal, and ACH bank payments. However, invoicing is supported for large purchases of GitKraken Enterprise. Contact our <a href="https://www.gitkraken.com/gitlens/contact-sales">Customer Success team</a> to learn more.</p>
 </div>
 
 To complete the purchase, input:
@@ -52,7 +52,7 @@ To complete the purchase, input:
 **This purchase is for someone else:** Check this option and fillout the contact email of the customer
 **Payment information:** Enter reseller billing details
 
-<img src="/wp-content/uploads/gitkraken-reseller-guide-purchase-1.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-reseller-guide-purchase-2.png" class="img-responsive center img-bordered">
 
 Once the purchase is complete you will be emailed a copy of your receipt. The customer will receive an email to accept as owner of the organization. They have 7 days to accept this and you will remain as owner until they accept it. If the 7 days lapse you can always reinitiate [transfer ownership](/gitlens/gitlens-organization/#transfer-ownership).
 
