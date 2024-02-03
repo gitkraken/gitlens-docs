@@ -61,11 +61,3 @@ To update your billing method, go to [app.gitkraken.com](https://app.gitkraken.c
 ### Billing History
 
 Each billing cycle, the owner and billing contacts of the organization will receive an email with the receipt attached. If you would like to receive prior receipts, please contact [accounting](https://www.gitkraken.com/billing-issues) for additional copies.
-
-*** 
- 
-### Leaving an Organization 
- 
-If you no longer need to be a part of an organization, you can leave an organization by navigating to Settings and selecting `Leave Organization`. If you leave an organization, only an admin can invite you back. You will lose access to collaboration with members of GitKraken and your GitKraken paid license. 
- 
-<img src="/wp-content/uploads/gk-leave-organization.png" class="img-responsive center img-bordered"> 

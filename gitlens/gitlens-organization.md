@@ -170,6 +170,8 @@ If you’re the [owner](/gitkraken-client/gitkraken-organization/#roles) of an o
 
 ## Leave an Organization
 
-If you no longer need to be a part of an organization, you can leave it by navigating to the organization, selecting "Settings", and then `Leave Organization`. This option will only be available if you are not the owner of the organization or if are part of more than one organization. 
+If you no longer need to be a part of an organization, you can leave an organization by navigating to Settings and then `Leave Organization`. If you leave an organization, only an admin can invite you back. You will lose access to collaboration with members of GitKraken and your GitKraken paid license. 
+
+This option will only be available if you are part of another organization and you are not the owner of the organization. If you are the current owner, you can [transfer the ownership](/gitlens/gitlens-organization/#transfer-ownership) and then leave the organization after.
 
 <img src="/wp-content/uploads/gk-leave-organization.png" class="img-responsive center img-bordered">
