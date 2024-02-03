@@ -165,3 +165,11 @@ You can hide organizations that you do not wish to see from the sidebar view by 
 If you’re the [owner](/gitkraken-client/gitkraken-organization/#roles) of an organization and would like to make someone else the owner you can do that. First you need to make sure to first add that account to the organization. Once the account is added to your organization, go to your organization, select "Settings" and then “Transfer ownership.” You will select the user within the organization to become the owner (and type their email to confirm). Once you select “Transfer Ownership,” the transfer is final and cannot be undone unless the new owner transfers ownership back to the original owner.
 
 <img src="/wp-content/uploads/gitkraken-organization-transfer-organization.gif" class="img-responsive center img-bordered">
+
+***
+
+## Leave an Organization
+
+If you no longer need to be a part of an organization, you can leave it by navigating to the organization, selecting "Settings", and then `Leave Organization`. This option will only be available if you are not the owner of the organization or if are part of more than one organization. 
+
+<img src="/wp-content/uploads/gk-leave-organization.png" class="img-responsive center img-bordered">

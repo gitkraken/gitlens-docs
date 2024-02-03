@@ -33,7 +33,7 @@ Once you have created your GitKraken account, your account is tied to the primar
 
 ### 2. Create a New Organization
 
-After account creation, navigate to the left user panel, select your organization, and then "Purcahse License". Then select the number of users and proceed by selecting `Buy [Subscription]`.  
+After account creation, navigate to the left user panel, select your organization, and then "Purchase License". Then select the number of users and proceed by selecting `Buy [Subscription]`.  
 
 <img src="/wp-content/uploads/gitkraken-reseller-guide-create-a-new-organization-2.png" class="img-responsive center img-bordered">
 
@@ -67,7 +67,7 @@ Follow this reseller guide for purchasing additional licenses on an existing acc
 1. Log into [app.gitkraken.com](https://app.gitkraken.com/)
 2. Select the customer’s organization listed in the left sidebar
 3. Navigate to the "Subscriptions" tab
-4. Under Subscription Details, increase total quantiy of users to reflect the total user count including the additional licenses you are purchasing for the customer
+4. Under Subscription Details, increase total quantity of users to reflect the total user count including the additional licenses you are purchasing for the customer
 5. The Billing Summary will populate the cost of add additional users to the customer account. Please utilize this to provide the customer an official quote for adding users
 6. Update your billing details if needed and select “Complete Purchase.” The customer will have immediate access to the additional licenses
 
