@@ -7,20 +7,20 @@ taxonomy:
     
 ---
 
-A GitKraken organization is a collection of [GitKraken accounts](/gitkraken-client/gitkraken-account/) which unlocks a shared [subscription](/gitkraken-client/gitkraken-subscriptions/), collaboration features between members, and administration of the members in the organization.
+A GitKraken organization is a collection of [GitKraken accounts](/gitkraken-client/gitkraken-account/) which unlocks a shared [subscription](/gitkraken-client/gitkraken-subscriptions/), collaboration features between members, and administration of the members in the organization. If you are creating an account for the first time, an organization will automatically be created for you.
 
 
 ***
 
 ## Create
 
-To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/) and select “Create Organization” in the left side menu. If you are not part of any organization, you can select “New Trial Organization". The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
+To create an organization, go to [app.gitkraken.com](https://app.gitkraken.com/) and select "New Organization” in the left side menu. Next, select the tier that is best for your organization (Pro, Teams, or Enterprise). The creator of the organization is automatically the [owner](/gitlens/gitlens-organization/#roles) of it.
 
-<img src="/wp-content/uploads/gitkraken-create-organization-1.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-create-organization-2.png" class="img-responsive center img-bordered">
 
 You also have the option to purchase an organization for someone else that would be the [owner](/gitlens/gitlens-organization/#roles) and use the subscription. To do this, check "This purchase is for someone else" in the checkout page and it will ask who the owner is by email and sends them email instructions with next steps. You will be the owner of the organization until they accept, then you will be set as the [Billing Contact](/gitlens/gitlens-organization/#roles).
 
-<img src="/wp-content/uploads/gitkraken-organization-new-owner.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gitkraken-organization-new-owner-1.png" class="img-responsive center img-bordered">
 
 ***
 
@@ -165,3 +165,13 @@ You can hide organizations that you do not wish to see from the sidebar view by 
 If you’re the [owner](/gitkraken-client/gitkraken-organization/#roles) of an organization and would like to make someone else the owner you can do that. First you need to make sure to first add that account to the organization. Once the account is added to your organization, go to your organization, select "Settings" and then “Transfer ownership.” You will select the user within the organization to become the owner (and type their email to confirm). Once you select “Transfer Ownership,” the transfer is final and cannot be undone unless the new owner transfers ownership back to the original owner.
 
 <img src="/wp-content/uploads/gitkraken-organization-transfer-organization.gif" class="img-responsive center img-bordered">
+
+***
+
+## Leave an Organization
+
+If you no longer need to be a part of an organization, you can leave an organization by navigating to Settings and then `Leave Organization`. If you leave an organization, only an admin can invite you back. You will lose access to collaboration with members of GitKraken and your GitKraken paid license. 
+
+This option will only be available if you are part of another organization and you are not the owner of the organization. If you are the current owner, you can [transfer the ownership](/gitlens/gitlens-organization/#transfer-ownership) and then leave the organization after.
+
+<img src="/wp-content/uploads/gk-leave-organization.png" class="img-responsive center img-bordered">
