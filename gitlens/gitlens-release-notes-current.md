@@ -16,6 +16,86 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-8"></a>
+
+## Version 14.8
+
+#### Thursday, February 8, 2024
+
+The 14.8 release of GitLens feature several enhancements to make easier to use with worktrees, views diffs and pull-requests, and enterprise improvements for Cloud Patches.
+
+<img src="/wp-content/uploads/gl-14-8-hero.png" class="img-responsive center img-bordered">
+
+### Worktree Workflow Improvements ✨
+
+One of the most notable improvements is to worktrees. GitLens 14.8 simplifies the process of creating and opening worktrees by reducing the number of steps and options required. There are also new options to easily create a worktree when switching branches, and copy current working changes to an existing worktree. These worktree enhancements will help streamline your workflow.
+
+### VS Code Multi-diff Support
+
+VS Code's new multi-diff editor is out of experimental, so we've enabled it in our commands by default for VS Code 1.86 and above. The multi-diff editor allows you to view changes across multiple files in a single tab, instead of switching between tabs. This makes comparing a set of changes across files much easier.
+
+### Cloud Patch Enterprise Storage ☁️
+
+For Enterprise customers, there is now the option to host Cloud Patches on your own dedicated storage for maximum security. Your organization's admin can configure the self-managed storage at https://dev.gitkraken.dev/settings/security. When creating a Cloud Patch, GitLens will confirm they are being stored on your secure organization storage.
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributors for this release!
+
+- yutotnh ([@yutotnh](https://github.com/yutotnh))
+
+### Added
+
+- Adds support for Cloud Patches hosted on your own dedicated storage for the highest level of security (requires an Enterprise plan)
+- Improves worktree usage, discoverability, and accessibility
+  - Simplifies the create worktree and open worktree flows &mdash; reduces number of steps and options presented
+  - Adds _Create Branch in New Worktree_ confirmation option when creating branches, e.g. via the _GitLens: Git Create Branch..._ command
+  - Adds _Create Worktree for Branch_, _Create Worktree for Local Branch_, and _Create Worktree for New Local Branch_ confirmation options when switching branches, e.g. via the _GitLens: Git Switch to..._ command
+  - Adds a _Copy Working Changes to Worktree..._ command to the _Commit Graph_ and command palette to copy the current working changes to an existing worktree
+  - Avoids prompt to add a (required) remote and instead auto-adds the remote during worktree creation from a pull request
+- Adds ability to open multiple changes in VS Code's new multi-diff editor, previously experimental and now enabled by default
+  - Adds an inline _Open All Changes_ command to commits, stashes, and comparisons in the views
+  - Changes _Open All Changes_ & _Open All Changes with Working Tree_ commands to use the new multi-diff editor when enabled
+  - Adds _Open All Changes, Individually_ & _Open All Changes with Working Tree, Individually_ commands to provide access to the previous behavior
+  - Renames the `gitlens.experimental.openChangesInMultiDiffEditor` setting to `gitlens.views.openChangesInMultiDiffEditor`, which is enabled by default, to specify whether to open changes in the multi-diff editor (single tab) or in individual diff editors (multiple tabs)
+  - Requires VS Code `1.86` or later, or VS Code `1.85` with `multiDiffEditor.experimental.enabled` enabled
+- Adds new comparison features to pull requests in GitLens views
+  - Adds an _Open Pull Request Changes_ context menu command on pull requests in the _Commit Graph_ and other GitLens views to view pull request changes in a multi-diff editor (single tab)
+    - Requires VS Code `1.86` or later, or VS Code `1.85` with `multiDiffEditor.experimental.enabled` enabled
+  - Adds a _Compare Pull Request_ context menu command on pull requests in the _Commit Graph_ and other GitLens views to open a comparison between the head and base of the pull request for easy reviewing
+- Adds an _Open in Commit Graph_ context menu command on pull requests in GitLens view to open the tip commit in the _Commit Graph_
+- Adds ability to copy changes, commits, stashes, and comparison as a patch to the clipboard
+  - Adds a _Copy as Patch_ context menu command on files, commits, stashes, and comparisons in GitLens views
+  - Adds a _Copy as Patch_ context menu command on files in the _Changes_ and _Staged Changes_ groups as well as the groups themselves in the _Source Control_ view
+  - Adds a _Apply Copied Patch_ command in the command palette to apply a patch from the clipboard
+- Adds an _Open All Changes_ inline button to branch status (upstream) and branch status files in GitLens views
+- Adds an _Open Changes_ submenu to branch status (upstream) and branch status files in GitLens views
+- Adds ability to preserve inline and file annotations while editing, previously experimental and now enabled by default
+  - Renames the `gitlens.experimental.allowAnnotationsWhenDirty` setting to `gitlens.fileAnnotations.preserveWhileEditing`, which is enabled by default, to specify whether file annotations will be preserved while editing &mdash; closes [#1988](https://github.com/gitkraken/vscode-gitlens/issues/1988), [#3016](https://github.com/gitkraken/vscode-gitlens/issues/3016)
+  - Use the existing `gitlens.advanced.blame.delayAfterEdit` setting to control how long to wait (defaults to 5s) before the annotation will update while the file is still dirty, which only applies if the file is under the `gitlens.advanced.sizeThresholdAfterEdit` setting threshold (defaults to 5000 lines)
+- Adds an _Open File Annotation Settings_ command to the _File Annotations_ submenu in the editor toolbar to open the GitLens Settings editor to the file annotations sections
+- Adds `gitlens.blame.fontFamily`, `gitlens.blame.fontSize`, `gitlens.blame.fontWeight` settings to specify the font (family, size, and weight respectively) of the _File Blame_ annotations &mdash; closes [#3134](https://github.com/gitkraken/vscode-gitlens/issues/3134)
+- Adds _Copy Link to Code_, _Copy Link to File_, and _Copy Link to File at Revision..._ commands to the _Share_ submenu in the editor line number (gutter) context menu
+- Adds an alternate flow (pick another file) when using the _Open File at Revision..._ and _Open Changes with Revision..._ commands to open a file that has been renamed and the rename is currently unstaged &mdash; closes [#3109](https://github.com/gitkraken/vscode-gitlens/issues/3109)
+- Adds access to most _Git Command Palette_ commands directly to the command palette
+- Adds _Rename Stash..._ options to stash quick pick menus
+- Adds support for the latest GPT-4 Turbo models
+
+### Changed
+
+- Changes adds avatars to commits in quick pick menus
+- Changes the pull request to be first item in the _Commits_ view, when applicable
+- Changes the branch comparison to be below the branch status in the _Commits_ view to keep top focus on the status over the comparison
+- Renames "Open Worktree for Pull Request via GitLens..." to "Checkout Pull Request in Worktree (GitLens)..."
+- Renames the `gitlens.experimental.openChangesInMultiDiffEditor` setting to `gitlens.views.openChangesInMultiDiffEditor` as it is no longer experimental and enabled by default
+
+### Fixed
+
+- Fixes [#3115](https://github.com/gitkraken/vscode-gitlens/issues/3115) - Always-on file annotations
+- Fixes ahead/behind diffs on files (root) in the _Commits_ view to correctly show the diff of the range rather than the base to the working tree
+- Fixes missing repository icons in the _Repositories_ view
+- Fixes [#3116](https://github.com/gitkraken/vscode-gitlens/issues/3116) - Fix typos in README.md and package.json &mdash; thanks to [PR #3117](https://github.com/gitkraken/vscode-gitlens/pull/3117) by yutotnh ([@yutotnh](https://github.com/yutotnh))
+
 <a id="v14-7"></a>
 
 ## Version 14.7
