@@ -22,13 +22,13 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Thursday, February 8, 2024
 
-The 14.8 release of GitLens feature several enhancements to make easier to use with worktrees, views diffs and pull-requests, and enterprise improvements for Cloud Patches.
+The 14.8 release of GitLens features several enhancements to make it easier to use worktrees, view diffs and pull-requests, and includes enterprise improvements for Cloud Patches.
 
 <img src="/wp-content/uploads/gl-14-8-hero.png" class="img-responsive center img-bordered">
 
 ### Worktree Workflow Improvements ✨
 
-One of the most notable improvements is to worktrees. GitLens 14.8 simplifies the process of creating and opening worktrees by reducing the number of steps and options required. There are also new options to easily create a worktree when switching branches, and copy current working changes to an existing worktree. These worktree enhancements will help streamline your workflow.
+We've improved and streamlined the process of creating and opening worktrees. This includes new options for creating a worktree when switching branches as well as skipping prompts for remote creating and just auto-adding them. We've also added a command for copying your current working changes to an existing worktree.
 
 ### VS Code Multi-diff Support
 
