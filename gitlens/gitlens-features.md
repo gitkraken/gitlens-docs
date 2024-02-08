@@ -609,6 +609,10 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 
 - Adds a _Disable Debug Logging_ command (`gitlens.disableDebugLogging`) to disable debug logging to the GitLens output channel
 
+- Adds a _Copy as Patch_ context menu command (`gitlens.copyPatchToClipboard`) on files, commits, stashes, and comparisons in GitLens views. Additionally, this context menu command can be used on files in the _Changes_ and _Staged Changes_ groups as well as the groups themselves in the _Source Control_ view
+
+- Adds a _Apply Copied Patch_ command (`gitlens.applyPatchFromClipboard`) in the command palette to apply a patch from the clipboard
+
 ***
 
 ##Deep Links
@@ -621,7 +625,7 @@ Deep Links are links that can be used to quickly open up a resource within GitLe
 - _Files or Lines_: Link directly to files or lines of code. To generate a Deep Link, right-click highlighted lines of code or a file, hover over _Share_ and select _Copy vscode.dev Link_.
 - _Cloud Patches_: Link directly to open up a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). To generate a Deep Link, generate a Cloud Patch and select _Copy Link_ from the success prompt.
 
-<img src="/wp-content/uploads/gl-deep-link-example.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-deep-link-example.gif" class="img-bordered img-responsive center">
 
 ***
 
@@ -659,5 +663,4 @@ You can open changes in VS Code's new multi-diff editor. This requires VS Code 1
 - `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
 - An inline `Open All Changes` command for commits, stashes, and comparisons in the views
 - `Open All Changes` and `Open All Changes with Working Tree` will use the new multi-diff editor when enabled 
-
-> Note: `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior.
+- `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior
