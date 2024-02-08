@@ -652,7 +652,7 @@ GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') m
 
 ### Experimental Multi-diff Editor
 
-You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.85 or later with the `multiDiffEditor.experimental.enabled` and `gitlens.experimental.openChangesInMultiDiffEditor` settings enabled.
+You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.86 or later.
 
 #### Commands using Multi-diff
 

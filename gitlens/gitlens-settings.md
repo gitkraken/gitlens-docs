@@ -885,6 +885,18 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.blame.toggleMode</code></td>
 <td>Specifies how the file blame annotations will be toggled<br><br><code>file</code> - toggles each file individually<br><code>window</code> - toggles the window, i.e. all files at once</td>
 </tr>
+<tr>
+<td><code>gitlens.blame.fontFamily</code></td>
+<td>Specifies the font family of the File Blame annotations</td>
+</tr>
+<tr>
+<td><code>gitlens.blame.fontSize</code></td>
+<td>Specifies the font size of the File Blame annotations</td>
+</tr>
+<tr>
+<td><code>gitlens.blame.fontWeight</code></td>
+<td>Specifies the font weight of the File Blame annotations</td>
+</tr>
 </tbody>
 </table>
 ***
@@ -1216,7 +1228,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies additional arguments to pass to the <code>git blame</code> command</td>
 </tr>
 <tr>
-<td><code>gitlens.experimental.allowAnnotationsWhenDirty</code></td>
+<td><code>gitlens.fileAnnotations.preserveWhileEditing</code></td>
 <td>Specifies whether file annotations are allowed on files with unsaved changes (dirty). Use the <code>gitlens.advanced.blame.delayAfterEdit</code> setting to control how long to wait (defaults to 5s) before the annotation will update while the file is still dirty, which only applies if the file is under the <code>gitlens.advanced.sizeThresholdAfterEdit</code> setting threshold (defaults to 5000 lines)</td>
 </tr>
 <tr>
@@ -1324,7 +1336,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies whether to enable VS Code's new multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
 <tr>
-<td><code>gitlens.experimental.openChangesInMultiDiffEditor</code></td>
+<td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
 <td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
 </tbody>
