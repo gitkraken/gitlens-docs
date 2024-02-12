@@ -36,7 +36,7 @@ VS Code's new multi-diff editor is out of experimental, so we've enabled it in o
 
 ### Cloud Patch Enterprise Storage ☁️
 
-For Enterprise customers, there is now the option to host Cloud Patches on your own dedicated storage for maximum security. Your organization's admin can configure the self-managed storage at https://dev.gitkraken.dev/settings/security. When creating a Cloud Patch, GitLens will confirm they are being stored on your secure organization storage.
+For Enterprise customers, there is now the option to host Cloud Patches on your own dedicated storage for maximum security. Your organization's admin can configure the self-managed storage at https://gitkraken.dev/settings/security. When creating a Cloud Patch, GitLens will confirm they are being stored on your secure organization storage.
 
 ### Thank you to our contributors
 
