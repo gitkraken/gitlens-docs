@@ -220,16 +220,9 @@ To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
 <img src="/wp-content/uploads/gl-delete-cloud-patch.png" class="img-bordered img-responsive center">
 
-### Known issues and workarounds
+### Self-Hosting Cloud Patch data
 
-*What if I do not want GitKraken to host my Cloud Patches or have my Cloud Patch data stored on your servers?*
-
-We offer the ability for you to host Cloud Patches on your own AWS S3 storage instances. In order to set this up, please reach out to our [support team](https://help.gitkraken.com/gitlens/gl-contact-support/) and include the following information about your bucket:
- 
-- Name of AWS bucket
-- AWS region the bucket is located in
-
-Once we have that information, we will provide you with a bucket policy that can be attached to your bucket through the Permissions Bucket Policy Editor. After that is completed, Cloud Patches will be stored on your own bucket. 
+If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-home/#self-hosted).
 
 ## Commit Graph ✨
 
@@ -380,7 +373,7 @@ The Focus View offers the ability to perform actions on pull requests, issues, a
 
 <img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
 
-Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hide under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
+Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hidden under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
 
 <img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-bordered img-responsive center">
 
@@ -609,6 +602,10 @@ See the [remote provider integration settings](/gitlens/settings/#remote-provide
 
 - Adds a _Disable Debug Logging_ command (`gitlens.disableDebugLogging`) to disable debug logging to the GitLens output channel
 
+- Adds a _Copy as Patch_ context menu command (`gitlens.copyPatchToClipboard`) on files, commits, stashes, and comparisons in GitLens views. Additionally, this context menu command can be used on files in the _Changes_ and _Staged Changes_ groups as well as the groups themselves in the _Source Control_ view
+
+- Adds a _Apply Copied Patch_ command (`gitlens.applyPatchFromClipboard`) in the command palette to apply a patch from the clipboard
+
 ***
 
 ##Deep Links
@@ -621,7 +618,7 @@ Deep Links are links that can be used to quickly open up a resource within GitLe
 - _Files or Lines_: Link directly to files or lines of code. To generate a Deep Link, right-click highlighted lines of code or a file, hover over _Share_ and select _Copy vscode.dev Link_.
 - _Cloud Patches_: Link directly to open up a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). To generate a Deep Link, generate a Cloud Patch and select _Copy Link_ from the success prompt.
 
-<img src="/wp-content/uploads/gl-deep-link-example.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-deep-link-example.gif" class="img-bordered img-responsive center">
 
 ***
 
@@ -652,12 +649,11 @@ GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') m
 
 ### Experimental Multi-diff Editor
 
-You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.85 or later with the `multiDiffEditor.experimental.enabled` and `gitlens.experimental.openChangesInMultiDiffEditor` settings enabled.
+You can open changes in VS Code's new multi-diff editor. This requires VS Code 1.86 or later.
 
 #### Commands using Multi-diff
 
 - `Open Folder Changes with Revision...` and `Open Folder Changes with Branch or Tag...` commands using the Command Palette as well as the Explorer and Source Control views
 - An inline `Open All Changes` command for commits, stashes, and comparisons in the views
 - `Open All Changes` and `Open All Changes with Working Tree` will use the new multi-diff editor when enabled 
-
-> Note: `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior.
+- `Open All Changes, Individually` and `Open All Changes with Working Tree, Individually` commands were added to provide access to the previous behavior
