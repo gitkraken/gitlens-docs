@@ -26,21 +26,21 @@ Preview ✨ features instantly for free for 3 days without an account, or start 
 
 ### How do I sign in or out of GitLens?
 
-To sign into your GitLens account, click the GitLens icon in the left sidebar and select `Sign In`.
+To sign into your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign In`.
 
-<img src="/wp-content/uploads/gl-sign-in-1.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-sign-in-3.png" class="img-bordered img-responsive center">
 
-You can also sign in from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens+: Sign in to GitLens+....`.
+You can also sign in from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign In to GitKraken...`.
 
-<img src="/wp-content/uploads/gl-sign-in-2.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-sign-in-4.png" class="img-bordered img-responsive center">
 
-To sign out navigate to the lower left "person" icon, hover over your account, and then select `Sign out`.
+To sign out of your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign Out`.
 
-<img src="/wp-content/uploads/gl-sign-out-1.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-sign-out-3.png" class="img-bordered img-responsive center">
 
-You can also sign out from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens+: Sign out of GitLens+....`.
+You can also sign out from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign Out of GitKraken`.
 
-<img src="/wp-content/uploads/gl-sign-out-2.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-sign-out-4.png" class="img-bordered img-responsive center">
 
 ***
 
