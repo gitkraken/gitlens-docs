@@ -548,7 +548,7 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 <img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
 
-## GitHub Enterprise and GitLab Self-Managed Integration ✨
+## GitHub Enterprise Server and GitLab Self-Managed Integration ✨
 
 GitLens Pro offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
 
@@ -556,7 +556,29 @@ Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed
 
 <img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
 
-See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
+### Connecting GitHub Enterprise Server or GitLab Self-Managed
+
+To connect either the GitHub Enterprise Server or GitLab Self-Managed integration:
+
+- Open the `settings.json` - this can be done from the command palette  (`command/ctrl + shift + P`) > _Preferences: Open User Settings (JSON)_
+
+- Provide a _gitlens.remote_ with a _domain_ and a _type_ with the below format - for more information on the formatting see the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings)
+
+Format: 
+
+```
+"gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitHub" }]
+```
+
+- Open a GitHub Enterprise or GitLab Self-Managed repository in VS Code
+
+- Open the [Remotes View](/gitlens/side-bar/#remotes-view)
+
+- Select <i class="fa-solid fa-plug"></i> _Connect to Remote_ - if you do not see this option, check that the format of the settings.json matches the example above
+
+<img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="img-bordered img-responsive center">
+
+- You will then be prompted to provide a PAT with the required scopes and can hit _Enter_ to complete the integration connection
 
 ***
 
