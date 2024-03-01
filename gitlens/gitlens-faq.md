@@ -30,7 +30,7 @@ To sign into your GitKraken account select the GitLens icon in the sidebar and u
 
 <img src="/wp-content/uploads/gl-sign-in-3.png" class="img-bordered img-responsive center">
 
-You can also sign in from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign In to GitKraken...`.
+You can also sign in from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign In to GitKraken...`.
 
 <img src="/wp-content/uploads/gl-sign-in-4.png" class="img-bordered img-responsive center">
 
@@ -38,7 +38,7 @@ To sign out of your GitKraken account select the GitLens icon in the sidebar and
 
 <img src="/wp-content/uploads/gl-sign-out-3.png" class="img-bordered img-responsive center">
 
-You can also sign out from the VS Code Command Pallette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign Out of GitKraken`.
+You can also sign out from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign Out of GitKraken`.
 
 <img src="/wp-content/uploads/gl-sign-out-4.png" class="img-bordered img-responsive center">
 
@@ -46,7 +46,7 @@ You can also sign out from the VS Code Command Pallette (`ctrl+shift+p` or `comm
 
 ### How do I enable debug logging?
 
-You can enable debug logging by opening the Command Pallete (`ctrl+shift+p` or `command+shift+p`) and running the command `GitLens: Enable Debug Logging`.
+You can enable debug logging by opening the Command Palette (`ctrl+shift+p` or `command+shift+p`) and running the command `GitLens: Enable Debug Logging`.
 
 <img src="/wp-content/uploads/gl-enable-debug-log.png" class="img-bordered img-responsive center">
 

@@ -558,9 +558,9 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 ## GitHub Enterprise Server and GitLab Self-Managed Integration ✨
 
-GitLens Pro offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
+GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
 
-Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+Once authenticated, GitLens will enrich GitHub Enterprise Server or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
 
 <img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
 
@@ -572,13 +572,19 @@ To connect either the GitHub Enterprise Server or GitLab Self-Managed integratio
 
 - Provide a _gitlens.remote_ with a _domain_ and a _type_ with the below format - for more information on the formatting see the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings)
 
-Format: 
+Format Example: 
 
 ```
 "gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitHub" }]
 ```
 
-- Open a GitHub Enterprise or GitLab Self-Managed repository in VS Code
+Or
+
+```
+"gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitLab" }]
+```
+
+- Open a GitHub Enterprise Server or GitLab Self-Managed repository in VS Code
 
 - Open the [Remotes View](/gitlens/side-bar/#remotes-view)
 
