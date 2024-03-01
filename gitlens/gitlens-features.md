@@ -204,7 +204,15 @@ A Cloud Patch can be created from Working Changes, Commits, Stashes or Compariso
 
 <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
-When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between _Anyone with a link_, _Members of my Org with the link_, or _Collaborators only_ to share with specific members of your organization. When using _Collaborators only_, select the `Invite` button to select desired members - these patches will appear in the _Shared with Me_ section of the _Cloud Patches_ view for the selected members.
+When creating a Cloud Patch, you have the following sharing options:
+
+- `Anyone with the link`: Anyone that you share the public link with will be able to work with the Cloud Patch.
+
+- `Anyone in my org`: Anyone in the GitKraken Organization will be able to work with the Cloud Patch. They will be required to authenticate with a GitKraken account to access it.
+
+- `Only collaborators`: Only users in the GitKraken Organization who have been selected when sharing will be able to work with the Cloud Patch. They will be required to authenticate with a GitKraken account to access it. Select `Invite` to select desired members.
+
+Cloud Patches shared with you can be viewed in the Cloud Patches section under `Shared with Me`.
 
 <div class='callout callout--basic'>
     <p>Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view..</p>
