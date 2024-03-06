@@ -16,6 +16,44 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v14-9"></a>
+
+## Version 14.9
+
+#### Wednesday, March 6, 2024
+
+The 14.9 release of GitLens brings more Anthropic Claude models and Common Base stuff -- along with bug fixes and improvements. 
+
+<img src="/wp-content/uploads/gl-14-9-hero.png" class="img-responsive center img-bordered">
+
+
+### Added
+
+- Adds support for Anthropic's Claude 3 Opus & Sonnet models for GitLens' experimental AI features
+- Adds a _Compare with Common Base_ command to branches in the _Commit Graph_ and views to review the changes if the selected branch were to be merged by comparing the common ancestor (merge base) with the current branch to the selected branch
+- Adds an _Open All Changes with Common Base_ command to branches in the _Commit Graph_ and views to review the changes if the selected branch were to be merged in the multi-diff editor
+- Adds a _Stash All Changes_ command to Source Control repository toolbar (off by default)
+- Adds the repository name as a prefix to worktree name when adding to the current workspace
+- Adds a better message when stashing only untracked files without including untracked files
+
+### Changed
+
+- Re-adds _Add to Workspace_ option when creating a worktree &mdash; closes [#3160](https://github.com/gitkraken/vscode-gitlens/issues/3160)
+- Changes _Commit Graph_ date style to default to the default date style &mdash; refs [#3153](https://github.com/gitkraken/vscode-gitlens/issues/3153)
+- Renames the _Compare Ancestry with Working Tree_ command on branches to _Compare Common Base with Working Tree_ for better clarity
+- Improves _File Blame_ annotations performance and layout accuracy with certain character sets
+- Improves string formatting performance
+
+### Fixed
+
+- Fixes [#3146](https://github.com/gitkraken/vscode-gitlens/issues/3146) - Search & Compare fails to remember items after restart
+- Fixes [#3152](https://github.com/gitkraken/vscode-gitlens/issues/3152) - Fixes double encoding of redirect URLs during account sign-in which affects certain environments
+- Fixes [#3153](https://github.com/gitkraken/vscode-gitlens/issues/3153) - `gitlens.defaultDateStyle` not working in Commit Details view
+- Fixes the _Open Pull Request Changes_ & _Compare Pull Request_ commands to scope the changes only to the pull request
+- Fixes broken _Compare Common Base with Working Tree_ (previously _Compare Ancestry with Working Tree_)
+- Fixes issue when switching to a worktree via branch switch when there are multiple repos in the workspace
+
+
 <a id="v14-8"></a>
 
 ## Version 14.8
