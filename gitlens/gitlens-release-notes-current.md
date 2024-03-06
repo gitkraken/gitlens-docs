@@ -22,10 +22,17 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Wednesday, March 6, 2024
 
-The 14.9 release of GitLens brings more Anthropic Claude models and Common Base stuff -- along with bug fixes and improvements. 
+The 14.9 release of GitLens brings improved reviewing of branch changes and new Anthropic Claude models along with general fixes and improvements. 
 
 <img src="/wp-content/uploads/gl-14-9-hero.png" class="img-responsive center img-bordered">
 
+### Improved reviewing of Branch Changes
+
+Two new commands were added to branches in the _Commit Graph_ and views. The `Compare with Common Base` enables reviewing changes as if the selected branch were to be merged by comparing the common ancestor (merge base) with the current branch to the selected branch. Use the new `Open All Changes with Common Base` command to review the changes as if the selected branch were to be merged in the multi-diff editor.
+
+### Anthropic Claude Models
+
+We've added support for Anthropic's Claude 3 Opus & Sonnet models for GitLens' experimental AI features. You can select these models from the `GitLens: Switch AI Model` command in the Command Palette. You can then use these models with the `GitLens: Generate Commit Message (Experimental)...` command in the Command Palette or in the `Explain (AI)` panel of _Commit Details_ and _Cloud Patch Details_ views.
 
 ### Added
 
