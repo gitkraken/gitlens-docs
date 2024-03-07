@@ -306,16 +306,10 @@ You can right-click a branch, commit, tag, author, or column headers (author, co
 
 <img src="/wp-content/uploads/gl-context-menu.gif" class="img-bordered img-responsive center">
 
-Context menu actions include but are not limited to:
+Helpful context menu actions: 
 
-- Switch to Branch
-- Revert Commit
-- Switch to Commit
-- Create Branch
-- Merge
-- Rebase
-- Create Worktree
-- Create Pull Request
+- _Compare with Common Base_: to review the changes if the selected branch were to be merged by comparing the common ancestor (merge base) with the current branch to the selected branch
+- _Open All Changes with Common Base_: to review the changes if the selected branch were to be merged in the multi-diff editor
 
 ### Pull Request Information
 
