@@ -204,7 +204,15 @@ A Cloud Patch can be created from Working Changes, Commits, Stashes or Compariso
 
 <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="img-bordered img-responsive center">
 
-When creating a Cloud Patch, you have the option to specify who can access the Cloud Patches choosing between _Anyone with a link_, _Members of my Org with the link_, or _Collaborators only_ to share with specific members of your organization. When using _Collaborators only_, select the `Invite` button to select desired members - these patches will appear in the _Shared with Me_ section of the _Cloud Patches_ view for the selected members.
+When creating a Cloud Patch, you have the following sharing options:
+
+- `Anyone with the link`: Anyone that you share the public link with will be able to work with the Cloud Patch.
+
+- `Anyone in my org`: Anyone in the GitKraken Organization will be able to work with the Cloud Patch. They will be required to authenticate with a GitKraken account to access it.
+
+- `Only collaborators`: Only users in the GitKraken Organization who have been selected when sharing will be able to work with the Cloud Patch. They will be required to authenticate with a GitKraken account to access it. Select `Invite` to select desired members.
+
+Cloud Patches shared with you can be viewed in the Cloud Patches section under `Shared with Me`.
 
 <div class='callout callout--basic'>
     <p>Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view..</p>
@@ -298,16 +306,10 @@ You can right-click a branch, commit, tag, author, or column headers (author, co
 
 <img src="/wp-content/uploads/gl-context-menu.gif" class="img-bordered img-responsive center">
 
-Context menu actions include but are not limited to:
+Helpful context menu actions: 
 
-- Switch to Branch
-- Revert Commit
-- Switch to Commit
-- Create Branch
-- Merge
-- Rebase
-- Create Worktree
-- Create Pull Request
+- _Compare with Common Base_: to review the changes if the selected branch were to be merged by comparing the common ancestor (merge base) with the current branch to the selected branch
+- _Open All Changes with Common Base_: to review the changes if the selected branch were to be merged in the multi-diff editor
 
 ### Pull Request Information
 
@@ -548,15 +550,43 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 <img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
 
-## GitHub Enterprise and GitLab Self-Managed Integration ✨
+## GitHub Enterprise Server and GitLab Self-Managed Integration ✨
 
-GitLens Pro offers a richer integration with GitHub Enterprise and GitLab Self-Managed.
+GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
 
-Once authenticated, GitLens will enrich GitHub Enterprise or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+Once authenticated, GitLens will enrich GitHub Enterprise Server or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
 
 <img src="/wp-content/uploads/gitlab-github-integration.png" class="img-bordered img-responsive center">
 
-See the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings) to configure these integrations.
+### Connecting GitHub Enterprise Server or GitLab Self-Managed
+
+To connect either the GitHub Enterprise Server or GitLab Self-Managed integration:
+
+- Open the `settings.json` - this can be done from the command palette  (`command/ctrl + shift + P`) > _Preferences: Open User Settings (JSON)_
+
+- Provide a _gitlens.remote_ with a _domain_ and a _type_ with the below format - for more information on the formatting see the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings)
+
+Format Example: 
+
+```
+"gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitHub" }]
+```
+
+Or
+
+```
+"gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitLab" }]
+```
+
+- Open a GitHub Enterprise Server or GitLab Self-Managed repository in VS Code
+
+- Open the [Remotes View](/gitlens/side-bar/#remotes-view)
+
+- Select <i class="fa-solid fa-plug"></i> _Connect to Remote_ - if you do not see this option, check that the format of the settings.json matches the example above
+
+<img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="img-bordered img-responsive center">
+
+- You will then be prompted to provide a PAT with the required scopes and can hit _Enter_ to complete the integration connection
 
 ***
 
