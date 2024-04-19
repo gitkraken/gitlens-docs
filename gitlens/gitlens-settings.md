@@ -1339,6 +1339,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
 <td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
+<tr>
+<td><code>gitlens.ai.experimental.openai.url</code></td>
+<td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
+</tr>
 </tbody>
 </table>
 ***
