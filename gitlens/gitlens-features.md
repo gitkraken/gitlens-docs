@@ -404,7 +404,7 @@ You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></
 
 ### Launchpad from the editor
 
-To open the Launchpad, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Show Focus view`.
+To open the Launchpad, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Open Launchpad in editor`.
 
 <img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
 
@@ -636,9 +636,9 @@ Or
 
 ## Jira Integration
 
-The Jira Integration offers the ability to see Jira issues in commit messages of GitLens hovers via [Autolinks](/gitlens/gitlens-features#autolinks).
+The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs to links i.e. `ABC-123`.
 
-<img src="/wp-content/uploads/TODO.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-jira-integration.png" class="img-bordered img-responsive center">
 
 To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from GitKraken Account, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
 
