@@ -316,7 +316,7 @@ To remove a repository from a Workspace, you can do so by right-clicking to open
 
 ### Converting to Cloud Workspaces
 
-To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Client, GitLens, and the GitKraken CLI.
+To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Desktop, GitLens, and the GitKraken CLI.
 
 <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="img-bordered img-responsive center">
 

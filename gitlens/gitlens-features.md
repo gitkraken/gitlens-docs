@@ -184,7 +184,7 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 ## Code Suggest preview ✨
 
-GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Client, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
+GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
 
 <img src="/wp-content/uploads/gl-code-suggest.png" class="img-bordered img-responsive center">
 
@@ -210,7 +210,7 @@ When selecting the _Code Suggestion for #PR_ you will be taken to gitkraken.dev 
 
 ### What are Cloud Patches and why would you want to use them
 
-A Cloud Patch is a Git patch that GitKraken securely stores for you so it can be easily shared with others across GitLens, GitKraken Client, and the GitKraken CLI. The patch is directly transferred from your machine into secure storage. 
+A Cloud Patch is a Git patch that GitKraken securely stores for you so it can be easily shared with others across GitLens, GitKraken Desktop, and the GitKraken CLI. The patch is directly transferred from your machine into secure storage. 
 
 Cloud Patches allow the ability to engage early with your team before a pull request. They can be created as soon as you have a work in progress. This can help with collaborating on changes prior to a pull request and minimize the delay of pull request reviews.
 
