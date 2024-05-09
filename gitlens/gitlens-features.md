@@ -9,7 +9,7 @@ taxonomy:
 
 All features are free to use on all repos, **except** for features:  
 
-- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
 - marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
@@ -182,7 +182,7 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 ***
 
-## Code Suggest preview ✨
+## Code Suggest preview
 
 GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
 
@@ -256,7 +256,7 @@ To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
 If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-home/#self-hosted).
 
-## Commit Graph ✨
+## Commit Graph `PRO`
 
 The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
 
@@ -380,7 +380,7 @@ Minimap Overview:
 
 ***
 
-## Launchpad ✨
+## Launchpad `PRO`
 
 The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests and issues with priority.
 
@@ -429,7 +429,7 @@ Items in the Launchpad can be pinned, to move the item to the top of the list, a
 
 ***
 
-## Visual File History ✨
+## Visual File History `PRO`
 
 The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
 
@@ -445,7 +445,7 @@ Gain additional insights on hover.
 
 ***
 
-## AI-Generated Commit Messages (Experimental) ✨
+## AI-Generated Commit Messages (Experimental) `PRO`
 
 Commit messages can be automatically generated using an AI Provider.
 
@@ -594,7 +594,7 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 <img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
 
-## GitHub Enterprise Server and GitLab Self-Managed Integration ✨
+## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
 GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
 
@@ -700,7 +700,7 @@ Deep Links are links that can be used to quickly open up a resource within GitLe
 
 - _Search & Compare_: Link directly into comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view) for viewing comparisons between branches, tags, and commits. To generate a Deep Link, right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_. 
 - _GitKraken Workspaces_: Link directly to a [GitKraken Workspace](/gitlens/side-bar/#workspaces-☁%ef%b8%8f). To generate a Deep Link, right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_. 
-- _Commit Graph_: Link to open up a resource within the [Commit Graph](gitlens/gitlens-features/#commit-graph-✨) of GitLens such as specific remote repositories, commits, branches, and tags. To generate a Deep Link, right-click the desired resource, hover over _Share_ and select _Copy Link to <resource>_.
+- _Commit Graph_: Link to open up a resource within the [Commit Graph](gitlens/gitlens-features/#commit-graph-%60pro%60) of GitLens such as specific remote repositories, commits, branches, and tags. To generate a Deep Link, right-click the desired resource, hover over _Share_ and select _Copy Link to <resource>_.
 - _Files or Lines_: Link directly to files or lines of code. To generate a Deep Link, right-click highlighted lines of code or a file, hover over _Share_ and select _Copy vscode.dev Link_.
 - _Cloud Patches_: Link directly to open up a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). To generate a Deep Link, generate a Cloud Patch and select _Copy Link_ from the success prompt.
 

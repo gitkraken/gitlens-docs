@@ -11,7 +11,7 @@ GitLens adds many side bar views to provide additional rich functionality. There
 
 All views are free to use on all repos, **except** for views:  
 
-- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
 - marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
@@ -96,7 +96,7 @@ The _Commits_ view lists all of the commits on the current branch, and additiona
 
 ***
 
-##Commit Details View ✨
+##Commit Details View `PRO`
 
 The Commit Details View gives you contextual change info about your code and working changes. It offers two tabs: Commit and Working Changes.  
 
@@ -342,7 +342,7 @@ You can also manually add repositories to the VS Code workspace at any time usin
 
 ***
 
-## Worktrees view✨
+## Worktrees view `PRO`
 
 <img src="/wp-content/uploads/worktrees-view.png" class="img-bordered img-responsive center">
 

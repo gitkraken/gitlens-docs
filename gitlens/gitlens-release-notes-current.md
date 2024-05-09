@@ -11,7 +11,7 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="button button--basic ">Install Current Version Now</a>
 
-Features marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
+Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
 Features marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ---
@@ -71,7 +71,7 @@ The 14.8 release of GitLens features several enhancements to make it easier to u
 
 <img src="/wp-content/uploads/gl-14-8-hero.png" class="img-responsive center img-bordered">
 
-### Worktree Workflow Improvements ✨
+### Worktree Workflow Improvements `PRO`
 
 We've improved and streamlined the process of creating and opening worktrees. This includes new options for creating a worktree when switching branches as well as skipping prompts for remote creating and just auto-adding them. We've also added a command for copying your current working changes to an existing worktree.
 
@@ -714,7 +714,7 @@ Please note that while using cloud workspaces requires a free account, shared cl
 
 Workspaces can be accessed in the new GitKraken Workspaces view in the GitLens side bar.
 
-## ✨ Commit Graph Enhancements
+## `PRO` Commit Graph Enhancements
 
 We’ve greatly improved the ease of access to the Commit Graph as well as additional change information and easy-to-use customization options.
 
@@ -752,7 +752,7 @@ Reset your columns between the _Default_ and the new _Compact_ set via the conte
   - See your currently open repositories in the _Current Window_ section
   - Explore and interact with any repository in a GitKraken cloud workspace, some actions are currently limited to repositories which are open in your current window &mdash; ones highlighted in green
   - (Coming soon) Share your GitKraken cloud workspaces with your team or organization
-- Adds new _Commit Graph_ ✨ features and improvements
+- Adds new _Commit Graph_ `PRO` features and improvements
   - Makes the _Panel_ layout the default for easy access to the Commit Graph with a dedicated details view
   - Adds two new options to the graph header context menu
     - `Reset Columns to Default Layout` - resets column widths, ordering, visibility, and graph column mode to default settings
@@ -795,7 +795,7 @@ Reset your columns between the _Default_ and the new _Compact_ set via the conte
 ### Changed
 
 - Changes header on _GitLens Settings_ to be consistent with the new Welcome experience
-- Reduces the visual noise of currently inaccessible ✨ features in the side bars
+- Reduces the visual noise of currently inaccessible `PRO` features in the side bars
 - Performance: Improves rendering of large commits on the _Commit Details_ view
 - Performance: Defers possibly duplicate repo scans at startup and waits until repo discovery is complete before attempting to find other repos
 - Security: Disables Git access in Restricted Mode (untrusted)
@@ -834,7 +834,7 @@ To improve structure and findability of our menu options, we’ve made several c
 
 Similarly, the Copy SHA and Copy Message commands, previously nested in submenus, have been promoted to the root of the context menu. This elevates their visibility and enables quick access for performing actions on commits. Additionally, the Copy Relative Path command has been relocated to the root of the context menu. These adjustments enhance convenience when working with file paths.
 
-### ✨ Commit Graph Enhancements
+### `PRO` Commit Graph Enhancements
 
 We’ve made it easier to customize your Commit Graph experience as well as improvements for better readability when in compact layouts.
 
@@ -932,7 +932,7 @@ With 13.5, we've added the ability to switch to an alternate panel layout for th
 
 <img src="/wp-content/uploads/gl-13-5-hero.png" class="img-responsive center img-bordered">
 
-### ✨ Commit Graph Layouts
+### `PRO` Commit Graph Layouts
 
 <img src="/wp-content/uploads/gl-commit-graph-panel-layout-view.png" class="img-responsive center img-bordered">
 
@@ -958,7 +958,7 @@ You can now see pull requests (PRs) for your local branch upstreams directly on 
 
 Publishing local branches directly from the Commit Graph is a nice productivity boost. You can quickly and easily publish your local changes without having to switch to the Branches view or use the command line.
 
-### ✨ Focus View Pull Request Actions
+### `PRO` Focus View Pull Request Actions
 
 <img src="/wp-content/uploads/gl-focus-view-create-worktree-create-branch.png" class="img-responsive center img-bordered">
 
@@ -1023,7 +1023,7 @@ Shout-out to all of our awesome contributors for this release!
 
 ### Thursday, Mar 16, 2023
 
-With 13.4, we've introduced an experimental new AI feature to assist with writing commit messages, improved GitLens performance by reducing its size, made improvements to the ✨Commit Graph, and accepted community contributions as well as many bug fixes from community feedback.
+With 13.4, we've introduced an experimental new AI feature to assist with writing commit messages, improved GitLens performance by reducing its size, made improvements to the `PRO` Commit Graph, and accepted community contributions as well as many bug fixes from community feedback.
 
 <img src="/wp-content/uploads/gl-13.4-banner.png" class="img-responsive center img-bordered">
 
@@ -1049,7 +1049,7 @@ Here are some numbers:
 - GitLens Home view has been reduced by ~41% from 267KB to 160KB
 - GitLens Visual File History view has been reduced by ~9% from 508KB to 461KB
 
-### ✨ Commit Graph Enhancements
+### `PRO` Commit Graph Enhancements
 
 ##### Upstream Tracking
 
@@ -1142,7 +1142,7 @@ GitLens also just got a whole lot faster with the release of version 13.3! Thank
 - GitLens' extension bundle for web (vscode.dev/github.dev) is now ~37% smaller
 - GitLens' Commit Graph webview bundle is now ~31% smaller
 
-### ✨Focus View (Preview)
+### `PRO` Focus View (Preview)
 
 <img src="/wp-content/uploads/glrn-focus-view.png" class="img-responsive center img-bordered">
 
@@ -1157,7 +1157,7 @@ Instead of hunting for these pieces of information separately, you can get a hol
 
 \*_Note Focus View is currently in a Preview Only state, it is subject to change in the future._
 
-### ✨ Commit Graph improvements
+### `PRO` Commit Graph improvements
 
 #### Minimap (Experimental)
 
@@ -1512,7 +1512,7 @@ Find what you seek.
 
 <img src="/wp-content/uploads/gitlens-13-social-3x.png" class="img-responsive center img-bordered">
 
-## ✨GitLens+ Features for All on Local & Public Repos
+## `PRO` GitLens+ Features for All on Local & Public Repos
 
 With GitLens 13.0, we are excited to bring the power of GitLens+ features like the Commit Graph, Visual File History, and Worktrees to ALL users on local and public repos. No account required. Learn more about the changes happening with GitLens in this [article](https://www.gitkraken.com/blog/gitlens-13).
 
@@ -1522,7 +1522,7 @@ Here’s how to get started with each of the GitLens+ features with your local o
 - [Worktrees](https://help.gitkraken.com/gitlens/gitlens-plus/#worktrees)
 - [Visual File History](https://help.gitkraken.com/gitlens/gitlens-plus/#visual-file-history)
 
-## ✨Commit Graph - Now out of Preview!
+## `PRO` Commit Graph - Now out of Preview!
 
 We’re delighted to announce that the Commit Graph is out of Preview, and is full featured! This means you may now interact with the Commit Graph directly and take actions like:
 
@@ -1592,9 +1592,9 @@ To open the Commit Details view, open the command palette using <kbd>Cmd+Shift+P
 
 ### Added
 
-- ✨ All GitLens+ features on public and local repos are now available to everyone -- no account required!
+- `PRO` All GitLens+ features on public and local repos are now available to everyone -- no account required!
   - We want to bring the power of GitLens+ features to more people without any gates.
-- ✨ Commit Graph is out of preview!
+- `PRO` Commit Graph is out of preview!
   - Rich search features to find exactly what you're looking for:
     - Powerful filters to search by commit, message, author, a changed file or files, or even a specific code change
     - Searches look at ALL commits in a repository, not just what's shown in the graph
@@ -1635,7 +1635,7 @@ The new Commit Graph 🎨 in GitLens 12.2 will fix all your commitment problems.
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EsnA4zIUvWY?controls=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## ✨Commit Graph - Preview
+## `PRO` Commit Graph - Preview
 
 Users may now view the Commit Graph of their repository through GitLens.
 
@@ -1673,7 +1673,7 @@ The `Commit Details View` updates as you move your cursor throughout the file wi
 
 Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
 
-## ✨ GitHub Enterprise Integration
+## `PRO` GitHub Enterprise Integration
 
 Next, GitLens+ now offers a richer integration with GitHub Enterprise.
 
@@ -1683,7 +1683,7 @@ Once authenticated, GitLens will enrich GitHub autolinks in the hovers. You’ll
 
 You’ll see similar details from the Sidebar views for any commit or branch associated with a pull request or issue.
 
-## ✨ Single Sign On
+## `PRO` Single Sign On
 
 Single Sign On is here, providing GitLens+ users with a more secure sign in method!
 
