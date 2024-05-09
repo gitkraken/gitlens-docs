@@ -398,6 +398,10 @@ Here you can see a list of all pull requests for your repositories that are read
 
 <img src="/wp-content/uploads/gl-view-pull-request.png" class="img-bordered img-responsive center">
 
+[Code Suggestions](/gitlens/gitlens-features/#code-suggest) can be easily started or reviewed from pull requests in the launchpad actions as well. 
+
+<img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="img-bordered img-responsive center">
+
 You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></i> to move them to the pinned group or snooze them by selecting the snooze icon <i class="fa-solid fa-snooze"></i> to move them into the snooze group. To unpin or unsnooze, select the pin or snooze icon again. 
 
 <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" class="img-bordered img-responsive center">
