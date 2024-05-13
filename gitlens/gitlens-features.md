@@ -416,7 +416,7 @@ Within the Launchpad in the editor, you can show pull requests and issues that a
 
 <img src="/wp-content/uploads/gl-focus-view-filters.png" class="img-bordered img-responsive center">
 
-The Launchpad offers the ability to perform actions on pull requests, issues, and branches:
+The Launchpad in the editor offers the ability to perform actions on pull requests, issues, and branches:
 * For pull requests, you can create or open a worktree or branch using the arrow and folder icon under the Actions column.
 * For issues, you can open them on the remote service using the globe icon.
 * For branches, you can click the branch name to open that branch on the commit graph.
