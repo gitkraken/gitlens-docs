@@ -644,7 +644,7 @@ The Jira Integration connected through your GitKraken Account gives you access t
 
 <img src="/wp-content/uploads/gl-jira-integration.png" class="img-bordered img-responsive center">
 
-To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from GitKraken Account, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
+To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
 
 <img src="/wp-content/uploads/gl-cloud-integrations.png" class="img-bordered img-responsive center">
 
