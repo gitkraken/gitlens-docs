@@ -181,7 +181,7 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 - Press <kbd>Escape</kbd> to turn off the annotations
 
 ***
-new change
+
 ## Code Suggest preview
 
 GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
@@ -196,7 +196,7 @@ This will include a comment on the pull request with two options: you can select
 
 <img src="/wp-content/uploads/gl-code-suggest-comment.png" class="img-bordered img-responsive center">
 
-When selecting _locally on your machine_ you can open them on GitLens or GitKraken Desktop. Here, you can review the changes by selecting each file and once you are ready, you can select _Apply_ to apply to the branch you currently have checked out or select the dropdown and then _Apply to a Branch_ to apply to a new branch or select an existing branch. This will apply the patch locally. 
+When selecting _locally on your machine_ you can open them on GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes). Here, you can review the changes by selecting each file and once you are ready, you can select _Apply_ to apply to the branch you currently have checked out or select the dropdown and then _Apply to a Branch_ to apply to a new branch or select an existing branch. This will apply the patch locally. 
 
 <img src="/wp-content/uploads/gl-accept-code-suggestion-from-gl.gif" class="img-bordered img-responsive center">
 
