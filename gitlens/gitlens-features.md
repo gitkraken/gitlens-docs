@@ -640,7 +640,7 @@ Or
 
 ## Jira Integration
 
-The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs to links i.e. `ABC-123`.
+The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs in commit messages to links i.e. `ABC-123`.
 
 <img src="/wp-content/uploads/gl-jira-integration.png" class="img-bordered img-responsive center">
 
