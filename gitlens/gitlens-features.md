@@ -181,14 +181,14 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 - Press <kbd>Escape</kbd> to turn off the annotations
 
 ***
-
+new change
 ## Code Suggest preview
 
 GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
 
 <img src="/wp-content/uploads/gl-code-suggest.png" class="img-bordered img-responsive center">
 
-To begin suggesting changes, open the [Commit Graph](/gitlens/gitlens-features/#commit-graph-%e2%9c%a8) for the desired repository. Then, checkout a branch that has an open pull request. Finally, open the Repository Status. From here, you will have the option to _Start Review for PR #PR_. You may begin modifying and saving any file you would like to include in the code suggestion. Once you are finished, provide a title and select _Create Suggested Changes_. 
+To begin suggesting changes, open the [GitLens Inspect Overview](/gitlens/side-bar/#overview) for the desired repository and checkout a branch that has an open pull request. From here, you will have the option to _Start Review for PR #PR_. You may begin modifying and saving any file you would like to include in the code suggestion. Once you are ready, select _Suggest Changes for PR_, provide a title, and then finish with _Create Code Suggestion_. 
 
 <img src="/wp-content/uploads/gl-code-suggest-create.gif" class="img-bordered img-responsive center">
 
@@ -380,7 +380,7 @@ Minimap Overview:
 
 ***
 
-## Launchpad `PRO`
+## Launchpad `PRO` preview
 
 The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
