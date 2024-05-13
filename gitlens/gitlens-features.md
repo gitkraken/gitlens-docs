@@ -408,7 +408,7 @@ You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></
 
 ### Launchpad from the editor
 
-To open the Launchpad, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Open Launchpad in editor`.
+To open the Launchpad in an editor tab, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Open Launchpad in editor`.
 
 <img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
 
