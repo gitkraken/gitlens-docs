@@ -382,7 +382,7 @@ Minimap Overview:
 
 ## Launchpad `PRO`
 
-The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests and issues with priority.
+The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
 <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="img-bordered img-responsive center">
 
