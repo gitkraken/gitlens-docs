@@ -24,7 +24,7 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 With the 15.0 release comes some of GitLens' most exciting features yet, including Launchpad and Code Suggest.
 
-<img src="/wp-content/uploads/gl-15-0-hero.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/gl-15-hero.png" class="img-responsive center img-bordered">
 
 ### Code Suggest
 
