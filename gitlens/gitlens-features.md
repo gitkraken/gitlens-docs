@@ -398,7 +398,7 @@ Here you can see a list of all pull requests for your repositories that are read
 
 <img src="/wp-content/uploads/gl-view-pull-request.png" class="img-bordered img-responsive center">
 
-[Code Suggestions](/gitlens/gitlens-features/#code-suggest) can be easily started or reviewed from pull requests in the launchpad actions as well. 
+[Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) can be easily started or reviewed from pull requests in the launchpad actions as well. 
 
 <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="img-bordered img-responsive center">
 
