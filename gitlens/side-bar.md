@@ -11,7 +11,7 @@ GitLens adds many side bar views to provide additional rich functionality. There
 
 All views are free to use on all repos, **except** for views:  
 
-- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
 - marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
@@ -23,6 +23,7 @@ All views are free to use on all repos, **except** for views:
 GitLens Inspect side bar focuses on providing contextual information and insights to what you're actively working on. This side bar includes:
 
 - Commit Details
+- Overview
 - Line History
 - File History
 - Visual File History
@@ -96,27 +97,23 @@ The _Commits_ view lists all of the commits on the current branch, and additiona
 
 ***
 
-##Commit Details View ✨
+## GitLens Inspect
 
-The Commit Details View gives you contextual change info about your code and working changes. It offers two tabs: Commit and Working Changes.  
+GitLens Inspect side bar focuses on providing contextual information and insights to what you’re actively working on. This side bar will show details for commits, stashes, pull requests, branches, autolinks, and working changes. It offers two tabs: Commit Details and Overview.
 
-To open the Commit Details View, open the command palette using `Cmd/ctrl + Shift + P` and type: “Show Commit Details View” or navigate to the Commit Details View in the sidebar.
+To open GitLens Inspect, open the Command Pallette (`command/ctrl + shift + P`) and then type: "GitLens: Show Inspect View".
 
-<img src="/wp-content/uploads/show-commit-details-view.gif" class="img-bordered img-responsive center">
+### Commit Details
 
-### Commits
+The Commit tab updates as you move your cursor throughout the file with information about the commit that modified that line of code or when selecting a commit in the Commit Graph. Get quick information about the commit author, commit ID files modified in the commit, autolinks and more.
 
-The Commit tab updates as you move your cursor throughout the file with information about the commit that modified that line of code. Get quick information about the commit author, commit ID, links to Pull Requests, files modified in the commit, and more.
+<img src="/wp-content/uploads/gl-inspect-commit-details.png" class="img-bordered img-responsive center">
 
-Click on a file to open the diff, and see what changed. You may also hover over the file name to access options like Open File, Open Changes with Working File, and Open Remote.
+### Overview
 
-<img src="/wp-content/uploads/commit-details-view.png" class="img-bordered img-responsive center">
+The Overview tab allows you to view your work-in-progress changes any time without losing context on your current selected change. The tab includes the ability to stage and unstage changes, open files to view changes, see pull requests, [suggest changes or see Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) for an open pull request and open the changes in the Commit Graph and SCM view.
 
-### Working Changes
-
-The Working Changes tab allows you to view your work-in-progress changes any time without losing context on your current selected change. The tab includes the ability to stage and unstage changes, open files to view changes, and open the changes in the Commit Graph and SCM view.
-
-<img src="/wp-content/uploads/gl-14-4-commit-details-wip.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-inspect-overview.png" class="img-bordered img-responsive center">
 
 ***
 
@@ -270,7 +267,7 @@ The _Tags_ view lists all of the tags, and additionally provides:
 
 ***
 
-## Workspaces ☁️
+## Workspaces preview ☁️
 
 Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
 
@@ -316,7 +313,7 @@ To remove a repository from a Workspace, you can do so by right-clicking to open
 
 ### Converting to Cloud Workspaces
 
-To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Client, GitLens, and the GitKraken CLI.
+To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Desktop, GitLens, and the GitKraken CLI.
 
 <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="img-bordered img-responsive center">
 
@@ -342,7 +339,7 @@ You can also manually add repositories to the VS Code workspace at any time usin
 
 ***
 
-## Worktrees view✨
+## Worktrees view `PRO`
 
 <img src="/wp-content/uploads/worktrees-view.png" class="img-bordered img-responsive center">
 

@@ -9,7 +9,7 @@ taxonomy:
 
 All features are free to use on all repos, **except** for features:  
 
-- marked with a ✨ require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
 - marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
@@ -182,11 +182,35 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 ***
 
+## Code Suggest preview
+
+GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
+
+<img src="/wp-content/uploads/gl-code-suggest.png" class="img-bordered img-responsive center">
+
+To begin suggesting changes, open the [GitLens Inspect Overview](/gitlens/side-bar/#overview) for the desired repository and checkout a branch that has an open pull request. From here, you will have the option to _Start Review for PR #PR_. You may begin modifying and saving any file you would like to include in the code suggestion. Once you are ready, select _Suggest Changes for PR_, provide a title, and then finish with _Create Code Suggestion_. 
+
+<img src="/wp-content/uploads/gl-code-suggest-create.gif" class="img-bordered img-responsive center">
+
+This will include a comment on the pull request with two options: you can select _Code Suggestion for #PR_ to open the suggestion in gitkraken.dev or select _locally on your machine_ to open the suggestion in GitKraken or GitLens.
+
+<img src="/wp-content/uploads/gl-code-suggest-comment.png" class="img-bordered img-responsive center">
+
+When selecting _locally on your machine_ you can open them on GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes). Here, you can review the changes by selecting each file and once you are ready, you can select _Apply_ to apply to the branch you currently have checked out or select the dropdown and then _Apply to a Branch_ to apply to a new branch or select an existing branch. This will apply the patch locally. 
+
+<img src="/wp-content/uploads/gl-accept-code-suggestion-from-gl.gif" class="img-bordered img-responsive center">
+
+When selecting the _Code Suggestion for #PR_ you will be taken to gitkraken.dev to review and accept the changes. Here, you can review the changes by selecting each file and once you are ready, you can select _Commit Suggestions_. This will create a new commit on the remote for the existing branch (shown under _COMMIT SUGGESTIONS TO_). 
+
+<img src="/wp-content/uploads/gl-accept-code-suggestion.gif" class="img-bordered img-responsive center">
+
+***
+
 ## Cloud Patches preview ☁️
 
 ### What are Cloud Patches and why would you want to use them
 
-A Cloud Patch is a Git patch that GitKraken securely stores for you so it can be easily shared with others across GitLens, GitKraken Client, and the GitKraken CLI. The patch is directly transferred from your machine into secure storage. 
+A Cloud Patch is a Git patch that GitKraken securely stores for you so it can be easily shared with others across GitLens, GitKraken Desktop, and the GitKraken CLI. The patch is directly transferred from your machine into secure storage. 
 
 Cloud Patches allow the ability to engage early with your team before a pull request. They can be created as soon as you have a work in progress. This can help with collaborating on changes prior to a pull request and minimize the delay of pull request reviews.
 
@@ -232,7 +256,7 @@ To delete a cloud patch, right-click it and select `Delete Cloud Patch...`.
 
 If you do not want your Cloud Patch data stored on GitKraken Servers, we offer the ability for you to host Cloud Patches on your own AWS S3 storage instance. For more information on configuring this, see our documentation [here](/gk-dev/gk-dev-home/#self-hosted).
 
-## Commit Graph ✨
+## Commit Graph `PRO`
 
 The commit graph helps visualize your repository commit history and give you information about branches, commits, and collaborators all in one view. This makes it easier to see contributions and help you make faster, more informed decisions.
 
@@ -356,36 +380,60 @@ Minimap Overview:
 
 ***
 
-## Focus View ✨
+## Launchpad `PRO` preview
 
-The Focus View allows you to stream line your workflow by providing a summarized list of your pull requests and your issues. To open the Focus View, open the command palette (`command/ctrl + shift + P`) and search `GitLens+: Show Focus view`.
+The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
-Currently, this view is supported for GitHub repositories. In order to see the Focus View, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).
+<img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="img-bordered img-responsive center">
+
+<div class='callout callout--basic'>
+    <p>Currently, this view is supported for GitHub repositories. In order to see the Launchpad, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).</p>
+</div>
+
+The Launchpad can be accessed from the command palette (`command/ctrl + shift + P`) by searching `GitLens: Open Launchpad` or select the Pull Request from the status bar in VS Code.
+
+<img src="/wp-content/uploads/gl-access-launchpad.gif" class="img-bordered img-responsive center">
+
+Here you can see a list of all pull requests for your repositories that are ready to merge, blocked, require follow-up, need your review, are waiting for a review, are a draft, or are snoozed. You can select the pull request to see more information about it and take action on it such as open it in a browser, merge (if ready to merge) or switch to the branch/worktree. 
+
+<img src="/wp-content/uploads/gl-view-pull-request.png" class="img-bordered img-responsive center">
+
+[Code Suggestions](/gitlens/gitlens-features/#code-suggest) can be easily started or reviewed from pull requests in the launchpad actions as well. 
+
+<img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="img-bordered img-responsive center">
+
+You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></i> to move them to the pinned group or snooze them by selecting the snooze icon <i class="fa-solid fa-snooze"></i> to move them into the snooze group. To unpin or unsnooze, select the pin or snooze icon again. 
+
+<img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" class="img-bordered img-responsive center">
+
+### Launchpad from the editor
+
+To open the Launchpad in an editor tab, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Open Launchpad in editor`.
 
 <img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
 
-Within the Focus View, you can show pull requests and/or issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all.
+Within the Launchpad in the editor, you can show pull requests and issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all.
 
 <img src="/wp-content/uploads/gl-focus-view-filters.png" class="img-bordered img-responsive center">
 
-The Focus View offers the ability to perform actions on pull requests, issues, and branches:
+The Launchpad in the editor offers the ability to perform actions on pull requests, issues, and branches:
 * For pull requests, you can create or open a worktree or branch using the arrow and folder icon under the Actions column.
 * For issues, you can open them on the remote service using the globe icon.
 * For branches, you can click the branch name to open that branch on the commit graph.
 
 <img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
 
-Items in the Focus View can be pinned, to move the item to the top of the list, and can be snoozed, to be hidden under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
+Items in the Launchpad can be pinned, to move the item to the top of the list, and can be snoozed, to be hidden under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
 
 <img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
-    <p>Note: The Focus View is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
+    <p>Note: The Launchpad is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
 </div>
 
 ***
 
-## Visual File History ✨
+## Visual File History `PRO`
 
 The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
 
@@ -401,7 +449,7 @@ Gain additional insights on hover.
 
 ***
 
-## AI-Generated Commit Messages (Experimental) ✨
+## AI-Generated Commit Messages (Experimental) `PRO`
 
 Commit messages can be automatically generated using an AI Provider.
 
@@ -550,7 +598,7 @@ Next, you will be prompted to provide a Personal Access Token from GitLab.com. I
 
 <img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
 
-## GitHub Enterprise Server and GitLab Self-Managed Integration ✨
+## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
 GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
 
@@ -587,6 +635,18 @@ Or
 <img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="img-bordered img-responsive center">
 
 - You will then be prompted to provide a PAT with the required scopes and can hit _Enter_ to complete the integration connection
+
+***
+
+## Jira Integration
+
+The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs in commit messages to links i.e. `ABC-123`.
+
+<img src="/wp-content/uploads/gl-jira-integration.png" class="img-bordered img-responsive center">
+
+To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
+
+<img src="/wp-content/uploads/gl-cloud-integrations.png" class="img-bordered img-responsive center">
 
 ***
 
@@ -644,7 +704,7 @@ Deep Links are links that can be used to quickly open up a resource within GitLe
 
 - _Search & Compare_: Link directly into comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view) for viewing comparisons between branches, tags, and commits. To generate a Deep Link, right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_. 
 - _GitKraken Workspaces_: Link directly to a [GitKraken Workspace](/gitlens/side-bar/#workspaces-☁%ef%b8%8f). To generate a Deep Link, right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_. 
-- _Commit Graph_: Link to open up a resource within the [Commit Graph](gitlens/gitlens-features/#commit-graph-✨) of GitLens such as specific remote repositories, commits, branches, and tags. To generate a Deep Link, right-click the desired resource, hover over _Share_ and select _Copy Link to <resource>_.
+- _Commit Graph_: Link to open up a resource within the [Commit Graph](gitlens/gitlens-features/#commit-graph-%60pro%60) of GitLens such as specific remote repositories, commits, branches, and tags. To generate a Deep Link, right-click the desired resource, hover over _Share_ and select _Copy Link to <resource>_.
 - _Files or Lines_: Link directly to files or lines of code. To generate a Deep Link, right-click highlighted lines of code or a file, hover over _Share_ and select _Copy vscode.dev Link_.
 - _Cloud Patches_: Link directly to open up a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). To generate a Deep Link, generate a Cloud Patch and select _Copy Link_ from the success prompt.
 
