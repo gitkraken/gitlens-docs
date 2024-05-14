@@ -12,7 +12,7 @@ GitLens adds many side bar views to provide additional rich functionality. There
 All views are free to use on all repos, **except** for views:  
 
 - marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+- marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
 
@@ -267,7 +267,7 @@ The _Tags_ view lists all of the tags, and additionally provides:
 
 ***
 
-## Workspaces preview ☁️
+## Workspaces `PREVIEW`
 
 Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
 

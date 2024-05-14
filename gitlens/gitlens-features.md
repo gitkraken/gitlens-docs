@@ -10,7 +10,7 @@ taxonomy:
 All features are free to use on all repos, **except** for features:  
 
 - marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- marked with a ☁️ require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+- marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ***
 
@@ -182,7 +182,7 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 ***
 
-## Code Suggest preview
+## Code Suggest `PREVIEW`
 
 GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
 
@@ -206,7 +206,7 @@ When selecting the _Code Suggestion for #PR_ you will be taken to gitkraken.dev 
 
 ***
 
-## Cloud Patches preview ☁️
+## Cloud Patches `PREVIEW`
 
 ### What are Cloud Patches and why would you want to use them
 
@@ -380,14 +380,14 @@ Minimap Overview:
 
 ***
 
-## Launchpad `PRO` preview
+## Launchpad `PREVIEW`
 
 The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
 <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
-    <p>Currently, this view is supported for GitHub repositories. In order to see the Launchpad, you will need to connect the [GitHub Integration](/gitlens/gitlens-features/#connecting-the-github-integration).</p>
+    <p>Currently, this view is supported for GitHub repositories. In order to see the Launchpad, you will need to connect the <a href="https://help.gitkraken.com/gitlens/gitlens-features/#connecting-the-github-integration">GitHub Integration</a> .</p>
 </div>
 
 The Launchpad can be accessed from the command palette (`command/ctrl + shift + P`) by searching `GitLens: Open Launchpad` or select the Pull Request from the status bar in VS Code.

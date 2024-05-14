@@ -15,7 +15,7 @@ Both GitLens and [GitKraken Desktop](https://help.gitkraken.com/gitkraken-client
  
 ### Multi-User Trials 
 
-Multi-user trials are available for groups of users that would like to try the [GitKraken Suite](www.gitkraken.com/suite) across members of their team, company, or organization. After a multi-user trial is started, it will be active for 30 days. The duration of the multi-user trial is shared by everyone in the organization. 
+Multi-user trials are available for groups of users that would like to try the [GitKraken DevEx platform](https://www.gitkraken.com/devex) across members of their team, company, or organization. After a multi-user trial is started, it will be active for 30 days. The duration of the multi-user trial is shared by everyone in the organization. 
  
 To start a multi-user trial: 
  
