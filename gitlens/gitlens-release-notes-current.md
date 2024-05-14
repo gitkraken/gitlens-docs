@@ -22,21 +22,41 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 #### Tuesday, May 14th, 2024
 
-With the 15.0 release comes some of GitLens' most exciting features yet, including Launchpad and Code Suggest.
+With the release of GitLens 15 comes some of GitLens' most exciting features yet, Launchpad, Code Suggest, Jira integration and so much more. This release is packed with tools and enhancements to improve code review workflows and makes it easier than ever to keep your team unblocked.
 
 <img src="/wp-content/uploads/gl-15-hero.png" class="img-responsive center img-bordered">
 
-### Code Suggest
-
-(Add Code Suggest content here)
-
 ### Launchpad
 
-GitLens 15.0 introduces a preview of the Launchpad, a new Pro feature that brings your GitHub pull requests into a unified, categorized list. The Launchpad categorizes pull requests by status, making it easy to see which pull requests are ready to merge, blocked, need your review, and more. You can take action on a pull request directly from the Launchpad, including merging a pull request, opening a pull request on GitHub, switching to or creating a branch or worktree for a pull request, and more.
+GitLens 15 introduces a preview of the Launchpad, a new Pro feature that brings your GitHub pull requests into a unified, categorized list. The Launchpad categorizes pull requests by status, making it easy to see which pull requests are ready to merge, blocked, need your review, and more. Use the Launchpad to quickly action on the highest priority pull requests and keep your team unblocked.
+
+Once you've selected a pull request in the Launchpad, you can choose from a list of actions to take on that pull request, including merging the pull request, opening the pull request on GitHub, switching to or creating a branch or worktree for the pull request, viewing the pull request's changes, and more.
 
 Also included is a Launchpad status bar icon which provides a pulse on the most critical pull request needing your attention, and a summary of your most critical pull requests on hover.
 
 You can open the new Launchpad directly from its status bar icon by clicking the icon or by using the new _GitLens: Open Launchpad_ command. Clicking a category in the Launchpad status bar icon tooltip will open the Launchpad directly to that category.
+
+### Code Suggest
+
+Code Suggest is a new cloud feature that frees your code reviews from the unnecessary restrictions of GitHub's comment-style code suggestions. Code suggestions can be created from any code and right from inside the convenience of your IDE.
+
+You can create a Code Suggestion from the _Inspect: Overview_ tab when on a PR's branch. You can also start Code Suggestions on a pull request directly from the Launchpad. Simply choose which file changes to include, add a title and optional description, and you're ready to go.
+
+Upon creation of a Code Suggestion, a comment will appear on the pull request. Code Suggestions can be viewed and applied directly from [gitkraken.dev](https://gitkraken.dev), or opened in GitKraken Desktop or GitLens.
+
+You can see a PR's Code Suggestions from anywhere we currently display PR information in our views, including Commits, Branches, Remotes, and the new Pull Request view. From there you can view the changes, apply them, accept or reject the code suggestion, or copy a link to share with team members.
+
+### Jira Integration
+
+GitLens 15 introduces rich Jira Cloud integration, enabling automatic, rich Jira autolinks in commit messages wherever autolinks are supported in GitLens. You can connect to Jira by clicking the _Cloud Integrations_ button in the GitKraken Account view or by using the new _GitLens: Manage Cloud Integrations_ command. Once connected, rich autolinks will automatically populate for Jira issues in your commit messages.
+
+Support for more cloud integrations and other Jira integration features are coming soon.
+
+### Gemini and Latest OpenAI & Anthropic Model Support
+
+This release also adds support for Google Gemini for GitLens' experimental AI features. You can specify the Gemini model to use with the new `gitlens.ai.experimental.gemini.model` setting.
+
+We've also expanded our OpenAI and Anthropic model support to include the latest models.
 
 ### Thank you to our contributors
 
