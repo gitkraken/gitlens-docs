@@ -16,13 +16,104 @@ Features marked with a ☁️ require a GitKraken Account, with access level bas
 
 ---
 
+<a id="v15-0"></a>
+
+## Version 15.0
+
+#### Tuesday, May 14th, 2024
+
+With the 15.0 release comes some of GitLens' most exciting features yet, including Launchpad and Code Suggest.
+
+<img src="/wp-content/uploads/gl-15-0-hero.png" class="img-responsive center img-bordered">
+
+### Code Suggest
+
+(Add Code Suggest content here)
+
+### Launchpad
+
+GitLens 15.0 introduces a preview of the Launchpad, a new Pro feature that brings your GitHub pull requests into a unified, categorized list. The Launchpad categorizes pull requests by status, making it easy to see which pull requests are ready to merge, blocked, need your review, and more. You can take action on a pull request directly from the Launchpad, including merging a pull request, opening a pull request on GitHub, switching to or creating a branch or worktree for a pull request, and more.
+
+Also included is a Launchpad status bar icon which provides a pulse on the most critical pull request needing your attention, and a summary of your most critical pull requests on hover.
+
+You can open the new Launchpad directly from its status bar icon by clicking the icon or by using the new _GitLens: Open Launchpad_ command. Clicking a category in the Launchpad status bar icon tooltip will open the Launchpad directly to that category.
+
+### Added
+
+- Adds support for Google Gemini for GitLens' experimental AI features
+  - Adds a `gitlens.ai.experimental.gemini.model` setting to specify the Gemini model
+- Adds support for the latest OpenAI and Anthropic models for GitLens' experimental AI features
+- Adds a new `gitlens.views.collapseWorktreesWhenPossible` setting to specify whether to try to collapse the opened worktrees into a single (common) repository in the views when possible
+- Shows a PR’s code suggestions anywhere we currently display a PR node in our GitLens views (Commits, Branches, Remotes).
+- Adds a preview of [Launchpad](https://www.gitkraken.com/solutions/launchpad), a new Pro feature bringing your GitHub pull requests into a unified, categorized list:
+  - Open using the new _GitLens: Open Launchpad_ command
+  - Categorizes pull requests by status:
+    - _Current Branch_: Pull requests associated with your current branch
+    - _Ready to Merge_: Pull requests without conflicts, ci failures, change suggestions or other issues preventing merge
+    - _Blocked_: Pull requests with conflicts, CI failures, or that have no reviewers assigned
+    - _Needs Your Review_: Pull requests waiting for your review
+    - _Requires Follow-Up_: Pull requests that have been reviewed and need follow-up
+    - _Draft_: Draft pull requests
+    - _Pinned_: Pull requests you have pinned
+    - _Snoozed_: Pull requests you have snoozed
+    - _Other_: Other pull requests
+  - Action on a pull request directly from the Launchpad:
+    - Merge a pull request
+    - Open a pull request on GitHub
+    - Switch to or create a branch or worktree for a pull request to review changes
+    - Display a pull request's details in the _Overview_
+    - Open a pull request's changes in the multi-diff editor
+    - View a pull request's branch in the _Commit Graph_
+    - View or create code suggestions for a pull request
+    - Pin or snooze a pull request in the Launchpad
+  - Adds the following settings:
+    - `gitlens.launchpad.ignoredRepositories`: Array of repositories with `owner/name` format to ignore in the Launchpad
+    - `gitlens.launchpad.staleThreshold`: Value in days after which a pull request is considered stale and moved to the _Other_ category
+- Adds a preview of the _Launchpad_ indicator, a new Pro feature, to the status bar:
+  - Opens the Launchpad when clicked
+  - Shows the top pull request and its status in the status bar
+    - Also highlights your top pull request in the launchpad when opened from the indicator
+  - Provides a summary of your most critical pull requests on hover
+    - Each summary line includes a link to open the Launchpad to that category
+  - Adds the following settings:
+    `gitlens.launchpad.indicator.enabled`: Specifies whether to show the Launchpad indicator in the status bar
+    `gitlens.launchpad.indicator.icon`: Specifies the style of the Launchpad indicator icon
+    `gitlens.launchpad.indicator.label`: Specifies the style of the Launchpad indicator label
+    `gitlens.launchpad.indicator.groups`: Specifies which critical categories of pull requests to summarize in the indicator tooltip
+    `gitlens.launchpad.indicator.useColors`: Specifies whether to use colors in the indicator
+    `gitlens.launchpad.indicator.openInEditor`: Specifies whether to open the Launchpad in the editor when clicked
+    `gitlens.launchpad.indicator.polling.enabled`: Specifies whether to regularly check for changes to pull requests
+    `gitlens.launchpad.indicator.polling.interval`: Specifies the interval in minutes to check for changes to pull requests
+- Adds support for Jira Cloud integration as a GitKraken account cloud integration:
+  - When connected, enables rich Jira autolinks in commit messages everywhere autolinks are supported in GitLens
+  - Automatically syncs from a connected GitKraken account
+  - Adds a _Cloud Integrations_ button to the GitKraken Account view and a new `GitLens: Manage Cloud Integrations` command to manage connected cloud integrations
+  - Adds a _Manage Jira_ button to _Inspect_ and a link in Autolink settings to connect to Jira
+
+### Changed
+
+- Improves performance when creating colors derived from the VS Code theme
+- Changes the command to open the Launchpad in the editor (formerly _Focus View_) from _GitLens: Show Focus_ to _GitLens: Open Launchpad in Editor_
+- Renames the setting `gitlens.focus.allowMultiple` to `gitlens.launchpad.allowMultiple`
+- Updates most deep link prompts to quick picks or quick inputs, moves most prompts to before a repository is opened.
+- Updates Pro upgrade links to use the newer gitkraken.dev site
+
+### Fixed
+
+- Fixes [#3221](https://github.com/gitkraken/vscode-gitlens/issues/3221) - Cannot use word "detached" in branch names
+- Fixes [#3197](https://github.com/gitkraken/vscode-gitlens/issues/3197) - Only emojify standalone emojis &mdash; thanks to [PR #3208](https://github.com/gitkraken/vscode-gitlens/pull/3208) by may ([@m4rch3n1ng](https://github.com/m4rch3n1ng))
+- Fixes [#3180](https://github.com/gitkraken/vscode-gitlens/issues/3180) - Focus View feedback button is not working
+- Fixes [#3179](https://github.com/gitkraken/vscode-gitlens/issues/3179) - The checkmarks in cherry pick are not displayed
+- Fixes [#3249](https://github.com/gitkraken/vscode-gitlens/issues/3249) - Error "Cannot read properties of null (reading 'map')
+- Fixes [#3198] (https://github.com/gitkraken/vscode-gitlens/issues/3198) - Repository location in cloud workspace doesn't work when the repo descriptor does not contain a url
+
 <a id="v14-9"></a>
 
 ## Version 14.9
 
 #### Wednesday, March 6, 2024
 
-The 14.9 release of GitLens brings improved reviewing of branch changes and new Anthropic Claude models along with general fixes and improvements. 
+The 14.9 release of GitLens brings improved reviewing of branch changes and new Anthropic Claude models along with general fixes and improvements.
 
 <img src="/wp-content/uploads/gl-14-9-hero.png" class="img-responsive center img-bordered">
 
@@ -59,7 +150,6 @@ We've added support for Anthropic's Claude 3 Opus & Sonnet models for GitLens' e
 - Fixes the _Open Pull Request Changes_ & _Compare Pull Request_ commands to scope the changes only to the pull request
 - Fixes broken _Compare Common Base with Working Tree_ (previously _Compare Ancestry with Working Tree_)
 - Fixes issue when switching to a worktree via branch switch when there are multiple repos in the workspace
-
 
 <a id="v14-8"></a>
 
@@ -389,7 +479,6 @@ Shout-out to all of our awesome contributors for this release!
 - Fixes tooltip styling/theming on the _Commit Graph_
 - Fixes issues staged files in repositories not "opened" (discovered) by the built-in Git extension
 
-
 <a id="v14-4"></a>
 
 ## Version 14.4
@@ -692,7 +781,7 @@ Views include:
 - Commit Graph Details
 
 _Pro tip: You can toggle the Commit Graph between Panel and Editor layouts by clicking the "cog" icon on the upper right corner of the Graph view._
-_Pro tip 2: When the Commit Graph is in the Panel Layout, you can quickly toggle it via the new __Toggle Commit Graph__ and __Toggle Maximized Commit Graph__ commands._
+_Pro tip 2: When the Commit Graph is in the Panel Layout, you can quickly toggle it via the new **Toggle Commit Graph** and **Toggle Maximized Commit Graph** commands._
 
 ### Adopting the new views layout
 
