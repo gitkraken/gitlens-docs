@@ -20,7 +20,7 @@ Check out our [features](/gitlens/gitlens-features/) pages to learn more.
 
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/UQPb73Zz9qk?rel=0&vq=hd1080' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://youtu.be/oJdlGtsbc3U?utm_source=help-center&utm_medium=gitkraken&utm_id=GitLens+tutorial' frameborder='0' allowfullscreen></iframe>
 </div>
 
 ***
