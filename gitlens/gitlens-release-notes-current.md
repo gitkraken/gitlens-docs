@@ -39,9 +39,9 @@ To simplify the overall configuration of AI models, we have unified all settings
 
 ### Launchpad Enhancements
 
-We've made several improvements to the Launchpad to provide a more intuitive and user-friendly experience. The collapsed state of Launchpad groups is now saved between uses, ensuring a consistent view across sessions. The Draft and Pinned categories in the Launchpad always sort their items by date, making it easier to find recent entries. Additionally, the Launchpad and its status bar indicator now provide clear indications when there is an error loading data, keeping you informed of any issues.
+We've made several improvements to the Launchpad to provide a more intuitive and user-friendly experience. The collapsed state of Launchpad groups is now saved between uses, ensuring a consistent view across sessions. The Draft and Pinned categories in the Launchpad always sort their items by date, making it easier to find recent entries. The Launchpad status bar indicator now provides clear indications when there is an error loading data, keeping you informed of any issues. Additionally, we've improved loading performance and are continuing to look for ways to improve that in the future.
 
-To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/3286). We really want to hear your feedback!
+To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/3286). We really want to hear your feedback!
 
 
 ### Thank you to our contributors
