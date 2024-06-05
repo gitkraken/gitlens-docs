@@ -23,13 +23,17 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Tuesday, June 5th, 2024
 
-We're excited to announce the latest release of GitLens, bringing you enhanced AI integration, a better Launchpad experience, and bug fixes. This focus on expanding AI capabilities, streamlining user experience, and addressing issues reported by our community.
+We're excited to announce the latest release of GitLens, bringing you expanded AI capabilities, a better Launchpad experience, and bug fixes reported by our community.
 
 <img src="/wp-content/uploads/gl-15-1-hero.png" class="img-responsive center img-bordered">
 
 ### GitHub Copilot and AI Model Integration
 
-GitLens now supports integration with GitHub Copilot and other VS Code extension-provided AI models for its experimental AI features. You can now specify the AI model you want to use through the new `gitlens.ai.experimental.model` setting. When the model is set to `vscode`, specifying the `gitlens.ai.experimental.vscode.model` setting will target the VS Code extension-provided AI model you want to use.
+<img src="/wp-content/uploads/gl-15-1-ai-models.png" class="img-responsive center img-bordered">
+
+GitLens now supports integration with GitHub Copilot and other VS Code extension-provided AI models for its experimental AI features. Simply select a model from the quickpick after choosing a GitLens AI action.
+
+> You can also specify the AI model you want to use through the new `gitlens.ai.experimental.model` setting. When the model is set to `vscode`, specifying the `gitlens.ai.experimental.vscode.model` setting will target the VS Code extension-provided AI model you want to use.
 
 To simplify the overall configuration of AI models, we have unified all settings under: `gitlens.ai.experimental.model`. This replaces the previous provider-specific settings, making it more straightforward to specify the AI model you want to use.
 
