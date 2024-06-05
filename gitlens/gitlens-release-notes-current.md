@@ -21,7 +21,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 15.1
 
-#### Tuesday, June 5th, 2024
+#### Wednesday, June 5th, 2024
 
 We're excited to announce the latest release of GitLens, bringing you expanded AI capabilities, a better Launchpad experience, and bug fixes reported by our community.
 
