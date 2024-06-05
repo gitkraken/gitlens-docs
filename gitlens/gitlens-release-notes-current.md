@@ -16,6 +16,58 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+
+<a id="v15-1"></a>
+
+## Version 15.1
+
+#### Tuesday, June 5th, 2024
+
+We're excited to announce the latest release of GitLens, bringing you enhanced AI integration, a better Launchpad experience, and bug fixes. This focus on expanding AI capabilities, streamlining user experience, and addressing issues reported by our community.
+
+<img src="/wp-content/uploads/gl-15-1-hero.png" class="img-responsive center img-bordered">
+
+### GitHub Copilot and AI Model Integration
+
+GitLens now supports integration with GitHub Copilot and other VS Code extension-provided AI models for its experimental AI features. You can now specify the AI model you want to use through the new `gitlens.ai.experimental.model` setting. When the model is set to `vscode`, specifying the `gitlens.ai.experimental.vscode.model` setting will target the VS Code extension-provided AI model you want to use.
+
+To simplify the overall configuration of AI models, we have unified all settings under: `gitlens.ai.experimental.model`. This replaces the previous provider-specific settings, making it more straightforward to specify the AI model you want to use.
+
+### Launchpad Enhancements
+
+We've made several improvements to the Launchpad to provide a more intuitive and user-friendly experience. The collapsed state of Launchpad groups is now saved between uses, ensuring a consistent view across sessions. The Draft and Pinned categories in the Launchpad always sort their items by date, making it easier to find recent entries. Additionally, the Launchpad and its status bar indicator now provide clear indications when there is an error loading data, keeping you informed of any issues.
+
+To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens, [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/3286). We really want to hear your feedback!
+
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributors for this release!
+
+- bm-w ([@bm-w](https://github.com/bm-w))
+
+### Added
+
+- Adds support for GitHub Copilot and other VS Code extension-provided AI models for GitLens' experimental AI features
+  - Adds a `gitlens.ai.experimental.model` setting to specify the AI model to use
+  - Adds a `gitlens.ai.experimental.vscode.model` setting to specify the VS Code extension-provided AI model to use when `gitlens.ai.experimental.model` is set to `vscode`
+- Adds new Launchpad improvements:
+  - Collapsed state of Launchpad groups are now saved between uses
+  - The _Draft_ and _Pinned_ categories in the Launchpad now always sort their items by date
+  - The Launchpad and Launchpad status bar indicator now indicate when there is an error loading data
+  - The Launchpad indicator now shows the Launchpad icon next to the loading spinner when the Launchpad is loading
+
+### Changed
+
+- Changes the settings used to configure the AI models for GitLens' experimental AI features
+  - Adds a `gitlens.ai.experimental.model` setting to specify the AI model to use
+  - Removes the `gitlens.ai.experimental.provider`, `gitlens.ai.experimental.openai.model`, `gitlens.ai.experimental.anthropic.model`, and `gitlens.ai.experimental.gemini.model` settings in favor of the above
+
+### Fixed
+
+- Fixes [#3295](https://github.com/gitkraken/vscode-gitlens/issues/3295) - Incorrect pluralization in Authors lens &mdash; thanks to [PR #3296](https://github.com/gitkraken/vscode-gitlens/pull/3296) by bm-w ([@bm-w](https://github.com/bm-w))
+- Fixes [#3277](https://github.com/gitkraken/vscode-gitlens/issues/3277) - Unable to pull branch when the local branch whose name differs from its tracking branch
+
 <a id="v15-0"></a>
 
 ## Version 15.0
