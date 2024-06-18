@@ -1173,6 +1173,44 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </table>
 ***
 
+## Experimental AI Settings
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td><code>gitlens.ai.experimental.provider</code></td>
+<td>Specifies the AI provider to use (defaults to <code>openai</code>)</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.openai.model</code></td>
+<td>Specifies the OpenAI model (defaults to <code>gpt-3.5-turbo</code>)</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.anthropic.model</code></td>
+<td>Specifies the Anthropic model (defaults to <code>claude-v1</code>)</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
+<td>Specifies whether to enable GitLens’ experimental, AI-powered, on-demand commit message generation</code></td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.openai.url</code></td>
+<td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.gemini.model</code></td>
+<td>Specifies the Gemini model for experimental AI features</td>
+</tr>
+</tbody>
+</table>
+
+***
+
 ##Misc Settings
 
 <table>
@@ -1308,22 +1346,6 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
 </tr>
 <tr>
-<td><code>gitlens.ai.experimental.provider</code></td>
-<td>Specifies the AI provider to use (defaults to <code>openai</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.openai.model</code></td>
-<td>Specifies the OpenAI model (defaults to <code>gpt-3.5-turbo</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.anthropic.model</code></td>
-<td>Specifies the Anthropic model (defaults to <code>claude-v1</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
-<td>Specifies whether to enable GitLens’ experimental, AI-powered, on-demand commit message generation</code></td>
-</tr>
-<tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
 <td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
 </tr>
@@ -1342,14 +1364,6 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tr>
 <td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
 <td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.openai.url</code></td>
-<td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.gemini.model</code></td>
-<td>Specifies the Gemini model for experimental AI features</td>
 </tr>
 </tbody>
 </table>
