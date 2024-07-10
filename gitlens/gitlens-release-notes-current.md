@@ -33,7 +33,7 @@ The Commit Graph now provides rich hovers on commit rows. These hovers include d
 
 ### Launchpad Improvements
 
-We've added a new "Open Worktree in New Window" action to the Launchpad. This feature allows you to open specific branches of pull requests in a separate VS Code window, minimizing context switching when working on multiple tasks. We've also added an "Open on GitHub" button to rows, enabling easy viewing on the GitHub website.
+We've added a new "Open Worktree in New Window" action to the Launchpad. This feature allows you to quickly open specific branches of pull requests in a separate VS Code window, minimizing context switching when working on multiple tasks.
 
 ### AI-Generated Descriptions
 
