@@ -16,6 +16,72 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v15-2"></a>
+
+## Version 15.2
+
+#### Wednesday, July 10th, 2024
+
+
+GitLens 15.2 introduces several new features and improvements. This release focuses on enhancing the Commit Graph and Launchpad, expanding AI-generated messaging, and additional AI support for the latest Anthropic models.
+
+<img src="/wp-content/uploads/gl-15-2-hero.png" class="img-responsive center img-bordered">
+
+### Commit Graph Improvements
+
+The Commit Graph now provides rich hovers on commit rows. These hovers include detailed commit information and links to related pull requests, issues, and linking to Inspect. We've also added pull request markers to the graph scroll and minimap, offering visual queues of PR activity in your repo history.
+
+### Launchpad Improvements
+
+We've added a new "Open Worktree in New Window" action to the Launchpad. This feature allows you to open specific branches of pull requests in a separate VS Code window, minimizing context switching when working on multiple tasks. We've also added an "Open on GitHub" button to rows, enabling easy viewing on the GitHub website.
+
+### AI-Generated Descriptions
+
+You can now generate titles and descriptions for Cloud Patches and Code Suggest. This is available using the  "Generate Title & Description" button within the title input of the _Create Cloud Patch_ view and in the _Changes to Suggest_ section of the Inspect Overview tab. It uses the AI provider of your choice, helping to save time in creating meaningful titles and descriptions.
+
+### Claude 3.5 Sonnet Support
+
+GitLens now supports Anthropic's latest Claude 3.5 Sonnet model for our experimental AI features.
+
+### Added
+
+- Adds a _Generate Title & Description_ button to the title input in _Create Cloud Patch_ and in _Changes to Suggest_ of the _Inspect Overview_ tab
+- Adds support for Anthropic's Claude 3.5 Sonnet model for GitLens' experimental AI features
+- Adds a new `counts` option to the `gitlens.launchpad.indicator.label` setting to show the status counts of items which need your attention in the _Launchpad_ status bar indicator
+- Adds _Search for Commits within Selection_ command to the editor context menu when there is a selection
+- Adds a `gitlens.launchpad.ignoredOrganizations` setting to specify an array of organizations (or users) to ignore in the _Launchpad_
+- Improves the tooltips of stashes in GitLens views
+  - Adds a `gitlens.views.formats.stashes.tooltip` setting to specify the tooltip format of the stashes in GitLens views
+- Improves the display of branch and tag tips in the _File History_ and _Line History_ and in commit tooltips in GitLens views
+  - Adds provider-specific icons to tips of remote branches
+- Adds Commit Graph improvements:
+  - Adds pull request markers to the graph scroll and minimap
+  - Adds rich hovers on commit rows which include detailed commit information and links to pull requests, issues, and inspect
+- Adds Launchpad improvements:
+  - Truncates long titles for Pull Requests so that the repository label is always visible
+  - Adds _Open on GitHub_ button to other relevant rows in the action step
+  - Adds a new _Open Worktree in New Window_ action and button to Launchpad items to more easily view the item in a worktree
+
+### Changed
+
+- Renames `Reset Stored AI Key` command to `Reset Stored AI Keys...` and adds confirmation prompt with options to reset only the current or all AI keys
+- Renames _Open Inspect_ to _Inspect Commit Details_
+- Renames _Open Line Inspect_ to _Inspect Line Commit Details_
+- Renames _Open Details_ to _Inspect Commit Details_
+- Replaces _Open in Editor_ link in the Launchpad with a link to _gitkraken.dev_
+- The _Manage Account_ button in the GitKraken Account view and the _GitLens: Manage Your Account_ command now use the account management page at _gitkraken.dev_
+- Fixes some cases where worktree state can be out-of-date after creation/deletion of a worktree
+
+### Fixed
+
+- Fixes [#3344](https://github.com/gitkraken/vscode-gitlens/issues/3344) - Make changing the AI key easier
+- Fixes [#3377](https://github.com/gitkraken/vscode-gitlens/issues/3377) - Cannot read properties of undefined (reading 'start')
+- Fixes [#3377](https://github.com/gitkraken/vscode-gitlens/issues/3378) - Deleting a worktree (without force) with working changes causes double prompts
+- Fixes fixes issue with Jira integration not refreshing
+- Fixes the _Learn More_ link not working in the account verification dialog
+- Upgrading to Pro and account management now no longer require the user to log in again in their respective pages on _gitkraken.dev_
+- Fixes deep links failing to cancel in the remote add stage
+
 
 <a id="v15-1"></a>
 
