@@ -41,7 +41,7 @@ You can now generate titles and descriptions for Cloud Patches and Code Suggest.
 
 ### Claude 3.5 Sonnet Support
 
-GitLens now supports Anthropic's latest Claude 3.5 Sonnet model for our experimental AI features.
+GitLens now supports Anthropic's latest Claude 3.5 Sonnet model for our experimental AI features. You can switch to this version by selecting `GitLens: Switch AI Model` from the command palette.
 
 ### Added
 
