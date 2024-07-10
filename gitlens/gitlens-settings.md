@@ -47,6 +47,22 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>gitlens.currentLine.uncommittedChangesFormat</code></td>
 <td>Specifies the uncommitted changes format of the current line blame annotation. <strong>NOTE</strong>: Setting this to an empty string will disable current line blame annotations for uncommitted changes</td>
 </tr>
+<tr>
+<td><code>gitlens.currentLine.fontFamily</code></td>
+<td>Specifies the font family of the Inline Blame annotation</td>
+</tr>
+<tr>
+<td><code>gitlens.currentLine.fontSize</code></td>
+<td>Specifies the font size of the Inline Blame annotation</td>
+</tr>
+<tr>
+<td><code>gitlens.currentLine.fontStyle</code></td>
+<td>Specifies the font style of the Inline Blame annotation</td>
+</tr>
+<tr>
+<td><code>gitlens.currentLine.fontWeight</code></td>
+<td>Specifies the font weight of the Inline Blame annotation</td>
+</tr>
 </tbody>
 </table>
 
@@ -262,6 +278,10 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td>Specifies the description format of stashes in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs</td>
 </tr>
 <tr>
+<td><code>gitlens.views.formats.stashes.tooltip</code></td>
+<td>Specifies the tooltip format of the stashes in GitLens views</td>
+</tr>
+<tr>
 <td><code>gitlens.views.pageItemLimit</code></td>
 <td>Specifies the number of items to show in a each page when paginating a view list. Use 0 to specify no limit</td>
 </tr>
@@ -283,7 +303,7 @@ GitLens is highly customizable and provides many configuration settings to allow
 </tr>
 <tr>
 <td><code>gitlens.views.formats.files.label</code></td>
-<td>Specifies specify how the Remotes view will display file icons</td>
+<td>Specifies how the Remotes view will display file icons</td>
 </tr>
 <tr>
 <td><code>gitlens.views.stashes.files.icon</code></td>
@@ -901,6 +921,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.blame.fontWeight</code></td>
 <td>Specifies the font weight of the File Blame annotations</td>
 </tr>
+<tr>
+<td><code>gitlens.blame.fontStyle</code></td>
+<td>Specifies the font style of the File Blame annotations</td>
+</tr>
 </tbody>
 </table>
 ***
@@ -1173,6 +1197,39 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </table>
 ***
 
+## Experimental AI Settings
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.ai.experimental.model</code></td>
+<td>Specifies the AI model to use</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.vscode.model</code></td>
+<td>Specifies the VS Code extension-provided AI model to use when <code>gitlens.ai.experimental.model</code> is set to <code>vscode</code></td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
+<td>Specifies whether to enable GitLens’ experimental, AI-powered, on-demand commit message generation</code></td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.openai.url</code></td>
+<td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
+</tr>
+</tbody>
+</table>
+
+gitlens.ai.experimental.provider, gitlens.ai.experimental.openai.model, gitlens.ai.experimental.anthropic.model, and gitlens.ai.experimental.gemini.model
+
+***
+
 ##Misc Settings
 
 <table>
@@ -1308,22 +1365,6 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
 </tr>
 <tr>
-<td><code>gitlens.ai.experimental.provider</code></td>
-<td>Specifies the AI provider to use (defaults to <code>openai</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.openai.model</code></td>
-<td>Specifies the OpenAI model (defaults to <code>gpt-3.5-turbo</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.anthropic.model</code></td>
-<td>Specifies the Anthropic model (defaults to <code>claude-v1</code>)</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
-<td>Specifies whether to enable GitLens’ experimental, AI-powered, on-demand commit message generation</code></td>
-</tr>
-<tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
 <td><code>${userHome}</code> — the path of the user’s home folder<br><code>${workspaceFolder}</code> — the path of the folder opened in VS Code containing the specified repository<br><code>${workspaceFolderBasename}</code> — the name of the folder opened in VS Code containing the specified repository without any slashes (/)</td>
 </tr>
@@ -1342,14 +1383,6 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tr>
 <td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
 <td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.openai.url</code></td>
-<td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.gemini.model</code></td>
-<td>Specifies the Gemini model for experimental AI features</td>
 </tr>
 </tbody>
 </table>
@@ -1423,19 +1456,19 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tr>
 <tr>
 <td><code>gitlens.graph.dimMergeCommits</code></td>
-<td>Specify whether to dim (deemphasize) merge commit rows</td>
+<td>Specifies whether to dim (deemphasize) merge commit rows</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.scrollRowPadding</code></td>
-<td>Specify the number of rows from the edge at which the graph will scroll when using keyboard or search to change the selected row</td>
+<td>Specifies the number of rows from the edge at which the graph will scroll when using keyboard or search to change the selected row</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.experimental.location</code></td>
-<td> Specify the location in which the Commit Graph will be shown<br><br> <code>tab</code> - Shows the Commit Graph in a tab in the editor area <br><br> <code>view</code> - Shows the Commit Graph in the side bar and can be dragged and dropped into any side bar, secondary side bar, or panel locations</td>
+<td>Specifies the location in which the Commit Graph will be shown<br><br> <code>tab</code> - Shows the Commit Graph in a tab in the editor area <br><br> <code>view</code> - Shows the Commit Graph in the side bar and can be dragged and dropped into any side bar, secondary side bar, or panel locations</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.layout</code></td>
-<td> Specify the default layout in which the Commit Graph will be shown. Can be `panel` (default) or `editor`. This is honored when opening the commit graph from the command palette.</td>
+<td>Specifies the default layout in which the Commit Graph will be shown. Can be `panel` (default) or `editor`. This is honored when opening the commit graph from the command palette.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.allowMultiple</code></td>
@@ -1444,7 +1477,9 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tbody>
 </table>
 
-##Cloud Patches (Preview)
+***
+
+## Cloud Patches (Preview) Settings
 
 <table>
 <thead>
@@ -1457,6 +1492,65 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <tr>
 <td><code>gitlens.cloudPatches.enabled</code></td>
 <td>Specifies whether to enable Cloud Patches (defaults to true)</td>
+</tr>
+</tbody>
+</table>
+
+***
+
+## Launchpad Settings 
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.launchpad.ignoredRepositories</code></td>
+<td>Specifies an array of repositories with <code>owner/name</code> format to ignore in the Launchpad</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.ignoredOrganizations</code></td>
+<td>Specifies an array of organizations (or users) to ignore in the Launchpad</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.staleThreshold</code></td>
+<td>Specifies a value in days after which a pull request is considered stale and moved to the Other category</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.enabled</code></td>
+<td>Specifies whether to show the Launchpad indicator in the status bar</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.icon</code></td>
+<td>Specifies the style of the Launchpad indicator icon</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.label</code></td>
+<td>Specifies the style of the Launchpad indicator label</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.groups</code></td>
+<td>Specifies which critical categories of pull requests to summarize in the indicator tooltip</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.useColors</code></td>
+<td>Specifies whether to use colors in the indicator</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.openInEditor</code></td>
+<td>Specifies whether to open the Launchpad in the editor when clicked</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.polling.enabled</code></td>
+<td>Specifies whether to regularly check for changes to pull requests</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.indicator.polling.interval</code></td>
+<td>Specifies the interval in minutes to check for changes to pull requests</td>
 </tr>
 </tbody>
 </table>

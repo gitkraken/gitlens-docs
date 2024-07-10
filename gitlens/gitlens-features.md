@@ -186,6 +186,10 @@ Adds an on-demand heatmap to the edge of the file to show how recently lines wer
 
 GitKraken Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on the lines that were changed, within GitLens, GitKraken Desktop, and gitkraken.dev. When a Pull Request is open, you can make suggestions to the pull request that others can then review and accept to include in the pull request. 
 
+<div class='callout callout--basic'>
+    <p>Note: Code Suggest is currently only available for repositories on github.com.</p>
+</div>
+
 <img src="/wp-content/uploads/gl-code-suggest.png" class="img-bordered img-responsive center">
 
 To begin suggesting changes, open the [GitLens Inspect Overview](/gitlens/side-bar/#overview) for the desired repository and checkout a branch that has an open pull request. From here, you will have the option to _Start Review for PR #PR_. You may begin modifying and saving any file you would like to include in the code suggestion. Once you are ready, select _Suggest Changes for PR_, provide a title, and then finish with _Create Code Suggestion_. 
@@ -239,7 +243,7 @@ When creating a Cloud Patch, you have the following sharing options:
 Cloud Patches shared with you can be viewed in the Cloud Patches section under `Shared with Me`.
 
 <div class='callout callout--basic'>
-    <p>Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view..</p>
+    <p>Note: If you have multiple organizations, you can easily switch between them from the GitKraken Account view.</p>
 </div>
 
 <img src="/wp-content/uploads/gl-cloud-patch-sharing-options-2.png" class="img-bordered img-responsive center">
@@ -457,7 +461,7 @@ Commit messages can be automatically generated using an AI Provider.
 
 To connect an AI Provider, stage some changes you want to generate a commit message for and then run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to the AI Provider and the entry of your AI Provider key. The API key can be created from your AI Provider's site. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message. There are additional `gitlens.ai` settings that can be [customized](/gitlens/gitlens-settings/#misc-settings) for the provider and model. 
 
-To remove your AI Provider API key in GitLens, run the command `GitLens: Reset Stored AI Key` from the Command Palette.
+To remove your AI Provider API key in GitLens, run the command `GitLens: Reset Stored AI Keys...` from the Command Palette.
 
 ***
 
