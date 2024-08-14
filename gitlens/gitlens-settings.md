@@ -1223,10 +1223,12 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.ai.experimental.openai.url</code></td>
 <td>Specifies a custom URL to use for access to an OpenAI model via Azure. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</td>
 </tr>
+<tr>
+<td><code>gitlens.experimental.generateCommitMessagePrompt</code></td>
+<td>Specifies the prompt to use to tell the AI provider how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
+</tr>
 </tbody>
 </table>
-
-gitlens.ai.experimental.provider, gitlens.ai.experimental.openai.model, gitlens.ai.experimental.anthropic.model, and gitlens.ai.experimental.gemini.model
 
 ***
 
@@ -1359,10 +1361,6 @@ gitlens.ai.experimental.provider, gitlens.ai.experimental.openai.model, gitlens.
 <tr>
 <td><code>gitlens.strings.codeLens.unsavedChanges.authorsOnly</code></td>
 <td>Specifies the string to be shown in place of the <em>authors</em> CodeLens when there are unsaved changes</td>
-</tr>
-<tr>
-<td><code>gitlens.experimental.generateCommitMessagePrompt</code></td>
-<td>Specifies the prompt to use to tell OpenAI how to structure or format the generated commit message — can have fun with it and make your commit messages in the style of a pirate, etc</td>
 </tr>
 <tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
