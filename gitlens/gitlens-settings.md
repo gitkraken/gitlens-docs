@@ -1382,6 +1382,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
 <td>Specifies whether to open multiple changes in VS Code's experimental multi-diff editor (single tab) or in individual diff editors (multiple tabs). <code>multiDiffEditor.experimental.enabled</code> must also be enabled in order to use the multi-diff editor. Requires VS Code 1.85+</td>
 </tr>
+<tr>
+<td><code>gitlens.experimental.cloudIntegrations.enabled</code></td>
+<td>Specifies to connect GitHub integration using cloud integration of GitKraken account</td>
+</tr>
 </tbody>
 </table>
 ***
@@ -1549,6 +1553,10 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <tr>
 <td><code>gitlens.launchpad.indicator.polling.interval</code></td>
 <td>Specifies the interval in minutes to check for changes to pull requests</td>
+</tr>
+<tr>
+<td><code>gitlens.views.launchpad.enabled</code></td>
+<td>(Experimental) Specifies weather to enable an experimental Launchpad view</td>
 </tr>
 </tbody>
 </table>

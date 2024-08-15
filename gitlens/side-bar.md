@@ -267,6 +267,12 @@ The _Tags_ view lists all of the tags, and additionally provides:
 
 ***
 
+## Launchpad view `Preview`
+
+The Launchpad view is an experimental view that offers the ability to always have the [Launchpad](/gitlens/gitlens-features/#launchpad-preview) open. This allows you to view pull request details at a glance in a tree format and take action. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
+
+<img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="img-bordered img-responsive center">
+
 ## Workspaces `PREVIEW`
 
 Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
@@ -387,7 +393,7 @@ The _Search & Compare_ view lists pinnable (saved) results for searching commit 
     - **Number of files changed** — lists all of the files changed between the compared references
     - Comparision results can be provided by the following commands
         - _Compare with Upstream_ command (`gitlens.views.compareWithUpstream`)
-        - _Compare with Working Tree_ command (`gitlens.views.compareWithWorking`)
+        - _Compare Working Tree to Here_ command (`gitlens.views.compareWithWorking`)
         - _Compare with HEAD_ command (`gitlens.views.compareWithHead`)
         - _Compare with Selected_ command (`gitlens.views.compareWithSelected`)
         - _Compare Ancestry with Working Tree_ command (`gitlens.views.compareAncestryWithWorking`)

@@ -391,7 +391,7 @@ The Launchpad organizes pull requests by status allowing you to identify bottlen
 <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
-    <p>Currently, this view is supported for GitHub repositories. In order to see the Launchpad, you will need to connect the <a href="https://help.gitkraken.com/gitlens/gitlens-features/#connecting-the-github-integration">GitHub Integration</a> .</p>
+    <p>Currently, this view is supported for GitHub.com and GitLab.com repositories. In order to see the Launchpad, you will need to connect the <a href="https://help.gitkraken.com/gitlens/gitlens-features/#connecting-the-github-and-gitlab-integration">GitHub Integration</a> .</p>
 </div>
 
 The Launchpad can be accessed from the command palette (`command/ctrl + shift + P`) by searching `GitLens: Open Launchpad` or select the Pull Request from the status bar in VS Code.
@@ -553,10 +553,11 @@ Use autolinks to linkify external references, like Jira issues or Zendesk ticket
 
 ***
 
-##Remote Provider Integrations
+## Remote Provider Integrations
+
 GitLens provides rich integrations with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/settings/#remote-provider-integration-settings) as well.
 
-Basic integrations provide issue and pull request auto-linking, while richer integrations (e.g. GitHub) can provide rich hover information provided for auto-linked issues and pull requests, associate pull requests with branches and commits, and provide avatars.
+Basic integrations provide issue and pull request auto-linking, while richer integrations (e.g. GitHub or GitLab) offer the ability to work with the Launchpad, can provide rich hover information provided for auto-linked issues and pull requests, associate pull requests with branches and commits, and provide avatars.
 
 Additionally, these integrations provide commands to copy the url of or open, files, commits, branches, and the repository on the remote provider.
 
@@ -578,29 +579,15 @@ Additionally, these integrations provide commands to copy the url of or open, fi
 - Open _Repository on Remote_ command (`gitlens.openRepoOnRemote`) — opens the repository on the remote provider
 - Copy _Remote Repository Url_ command (`gitlens.copyRemoteRepositoryUrl`) — copies the url of the repository on the remote provider
 
-###Connecting the GitHub Integration
+### Connecting the GitHub and GitLab Integration
 
-To connect the GitHub integration, open a GitHub.com repository in Visual Studio Code. Then, select a file and hover over the line blame to get the details hover. From here, select `Connect to GitHub`.
+The GitHub and GitLab integration are connected via your GitKraken account from [gitkraken.dev](https://gitkraken.dev/settings/integrations). To connect an integration, open the Command Palette (`command/ctrl+shift+P`) and type `GitLens: Manage Integrations`. You can also navigate to GitKraken Account in the GitLens Activity Bar and select `Integrations`. 
 
-<img src="/wp-content/uploads/gl-connect-to-github.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="img-bordered img-responsive center">
 
-If you are prompted to sign in using GitHub, select `Allow`.
+You will be prompted to log into your GitKraken account if you are not already. Then, select `Connect with GitHub` or `Connect with GitLab` and sign into the desired service. You will have the option to connect multiple integrations if needed. Finish the process by selecting `Complete Setup` to hop back into VS Code and begin working with the integrations. 
 
-<img src="/wp-content/uploads/gh-sign-in.png" class="img-bordered img-responsive center">
-
-Finally, you will be taken to a browser where you will be prompted to sign into GitHub and `Authorize Visual-Studio-Code` to finish connecting. 
-
-<img src="/wp-content/uploads/gh-authorize.png" class="img-bordered img-responsive center">
-
-###Connecting the GitLab Integration
-
-To connect the GitLab integration, open a GitLab.com repository in Visual Studio Code. Then, select a file and hover over the line blame to get the details hover. From here, select the option to `Connect to GitLab`.
-
-<img src="/wp-content/uploads/gl-connect-to-gitlab.png" class="img-bordered img-responsive center">
-
-Next, you will be prompted to provide a Personal Access Token from GitLab.com. If you do not have one already with the required scopes, [follow these instructions](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) to create one. The required scopes for the token are `read_api`, `read_user`, and `read_repository`. Once you have your token, copy and paste it into the prompt and hit `Enter` to finish connecting. 
-
-<img src="/wp-content/uploads/gl-provide-pat.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="img-bordered img-responsive center">
 
 ## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
