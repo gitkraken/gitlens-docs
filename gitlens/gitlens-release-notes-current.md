@@ -84,6 +84,7 @@ Virtual repositories, such as GitHub repositories opened with the GitHub Reposit
 - Fixes [#3445](https://github.com/gitkraken/vscode-gitlens/issues/3445) - Cannot merge branch into detached HEAD
 - Fixes [#3443](https://github.com/gitkraken/vscode-gitlens/issues/3443) - Don't show gitlens context menu items in Copilot Chat codeblock editors
 - Fixes [#3457](https://github.com/gitkraken/vscode-gitlens/issues/3457) - Enriched autolink duplication in graph hover (and possibly other places)
+- Fixes [#3473](https://github.com/gitkraken/vscode-gitlens/issues/3473) - Plus features can't be restored after they are hidden
 - Fixes column resizing being stuck when the mouse leaves the _Commit Graph_
 - Fixes issues with incorrect commit count when using the merge and rebase commands
 - Fixes issues where a merge or rebase operation says there or no changes when there are changes
