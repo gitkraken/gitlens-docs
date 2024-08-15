@@ -16,12 +16,86 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v15-3"></a>
+
+## Version 15.3
+
+#### Tuesday, August 13, 2024
+
+GitLens 15.3 arrives with a host of improvements to popular GitLens features and commands. New branch filtering in the commit graph makes it easier to review history for branches with upstreams to improve pull request reviews. Launchpad has been expanded with GitLab support and is experimentally available as a view. GitHub virtual repositories now support comparisons, and some comparison commands now take a smarter approach to determining directionality of comparison, providing more relevant and useful results.
+
+<img src="/wp-content/uploads/gl-15-3-hero.png" class="img-responsive center img-bordered">
+
+### Commit Graph Branch Visibility
+
+The Commit Graph now adds a third branch visibility option: Smart Branches. Existing options allowed you to show all branches or only the current branch (and its upstream). The new Smart Branches option shows the current branch, its upstream, and its base or target branch. This provides enough history to compare local branch changes with upstream changes on your current branch, and against changes with the merge base to determine, for example, whether a rebase is needed or if conflicts might occur. This option is particularly useful for workflows like pull request reviews.
+
+Branch visibility options have now moved out of the graph filter dropdown and into a new branch visibility dropdown to the left of it in the graph header bar.
+
+### Launchpad Improvements
+
+#### GitLab in Launchpad
+
+Launchpad now includes GitLab support! You can connect your GitLab integration and see GitLab merge requests alongside GitHub pull requests. We've also added a new _Connect Additional Integrations_ button to the titlebar of Launchpad that lets you easily connect additional integrations.
+
+#### Launchpad View (Experimental)
+
+We're experimenting with bringing Launchpad into a view so that you can keep it open and view pull request details at a glance, in a tree format. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
+
+### Comparison Improvements
+
+When comparing commits, stashes, and tags with the HEAD commit via context menu commands, the comparison now uses a combination of commit topology and the timestamp of the reference and HEAD commit in order to determine the directionality of the comparison.
+
+When comparing a commit with the HEAD commit, for example, we order the comparison from the HEAD commit to the chosen commit if it is ahead in time from the HEAD commit, and from the chosen commit to the HEAD commit if it is behind. This ensures that this command, now called _Compare to/from HEAD_, is more useful in general since the revision history within the comparison is always forward-looking.
+
+Virtual repositories, such as GitHub repositories opened locally with the GitHub Repositories extension or on vscode.dev or github.dev, now also support comparison commands within views and the Commit Graph.
+
+### Added
+
+- Adds improvements and enhancements to _Launchpad_ to make it easier to manage and review pull requests
+  - Adds GitLab (cloud-only for now) support to show and manage merge requests in _Launchpad_
+  - Adds a new _Connect Additional Integrations_ button to the _Launchpad_ titlebar to allow connecting additional integrations (GitHub and GitLab currently)
+  - Adds an new experimental _Launchpad_ view to provide a persistent view of the _Launchpad_ in the sidebar
+    - To try it out, run the _Show Launchpad View_ command or set the `gitlens.views.launchpad.enabled` setting to `true` &mdash; let us know what you think!
+    - While its functionality is currently limited, pull requests can be expanded to show changes, commits, and code suggestions, as well as actions to open changes in the multi-diff editor, open a comparision, and more
+- Adds new features and improvements to the _Commit Graph_
+  - Branch visibility options, formerly in the _Graph Filtering_ dropdown, are now moved to the new _Branches Visibility_ dropdown in the _Commit Graph_ header bar
+  - Adds a new _Smart Branches_ visibility option to shows only relevant branches &mdash; the current branch, its upstream, and its base or target branch, to help you better focus
+  - Improves interactions with hovers on rows &mdash; they should do a better job of staying out of your way
+  - Adds pull request information to branches with missing upstreams
+- Adds support for GitHub and GitLab cloud integrations &mdash; automatically synced with your GitKraken account
+  - Adds an improved, streamlined experience for connecting cloud integrations to GitLens
+  - Manage your connected integration via the the _Manage Integrations_ command or the _Integrations_ button on the _GitKraken Account_ view
+- Adds comparison support to virtual (GitHub) repositories
+
+### Changed
+
+- Improves the _Compare to/from HEAD_ command (previously _Compare with HEAD_) to compare commits, stashes, and tags with the HEAD commit where directionality is determined by topology and time
+- Improves the messaging of the merge and rebase commands
+- Renames _Compare with Working Tree_ command to _Compare Working Tree to Here_
+- Renames _Compare Common Base with Working Tree_ command to _Compare Working Tree to Common Base_
+- Renames _Open Worktree in New Window_ Launchpad command to _Open in Worktree_
+- Renames _Open Directory Compare_ command to _Open Directory Comparison_
+- Renames _Open Directory Compare with Working Tree_ command to _Directory Compare Working Tree to Here_
+- Improves some messaging on _Switch_ and _Checkout_ commands
+
+### Fixed
+
+- Fixes [#3445](https://github.com/gitkraken/vscode-gitlens/issues/3445) - Cannot merge branch into detached HEAD
+- Fixes [#3443](https://github.com/gitkraken/vscode-gitlens/issues/3443) - Don't show gitlens context menu items in Copilot Chat codeblock editors
+- Fixes [#3457](https://github.com/gitkraken/vscode-gitlens/issues/3457) - Enriched autolink duplication in graph hover (and possibly other places)
+- Fixes [#3473](https://github.com/gitkraken/vscode-gitlens/issues/3473) - Plus features can't be restored after they are hidden
+- Fixes column resizing being stuck when the mouse leaves the _Commit Graph_
+- Fixes issues with incorrect commit count when using the merge and rebase commands
+- Fixes issues where a merge or rebase operation says there or no changes when there are changes
+- Fixes an error with queries that can cause Jira Cloud and other cloud integrations to stop working
+- Fixes issues with some directory comparison commands
+
 <a id="v15-2"></a>
 
 ## Version 15.2
 
 #### Wednesday, July 10th, 2024
-
 
 GitLens 15.2 introduces several new features and improvements. This release focuses on enhancing the Commit Graph and Launchpad, expanding AI-generated messaging, and additional AI support for the latest Anthropic models.
 
@@ -37,7 +111,7 @@ We've added a new "Open Worktree in New Window" action to the Launchpad. This fe
 
 ### AI-Generated Descriptions
 
-You can now generate titles and descriptions for Cloud Patches and Code Suggest. This is available using the  "Generate Title & Description" button within the title input of the _Create Cloud Patch_ view and in the _Changes to Suggest_ section of the Inspect Overview tab. It uses the AI provider of your choice, helping to save time in creating meaningful titles and descriptions.
+You can now generate titles and descriptions for Cloud Patches and Code Suggest. This is available using the "Generate Title & Description" button within the title input of the _Create Cloud Patch_ view and in the _Changes to Suggest_ section of the Inspect Overview tab. It uses the AI provider of your choice, helping to save time in creating meaningful titles and descriptions.
 
 ### Claude 3.5 Sonnet Support
 
@@ -82,7 +156,6 @@ GitLens now supports Anthropic's latest Claude 3.5 Sonnet model for our experime
 - Upgrading to Pro and account management now no longer require the user to log in again in their respective pages on _gitkraken.dev_
 - Fixes deep links failing to cancel in the remote add stage
 
-
 <a id="v15-1"></a>
 
 ## Version 15.1
@@ -108,7 +181,6 @@ To simplify the overall configuration of AI models, we have unified all settings
 We've made several improvements to the Launchpad to provide a more intuitive and user-friendly experience. The collapsed state of Launchpad groups is now saved between uses, ensuring a consistent view across sessions. The Draft and Pinned categories in the Launchpad always sort their items by date, making it easier to find recent entries. The Launchpad status bar indicator now provides clear indications when there is an error loading data, keeping you informed of any issues. Additionally, we've improved loading performance and are continuing to look for ways to improve that in the future.
 
 To leave us feedback such as what do you think, is this useful, what does it have that you like, what is it missing, etc. reach out to us on the GitLens [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/3286). We really want to hear your feedback!
-
 
 ### Thank you to our contributors
 
@@ -567,7 +639,7 @@ GitLens 14.5 features the all new Cloud Patches preview ☁️, which allows you
 
 ### Cloud Patches preview ☁️
 
-[Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) aim to shift developer collaboration earlier in the process for faster feedback, cleaner pull requests, and overcoming tricky code challenges as a team. Create Cloud Patches from working changes, commits, stashes, or comparisons  &mdash;  then share the patch URL with others to get feedback and iterate on the changes together. It is currently available across GitLens, GitKraken Desktop, and GitKraken CLI, with plans to add commenting and more capabilities soon.
+[Cloud Patches](https://www.gitkraken.com/solutions/cloud-patches) aim to shift developer collaboration earlier in the process for faster feedback, cleaner pull requests, and overcoming tricky code challenges as a team. Create Cloud Patches from working changes, commits, stashes, or comparisons &mdash; then share the patch URL with others to get feedback and iterate on the changes together. It is currently available across GitLens, GitKraken Desktop, and GitKraken CLI, with plans to add commenting and more capabilities soon.
 
 ### Open Multiple Commit Graph & Focus Tabs
 
