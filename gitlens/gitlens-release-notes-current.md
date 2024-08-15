@@ -28,27 +28,27 @@ GitLens 15.3 arrives with a host of improvements to popular GitLens features and
 
 ### Commit Graph Branch Visibility
 
-The Commit Graph now adds a third branch visibility option: Smart Branches. Existing options allowed you to show all branches or only the current branch. The new Smart Branches option shows only the current branch, its upstream, and its base or target branch. This provides enough history to compare local branch changes with upstream changes on your current branch, and against changes with the merge base to determine, for example, whether a rebase is needed or if conflicts might occur. This option is particularly useful for workflows like pull request reviews.
+The Commit Graph now adds a third branch visibility option: Smart Branches. Existing options allowed you to show all branches or only the current branch (and its upstream). The new Smart Branches option shows the current branch, its upstream, and its base or target branch. This provides enough history to compare local branch changes with upstream changes on your current branch, and against changes with the merge base to determine, for example, whether a rebase is needed or if conflicts might occur. This option is particularly useful for workflows like pull request reviews.
 
-Branch visibility options are now also out of their previous home in the graph filter dropdown and into a new branch visibility dropdown to the left of it in the graph header bar.
+Branch visibility options have now moved out of the graph filter dropdown and into a new branch visibility dropdown to the left of it in the graph header bar.
 
 ### Launchpad Improvements
 
 #### GitLab in Launchpad
 
-The Launchpad now includes GitLab support! You can connect your GitLab integration and see GitLab merge requests alongside GitHub pull requests. We've also added a new _Connect Additional Integrations_ button to the top of the Launchpad quickpick that lets you easily connect additional integrations.
+Launchpad now includes GitLab support! You can connect your GitLab integration and see GitLab merge requests alongside GitHub pull requests. We've also added a new _Connect Additional Integrations_ button to the titlebar of Launchpad that lets you easily connect additional integrations.
 
 #### Launchpad View (Experimental)
 
-We're experimenting with bringing Launchpad into a view so that you can keep it open and view pull request details at a glance, in a tree format. You can enable this experimental feature by setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
+We're experimenting with bringing Launchpad into a view so that you can keep it open and view pull request details at a glance, in a tree format. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
 
 ### Comparison Improvements
 
 When comparing commits, stashes, and tags with the HEAD commit via context menu commands, the comparison now uses a combination of commit topology and the timestamp of the reference and HEAD commit in order to determine the directionality of the comparison.
 
-When comparing a commit with the HEAD commit, for example, we order the comparison from the HEAD commit to the chosen commit if it is ahead in time from the HEAD commit, and from the chosen commit to the HEAD commit if it is behind. This ensures that this command, now labeled _Compare to/from HEAD_, is more useful in general since the revision history within the comparison is always forward-looking.
+When comparing a commit with the HEAD commit, for example, we order the comparison from the HEAD commit to the chosen commit if it is ahead in time from the HEAD commit, and from the chosen commit to the HEAD commit if it is behind. This ensures that this command, now called _Compare to/from HEAD_, is more useful in general since the revision history within the comparison is always forward-looking.
 
-Virtual repositories, such as GitHub repositories opened with the GitHub Repositories extension, now also support comparison commands within views and the Commit Graph.
+Virtual repositories, such as GitHub repositories opened locally with the GitHub Repositories extension or on vscode.dev or github.dev, now also support comparison commands within views and the Commit Graph.
 
 ### Added
 
