@@ -48,8 +48,7 @@ TBD
 - Adds an "alt" _Pull_ command for the inline _Fetch_ command on branches in views
 - Adds an "alt" _Fetch_ command for the inline _Pull_ command on branches in views
 - Adds _Open Comparison on Remote_ command to branch comparisons in views
-- Adds an option to delete a worktree along with its branch from the _Git Delete Worktree_ command
-- Adds a step to delete the worktree of a branch first if one exists when using the _Git Delete Branch_ command
+- Adds new options to the _Git Delete Worktree_ command to also delete the associated branch along with the worktree
 
 ### Changed
 
@@ -62,6 +61,7 @@ TBD
 - Fixes [#3479](https://github.com/gitkraken/vscode-gitlens/issues/3479) - Tooltip flickering
 - Fixes [#3472](https://github.com/gitkraken/vscode-gitlens/issues/3472) - "Compare working tree with.." often flashes open then closes the menu
 - Fixes [#3448](https://github.com/gitkraken/vscode-gitlens/issues/3448) - "Select for Compare" on a Commit/Stash/etc causes the Search and Compare view to be forcibly shown
+- Fixes the _Git Delete Branch_ command when deleting a branch that is open on a worktree by adding a step to delete the branch's worktree first
 - Fixes an issue where pull requests in views could show the wrong comparison with the working tree when using worktrees
 - Fixes _Copy Remote Comparison URL_ command to not open the URL, just copy it
 - Fixes cloud integrations remaining disconnected after disconnecting and reconnecting to a GitKraken account
