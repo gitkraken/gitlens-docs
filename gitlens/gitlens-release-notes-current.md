@@ -16,6 +16,61 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v15-4"></a>
+
+## Version 15.4
+
+#### Wednesday, September 4, 2024
+
+<img src="/wp-content/uploads/gl-15-4-hero.png" class="img-responsive center img-bordered">
+
+### Branch Icon and Tooltip Improvements
+
+Branches in views and quick pick menus have received a few visual improvements to reduce clutter and make it easier to understand branch state. Branches with worktrees now display a repository icon instead of the typical branch icon, and the tooltip now also indicates that the branch is in a worktree. Branch tooltips now also split out information in a way that is easier to read.
+
+### Worktree Deletion Improvements
+
+When a branch has an associated worktree, it is now easier to clean up the associated branch when deleting the worktree, and vice versa. Using the _Git Delete Worktree_ command on a worktree now also includes options to delete or force-delete both the worktree and its associated branch. Similarly, when deleting a branch that has a worktree, the user is first presented with options for deleting the branch's worktree before deleting the branch itself.
+
+### Branch and Working Tree Comparison Improvements
+
+TBD
+
+### Added
+
+- Adds better support for branches in worktrees
+  - Changes the branch icon to a "repo" icon when the branch is in a worktree in views, quick pick menus, and the _Commit Graph_
+  - Adds an _Open in Worktree_ inline and context menu command and an _Open in Worktree in New Window_ context menu command to branches in views and on the _Commit Graph_
+  - Removes the _Switch to Branch..._ inline and context menu command from branches in views and on the _Commit Graph_ when the branch is in a worktree
+- Adds ability to only search stashes when using `type:stash` (or `is:stash`) in commit search via the _Commit Graph_, _Search & Compare_ view, or the _Search Commits_ command
+- Adds `...` inline command for stashes on the _GitLens Inspect_ view
+- Adds an "up-to-date" indicator dot to the branch icon of branches in views
+- Adds an "alt" _Pull_ command for the inline _Fetch_ command on branches in views
+- Adds an "alt" _Fetch_ command for the inline _Pull_ command on branches in views
+- Adds _Open Comparison on Remote_ command to branch comparisons in views
+- Adds an option to delete a worktree along with its branch from the _Git Delete Worktree_ command
+- Adds a step to delete the worktree of a branch first if one exists when using the _Git Delete Branch_ command
+
+### Changed
+
+- Improves the branch comparisons in views to automatically select the base or target branch
+- Improves tooltips on branches, remotes, and worktrees in views
+- _Upgrade to Pro_ flows now support redirects back to GitLens
+
+### Fixed
+
+- Fixes [#3479](https://github.com/gitkraken/vscode-gitlens/issues/3479) - Tooltip flickering
+- Fixes [#3472](https://github.com/gitkraken/vscode-gitlens/issues/3472) - "Compare working tree with.." often flashes open then closes the menu
+- Fixes [#3448](https://github.com/gitkraken/vscode-gitlens/issues/3448) - "Select for Compare" on a Commit/Stash/etc causes the Search and Compare view to be forcibly shown
+- Fixes an issue where pull requests in views could show the wrong comparison with the working tree when using worktrees
+- Fixes _Copy Remote Comparison URL_ command to not open the URL, just copy it
+- Fixes cloud integrations remaining disconnected after disconnecting and reconnecting to a GitKraken account
+- Fixes "switch" deep links sometimes failing to complete in cases where the switch occurs in the current window
+
+### Removed
+
+- Removes status (ahead, behind, etc) decoration icons from branches in views
+
 <a id="v15-3"></a>
 
 ## Version 15.3
