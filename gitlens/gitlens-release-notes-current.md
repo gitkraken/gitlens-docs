@@ -22,6 +22,8 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Wednesday, September 4, 2024
 
+GitLens 15.4 focuses on branches and worktrees, with icon and tooltip upgrades that make the association between branches and worktrees clearer, improved cleanup when deleting a branch with a worktree or a worktree with a branch, improvements to comparisons, and more.
+
 <img src="/wp-content/uploads/gl-15-4-hero.png" class="img-responsive center img-bordered">
 
 ### Branch Icon and Tooltip Improvements
