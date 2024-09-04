@@ -22,21 +22,25 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Wednesday, September 4, 2024
 
-GitLens 15.4 focuses on branches and worktrees, with icon and tooltip upgrades that make the association between branches and worktrees clearer, improved cleanup when deleting a branch with a worktree or a worktree with a branch, improvements to comparisons, and more.
+GitLens 15.4 focuses on branches and worktrees, with icon, action, and tooltip upgrades that make the association between branches and worktrees clearer, improved cleanup when deleting a branch with a worktree or a worktree with a branch, improvements to comparisons, and more.
 
 <img src="/wp-content/uploads/gl-15-4-hero.png" class="img-responsive center img-bordered">
 
-### Branch Icon and Tooltip Improvements
+### Worktee Enhancements
 
 Branches in views and quick pick menus have received a few visual improvements to reduce clutter and make it easier to understand branch state. Branches with worktrees now display a repository icon instead of the typical branch icon, and the tooltip now also indicates that the branch is in a worktree. Branch tooltips now also split out information in a way that is easier to read.
 
-### Worktree Deletion Improvements
+### Branch & Worktree Cleanup Improvements
 
 When a branch has an associated worktree, it is now easier to clean up the associated branch when deleting the worktree, and vice versa. Using the _Git Delete Worktree_ command on a worktree now also includes options to delete or force-delete both the worktree and its associated branch. Similarly, when deleting a branch that has a worktree, the user is first presented with options for deleting the branch's worktree before deleting the branch itself.
 
-### Branch and Working Tree Comparison Improvements
+### Branch Comparison Improvements
 
-TBD
+On the _Commits_ view and nested within branches on the _Branches_ view, there is a comparison item to quickly compare the branch with another reference (branch, commit, tag, etc). In GitLens 15.4, we now automatically pick the "best" target branch as the default reference to compare with. Expand the _Ahead_ item to review your changes as they would be applied to the target branch.
+
+### Commit Graph Search Additions
+
+On the _Commit Graph_ (and commit search from the _Search & Compare_ view) you can now limit a search to only search within stashes. Use `type:stash` (or `is:stash`) to highlight all your stashes, or add it to a search query to limit the results to stashes.
 
 ### Added
 
