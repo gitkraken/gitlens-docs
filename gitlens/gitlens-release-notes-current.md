@@ -16,6 +16,54 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v15-5"></a>
+
+## Version 15.5
+
+#### Thursday, September 12, 2024
+
+GitLens 15.5 brings a few notable changes for the Commit Graph, current branches and worktree creation.
+
+<img src="/wp-content/uploads/gl-15-5-hero.png" class="img-responsive center img-bordered">
+
+### Launchpad Preview Ending
+
+Preview access to Launchpad ends on September 27th. After this date, GitLens users will need a Pro account to continue accessing Launchpad and Launchpad View. The Launchpad status bar summary will continue to be free for everyone.
+
+### Commit Graph Sidebar
+
+We've equipped the Commit Graph with a sidebar which gives you quick and convenient access to branches, remotes, stashes, tags, and worktrees from within the graph. Clicking an icon from the sidebar will take you to its respective view. You can enable the new sidebar by setting `gitlens.graph.sidebar.enabled` to `true` in your settings.
+
+### Current Branch Visibility
+
+You now have the option to see your current branch at the top of the list anywhere local branches are shown in views. To enable this feature, turn on `gitlens.views.showCurrentBranchOnTop` in settings.
+
+### Simplified Worktree Creation
+
+We've streamlined the Create Worktree command flow, now prompting for a new branch name only when necessary. This simplifies the creation of worktrees from different sources.
+
+### Added
+
+- Adds a `gitlens.views.showCurrentBranchOnTop` setting to specify whether the current branch is shown at the top of the views &mdash; closes [#3520](https://github.com/gitkraken/vscode-gitlens/issues/3520)
+- Adds a sidebar to the _Commit Graph_
+  - Shows counts of branches, remotes, stashes, tags, and worktrees
+  - Clicking an item reveals it's corresponding view
+  - Try out this new feature by enable the setting `gitlens.graph.sidebar.enabled` to `true`
+
+### Changed
+
+- Preview access of Launchpad is ending on September 27th
+- Improves the branch comparisons in views to automatically select the base or target branch
+
+### Fixed
+
+- Fixes [#3514](https://github.com/gitkraken/vscode-gitlens/issues/3514) - Attempting to delete the main worktree's branch causes a invalid prompt to delete the main worktree
+- Fixes [#3518](https://github.com/gitkraken/vscode-gitlens/issues/3518) - Branches in worktrees are no longer collapsed into folder groupings
+
+### Removed
+
+- Removes (disables) legacy "focus" editor
+
 <a id="v15-4"></a>
 
 ## Version 15.4
