@@ -329,6 +329,10 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>gitlens.views.collapseWorktreesWhenPossible</code></td>
 <td>Specifies whether to try to collapse the opened worktrees into a single (common) repository in the views when possible</td>
 </tr>
+<tr>
+<td><code>Gitlens.views.showCurrentBranchOnTo</code></td>
+<td>Specifies whether the current branch is shown at the top of the views</td>
+</tr>
 </tbody>
 </table>
 
@@ -1476,6 +1480,10 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <td><code>gitlens.graph.allowMultiple</code></td>
 <td>Specifies whether to allow opening multiple instances of the Commit Graph in the editor area</td>
 </tr>
+<tr>
+<td><code>gitlens.graph.sidebar.enabled</code></td>
+<td>Specifies whether to show a sidebar on the Commit Graph</td>
+</tr>
 </tbody>
 </table>
 
@@ -1556,7 +1564,7 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 </tr>
 <tr>
 <td><code>gitlens.views.launchpad.enabled</code></td>
-<td>(Experimental) Specifies weather to enable an experimental Launchpad view</td>
+<td>(Experimental) Specifies whether to enable an experimental Launchpad view</td>
 </tr>
 </tbody>
 </table>
