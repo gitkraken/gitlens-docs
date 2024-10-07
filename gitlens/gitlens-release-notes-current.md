@@ -89,6 +89,11 @@ Shout-out to our awesome contributors for this release!
 - Fixes _Open in Worktree_ command sometimes showing an unnecessary worktree confirmation step
 - Fixes some instances where the progress notification lingers after canceling when connecting an integration
 
+### Engineering
+
+- Adds end-to-end testing infrastructure using [Playwright](https://playwright.dev)
+- Adds vscode-test to run unit-tests &mdash; closes [#3570](https://github.com/gitkraken/vscode-gitlens/issues/3570)
+
 <a id="v15-5"></a>
 
 ## Version 15.5
