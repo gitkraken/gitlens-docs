@@ -1566,5 +1566,9 @@ GitLens defines a set of themable colors which can be provided by vscode themes 
 <td><code>gitlens.views.launchpad.enabled</code></td>
 <td>(Experimental) Specifies whether to enable an experimental Launchpad view</td>
 </tr>
+<tr>
+<td><code>gitlens.launchpad.includedOrganizations</code></td>
+<td>Specifies which organizations to include in Launchpad</td>
+</tr>
 </tbody>
 </table>
