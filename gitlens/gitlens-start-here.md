@@ -13,13 +13,13 @@ GitLens is an extension built to work with [Visual Studio Code](https://code.vis
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens</a> 
 
-GitLens simply helps you better understand code. Quickly glimpse into whom, why, and when a line or code block was changed. Jump back through history to gain further insights as to how and why the code evolved. Effortlessly explore the history and evolution of a codebase. 
-
-[Sign up and try GitLens for free](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web)! No credit card required. 
+Or [start a GitLens Pro trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web) by creating an account. No credit card required. You will be redirected to VS Code upon account completion. 
 
 ***
 
 ## Start Here
+
+GitLens simply helps you better understand code. Quickly glimpse into whom, why, and when a line or code block was changed. Jump back through history to gain further insights as to how and why the code evolved. Effortlessly explore the history and evolution of a codebase.
 
 There are a variety of features in GitLens - below are the three most popular workflows users are leveraging to improve their developer productivity:
 
@@ -47,8 +47,6 @@ When you are ready to dive deeper into a specific area, you can use GitLens Insp
 
 From inside a file, Inline Blame and Hovers provide the answers to who exactly changed a specific line in a file, when, and why. To see the Inline Blame, select a file and then a line in the file. You can hover over the blame to take action on it such as viewing the previous revision, opening the pull request it was included in, opening the commit in the Commit Graph, and much more. 
 
-(Hover actions gif)
-
 ### Accelerate PR Reviews
 
 <div class='embed-container embed-container--16-9'>
@@ -62,8 +60,6 @@ Reviewing pull requests can be cumbersome due to needing to context switch to a 
 To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
 
 Here, you can see pull requests that are open on your current branch, blocked, need your review, require follow-up, waiting for a review, and in draft.
-
-(screenshot of launchpad groups)
 
 To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
 
@@ -91,8 +87,6 @@ Cloud Patches are Git patches that can be shared with anyone in your GitKraken o
 
 To create a cloud patch, make changes to any file in a repository and then save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Share as Cloud Patch…_. 
 
-(create cloud patch gif)
-
 When you select members to share it with, they will see this in the Cloud Patch sidebar to be able to apply to their working directory.
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)!
@@ -103,11 +97,7 @@ Code Suggest allows you to make edits across the entire repository that can be s
 
 To create a Code Suggestion, have a branch checked out with an open pull request, make changes to any files and save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Show inspect view_ > Suggest Changes for PR. 
 
-(create code suggest gif)
-
 The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
-
-(opening and accepting code suggestions in GitLens)
 
 ***
 
