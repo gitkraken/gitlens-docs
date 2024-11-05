@@ -11,17 +11,17 @@ taxonomy:
     <iframe width='560' height='315' src='https://youtube.com/embed/ljKEzaCMEow?si=Fuugc_rFOznC8zEW' frameborder='0' allowfullscreen></iframe>
 </div>
 
-## GitLens Community vs. GitLens Pro: Which Edition is Right for You?
+<br>
 
 Whether you're reviewing code changes, managing pull requests, or diving into your project's history, GitLens transforms your Git experience directly within VS Code. Let's explore which edition best fits your workflow.
 
-## GitLens Community: Powerful Git Integration at Your Fingertips
+### GitLens Community
 
 The Community edition of GitLens gives you powerful tools to manage Git and understand how your code has evolved and by whom. With popular features like in-editor blame annotations, hovers, and CodeLens, you can see actionable authorship details at the top of each file. Track the history of any file over time using Revision Navigation to gain deeper insights into code changes.
 
 _Perfect for: Individual developers and anyone looking to enhance their Git workflow._
 
-## GitLens Pro: Advanced Features and Workflows for professional developers and teams
+### GitLens Pro
 
 GitLens Pro takes your workflow to the next level by unlocking advanced features and seamless integrations:
 
@@ -31,7 +31,7 @@ GitLens Pro takes your workflow to the next level by unlocking advanced features
 
 _Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity._
 
-## Making Your Choice
+### Making Your Choice
 
 Both GitLens Community and Pro provide valuable tools to support your Git workflows. The Community edition is an excellent choice if you're looking for essential Git management tools for free. If your work involves extensive PR reviews, collaborative workflows, and advanced Git actions, upgrading to GitLens Pro will unlock powerful features that can make a significant difference in your productivity.
 
@@ -53,4 +53,11 @@ _Both editions are backed by our commitment to enhancing your development experi
 
 **Choose Community** if you want robust Git insights and management tools for personal or small team use
 **Upgrade to Pro** if you need advanced collaboration features, streamlined PR workflows, and powerful Git actions
+
 [Feature sheet]
+
+### Get Started with GitLens Pro Today
+
+<a class="button button--basic" href="https://gitkraken.dev/register" target="_blank">Try GitLens Pro for free</a> 
+
+You can try GitLensPro for free for 14 days. And when you’re ready, you can [upgrade to GitLens Pro](https://gitkraken.dev/purcahse) by subscribing to a paid account. 
