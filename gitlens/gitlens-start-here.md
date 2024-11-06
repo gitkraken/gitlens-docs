@@ -27,7 +27,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
     <iframe width='560' height='315' src='https://youtube.com/embed/uSc7aQV8uMs' frameborder='0' allowfullscreen></iframe>
 </div>
 
-<p></p>
+<p> &nbsp; </p>
 
 Understanding code history can be difficult when looking at complex repositories with multiple branches and contributors. Developers can struggle to easily see who made changes, why, and when. With the use of The Commit Graph, GitLens Inspect, and Inline Blame and Hovers, GitLens offers the ability to easily navigate through your repository to provide insights about the history and interact with it to better manage your code. 
 
@@ -55,7 +55,7 @@ From inside a file, Inline Blame and Hovers provide the answers to who exactly c
     <iframe width='560' height='315' src='https://youtube.com/embed/FJ_IdTcqBi0?si=SJINtK84y2PqNXZJ' frameborder='0' allowfullscreen></iframe>
 </div>
 
-***
+<p> &nbsp; </p>
 
 Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and utilize worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
 
@@ -85,7 +85,7 @@ Once you have opened a worktree, you can easily begin reviewing all changes made
     <iframe width='560' height='315' src='https://youtube.com/embed/ljKEzaCMEow?si=Fuugc_rFOznC8zEW' frameborder='0' allowfullscreen></iframe>
 </div>
 
-***
+<p> &nbsp; </p>
 
 When collaborating with others in a repository, it can be difficult to share code without bloating your repository with multiple commits and branches that may not be ready to contribute to the remote. Additionally, pull request reviews can be limiting for what you have access to review, comment on, and does not give you the ability to review files that have not been modified. With the use of Cloud Patches and Code Suggest, GitLens offers the ability to easily share code without needing to commit/push it to a remote and allows you to suggest code changes to any file in the repository.
 
@@ -115,7 +115,7 @@ The pull request creator can then review these changes, apply them to their work
     <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=EklNj8AbpuhoTwSr' frameborder='0' allowfullscreen></iframe>
 </div>
 
-***
+<p> &nbsp; </p>
 
 Enhance your productivity in GitLens by reducing context switching and automating your workflow with Integrations and Autolinks. By connecting to platforms like GitHub, GitLab, Azure DevOps, and Bitbucket, you can seamlessly sync repositories and track issues within Launchpad—your PR hub. Additionally, Autolinks enables automatic linking to external services, making it easy to reference issues from platforms like Jira and Trello directly in your workflow. 
 
