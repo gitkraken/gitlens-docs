@@ -24,7 +24,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 ### Interactive Code History
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/uSc7aQV8uMs' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://youtube.com/embed/uSc7aQV8uMs?si=qaI0fFid_cGKcjB3' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
