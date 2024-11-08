@@ -8,7 +8,7 @@ taxonomy:
 ---
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/ljKEzaCMEow?si=Fuugc_rFOznC8zEW' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/dOLvYFgJPyY?si=nrsvqkIRVZ-6z5Y8' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -35,7 +35,7 @@ _Perfect for: Professional developers, teams focused on collaboration, and organ
 
 Both GitLens Community and Pro provide valuable tools to support your Git workflows. The Community edition is an excellent choice if you're looking for a powerful free VS Code Git management tool. If your work involves PR reviews, collaborative workflows, and advanced Git actions, upgrading to GitLens Pro will unlock new features and workflows to increase your developer productivity.
 
-<img src="/wp-content/uploads/gl-community-vs-pro.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/gl-community-vs-pro.png" class="img-bordered img-responsive center" style="padding-left: 20%; padding-right: 20%;">
 
 _Both editions are backed by our commitment to enhancing your development experience. Start with Community and upgrade to Pro when you need additional horsepower for your workflows._
 

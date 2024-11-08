@@ -267,9 +267,9 @@ The _Tags_ view lists all of the tags, and additionally provides:
 
 ***
 
-## Launchpad view `Preview`
+## Launchpad view
 
-The Launchpad view is an experimental view that offers the ability to always have the [Launchpad](/gitlens/gitlens-features/#launchpad-preview) open. This allows you to view pull request details at a glance in a tree format and take action. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
+The Launchpad view is an experimental view that offers the ability to always have the [Launchpad](/gitlens/gitlens-features/#launchpad) open. This allows you to view pull request details at a glance in a tree format and take action. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
 
 <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="img-bordered img-responsive center">
 

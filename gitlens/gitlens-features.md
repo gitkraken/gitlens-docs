@@ -384,7 +384,7 @@ Minimap Overview:
 
 ***
 
-## Launchpad `PREVIEW`
+## Launchpad
 
 The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
