@@ -15,6 +15,11 @@ Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ---
+<a id="v16-0"></a>
+
+## Version 16.0
+
+#### Tuesday, November 12, 2024
 
 <a id="v15-6"></a>
 
