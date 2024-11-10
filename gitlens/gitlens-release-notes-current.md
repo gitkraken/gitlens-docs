@@ -21,6 +21,62 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Tuesday, November 12, 2024
 
+GitLens 16 brings a redesigned Home View, streamlined Source Control grouping, improved branch workflows, enhanced graph filtering, new pull request search capabilities, and AI-powered features to boost your productivity.
+
+HERO IMAGE HERE
+
+### New Home View
+
+GitLens 16 introduces a completely redesigned Home View (accessible via the GitLens icon in the VS Code activity bar) to streamline your development workflow.
+
+The new Home View helps guide your daily workflow by answering key questions: "What am I working on now?", "What do I need to do next?", and "What have I worked on recently?" These answers are provided in the three main sections of the Home View:
+
+#### Active
+Shows your current repository and branch, alongside the repository state and actions for syncing (push, pull, fetch), switching repos/branches, and viewing working directory changes.
+
+If your branch is tied to a pull request or issue, GitLens surfaces those details so you can check PR status, continue reviews, or revisit issue specs. GitLens will also guide you to start a PR from your current branch if it can't find one.
+
+#### Launchpad
+
+Unblocks you and your team by showing pull requests that need your review, are blocked, or are ready to merge. Quickly jump to PRs to review, comment, or merge.
+With the new Start work action, you can easily begin a new branch or worktree, or generate one from an existing issue.
+> 💡 Connect integrations to view pull request and issue information in GitLens
+
+#### Recent
+
+Lets you quickly return to previous work by showing recent branches, worktrees, and PRs with activity for your chosen timeframe.
+
+Enable the new Home View preview in settings: `"gitlens.home.preview.enabled": true`.
+
+#### Feedback
+We'll be continuing to refine this view in future releases and welcome your feedback to help shape it. Join in on the [New Home View Discussion](https://github.com/gitkraken/vscode-gitlens/discussions/3721).
+
+### Grouped GitLens Source Control Views
+
+GitLens Source Control Views (Commits, Branches, Remotes, etc.) can now be grouped under a unified "GitLens" view. You can navigate grouped views by clicking the icons in the new "GitLens" view, or detach them to be displayed as individual views in Source Control. This should reduce clutter in your workspace and give you more control over which views are prominently displayed.
+
+### "Start Work" Workflow
+
+The new Start Work feature allows you to quickly create a branch or worktree, either from scratch or from an existing issue. GitLens will even name your branch based on the issue title and number, making it easy to stay organized. Access it from the Home View or via the command palette `GitLens: Start work`.
+
+### Graph Filtering
+
+We’ve added a toggle to filter the commit graph, allowing you to hide non-matching commits during a search. This makes it easy to focus only on relevant changes.
+
+### Launchpad PR Search
+
+Search pull requests directly from Launchpad—whether they’re included in the default Launchpad filters or not. Search by title, PR number, or URL for quick access. (GitHub support only for now.)
+
+### AI Updates
+
+AI features are now in preview! You’ll see improved UX, support for new models from Anthropic, Open AI, GitHub Copilot, and more. Access to AI features requires a free account.
+
+### Thank you to our contributors
+### Added
+### Changed
+### Fixed
+### Engineering
+
 <a id="v15-6"></a>
 
 ## Version 15.6
