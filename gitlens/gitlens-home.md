@@ -24,7 +24,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 ### Interactive Code History
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/uSc7aQV8uMs?si=qaI0fFid_cGKcjB3' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/uSc7aQV8uMs?si=7bGXpqRI0lv7k-A0' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -52,7 +52,7 @@ From inside a file, Inline Blame and Hovers provide the answers to who exactly c
 ### Accelerate PR Reviews
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/FJ_IdTcqBi0?si=SJINtK84y2PqNXZJ' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -82,7 +82,7 @@ Once you have opened a worktree, you can easily begin reviewing all changes made
 ### Streamline Collaboration 
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/ljKEzaCMEow?si=Fuugc_rFOznC8zEW' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -112,7 +112,7 @@ The pull request creator can then review these changes, apply them to their work
 ### Improve Workflows With Integrations
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=EklNj8AbpuhoTwSr' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=elYPqhs10LRf4W1b' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
