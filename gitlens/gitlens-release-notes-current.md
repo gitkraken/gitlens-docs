@@ -22,13 +22,13 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Thursday, November 14, 2024
 
-GitLens 16 brings a redesigned Home View, streamlined Source Control grouping, improved branch workflows, enhanced graph filtering, new pull request search capabilities, and AI-powered features to boost your productivity.
+GitLens 16 brings a reimagined Home View, streamlined Source Control grouping, improved branch workflows, enhanced graph filtering, new pull request search capabilities, and AI-powered features to boost your productivity.
 
 <img src="/wp-content/uploads/gl-16-0-hero.png" class="img-responsive center img-bordered">
 
 ### New Home View
 
-GitLens 16 introduces a completely redesigned Home View (accessible via the GitLens icon in the VS Code activity bar) to streamline your development workflow.
+GitLens 16 introduces a completely reimagined Home View (accessible via the GitLens icon in the VS Code activity bar) to streamline your development workflow.
 
 The new Home View helps guide your daily workflow by answering key questions: "What am I working on now?", "What do I need to do next?", and "What have I worked on recently?" These answers are provided in the three main sections of the Home View:
 
