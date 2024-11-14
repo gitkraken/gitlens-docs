@@ -7,10 +7,8 @@ taxonomy:
 
 ---
 
-All features are free to use on all repos, **except** for features:  
-
-- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
 
 ***
 
@@ -453,7 +451,7 @@ Gain additional insights on hover.
 
 ***
 
-## AI-Generated Commit Messages (Experimental) `PRO`
+## AI-Generated Commit Messages (Preview) `PRO`
 
 Commit messages can be automatically generated using an AI Provider.
 

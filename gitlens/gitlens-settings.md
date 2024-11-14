@@ -1201,7 +1201,7 @@ See also [View Settings](/gitlens/settings/#view-settings)
 </table>
 ***
 
-## Experimental AI Settings
+## AI Settings - Preview
 
 <table>
 <thead>
@@ -1213,7 +1213,30 @@ See also [View Settings](/gitlens/settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.ai.experimental.model</code></td>
-<td>Specifies the AI model to use</td>
+<td>Specifies the AI model to use. The supported models are:
+<code>vscode</code><br>
+<code>openai:gpt-4</code><br>
+<code>openai:gpt-4o</code><br>
+<code>xai:grok-beta</code><br>
+<code>openai:gpt-4-32k</code><br>
+<code>anthropic:claude-2</code><br>
+<code>openai:gpt-4-turbo</code><br>
+<code>openai:gpt-4o-mini</code><br>
+<code>anthropic:claude-2.1</code><br>
+<code>openai:gpt-3.5-turbo</code><br>
+<code>google:gemini-1.0-pro</code><br>
+<code>openai:gpt-3.5-turbo-16k</code><br>
+<code>anthropic:claude-instant-1</code><br>
+<code>openai:gpt-4-turbo-preview</code><br>
+<code>google:gemini-1.5-pro-latest</code><br>
+<code>anthropic:claude-3-opus-latest</code><br>
+<code>google:gemini-1.5-flash-latest</code><br>
+<code>anthropic:claude-3-opus-20240229</code><br>
+<code>anthropic:claude-3-haiku-20240307</code><br>
+<code>anthropic:claude-3-5-sonnet-latest</code><br>
+<code>anthropic:claude-3-sonnet-20240229</code><br>
+<code>anthropic:claude-3-5-sonnet-20240620</code><br>
+<code>anthropic:claude-3-5-sonnet-20241022</code><br></td>
 </tr>
 <tr>
 <td><code>gitlens.ai.experimental.vscode.model</code></td>

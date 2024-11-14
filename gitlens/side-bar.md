@@ -9,10 +9,8 @@ taxonomy:
 
 GitLens adds many side bar views to provide additional rich functionality. There are three side bars with GitLens views in them: GitLens Inspect, GitLens, and Source Control.
 
-All views are free to use on all repos, **except** for views:  
-
-- marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-- marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
+Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
 
 ***
 
@@ -281,7 +279,7 @@ Whether you're working individually or collaborating with a team, these new feat
 
 To access Workspaces, simply open the GitLens Home menu and you will find them in the panel located at the bottom left. Alternatively, you can access them by performing a search in the command palette.
 
-Please note that while using cloud workspaces requires a free account, shared cloud workspaces require a trial or subscription.
+Please note that while using cloud workspaces requires a GitKraken account, shared cloud workspaces require a trial or subscription.
 
 <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="img-bordered img-responsive center">
 
