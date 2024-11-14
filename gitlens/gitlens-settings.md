@@ -333,6 +333,14 @@ GitLens is highly customizable and provides many configuration settings to allow
 <td><code>Gitlens.views.showCurrentBranchOnTo</code></td>
 <td>Specifies whether the current branch is shown at the top of the views</td>
 </tr>
+<tr>
+<td><code>gitlens.views.scm.grouped.default</code></td>
+<td>Specifies the default view to show in the grouped GitLens view on new workspaces/folders (otherwise the last selected view is remembered)</td>
+</tr>
+<tr>
+<td><code>gitlens.views.scm.grouped.views</code></td>
+<td>Specifies which views to show in the grouped GitLens view</td>
+</tr>
 </tbody>
 </table>
 

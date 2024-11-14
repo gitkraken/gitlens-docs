@@ -382,7 +382,7 @@ Minimap Overview:
 
 ***
 
-## Launchpad
+## Launchpad `PRO`
 
 The Launchpad organizes pull requests by status allowing you to identify bottlenecks and take actions on them. This offers the ability to organize and quickly take actions on pull requests with priority.
 
@@ -407,27 +407,6 @@ Here you can see a list of all pull requests for your repositories that are read
 You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></i> to move them to the pinned group or snooze them by selecting the snooze icon <i class="fa-solid fa-snooze"></i> to move them into the snooze group. To unpin or unsnooze, select the pin or snooze icon again. 
 
 <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" class="img-bordered img-responsive center">
-
-### Launchpad from the editor
-
-To open the Launchpad in an editor tab, open the command palette (`command/ctrl + shift + P`) and search `GitLens: Open Launchpad in editor`.
-
-<img src="/wp-content/uploads/gl-focus-view-4.png" class="img-bordered img-responsive center">
-
-Within the Launchpad in the editor, you can show pull requests and issues that are opened by you, assigned to you, that need your review, or that mention you. Filters can be set to show only issues, pull requests, or all.
-
-<img src="/wp-content/uploads/gl-focus-view-filters.png" class="img-bordered img-responsive center">
-
-The Launchpad in the editor offers the ability to perform actions on pull requests, issues, and branches:
-* For pull requests, you can create or open a worktree or branch using the arrow and folder icon under the Actions column.
-* For issues, you can open them on the remote service using the globe icon.
-* For branches, you can click the branch name to open that branch on the commit graph.
-
-<img src="/wp-content/uploads/gl-focus-view-actions.png" class="img-bordered img-responsive center">
-
-Items in the Launchpad can be pinned, to move the item to the top of the list, and can be snoozed, to be hidden under the Snoozed section. To pin or unpin and item, click the pin <i class="fa-solid fa-thumbtack"></i> in the pin/snooze column. To snooze an item, select the snooze <i class="fa-solid fa-snooze"></i> icon, and then select the snooze duration - selecting `snooze` will snooze the item indefinitely, until it is unsnoozed. To unsnooze an item, click on the `SNOOZED` section header and click the unsnooze icon for that item.
-
-<img src="/wp-content/uploads/gl-14-4-focus-view-update.png" class="img-bordered img-responsive center">
 
 <div class='callout callout--basic'>
     <p>Note: The Launchpad is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>

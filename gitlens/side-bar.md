@@ -27,17 +27,26 @@ GitLens Inspect side bar focuses on providing contextual information and insight
 - Visual File History
 - Search & Compare
 
-<img src="/wp-content/uploads/gl-inspect-side-bar.png" class="img-responsive left"> 
+<img src="/wp-content/uploads/gl-inspect-side-bar.png" class="img-responsive center"> 
 
 ### GitLens
 
 The GitLens side bar is the home of GitKraken teams and collaboration services (e.g. GitKraken Workspaces) as well as discovery, help, and support. This side bar includes:
 
-- Home view
+- Home View
 - GitKraken Workspaces
 - GitKraken Account
+- Cloud Patches
+- Launchpad
 
-<img src="/wp-content/uploads/gl-side-bar-v14.png" class="img-responsive left"> 
+<img src="/wp-content/uploads/gl-home-view-v16.png" class="img-responsive center"> 
+
+#### Home view
+
+A view to see what you are working on, what you need to work on next, and what you have recently worked on. <a href="https://gitkraken.dev/settings/integrations" target="_blank">Connect your provider and issue integrations</a> to fully utilize the Home view. This view includes the following sections:
+- The **REPOSITORY** section shows your current repository and branch, alongside the repository state and actions for syncing (push, pull, fetch), switching repos/branches, and viewing working directory changes. If your branch is tied to a pull request or issue, GitLens surfaces those details so you can check PR status, continue reviews, or revisit issue specs. GitLens will also guide you to start a PR from your current branch if it can't find one.
+- The **LAUNCHPAD** section unblocks you and your team by showing pull requests that need your review, are blocked, or are ready to merge. Quickly jump to PRs to review, comment, or merge. With the new Start work action, you can easily begin a new branch or worktree, or generate one from an existing issue.
+- The **RECENT** section lets you quickly return to previous work by showing recent branches, worktrees, and PRs with activity for your chosen timeframe.
 
 ### Source Control
 
@@ -52,7 +61,11 @@ Source Control contains side bar that are only focused on your repositories. Thi
 - Contributors
 - Repositories
 
-<img src="/wp-content/uploads/gl-side-bar.png" class="img-responsive left">
+<img src="/wp-content/uploads/gl-source-control.gif" class="img-responsive center">
+
+Views can be detached to be [moved](/gitlens/side-bar/#moving-views) or reattached from the ellipsis icon. 
+
+<img src="/wp-content/uploads/gl-source-control-detach.png" class="img-responsive center"> 
 
 ### Moving Views
 
@@ -265,9 +278,9 @@ The _Tags_ view lists all of the tags, and additionally provides:
 
 ***
 
-## Launchpad view
+## Launchpad view `PRO`
 
-The Launchpad view is an experimental view that offers the ability to always have the [Launchpad](/gitlens/gitlens-features/#launchpad) open. This allows you to view pull request details at a glance in a tree format and take action. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
+The Launchpad view is a view that offers the ability to always have the [Launchpad](/gitlens/gitlens-features/#launchpad) open in the side bar. This allows you to view pull request details at a glance in a tree format and take action. You can enable this experimental feature either by running the _Show Launchpad View_ command or setting `gitlens.views.launchpad.enabled` to `true` in your settings file.
 
 <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="img-bordered img-responsive center">
 
