@@ -59,7 +59,7 @@ GitLens Source Control Views (Commits, Branches, Remotes, etc.) can now be group
 
 ### "Start Work" Workflow
 
-The new Start Work feature allows you to quickly create a branch or worktree, either from scratch or from an existing issue. GitLens will even name your branch based on the issue title and number, making it easy to stay organized. Access it from the Home View or via the command palette `GitLens: Start work`.
+The new Start Work feature allows you to quickly create a branch or worktree, either from scratch or from an existing GitHub or Jira issue. GitLens will even name your branch based on the issue title and number, making it easy to stay organized. Access it from the Home View or via the command palette `GitLens: Start work`.
 
 ### Graph Filtering
 
