@@ -24,7 +24,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 GitLens 16 brings a redesigned Home View, streamlined Source Control grouping, improved branch workflows, enhanced graph filtering, new pull request search capabilities, and AI-powered features to boost your productivity.
 
-HERO IMAGE HERE
+<img src="/wp-content/uploads/gl-16-0-hero.png" class="img-responsive center img-bordered">
 
 ### New Home View
 
