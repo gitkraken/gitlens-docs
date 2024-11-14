@@ -15,11 +15,12 @@ Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Free, Pro, etc
 
 ---
+
 <a id="v16-0"></a>
 
 ## Version 16.0
 
-#### Tuesday, November 12, 2024
+#### Thursday, November 14, 2024
 
 GitLens 16 brings a redesigned Home View, streamlined Source Control grouping, improved branch workflows, enhanced graph filtering, new pull request search capabilities, and AI-powered features to boost your productivity.
 
@@ -32,6 +33,7 @@ GitLens 16 introduces a completely redesigned Home View (accessible via the GitL
 The new Home View helps guide your daily workflow by answering key questions: "What am I working on now?", "What do I need to do next?", and "What have I worked on recently?" These answers are provided in the three main sections of the Home View:
 
 #### Repository
+
 Shows your current repository and branch, alongside the repository state and actions for syncing (push, pull, fetch), switching repos/branches, and viewing working directory changes.
 
 If your branch is tied to a pull request or issue, GitLens surfaces those details so you can check PR status, continue reviews, or revisit issue specs. GitLens will also guide you to start a PR from your current branch if it can't find one.
@@ -40,6 +42,7 @@ If your branch is tied to a pull request or issue, GitLens surfaces those detail
 
 Unblocks you and your team by showing pull requests that need your review, are blocked, or are ready to merge. Quickly jump to PRs to review, comment, or merge.
 With the new Start work action, you can easily begin a new branch or worktree, or generate one from an existing issue.
+
 > 💡 Connect integrations to view pull request and issue information in GitLens
 
 #### Recent
@@ -47,6 +50,7 @@ With the new Start work action, you can easily begin a new branch or worktree, o
 Lets you quickly return to previous work by showing recent branches, worktrees, and PRs with activity for your chosen timeframe.
 
 #### Feedback
+
 We'll be continuing to refine this view in future releases and welcome your feedback to help shape it. Join in on the [New Home View Discussion](https://github.com/gitkraken/vscode-gitlens/discussions/3721).
 
 ### Consolidated GitLens Source Control Views
@@ -70,9 +74,13 @@ Search pull requests directly from Launchpad—whether they’re included in the
 AI features are now in preview! You’ll see improved UX, support for new models from Anthropic, Open AI, GitHub Copilot, and more. Access to AI features requires a free account.
 
 ### Thank you to our contributors
+
 ### Added
+
 ### Changed
+
 ### Fixed
+
 ### Engineering
 
 <a id="v15-6"></a>
