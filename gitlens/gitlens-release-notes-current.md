@@ -46,8 +46,6 @@ With the new Start work action, you can easily begin a new branch or worktree, o
 
 Lets you quickly return to previous work by showing recent branches, worktrees, and PRs with activity for your chosen timeframe.
 
-Enable the new Home View preview in settings: `"gitlens.home.preview.enabled": true`.
-
 #### Feedback
 We'll be continuing to refine this view in future releases and welcome your feedback to help shape it. Join in on the [New Home View Discussion](https://github.com/gitkraken/vscode-gitlens/discussions/3721).
 
