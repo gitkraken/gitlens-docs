@@ -7,14 +7,12 @@ taxonomy:
     
 ---
 
-# GitLens Home View
-
 <a href="vscode://eamodio.gitlens/link/command/home">Open the Home View in GitLens</a>
 
 The GitLens Home View is designed to streamline your workflows by answering three key questions throughout your day and providing paths to take action on work.
-1. [What am I actively working on now?](/gitlens/gitlens-home-view/#active-work-section)
-2. [What should I work on next?](/gitlens/gitlens-home-view/#launchpad-section)
-3. [What have I worked on recently?](/gitlens/gitlens-home-view/#recent-section)
+1. [What am I actively working on now?](/gitlens/home-view/#active-work-section)
+2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
+3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
 
 ## Connecting Integrations
 
