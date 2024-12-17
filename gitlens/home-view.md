@@ -1,6 +1,6 @@
 ---
 
-title: GitLens Home View
+title: Home View
 description: Overview of the GitLens Home View interface and features
 taxonomy:
     category: gitlens
