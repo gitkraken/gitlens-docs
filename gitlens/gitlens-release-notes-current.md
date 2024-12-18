@@ -16,6 +16,33 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v16-1"></a>
+
+## Version 16.1
+
+#### Thursday, December 18, 2024
+
+GitLens 16.1 introduces further refinements to the Home View launched in version 16.0, with improved integration and account management, expanded issue association capabilities, and streamlined branch creation. Performance optimizations, proactive conflict detection, and enhanced PR search functionality aim to boost productivity and deliver a more intuitive developer workflow experience.
+
+<img src="/wp-content/uploads/gl-16-1-hero.png" class="img-responsive center img-bordered">
+
+### Home View
+#### Integrations & Account Bar
+The new integrations and account bar at the top of the Home View provides clear indicators for connecting to and monitoring integration statuses for GitHub, GitLab, and Jira. It also defines account types and states with convenient actions for managing accounts.
+
+#### Issue Association
+GitLens now offers enhanced support for Issues, allowing you to associate them with branches and pull requests directly from the Home View. This feature streamlines the process of completing units of work and now includes the ability to link issues to existing branches.
+
+### Start Work
+The Start Work Flow has been redesigned to simplify and streamline the process of beginning new tasks. Separate flows are now available for starting work from an issue and for creating a new branch. Additionally, the number of steps required to start work on an issue has been reduced, enabling faster transitions from planning to execution.
+
+### Launchpad
+Launchpad now offers expanded functionality, allowing you to search for pull requests beyond those directly associated with you or currently in the Launchpad. This expanded capability improves flexibility and access to relevant PRs for better workflow management.
+
+### Conflict Detection `PRO`
+GitLens now includes proactive Conflict Detection to help you avoid merge issues. During rebase and merge operations, Pro users will receive warnings about potential conflicts. The Home View will also alert you when the current branch is likely to conflict during rebasing or merging, along with actions to initiate a rebase or merge to proactively resolve conflicts.
+
+
 <a id="v16-0"></a>
 
 ## Version 16.0
