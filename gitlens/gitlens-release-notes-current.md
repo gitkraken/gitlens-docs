@@ -119,6 +119,12 @@ GitLens now includes proactive Conflict Detection to help you avoid merge issues
 - Fixes hovers in the _Commit Graph_ to correctly show branch/tag tips and additions/deletions when the _Changes_ column is enabled
 - Fixes incorrect subscription label in the _Account_ section when signed out
 
+### Thank you to our contributors
+
+Shout-out to our awesome contributor from a recent patch release!
+
+- Emmanuel Ferdman ([@emmanuel-ferdman](https://github.com/emmanuel-ferdman))
+
 <a id="v16-0"></a>
 
 ## Version 16.0
