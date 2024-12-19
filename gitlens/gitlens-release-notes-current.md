@@ -27,10 +27,14 @@ GitLens 16.1 introduces further refinements to the Home View launched in version
 <img src="/wp-content/uploads/gl-16-1-hero.png" class="img-responsive center img-bordered">
 
 ### Home View
+
+#### UI/UX Improvements
+Branch cards have been redesigned to more clearly display important status information and clearly list associated work items like issues and pull requests. Branch owners are now prominently displayed so you can quickly identify who the primary contributor of a branch is.
+
 #### Integrations & Account Bar
 The new integrations and account bar at the top of the Home View provides clear indicators for connecting to and monitoring integration statuses for GitHub, GitLab, and Jira. It also defines account types and states with convenient actions for managing accounts.
 
-#### Issue Association
+### Issue Association
 GitLens now offers enhanced support for Issues, allowing you to associate them with branches and pull requests directly from the Home View. This feature streamlines the process of completing units of work and now includes the ability to link issues to existing branches.
 
 ### Start Work
@@ -38,6 +42,9 @@ The Start Work Flow has been redesigned to simplify and streamline the process o
 
 ### Launchpad
 Launchpad now offers expanded functionality, allowing you to search for pull requests beyond those directly associated with you or currently in the Launchpad. This expanded capability improves flexibility and access to relevant PRs for better workflow management.
+
+### Merge Target Status `PRO`
+GitLens now provides a visual indicator of the status of branches relative to their merge targets. This feature helps you quickly identify branches that are up-to-date, behind, or ahead of their merge targets, streamlining the process of managing and merging branches.
 
 ### Conflict Detection `PRO`
 GitLens now includes proactive Conflict Detection to help you avoid merge issues. During rebase and merge operations, Pro users will receive warnings about potential conflicts. The Home View will also alert you when the current branch is likely to conflict during rebasing or merging, along with actions to initiate a rebase or merge to proactively resolve conflicts.
