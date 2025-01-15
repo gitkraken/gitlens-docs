@@ -16,6 +16,68 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v16-2"></a>
+
+## Version 16.2
+
+#### Thursday, January 16, 2024
+
+GitLens 16.2 brings support for self-hosted GitHub Enterprise and GitLab Self-Managed integrations, introduces expanded merge target status tracking, and improves search and navigation features in Launchpad and the Home View. New visualizations for folder history and improved merge request search make it easier to track changes and manage Git workflows.
+
+<img src="/wp-content/uploads/gl-16-2-hero.png" class="img-responsive center img-bordered">
+
+### Self-Hosted GitHub and GitLab Integration Support `PRO`
+GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitLab Self-Managed instances, allowing users to access issue, pull request, and merge request context directly within GitLens.
+
+- Issues and pull/merge requests from GitHub Enterprise and GitLab Self-Managed will now appear in the GitLens [Home View](https://help.gitkraken.com/gitlens/home-view/) when linked to branches.
+- The [Start Work](https://help.gitkraken.com/gitlens/home-view/#starting-work-on-an-issue) flow now allows users to create branches and worktrees from issues in GitHub Enterprise and GitLab Self-Managed.
+- [Launchpad](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro) now supports searching for specific pull/merge requests in GitHub Enterprise and GitLab Self-Managed integrations.
+
+### Home View Enhancements
+#### Git Action States
+Home View now shows when Git actions (such as merge, rebase, cherry-pick, and revert) are paused due to conflicts, or when you're in the middle of a rebase or merge. The indicator lets you skip steps, open the GitLens rebase editor, or abort the operation.
+
+<img src="/wp-content/uploads/paused-rebase-states.png" class="img-responsive center img-bordered">
+
+#### Merge Target Status
+In GitLens 16.1, we introduced merge targets in the Home View to display the status of branches relative to their merge targets and proactively highlight potential conflicts. In 16.2, we've expanded this feature to include status indicators for branches that have already been merged—either locally or into the upstream branch.
+
+This can help identify branches that have been merged but not yet deleted, or branches that have been merged into the upstream branch but not yet deleted locally.
+
+#### Improved GitLens View Navigation
+
+Home View can now be accessed directly from the Commit Graph, improving context switching between GitLens views.
+
+<img src="/wp-content/uploads/home-view-from-graph.png" class="img-responsive center img-bordered">
+
+### Merge Request Search for GitLab
+GitLab and GitLab Self-Managed users can now search for specific merge requests in Launchpad by title, PR number, or URL—even for merge requests they aren't assigned to.
+
+### Visual Folder History `PRO`
+[Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualziation, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail.
+
+<img src="/wp-content/uploads/visual-folder-history.png" class="img-responsive center img-bordered">
+
+The UI/UX of the file and folder history visualizations has also been improved for easier navigation and better clarity.
+
+### Added
+
+- Adds 
+
+### Changed
+
+- Improves
+
+### Fixed
+
+- Fixes
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributor(s)!
+
+- Contributor Name ([@GITHUB_HANDLE](GITHUB_PROFILE_URL))
+
 <a id="v16-1"></a>
 
 ## Version 16.1
