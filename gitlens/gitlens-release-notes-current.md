@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 16.2
 
-#### Thursday, January 16, 2024
+#### Thursday, January 16, 2025
 
 GitLens 16.2 brings support for self-hosted GitHub Enterprise and GitLab Self-Managed integrations, introduces expanded merge target status tracking, and improves search and navigation features in Launchpad and the Home View. New visualizations for folder history and improved merge request search make it easier to track changes and manage Git workflows.
 
