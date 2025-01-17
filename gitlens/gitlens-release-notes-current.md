@@ -22,11 +22,11 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Thursday, January 16, 2025
 
-GitLens 16.2 brings support for self-hosted GitHub Enterprise and GitLab Self-Managed integrations, introduces expanded merge target status tracking, and improves search and navigation features in Launchpad and the Home View. New visualizations for folder history and improved merge request search make it easier to track changes and manage Git workflows.
+GitLens 16.2 brings support for self-hosted GitHub Enterprise and GitLab Self-Managed integrations, introduces expanded merge target status tracking, and improves search and navigation features in Launchpad and the Home View. New and improved visualizations for file & folder history and improved merge request search make it easier to track changes and manage Git workflows.
 
 <img src="/wp-content/uploads/gl-16-2-hero.png" class="img-responsive center img-bordered">
 
-### Self-Hosted GitHub and GitLab Integration Support `PRO`
+### Self-Hosted GitHub and GitLab Integration Support
 GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitLab Self-Managed instances, allowing users to access issue, pull request, and merge request context directly within GitLens.
 
 - Issues and pull/merge requests from GitHub Enterprise and GitLab Self-Managed will now appear in the GitLens [Home View](https://help.gitkraken.com/gitlens/home-view/) when linked to branches.
@@ -35,14 +35,14 @@ GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitL
 
 ### Home View Enhancements
 #### Git Action States
-Home View now shows when Git actions (such as merge, rebase, cherry-pick, and revert) are paused due to conflicts, or when you're in the middle of a rebase or merge. The indicator lets you skip steps, open the GitLens rebase editor, or abort the operation.
+Home View now shows when Git actions (such as merge, rebase, cherry-pick, and revert) are paused due to conflicts, or when you're in the middle of a rebase or merge. The indicator lets you continue or skip steps, open the GitLens rebase editor, or abort the operation.
 
 <img src="/wp-content/uploads/paused-rebase-states.png" class="img-responsive center img-bordered">
 
 #### Merge Target Status
-In GitLens 16.1, we introduced merge targets in the Home View to display the status of branches relative to their merge targets and proactively highlight potential conflicts. In 16.2, we've expanded this feature to include status indicators for branches that have already been merged—either locally or into the upstream branch.
+In GitLens 16.1, we introduced merge targets in the Home View to display the status of the current branch relative to its merge target and proactively highlights potential conflicts. In 16.2, we've expanded this feature to include status indicators for branches that have already been merged—either locally or into the upstream branch.
 
-This can help identify branches that have been merged but not yet deleted, or branches that have been merged into the upstream branch but not yet deleted locally.
+This can help identify branches that have been merged but not yet pushed, or branches that have been merged into the upstream branch but not yet deleted.
 
 #### Improved GitLens View Navigation
 
@@ -53,30 +53,64 @@ Home View can now be accessed directly from the Commit Graph, improving context 
 ### Merge Request Search for GitLab
 GitLab and GitLab Self-Managed users can now search for specific merge requests in Launchpad by title, PR number, or URL—even for merge requests they aren't assigned to.
 
-### Visual Folder History `PRO`
-[Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualziation, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail.
+### Improved Visual File History
+The [Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) has been completely rebuilt for a better more polished experience, with more consistent bubble sizing and easier to read hovers. We've also added new zoom in and out buttons and mouse wheel support. When you are zoomed in, drag to scrub (scroll) through the history.
+
+### New Visual Folder History
+[Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualization, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail. Access the Visual Folder History from the _Folder History_ > _Open Visual Folder History_ on folders in the _Explorer_, _Source Control_, and in GitLens views.
 
 <img src="/wp-content/uploads/visual-folder-history.png" class="img-responsive center img-bordered">
 
-The UI/UX of the file and folder history visualizations has also been improved for easier navigation and better clarity.
-
 ### Added
 
-- Adds 
+- Adds richer support for GitHub Enterprise and GitLab Self-Managed &mdash; closes [#3901](https://github.com/gitkraken/vscode-gitlens/issues/3901), [#3934](https://github.com/gitkraken/vscode-gitlens/issues/3934)
+  - Adds pull request/merge request support in _Launchpad_ &mdash; closes [#3923](https://github.com/gitkraken/vscode-gitlens/issues/3923)
+  - Adds issue support to _Start Work_
+  - Adds integration status and connection flows to the _Home_ view
+- Adds new ability to search for a GitLab merge request in the _Launchpad_ &mdash; closes [#3788](https://github.com/gitkraken/vscode-gitlens/issues/3788)
+- Adds merge target's merged status to the _Home_ view
+  - GitLens will attempt to determine if the current branch has been merged into its the merge target branch (or the local branch of the merge target)
+- Overhauls the _Visual File History_
+  - Improves commit bubble sizing to better handle outliers
+  - Improves hover content and interations
+  - Adds explicit zoom in/out buttons and changes mouse zoom to use the mouse wheel &mdash; when zoomed, drag to scrub through the history
+  - Optimizes chart resizing and axis label rendering with author indicators, and re-adds the legend to the view
+- Adds a new _Folder History_ > _Open Visual Folder History_ command to folders in the _Explorer_ view, _Source Control_ view, and other GitLens views
+- Adds new ability to see and act upon a "paused" Git operation, e.g. merge, rebase, cherry-pick, revert, across the _Commits_, _Commit Graph_, and _Home_ views &mdash; closes [#3913](https://github.com/gitkraken/vscode-gitlens/issues/3913)
+  - Adds a new banner on the _Commit Graph_ and updates the banner on _Home_ with actions to continue, skip, or abort the operation
+  - Adds _Continue_, _Skip_, and _Abort_ actions to the _Commits_ view
+- Adds a _GitLens Home_ button to the _Commit Graph_ header to go to the _Home_ view title section &mdash; closes [#3873](https://github.com/gitkraken/vscode-gitlens/issues/3873)
+- Adds a new _Hidden Branches / Tags_ dropdown button next to the _Branch Visibility_ dropdown in the _Commit Graph_ toolbar &mdash; closes [#3101](https://github.com/gitkraken/vscode-gitlens/issues/3101)
+- Adds a new _Contributors_ section to comparison results in the views &mdash; quickly see who contributed changes in the specific range with statistics
+- Adds statistics to contributors in the GitLens views when enabled
+- Adds AI model name in commit message generation notifications
 
 ### Changed
 
-- Improves
+- Improves branch status icons/indicators on the _Home_ view
+- Improves branch contributors avatars on the _Home_ view; improved scoring and ordering
+- Improves performance of loading/reloading the _Home_ view
+- Improves performance of detecting paused Git operations, e.g. merge, rebase, cherry-pick, revert
+- Changes GitLens to be XDG-compatible &mdash; closes [#3660](https://github.com/gitkraken/vscode-gitlens/issues/3660)
+- Changes GitLens "reset" command to no longer use/open a terminal &mdash; closes [#3533](https://github.com/gitkraken/vscode-gitlens/issues/3533)
+- Changes to format numbers, e.g. counts, with internationalization (i18n) support
+- Improves command ordering on branch context menus
+- Changes _File History_ context menu to _Folder History_ on folders in the _Explorer_ view
+  Adds Open Visual Folder History to explorer folders
+  Adds Open [Visual] Folder History to folders in views
 
 ### Fixed
 
-- Fixes
-
-### Thank you to our contributors
-
-Shout-out to our awesome contributor(s)!
-
-- Contributor Name ([@GITHUB_HANDLE](GITHUB_PROFILE_URL))
+- Fixes [#3915](https://github.com/gitkraken/vscode-gitlens/issues/3915) - Closing a split editor with annotations causes the Clear Annotations button to get stuck
+- Fixes [#3914](https://github.com/gitkraken/vscode-gitlens/issues/3914) - Attempting to clear a file annotation on a split file w/o the annotation no-ops
+- Fixes [#3911](https://github.com/gitkraken/vscode-gitlens/issues/3911) - Avoid Home opening when first-install isn't reliable (e.g. GitPod)
+- Fixes [#3888](https://github.com/gitkraken/vscode-gitlens/issues/3888) - Graph hover should disappear when right-clicking a row
+- Fixes [#3909](https://github.com/gitkraken/vscode-gitlens/issues/3909) - GitLens "Pull with Rebase" is not rebase, but merge
+- Fixes [#3476](https://github.com/gitkraken/vscode-gitlens/issues/3476) - Can't show commit graph in floating window
+- Fixes an issue with unpin button visibility in the _File History_ view
+- Fixes intermittent issue with greater reliability of webview requests
+- Fixes an issue with autolink enrichment for issues
+- Fixes issues with incorrect aggregate contributor stats
 
 <a id="v16-1"></a>
 
