@@ -49,6 +49,14 @@ To view logs, open the Output Window (View > Output). The logs will be listed in
 
 ***
 
+## How can I export logs?
+
+You can export logs using the actions in the overflow menu of the Output view.
+
+<img src="/wp-content/uploads/gl-export-logs.png" class="img-bordered img-responsive center">
+
+***
+
 ## Can GitLens or Visual Studio Code Work with a Proxy?
 
 Yes, you can configure proxy settings from the Visual Studio Code settings. To open these settings, use the keyboard shortcut `command/ctrl + ,`. Then, search for "proxy" to see all related settings.
