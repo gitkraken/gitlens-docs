@@ -16,6 +16,51 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v16-3"></a>
+
+## Version 16.3
+
+#### Tuesday, February 11, 2025
+
+GitLens 16.3 brings powerful new integrations, enhanced AI capabilities, and broader editor support to streamline your Git workflows. Here’s what’s new:
+
+<img src="/wp-content/uploads/gl-16-3-hero.png" class="img-responsive center img-bordered">
+
+### Azure DevOps Integration
+GitLens now supports Azure DevOps!
+- Access issues and pull requests from Azure DevOps directly in Home View and Launchpad.
+- Seamlessly incorporate Azure DevOps into your GitLens workflows.
+
+### Expanded VS Code Editor Support
+GitLens now works better in alternative VS Code-based editors, bringing more of its powerful features to IDEs like Cursor and Windsurf.
+
+### Home View Improvements
+The Home View is now more dynamic and reliable:
+- Instantly updates when your Git state changes.
+- Displays the correct actions when you create branches, merge changes, or modify your working state.
+- Keeps you in flow with real-time feedback.
+
+### AI Enhancements
+GitLens AI just got smarter!
+- Added support for new AI models from OpenAI, Gemini, DeepSeek, and more.
+- Now you can auto-generate stash messages using AI, in addition to commit message generation and commit explanations.
+
+### Better GitLens Support in vscode.dev
+Enjoy a smoother GitLens experience in vscode.dev without unnecessary authentication steps.
+
+
+### Added
+
+- 
+
+### Changed
+
+- 
+
+### Fixed
+
+- 
+
 <a id="v16-2"></a>
 
 ## Version 16.2
