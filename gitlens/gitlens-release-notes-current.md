@@ -16,6 +16,62 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v16-3"></a>
+
+## Version 16.3
+
+#### Tuesday, February 11, 2025
+
+GitLens 16.3 brings powerful new integration support, enhanced AI capabilities, and broader editor support to streamline your Git workflows. Here’s what’s new:
+
+<img src="/wp-content/uploads/gl-16-3-hero.png" class="img-responsive center img-bordered">
+
+### Azure DevOps Integration
+
+GitLens now supports Azure DevOps! Connect your Azure DevOps account to access issues and pull requests from Azure DevOps directly in Home View, Launchpad, and the Commit Graph, and seamlessly incorporate Azure DevOps into your GitLens workflows.
+
+### Expanded VS Code Editor Support
+
+GitLens now works better in alternative VS Code-based editors, bringing more of its powerful features to IDEs like Cursor and Windsurf.
+
+### Home View Improvements
+
+The Home View is now more responsive to changes in the git state of your active repositories, active and recent branches, and connected integrations. It displays the correct actions when you create branches, merge changes, or modify your working state.
+
+### AI Enhancements
+
+GitLens AI features now include support for the latest AI models from OpenAI, Gemini, DeepSeek, and more. You can now also auto-generate stash messages using AI, in addition to commit messages and commit explanations.
+
+### Added
+
+- Adds rich support for Azure DevOps &mdash; closes [#3902](https://github.com/gitkraken/vscode-gitlens/issues/3902)
+  - Adds integration status and connection flows to the _Home_ view; closes [#3976](https://github.com/gitkraken/vscode-gitlens/issues/3976)
+  - Adds autolinks, issues and pull requests in the _Commit Graph_ and _Home_ view; closes [#3977](https://github.com/gitkraken/vscode-gitlens/issues/3977)
+  - Adds pull request support in _Launchpad_ &mdash; closes [#3978](https://github.com/gitkraken/vscode-gitlens/issues/3978)
+  - Adds issue support to _Start Work_; closes [#3979](https://github.com/gitkraken/vscode-gitlens/issues/3979)
+- Adds new AI-powered ability to generate a stash message from the changes in the _Stash_ commands
+- Adds and expands AI model support for GitLens' AI features
+  - Adds DeepSeek V3 and R1 models &mdash; closes [#3943](https://github.com/gitkraken/vscode-gitlens/issues/3943)
+  - Adds o3-mini and o1 OpenAI models
+  - Adds Gemini 2.0 Flash, Gemini 2.0 Flash-Lite, Gemini 2.0 Pro, and Gemini 2.0 Flash Thinking models
+  - Adds dynamic model loading for GitHub Models and HuggingFace models
+  - Adds a `gitlens.ai.modelOptions.temperature` setting to specify the temperature (randomness) for AI models that support it
+  - Adds a _Switch Model_ button to the AI confirmation prompts
+- Adds Windsurf support &mdash; closes [#3969](https://github.com/gitkraken/vscode-gitlens/issues/3969)
+- Adds "pro" indicators for applicable integrations &mdash; closes [#3972](https://github.com/gitkraken/vscode-gitlens/issues/3972)
+
+### Changed
+
+- Improves performance of updates to active and recent branches on the _Home_ view
+
+### Fixed
+
+- Fixes [#3952](https://github.com/gitkraken/vscode-gitlens/issues/3952) - Interactive rebase doesn't work in GL without VS Code added to path
+- Fixes [#3938](https://github.com/gitkraken/vscode-gitlens/issues/3938) - GitLens automatically initiating an external sign-in after install on vscode.dev
+- Fixes [#3946](https://github.com/gitkraken/vscode-gitlens/issues/3946) - Home View doesn't update repo state changes made when hidden
+- Fixes [#3940](https://github.com/gitkraken/vscode-gitlens/issues/3940) - Commit Details: issue autolinks can disappear after enrichment
+- Fixes [#4035](https://github.com/gitkraken/vscode-gitlens/issues/4035) - Repo is lost when "Generate commit" is requested
+
 <a id="v16-2"></a>
 
 ## Version 16.2
@@ -27,6 +83,7 @@ GitLens 16.2 brings support for self-hosted GitHub Enterprise and GitLab Self-Ma
 <img src="/wp-content/uploads/gl-16-2-hero.png" class="img-responsive center img-bordered">
 
 ### Self-Hosted GitHub and GitLab Integration Support
+
 GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitLab Self-Managed instances, allowing users to access issue, pull request, and merge request context directly within GitLens.
 
 - Issues and pull/merge requests from GitHub Enterprise and GitLab Self-Managed will now appear in the GitLens [Home View](https://help.gitkraken.com/gitlens/home-view/) when linked to branches.
@@ -34,12 +91,15 @@ GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitL
 - [Launchpad](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro) now supports searching for specific pull/merge requests in GitHub Enterprise and GitLab Self-Managed integrations.
 
 ### Home View Enhancements
+
 #### Git Action States
+
 Home View now shows when Git actions (such as merge, rebase, cherry-pick, and revert) are paused due to conflicts, or when you're in the middle of a rebase or merge. The indicator lets you continue or skip steps, open the GitLens rebase editor, or abort the operation.
 
 <img src="/wp-content/uploads/paused-rebase-states.png" class="img-responsive center img-bordered">
 
 #### Merge Target Status
+
 In GitLens 16.1, we introduced merge targets in the Home View to display the status of the current branch relative to its merge target and proactively highlights potential conflicts. In 16.2, we've expanded this feature to include status indicators for branches that have already been merged—either locally or into the upstream branch.
 
 This can help identify branches that have been merged but not yet pushed, or branches that have been merged into the upstream branch but not yet deleted.
@@ -51,12 +111,15 @@ Home View can now be accessed directly from the Commit Graph, improving context 
 <img src="/wp-content/uploads/home-view-from-graph.png" class="img-responsive center img-bordered">
 
 ### Merge Request Search for GitLab
+
 GitLab and GitLab Self-Managed users can now search for specific merge requests in Launchpad by title, PR number, or URL—even for merge requests they aren't assigned to.
 
 ### Improved Visual File History
+
 The [Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) has been completely rebuilt for a better more polished experience, with more consistent bubble sizing and easier to read hovers. We've also added new zoom in and out buttons and mouse wheel support. When you are zoomed in, drag to scrub (scroll) through the history.
 
 ### New Visual Folder History
+
 [Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualization, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail. Access the Visual Folder History from the _Folder History_ > _Open Visual Folder History_ on folders in the _Explorer_, _Source Control_, and in GitLens views.
 
 <img src="/wp-content/uploads/visual-folder-history.png" class="img-responsive center img-bordered">
@@ -125,24 +188,31 @@ GitLens 16.1 introduces further refinements to the Home View launched in version
 ### Home View
 
 #### UI/UX Improvements
+
 Branch cards have been redesigned to more clearly display important status information and clearly list associated work items like issues and pull requests. Branch owners are now prominently displayed so you can quickly identify who the primary contributor of a branch is.
 
 #### Integrations & Account Bar
+
 The new integrations and account bar at the top of the Home View provides clear indicators for connecting to and monitoring integration statuses for GitHub, GitLab, and Jira. It also defines account types and states with convenient actions for managing accounts.
 
 ### Issue Association
+
 GitLens now offers enhanced support for Issues, allowing you to associate them with branches and pull requests directly from the Home View. This feature streamlines the process of completing units of work and now includes the ability to link issues to existing branches.
 
 ### Start Work
+
 The Start Work Flow has been redesigned to simplify and streamline the process of beginning new tasks. Separate flows are now available for starting work from an issue and for creating a new branch. Additionally, the number of steps required to start work on an issue has been reduced, enabling faster transitions from planning to execution.
 
 ### Launchpad
+
 Launchpad now offers expanded functionality, allowing you to search for pull requests beyond those directly associated with you or currently in the Launchpad. This expanded capability improves flexibility and access to relevant PRs for better workflow management.
 
 ### Merge Target Status `PRO`
+
 GitLens now provides a visual indicator of the status of branches relative to their merge targets. This feature helps you quickly identify branches that are up-to-date, behind, or ahead of their merge targets, streamlining the process of managing and merging branches.
 
 ### Conflict Detection `PRO`
+
 GitLens now includes proactive Conflict Detection to help you avoid merge issues. During rebase and merge operations, Pro users will receive warnings about potential conflicts. The Home View will also alert you when the current branch is likely to conflict during rebasing or merging, along with actions to initiate a rebase or merge to proactively resolve conflicts.
 
 ### Added
