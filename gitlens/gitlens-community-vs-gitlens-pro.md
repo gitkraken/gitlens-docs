@@ -29,7 +29,7 @@ GitLens Pro takes your workflow to the next level by unlocking advanced features
 * **Manage commits effortlessly** using the Commit Graph, where you can execute advanced actions like rebase, merge, and more. With powerful search and filtering, quickly locate commits, branches, or files.
 * **Enhance collaboration** by integrating with platforms like GitHub, GitLab, and Bitbucket, reducing context switching. View and manage PRs directly in VS Code through Launchpad.
 
-_Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity. [Start your free trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button) of GitLens Pro for 14 days today._
+*Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity.* *[Start your free trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button)* *of GitLens Pro for 14 days today.*
 
 ### Making Your Choice
 
