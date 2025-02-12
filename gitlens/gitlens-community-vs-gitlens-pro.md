@@ -15,9 +15,9 @@ taxonomy:
 
 Whether you're reviewing code changes, managing pull requests, or diving into your project's history, GitLens transforms your Git experience directly within VS Code. Let's explore which edition best fits your workflow.
 
-### GitLens Community
+### GitLens Community (Free)
 
-The Community edition of GitLens gives you powerful tools to manage Git and understand how your code has evolved and by whom. With popular features like in-editor blame annotations, hovers, and CodeLens, you can see actionable authorship details at the top of each file. Track the history of any file over time using Revision Navigation to gain deeper insights into code changes.
+The Community edition of GitLens is **free** and gives you powerful tools to manage Git and understand how your code has evolved and by whom. With popular features like in-editor blame annotations, hovers, and CodeLens, you can see actionable authorship details at the top of each file. Track the history of any file over time using Revision Navigation to gain deeper insights into code changes.
 
 _Perfect for: Individual developers and anyone looking to enhance their Git workflow._
 
@@ -29,7 +29,7 @@ GitLens Pro takes your workflow to the next level by unlocking advanced features
 * **Manage commits effortlessly** using the Commit Graph, where you can execute advanced actions like rebase, merge, and more. With powerful search and filtering, quickly locate commits, branches, or files.
 * **Enhance collaboration** by integrating with platforms like GitHub, GitLab, and Bitbucket, reducing context switching. View and manage PRs directly in VS Code through Launchpad.
 
-_Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity._
+_Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity. [Start your free trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button) of GitLens Pro for 14 days today._
 
 ### Making Your Choice
 
