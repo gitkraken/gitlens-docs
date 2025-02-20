@@ -18,6 +18,7 @@ The GitLens Home View is designed to streamline your workflows by answering thre
     <iframe width='560' height='315' src='https://www.youtube.com/embed/jVzhyVBgNGg?si=T5hmEEe0jO09RNbl' frameborder='0' allowfullscreen></iframe>
 </div>
 
+
 ## Connecting Integrations
 
 GitLens integrates with hosting and issue services like GitHub, GitLab, and Jira to help you monitor and take action on branches, issues, and pull requests. Integrations can be connected from the top of the Home View. Some features that leverage integrations are enhanced with <a href="https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/">GitLens Pro</a>.
