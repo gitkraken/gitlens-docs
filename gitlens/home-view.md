@@ -6,6 +6,7 @@ taxonomy:
     category: gitlens
     
 ---
+## Overview
 
 <a href="vscode://eamodio.gitlens/link/command/home">Open the Home View in GitLens</a>
 
