@@ -13,9 +13,8 @@ The GitLens Home View is designed to streamline your workflows by answering thre
 1. [What am I actively working on now?](/gitlens/home-view/#active-work-section)
 2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
 3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
-
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/jVzhyVBgNGg?si=VCGwk6mUDw8DNJj-' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/jVzhyVBgNGg?si=T5hmEEe0jO09RNbl' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
