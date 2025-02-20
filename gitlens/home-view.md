@@ -14,6 +14,7 @@ The GitLens Home View is designed to streamline your workflows by answering thre
 2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
 3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
 
+
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/jVzhyVBgNGg?si=MOW1sH8XSgdfwyX7' frameborder='0' allowfullscreen></iframe>
 </div>
