@@ -418,7 +418,7 @@ You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></
 
 The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
 
-To access the Visual File History view, open the GitLens Inspect sidebar. Once the sidebar is open, the view will be available. Alternatively, you can open Visual File History from the Command Palette by using (cmd/ctrl + shift + P) > GitLens: Show Visual File History View.
+To access the Visual File History view, open the GitLens Inspect sidebar. Once the sidebar is open, the view will be available. Alternatively, you can open Visual File History from the Command Palette by using (`cmd/ctrl + shift + P`) > GitLens: Show Visual File History View.
 
 <img src="/wp-content/uploads/visual-file-history.png" class="img-bordered img-responsive center">
 
