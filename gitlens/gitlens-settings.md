@@ -7,7 +7,7 @@ taxonomy:
 
 ---
 
-<img src="/wp-content/uploads/settings.png" class="img-bordered img-responsive center">
+<img src="/wp-content/uploads/settings.png" class="help-center-img img-bordered">
 
 GitLens provides a rich **interactive settings editor**, an easy-to-use interface, to configure many of GitLens' powerful features. It can be accessed via the _GitLens: Open Settings_ (`gitlens.showSettingsPage`) command from the [_Command Palette_](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
