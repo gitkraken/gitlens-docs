@@ -24,13 +24,13 @@ The GitLens Home View is designed to streamline your workflows by answering thre
 
 GitLens integrates with hosting and issue services like GitHub, GitLab, and Jira to help you monitor and take action on branches, issues, and pull requests. Integrations can be connected from the top of the Home View. Some features that leverage integrations are enhanced with <a href="https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/">GitLens Pro</a>.
 
-<img src="/wp-content/uploads/home-view-integrations.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/home-view-integrations.png" class="help-center-img img-bordered">
 
 ## Active Work Section
 
 At the top of the GitLens Home View, you can see the state of your active repository and current branch. This section provides quick access to actions like syncing (push, pull, fetch), switching the active repo, viewing working directory changes, and more. You can also quickly open the <a href="https://help.gitkraken.com/gitlens/gitlens-home/#commit-graph">GitLens Commit Graph</a> from the icon in the header.
 
-<img src="/wp-content/uploads/home-view-active-work.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/home-view-active-work.png" class="help-center-img img-bordered">
 
 When integrations are connected and issues or pull requests are associated with your branch, GitLens Pro will group them with branches. This allows you to check PR statuses, continue reviews, or revisit issue specifications as you work. If you haven't opened a PR yet or need to associate a branch with an existing issue, GitLens will guide you through the process.
 
@@ -39,7 +39,7 @@ When integrations are connected and issues or pull requests are associated with 
 
 The Launchpad Section highlights the most important tasks to work on next. It leverages integrations to list critical pull requests that need your attention and allows you to start work on issues assigned to you by creating branches and worktrees.
 
-<img src="/wp-content/uploads/home-view-next.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/home-view-next.png" class="help-center-img img-bordered">
 
 ### Launchpad Summary
 
@@ -55,4 +55,4 @@ The Recent section helps reduce the pain of context switching by keeping track o
 
 To save space, associated branches and issues are collapsed by default in this section. You can click to expand them for additional context.
 
-<img src="/wp-content/uploads/home-view-recent.png" class="img-responsive center img-bordered">
+<img src="/wp-content/uploads/home-view-recent.png" class="help-center-img img-bordered">
