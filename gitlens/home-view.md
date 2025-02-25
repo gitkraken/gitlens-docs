@@ -11,14 +11,14 @@ taxonomy:
 <a href="vscode://eamodio.gitlens/link/command/home">Open the Home View in GitLens</a>
 
 The GitLens Home View is designed to streamline your workflows by answering three key questions throughout your day and providing paths to take action on work.
+
 1. [What am I actively working on now?](/gitlens/home-view/#active-work-section)
 2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
 3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
 
 <div class='embed-container embed-container--16-9'>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jVzhyVBgNGg?si=T5hmEEe0jO09RNbl" title="Introducing the GitLens Home View" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jVzhyVBgNGg?si=T5hmEEe0jO09RNbl" title="Introducing the GitLens Home View" frameborder="0" allowfullscreen></iframe>
 </div>
-
 
 ## Connecting Integrations
 
@@ -33,7 +33,6 @@ At the top of the GitLens Home View, you can see the state of your active reposi
 <img src="/wp-content/uploads/home-view-active-work.png" class="img-responsive center img-bordered">
 
 When integrations are connected and issues or pull requests are associated with your branch, GitLens Pro will group them with branches. This allows you to check PR statuses, continue reviews, or revisit issue specifications as you work. If you haven't opened a PR yet or need to associate a branch with an existing issue, GitLens will guide you through the process.
-
 
 ## Launchpad Section
 
