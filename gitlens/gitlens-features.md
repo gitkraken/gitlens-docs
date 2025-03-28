@@ -479,7 +479,7 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 - From the Command Palette: `GitLens: Generate Changelog from Commits`
 
 <div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai">GitKraken AI FAQ page</a> for more details</p>
+    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more details</p>
 </div>
 
 ***
