@@ -7,8 +7,8 @@ taxonomy:
 
 ---
 
-Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repos
+Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens), e.g. Community, Pro, etc
 
 ***
 
@@ -273,7 +273,7 @@ At the top of the commit graph the repository name, the branch name that is curr
 <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="help-center-img img-bordered">
 
 <div class='callout callout--basic'>
-    <p>Note: The Commit Graph is available to all users working on public repositories, and requires no account. Additionally, users with a paid GitLens subscription or trial can use the Commit Graph with private repos. </br></br>
+    <p>Note: The Commit Graph is available to all users working on public or local repositories, and requires no account. Additionally, users with a paid GitLens subscription or trial can use the Commit Graph with private repos. </br></br>
 
     We’d love to hear your feedback in the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2158' target='_blank'>Commit Graph discussion on GitHub</a>.</p>
 </div>
@@ -411,10 +411,13 @@ You can pin pull requests using the pin icon <i class="fa-solid fa-thumbtack"></
 <div class='callout callout--basic'>
     <p>Note: The Launchpad is currently organized by prioritizing items on the list that require more action by elevating them to the top. This is subject to change in the future.</p>
 </div>
+<div class='callout callout--warning'>
+    <p>This Feature is only available for Pro subscription tiers or higher</p>
+</div>
 
 ***
 
-## Visual File History `PRO`
+## Visual File History
 
 The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
 
@@ -431,21 +434,57 @@ Gain additional insights on hover.
 
 <img src="/wp-content/uploads/visual-file-history-hover.png" class="help-center-img img-bordered">
 
+<div class='callout callout--warning'>
+    <p>Community plan is restricted to Public and Local Repositories only.</p>
+</div>
+
 ***
 
-## AI-Generated Commit Messages (Preview) `PRO`
+## Gitkraken AI
+### AI-Generated Commit Messages
 
-Commit messages can be automatically generated using an AI Provider.
+Commit messages can be automatically generated using Gitkraken AI.
 
 <img src="/wp-content/uploads/gl-ai-generated-commit-message.gif" class="help-center-img img-bordered">
 
-To connect an AI Provider, stage some changes you want to generate a commit message for and then run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to the AI Provider and the entry of your AI Provider key. The API key can be created from your AI Provider's site. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message. There are additional `gitlens.ai` settings that can be [customized](/gitlens/gitlens-settings/#misc-settings) for the provider and model. 
+To generate a commit message, stage the changes you want, then navigate to Home View and tap the "Generate Commit Message" button to generate a precise, descriptive commit messages based on your changes, or run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to Gitkraken AI. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message. There are additional `gitlens.ai` settings that can be [customized](/gitlens/gitlens-settings/#misc-settings) for the provider and model. 
 
-To remove your AI Provider API key in GitLens, run the command `GitLens: Reset Stored AI Keys...` from the Command Palette.
+<div class='callout callout--warning'>
+    <p>Gitlens Pro users and above can also choose to provide their own API key in order to use a different AI provider. Gitkraken AI utilizes the Gemini 2.0 Flash model.</p>
+</div>
+
+### AI Stash Messages `Pro`
+*Available in:* Pro, Advanced, and Business plans
+Create intelligent descriptions for stashed changes, making it easier to find and understand your work later. This feature generates context-rich stash descriptions that help you quickly identify the purpose of each stash.
+*How to access:*
+- From the Command Palette: `GitLens: Generate Stash Message with AI`
+- When creating a stash: Look for the AI option in the stash creation interface
+- From the stash view: Generate descriptions for existing stashes
+
+### AI Commit Explanations`Pro`
+*Available in:* Pro, Advanced, and Business plans
+Understand the reasoning behind changes with AI-generated explanations of commit content and purpose. Quickly grasp the intent and impact of complex commits without having to manually review all changed files.
+
+*How to access:*
+- In the "Commit Details" view: Find the AI explanation panel
+- In the "Cloud Patch Details" view: Look for explanations alongside commit information
+- When reviewing commits: Option to generate explanations for any selected commit
+
+### AI Changelog Creation `Advanced`
+*Available in:* Advanced and Business plans only
+Automatically generate comprehensive changelogs from selected commits in the Graph, perfect for release documentation. Maintain consistent and detailed changelogs without manual effort.
+*How to access:*
+- In the Search/Compare view: Click the inline button on the "commits" line
+- When selecting multiple commits in the Graph: Right-click and choose "Generate Changelog"
+- From the Command Palette: `GitLens: Generate Changelog from Commits`
+
+<div class='callout callout--basic'>
+    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/gitkraken-desktop/gkd-gitkraken-ai">GitKraken AI FAQ page</a> for more details</p>
+</div>
 
 ***
 
-##Git Command Palette
+## Git Command Palette
 
 <img src="/wp-content/uploads/git-command-palette.png" class="help-center-img img-bordered">
 
@@ -569,6 +608,10 @@ You will be prompted to log into your GitKraken account if you are not already. 
 
 <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
 
+<div class='callout callout--warning'>
+    <p>Community users are limited to basic functionality only.</p>
+</div>
+
 ## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
 GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
@@ -609,11 +652,15 @@ Or
 
 ***
 
-## Jira Integration
+## Jira Integration `PRO`
 
 The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs in commit messages to links i.e. `ABC-123`.
 
 <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+
+<div class='callout callout--warning'>
+    <p>This Feature is only available for Pro subscription tiers or higher</p>
+</div>
 
 To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
 

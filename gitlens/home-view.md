@@ -34,8 +34,10 @@ At the top of the GitLens Home View, you can see the state of your active reposi
 
 When integrations are connected and issues or pull requests are associated with your branch, GitLens Pro will group them with branches. This allows you to check PR statuses, continue reviews, or revisit issue specifications as you work. If you haven't opened a PR yet or need to associate a branch with an existing issue, GitLens will guide you through the process.
 
-## Launchpad Section
-
+## Launchpad Section `Pro`
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
 The Launchpad Section highlights the most important tasks to work on next. It leverages integrations to list critical pull requests that need your attention and allows you to start work on issues assigned to you by creating branches and worktrees.
 
 <img src="/wp-content/uploads/home-view-next.png" class="help-center-img img-bordered">
