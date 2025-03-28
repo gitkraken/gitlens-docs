@@ -76,7 +76,7 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 ---
 ## AI Token Allocation by Plan
 
-GitKraken AI features operate on a token-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkrakensure AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
+GitKraken AI features operate on a token-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
 
 Tokens refresh weekly and are shared across all AI features. More complex operations like changelog generation typically use more tokens than simpler ones like commit messages.
 
