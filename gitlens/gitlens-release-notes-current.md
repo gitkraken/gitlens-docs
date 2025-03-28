@@ -16,6 +16,75 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-0"></a>
+
+## Version 17.0
+
+#### Monday, March 31, 2025
+
+GitLens 17 brings powerful new integrations, enhanced AI capabilities, and workflow improvements to help you collaborate more efficiently. This release introduces official Bitbucket integration, adds GitKraken AI as a provider for AI-powered features, delivers new AI capabilities like changelog generation and PR creation, and extends multi-select actions in the Commit Graph.
+
+<img src="/wp-content/uploads/gl-17-0-hero.png" class="help-center-img img-bordered">
+
+### Bitbucket Integration
+
+GitLens now offers rich integration with Bitbucket repositories! Connect your Bitbucket account to gain access to issues and pull requests directly within GitLens.
+
+- Support for both Bitbucket Cloud and Bitbucket Data Center
+- Access Bitbucket issues and pull requests in Home View and Launchpad
+- See pull request information within the Commit Graph
+- Seamlessly incorporate Bitbucket into your GitLens workflows
+
+### GitKraken AI Preview
+
+We're excited to introduce [GitKraken AI](https://www.gitkraken.com/solutions/gitkraken-ai), a preview of our official AI provider for GitLens' AI-powered features. Now users with a paid subscription can leverage powerful AI capabilities without needing to configure external API keys.
+
+- Two model options available in this release:
+  - Google Gemini 2.0 Flash
+  - Google Gemini 2.0 Flash-lite
+
+The active AI provider and model that GitLens uses can be found in the Integrations menu in Home View for better visibility and management.
+
+### New AI Features
+
+#### AI Pull Request Creation
+
+Creating meaningful pull requests is now easier than ever with AI-assisted PR creation.
+
+- Automatically generate descriptive titles and detailed descriptions based on your committed changes
+- Save time while providing reviewers with better context about your changes
+- Open a new PR with the generated content directly from GitLens
+
+#### AI Changelog Generation
+
+Need to generate a structured changelog for a group of commits? GitLens 17 makes it simple with AI-powered changelog generation.
+
+- Select multiple commits and generate a well-structured changelog in markdown format
+- Perfect for release notes, documentation, or communicating changes to your team
+
+### Commit Graph Enhancements
+
+The Commit Graph now supports taking actions on multiple selected commits, starting with cherry-picking. This makes it easier to work with groups of related commits across branches.
+
+- Select multiple commits in the Graph view and cherry-pick them to your current branch
+- More multi-select actions coming soon, including AI changelog generation
+
+### Plan Updates
+
+We've refreshed GitKraken plans to better reflect how devs and teams work:
+
+- Pro plan remains "Pro"
+- Teams plan is now called "Advanced"
+- Enterprise plan is now called "Business"
+
+[Read more](https://www.gitkraken.com/blog/smarter-workflows-powerful-ai-better-developer-experience) about the new GitKraken plans.
+
+### Referral Program
+
+Pro subscribers can now refer colleagues and friends to GitLens through the new referral program and earn $.
+
+- Access the referral program [here](https://gitkraken.dev/?referral_portal=true&source=gitlens), or through the account menu in GitLens Home
+
 <a id="v16-3"></a>
 
 ## Version 16.3
