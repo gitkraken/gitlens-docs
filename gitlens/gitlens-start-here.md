@@ -6,6 +6,7 @@ taxonomy:
     category: gitlens
     
 ---
+---
 
 Welcome to the GitLens Support Documentation site! 
 
@@ -24,7 +25,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 ### Interactive Code History
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/uSc7aQV8uMs' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/uSc7aQV8uMs?si=7bGXpqRI0lv7k-A0' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -52,14 +53,14 @@ From inside a file, Inline Blame and Hovers provide the answers to who exactly c
 ### Accelerate PR Reviews
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/FJ_IdTcqBi0?si=SJINtK84y2PqNXZJ' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
 
 Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and utilize worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
 
-#### Launchpad
+#### Launchpad `PRO`
 
 To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
 
@@ -68,7 +69,9 @@ Here, you can see pull requests that are open on your current branch, blocked, n
 To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
 
 <a href="vscode://eamodio.gitlens/link/command/launchpad">Open the Launchpad in GitLens</a>.
-
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
 #### Worktrees
 
 Worktrees allow you to have separate working directories, meaning you can check out and work in multiple branches at once. This allows you to not need to commit or stash changes you are currently working on in order to review a pull request.
@@ -77,19 +80,23 @@ Once you have opened a worktree, you can easily begin reviewing all changes made
 
 <a href="vscode://eamodio.gitlens/link/command/worktrees">Open the Worktree View in GitLens</a>.
 
+<div class='callout callout--warning'>
+    <p>Community plan is restricted to public and local repositories only.</p>
+</div>
+
 ***
 
 ### Streamline Collaboration 
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://youtube.com/embed/ljKEzaCMEow?si=Fuugc_rFOznC8zEW' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
 
 When collaborating with others in a repository, it can be difficult to share code without bloating your repository with multiple commits and branches that may not be ready to contribute to the remote. Additionally, pull request reviews can be limiting for what you have access to review, comment on, and does not give you the ability to review files that have not been modified. With the use of Cloud Patches and Code Suggest, GitLens offers the ability to easily share code without needing to commit/push it to a remote and allows you to suggest code changes to any file in the repository.
 
-#### Cloud Patches
+#### Cloud Patches `PRO`
 
 Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization to quickly share code changes with others. It can be applied to their working directory to continue to collaborate on or commit to the repository. 
 
@@ -98,8 +105,11 @@ To create a cloud patch, make changes to any file in a repository and then save 
 When you select members to share it with, they will see this in the Cloud Patch sidebar to be able to apply to their working directory.
 
 <a href="vscode://eamodio.gitlens/link/command/cloud-patches">Open the Cloud Patches View in GitLens</a>.
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
 
-#### Code Suggest
+#### Code Suggest `PRO`
 
 Code Suggest allows you to make edits across the entire repository that can be submitted to anyone's open pull request. 
 
@@ -107,12 +117,16 @@ To create a Code Suggestion, have a branch checked out with an open pull request
 
 The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
 
+<div class='callout callout--warning'>
+    <p>This feature is only available for Pro subscription tiers or higher</p>
+</div>
+
 ***
 
 ### Improve Workflows With Integrations
 
 <div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=EklNj8AbpuhoTwSr' frameborder='0' allowfullscreen></iframe>
+    <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=elYPqhs10LRf4W1b' frameborder='0' allowfullscreen></iframe>
 </div>
 
 <p> &nbsp; </p>
@@ -141,6 +155,3 @@ Join our public slack community and interact with other GitKraken GitLens users 
 
 Didn't find what you're looking for in all of our documentation and help articles? Paid users can reach out to our support team.
 [Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support)
-
-
-

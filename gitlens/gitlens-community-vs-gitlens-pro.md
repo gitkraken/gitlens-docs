@@ -34,10 +34,9 @@ GitLens Pro takes your workflow to the next level by unlocking advanced features
 ### Making Your Choice
 
 Both GitLens Community and Pro provide valuable tools to support your Git workflows. The Community edition is an excellent choice if you're looking for a powerful free VS Code Git management tool. If your work involves PR reviews, collaborative workflows, and advanced Git actions, upgrading to GitLens Pro will unlock new features and workflows to increase your developer productivity.
-
-<img src="/wp-content/uploads/gl-community-vs-pro.png" class="img-bordered img-responsive center" style="padding-left: 20%; padding-right: 20%;">
-
 _Both editions are backed by our commitment to enhancing your development experience. Start with Community and upgrade to Pro when you need additional horsepower for your workflows._
+
+
 
 **_Choose Community if you want:_**
 
@@ -47,11 +46,13 @@ _Both editions are backed by our commitment to enhancing your development experi
 
 **_Upgrade to Pro if you need:_**
 
+* _AI-powered automation for Git workflows_
 * _Streamlined PR review workflows_
 * _Advanced Git operations and visualization_
 * _Cross-platform integration capabilities_
 * _Team collaboration features_
 * _Enhanced productivity tools for professional development_
+
 
 ### Get Started with GitLens Pro Today
 

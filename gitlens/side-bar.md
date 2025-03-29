@@ -36,8 +36,8 @@ The GitLens side bar is the home of GitKraken teams and collaboration services (
 - Home View
 - GitKraken Workspaces
 - GitKraken Account
-- Cloud Patches
-- Launchpad
+- Cloud Patches `Pro`
+- Launchpad `Pro`
 
 <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered"> 
 
@@ -77,7 +77,7 @@ To revert back to the default view locations, open the command palette (<kdb>com
 
 ***
  
-##Commits view
+## Commits view
 
 <img src="/wp-content/uploads/commits-view.png" class="help-center-img img-bordered">
 
@@ -128,7 +128,7 @@ The Overview tab allows you to view your work-in-progress changes any time witho
 
 ***
 
-##Repositories view
+## Repositories view
 
 <img src="/wp-content/uploads/repositories-view.png" class="help-center-img img-bordered">
 
@@ -167,7 +167,7 @@ The _Repositories_ view lists opened Git repositories, and additionally provides
 
 ***
 
-##File History view
+## File History view
 
 <img src="/wp-content/uploads/file-history-view.png" class="help-center-img img-bordered">
 
@@ -187,7 +187,7 @@ The file history view lists all of the commits that changed the current file on 
 
 ***
 
-##Line History view
+## Line History view
 
 <img src="/wp-content/uploads/line-history-view.png" class="help-center-img img-bordered">
 
@@ -203,7 +203,7 @@ The line history view lists all of the commits that changed the selected lines o
 
 ***
 
-##Branches view
+## Branches view
 
 <img src="/wp-content/uploads/branches-view.png" class="help-center-img img-bordered">
 
@@ -239,7 +239,7 @@ The _Branches_ view lists all of the local branches, and additionally provides:
 
 ***
 
-##Remotes view
+## Remotes view
 
 <img src="/wp-content/uploads/remotes-view.png" class="help-center-img img-bordered">
 
@@ -253,7 +253,7 @@ The _Remotes_ view lists all of the remotes and their remote branches, and addit
 
 ***
 
-##Stashes view
+## Stashes view
 
 <img src="/wp-content/uploads/stashes-view.png" class="help-center-img img-bordered">
 
@@ -265,7 +265,7 @@ The _Stashes_ view lists all of the stashes, and additionally provides:
 
 ***
 
-##Tags view
+## Tags view
 
 <img src="/wp-content/uploads/tags-view.png" class="help-center-img img-bordered">
 
@@ -284,7 +284,7 @@ The Launchpad view is a view that offers the ability to always have the [Launchp
 
 <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="help-center-img img-bordered">
 
-## Workspaces `PREVIEW`
+## Workspaces
 
 Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
 
@@ -356,7 +356,7 @@ You can also manually add repositories to the VS Code workspace at any time usin
 
 ***
 
-## Worktrees view `PRO`
+## Worktrees view
 
 <img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered">
 
@@ -364,7 +364,7 @@ A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to crea
 
 ***
 
-##Contributors view
+## Contributors view
 
 <img src="/wp-content/uploads/contributors-view.png" class="help-center-img img-bordered">
 
@@ -376,7 +376,7 @@ The Contributors view lists all of the contributors, and additionally provides:
 
 ***
 
-##Search & Compare view
+## Search & Compare view
 
 <img src="/wp-content/uploads/search-and-compare-view.png" class="help-center-img img-bordered">
 
