@@ -37,7 +37,7 @@ GitLens now offers rich integration with Bitbucket repositories! Connect your Bi
 
 ### GitKraken AI Preview
 
-We're excited to introduce [GitKraken AI](https://www.gitkraken.com/solutions/gitkraken-ai), a preview of our official AI provider for GitLens' AI-powered features. Now users with a paid subscription can leverage powerful AI capabilities without needing to configure external API keys.
+We're excited to introduce [GitKraken AI](https://www.gitkraken.com/solutions/gitkraken-ai?source=gitlens), a preview of our official AI provider for GitLens' AI-powered features. Now users with a paid subscription can leverage powerful AI capabilities without needing to configure external API keys.
 
 - Two model options available in this release:
   - Google Gemini 2.0 Flash
@@ -77,7 +77,7 @@ We've refreshed GitKraken plans to better reflect how devs and teams work:
 - Teams plan is now called "Advanced"
 - Enterprise plan is now called "Business"
 
-[Read more](https://www.gitkraken.com/blog/smarter-workflows-powerful-ai-better-developer-experience) about the new GitKraken plans.
+[Read more](https://www.gitkraken.com/blog/smarter-workflows-built-in-ai-better-developer-experience?source=gitlens) about the new GitKraken plans.
 
 ### Referral Program
 
