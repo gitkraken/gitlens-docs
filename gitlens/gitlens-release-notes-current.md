@@ -26,15 +26,6 @@ GitLens 17 brings powerful new integrations, enhanced AI capabilities, and workf
 
 <img src="/wp-content/uploads/gl-17-0-hero.png" class="help-center-img img-bordered">
 
-### Bitbucket Integration
-
-GitLens now offers rich integration with Bitbucket repositories! Connect your Bitbucket account to gain access to issues and pull requests directly within GitLens.
-
-- Support for both Bitbucket Cloud and Bitbucket Data Center
-- Access Bitbucket issues and pull requests in Home View and Launchpad
-- See pull request information within the Commit Graph
-- Seamlessly incorporate Bitbucket into your GitLens workflows
-
 ### GitKraken AI Preview
 
 We're excited to introduce [GitKraken AI](https://www.gitkraken.com/solutions/gitkraken-ai?source=gitlens), a preview of our official AI provider for GitLens' AI-powered features. Now users with a paid subscription can leverage powerful AI capabilities without needing to configure external API keys.
@@ -61,6 +52,15 @@ Need to generate a structured changelog for a group of commits? GitLens 17 makes
 
 - Select multiple commits and generate a well-structured changelog in markdown format
 - Perfect for release notes, documentation, or communicating changes to your team
+
+### Bitbucket Integration
+
+GitLens now offers rich integration with Bitbucket repositories! Connect your Bitbucket account to gain access to issues and pull requests directly within GitLens.
+
+- Support for both Bitbucket Cloud and Bitbucket Data Center
+- Access Bitbucket issues and pull requests in Home View and Launchpad
+- See pull request information within the Commit Graph
+- Seamlessly incorporate Bitbucket into your GitLens workflows
 
 ### Commit Graph Enhancements
 
