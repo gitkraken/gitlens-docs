@@ -87,7 +87,7 @@ Pro subscribers can now refer colleagues and friends to GitLens through the new 
 
 ### Added
 
-- Adds support for GitKraken AI, powered by Google Gemini, included with all GitLens Pro subscriptions
+- Adds support for GitKraken AI (Preview), powered by Google Gemini, included with all GitLens Pro subscriptions
 - Adds expanded support for GitHub Copilot-provided AI models
 - Adds an AI-powered "Create with AI" button to assist with creating pull requests for GitHub and GitLab
 - Adds AI-powered changelog generation between two references ([#4189](https://github.com/gitkraken/vscode-gitlens/issues/4189))
