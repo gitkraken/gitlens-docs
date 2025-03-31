@@ -73,9 +73,9 @@ The Commit Graph now supports taking actions on multiple selected commits, start
 
 We've refreshed GitKraken plans to better reflect how devs and teams work:
 
-- Pro plan remains "Pro"
-- Teams plan is now called "Advanced"
-- Enterprise plan is now called "Business"
+- Pro plan remains "Pro" and is limited to 1-2 seats
+- A new "Advanced" plan is available with more AI features and controls for small teams of up to 10
+- Teams plan is now "Business"
 
 [Read more](https://www.gitkraken.com/blog/smarter-workflows-built-in-ai-better-developer-experience?source=gitlens) about the new GitKraken plans.
 
