@@ -29,7 +29,7 @@ You can also sign in from the VS Code Command Palette (`ctrl+shift+p` or `comman
 
 To sign out of your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign Out`.
 
-<img src="/wp-content/uploads/gl-sign-out-3.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-sign-out-ls-update.png" class="help-center-img img-bordered">
 
 You can also sign out from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign Out of GitKraken`.
 
