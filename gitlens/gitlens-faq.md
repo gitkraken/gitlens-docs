@@ -21,7 +21,7 @@ Visit the [GitLens Community vs GitLens Pro](gitlens/gitlens-community-vs-gitlen
 
 To sign into your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign In`.
 
-<img src="/wp-content/uploads/gl-sign-in-3.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GL-sign-in-LS-Update.png" class="help-center-img img-bordered">
 
 You can also sign in from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign In to GitKraken...`.
 
