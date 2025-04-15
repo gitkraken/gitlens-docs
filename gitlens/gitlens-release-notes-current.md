@@ -83,7 +83,7 @@ We've refreshed GitKraken plans to better reflect how devs and teams work:
 
 Pro subscribers can now refer colleagues and friends to GitLens through the new referral program and earn $.
 
-- Access the referral program [here](https://gitkraken.dev/?referral_portal=true&source=gitlens), or through the account menu in GitLens Home
+- Access the referral program [here](https://gitkraken.dev/?referral_portal=true&?source=help_center&product=gitlens), or through the account menu in GitLens Home
 
 ### Added
 
@@ -961,7 +961,7 @@ Code Suggest is a new cloud feature that frees your code reviews from the unnece
 
 You can create a Code Suggestion from the _Inspect: Overview_ tab when on a PR's branch. You can also start Code Suggestions on a pull request directly from the Launchpad. Simply choose which file changes to include, add a title and optional description, and you're ready to go.
 
-Upon creation of a Code Suggestion, a comment will appear on the pull request. Code Suggestions can be viewed and applied directly from [gitkraken.dev](https://gitkraken.dev), or opened in GitKraken Desktop or GitLens.
+Upon creation of a Code Suggestion, a comment will appear on the pull request. Code Suggestions can be viewed and applied directly from [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitlens), or opened in GitKraken Desktop or GitLens.
 
 You can see a PR's Code Suggestions from anywhere we currently display PR information in our views, including Commits, Branches, Remotes, and the new Pull Request view. From there you can view the changes, apply them, accept or reject the code suggestion, or copy a link to share with team members.
 
@@ -1027,7 +1027,7 @@ Shout-out to our awesome contributors for this release!
   - Adds [Code Suggest](https://gitkraken.com/solutions/code-suggest?utm_source=gitlens-extension&utm_medium=in-app-links) `preview`, a cloud feature, that frees your code reviews from unnecessary restrictions
     - Create a Code Suggestion from the _Inspect: Overview_ tab when on a PR's branch
     - Upon creation of a Code Suggestion, a comment will appear on the pull request
-      - Code Suggestions can be viewed and apply directly from [gitkraken.dev](https://gitkraken.dev), or open in GitKraken Desktop or GitLens.
+      - Code Suggestions can be viewed and apply directly from [gitkraken.dev](https://gitkraken.dev?source=help_center&product=gitlens), or open in GitKraken Desktop or GitLens.
     - See a PR's Code Suggestions from anywhere we currently display PR information in our views (Commits, Branches, Remotes)
     - You can additionally start Code Suggestions from the Launchpad
   - Adds a _Pull Request_ view to view PR commits and review file changes
@@ -1133,7 +1133,7 @@ VS Code's new multi-diff editor is out of experimental, so we've enabled it in o
 
 ### Cloud Patch Enterprise Storage ☁️
 
-For Enterprise customers, there is now the option to host Cloud Patches on your own dedicated storage for maximum security. Your organization's admin can configure the self-managed storage at https://gitkraken.dev/settings/security. When creating a Cloud Patch, GitLens will confirm they are being stored on your secure organization storage.
+For Enterprise customers, there is now the option to host Cloud Patches on your own dedicated storage for maximum security. Your organization's admin can configure the self-managed storage at [Security](https://gitkraken.dev/settings/security?source=help_center&product=gitlens). When creating a Cloud Patch, GitLens will confirm they are being stored on your secure organization storage.
 
 ### Thank you to our contributors
 

@@ -43,7 +43,7 @@ The GitLens side bar is the home of GitKraken teams and collaboration services (
 
 #### Home view
 
-A view to see what you are working on, what you need to work on next, and what you have recently worked on. <a href="https://gitkraken.dev/settings/integrations" target="_blank">Connect your provider and issue integrations</a> to fully utilize the Home view. This view includes the following sections:
+A view to see what you are working on, what you need to work on next, and what you have recently worked on. <a href="https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens" target="_blank">Connect your provider and issue integrations</a> to fully utilize the Home view. This view includes the following sections:
 - The **REPOSITORY** section shows your current repository and branch, alongside the repository state and actions for syncing (push, pull, fetch), switching repos/branches, and viewing working directory changes. If your branch is tied to a pull request or issue, GitLens surfaces those details so you can check PR status, continue reviews, or revisit issue specs. GitLens will also guide you to start a PR from your current branch if it can't find one.
 - The **LAUNCHPAD** section unblocks you and your team by showing pull requests that need your review, are blocked, or are ready to merge. Quickly jump to PRs to review, comment, or merge. With the new Start work action, you can easily begin a new branch or worktree, or generate one from an existing issue.
 - The **RECENT** section lets you quickly return to previous work by showing recent branches, worktrees, and PRs with activity for your chosen timeframe.
