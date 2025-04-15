@@ -62,7 +62,7 @@ Reviewing pull requests can be cumbersome due to needing to context switch to a 
 
 #### Launchpad `PRO`
 
-To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
+To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations?source=help_center&product=gitlens). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
 
 Here, you can see pull requests that are open on your current branch, blocked, need your review, require follow-up, waiting for a review, and in draft.
 

@@ -600,7 +600,7 @@ Additionally, these integrations provide commands to copy the url of or open, fi
 
 ### Connecting the GitHub and GitLab Integration
 
-The GitHub and GitLab integration are connected via your GitKraken account from [gitkraken.dev](https://gitkraken.dev/settings/integrations). To connect an integration, open the Command Palette (`command/ctrl+shift+P`) and type `GitLens: Manage Integrations`. You can also navigate to GitKraken Account in the GitLens Activity Bar and select `Integrations`. 
+The GitHub and GitLab integration are connected via your GitKraken account from [gitkraken.dev](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens). To connect an integration, open the Command Palette (`command/ctrl+shift+P`) and type `GitLens: Manage Integrations`. You can also navigate to GitKraken Account in the GitLens Activity Bar and select `Integrations`. 
 
 <img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
 
@@ -662,7 +662,7 @@ The Jira Integration connected through your GitKraken Account gives you access t
     <p>This Feature is only available for Pro subscription tiers or higher</p>
 </div>
 
-To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open gitkraken.dev/settings/integrations in a browser.
+To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open [Integration Settings](gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <img src="/wp-content/uploads/gl-cloud-integrations.png" class="help-center-img img-bordered">
 

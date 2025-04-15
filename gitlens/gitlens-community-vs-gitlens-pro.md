@@ -56,6 +56,6 @@ _Both editions are backed by our commitment to enhancing your development experi
 
 ### Get Started with GitLens Pro Today
 
-<a class="button button--basic" href="https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button" target="_blank">Try GitLens Pro for free</a> 
+<a class="button button--basic" href="https://gitkraken.dev/register?source=help_center&product=gitlens&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button" target="_blank">Try GitLens Pro for free</a> 
 
-You can try GitLens Pro for free for 14 days. When you’re ready, simply [upgrade to GitLens Pro](https://gitkraken.dev/purchase/checkout?planType=PRO&planQuantity=1&product=gitlens&source=gitlens) by subscribing to a Pro plan. 
+You can try GitLens Pro for free for 14 days. When you’re ready, simply [upgrade to GitLens Pro](https://gitkraken.dev/purchase/checkout?planType=PRO&planQuantity=1&?source=help_center&product=gitlens) by subscribing to a Pro plan. 
