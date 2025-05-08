@@ -16,6 +16,91 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-1"></a>
+
+## Version 17.1
+
+#### Tuesday, May 13, 2025
+
+GitLens 17.1 brings significant enhancements to AI-powered explanations, more AI provider options, introduces major Visual History improvements, and includes performance optimizations to Git operations and the Commit Graph.
+
+<img src="/wp-content/uploads/gl-17-1-hero.png" class="help-center-img img-bordered">
+
+### Enhanced AI Explanations
+
+We've greatly expanded AI explanation capabilities beyond just commit explanations, making it easier understand more aspects of your repository, from more places in GitLens.
+
+<img src="/wp-content/uploads/ai-branch-summary.png" class="help-center-img img-bordered">
+
+**✨Explain** functionality now includes generating summaries of changes for **branches**, **working changes**, and **stashes** in Preview. All summaries will open in rendered markdown instead of the Commit Details panel for better visibility and persistence.
+
+You'll find ✨Explain options for commits, branches, stashes, and working changes in several places:
+  - In the Commit Graph
+  - Available as commands in the command palette
+  - In the Commits, Branches, Stashes and Search & Compare views
+  - In branch cards in the Home view
+
+With these new AI explanation capabilities, you can quickly understand:
+- What changed across all commits in a branch - ✨Explain Branch (Preview)
+- What you've modified in your working directory - ✨Explain Working Changes (Preview)
+- What you've previously stashed - ✨Explain Stash (Preview)
+
+### AI Provider Support
+
+We've also expanded AI provider support to give you more options when using GitLens AI features, including:
+- New OpenAI and Google models
+- Self-hosted Azure AI models
+- OpenAI-compatible API providers
+- Local Ollama models
+- OpenRouter support
+
+### Home Workflow Improvements
+
+The Home view now provides more accurate context about your work and offers more flexibility in how you manage branches and their relationships.
+
+- **Improved issue association** for more accurate tracking of issues related to branches
+- **Manual merge target selection** allows you to change the merge target for your active branch when the assumed target isn't correct
+
+<img src="/wp-content/uploads/change-merge-target.png" class="help-center-img img-bordered">
+
+### Graph Enhancements
+
+We've made several improvements to the Commit Graph for better performance and usability.
+
+- **Performance optimization** with behind-the-scenes changes for faster graph rendering
+- **Enhanced Commit Details** with:
+  - Autolinks moved directly into the commit message component for easier access
+  - ✨Explain Commit positioned closer to the commit message
+  - Streamlined panel layout providing more space for the file tree
+
+<img src="/wp-content/uploads/commit-details-with-autolinks-and-explain.png" class="help-center-img img-bordered">
+
+### Visual File History Navigation
+
+Visual File History is now faster and includes more intuitive navigation between files, folders, and repositories with new interactive elements.
+
+<img src="/wp-content/uploads/visual-file-history-17-1.png" class="help-center-img img-bordered">
+
+- **New navigation breadcrumb** allowing you to start at file level and move up to folder and repo levels
+- **Interactive diff scrubber** for more precise navigation of diff history
+- **Performance improvements** when loading visualizations and zooming
+- **Repository visualization** accessible directly from the Home view
+
+### Git Performance Improvements
+
+This release includes significant performance enhancements to core Git operations, making various GitLens features more responsive while reducing resource usage.
+
+While these changes should improve your experience, we recommend reporting any regressions you might encounter.
+
+---
+
+### Added
+
+### Changed
+
+### Fixed
+
+
 <a id="v17-0"></a>
 
 ## Version 17.0
