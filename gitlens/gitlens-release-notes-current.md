@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.1
 
-#### Tuesday, May 13, 2025
+#### Wednesday, May 14, 2025
 
 GitLens 17.1 brings significant enhancements to AI-powered explanations, more AI provider options, introduces major Visual History improvements, and includes performance optimizations to Git operations and the Commit Graph.
 
