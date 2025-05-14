@@ -75,9 +75,9 @@ We've made several improvements to the Commit Graph for better performance and u
 
 <img src="/wp-content/uploads/commit-details-with-autolinks-and-explain.png" class="help-center-img img-bordered">
 
-### Visual File History Navigation
+### Visual History (File, Folder, and Repository)
 
-Visual File History is now faster and includes more intuitive navigation between files, folders, and repositories with new interactive elements.
+Visual History is now faster and includes more intuitive navigation between files, folders, and repositories with new interactive elements.
 
 <img src="/wp-content/uploads/visual-file-history-17-1.png" class="help-center-img img-bordered">
 
