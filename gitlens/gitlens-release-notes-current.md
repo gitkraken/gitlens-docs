@@ -37,7 +37,7 @@ We've greatly expanded AI explanation capabilities beyond just commit explanatio
 You'll find ✨Explain options for commits, branches, stashes, and working changes in several places:
   - In the Commit Graph
   - Available as commands in the command palette
-  - In the Commits, Branches, Stashes and Search & Compare views
+  - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
   - In branch cards in the Home view
 
 With these new AI explanation capabilities, you can quickly understand:
