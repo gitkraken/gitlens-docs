@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.1
 
-#### Wednesday, May 14, 2025
+#### Thursday, May 15, 2025
 
 GitLens 17.1 brings significant enhancements to AI-powered explanations, more AI provider options, introduces major Visual History improvements, and includes performance optimizations to Git operations and the Commit Graph.
 
@@ -75,9 +75,11 @@ We've made several improvements to the Commit Graph for better performance and u
 
 <img src="/wp-content/uploads/commit-details-with-autolinks-and-explain.png" class="help-center-img img-bordered">
 
-### Visual History (File, Folder, and Repository)
+### GitLens Visual History: A Reimagined History Experience
 
-Visual History is now faster and includes more intuitive navigation between files, folders, and repositories with new interactive elements.
+We're excited to introduce the all-new Visual History feature in GitLens, a powerful evolution of Visual File History. This reimagined view provides a dynamic and insightful visualization of your repository's history, offering unparalleled flexibility to explore changes across files, folders, branches, and your entire project.
+
+Visual History empowers you to understand the evolution of your codebase in a whole new way, helping you answer critical questions about who changed what, when, and in which context.
 
 <img src="/wp-content/uploads/visual-file-history-17-1.png" class="help-center-img img-bordered">
 
@@ -86,11 +88,17 @@ Visual History is now faster and includes more intuitive navigation between file
 - **Performance improvements** when loading visualizations and zooming
 - **Repository visualization** accessible directly from the Home view
 
-### Git Performance Improvements
+### Smarter, Faster Git
+This release brings major improvements to how GitLens interacts with Git under the hood — delivering faster performance, better accuracy, and more responsiveness, especially in large repositories.
 
-This release includes significant performance enhancements to core Git operations, making various GitLens features more responsive while reducing resource usage.
+- **Rewritten Git execution and parsing engine** for dramatically faster and more reliable Git operations.
+- **Smarter contributor stats** with improved fetching performance and richer data.
+- **Faster and more accurate commit searches** across the Commit Graph and Search & Compare views.
+- **Streamlined file and line history** with more precise results and snappier performance.
+- **Improved Git cancellation handling** for smoother UX and lower system impact.
+- **New performance settings**, like delaying file detail loading on commits, give you more control in large repos.
 
-While these changes should improve your experience, we recommend reporting any regressions you might encounter.
+These enhancements ensure GitLens continues to scale with your codebase — helping you move faster with more confidence.
 
 ---
 
