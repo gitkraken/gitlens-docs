@@ -16,6 +16,177 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-1"></a>
+
+## Version 17.1
+
+#### Thursday, May 15, 2025
+
+GitLens 17.1 brings significant enhancements to AI-powered explanations, more AI provider options, introduces major Visual History improvements, and includes performance optimizations to Git operations and the Commit Graph.
+
+<img src="/wp-content/uploads/gl-17-1-hero.png" class="help-center-img img-bordered">
+
+### Enhanced AI Explanations
+
+We've greatly expanded AI explanation capabilities beyond just commit explanations, making it easier understand more aspects of your repository, from more places in GitLens.
+
+<img src="/wp-content/uploads/ai-branch-summary.png" class="help-center-img img-bordered">
+
+**✨Explain** functionality now includes generating summaries of changes for **branches**, **working changes**, and **stashes** in Preview. All summaries will open in rendered markdown instead of the Commit Details panel for better visibility and persistence.
+
+You'll find ✨Explain options for commits, branches, stashes, and working changes in several places:
+  - In the Commit Graph
+  - Available as commands in the command palette
+  - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
+  - In branch cards in the Home view
+
+With these new AI explanation capabilities, you can quickly understand:
+- What changed across all commits in a branch - ✨Explain Branch (Preview)
+- What you've modified in your working directory - ✨Explain Working Changes (Preview)
+- What you've previously stashed - ✨Explain Stash (Preview)
+
+### AI Provider Support
+
+We've also expanded AI provider support to give you more options when using GitLens AI features, including:
+- New OpenAI and Google models
+- Self-hosted Azure AI models
+- OpenAI-compatible API providers
+- Local Ollama models
+- OpenRouter support
+
+### Home Workflow Improvements
+
+The Home view now provides more accurate context about your work and offers more flexibility in how you manage branches and their relationships.
+
+- **Improved issue association** for more accurate tracking of issues related to branches
+- **Manual merge target selection** allows you to change the merge target for your active branch when the assumed target isn't correct
+
+<img src="/wp-content/uploads/change-merge-target.png" class="help-center-img img-bordered">
+
+### Graph Enhancements
+
+We've made several improvements to the Commit Graph for better performance and usability.
+
+- **Performance optimization** with behind-the-scenes changes for faster graph rendering
+- **Enhanced Commit Details** with:
+  - Autolinks moved directly into the commit message component for easier access
+  - ✨Explain Commit positioned closer to the commit message
+  - Streamlined panel layout providing more space for the file tree
+
+<img src="/wp-content/uploads/commit-details-with-autolinks-and-explain.png" class="help-center-img img-bordered">
+
+### GitLens Visual History: A Reimagined History Experience
+
+We're excited to introduce the all-new Visual History feature in GitLens, a powerful evolution of Visual File History. This reimagined view provides a dynamic and insightful visualization of your repository's history, offering unparalleled flexibility to explore changes across files, folders, branches, and your entire project.
+
+Visual History empowers you to understand the evolution of your codebase in a whole new way, helping you answer critical questions about who changed what, when, and in which context.
+
+<img src="/wp-content/uploads/visual-file-history-17-1.png" class="help-center-img img-bordered">
+
+- **New navigation breadcrumb** allowing you to start at file level and move up to folder and repo levels
+- **Interactive diff scrubber** for more precise navigation of diff history
+- **Performance improvements** when loading visualizations and zooming
+- **Repository visualization** accessible directly from the Home view
+
+### Smarter, Faster Git
+This release brings major improvements to how GitLens interacts with Git under the hood — delivering faster performance, better accuracy, and more responsiveness, especially in large repositories.
+
+- **Rewritten Git execution and parsing engine** for dramatically faster and more reliable Git operations.
+- **Smarter contributor stats** with improved fetching performance and richer data.
+- **Faster and more accurate commit searches** across the Commit Graph and Search & Compare views.
+- **Streamlined file and line history** with more precise results and snappier performance.
+- **Improved Git cancellation handling** for smoother UX and lower system impact.
+- **New performance settings**, like delaying file detail loading on commits, give you more control in large repos.
+
+These enhancements ensure GitLens continues to scale with your codebase — helping you move faster with more confidence.
+
+---
+
+### Added
+
+- Adds AI-powered "Explain" commands for work-in-progress (WIP) changes, commits, stashes, and branches
+  - Adds _Explain Branch Changes (Preview)_, _Explain Changes (Preview)_, and _Explain Working Changes (Preview)_ actions to branches, commits and stashes, and WIP, respectively in the _Commit Graph_
+  - Adds _Explain Branch Changes (Preview)_ and _Explain Changes (Preview)_ actions to branches, commits and stashes in the other GitLens views
+  - Adds an _✨ Explain_ button to the editor and status bar blame hovers
+  - Adds an _✨ Explain_ button above the commit message in the _Inspect_ view which replaces the _Explain_ panel
+  - Adds _Explain Branch Changes (Preview)_ and _Explain Working Changes (Preview)_ (when applicable) actions to the `...` menu on the _Home_ view
+  - Adds _Explain Branch Changes (Preview)_, _Explain Commit Changes (Preview)_, _Explain Stash Changes (Preview)_, and _Explain Working Changes (Preview)_ actions to the Command Palette
+- Adds updated AI provider and model support for GitLens' AI features
+  - Adds Ollama and OpenRouter support ([#3311](https://github.com/gitkraken/vscode-gitlens/issues/3311), [#3906](https://github.com/gitkraken/vscode-gitlens/issues/3906))
+  - Adds Google Gemini 2.5 Flash (Preview) model, and OpenAI GPT-4.1, GPT-4.1 mini, GPT-4.1 nano, o4 mini, and o3 models ([#4235](https://github.com/gitkraken/vscode-gitlens/issues/4235))
+  - Adds support for Azure AI (OpenAI-compatible) models
+  - Adds support for custom OpenAI-compatible providers ([#4263](https://github.com/gitkraken/vscode-gitlens/issues/4263))
+  - Adds `gitlens.ai.enabled` setting to disable all AI-powered features
+  - Adds a walkthrough for AI features
+- Adds an all-new _Visual History_, a powerful evolution of the _Visual File History_, providing a dynamic and insightful visualization of your repository's history, offering flexibility to explore changes across files, folders, branches, and your entire project
+  - Visualize the history sliced by author (the default) or by branch (when applicable), providing different perspectives on contributions and development lines
+    - Slicing by author allows you to see the contributions of each author over time
+    - Slicing by branch allows you to see unmerged commits on parallel development lines &mdash; only available when viewing the history of all branches of a file or folder
+  - Use the zoom/pan functionality to focus on specific timeframes or areas of interest via mouse wheel or zoom buttons
+  - Adds a breadcrumb navigation bar, with branch switcher and file/folder picker, allowing you to easily navigate the history of files, folders, branches, or the entire repository
+    - Hold `Alt` or `Shift` when clicking on the breadcrumbs to open the repository or folder in a new tab
+  - Adds the configuration popover to customize the visualization, including the branch or all branches, timeframe, and how to slice the history
+  - Adds a scrubber bar to provide an almost time-lapse view for navigating through the changes introduced with each commit in history
+  - Adds _Visualize Repo History_ and _Visualize Branch History_ actions to the _Home_ view
+  - Adds _Show Visual History_ command to the Command Palette
+- Adds the ability to change a branch's merge target in Home view. ([#4224](https://github.com/gitkraken/vscode-gitlens/issues/4224))
+- Adds enhanced integration with Azure DevOps, Bitbucket, and Bitbucket Data Center to support associated accounts and pull requests on commits ([#4192](https://github.com/gitkraken/vscode-gitlens/issues/4192))
+- Adds the ability to search for GitHub Enterprise and GitLab Self-Managed pull requests by URL in Launchpad
+- Adds enhanced and improved accuracy and performance of the revision navigation ([#4200](https://github.com/gitkraken/vscode-gitlens/issues/4200))
+  - Adds support for navigating line ranges in addition to individual lines
+- Adds "changes" statistics for stashes in the _Commit Graph_
+- Adds _Open File at Revision from Remote_ command to open the specific file revision from a remote file URL
+- Adds `Copy SHA` action to editor hovers
+- Adds avatars to the hidden Branch / Tags popover in the _Commit Graph_
+
+### Changed
+
+- Changes the display of autolinks in the _Inspect_ and _Commit Graph Inspect_ views ([#4286](https://github.com/gitkraken/vscode-gitlens/issues/4286)).
+  - Replaces the autolinks panel with a new compact "footer" bar below the commit message
+- Optimizes (rewrote) Git execution and parsing for significantly improved performance, especially with large repositories, and reliability
+  - Improves contributor fetching performance, especially for large repositories, and adds more advanced data for contributor statistics
+  - Improves performance of loading data for the _Commit Graph_
+  - Improves cancellation support in many Git operations for better responsiveness and system resource usage
+  - Adds `gitlens.advanced.commits.delayLoadingFileDetails` setting to delay loading full commit file details until required to improve performance even more for large repositories
+- Improves _Commit Graph_ rendering performance, re-rendering avoidance, and selection responsiveness
+  - Switches the _Commit Graph_ webview to use [Lit](https://lit.dev/) and upgraded to React 19 for the graph component
+  - Improves commit search performance and reliability, epecially when paging in new results
+- Improves branch name autolink matching logic for better accuracy and fewer false positives ([#3894](https://github.com/gitkraken/vscode-gitlens/issues/3894))
+- Improves commit search accuracy and performance both in the _Search & Compare_ view and the _Commit Graph_
+- Improves commit searches in the _Search & Compare_ view to show only the matching files for file or change-based searches
+- Improves commit searches in the _Search & Compare_ view to show matching stashes
+- Improves accuracy and performance of the _File History_ and _Line History_ views
+- Improves performance of the _Contributors_ view, especially with large repositories
+  - Adds a configurable `gitlens.views.contributors.maxWait` timeout setting for fetching contributors to avoid potentially long waits
+- Improves GitHub integration authentication check performance, when the authentication extension is disabled or unavailable (Cursor, Windsurf, etc) ([#4065](https://github.com/gitkraken/vscode-gitlens/issues/4065))
+- Improves AI model adherence to provided custom instructions ([#4267](https://github.com/gitkraken/vscode-gitlens/issues/4267))
+- Changes cherry-pick command no longer use/open a terminal ([#3531](https://github.com/gitkraken/vscode-gitlens/issues/3531))
+- Improves date setting descriptions ([#3953](https://github.com/gitkraken/vscode-gitlens/issues/3953))
+
+### Fixed
+
+- Fixes an error that can occur when retrieving the active repository, such as when the current file is not part of a repository.
+- Fixes cache collision between issues and PRs in autolinks ([#4193](https://github.com/gitkraken/vscode-gitlens/issues/4193))
+- Fixes incorrect PR Link Across Azure DevOps Projects ([#4207](https://github.com/gitkraken/vscode-gitlens/issues/4207))
+- Fixes detail view incorrectly parses GitHub account in commit message ([#3246](https://github.com/gitkraken/vscode-gitlens/issues/3246))
+- Fixes timed out waiting for authentication provider to register in GitLens after update to version 16.3 ([#4065](https://github.com/gitkraken/vscode-gitlens/issues/4065))
+- Fixes cloud integration sessions not refreshing when they expire mid-session ([#4240](https://github.com/gitkraken/vscode-gitlens/issues/4240))
+- Fixes "Delete Worktree" doing nothing when the default worktree is already open in another window ([#4232](https://github.com/gitkraken/vscode-gitlens/issues/4232))
+- Fixes some cases in which Azure DevOps queries fail or return unexpected results ([#4271](https://github.com/gitkraken/vscode-gitlens/issues/4271))
+- Fixes element with id is already registered for commit searches in the _Search & Compare_ view
+- Fixes hierarchical compaction in file trees (e.g., a parent folder disappearing if a subfolder with a similar name exists)
+- Fixes cherry-pick commit ordering by falling back to author date if committer date matches
+- Fixes issues when using older versions of Git (>= Git 2.7.2)
+- Fixes cases where rename detection was not working properly
+
+### Removed
+
+- Deprecates the `gk-target-base` Git configuration key
+
+### Engineering
+
+- Bumps `eslint-plugin-import-x` to v4.10.5 &mdash; thanks to [PR #4236](https://github.com/gitkraken/vscode-gitlens/pull/4236) by JounQin ([@JounQin](https://github.com/JounQin))
+
 <a id="v17-0"></a>
 
 ## Version 17.0
