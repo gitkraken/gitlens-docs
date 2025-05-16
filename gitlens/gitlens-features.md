@@ -440,7 +440,7 @@ Gain additional insights on hover.
 
 ***
 
-## Gitkraken AI
+## GitKraken AI
 ### AI-Generated Commit Messages
 
 Commit messages can be automatically generated using Gitkraken AI.
@@ -460,8 +460,25 @@ Create intelligent descriptions for stashed changes, making it easier to find an
 - From the Command Palette: `GitLens: Generate Stash Message with AI`
 - When creating a stash: Look for the AI option in the stash creation interface
 - From the stash view: Generate descriptions for existing stashes
+### AI Explainations `Preview`
+Gitkraken AI can help better understand code changes by generating commit explanations, making it easier understand more aspects of your repository, from more places in GitLens.
 
-### AI Commit Explanations`Pro`
+<img src="/wp-content/uploads/ai-branch-summary.png" class="help-center-img img-bordered">
+
+**✨Explain** functionality includes generating summaries of changes for **branches**, **working changes**, and **stashes** in Preview. All summaries will open in rendered markdown instead of the Commit Details panel for better visibility and persistence.
+
+You'll find ✨Explain options for commits, branches, stashes, and working changes in several places:
+  - In the Commit Graph
+  - Available as commands in the command palette
+  - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
+  - In branch cards in the Home view
+
+With Gitkraken AI explanation capabilities, you can quickly understand:
+- What changed across all commits in a branch - ✨Explain Branch (Preview)
+- What you've modified in your working directory - ✨Explain Working Changes (Preview)
+- What you've previously stashed - ✨Explain Stash (Preview)
+
+#### AI Commit Explanations`Pro`
 *Available in:* Pro, Advanced, and Business plans
 Understand the reasoning behind changes with AI-generated explanations of commit content and purpose. Quickly grasp the intent and impact of complex commits without having to manually review all changed files.
 
@@ -469,6 +486,7 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 - In the "Commit Details" view: Find the AI explanation panel
 - In the "Cloud Patch Details" view: Look for explanations alongside commit information
 - When reviewing commits: Option to generate explanations for any selected commit
+
 
 ### AI Changelog Creation `Advanced`
 *Available in:* Advanced and Business plans only
