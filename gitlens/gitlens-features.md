@@ -441,7 +441,7 @@ Gain additional insights on hover.
 ***
 
 ## GitKraken AI
-### AI-Generated Commit Messages
+### AI Generated Commit Messages
 
 Commit messages can be automatically generated using Gitkraken AI.
 
@@ -460,7 +460,8 @@ Create intelligent descriptions for stashed changes, making it easier to find an
 - From the Command Palette: `GitLens: Generate Stash Message with AI`
 - When creating a stash: Look for the AI option in the stash creation interface
 - From the stash view: Generate descriptions for existing stashes
-### AI Explainations `Preview`
+
+### AI Explanations `Preview`
 Gitkraken AI can help better understand code changes by generating commit explanations, making it easier understand more aspects of your repository, from more places in GitLens.
 
 <img src="/wp-content/uploads/ai-branch-summary.png" class="help-center-img img-bordered">
@@ -478,7 +479,7 @@ With Gitkraken AI explanation capabilities, you can quickly understand:
 - What you've modified in your working directory - ✨Explain Working Changes (Preview)
 - What you've previously stashed - ✨Explain Stash (Preview)
 
-#### AI Commit Explanations`Pro`
+#### AI Commit Explanations `Pro`
 *Available in:* Pro, Advanced, and Business plans
 Understand the reasoning behind changes with AI-generated explanations of commit content and purpose. Quickly grasp the intent and impact of complex commits without having to manually review all changed files.
 
