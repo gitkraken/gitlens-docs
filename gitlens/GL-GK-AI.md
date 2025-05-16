@@ -49,7 +49,22 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 - In the "Cloud Patch Details" view: Look for explanations alongside commit information
 - When reviewing commits: Option to generate explanations for any selected commit
 
+
 <img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
+
+### AI Changes Explain `Preview`
+Gitkraken AI can also be used to generate summaries in Branches, Working changes, and Stashes.
+
+What changed across all commits in a branch – ✨Explain Branch
+What you’ve modified in your working directory – ✨Explain Working Changes
+What you’ve previously stashed – ✨Explain Stash
+
+You’ll find ✨Explain options for commits, branches, stashes, and working changes in several places:
+
+- In the Commit Graph
+- Available as commands in the command palette
+- In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
+- In branch cards in the Home view
 
 ### AI Changelog Creation `Pro`
 **Available in:** Advanced and Business plans only
@@ -90,6 +105,13 @@ GitLens offers flexibility in choosing your AI provider:
 1. **GitKraken AI** (default): Pre-configured and ready to use with your token allocation
 2. **GitHub Copilot**: If installed, can be used as your AI provider
 3. **Custom Provider** (BYOK): Connect your own key from supported AI services
+>
+- New OpenAI and Google models
+- Self-hosted Azure AI models
+- OpenAI-compatible API providers
+- Local Ollama models
+- OpenRouter support
+>
 
 ### Setup Instructions
 
