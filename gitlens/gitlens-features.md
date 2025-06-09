@@ -450,7 +450,7 @@ Commit messages can be automatically generated using Gitkraken AI.
 To generate a commit message, stage the changes you want, then navigate to Home View and tap the "Generate Commit Message" button to generate a precise, descriptive commit messages based on your changes, or run the `GitLens: Generate Commit Message (Experimental)` command from the Command Palette (`command/ctrl + shift + P`). From there you will be guided through the process of accepting to send the diff of your staged changes to Gitkraken AI. Once completed, the generated commit message will be entered into the commit input box on the Source Control sidebar. You can also enter additional context about your changes in the commit box and those will also be sent to help generate a better message. Additionally, you can customize the `gitlens.experimental.generateCommitMessagePrompt` setting to control the prompt used to structure and format the generated commit message. There are additional `gitlens.ai` settings that can be [customized](/gitlens/gitlens-settings/#misc-settings) for the provider and model. 
 
 <div class='callout callout--warning'>
-    <p>Gitlens Pro users and above can also choose to provide their own API key in order to use a different AI provider. Gitkraken AI utilizes the Gemini 2.0 Flash model.</p>
+    <p>Gitlens Pro users and above can also choose to provide their own API key in order to use a different AI provider. Gitkraken AI utilizes the Google Gemini model.</p>
 </div>
 
 ### AI Stash Messages `Pro`
