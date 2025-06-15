@@ -16,6 +16,58 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-2"></a>
+
+## Version 17.2
+
+#### Tuesday, June 17, 2025
+
+GitLens 17.2 introduces Commit Composer (Preview), a powerful AI feature that automatically organizes your working directory changes into meaningful commits. We've also refined the Home view for better issue workflow management and enhanced AI explanations with a cleaner experience.
+
+<img src="/wp-content/uploads/gl-17-2-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer Preview
+Commit Composer leverages AI to transform chaotic working directory changes into well-structured, meaningful commits with clear titles and descriptions. This powerful feature helps maintain clean commit history and saves time organizing your changes.
+
+<img src="/wp-content/uploads/commit-composer-17-2.png" class="help-center-img img-bordered">
+
+Read more about how to auto-generate commits with GitLens in our [Commit Composer discussion](https://NEEDURL).
+
+### Improved Home View Issue Workflow
+The Home view now provides a cleaner, more focused experience for managing issues and work items.
+
+<img src="/wp-content/uploads/home-view-improvements-17-2.png" class="help-center-img img-bordered">
+
+#### Streamlined Issue Association
+When no issue is associated with your current branch, we've removed the large "Associate an Issue" button to reduce visual clutter. You can still associate issues using the subtle issue icon in the header.
+When an issue is identified, it now appears above the current branch to reinforce the natural workflow progression from issue → branch → pull request.
+
+#### Enhanced Repository Navigation
+The main header is now a breadcrumb that helps you understand your current context. The repository name is collapsed by default with the branch prominently displayed, so you always know which branch you're working on. Hover over the breadcrumb to reveal the full repository name when needed.
+
+#### Simplified Pull Request Creation
+We've consolidated the "Create Pull Request" and "Create with AI" buttons into a streamlined split button. Click the main button for standard PR creation, or click the smaller ✨ button to generate AI-powered titles and descriptions.
+
+### Advanced AI Security Controls for Organizations `ADVANCED`
+Organizations on the Advanced plan now have granular control over AI provider access for their teams. Admins can:
+
+- Disable specific AI providers to block access to certain models
+- Set custom API keys for specific providers that all organization members will use
+- Configure custom URLs and keys for additional AI providers
+
+These controls ensure compliance with organizational security policies while maintaining access to AI-powered features.
+
+### Refined AI Explanations
+AI explanations now open in a single rendered markdown file instead of showing both the rendered content and markdown source. This reduces editor tab clutter and provides a cleaner reading experience that can be easily closed without save prompts.
+
+---
+
+### Added
+### Changed
+### Fixed
+### Removed
+### Engineering
+
 <a id="v17-1"></a>
 
 ## Version 17.1
