@@ -26,7 +26,7 @@ GitLens 17.2 transforms how you craft your Git history with the early preview of
 
 <img src="/wp-content/uploads/gl-17-2-hero.png" class="help-center-img img-bordered">
 
-### Commit Composer Early Preview
+### Commit Composer Early `Preview`
 In this release, we're excited to share an early preview of **Commit Composer**, a set of AI-powered features that help you organize your Git commits into clear, logical stories.
 
 Commit Composer will analyze your code changes and use AI to:
@@ -38,7 +38,7 @@ There are two main operations available in this early preview:
 1.  **Generate commits from working directory changes**
 2.  **Generate new commits from existing changes on a branch**
 
-Read more about how to use these preview features and join the [Commit Composer Discussion](https://NEEDURL).
+Read more about how to use these preview features and join the [Commit Composer Discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4408).
 
 <img src="/wp-content/uploads/commit-composer-17-2.png" class="help-center-img img-bordered">
 
