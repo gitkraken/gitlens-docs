@@ -16,6 +16,105 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-2"></a>
+
+## Version 17.2
+
+#### Tuesday, June 17, 2025
+
+GitLens 17.2 transforms how you craft your Git history with the early preview of Commit Composer, a set of AI-powered features that automatically organize your changes into meaningful, well-structured commits. This release also refines the Home View UX to streamline workflows, introduces advanced AI security controls for organizations, and delivers a cleaner AI explanation experience—all designed to help you tell better stories with your code.
+
+<img src="/wp-content/uploads/gl-17-2-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer Early `Preview`
+In this release, we're excited to share an early preview of **Commit Composer**, a set of AI-powered features that help you organize your Git commits into clear, logical stories.
+
+Commit Composer will analyze your code changes and use AI to:
+- **Organize related changes** across files into logical, cohesive commits
+- **Generate meaningful commit messages** that clearly describe what each commit accomplishes
+- **Create commit descriptions** that provide helpful context for reviewers
+
+There are two main operations available in this early preview:
+1.  **Generate commits from working directory changes**
+2.  **Generate new commits from existing changes on a branch**
+
+Read more about how to use these preview features and join the [Commit Composer Discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4408).
+
+<img src="/wp-content/uploads/commit-composer-17-2.png" class="help-center-img img-bordered">
+
+### Work Item UX Improvements in Home View
+We're refining the GitLens Home view based on user feedback. In this release, we're focused on improving clarity around the three key components of the current work item: the active branch, the linked issue, and the related pull request.
+
+<img src="/wp-content/uploads/home-view-improvements-17-2.png" class="help-center-img img-bordered">
+
+#### Streamlined Issue Association
+When no issue is associated with your current branch, we've removed the large "Associate an Issue" button to reduce visual clutter. You can still associate issues using the subtle issue icon in the header.
+When an issue is identified, it now appears above the current branch to reinforce the natural workflow progression from issue → branch → pull request.
+
+#### Enhanced Repository Navigation
+The main header is now a breadcrumb that helps you understand your current repo context. The repository name is collapsed by default with the branch prominently displayed, so you always know which branch you're working on. Hover over the breadcrumb to reveal the full repository name when needed.
+
+#### Simplified Pull Request Creation
+We've consolidated the "Create Pull Request" and "Create with AI" buttons into a streamlined split button. Click the main button for standard PR creation, or click the smaller ✨ button to generate AI-powered titles and descriptions.
+
+### Advanced AI Security Controls for Organizations `ADVANCED`
+Organizations on the Advanced plan now have granular control over AI provider access for their teams. Admins can:
+
+- Disable specific AI providers to block access to certain models
+- Set custom API keys for specific providers that all organization members will use
+- Configure custom URLs and keys for additional AI providers
+
+These controls ensure compliance with organizational security policies while maintaining access to AI-powered features.
+
+### Refined AI Explanations
+AI explanations now open in a single rendered markdown file instead of showing both the rendered content and markdown source. This reduces editor tab clutter and provides a cleaner reading experience that can be easily closed without save prompts.
+
+---
+
+### Added
+
+- Adds new AI commands (in preview) which can generate (and rebase) commits from working tree changes or from commits in an existing branch ([#4301](https://github.com/gitkraken/vscode-gitlens/issues/4301)):
+  - Adds the _Generate Commits with AI (Preview)_ command to the command palette, and to the context menu or working tree changes in views and the _Commit Graph_. This command stashes working tree changes, generates a set of commits from those changes, and commits them to the current branch.
+  - Adds the _Rebase with AI (Preview)_ command to the command palette and _AI Rebase Current Branch onto Commit (Preview)_ command to the context menu of commits in views and the _Commit Graph_. This command takes the commits on a branch, reorganizes them into a new set of AI-generated commits, creates a branch at the chosen commit and commits them to the new branch
+  - These commands also generate a document to explain each generated commit and its contents
+  - Adds messaging and confirmation on first-time use of the commands to explain how they work ([#4367](https://github.com/gitkraken/vscode-gitlens/issues/4367))
+  - Adds an _Undo_ button to the success notification of the commands which attempts to revert the generated commits/branch ([#4366](https://github.com/gitkraken/vscode-gitlens/issues/4366))
+- Adds contributors to _File History_ view ([#4356](https://github.com/gitkraken/vscode-gitlens/issues/4356))
+- Adds support for AI controls from the active organization's security settings on the current account ([#4300](https://github.com/gitkraken/vscode-gitlens/issues/4300))
+- Adds o3 Pro model and latest Gemini 2.5 Pro preview support to GitLens AI features ([#4388](https://github.com/gitkraken/vscode-gitlens/issues/4388))
+- Adds Anthropic Claude 4 Opus and Claude 4 Sonnet support to GitLens AI features
+- Adds support for Mistral models to GitLens AI features
+- Adds a loading message to several GitLens views when the content of the view is still loading
+- Adds inline buttons to the stash and commit picker and ensures proper messaging when there are no stashes or commits available
+- Adds the _Open Worktree in New Window_ command to branch cards in _Home_ view
+
+### Changed
+
+- Automatically stashes (and pops) uncommitted changes on Pull ([#4296](https://github.com/gitkraken/vscode-gitlens/issues/4296))
+- Improves the interaction experience with _Home_ view ([#4302](https://github.com/gitkraken/vscode-gitlens/issues/4302)):
+  - Simplifies the "work item" section ([#4332](https://github.com/gitkraken/vscode-gitlens/issues/4332))
+  - Removes the option to associate an issue from cards in the "recent" section ([#4333](https://github.com/gitkraken/vscode-gitlens/issues/4333))
+- Combines the "Create Pull Request" and "Create with AI" buttons into a split button ([#4330](https://github.com/gitkraken/vscode-gitlens/issues/4330))
+- On the _Home_ view in the active branch card replaces repository with a breadcrumb that has both the repository and current branch, where the repository is collapsible and is hidden by default ([#4332](https://github.com/gitkraken/vscode-gitlens/issues/4332))
+- Hides Walkthrough links and buttons in _Cursor_ because they are not applicable ([#3837](https://github.com/gitkraken/vscode-gitlens/issues/3837))
+- Changes _Delete Branch_ commands to no longer use/open a terminal ([#3528](https://github.com/gitkraken/vscode-gitlens/issues/3528))
+- Improves the appearance of view headings when collapsed into the grouped view ([#4355](https://github.com/gitkraken/vscode-gitlens/issues/4355))
+- Uses virtual documents instead of untitled documents for summaries generated by GitLens AI commands, and adds a "regenerate" option to most summaries ([#4326](https://github.com/gitkraken/vscode-gitlens/issues/4326))
+- Updates search results in some views to update dynamically with a count
+- Improves the loading performance of the _Worktrees_ view
+- Remembers selected nodes in certain views when they lose and regain focus
+- Automatically expands the remote in _Remotes_ view when it is the only remote
+
+### Fixed
+
+- Fixes some cases where "element with id is already registered" errors occur across several GitLens views ([#3341](https://github.com/gitkraken/vscode-gitlens/issues/3341), [#3442](https://github.com/gitkraken/vscode-gitlens/issues/3442), [#3862](https://github.com/gitkraken/vscode-gitlens/issues/3862))
+- Fixes the _Visual File History_ view from refreshing needlessly when the active editor changes between revisions ([#4325](https://github.com/gitkraken/vscode-gitlens/issues/4325))
+- Fixes cancellation of prompts on certain AI commands causing an error notification ([#4354](https://github.com/gitkraken/vscode-gitlens/issues/4354))
+- Fixes files missing in the Repositories view when the "Use compact file layout" option is disabled ([#4307](https://github.com/gitkraken/vscode-gitlens/issues/4307))
+- Fixes "path is already registered" error after git pull ([#922](https://github.com/gitkraken/vscode-gitlens/issues/922))
+- Fixes GitLens file watchers causing high CPU usage in some cases ([#4335](https://github.com/gitkraken/vscode-gitlens/issues/4335))
+- Fixes some cases where stashes and commits incorrectly appear on branches in the _Repositories_ view ([#4353](https://github.com/gitkraken/vscode-gitlens/issues/4353))
+
 <a id="v17-1"></a>
 
 ## Version 17.1
