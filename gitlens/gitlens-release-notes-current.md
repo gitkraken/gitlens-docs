@@ -22,14 +22,23 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Tuesday, June 17, 2025
 
-GitLens 17.2 introduces Commit Composer (Preview), a powerful AI feature that automatically organizes your working directory changes into meaningful commits. We've also refined the Home view for better issue workflow management and enhanced AI explanations with a cleaner experience.
+GitLens 17.2 transforms how you craft your Git history with the early preview of Commit Composer, a set of AI-powered features that automatically organize your changes into meaningful, well-structured commits. This release also refines the Home View UX to streamline workflows, introduces advanced AI security controls for organizations, and delivers a cleaner AI explanation experience—all designed to help you tell better stories with your code.
 
 <img src="/wp-content/uploads/gl-17-2-hero.png" class="help-center-img img-bordered">
 
 ### Commit Composer Early Preview
 In this release, we're excited to share an early preview of **Commit Composer**, a set of AI-powered features that help you organize your Git commits into clear, logical stories.
 
-Read more about how to auto-generate commits with Commit Composer in our [Commit Composer discussion](https://NEEDURL).
+Commit Composer will analyze your code changes and use AI to:
+- **Organize related changes** across files into logical, cohesive commits
+- **Generate meaningful commit messages** that clearly describe what each commit accomplishes
+- **Create commit descriptions** that provide helpful context for reviewers
+
+There are two main operations available in this early preview:
+1.  **Generate commits from working directory changes**
+2.  **Generate new commits from existing changes on a branch**
+
+Read more about how to use these preview features and join the [Commit Composer Discussion](https://NEEDURL).
 
 <img src="/wp-content/uploads/commit-composer-17-2.png" class="help-center-img img-bordered">
 
