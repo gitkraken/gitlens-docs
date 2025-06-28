@@ -1,44 +1,62 @@
 ---
-
-title: Gitlens Streamline Collaboration
-description: How can gitlens help streamline collaboration
+title: GitLens Streamline Collaboration
+description: How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
 taxonomy:
-    category: gitlens
-
+  category: gitlens
 ---
+<kbd>Last updated: July 2025</kbd>
+
+<figure class='embed-container embed-container--16-9'>
+  <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen title="GitLens Streamline Collaboration video overview"></iframe>
+</figure>
+
+&nbsp;
+
+Collaborating in a repository can be tricky—especially when you want to share work without flooding the remote with temporary commits or branches. Traditional pull request workflows also limit which files you can review or comment on—typically only those that have changed.
+
+GitLens helps streamline collaboration through:
+
+- **Cloud Patches** – Share uncommitted code changes without pushing to a remote.
+- **Code Suggest** – Propose changes on any file, not just modified ones.
+
+## Cloud Patches <span style="color: #888;">`PRO`</span>
+
+Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization. Teammates can apply them directly to their working directory—ideal for reviewing or collaborating on code before it’s committed.
+
+To create a Cloud Patch:
+
+1. Make and save changes to any file.
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+3. Run: `GitLens: Share as Cloud Patch…`
+4. Select teammates to share with.
+
+Recipients will see the patch in the **Cloud Patch** sidebar and can apply it directly to their workspace.
+
+[Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
+
+<figure class='callout callout--warning'>
+  <p>This feature is available with a GitLens Pro subscription or higher.</p>
+</figure>
 
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen></iframe>
-</div>
+## Code Suggest <span style="color: #888;">`PRO`</span>
 
-<p> &nbsp; </p>
+Code Suggest lets you propose edits to any file in a repository—regardless of whether the file was modified. You can submit these suggestions directly to another team member’s open pull request.
 
-When collaborating with others in a repository, it can be difficult to share code without bloating your repository with multiple commits and branches that may not be ready to contribute to the remote. Additionally, pull request reviews can be limiting for what you have access to review, comment on, and does not give you the ability to review files that have not been modified. With the use of Cloud Patches and Code Suggest, GitLens offers the ability to easily share code without needing to commit/push it to a remote and allows you to suggest code changes to any file in the repository.
+To create a Code Suggestion:
 
-#### Cloud Patches `PRO`
+1. Check out a branch that has an open pull request.
+2. Make and save changes to any file.
+3. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+4. Run: `GitLens: Show Inspect View` > **Suggest Changes for PR**.
 
-Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization to quickly share code changes with others. It can be applied to their working directory to continue to collaborate on or commit to the repository. 
+The PR creator can:
 
-To create a cloud patch, make changes to any file in a repository and then save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Share as Cloud Patch…_. 
+- Review your suggestions
+- Apply them to their working directory
+- Commit and push the changes to the open pull request
 
-When you select members to share it with, they will see this in the Cloud Patch sidebar to be able to apply to their working directory.
+<figure class='callout callout--warning'>
+  <p>This feature is available with a GitLens Pro subscription or higher.</p>
+</figure>
 
-<a href="vscode://eamodio.gitlens/link/command/cloud-patches">Open the Cloud Patches View in GitLens</a>.
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
-</div>
-
-#### Code Suggest `PRO`
-
-Code Suggest allows you to make edits across the entire repository that can be submitted to anyone's open pull request. 
-
-To create a Code Suggestion, have a branch checked out with an open pull request, make changes to any files and save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Show inspect view_ > Suggest Changes for PR. 
-
-The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
-
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
-</div>
-
-***
