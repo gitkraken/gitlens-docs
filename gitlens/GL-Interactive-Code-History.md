@@ -1,16 +1,22 @@
 ---
-
-title: Gitlens Interactive Code History
-description: New Page Description
+title: GitLens Interactive Code History
+description: Learn how GitLens helps you explore and understand your repository’s commit history.
 taxonomy:
-    category: gitlens
-
+  category: gitlens
 ---
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/uSc7aQV8uMs?si=7bGXpqRI0lv7k-A0' frameborder='0' allowfullscreen></iframe>
-</div>
+<kbd>Last updated: July 2025</kbd>
 
-<p> &nbsp; </p>
+<figure class='embed-container embed-container--16-9'>
+  <iframe width='560' height='315' src='https://www.youtube.com/embed/uSc7aQV8uMs?si=7bGXpqRI0lv7k-A0' frameborder='0' allowfullscreen title="GitLens Interactive Code History video overview"></iframe>
+</figure>
 
-Understanding code history can be difficult when looking at complex repositories with multiple branches and contributors. Developers can struggle to easily see who made changes, why, and when. With the use of The Commit Graph, GitLens Inspect, and Inline Blame and Hovers, GitLens offers the ability to easily navigate through your repository to provide insights about the history and interact with it to better manage your code. 
+&nbsp;
+
+Understanding code history in large repositories can be challenging, especially with multiple branches and contributors. GitLens helps simplify this process by providing tools that surface meaningful context:
+
+- **Commit Graph** – Visualize the structure of your repository.
+- **GitLens Inspect** – Drill into file and line-level history.
+- **Inline Blame and Hovers** – Quickly see who changed what and when.
+
+These features make it easier to navigate your repository, understand changes, and make informed decisions about your code.

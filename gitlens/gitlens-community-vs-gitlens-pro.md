@@ -1,61 +1,69 @@
 ---
-
 title: GitLens Community vs. GitLens Pro
 description: Learn the differences between GitLens Community and GitLens Pro
 taxonomy:
-    category: gitlens
-    
+  category: gitlens
 ---
+<kbd>Last updated: July 2025</kbd>
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/dOLvYFgJPyY?si=TXJOGHH_LoajOen6' frameborder='0' allowfullscreen></iframe>
-</div>
+<figure class='embed-container embed-container--16-9'>
+  <iframe width='560' height='315' src='https://www.youtube.com/embed/dOLvYFgJPyY?si=TXJOGHH_LoajOen6' frameborder='0' allowfullscreen title="GitLens Community vs. GitLens Pro video overview"></iframe>
+</figure>
 
-<p> &nbsp; </p>
+&nbsp;
 
-Whether you're reviewing code changes, managing pull requests, or diving into your project's history, GitLens transforms your Git experience directly within VS Code. Let's explore which edition best fits your workflow.
+Whether you're reviewing code, managing pull requests, or exploring your project history, GitLens enhances your Git experience—directly inside Visual Studio Code.
 
-### GitLens Community (Free)
+Let’s explore the key differences between the **Community** and **Pro** editions to help you choose the version that fits your workflow.
 
-The Community edition of GitLens is **free** and gives you powerful tools to manage Git and understand how your code has evolved and by whom. With popular features like in-editor blame annotations, hovers, and CodeLens, you can see actionable authorship details at the top of each file. Track the history of any file over time using Revision Navigation to gain deeper insights into code changes.
+## GitLens Community (Free)
 
-_Perfect for: Individual developers and anyone looking to enhance their Git workflow._
+The GitLens Community edition is **free** and offers powerful tools to help you understand code history and authorship:
 
-### GitLens Pro
+- **Blame annotations, hovers, and CodeLens** – See who changed what and why at a glance.
+- **Revision Navigation** – Step through the history of a file to trace its evolution over time.
+- **In-editor Git insights** – Understand your codebase without leaving your IDE.
 
-GitLens Pro takes your workflow to the next level by unlocking advanced features and seamless integrations:
-
-* **Accelerate PR reviews** with Launchpad, a clean and actionable PR hub built directly into VS Code.
-* **Manage commits effortlessly** using the Commit Graph, where you can execute advanced actions like rebase, merge, and more. With powerful search and filtering, quickly locate commits, branches, or files.
-* **Enhance collaboration** by integrating with platforms like GitHub, GitLab, and Bitbucket, reducing context switching. View and manage PRs directly in VS Code through Launchpad.
-
-*Perfect for: Professional developers, teams focused on collaboration, and organizations looking to maximize productivity.* *[Start your free trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button)* *of GitLens Pro for 14 days today.*
-
-### Making Your Choice
-
-Both GitLens Community and Pro provide valuable tools to support your Git workflows. The Community edition is an excellent choice if you're looking for a powerful free VS Code Git management tool. If your work involves PR reviews, collaborative workflows, and advanced Git actions, upgrading to GitLens Pro will unlock new features and workflows to increase your developer productivity.
-_Both editions are backed by our commitment to enhancing your development experience. Start with Community and upgrade to Pro when you need additional horsepower for your workflows._
+_Perfect for: Individual developers and teams starting with GitLens._
 
 
+## GitLens Pro
 
-**_Choose Community if you want:_**
+GitLens Pro takes your development workflow to the next level with advanced features and deeper integrations:
 
-* _Essential Git capabilities_
-* _Code authorship insights_
-* _Basic file history tracking_
+- **Accelerate PR reviews** with Launchpad—an actionable pull request hub built into VS Code.
+- **Manage commits visually** using the Commit Graph with features like rebase, merge, and advanced search.
+- **Streamline collaboration** by integrating with GitHub, GitLab, and Bitbucket. View and manage pull requests directly within VS Code.
 
-**_Upgrade to Pro if you need:_**
+_Perfect for: Professional developers, collaborative teams, and organizations optimizing for productivity._  
+[Start your free 14-day trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button) of GitLens Pro today.
 
-* _AI-powered automation for Git workflows_
-* _Streamlined PR review workflows_
-* _Advanced Git operations and visualization_
-* _Cross-platform integration capabilities_
-* _Team collaboration features_
-* _Enhanced productivity tools for professional development_
+## Making Your Choice
 
+Both **GitLens Community** and **GitLens Pro** offer essential tools for managing Git workflows in VS Code.
 
-### Get Started with GitLens Pro Today
+- **Start with Community** if you're looking for robust, free Git functionality and file history tools.
+- **Upgrade to Pro** if your team relies on efficient PR reviews, collaboration, and advanced Git operations.
 
-<a class="button button--basic" href="https://gitkraken.dev/register?source=help_center&product=gitlens&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button" target="_blank">Try GitLens Pro for free</a> 
+_Both editions are built to enhance your Git experience. Start with Community and upgrade when your needs grow._
 
-You can try GitLens Pro for free for 14 days. When you’re ready, simply [upgrade to GitLens Pro](https://gitkraken.dev/purchase/checkout?planType=PRO&planQuantity=1&?source=help_center&product=gitlens) by subscribing to a Pro plan. 
+### Choose GitLens Community if you want:
+
+- Essential Git capabilities
+- Code authorship insights
+- Basic file history tracking
+
+### Upgrade to GitLens Pro if you need:
+
+- AI-powered Git workflow automation
+- Streamlined pull request reviews
+- Advanced Git operations and visualizations
+- Integrations with GitHub, GitLab, Bitbucket
+- Collaboration tools for teams
+- Developer productivity enhancements
+
+## Get Started with GitLens Pro Today
+
+<a class="button button--basic" href="https://gitkraken.dev/register?source=help_center&product=gitlens&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button" target="_blank">Try GitLens Pro for free</a>
+
+Enjoy GitLens Pro free for 14 days. When you're ready, [upgrade your plan](https://gitkraken.dev/purchase/checkout?planType=PRO&planQuantity=1&?source=help_center&product=gitlens) to keep Pro features.

@@ -1,39 +1,69 @@
 ---
 
+---
 title: GitLens FAQ
-description: GitLens FAQ
+description: Frequently asked questions about GitLens and GitKraken account integration.
 taxonomy:
-    category: gitlens
-
+  category: gitlens
 ---
 
-The answers to your important frequently asked questions.
+<kbd>Last updated: July 2025</kbd>
+
+Get answers to frequently asked questions about GitLens features, sign-in options, and GitKraken account integration.
 
 ***
 
-## What is GitLens Community and GitLens Pro?
+## What is GitLens Community vs GitLens Pro?
 
-Visit the [GitLens Community vs GitLens Pro](gitlens/gitlens-community-vs-gitlens-pro) page to learn about what is offered in each. 
+Learn about the differences between the two versions on the [GitLens Community vs GitLens Pro](/gitlens/gitlens-community-vs-gitlens-pro) page.
 
 ***
 
-## How do I sign in or out of GitLens?
+## How Do I Sign In or Out of GitLens?
 
-To sign into your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign In`.
+### Sign In to GitLens
 
-<img src="/wp-content/uploads/GL-sign-in-LS-Update.png" class="help-center-img img-bordered">
+To sign in with your GitKraken account:
 
-You can also sign in from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign In to GitKraken...`.
+- Click the GitLens icon in the sidebar.
+- Under **GITKRAKEN ACCOUNT**, select `Sign In`.
 
-<img src="/wp-content/uploads/gl-sign-in-4.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/GL-sign-in-LS-Update.png" alt="GitLens sidebar with sign-in option" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Sign in from the GitLens sidebar</figcaption>
+</figure>
 
-To sign out of your GitKraken account select the GitLens icon in the sidebar and under GITKRAKEN ACCOUNT select `Sign Out`.
+You can also sign in via the VS Code Command Palette:
 
-<img src="/wp-content/uploads/gl-sign-out-ls-update.png" class="help-center-img img-bordered">
+- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+- Type and select `GitLens: Sign In to GitKraken...`.
 
-You can also sign out from the VS Code Command Palette (`ctrl+shift+p` or `command+shift+p`) by typing `GitLens: Sign Out of GitKraken`.
+<figure>
+  <img src="/wp-content/uploads/gl-sign-in-4.png" alt="VS Code command palette with sign-in command" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Sign in using the command palette</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/gl-sign-out-4.png" class="help-center-img img-bordered">
+### Sign Out of GitLens
+
+To sign out:
+
+- Click the GitLens icon in the sidebar.
+- Under **GITKRAKEN ACCOUNT**, select `Sign Out`.
+
+<figure>
+  <img src="/wp-content/uploads/gl-sign-out-ls-update.png" alt="GitLens sidebar with sign-out option" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Sign out from the GitLens sidebar</figcaption>
+</figure>
+
+Or use the VS Code Command Palette:
+
+- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+- Type and select `GitLens: Sign Out of GitKraken`.
+
+<figure>
+  <img src="/wp-content/uploads/gl-sign-out-4.png" alt="VS Code command palette with sign-out command" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Sign out using the command palette</figcaption>
+</figure>
 
 ***
 
@@ -63,8 +93,9 @@ Yes, you can configure proxy settings from the Visual Studio Code settings. To o
 
 <img src="/wp-content/uploads/proxy-settings.png" class="help-center-img img-bordered">
 
+
 ***
 
-## Can I use my GitLens paid license on more than one computer?
+## Can I Use My GitLens Paid License on More Than One Computer?
 
-Yes, your GitLens paid license is associated with your email address, not a specific computer. So you can use GitLens on as many computers as you’d like.
+Yes. Your GitLens Pro license is tied to your email address, not a specific device. You can activate and use GitLens on multiple computers using the same account.

@@ -1,43 +1,65 @@
 ---
-
 title: Accelerate PR Reviews
-description: Explore using Gitlens to accelerate your PR Reviews
+description: Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees.
 taxonomy:
-    category: gitlens
-
+  category: gitlens
 ---
 
+<kbd>Last updated: July 2025</kbd>
 
-<div class='embed-container embed-container--16-9'>
-    <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen></iframe>
-</div>
+<figure class='embed-container embed-container--16-9'>
+  <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen title="Accelerate PR Reviews with GitLens"></iframe>
+</figure>
 
-<p> &nbsp; </p>
+&nbsp;
 
-Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and utilize worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
+Reviewing pull requests (PRs) in the browser can interrupt your workflow. Switching tabs, checking email notifications, and managing local branches can be time-consuming—especially when the PRs aren’t even relevant to you.
 
-#### Launchpad `PRO`
+GitLens helps streamline PR reviews directly inside Visual Studio Code. With **Launchpad** and **Worktrees**, you can:
 
-To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations?source=help_center&product=gitlens). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
+- View all relevant PRs grouped by actionable categories.
+- Avoid context switching with an integrated experience.
+- Work across multiple branches using separate working directories.
 
-Here, you can see pull requests that are open on your current branch, blocked, need your review, require follow-up, waiting for a review, and in draft.
+## Launchpad <span style="color: #888;">`PRO`</span>
 
-To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
+To use Launchpad:
 
-<a href="vscode://eamodio.gitlens/link/command/launchpad">Open the Launchpad in GitLens</a>.
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
-</div>
-#### Worktrees
+1. Connect your [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+3. Run: `GitLens: Open Launchpad`.
 
-Worktrees allow you to have separate working directories, meaning you can check out and work in multiple branches at once. This allows you to not need to commit or stash changes you are currently working on in order to review a pull request.
+Launchpad displays grouped pull requests:
 
-Once you have opened a worktree, you can easily begin reviewing all changes made in the Pull Request sidebar. You can see what commits have been made, what files have been changed, open the file diffs, and more. 
+- On your current branch
+- Assigned to you for review
+- Waiting for follow-up
+- Blocked or in draft
 
-<a href="vscode://eamodio.gitlens/link/command/worktrees">Open the Worktree View in GitLens</a>.
+To start reviewing:
 
-<div class='callout callout--warning'>
-    <p>Community plan is restricted to public and local repositories only.</p>
-</div>
+- Select a PR.
+- Choose **Open in Worktree** or **Switch to Branch or Worktree**.
 
-***
+[Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
+
+<figure class='callout callout--warning'>
+  <p>This feature is available with a GitLens Pro subscription or higher.</p>
+</figure>
+
+
+## Worktrees
+
+Worktrees let you check out multiple branches simultaneously in separate working directories. This means you don’t need to commit or stash in-progress changes before switching to another branch—perfect for reviewing pull requests without disrupting your workflow.
+
+After opening a worktree, use the Pull Request sidebar to:
+
+- Review all commits in the PR
+- Explore changed files
+- View diffs and inspect updates line by line
+
+[Open the Worktree View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
+
+<figure class='callout callout--warning'>
+  <p>The Community plan supports only public and local repositories.</p>
+</figure>
