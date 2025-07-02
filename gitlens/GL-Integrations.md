@@ -1,100 +1,182 @@
 ---
-
-title: Gitlens Integrations
-description: Explore Gitlens Integrations
+title: GitLens Integrations
+description: Explore GitLens integrations with remote providers
 taxonomy:
     category: gitlens
+---
+
+<kbd>Last updated: July 2025</kbd>
+
+# GitLens Integrations
+
+GitLens supports a wide range of remote providers to enhance your Git workflow inside Visual Studio Code. Supported platforms include:
+
+- GitHub (including GitHub Enterprise)
+- GitLab
+- Gitea
+- Gerrit
+- Bitbucket (Cloud and Server)
+- Azure DevOps
+
+You can also define [custom remote providers or providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
+
+## Integration Capabilities
+
+Basic integrations include:
+
+- **Auto-linking** for issues and pull requests
+
+Enhanced integrations (e.g., GitHub, GitLab) offer:
+
+- **Launchpad support** to manage pull requests and workflows
+- **Rich hovers** showing issue and PR details
+- **Pull request associations** with branches and commits
+- **Avatars** for contributors and reviewers
+
+These integrations also add contextual commands to open or copy URLs to files, commits, branches, and comparisons directly from your remote provider.
 
 ---
 
-GitLens provides rich integrations with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/settings/#remote-provider-integration-settings) as well.
+## Remote Command Reference
 
-Basic integrations provide issue and pull request auto-linking, while richer integrations (e.g. GitHub or GitLab) offer the ability to work with the Launchpad, can provide rich hover information provided for auto-linked issues and pull requests, associate pull requests with branches and commits, and provide avatars.
+You can use the following GitLens commands to interact with files, commits, and repositories on your remote platform.
 
-Additionally, these integrations provide commands to copy the url of or open, files, commits, branches, and the repository on the remote provider.
+### Files
 
-- Open _File from Remote_ command (`gitlens.openFileFromRemote`) — opens the local file from a url of a file on a remote provider
-- Open _File on Remote_ command (`gitlens.openFileOnRemote`) — opens a file or revision on the remote provider
-- Copy _Remote File Url_ command (`gitlens.copyRemoteFileUrlToClipboard`) — copies the url of a file or revision on the remote provider
-- Open _File on Remote From..._ command (`gitlens.openFileOnRemoteFrom`) — opens a file or revision on a specific branch or tag on the remote provider
-- Copy _Remote File Url From..._ command (`gitlens.copyRemoteFileUrlFrom`) — copies the url of a file or revision on a specific branch or tag the remote provider
-- Open _Commit on Remote_ command (`gitlens.openCommitOnRemote`) — opens a commit on the remote provider
-- Copy _Remote Commit Url_ command (`gitlens.copyRemoteCommitUrl`) — copies the url of a commit on the remote provider
-- Open _Branch on Remote_ command (`gitlens.openBranchOnRemote`) — opens the branch on the remote provider
-- Copy _Remote Branch Url_ command (`gitlens.copyRemoteBranchUrl`) — copies the url of a branch on the remote provider
-- Open _Branches on Remote_ command (`gitlens.openBranchesOnRemote`) — opens the branches on the remote provider
-- Copy _Remote Branches Url_ command (`gitlens.copyRemoteBranchesUrl`) — copies the url of the branches on the remote provider
-- Open _Comparison on Remote_ command (`gitlens.openComparisonOnRemote`) — opens the comparison on the remote provider
-- Copy _Remote Comparison Url_ command (`gitlens.copyRemoteComparisonUrl`) — copies the url of the comparison on the remote provider
-- Open _Pull Request_ command (`gitlens.openPullRequestOnRemote`) — opens the pull request on the remote provider
-- Copy _Pull Request Url_ command (`gitlens.copyRemotePullRequestUrl`) — copies the url of the pull request on the remote provider
-- Open _Repository on Remote_ command (`gitlens.openRepoOnRemote`) — opens the repository on the remote provider
-- Copy _Remote Repository Url_ command (`gitlens.copyRemoteRepositoryUrl`) — copies the url of the repository on the remote provider
+- **Open File from Remote** (`gitlens.openFileFromRemote`) — Open a local file by specifying a remote file URL
+- **Open File on Remote** (`gitlens.openFileOnRemote`) — Open the current file or revision on the remote
+- **Copy Remote File URL** (`gitlens.copyRemoteFileUrlToClipboard`) — Copy the URL of the current file or revision
+- **Open File on Remote From...** (`gitlens.openFileOnRemoteFrom`) — Open a file/revision from a specific branch or tag
+- **Copy Remote File URL From...** (`gitlens.copyRemoteFileUrlFrom`) — Copy the file/revision URL from a specific branch or tag
 
-### Connecting the GitHub and GitLab Integration
+### Commits
 
-The GitHub and GitLab integration are connected via your GitKraken account from [gitkraken.dev](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens). To connect an integration, open the Command Palette (`command/ctrl+shift+P`) and type `GitLens: Manage Integrations`. You can also navigate to GitKraken Account in the GitLens Activity Bar and select `Integrations`. 
+- **Open Commit on Remote** (`gitlens.openCommitOnRemote`) — Open a commit on the remote
+- **Copy Remote Commit URL** (`gitlens.copyRemoteCommitUrl`) — Copy the URL of a commit
 
-<img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
+### Branches
 
-You will be prompted to log into your GitKraken account if you are not already. Then, select `Connect with GitHub` or `Connect with GitLab` and sign into the desired service. You will have the option to connect multiple integrations if needed. Finish the process by selecting `Complete Setup` to hop back into VS Code and begin working with the integrations. 
+- **Open Branch on Remote** (`gitlens.openBranchOnRemote`) — Open the current branch on the remote
+- **Copy Remote Branch URL** (`gitlens.copyRemoteBranchUrl`) — Copy the URL of the current branch
+- **Open Branches on Remote** (`gitlens.openBranchesOnRemote`) — Open the list of branches on the remote
+- **Copy Remote Branches URL** (`gitlens.copyRemoteBranchesUrl`) — Copy the URL for all branches
 
-<img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
+### Comparisons
+
+- **Open Comparison on Remote** (`gitlens.openComparisonOnRemote`) — Open a diff comparison on the remote
+- **Copy Remote Comparison URL** (`gitlens.copyRemoteComparisonUrl`) — Copy the URL for the comparison
+
+### Pull Requests
+
+- **Open Pull Request on Remote** (`gitlens.openPullRequestOnRemote`) — Open the associated pull request
+- **Copy Pull Request URL** (`gitlens.copyRemotePullRequestUrl`) — Copy the pull request URL
+
+### Repositories
+
+- **Open Repository on Remote** (`gitlens.openRepoOnRemote`) — Open the entire repository in your browser
+- **Copy Remote Repository URL** (`gitlens.copyRemoteRepositoryUrl`) — Copy the repository URL for sharing or navigation
+
+
+### Connect GitHub or GitLab Integration
+
+To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via the [GitLens integrations dashboard](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+
+#### Steps to Connect:
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
+2. Go to the **GitKraken Account** section in the GitLens Activity Bar and choose **Integrations**.
+
+<figure>
+  <img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Navigate to Integrations in the GitKraken Account menu</figcaption>
+</figure>
+
+3. If you’re not already signed in, log into your GitKraken account.
+4. Click **Connect with GitHub** or **Connect with GitLab** and complete the sign-in process.
+5. Select **Complete Setup** to return to Visual Studio Code and activate the integration.
+
+You can connect multiple integrations if needed.
+
+<figure>
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Select the service you want to integrate and finish setup</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
-    <p>Community users are limited to basic functionality only.</p>
+  <p>Community users are limited to basic functionality only.</p>
 </div>
 
 ## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
-GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
+GitLens Pro supports advanced integration with GitHub Enterprise Server and GitLab Self-Managed.
 
-Once authenticated, GitLens will enrich GitHub Enterprise Server or GitLab Self-Managed autolinks in the hovers. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, along with a footnote of the pull request or issue details. You’ll see similar details from the Sidebar views for any commit or branch associated with a pull  request or issue.
+Once authenticated, GitLens enhances autolinks for these services in hover cards. You'll see:
 
-<img src="/wp-content/uploads/gitlab-github-integration.png" class="help-center-img img-bordered">
+- User avatars
+- Links to related pull requests and issues
+- Pull request and issue details directly in the Sidebar views
 
-### Connecting GitHub Enterprise Server or GitLab Self-Managed
+<figure>
+  <img src="/wp-content/uploads/gitlab-github-integration.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Enhanced hover cards with issue and PR metadata</figcaption>
+</figure>
 
-To connect either the GitHub Enterprise Server or GitLab Self-Managed integration:
+### Connect GitHub Enterprise Server or GitLab Self-Managed
 
-- Open the `settings.json` - this can be done from the command palette  (`command/ctrl + shift + P`) > _Preferences: Open User Settings (JSON)_
+To connect a self-hosted GitHub or GitLab instance:
 
-- Provide a _gitlens.remote_ with a _domain_ and a _type_ with the below format - for more information on the formatting see the [remote provider integration settings](/gitlens/settings/#remote-provider-integration-settings)
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and select **Preferences: Open User Settings (JSON)**
+2. In `settings.json`, add a `gitlens.remotes` entry with your domain and provider type:
 
-Format Example: 
-
-```
+```json
 "gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitHub" }]
 ```
 
-Or
+Or for GitLab:
 
-```
+```json
 "gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitLab" }]
 ```
 
-- Open a GitHub Enterprise Server or GitLab Self-Managed repository in VS Code
+3. Open the self-hosted repository in Visual Studio Code
+4. Open the [Remotes View](/gitlens/side-bar/#remotes-view)
+5. Click <i class="fa-solid fa-plug"></i> **Connect to Remote**
 
-- Open the [Remotes View](/gitlens/side-bar/#remotes-view)
+<figure>
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Use the plug icon to connect a self-managed remote</figcaption>
+</figure>
 
-- Select <i class="fa-solid fa-plug"></i> _Connect to Remote_ - if you do not see this option, check that the format of the settings.json matches the example above
+> If the **Connect to Remote** option doesn't appear, double-check that your JSON entry matches the example format.
 
-<img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="help-center-img img-bordered">
+6. When prompted, provide a Personal Access Token (PAT) with the required scopes and press **Enter** to complete setup
 
-- You will then be prompted to provide a PAT with the required scopes and can hit _Enter_ to complete the integration connection
 
 ***
 
 ## Jira Integration `PRO`
 
-The Jira Integration connected through your GitKraken Account gives you access to Jira [Autolinks](/gitlens/gitlens-features#autolinks) anywhere autolinks are supported in GitLens. Simply connect the integration and GitLens will automatically convert Jira IDs in commit messages to links i.e. `ABC-123`.
+GitLens Pro supports integration with Jira Cloud via your GitKraken Account. This allows GitLens to automatically link Jira issue keys (e.g., `ABC-123`) in commit messages and views wherever autolinks are supported.
 
-<img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Jira issues auto-linked in GitLens hovers and views</figcaption>
+</figure>
 
 <div class='callout callout--warning'>
-    <p>This Feature is only available for Pro subscription tiers or higher</p>
+  <p>This feature is only available for Pro subscription tiers or higher.</p>
 </div>
 
-To connect the integration, open the GitLens Sidebar, select `Cloud Integrations` from the GitKraken Account view, select Jira Cloud, and proceed with the integration connection by allowing GitKraken access to your Atlassian Account. You can also open [Integration Settings](gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
+### Connect the Jira Integration
 
-<img src="/wp-content/uploads/gl-cloud-integrations.png" class="help-center-img img-bordered">
+1. Open the GitLens Sidebar and navigate to the **GitKraken Account** view.
+2. Select **Cloud Integrations**.
+3. Choose **Jira Cloud** and follow the prompts to connect.
+4. Allow GitKraken access to your Atlassian Account.
+
+You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
+
+<figure>
+  <img src="/wp-content/uploads/gl-cloud-integrations.png" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Jira integration via GitLens Cloud Integrations panel</figcaption>
+</figure>
