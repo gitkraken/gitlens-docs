@@ -1,79 +1,141 @@
 ---
-
-title: Gitlens Workspaces
-description: Explore Workspaces in Gitlens
+title: Manage Multiple Repositories with GitLens Workspaces
+description: Learn how to create and use Workspaces in GitLens to organize your repositories
 taxonomy:
     category: gitlens
-
 ---
 
+<kbd>Last updated: July 2025</kbd>
 
-Workspaces are a convenient way to group and manage multiple repositories, making them easily accessible from anywhere. Whether you're working individually or collaborating with a team, Workspaces provide a seamless way to manage your projects. A Workspace can be made up of local repositories, those you currently have open in your VS Code window, or GitKraken Workspaces, which are repositories stored on the cloud or on GitKraken services.
+Workspaces in GitLens help you organize and manage multiple repositories from one convenient interface. Whether you're working solo or collaborating with a team, Workspaces simplify project access and context switching.
 
-Whether you're working individually or collaborating with a team, these new features are designed to help you work more efficiently and effectively.
+A Workspace can include:
+- **Local repositories**: The ones currently open in your VS Code window.
+- **Cloud Workspaces**: Hosted by GitKraken and accessible anywhere (GitKraken account required).
 
-To access Workspaces, simply open the GitLens Home menu and you will find them in the panel located at the bottom left. Alternatively, you can access them by performing a search in the command palette.
+> 💡 **Note:** Shared cloud Workspaces require a GitKraken trial or subscription.
 
-Please note that while using cloud workspaces requires a GitKraken account, shared cloud workspaces require a trial or subscription.
+### Accessing Workspaces
 
-<img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered">
+You can open your Workspaces in two ways:
+
+1. Click the **GitLens Home** icon in the Activity Bar.
+2. Use the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for `GitLens: Open Workspaces`.
+
+<figure>
+  <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Workspaces section in the GitLens Home panel</figcaption>
+</figure>
 
 ### Creating a Workspace
 
-To create a workspace, tap the '+' button next to GitKraken Workspaces, provide a name and a description, and connect a provider if you wish.
+To create a new GitLens Workspace:
 
-<img src="/wp-content/uploads/gl-create-workspace.png" class="help-center-img img-bordered">
+1. In the GitLens Home panel, click the **+** button next to **GitKraken Workspaces**.
+2. Enter a **name** and an optional **description**.
+3. (Optional) Connect a Git provider (such as GitHub or GitLab) to link repositories.
+
+<figure>
+  <img src="/wp-content/uploads/gl-create-workspace.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Create Workspace dialog with name, description, and provider options</figcaption>
+</figure>
 
 ### Adding Repositories
 
-You can add repositories to a workspace by tapping the '+' button under the Workspace tab. And if you want to keep your Workspaces and their repositories up-to-date, simply tap the Refresh icon.
+To add repositories to a Workspace:
 
-<img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="help-center-img img-bordered">
+1. Click the **+** button under the **Workspace** tab.
+2. To sync repository status, click the **Refresh** icon.
+
+<figure>
+  <img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Add repositories to your Workspace</figcaption>
+</figure>
 
 ### Locating Repositories
 
-To locate the disk location of the repositories within the Cloud Workspace, select the 'Locate Repositories' (pin icon) next to the repository name. If you have a folder set up for a Workspace with multiple repositories on your disk, you can select the option and choose the parent folder. GitLens will then find all the repositories within that parent folder.
+To find the disk location of a repository in a Cloud Workspace:
 
-<img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="help-center-img img-bordered">
+1. Click the **Locate Repositories** (pin icon) next to the repository name.
+2. If you have a folder with multiple repositories, select the parent folder. GitLens will detect and associate all repositories within it.
+
+<figure>
+  <img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Locate local disk path of repositories in your Workspace</figcaption>
+</figure>
 
 ### Opening Repositories
 
-To open a repository from a Workspace tap the 'Open Repository in New Window' icon.
+To open a repository from a Workspace:
 
-_Pro Tip: If you prefer to open the Workspace in your current window, hold down the ALT/OPTION key on a Mac and click 'Open Repo'._
+- Click the **Open Repository in New Window** icon.
+- _Pro Tip:_ To open the repository in the **current window**, hold the **Alt/Option** key (Mac) while clicking **Open Repo**.
 
-<img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Open repositories from a Workspace in VS Code</figcaption>
+</figure>
 
 ### Removing Repositories
 
-To remove a repository from a Workspace, you can do so by right-clicking to open the context menu on the repository you wish to remove and then selecting 'remove repository from Workspace'.
+To remove a repository from a Workspace:
 
-<img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="help-center-img img-bordered">
+1. Right-click the repository.
+2. Select **Remove repository from Workspace** from the context menu.
+
+<figure>
+  <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Remove repositories from a Workspace</figcaption>
+</figure>
 
 ### Converting to Cloud Workspaces
 
-To convert your local VSCode workspace into a GitKraken Workspace, press the 'Convert to Cloud Workspace' icon, provide a name and a description, and your workspace will be stored in the cloud for your GitKraken user account. This means that your Cloud Workspace will now appear in any of your GitKraken shared services, such as GitKraken Desktop, GitLens, and the GitKraken CLI.
+To convert a local VS Code workspace into a GitKraken Cloud Workspace:
 
-<img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered">
+1. Click the **Convert to Cloud Workspace** icon.
+2. Enter a **name** and **description**.
 
-### Understanding Workspace indicators and colors
+Your Cloud Workspace will be synced to your GitKraken account and accessible via GitKraken Desktop, GitLens, and the GitKraken CLI.
 
-Workspaces also include visual indicators to help you understand their status. For example, a green Workspace with an 'O' symbol indicates that it is open in your current window.
+<figure>
+  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Convert local Workspace to GitKraken Cloud Workspace</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered">
+### Understanding Workspace Indicators and Colors
 
-### Workspace linking
+Visual indicators in Workspaces help you quickly understand their status. For example:
+- A **green Workspace** with an **O** symbol indicates it is open in your current window.
 
-A VS Code workspace can be created from a GitKraken Workspace to link them.
+<figure>
+  <img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered">
+### Workspace Linking
 
-You can open a linked VS Code workspace from its cloud workspace using the new `Open VS Code Workspace in New Window` option (hold alt to open in the current window).
+You can link a VS Code workspace to a GitKraken Workspace:
 
-When repositories are added to a GitKraken Cloud workspace, you can automatically add those repositories to its linked VS Code workspace when that workspace is opened. You can choose to automatically add the repositories, be prompted to add them, or disable auto-adding repositories altogether for that workspace. This setting is chosen when creating the VS Code workspace, but can be changed at any time using the new `Change Linked Workspace Auto-Add Behavior` command on the `Current Window` item or its linked workspace in the _Workspaces_ view.
+1. Create a VS Code workspace from an existing GitKraken Cloud Workspace.
+2. Use the **Open VS Code Workspace in New Window** option (hold **Alt** to open in the current window).
 
-<img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered">
+<figure>
+  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Create a VS Code workspace from a GitKraken Workspace</figcaption>
+</figure>
 
-You can also manually add repositories to the VS Code workspace at any time using the new `Add Repositories from Linked Workspace` command.
+When opening a linked workspace, you can choose how to handle repository auto-adding:
+- Automatically add repositories
+- Prompt before adding
+- Disable auto-adding
 
-***
+This behavior is configurable during setup or later via the `Change Linked Workspace Auto-Add Behavior` command.
+
+To manually sync repositories:
+- Use the `Add Repositories from Linked Workspace` command at any time.
+
+<figure>
+  <img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Manage repository linking for VS Code and GitKraken Workspaces</figcaption>
+</figure>
+
