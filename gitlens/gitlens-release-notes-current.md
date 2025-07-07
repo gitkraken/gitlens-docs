@@ -16,6 +16,56 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-3"></a>
+
+## Version 17.3
+
+#### Tuesday, July 8, 2025
+
+GitLens 17.3 transforms how you search and interact with your repository history. This release introduces natural language search for both the Commit Graph and Commit Search commands, enhanced time-based filtering, improved AI-powered commit generation and the ability to provide feedback on AI results.
+
+<img src="/wp-content/uploads/gl-17-3-hero.png" class="help-center-img img-bordered">
+
+### Natural Language Search for Commits `PRO`
+Say goodbye to complex query syntax! GitLens 17.3 introduces natural language search for the Commit Graph and command palette, allowing you to find exactly what you're looking for using natural language.
+
+<img src="/wp-content/uploads/natural-language-search-17-3.png" class="help-center-img img-bordered">
+
+Instead of memorizing query tags like `@me`, `message:`, `author:`, or `file:`, simply describe what you're looking for:
+
+"Show all commits made by Eric this week"
+
+"Find commits that modified package.json last week"
+
+"Show all commits that changed files with "auth" in the name in the last 12 days"
+
+GitLens leverages AI to automatically translate your natural language queries into the appropriate search syntax, making repository exploration more intuitive than ever. You can still reveal the generated query to learn the underlying syntax and refine your searches.
+
+### Time-Based Search Filters
+GitLens 17.3 adds powerful new `after:` and `before:` filters that make temporal filtering more intuitive and flexible.
+These new filters work seamlessly with both traditional query syntax and the new natural language search:
+
+- `after:2025-01-01` - commits made after January 1st, 2025
+- `before:2024-12-25` - commits made before December 25th, 2024
+- `after:6.months.ago` - commits made after 6 months ago
+- `before:2.weeks.ago` - commits made before 2 weeks ago
+
+The filters accept specific date strings (YYYY-MM-DD format) or relative date expressions, and integrate automatically when using natural language queries, making it easier than ever to focus on specific timeframes in your repository history.
+
+### Enhanced Commit Composer Access `PREVIEW`
+Building on the Commit Composer preview introduced in 17.2, we've made AI-powered commit generation more accessible by adding it directly to the Commit Details panel with an option to `Commit with AI (Preview)`.
+
+<img src="/wp-content/uploads/generate-commits-ai-commit-details-17-3.png" class="help-center-img img-bordered">
+
+You can now generate multiple commits at once from your working directory changes with a single click, streamlining the process of creating meaningful, well-structured commits with AI assistance.
+
+📝 _While in Preview, Commit Composer will create a stash of your changes as a backup when generating commits should you need to revert them. You can also undo the generated commits with a single click from the success notification._
+
+### AI Feature Feedback
+GitLens can now collect feedback about AI-powered features. When using AI capabilities like explaining commits, branches, and stashes, or generating commits with Commit Composer, you'll notice new 👍 and 👎 icons in the toolbar of generated summaries that will tell us if the result was helpful or not.
+
+This feedback helps us understand how well our AI results meet your needs and allows us to refine our prompts and models to deliver better, more relevant outputs. Your input is invaluable as we continue to enhance the accuracy and usefulness of GitLens AI features.
+
 <a id="v17-2"></a>
 
 ## Version 17.2
