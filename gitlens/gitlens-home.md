@@ -1,11 +1,14 @@
 ---
 
-title: Start Here
-description: How to start working with GitLens
+title: Get Started with GitLens
+description: How to install and start using GitLens in Visual Studio Code
 taxonomy:
     category: gitlens
     
 ---
+
+
+<kbd>Last updated: July 2025</kbd>
 
 Welcome to the GitLens Support Documentation site! 
 
@@ -21,7 +24,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 
 ***
 
-### Interactive Code History
+## Interactive Code History
 
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/uSc7aQV8uMs?si=7bGXpqRI0lv7k-A0' frameborder='0' allowfullscreen></iframe>
@@ -29,128 +32,168 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 
 <p> &nbsp; </p>
 
-Understanding code history can be difficult when looking at complex repositories with multiple branches and contributors. Developers can struggle to easily see who made changes, why, and when. With the use of The Commit Graph, GitLens Inspect, and Inline Blame and Hovers, GitLens offers the ability to easily navigate through your repository to provide insights about the history and interact with it to better manage your code. 
+Understanding your repository's history is easier with GitLens. Whether you're navigating complex branches or reviewing past changes, GitLens offers intuitive tools to reveal who changed what and why.
 
-#### Commit Graph
+### View the Commit Graph
 
-Once you have a repository open in VS Code, the Commit Graph gives you an interactive, action oriented visual of your commit and branch history. This allows you to follow your repository over time to see what is happening with branches and see why it was done with commit messages. You can quickly jump to any point in history by searching for either branches or commits. To view the commit graph, use the command palette (command/ctrl + shift + P) > _GitLens: Show Commit Graph View_ or select the _Show Commit Graph_ icon.
+The Commit Graph provides an interactive visual history of your branches and commits. It helps you:
 
-<a href="vscode://eamodio.gitlens/link/command/graph">Open the Commit Graph in GitLens</a>.
+- Follow the development of features and bug fixes over time
+- Quickly search and jump to specific commits or branches
+- Understand commit context through messages and structure
 
-#### GitLens Inspect
+**To open the Commit Graph:**
 
-When you are ready to dive deeper into a specific area, you can use GitLens Inspect. To open GitLens Inspect, right-click a commit and select Inspect Details. This will give you contextual information about what files and lines were modified in this specific commit. You can jump through the history of the file or line to see how it has changed over time. Additionally, autolinks help you see things like Jira issues or Pull Requests related to the changes.
+- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **GitLens: Show Commit Graph View**, or
+- Click the **Commit Graph** icon in the sidebar
 
-<a href="vscode://eamodio.gitlens/link/command/inspect">Open the Inspect View in GitLens</a>.
+[Open the Commit Graph in GitLens](vscode://eamodio.gitlens/link/command/graph)
 
-#### Inline Blame and Hovers
+### Use GitLens Inspect
 
-From inside a file, Inline Blame and Hovers provide the answers to who exactly changed a specific line in a file, when, and why. To see the Inline Blame, select a file and then a line in the file. You can hover over the blame to take action on it such as viewing the previous revision, opening the pull request it was included in, opening the commit in the Commit Graph, and much more.  
+GitLens Inspect helps you dive deeper into a specific commit. It shows:
+
+- Modified files and changed lines
+- Related Jira issues or pull requests via autolinks
+- File or line history for better context
+
+**To open Inspect View:**
+
+- Right-click any commit and select **Inspect Details**
+
+[Open the Inspect View in GitLens](vscode://eamodio.gitlens/link/command/inspect)
+
+### Explore Inline Blame and Hovers
+
+Inline Blame reveals who last modified each line and why. Hover over any line to:
+
+- View commit details
+- Navigate to the previous revision
+- Open the associated pull request
+- See the commit in the Commit Graph
+
+These insights help you trace decisions and collaborate more effectively.
 
 ***
 
-### Accelerate PR Reviews
+## Accelerate PR Reviews
 
+<figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen></iframe>
 </div>
+<figcaption style="text-align:center; color:#888">Video: Review pull requests without leaving your IDE</figcaption>
+</figure>
 
-<p> &nbsp; </p>
+Manually switching between browser tabs, emails, and PR tools can interrupt your development flow. GitLens helps you stay focused in Visual Studio Code by organizing pull request tasks and supporting multiple workspaces with worktrees.
 
-Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and utilize worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
-
-#### Launchpad `PRO`
-
-To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations?source=help_center&product=gitlens). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
-
-Here, you can see pull requests that are open on your current branch, blocked, need your review, require follow-up, waiting for a review, and in draft.
-
-To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
-
-<a href="vscode://eamodio.gitlens/link/command/launchpad">Open the Launchpad in GitLens</a>.
+### Launchpad `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is only available for Pro subscription tiers or higher.</p>
 </div>
-#### Worktrees
 
-Worktrees allow you to have separate working directories, meaning you can check out and work in multiple branches at once. This allows you to not need to commit or stash changes you are currently working on in order to review a pull request.
+Launchpad provides a centralized view of your pull requests. You can:
 
-Once you have opened a worktree, you can easily begin reviewing all changes made in the Pull Request sidebar. You can see what commits have been made, what files have been changed, open the file diffs, and more. 
+- Connect your [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens)
+- View PRs by action status: needs review, follow-up, blocked, draft, and more
+- Open pull requests in a new worktree or switch branches directly
 
-<a href="vscode://eamodio.gitlens/link/command/worktrees">Open the Worktree View in GitLens</a>.
+**To access Launchpad:**
 
+- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **GitLens: Open Launchpad**
+
+[Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
+
+
+### Worktrees
+
+### Worktrees
 <div class='callout callout--warning'>
-    <p>Community plan is restricted to public and local repositories only.</p>
+    <p>The Community plan supports only public and local repositories.</p>
 </div>
+
+Worktrees let you check out multiple branches at once without stashing or committing changes in progress. This allows you to:
+
+- Review pull requests without leaving your current work
+- Keep separate working directories for isolated tasks
+- Open a worktree and inspect file diffs, commit history, and changed files directly from the Pull Request sidebar
+
+**To open Worktree View:**
+
+[Open the Worktree View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
 
 ***
 
-### Streamline Collaboration 
+## Streamline Team Collaboration
 
+<figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen></iframe>
 </div>
+<figcaption style="text-align:center; color:#888">Video: Share code and suggest changes in GitLens</figcaption>
+</figure>
 
-<p> &nbsp; </p>
+GitLens enables flexible collaboration without needing to commit or push unfinished code. Use **Cloud Patches** to share changes privately and **Code Suggest** to offer improvements across a pull request—even for unmodified files.
 
-When collaborating with others in a repository, it can be difficult to share code without bloating your repository with multiple commits and branches that may not be ready to contribute to the remote. Additionally, pull request reviews can be limiting for what you have access to review, comment on, and does not give you the ability to review files that have not been modified. With the use of Cloud Patches and Code Suggest, GitLens offers the ability to easily share code without needing to commit/push it to a remote and allows you to suggest code changes to any file in the repository.
-
-#### Cloud Patches `PRO`
-
-Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization to quickly share code changes with others. It can be applied to their working directory to continue to collaborate on or commit to the repository. 
-
-To create a cloud patch, make changes to any file in a repository and then save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Share as Cloud Patch…_. 
-
-When you select members to share it with, they will see this in the Cloud Patch sidebar to be able to apply to their working directory.
-
-<a href="vscode://eamodio.gitlens/link/command/cloud-patches">Open the Cloud Patches View in GitLens</a>.
+### Cloud Patches `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is only available for Pro subscription tiers or higher.</p>
 </div>
 
-#### Code Suggest `PRO`
+Cloud Patches are sharable Git patches that can be applied across your GitKraken organization:
 
-Code Suggest allows you to make edits across the entire repository that can be submitted to anyone's open pull request. 
+- Make and save changes to any file
+- Open the Command Palette and run **GitLens: Share as Cloud Patch…**
+- Select collaborators to notify via the Cloud Patch sidebar
 
-To create a Code Suggestion, have a branch checked out with an open pull request, make changes to any files and save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Show inspect view_ > Suggest Changes for PR. 
+[Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
-The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
-
+### Code Suggest `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is only available for Pro subscription tiers or higher.</p>
 </div>
+
+Suggest code edits to any file—even those not changed in the original PR:
+
+- Check out a branch with an open pull request
+- Make and save your proposed changes
+- Open the Command Palette and run **GitLens: Show Inspect View**, then choose **Suggest Changes for PR**
+
+The pull request owner can apply, modify, and commit these suggestions to streamline reviews and collaboration.
 
 ***
 
-### Improve Workflows With Integrations
+## Connect GitLens to External Services
 
+<figure>
 <div class='embed-container embed-container--16-9'>
     <iframe width='560' height='315' src='https://www.youtube.com/embed/0LaCdNTRhMw?si=elYPqhs10LRf4W1b' frameborder='0' allowfullscreen></iframe>
 </div>
+<figcaption style="text-align:center; color:#888">Video: Use integrations and autolinks to connect GitLens to tools like Jira</figcaption>
+</figure>
 
-<p> &nbsp; </p>
+Boost your productivity by integrating GitLens with platforms like GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Trello. Reduce context switching and bring external issue tracking directly into your Git workflows.
 
-Enhance your productivity in GitLens by reducing context switching and automating your workflow with Integrations and Autolinks. By connecting to platforms like GitHub, GitLab, Azure DevOps, and Bitbucket, you can seamlessly sync repositories and track issues within Launchpad—your PR hub. Additionally, Autolinks enables automatic linking to external services, making it easy to reference issues from platforms like Jira and Trello directly in your workflow. 
+### Integrations
 
-#### Integrations
+Connect GitLens to your code host and issue tracker to:
 
-Connect GitLens to your providers—GitHub, GitLab, Azure DevOps, and Bitbucket—to keep repositories in sync and track issues effortlessly in Launchpad. These integrations reduce the need for context switching, allowing you to focus on coding without leaving GitLens. 
+- Sync and manage repositories inside Launchpad
+- Automatically show pull requests and issues related to your branch
+- Avoid switching between your editor and browser
 
-#### Autolinks
+To set up an integration, go to **Settings > Integrations** or visit the [GitLens Integrations Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
 
-GitLens integrations come with automatic linking capabilities, allowing you to link to external services like Jira and Trello. This feature lets you easily reference issues and tickets within your workflow.
+### Autolinks
 
-Create custom autolinks with pattern-matching rules for a more tailored experience. This enables you to link external references, such as Jira issues or Zendesk tickets, directly in your commit messages, helping you maintain clear and accessible documentation for each change.
+Autolinks let you automatically link external issues—like Jira tickets or Trello cards—directly in commit messages, file annotations, and code lenses.
 
-***
+You can also create custom autolinks by defining pattern-matching rules for external references like Zendesk or Linear. This helps keep your codebase traceable and well-documented.
 
-## Other places to check out
+---
 
-Looking to submit a feature request or bug report? Check out the GitHub.com public repository.
-[GitHub Repository](https://github.com/gitkraken/vscode-gitlens)
+## Other Resources
 
-Join our public slack community and interact with other GitKraken GitLens users from around the world 🌐.
-[GitKraken Slack](https://slack.gitkraken.com/)
-
-Didn't find what you're looking for in all of our documentation and help articles? Paid users can reach out to our support team.
-[Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support)
+- 📌 [GitHub Repository](https://github.com/gitkraken/vscode-gitlens) — Submit feature requests or bug reports
+- 💬 [Join GitKraken Slack](https://slack.gitkraken.com/) — Connect with the GitLens community
+- 🛠️ [Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support) — Paid users can get direct help from our support team

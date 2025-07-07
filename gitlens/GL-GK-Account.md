@@ -29,7 +29,7 @@ When prompted with the login screen, select **Create an account** to begin. Choo
 - [Single Sign-On (SSO)](/gk-dev/gk-dev-single-sign-on/)
 
 <figure>
-  <img src="/wp-content/uploads/gk-dev-create-account.png" alt="GitKraken account creation screen with multiple login options" class="img-responsive center img-bordered">
+  <img src="/wp-content/uploads/gk-dev-create-account.png" alt="GitKraken account creation screen with multiple login options" class="help-center-img center img-bordered">
   <figcaption style="text-align: center; color: #888">Select a login method to create your GitKraken account</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ To change your avatar, click your profile picture. This will redirect you to [Gr
 > It may take several hours for avatar changes to appear in GitKraken.
 
 <figure>
-  <img src="/wp-content/uploads/gk-dev-account-personalization.png" srcset="/wp-content/uploads/gk-dev-account-personalization@2x.png" alt="GitKraken account personalization options" class="img-responsive center img-bordered">
+  <img src="/wp-content/uploads/gk-dev-account-personalization.png" srcset="/wp-content/uploads/gk-dev-account-personalization@2x.png" alt="GitKraken account personalization options" class="help-center-img center img-bordered">
   <figcaption style="text-align: center; color: #888">Customize your name, email, avatar, and password</figcaption>
 </figure>
 
