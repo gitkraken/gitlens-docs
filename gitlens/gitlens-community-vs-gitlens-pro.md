@@ -38,6 +38,8 @@ GitLens Pro takes your development workflow to the next level with advanced feat
 _Perfect for: Professional developers, collaborative teams, and organizations optimizing for productivity._  
 [Start your free 14-day trial](https://gitkraken.dev/register?product=gitlens&source=marketing_page&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web&utm_source=website&utm_medium=help-center&utm_campaign=pro-vs-community-pg&utm_content=button) of GitLens Pro today.
 
+***
+
 ## Making Your Choice
 
 Both **GitLens Community** and **GitLens Pro** offer essential tools for managing Git workflows in VS Code.
