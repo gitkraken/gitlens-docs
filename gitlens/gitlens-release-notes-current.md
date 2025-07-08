@@ -66,6 +66,25 @@ GitLens can now collect feedback about AI-powered features. When using AI capabi
 
 This feedback helps us understand how well our AI results meet your needs and allows us to refine our prompts and models to deliver better, more relevant outputs. Your input is invaluable as we continue to enhance the accuracy and usefulness of GitLens AI features.
 
+---
+
+### Added
+
+- Adds support for using natural language to search for commits on the _Commit Graph_, _Search & Compare_ view, and in the _Search Commits_ command using AI ([#4471](https://github.com/gitkraken/vscode-gitlens/issues/4471))
+- Adds support for time-based commit searches on the _Commit Graph_, _Search & Compare_ view, and in the _Search Commits_ command
+- Adds 👍 "Helpful" and 👎 "Unhelpful" feedback buttons to AI-generated markdown previews such as Commit Composer and Explain Changes ([#4449](https://github.com/gitkraken/vscode-gitlens/issues/4449))
+- Adds a _Commit with AI (Preview)_ button to the _Inspect Overview_ tab of the _Commit Graph_ and _Inspect_ views
+
+### Changed
+
+- Improves experience for invalid AI rebase responses by implementing conversational retry logic that provides specific feedback to the AI about missing, extra, or duplicate hunks and automatically retries up to 3 times ([#4395](https://github.com/gitkraken/vscode-gitlens/issues/4395))
+
+### Fixed
+
+- Fixes stashes with parent commits older than the oldest stash not being visible on branches ([#4401](https://github.com/gitkraken/vscode-gitlens/issues/4401))
+- Fixes editing search result in Search & Compare view failure ([#4431](https://github.com/gitkraken/vscode-gitlens/issues/4431))
+- Fixes search results not paging properly on the _Commit Graph_ when the first page of results is contained within the already loaded commits
+
 <a id="v17-2"></a>
 
 ## Version 17.2
