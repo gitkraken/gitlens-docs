@@ -7,8 +7,6 @@ taxonomy:
 
 <kbd>Last updated: July 2025</kbd>
 
-# GitLens Integrations
-
 GitLens supports a wide range of remote providers to enhance your Git workflow inside Visual Studio Code. Supported platforms include:
 
 - GitHub (including GitHub Enterprise)

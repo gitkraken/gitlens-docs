@@ -48,7 +48,9 @@ You can personalize your GitKraken account to control how your profile appears t
 
 To change your avatar, click your profile picture. This will redirect you to [Gravatar](https://gravatar.com), where you can manage the avatar linked to your email address. GitKraken retrieves your avatar from Gravatar based on the shared email between accounts.
 
-> It may take several hours for avatar changes to appear in GitKraken.
+<div class="note">
+Note: It may take several hours for avatar changes to appear in GitKraken or GitLens.
+</div>
 
 <figure>
   <img src="/wp-content/uploads/gk-dev-account-personalization.png" srcset="/wp-content/uploads/gk-dev-account-personalization@2x.png" alt="GitKraken account personalization options" class="help-center-img center img-bordered">
