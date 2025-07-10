@@ -106,8 +106,6 @@ Launchpad provides a centralized view of your pull requests. You can:
 
 
 ### Worktrees
-
-### Worktrees
 <div class='callout callout--warning'>
     <p>The Community plan supports only public and local repositories.</p>
 </div>
