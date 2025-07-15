@@ -35,8 +35,8 @@ This sidebar includes:
 - **Visual File History**
 - **Search & Compare**
 
-<figure class="help-center-img img-bordered">
-  <img src="/wp-content/uploads/gl-inspect-side-bar.png" alt="GitLens Inspect sidebar overview">
+<figure>
+  <img src="/wp-content/uploads/gl-inspect-side-bar.png" class="help-center-img img-bordered" alt="GitLens Inspect sidebar overview">
 </figure>
 
 ### GitLens Sidebar
@@ -51,8 +51,8 @@ This sidebar includes:
 - **Cloud Patches** `PRO`
 - **Launchpad** `PRO`
 
-<figure class="help-center-img img-bordered">
-  <img src="/wp-content/uploads/gl-home-view-v16.png" alt="GitLens sidebar showing Home view">
+<figure>
+  <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar showing Home view">
 </figure>
 
 #### Home View Details
