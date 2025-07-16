@@ -9,7 +9,7 @@ taxonomy:
 
 
 <kbd>Last updated: July 2025</kbd>
-
+ 
 Welcome to the GitLens Support Documentation site! 
 
 GitLens is the #1 most downloaded [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) Git extension that supercharges your developer workflows. You can download GitLens from the VS Code marketplace: 
