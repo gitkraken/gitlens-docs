@@ -16,6 +16,75 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-4"></a>
+
+## Version 17.4
+
+#### Wednesday, August 14, 2025
+
+GitLens 17.4 transforms the Commit Composer experience with a powerful new composing view, introduces Azure DevOps Server integration for Pro users, enhances AI explanations, and delivers significant improvements to worktree workflows.
+
+<img src="/wp-content/uploads/gl-17-4-hero.png" class="help-center-img img-bordered">
+
+### New Commit Composer View `PREVIEW`
+
+The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process.
+
+<img src="/wp-content/uploads/commit-composer-17-4.png" class="help-center-img img-bordered">
+
+#### Interactive Draft Commits
+
+When using AI to compose commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
+
+- **Preview and edit commit messages** before finalizing them
+- **Switch between AI models** to regenerate suggestions with different approaches
+- **Provide custom instructions** to guide the AI in composing commits and writing messages according to your team's conventions
+- **Review code changes** for each proposed commit through integrated diffs
+- **Reorganize commits** by undoing, recomposing, or resetting back to your original state
+- **Apply changes with confidence** knowing exactly what will be committed
+
+<img src="/wp-content/uploads/commit-composer-composed-17-4.png" class="help-center-img img-bordered">
+
+The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
+
+Whether you prefer to let AI handle the heavy lifting or want granular control over every detail, Commit Composer provides the flexibility to create well-structured commit histories that make code reviews more effective and repository history easier to understand.
+
+### Azure DevOps Server Integration `PRO`
+
+GitLens Pro now supports self-hosted Azure DevOps Server instances, bringing the same rich integration experience you know from cloud-hosted services to your on-premises environments.
+
+Connect your Azure DevOps Server to unlock:
+
+- **Streamlined issue workflows** - Start work on Azure issues by creating branches or worktrees directly from GitLens
+- **Rich blame and hover information** - View Azure issue and pull request details inline with your code
+- **Launchpad integration** - Monitor pull request blockers and review status from a unified view
+- **Native pull request creation** - Create Azure pull requests without leaving your IDE
+
+### AI Explanation Improvements
+
+AI-powered explanations now provide immediate feedback with enhanced user experience improvements:
+
+- **Instant summary views** open immediately when generating explanations
+- **Clear progress indicators** show pending AI analysis status
+- **Streamlined presentation** focuses your attention on the generated content
+
+<img src="/wp-content/uploads/ai-explain-view-17-4.png" class="help-center-img img-bordered">
+
+### Enhanced Worktree Support
+
+The [17.3.4](https://github.com/gitkraken/vscode-gitlens/releases/tag/v17.3.4) patch release brought significant multi-repo and worktree improvements to VS Code. These enhancements include:
+
+- **Repository filtering** - New header controls let you focus on specific repositories or worktrees
+- **Visual differentiation** - Improved icons help distinguish between repositories and worktrees
+- **Reduced interface noise** - Minimized flashing and blanking during worktree discovery
+- **Unified repository picker** - Visual grouping makes selecting repositories and worktrees more intuitive
+
+These enhancements work seamlessly with VS Code's native worktree support, providing a polished experience whether you're working with single repositories or complex multi-worktree setups.
+
+---
+
+### Added
+
 <a id="v17-3"></a>
 
 ## Version 17.3
