@@ -22,28 +22,40 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Wednesday, August 14, 2025
 
-GitLens 17.4 transforms the Commit Composer experience with a powerful new composing view, introduces Azure DevOps Server integration for Pro users, enhances AI explanations, and delivers significant improvements to worktree workflows.
+GitLens 17.4 transforms the Commit Composer experience with a powerful new composing view, introduces Azure DevOps Server integration for Pro users, enhances AI explanations, adds support for new AI models like GPT-5, and delivers significant improvements to worktree workflows.
 
 <img src="/wp-content/uploads/gl-17-4-hero.png" class="help-center-img img-bordered">
 
 ### New Commit Composer View `PREVIEW`
 
-The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process.
+The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process, with options to auto-compose with AI or compose manually.
+
+Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
 
 <img src="/wp-content/uploads/commit-composer-17-4.png" class="help-center-img img-bordered">
 
 #### Interactive Draft Commits
 
-When using AI to compose commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
+When composing commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
 
-- **Preview and edit commit messages** before finalizing them
-- **Switch between AI models** to regenerate suggestions with different approaches
-- **Provide custom instructions** to guide the AI in composing commits and writing messages according to your team's conventions
-- **Review code changes** for each proposed commit through integrated diffs
-- **Reorganize commits** by undoing, recomposing, or resetting back to your original state
-- **Apply changes with confidence** knowing exactly what will be committed
+- **Preview before committing**: See exactly what will be committed before it touches your repository
+- **Switch Models**: Try composition with different AI models
+- **Guide the AI**: Provide custom instructions to match your team's conventions and preferences  
+- **Iterate and refine**: Regenerate individual messages or entire commit compositions
+- **Review and edit**: Manually tweak any commit message or approach
 
 <img src="/wp-content/uploads/commit-composer-composed-17-4.png" class="help-center-img img-bordered">
+
+You can launch the new Commit Composer view from several places in GitLens:
+
+- **GitLens commit details view**
+- **Context menu on the WIP row** in the GitLens Commit Graph  
+- **Active branch card** in the GitLens Home View
+- **✨ icon in the SCM view header**
+- **Command palette**: Search for "Compose Commits"
+
+<img src="/wp-content/uploads/access-composer-1-17-4.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/access-composer-2-17-4.png" class="help-center-img img-bordered">
 
 The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
 
@@ -60,6 +72,9 @@ Connect your Azure DevOps Server to unlock:
 - **Launchpad integration** - Monitor pull request blockers and review status from a unified view
 - **Native pull request creation** - Create Azure pull requests without leaving your IDE
 
+### New AI Model Support
+This release adds support for GPT-5 family (GPT-5, GPT-5 Mini, GPT-5 Nano), and Claude 4.1 Opus models
+
 ### AI Explanation Improvements
 
 AI-powered explanations now provide immediate feedback with enhanced user experience improvements:
@@ -69,6 +84,9 @@ AI-powered explanations now provide immediate feedback with enhanced user experi
 - **Streamlined presentation** focuses your attention on the generated content
 
 <img src="/wp-content/uploads/ai-explain-view-17-4.png" class="help-center-img img-bordered">
+
+### Branch Upstream Management
+You can now easily modify the upstream for local branches in GitLens from places like the Branches view and Commit Graph.
 
 ### Enhanced Worktree Support
 
