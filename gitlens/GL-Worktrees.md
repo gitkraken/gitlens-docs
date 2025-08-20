@@ -1,14 +1,22 @@
 ---
-
-title: Gitlens Worktrees
-description: Learn about Worktrees in Gitlens
+title: GitLens Worktrees
+description: Use GitLens Worktrees to develop and test multiple branches in VS Code without switching.
 taxonomy:
     category: gitlens
 
 ---
 
-<img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered">
+<kbd>Last updated: August 2025</kbd>
 
-A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and work with <a href="https://www.gitkraken.com/learn/git/git-worktree" target="_blank">Worktrees</a>. Worktrees allow multiple branches to be checked-out at once on the same repository. This makes it easier to develop on, or test multiple branches, by minimizing the context switching between branches.
+## Worktrees View
 
-***
+<figure>
+  <img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered" alt="GitLens Worktrees view in VS Code showing multiple branches" />
+  <figcaption style="text-align: center; color: #888">GitLens Worktrees view</figcaption>
+</figure>
+
+The GitLens **Worktrees** view lets you create, view, and manage [worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches of the same repository at the same time.  
+
+This makes it easier to develop or test different branches in parallel while minimizing the context switching between them.  
+
+You can also [customize Worktrees settings](gitlens/gitlens-settings/#worktrees-view-settings) to fit your workflow.
