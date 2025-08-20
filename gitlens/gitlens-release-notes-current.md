@@ -103,6 +103,44 @@ These enhancements work seamlessly with VS Code's native worktree support, provi
 
 ### Added
 
+- Adds new [_Commit Composer_ view experience](https://github.com/gitkraken/vscode-gitlens/discussions/4530 'Learn more') — the next evolution of the [initial Commit Composer preview](https://github.com/gitkraken/vscode-gitlens/discussions/4408)
+  - Transforms the automatic commit process into a comprehensive drafting and review experience
+  - Adds ability to preview changes before committing and iterate by regenerating individual messages or entire commit compositions
+  - Adds support for switching between different AI models during composition
+  - Adds custom instruction support to guide AI output to match team conventions and preferences
+  - Adds integrated diff review for each proposed commit, and manual editing capabilities for any commit message or approach
+  - Adds manual commit composition support (no AI provider required for basic functionality)
+  - Adds _Compose Commits (Preview)_ commands accessible from multiple locations: _Home_ view, _Commit Graph_ WIP row, Inspect/Graph Details views, SCM view, and Command Palette
+- Adds updated AI model support for GitLens' AI features
+  - Adds GPT-5 family (GPT-5, GPT-5 Mini, GPT-5 Nano), and Claude 4.1 Opus models
+- Add Azure DevOps Server integration support ([#4478](https://github.com/gitkraken/vscode-gitlens/issues/4478))
+- Adds expanded and improved branch favoriting ([#4497](https://github.com/gitkraken/vscode-gitlens/issues/4497))
+  - Adds a new "Favorited Branches" option to the branches visibility dropdown on the _Commit Graph_
+  - Adds _Add to Favorites_ or _Remove from Favorites_ context menu items to branches in the _Commit Graph_
+  - Adds _Add to Favorites_ or _Remove from Favorites_ context menu items to worktrees in the views
+- Adds 👍 "Helpful" and 👎 "Unhelpful" feedback buttons to AI-generated Changelog ([#4449](https://github.com/gitkraken/vscode-gitlens/issues/4449))
+- Adds ability to set or change the upstream branch for branches in the _Commit Graph_ and other GitLens views ([#4498](https://github.com/gitkraken/vscode-gitlens/issues/4498))
+  - Adds new _Set Upstream..._ and _Change Upstream..._ context menu items to branches in the _Commit Graph_ and other GitLens views
+  - Adds a new _upstream_ sub-command to the _branch_ Git Command Palette
+- Adds new default topological selection mode to the _Commit Graph_
+  - Updates `gitlens.graph.multiselect` setting to default to `topological`; set to `true` to allow selecting multiple commits without restriction
+- Adds ability to switch between open repositories on the _Visual History_
+- Adds _Visualize Repository History_ commands to the SCM menus
+
+### Changed
+
+- Changes branch favoriting to apply to both local and remote branch pairs ([#4497](https://github.com/gitkraken/vscode-gitlens/issues/4497))
+- Improves experience by opening an explain summary document before summary content is generated ([#4328](https://github.com/gitkraken/vscode-gitlens/issues/4328))
+- Improves login handling when user copies authentication URL instead of opening it
+- Improves Inspect/Details view button overload ([#4488](https://github.com/gitkraken/vscode-gitlens/issues/4488))
+
+### Fixed
+
+- Fixes _Copy Changes (Patch)_ command not working from the _Commit Graph_
+- Fixes issues with handling token limits when using Copilot models ([#4529](https://github.com/gitkraken/vscode-gitlens/issues/4529))
+- Fixes continuous refreshing when gitkraken.dev cannot renew an expired session ([#4324](https://github.com/gitkraken/vscode-gitlens/issues/4324))- Fixes some _Commit Graph_ issues because of reference to previous state context ([#4513](https://github.com/gitkraken/vscode-gitlens/issues/4513))
+- Fixes 'generate-rebase' feedback submissions having undefined "type" ([#4502](https://github.com/gitkraken/vscode-gitlens/issues/4502))
+
 <a id="v17-3"></a>
 
 ## Version 17.3
