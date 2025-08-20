@@ -1,30 +1,63 @@
 ---
-
-title: Gitlens Visual File History
-description: Learn about Visual File History in Gitlens
+title: GitLens Visual File History
+description: Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code.
 taxonomy:
     category: gitlens
 
 ---
 
+<kbd>Last updated: August 2025</kbd>
 
-The Visual File History allows you to quickly see the evolution of a file, including when changes were made, how large they were, and who made them.
+## Visual File History
 
-To access the Visual File History view, open the GitLens Inspect sidebar. Once the sidebar is open, the view will be available. Alternatively, you can open Visual File History from the Command Palette by using (`cmd/ctrl + shift + P`) > GitLens: Show Visual File History View.
+The GitLens **Visual File History** shows how a file has evolved, including when changes were made, the size of those changes, and who made them.
 
-<img src="/wp-content/uploads/visual-file-history.png" class="help-center-img img-bordered">
+---
 
-Authors who have contributed changes to the file are on the left y-axis to create a swim-lane of their commits over time (the x-axis). Commit are plotted as color-coded (per-author) bubbles, whose size represents the relative magnitude of the changes.
+### Open Visual File History
 
-Additionally, each commit's additions and deletions are visualized as color-coded, stacked, vertical bars, whose height represents the number of affected lines (right y-axis). Added lines are shown in green, while deleted lines are red.
+You can open the Visual File History view in two ways:
 
+1. From the **GitLens Inspect** sidebar.  
+   - Open the sidebar, then select the **Visual File History** view.  
+2. From the **Command Palette**:  
+   - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>  
+   - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>  
+   - Search for **GitLens: Show Visual File History View**.
 
-Gain additional insights on hover.
+<figure>
+  <img src="/wp-content/uploads/visual-file-history.png" class="help-center-img img-bordered" alt="Visual File History view in GitLens showing commits plotted by author and time" />
+  <figcaption style="text-align: center; color: #888">Visual File History view</figcaption>
+</figure>
 
-<img src="/wp-content/uploads/visual-file-history-hover.png" class="help-center-img img-bordered">
+---
+
+### Understand the Graph
+
+- **Authors (y-axis, left):** Each author is shown in a swimlane, mapping their commits over time.  
+- **Commits:** Plotted as color-coded bubbles by author. Bubble size represents the relative magnitude of changes.  
+- **Changes (y-axis, right):** Each commit’s additions and deletions are shown as stacked vertical bars.  
+  - Green = added lines  
+  - Red = deleted lines  
+
+<figure>
+  <img src="/wp-content/uploads/visual-file-history-hover.png" class="help-center-img img-bordered" alt="Hover details in Visual File History showing commit metadata and changes" />
+  <figcaption style="text-align: center; color: #888">Commit details on hover</figcaption>
+</figure>
+
+---
+
+### Gain Insights on Hover
+
+Hover over any commit bubble or bar to see details about:  
+- Author  
+- Commit message  
+- Number of additions and deletions  
+
+---
+
+### Availability
 
 <div class='callout callout--warning'>
-    <p>Community plan is restricted to Public and Local Repositories only.</p>
+  <p>The Community plan supports <strong>Public</strong> and <strong>Local</strong> repositories only. A paid GitLens subscription is required for private repositories.</p>
 </div>
-
-***
