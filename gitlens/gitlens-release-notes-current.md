@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.4
 
-#### Wednesday, August 14, 2025
+#### Wednesday, August 20, 2025
 
 GitLens 17.4 transforms the Commit Composer experience with a powerful new composing view, introduces Azure DevOps Server integration for Pro users, enhances AI explanations, adds support for new AI models like GPT-5, and delivers significant improvements to worktree workflows.
 
