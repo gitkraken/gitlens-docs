@@ -16,6 +16,133 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-4"></a>
+
+## Version 17.4
+
+#### Wednesday, August 20, 2025
+
+GitLens 17.4 transforms the Commit Composer experience with a powerful new composing view, introduces Azure DevOps Server integration for Pro users, enhances AI explanations, adds support for new AI models like GPT-5, and delivers significant improvements to worktree workflows.
+
+<img src="/wp-content/uploads/gl-17-4-hero.png" class="help-center-img img-bordered">
+
+### New Commit Composer View `PREVIEW`
+
+The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process, with options to auto-compose with AI or compose manually.
+
+Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
+
+<img src="/wp-content/uploads/commit-composer-17-4.png" class="help-center-img img-bordered">
+
+#### Interactive Draft Commits
+
+When composing commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
+
+- **Preview before committing**: See exactly what will be committed before it touches your repository
+- **Switch Models**: Try composition with different AI models
+- **Guide the AI**: Provide custom instructions to match your team's conventions and preferences  
+- **Iterate and refine**: Regenerate individual messages or entire commit compositions
+- **Review and edit**: Manually tweak any commit message or approach
+
+<img src="/wp-content/uploads/commit-composer-composed-17-4.png" class="help-center-img img-bordered">
+
+You can launch the new Commit Composer view from several places in GitLens:
+
+- **GitLens commit details view**
+- **Context menu on the WIP row** in the GitLens Commit Graph  
+- **Active branch card** in the GitLens Home View
+- **✨ icon in the SCM view header**
+- **Command palette**: Search for "Compose Commits"
+
+<img src="/wp-content/uploads/access-composer-1-17-4.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/access-composer-2-17-4.png" class="help-center-img img-bordered">
+
+The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
+
+Whether you prefer to let AI handle the heavy lifting or want granular control over every detail, Commit Composer provides the flexibility to create well-structured commit histories that make code reviews more effective and repository history easier to understand.
+
+### Azure DevOps Server Integration `PRO`
+
+GitLens Pro now supports self-hosted Azure DevOps Server instances, bringing the same rich integration experience you know from cloud-hosted services to your on-premises environments.
+
+Connect your Azure DevOps Server to unlock:
+
+- **Streamlined issue workflows** - Start work on Azure issues by creating branches or worktrees directly from GitLens
+- **Rich blame and hover information** - View Azure issue and pull request details inline with your code
+- **Launchpad integration** - Monitor pull request blockers and review status from a unified view
+- **Native pull request creation** - Create Azure pull requests without leaving your IDE
+
+### New AI Model Support
+This release adds support for GPT-5 family (GPT-5, GPT-5 Mini, GPT-5 Nano), and Claude 4.1 Opus models
+
+### AI Explanation Improvements
+
+AI-powered explanations now provide immediate feedback with enhanced user experience improvements:
+
+- **Instant summary views** open immediately when generating explanations
+- **Clear progress indicators** show pending AI analysis status
+- **Streamlined presentation** focuses your attention on the generated content
+
+<img src="/wp-content/uploads/ai-explain-view-17-4.png" class="help-center-img img-bordered">
+
+### Branch Upstream Management
+You can now easily modify the upstream for local branches in GitLens from places like the Branches view and Commit Graph.
+
+### Enhanced Worktree Support
+
+The [17.3.4](https://github.com/gitkraken/vscode-gitlens/releases/tag/v17.3.4) patch release brought significant multi-repo and worktree improvements to VS Code. These enhancements include:
+
+- **Repository filtering** - New header controls let you focus on specific repositories or worktrees
+- **Visual differentiation** - Improved icons help distinguish between repositories and worktrees
+- **Reduced interface noise** - Minimized flashing and blanking during worktree discovery
+- **Unified repository picker** - Visual grouping makes selecting repositories and worktrees more intuitive
+
+These enhancements work seamlessly with VS Code's native worktree support, providing a polished experience whether you're working with single repositories or complex multi-worktree setups.
+
+---
+
+### Added
+
+- Adds new [_Commit Composer_ view experience](https://github.com/gitkraken/vscode-gitlens/discussions/4530 'Learn more') — the next evolution of the [initial Commit Composer preview](https://github.com/gitkraken/vscode-gitlens/discussions/4408)
+  - Transforms the automatic commit process into a comprehensive drafting and review experience
+  - Adds ability to preview changes before committing and iterate by regenerating individual messages or entire commit compositions
+  - Adds support for switching between different AI models during composition
+  - Adds custom instruction support to guide AI output to match team conventions and preferences
+  - Adds integrated diff review for each proposed commit, and manual editing capabilities for any commit message or approach
+  - Adds manual commit composition support (no AI provider required for basic functionality)
+  - Adds _Compose Commits (Preview)_ commands accessible from multiple locations: _Home_ view, _Commit Graph_ WIP row, Inspect/Graph Details views, SCM view, and Command Palette
+- Adds updated AI model support for GitLens' AI features
+  - Adds GPT-5 family (GPT-5, GPT-5 Mini, GPT-5 Nano), and Claude 4.1 Opus models
+- Add Azure DevOps Server integration support ([#4478](https://github.com/gitkraken/vscode-gitlens/issues/4478))
+- Adds expanded and improved branch favoriting ([#4497](https://github.com/gitkraken/vscode-gitlens/issues/4497))
+  - Adds a new "Favorited Branches" option to the branches visibility dropdown on the _Commit Graph_
+  - Adds _Add to Favorites_ or _Remove from Favorites_ context menu items to branches in the _Commit Graph_
+  - Adds _Add to Favorites_ or _Remove from Favorites_ context menu items to worktrees in the views
+- Adds 👍 "Helpful" and 👎 "Unhelpful" feedback buttons to AI-generated Changelog ([#4449](https://github.com/gitkraken/vscode-gitlens/issues/4449))
+- Adds ability to set or change the upstream branch for branches in the _Commit Graph_ and other GitLens views ([#4498](https://github.com/gitkraken/vscode-gitlens/issues/4498))
+  - Adds new _Set Upstream..._ and _Change Upstream..._ context menu items to branches in the _Commit Graph_ and other GitLens views
+  - Adds a new _upstream_ sub-command to the _branch_ Git Command Palette
+- Adds new default topological selection mode to the _Commit Graph_
+  - Updates `gitlens.graph.multiselect` setting to default to `topological`; set to `true` to allow selecting multiple commits without restriction
+- Adds ability to switch between open repositories on the _Visual History_
+- Adds _Visualize Repository History_ commands to the SCM menus
+- Adds _Restore Previous Changes_ command to files in the views ([#4542](https://github.com/gitkraken/vscode-gitlens/issues/4542))
+
+### Changed
+
+- Changes branch favoriting to apply to both local and remote branch pairs ([#4497](https://github.com/gitkraken/vscode-gitlens/issues/4497))
+- Improves experience by opening an explain summary document before summary content is generated ([#4328](https://github.com/gitkraken/vscode-gitlens/issues/4328))
+- Improves login handling when user copies authentication URL instead of opening it
+- Improves Inspect/Details view button overload ([#4488](https://github.com/gitkraken/vscode-gitlens/issues/4488))
+
+### Fixed
+
+- Fixes _Copy Changes (Patch)_ command not working from the _Commit Graph_
+- Fixes issues with handling token limits when using Copilot models ([#4529](https://github.com/gitkraken/vscode-gitlens/issues/4529))
+- Fixes continuous refreshing when gitkraken.dev cannot renew an expired session ([#4324](https://github.com/gitkraken/vscode-gitlens/issues/4324))
+- Fixes some _Commit Graph_ issues because of reference to previous state context ([#4513](https://github.com/gitkraken/vscode-gitlens/issues/4513))
+- Fixes 'generate-rebase' feedback submissions having undefined "type" ([#4502](https://github.com/gitkraken/vscode-gitlens/issues/4502))
+
 <a id="v17-3"></a>
 
 ## Version 17.3
