@@ -16,6 +16,80 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-5"></a>
+
+## Version 17.5
+
+#### Tuesday, September 16, 2025
+
+GitLens 17.5 introduces the GitKraken MCP for Git and integration enhanced AI chat workflows, expands integration support with Linear, and launches a new Student Plan for GitHub Student Developer Pack members.
+
+<img src="/wp-content/uploads/gl-17-5-hero.png" class="help-center-img img-bordered">
+
+### GitKraken MCP: Git Intelligence for AI Chat
+
+GitLens 17.5 bundles the GitKraken Model Context Protocol (MCP) server, bringing Git and repository intelligence directly to AI chat interfaces in VS Code, Cursor, Windsurf, and other compatible IDEs.
+
+The GitKraken MCP transforms how you interact with Git through AI by surfacing repository information, issue tracking data, and pull request details—the same rich context that GitLens has provided in UI form for years—now accessible through conversational AI.
+
+<img src="/wp-content/uploads/mcp-workflows-17-5.png" class="help-center-img img-bordered">
+
+#### Enhanced Developer Workflows
+
+The MCP enables powerful use cases through AI chat:
+
+**Issue and Branch Management**
+- Start work on an issue: *"Start work on Jira issue PROJ-123"*
+- The MCP pulls issue details, stashes changes if needed, and creates a feature branch
+
+**Code Review and Context**
+- Review with full context: *"Review PR-45 and show me changed files and commit history"*
+- Get blame history, diffs, and PR details to make reviews faster and more complete
+
+**Repository Operations with Safety**
+- Perform Git operations safely: *"Commit all staged changes with message 'Fix login bug'"*
+- Built-in confirmation system prevents accidental destructive operations like force pushes or hard resets
+
+**Cross-Repository Insights**
+- Multi-provider issue management: *"List all issues assigned to me in Jira and GitHub"*
+- Repository search and exploration: *"Search for all uses of function X across repos"*
+- Team workload visibility: *"Summarize open PRs across my team and flag those waiting longest for review"*
+
+#### Safety-First Design
+
+The GitKraken MCP organizes tools into three safety tiers:
+
+- **Safe Operations**: Read-only commands execute immediately (git status, file reading, issue listing)
+- **Write Operations**: Require single confirmation (commits, pushes, creating branches)  
+- **Destructive Operations**: Need explicit opt-in plus double confirmation (hard resets, force pushes)
+
+#### IDE Support and Setup
+
+The MCP works seamlessly in VS Code with built-in configuration, while other IDEs like Cursor, Windsurf, and Trae require manual setup. The MCP leverages GitKraken CLI's unified authentication system, so you authenticate once and gain access to all your connected Git providers (GitHub, GitLab, Azure DevOps, Bitbucket) and issue trackers (Jira, GitHub Issues, Linear).
+
+Configuration setup and documentation can be found at [help.gitkraken.com/mcp](https://help.gitkraken.com/mcp/mcp-getting-started/).
+
+### Linear Integration `PRO`
+
+Teams using Linear for issue tracking can now connect to Linear and bring issue information directly into GitLens workflows.
+
+- **Start work seamlessly**: Create branches or worktrees directly from Linear issues
+- **Rich contextual information**: View Linear issue details in the Commit Graph, Home View, blame annotations, and Commit Details
+
+This integration follows the same pattern as GitLens' other issue tracker connections, providing a unified experience whether you're using GitHub Issues, Jira, or Linear.
+
+### Student Plan
+
+GitKraken now offers a Student Plan for members of the GitHub Student Developer Pack! This plan provides students with:
+
+- **Private repository access**: Use paid GitLens features like the Commit Graph and Visual File History on private repos
+- **AI token allocation**: Access to powerful AI features including commit composition, branch explanations, PR generation, and changelog creation
+- **Includes the entire GitKraken Platform**: Including GitKraken Client, GitKraken CLI, GitKraken.dev and Browser Extension
+
+Students can learn more and sign up at [gitkraken.com/github-student-developer-pack-bundle](https://www.gitkraken.com/github-student-developer-pack-bundle).
+
+---
+
 <a id="v17-4"></a>
 
 ## Version 17.4
