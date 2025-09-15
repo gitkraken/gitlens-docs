@@ -32,28 +32,25 @@ GitLens 17.5 bundles the GitKraken Model Context Protocol (MCP) server, bringing
 
 The GitKraken MCP transforms how you interact with Git through AI by surfacing repository information, issue tracking data, and pull request details—the same rich context that GitLens has provided in UI form for years—now accessible through conversational AI.
 
-<img src="/wp-content/uploads/mcp-workflows-17-5.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/mcp-example1-17-5.png" class="help-center-img img-bordered">
+
+<img src="/wp-content/uploads/mcp-example2-17-5.png" class="help-center-img img-bordered">
 
 #### Enhanced Developer Workflows
 
 The MCP enables powerful use cases through AI chat:
 
 **Issue and Branch Management**
+- List issues: *"List all open Jira issues assigned to me"*
+  - GitKraken MCP fetches and displays issue details from your connected trackers
 - Start work on an issue: *"Start work on Jira issue PROJ-123"*
-- The MCP pulls issue details, stashes changes if needed, and creates a feature branch
+  - GitKraken MCP pulls issue details, stashes changes if needed, and creates a feature branch
 
-**Code Review and Context**
-- Review with full context: *"Review PR-45 and show me changed files and commit history"*
-- Get blame history, diffs, and PR details to make reviews faster and more complete
+**Debug and Understand History**
+- Get detailed blame info: *"Who last modified the function `calculateTotal` in `utils.js` and why?"*
+  - GitKraken MCP retrieves precise blame data, including commit details and linked issues & PRs
 
-**Repository Operations with Safety**
-- Perform Git operations safely: *"Commit all staged changes with message 'Fix login bug'"*
-- Built-in confirmation system prevents accidental destructive operations like force pushes or hard resets
-
-**Cross-Repository Insights**
-- Multi-provider issue management: *"List all issues assigned to me in Jira and GitHub"*
-- Repository search and exploration: *"Search for all uses of function X across repos"*
-- Team workload visibility: *"Summarize open PRs across my team and flag those waiting longest for review"*
+See more examples and use cases at [help.gitkraken.com/mcp](https://help.gitkraken.com/mcp/mcp-example-workflows/).
 
 #### Safety-First Design
 
@@ -68,6 +65,8 @@ The GitKraken MCP organizes tools into three safety tiers:
 The MCP works seamlessly in VS Code with built-in configuration, while other IDEs like Cursor, Windsurf, and Trae require manual setup. The MCP leverages GitKraken CLI's unified authentication system, so you authenticate once and gain access to all your connected Git providers (GitHub, GitLab, Azure DevOps, Bitbucket) and issue trackers (Jira, GitHub Issues, Linear).
 
 Configuration setup and documentation can be found at [help.gitkraken.com/mcp](https://help.gitkraken.com/mcp/mcp-getting-started/).
+
+We're just scratching the surface of what's possible with the GitKraken MCP. Future releases will expand capabilities, integrations, and IDE support.
 
 ### Linear Integration `PRO`
 
