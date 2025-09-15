@@ -52,14 +52,6 @@ The MCP enables powerful use cases through AI chat:
 
 See more examples and use cases at [help.gitkraken.com/mcp](https://help.gitkraken.com/mcp/mcp-example-workflows/).
 
-#### Safety-First Design
-
-The GitKraken MCP organizes tools into three safety tiers:
-
-- **Safe Operations**: Read-only commands execute immediately (git status, file reading, issue listing)
-- **Write Operations**: Require single confirmation (commits, pushes, creating branches)  
-- **Destructive Operations**: Need explicit opt-in plus double confirmation (hard resets, force pushes)
-
 #### IDE Support and Setup
 
 The MCP works seamlessly in VS Code with built-in configuration, while other IDEs like Cursor, Windsurf, and Trae require manual setup. The MCP leverages GitKraken CLI's unified authentication system, so you authenticate once and gain access to all your connected Git providers (GitHub, GitLab, Azure DevOps, Bitbucket) and issue trackers (Jira, GitHub Issues, Linear).
