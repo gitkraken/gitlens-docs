@@ -85,6 +85,21 @@ Students can learn more and sign up at [gitkraken.com/github-student-developer-p
 
 ---
 
+### Added
+
+- Adds the GitKraken MCP for Git and integration enhanced AI chat workflows — [learn more](https://help.gitkraken.com/mcp/mcp-getting-started/)
+  - Leverage Git and your integrations (issues, PRs, etc) to provide context and perform actions in AI chat
+- Adds rich Linear integration with autolinks, start work, Launchpad, and more ([#4543](https://github.com/gitkraken/vscode-gitlens/issues/4543), [#4579](https://github.com/gitkraken/vscode-gitlens/issues/4579))
+- Adds support for the [GitKraken Student plan](https://www.gitkraken.com/github-student-developer-pack-bundle)
+
+### Changed
+
+- Improves AI provider/model fallback handling for better reliability
+
+### Fixed
+
+- Fixes connection flow when multiple integrations need to be connected
+
 <a id="v17-4"></a>
 
 ## Version 17.4
