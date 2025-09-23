@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.5
 
-#### Tuesday, September 16, 2025
+#### Tuesday, September 23, 2025
 
 GitLens 17.5 introduces the GitKraken MCP for Git and integration enhanced AI chat workflows, expands integration support with Linear, and launches a new Student Plan for GitHub Student Developer Pack members.
 
@@ -45,6 +45,10 @@ The MCP enables powerful use cases through AI chat:
   - GitKraken MCP fetches and displays issue details from your connected trackers
 - Start work on an issue: *"Start work on Jira issue PROJ-123"*
   - GitKraken MCP pulls issue details, stashes changes if needed, and creates a feature branch
+
+**Pull Request Assistance**
+- Create a pull request: *"Create a pull request for my current branch"*
+  - GitKraken MCP gathers branch diffs, generates a PR title and description, and opens the PR in your connected Git provider
 
 **Debug and Understand History**
 - Get detailed blame info: *"Who last modified the function `calculateTotal` in `utils.js` and why?"*
