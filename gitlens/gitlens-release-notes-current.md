@@ -16,6 +16,87 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-6"></a>
+
+## Version 17.6
+
+#### Tuesday, October 7, 2025
+
+GitLens 17.6 adds support for Claude Sonnet 4.5, delivers significant performance improvements when working with large changesets, and enhances Linear integration support.
+
+<img src="/wp-content/uploads/gl-17-6-hero.png" class="help-center-img img-bordered">
+
+### Claude Sonnet 4.5 AI Model Support
+
+GitLens now supports Anthropic's Claude Sonnet 4.5 model for all AI-powered features, including:
+
+- Commit and message generation in the _Commit Composer_
+- Code explanations and summaries
+- Pull request descriptions
+- Changelog generation
+
+This latest model brings improved reasoning capabilities and more accurate, context-aware suggestions to your development workflow.
+
+### Large Changeset Performance Improvements
+
+Working with large changesets and complex commit histories is now significantly faster and more responsive across multiple GitLens views.
+
+#### Inspect and Graph Details Views
+
+The _Inspect_ and _Graph Details_ views now feature dramatically improved performance through virtualized tree rendering. This enhancement makes working with repositories with large commits significantly faster and more responsive.
+
+Along with the performance boost, keyboard navigation has been enhanced with comprehensive support for:
+
+- **Arrow keys** for navigating through items
+- **Home/End** keys for jumping to the first or last item
+- **Enter/Space** for selecting and activating items
+- **Tab** for moving between sections
+- **Type-ahead search** for quickly finding specific items
+
+These improvements make it easier to navigate and explore your repository's history, especially when working with a large number of files or reviewing detailed commit information.
+
+#### Commit Composer `PREVIEW`
+
+The _Commit Composer_ now handles large file diffs more efficiently, preventing performance degradation when working with substantial changes. This ensures a smooth composition experience regardless of the size of your working changes.
+
+### Linear Integration Enhancements `PRO`
+
+Introduced in GitLens 17.5, Linear issue trackering continues to evolve with autolinks for branches in Home and the Commit Graph. Along with some reliability and functionality improvements, these enhancements provide a more seamless experience when working with Linear issues in your GitLens workflows.
+
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributors for this release!
+
+- Noritaka Kobayashi ([@noritaka1166](https://github.com/noritaka1166))
+
+---
+
+### Added
+
+- Adds support for Claude Sonnet 4.5 for GitLens' AI features
+
+### Changed
+
+- Greatly improves performance of the _Inspect_ and \_Graph Details views by virtualizing the tree rendering ([#3470](https://github.com/gitkraken/vscode-gitlens/issues/3470))
+  - Improved keyboard navigation support including arrow keys, Home/End, Enter/Space, Tab, and added type-ahead search functionality
+- Improves Linear issue tracker support ([#4605](https://github.com/gitkraken/vscode-gitlens/issues/4605), [#4615](https://github.com/gitkraken/vscode-gitlens/issues/4615), [#4620](https://github.com/gitkraken/vscode-gitlens/issues/4620), [#4621](https://github.com/gitkraken/vscode-gitlens/issues/4621), [#4622](https://github.com/gitkraken/vscode-gitlens/issues/4622))
+
+### Fixed
+
+- Fixes _Commit Composer_ rendering performance when working changes contain large file diffs ([#4661](https://github.com/gitkraken/vscode-gitlens/issues/4661))
+- Fixes AI cancellation cases being treated as errors ([#4609](https://github.com/gitkraken/vscode-gitlens/issues/4609))
+- Fixes MCP banner not being clickable on Commit graph view ([#4630](https://github.com/gitkraken/vscode-gitlens/issues/4630))
+- Fixes Git diff of a renamed file is shown as a new file ([#4246](https://github.com/gitkraken/vscode-gitlens/issues/4246))
+- Fixes typos ([#4345](https://github.com/gitkraken/vscode-gitlens/issues/4345) &mdash; thanks to [PR #4346](https://github.com/gitkraken/vscode-gitlens/pull/4346) by Noritaka Kobayashi ([@noritaka1166](https://github.com/noritaka1166)))
+- Fixes an issue where the _Commit Graph_ hover would not hide when going from the hover to the graph background (not another row)
+- Fixes an issue where clicking _Open Changes_ on commit files in the views would error
+
+### Removed
+
+- Removes " (bundled with GitLens)" text from GK MCP server name ([#4664](https://github.com/gitkraken/vscode-gitlens/issues/4664))
+
+
 <a id="v17-5"></a>
 
 ## Version 17.5
