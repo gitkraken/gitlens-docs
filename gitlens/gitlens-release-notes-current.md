@@ -16,6 +16,82 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-7"></a>
+
+## Version 17.7
+
+#### Tuesday, November 11, 2025
+GitLens 17.7 expands Commit Composer with branch recomposition capabilities, transforms the Commit Graph with powerful new search operators, file history visualization, and faster performance, and enhances commit details with more context and file actions.
+
+<img src="/wp-content/uploads/gl-17-7-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer: Branch Recomposition
+
+Commit Composer now lets you clean up and reorganize commits on existing branches, making it perfect for preparing pull requests or refining your commit history before pushing.
+
+<img src="/wp-content/uploads/gl-17-7-recompose-branch.png" class="help-center-img img-bordered">
+
+#### Recompose Entire Branches
+
+Open Commit Composer from any branch in the Commit Graph (or anywhere branches appear in GitLens) to inspect and reorganize its commits. The composer creates draft commits you can review before applying changes to your repository.
+
+**Auto-Recompose with AI**: Let AI analyze your branch and restructure commits into logical, well-documented units. Choose your preferred model and provide custom instructions to match your team's conventions. (Pro tip: Set default instructions in the "Generate Commits: Custom Instructions" setting to save time.)
+
+**Manual Control**: Review AI suggestions, regenerate specific commit messages, or manually edit messages and change organization. The composer gives you complete flexibility to craft the commit story that works best.
+
+<video src="/wp-content/uploads/gl-17-7-recompose-example.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+#### Enhanced Composer Capabilities
+
+Commit Composer now handles edge cases that previously blocked composition:
+
+- **Untracked files**: Working changes now include untracked files, so all modifications can be composed together
+- **New repositories**: Compose your initial commits even before a base commit exists
+- **Performance boost**: Significantly faster rendering when working with changes across many files
+
+### Commit Graph Enhancements
+
+#### File History Visualization
+
+The Commit Graph now visualizes complete file histories, making it easy to understand how specific files evolved over time.
+
+Right-click any file in your IDE and select "File History > Open File History in Commit Graph" to filter the graph to commits that modified that file. Each commit displays the file's changes in the Commit Details panel, giving you a focused view of how the file developed.
+
+You can also manually filter using `file:"path/filename"` syntax.
+
+<video src="/wp-content/uploads/gl-17-7-file-filter-example.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+#### Search Enhancements
+
+**Reference and Range Searches**: The new `ref:` operator lets you search by references or commit ranges. Natural language search leverages this automatically, so queries like "show me all commits on debt/graph-selection-jump that aren't on main" or "commits after tag v17.6.0" work seamlessly.
+
+**Tip Filtering**: New `is:tip` and `type:tip` operators isolate branch and tag tips, helping you quickly identify meaningful entry points in your history without visual scanning.
+
+**Search History**: Arrow up/down through previous search queries to quickly revisit recent searches.
+
+<video src="/wp-content/uploads/gl-17-7-search-history-example.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+#### Solo Branches and Tags
+
+Focus on a single branch or tag with the new "Solo" action, which automatically hides all other references using the `ref:` filter operator.
+
+#### Workflow Improvements
+
+- **Auto-select WIP**: The WIP row automatically selects when you have working changes, keeping your focus on current work
+- **Enhanced WIP row**: The WIP row now shows the number of changed files and lines, providing more context at a glance.
+- **Focused row preservation**: The graph maintains your selected row even when new data refreshes the view. This solved an annoying issue that resulted in losing context in the graph during updates.
+
+#### Commit Details
+
+**Commit Reachability**: Commit Details now display which branches and tags contain a specific commit, giving you instant visibility into how changes have propagated across your repository.
+
+<video src="/wp-content/uploads/gl-17-7-commit-reachability-example.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+**File List Actions**: Context menus now provide the full range of file operations you expect from other IDE file lists—opening files, viewing history, applying changes, and more—directly from Commit Details.
+
+<img src="/wp-content/uploads/gl-17-7-file-list-actions.png" class="help-center-img img-bordered">
+
+
 <a id="v17-6"></a>
 
 ## Version 17.6
