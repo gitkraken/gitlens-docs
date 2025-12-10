@@ -16,6 +16,72 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-8"></a>
+
+## Version 17.8
+
+#### Wednesday, December 11, 2025
+
+GitLens 17.8 expands Commit Composer with selective recomposition, introduces an improved Rebase Editor with conflict detection and better navigation, enhances Commit Graph search with intuitive hints and faster results, and handles more Git operations natively for smoother workflows.
+
+<img src="/wp-content/uploads/gl-17-8-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer: Selective Recomposition
+
+Commit Composer now lets you recompose specific commits within a branch, giving you precise control over cleaning up your commit history.
+
+Previously, you could only recompose all working changes or an entire branch. Now you can select specific commits that need refinement—like those quick "wip" or "fix" commits made during rapid iteration—and let AI restructure just those changes with better messages.
+
+Select multiple contiguous commits on the same branch using <kbd>Shift</kbd> or <kbd>Cmd</kbd> click, then right-click and choose "Recompose Selected Commits." Commit Composer opens with only your selected commits as drafts, ready for AI-powered or manual refinement.
+
+Commit Composer is also more discoverable, with a new button on the WIP row in the Commit Graph that opens the composer for all working directory changes. Additionally, when rebasing, you can now switch directly into Commit Composer from the Rebase Editor, canceling your rebase to let AI handle the composition instead.
+
+<img src="/wp-content/uploads/gl-17-8-compose-in-wip.png" class="help-center-img img-bordered">
+
+### Improved Rebase Editor
+
+The Rebase Editor receives significant upgrades for better usability and safety during interactive rebases.
+
+<img src="/wp-content/uploads/gl-17-8-rebase-editor.png" class="help-center-img img-bordered">
+
+**Better Performance and Reliability**: GitLens now handles rebases internally rather than routing through the terminal, resulting in better error handling and improved performance. Operations respect Git's `update-ref` for more robust branch management.
+
+**Bulk Operations**: Select multiple commits simultaneously to perform operations like squashing across several commits at once, streamlining complex rebases.
+
+**Conflict Detection** `PRO`: The Rebase Editor now checks for potential merge conflicts before you begin, helping you anticipate issues.
+
+**Improved Rebase State Indicators** When you're in a rebase state, headings throughout GitLens in the Home View and Commit Graph now display the branch and commit being rebased, with clickable links to jump to those items in the Commit Graph.
+
+**Enhanced Navigation**: Full keyboard navigation lets you cycle through commits and actions without reaching for your mouse. Toggle seamlessly between the interactive Rebase Editor and the text version of the rebase todo file for ultimate flexibility.
+
+**Bug Fixes**: The Rebase Editor now correctly opens in the right IDE window when working with worktrees, and operations properly respect Git's update-ref configuration.
+
+### Commit Graph Search Enhancements
+
+Finding commits in the Commit Graph is now faster and more intuitive.
+
+<video src="/wp-content/uploads/gl-17-8-search.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+**Search Hints**: Dropdown hints below the search bar showcase available query types - like `author:`, `file:`, and `ref:` - with quick-select menus for common searches. For example, selecting the `author:` hint opens a searchable list of repository contributors, making it easy to find commits by specific authors.
+
+**Instant Results**: Search performance has been dramatically improved. Results now begin rendering immediately instead of waiting for all data to load, getting you to what you need faster.
+
+### Native Git Operations
+
+GitLens now handles most Git operations like rebase and merge internally rather than routing through the terminal. This keeps you in the UI you're working with - like the Commit Graph and Rebase Editor - without disruptive context switches to the terminal.
+
+You'll also benefit from more helpful error handling when something goes wrong, with clear explanations and actionable next steps.
+
+### Latest AI Model Support
+
+GitLens continues to stay current with AI capabilities, now supporting Claude Opus 4.5 and OpenAI GPT 5.1 for AI-powered features like commit composition and code explanations.
+
+---
+
+### Added
+### Changed
+### Fixed
+
 <a id="v17-7"></a>
 
 ## Version 17.7
