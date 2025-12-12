@@ -1402,8 +1402,18 @@ Another custom example:<br>
 </thead>
 <tbody>
 <tr>
-<td><code>gitlens.ai.experimental.model</code></td>
-<td>Specifies the AI model to use. Supported models include:<br>
+<td><code>gitlens.ai.enabled</code></td>
+<td>Specifies whether to enable GitLens' AI-powered features<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.experimental.composer.enabled</code></td>
+<td>Specifies whether to enable the experimental version of the commit composer<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.model</code></td>
+<td>Specifies the AI provider and model to use for GitLens' AI features. Should be formatted as <code>provider:model</code>(e.g. <code>openai:gpt-4o</code> or <code>anthropic:claude-3-5-sonnet-latest</code>, <code>gitkraken</code> for GitKraken AI provided models, or <code>vscode</code> for models provided by the VS Code extension API (e.g. Copilot)"<br>
 <code>vscode</code><br>
 <code>openai:gpt-4</code><br>
 <code>openai:gpt-4o</code><br>
@@ -1430,21 +1440,79 @@ Another custom example:<br>
 </td>
 </tr>
 <tr>
-<td><code>gitlens.ai.experimental.vscode.model</code></td>
-<td>Specifies the VS Code extension-provided AI model to use when <code>gitlens.ai.experimental.model</code> is set to <code>vscode</code>.</td>
+<td><code>gitlens.ai.gitkraken.model</code></td>
+<td>Specifies the AI provider and model to use for GitLens' AI features. Should be formatted as <code>provider:model</code>(e.g. <code>openai:gpt-4o</code> or <code>anthropic:claude-3-5-sonnet-latest</code>, <code>gitkraken</code> for GitKraken AI provided models, or <code>vscode</code> for models provided by the VS Code extension API (e.g. Copilot)"<br>
+</td>
 </tr>
 <tr>
-<td><code>gitlens.ai.experimental.generateCommitMessage.enabled</code></td>
-<td>Enables GitLens’ experimental AI-powered, on-demand commit message generation.</td>
+<td><code>gitlens.ai.vscode.model</code></td>
+<td>Specifies the VS Code provided model to use for GitLens' AI features, formatted as <code>provider:model</code><br>
+</td>
 </tr>
 <tr>
-<td><code>gitlens.ai.experimental.openai.url</code></td>
-<td>Specifies a custom Azure URL to access an OpenAI model. Format:<br>
-<code>https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</code></td>
+<td><code>gitlens.ai.ollama.url</code></td>
+<td>Specifies the Ollama URL to use for access<br>
+</td>
 </tr>
 <tr>
-<td><code>gitlens.experimental.generateCommitMessagePrompt</code></td>
-<td>Specifies the prompt to guide the AI on structuring or styling generated commit messages (e.g., in the style of a pirate).</td>
+<td><code>gitlens.ai.openai.url</code></td>
+<td>Specifies a custom URL to use for access to an OpenAI model.<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.azure.url</code></td>
+<td>Specifies a custom URL to use for access to an Azure OpenAI model. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.openaicompatible.url</code></td>
+<td>Specifies a custom URL to use for access to an OpenAI-compatible model.<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.largePromptWarningThreshold</code></td>
+<td>Specifies the threshold (in tokens) for when to show a warning about the prompt being too large<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.modelOptions.temperature</code></td>
+<td>Specifies the temperature, a measure of output randomness, to use for the AI model. Higher values result in more randomness, e.g. creativity, while lower values are more deterministic<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.explainChanges.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a summary of changes<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateChangelog.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a changelog from a set of changes<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateCommits.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating commits<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateStashMessage.customInstruction</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a stash message<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateCreateCloudPatch.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a cloud patch title and description<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateCreateCodeSuggest.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a code suggest title and description<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.generateCreatePullRequest.customInstructions</code></td>
+<td>Specifies custom instructions to provide to the AI provider when generating a pull request title and description<br>
+</td>
 </tr>
 </tbody>
 </table>
