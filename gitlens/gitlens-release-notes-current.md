@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.8
 
-#### Wednesday, December 11, 2025
+#### Tuesday, December 16, 2025
 
 GitLens 17.8 expands Commit Composer with selective recomposition, introduces an improved Rebase Editor with conflict detection and better navigation, enhances Commit Graph search with intuitive hints and faster results, and handles more Git operations natively for smoother workflows.
 
@@ -29,6 +29,8 @@ GitLens 17.8 expands Commit Composer with selective recomposition, introduces an
 ### Commit Composer: Selective Recomposition
 
 Commit Composer now lets you recompose specific commits within a branch, giving you precise control over cleaning up your commit history.
+
+<img src="/wp-content/uploads/gl-17-8-recompose-selected-commits.png" class="help-center-img img-bordered">
 
 Previously, you could only recompose all working changes or an entire branch. Now you can select specific commits that need refinement—like those quick "wip" or "fix" commits made during rapid iteration—and let AI restructure just those changes with better messages.
 
