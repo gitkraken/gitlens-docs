@@ -1,5 +1,5 @@
 ---
-title: understanding an Unfamiliar Codebase
+title: Understanding an Unfamiliar Codebase
 description: Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
 
 taxonomy:
