@@ -1,5 +1,5 @@
 ---
-title: Using Git Intelligence to Clean Up and Prepare Work for Review
+title: Cleaning Up and Preparing Work for Review
 description: Use Git intelligence to transform iterative work into clean, reviewable history
 taxonomy:
   category: gitlens

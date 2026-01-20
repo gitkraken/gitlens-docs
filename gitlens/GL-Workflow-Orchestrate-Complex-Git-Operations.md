@@ -1,5 +1,5 @@
 ---
-title: Using Git Intelligence to Orchestrate Complex Git Operations
+title: Orchestrating Complex Git Operations
 description: Apply Git intelligence and AI-aware context to manage complex history safely
 taxonomy:
   category: gitlens
