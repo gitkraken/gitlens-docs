@@ -939,6 +939,77 @@ Automatically generate detailed and structured changelogs from a set of selected
   <p>More questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for additional details.</p>
 </div>
 
+### Commit Composer View `Pro`
+The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process, with options to auto-compose with AI or compose manually.
+
+Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
+
+<img src="/wp-content/uploads/commit-composer-17-4.png" class="help-center-img img-bordered">
+
+#### Interactive Draft Commits
+
+When composing commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
+
+- **Preview before committing**: See exactly what will be committed before it touches your repository
+- **Switch Models**: Try composition with different AI models
+- **Guide the AI**: Provide custom instructions to match your team's conventions and preferences  
+- **Iterate and refine**: Regenerate individual messages or entire commit compositions
+- **Review and edit**: Manually tweak any commit message or approach
+
+<img src="/wp-content/uploads/commit-composer-composed-17-4.png" class="help-center-img img-bordered">
+
+You can launch the new Commit Composer view from several places in GitLens:
+
+- **GitLens commit details view**
+- **Context menu on the WIP row** in the GitLens Commit Graph  
+- **Active branch card** in the GitLens Home View
+- **✨ icon in the SCM view header**
+- **Command palette**: Search for "Compose Commits"
+
+<img src="/wp-content/uploads/access-composer-1-17-4.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/access-composer-2-17-4.png" class="help-center-img img-bordered">
+
+The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
+
+Whether you prefer to let AI handle the heavy lifting or want granular control over every detail, Commit Composer provides the flexibility to create well-structured commit histories that make code reviews more effective and repository history easier to understand.
+
+### Commit Composer: Branch Recomposition
+
+Commit Composer now lets you clean up and reorganize commits on existing branches, making it perfect for preparing pull requests or refining your commit history before pushing.
+
+<img src="/wp-content/uploads/gl-17-7-recompose-branch.png" class="help-center-img img-bordered">
+
+#### Recompose Entire Branches
+
+Open Commit Composer from any branch in the Commit Graph (or anywhere branches appear in GitLens) to inspect and reorganize its commits. The composer creates draft commits you can review before applying changes to your repository.
+
+**Auto-Recompose with AI**: Let AI analyze your branch and restructure commits into logical, well-documented units. Choose your preferred model and provide custom instructions to match your team's conventions. (Pro tip: Set default instructions in the "Generate Commits: Custom Instructions" setting to save time.)
+
+**Manual Control**: Review AI suggestions, regenerate specific commit messages, or manually edit messages and change organization. The composer gives you complete flexibility to craft the commit story that works best.
+
+<video src="/wp-content/uploads/gl-17-7-recompose-example.mp4" autoplay loop controls muted class="help-center-video"></video>
+
+#### Enhanced Composer Capabilities
+
+Commit Composer now handles edge cases that previously blocked composition:
+
+- **Untracked files**: Working changes now include untracked files, so all modifications can be composed together
+- **New repositories**: Compose your initial commits even before a base commit exists
+- **Performance boost**: Significantly faster rendering when working with changes across many files
+
+### Commit Composer: Selective Recomposition
+
+Commit Composer now lets you recompose specific commits within a branch, giving you precise control over cleaning up your commit history.
+
+<img src="/wp-content/uploads/gl-17-8-recompose-selected-commits.png" class="help-center-img img-bordered">
+
+Previously, you could only recompose all working changes or an entire branch. Now you can select specific commits that need refinement—like those quick "wip" or "fix" commits made during rapid iteration—and let AI restructure just those changes with better messages.
+
+Select multiple contiguous commits on the same branch using <kbd>Shift</kbd> or <kbd>Cmd</kbd> click, then right-click and choose "Recompose Selected Commits." Commit Composer opens with only your selected commits as drafts, ready for AI-powered or manual refinement.
+
+Commit Composer is also more discoverable, with a new button on the WIP row in the Commit Graph that opens the composer for all working directory changes. Additionally, when rebasing, you can now switch directly into Commit Composer from the Rebase Editor, canceling your rebase to let AI handle the composition instead.
+
+<img src="/wp-content/uploads/gl-17-8-compose-in-wip.png" class="help-center-img img-bordered">
 
 ***
 
