@@ -16,6 +16,116 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-10"></a>
+
+## Version 17.10
+
+#### Tuesday, February 10, 2026
+
+GitLens 17.10 delivers significant improvements to Commit Composer, introduces commit signing support across all GitLens operations, and adds powerful new MCP tools for AI-assisted workflows. This release also includes major performance optimizations for worktree users, making GitLens faster and more efficient when working with multiple worktrees.
+
+<img src="/wp-content/uploads/gl-17-10-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer Enhancements
+
+#### Unified Commit Message Generation
+
+Commit Composer now uses the same commit message prompt as other GitLens features, ensuring consistency across all commit message generation throughout the extension. If you've customized commit message instructions in GitLens settings, those preferences will now automatically apply when generating messages in Commit Composer.
+
+#### Context Caching for Faster Recomposition
+
+Commit Composer now leverages context caching to dramatically improve performance when recomposing commits. Subsequent recomposition operations reference previous composition context and only send the differential information needed for the update. This results in faster recomposition times and reduced token consumption, particularly noticeable when iterating on commit compositions.
+
+### Commit Signing Support
+
+All commit operations in GitLens - including those performed through Commit Composer - now respect your git commit signing configuration. This resolves a limitation for developers who require signed commits and were unable to use Commit Composer. GitLens will automatically sign commits based on your existing git configuration, ensuring compliance with your repository's security requirements.
+
+### New MCP Tools for AI-Powered Workflows
+
+GitLens 17.10 introduces four new MCP tools designed to streamline developer workflows when using AI agents in your IDE. These tools enable intelligent automation for common development tasks:
+
+**`gitlens_start_work`** - Start working on assigned issues  
+Automatically creates a branch in a new worktree following GitLens naming conventions, avoiding disruption to your current work in progress. The tool pulls issue context from trackers like Jira or GitHub Issues and sends it to your AI chat to jumpstart issue resolution.
+
+**`gitlens_commit_composer`** - Compose commits with AI assistance  
+Sends your current work in progress to Commit Composer where commits can be automatically or manually composed, making it easy to structure your changes into logical, well-organized commits.
+
+**`gitlens_launchpad`** - Get categorized pull request insights  
+Retrieves pull requests from GitLens Launchpad, organized into actionable categories that help you prioritize what needs your attention: blocked PRs, those requiring your review, waiting for review from others, and more.
+
+**`gitlens_start_review`** - Begin code reviews efficiently  
+Checks out the PR branch in a new worktree (creating a local branch if needed) to avoid disrupting ongoing work, pre-loads relevant file comparisons, and launches your AI agent with a review-focused prompt and complete PR context.
+
+_Note: In this release, these MCP tools are available in VS Code. Support for Cursor, Windsurf, Trae, and other VS Code-based IDEs is coming soon._
+
+### Major Performance Improvements
+
+GitLens 17.10 delivers substantial performance gains, particularly for developers using worktrees:
+
+**Optimized Worktree Performance**  
+GitLens now shares cached git data across worktrees and optimizes branch detection, significantly reducing redundant git operations. Instead of making separate git calls for each worktree (which VS Code treats as individual repositories), GitLens intelligently caches and shares this information across multiple worktrees, resulting in faster repository operations and reduced system load.
+
+**Enhanced System Responsiveness**  
+Priority-based git process management and optimized repository discovery improve overall system responsiveness. A new `gitlens.advanced.git.maxConcurrentProcesses` setting allows fine-tuning of concurrent git operations to match your system's capabilities.
+
+**Improved File System Event Handling**  
+File system event filtering now uses synchronous filters and buffers events during git ignore rule loading, reducing unnecessary processing and improving responsiveness during intensive git operations.
+
+**Smarter View Updates**  
+GitLens now skips update operations for hidden views, prevents deadlocks during node loading, and avoids automatic expansion when multiple repositories are open, making the interface more responsive when working with complex repository structures.
+
+---
+
+### Added
+
+- Adds support for AI ignore files (`.aiignore`, `.cursorignore`, `.aiexclude`) and `gitlens.ai.exclude.files` setting to filter sensitive data from AI prompts, and smart diff truncation that prioritizes dropping low-value files when prompts exceed token limits ([#4916](https://github.com/gitkraken/vscode-gitlens/issues/4916))
+- Adds conversation threading to _Commit Composer_ auto-compose for improved outcomes ([PR #4900](https://github.com/gitkraken/vscode-gitlens/pull/4900))
+- Adds an option to filter tree views to exclude worktrees, allowing users to show all repositories except worktrees whose main repository is also open ([#4952](https://github.com/gitkraken/vscode-gitlens/issues/4952))
+- Adds commit signature verification with support for GPG, SSH, and X.509 formats ([#4552](https://github.com/gitkraken/vscode-gitlens/issues/4552), [#2363](https://github.com/gitkraken/vscode-gitlens/issues/2363))
+  - Adds verification badges and detailed tooltips to the _Commit Details_ and _Graph Details_ views
+  - Adds signature indicator icon to inline blame hovers
+  - Adds `${signature}` token to default commit and status tooltip formats in views and the _Commit Graph_
+- Adds a "Filter Repositories..." command to the _Branches_, _Commits_, _Contributors_, _Remotes_, _Stashes_, _Tags_, and _Worktrees_ views to filter to all repos, all repos excluding worktrees, or specific repos
+- Adds a refresh button to the _Interactive Rebase Editor_ toolbar to manually refresh the rebase state
+
+### Changed
+
+- Significantly improves performance and reduces overhead, especially with worktrees
+  - Improves performance when opening repositories with worktrees by sharing cached Git data across them ([#4929](https://github.com/gitkraken/vscode-gitlens/issues/4929))
+  - Improves responsiveness by adding priority-based Git process scheduling and smarter repository discovery ([#4930](https://github.com/gitkraken/vscode-gitlens/issues/4930))
+    - Adds a `gitlens.advanced.git.maxConcurrentProcesses` setting to specify the maximum number of background Git processes that can run concurrently
+  - Improves file system event handling performance by optimizing Git ignore rule processing ([#4919](https://github.com/gitkraken/vscode-gitlens/issues/4919))
+  - Improves view update performance by skipping refreshes for hidden views and preventing unnecessary auto-expand with multiple repositories ([#4928](https://github.com/gitkraken/vscode-gitlens/issues/4928))
+  - Moves GitLens-specific metadata (merge targets, issues, activity) to a dedicated `.git/gk/config` file to avoid modifying `.git/config` ([#4968](https://github.com/gitkraken/vscode-gitlens/issues/4968))
+    - Eliminates unnecessary Git repository change events previously triggered by metadata updates
+  - Improves stash loading performance by deferring file detail loading (requires the `gitlens.advanced.commits.delayLoadingFileDetails` setting to be enabled)
+- Improves commit message instructions in _Commit Composer_ auto-compose for better consistency ([PR #4888](https://github.com/gitkraken/vscode-gitlens/pull/4888))
+- Overhauls _Git Command Palette_ quick wizards with scope-based progress tracking and modular sub-commands for branch, stash, remote, tag, and worktree operations ([#4927](https://github.com/gitkraken/vscode-gitlens/issues/4927))
+- Improves worktree naming for detached states by including the folder name for better context
+- Excludes worktrees from repository pickers in commands where selecting a worktree would be inappropriate ([#4931](https://github.com/gitkraken/vscode-gitlens/issues/4931))
+- Prevents repositories from automatically opening when an opened file is git-ignored
+- Stops creating new GitHub sessions via VS Code built-in authentication; new connections now always use the GKDev flow, while existing built-in sessions are still used if available ([#4881](https://github.com/gitkraken/vscode-gitlens/issues/4881))
+
+### Fixed
+
+- Fixes potential deadlocks during node loading in views ([#4928](https://github.com/gitkraken/vscode-gitlens/issues/4928))
+- Fixes an issue where the GitKraken MCP installation could fail or conflict across remote environments like WSL, SSH, or containers ([#4918](https://github.com/gitkraken/vscode-gitlens/issues/4918))
+- Fixes an issue where diffing untracked files in the _Commit Composer_ could trigger unwanted file system events ([#4917](https://github.com/gitkraken/vscode-gitlens/issues/4917))
+- Fixes an issue where a single-selected commit in the _Commit Composer_ would not get proper highlighting ([#4899](https://github.com/gitkraken/vscode-gitlens/issues/4899))
+- Fixes an issue where the collapsed state of diffs in the _Commit Composer_ would get reset when scrolling ([#4898](https://github.com/gitkraken/vscode-gitlens/issues/4898))
+- Fixes an issue where commit messages become invisible during interactive rebase in some themes ([#4886](https://github.com/gitkraken/vscode-gitlens/issues/4886))
+- Fixes issue in the _Commit Graph_ minimap where it only shows a spinner when the repo has no commits ([#4741](https://github.com/gitkraken/vscode-gitlens/issues/4741))
+- Fixes an inline markdown rendering issue in the _Interactive Rebase Editor_ ([#4914](https://github.com/gitkraken/vscode-gitlens/issues/4914))
+- Fixes an issue where opening a deep link to create a PR worktree would incorrectly prompt to add a remote that already exists ([#4926](https://github.com/gitkraken/vscode-gitlens/issues/4926))
+- Fixes an issue where a repository might not be discovered when opening files in parent directories of the repository ([#4932](https://github.com/gitkraken/vscode-gitlens/issues/4932))
+- Fixes an issue where popovers would appear in drag images when dragging commits in the _Interactive Rebase Editor_ ([#4933](https://github.com/gitkraken/vscode-gitlens/issues/4933))
+- Fixes issues with the "Reauthenticate" flow not taking effect ([#4881](https://github.com/gitkraken/vscode-gitlens/issues/4881))
+- Fixes an issue where clicking on the repository filter header in the _Branches_, _Worktrees_, _Tags_, _Remotes_, _Stashes_, and _Contributors_ views would do nothing when only 1 grouped repository exists ([#4947](https://github.com/gitkraken/vscode-gitlens/issues/4947))
+- Fixes issue in webview file trees where same named folders are highlighted when one is selected [#4801](https://github.com/gitkraken/vscode-gitlens/issues/4801)
+- Fixes potential quick pick hung state when cancelling wizards in quick commands
+- Fixes an issue where the _Interactive Rebase Editor_ could open in the wrong window for workspace files
+- Fixes issues where the GitLens grouped views would not refresh, tree items could not be resolved, or loading state would get stuck when switching views
+
 <a id="v17-9"></a>
 
 ## Version 17.9
