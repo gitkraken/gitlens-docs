@@ -32,9 +32,9 @@ GitLens 17.10 delivers significant improvements to Commit Composer, introduces c
 
 Commit Composer now uses the same commit message prompt as other GitLens features, ensuring consistency across all commit message generation throughout the extension. If you've customized commit message instructions in GitLens settings, those preferences will now automatically apply when generating messages in Commit Composer.
 
-#### Context Caching for Faster Recomposition
+#### Smarter Auto-Compose with Context Caching
 
-Commit Composer now leverages context caching to dramatically improve performance when recomposing commits. Subsequent recomposition operations reference previous composition context and only send the differential information needed for the update. This results in faster recomposition times and reduced token consumption, particularly noticeable when iterating on commit compositions.
+Commit Composer's auto-compose feature now maintains context across multiple iterations. Instead of starting fresh each time, subsequent recompositions reference previous composition context and only send the changes needed for the update. This reduces token consumption when refining your commits and helps the AI produce better results by understanding the full conversation history.
 
 ### Commit Signing Support
 
