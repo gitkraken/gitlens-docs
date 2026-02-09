@@ -60,19 +60,27 @@ _Note: In this release, these MCP tools are available in VS Code. Support for Cu
 
 ### Major Performance Improvements
 
-GitLens 17.10 delivers substantial performance gains, particularly for developers using worktrees:
+GitLens 17.10 delivers substantial performance gains across the board — you'll notice faster loading, snappier sidebar views, and fewer delays during everyday Git operations.
 
-**Optimized Worktree Performance**  
-GitLens now shares cached git data across worktrees and optimizes branch detection, significantly reducing redundant git operations. Instead of making separate git calls for each worktree (which VS Code treats as individual repositories), GitLens intelligently caches and shares this information across multiple worktrees, resulting in faster repository operations and reduced system load.
+**Faster Worktree Workflows**
 
-**Enhanced System Responsiveness**  
-Priority-based git process management and optimized repository discovery improve overall system responsiveness. A new `gitlens.advanced.git.maxConcurrentProcesses` setting allows fine-tuning of concurrent git operations to match your system's capabilities.
+If you work with multiple worktrees, this release is a big upgrade. Previously, each worktree triggered its own set of Git queries, even when the underlying data was shared. GitLens now intelligently caches and reuses Git data across worktrees linked to the same repository, dramatically cutting down on redundant work.
 
-**Improved File System Event Handling**  
-File system event filtering now uses synchronous filters and buffers events during git ignore rule loading, reducing unnecessary processing and improving responsiveness during intensive git operations.
+**Fewer Git Calls, Less Overhead**
 
-**Smarter View Updates**  
-GitLens now skips update operations for hidden views, prevents deadlocks during node loading, and avoids automatic expansion when multiple repositories are open, making the interface more responsive when working with complex repository structures.
+We overhauled our caching layer to eliminate unnecessary Git calls, particularly during repository discovery and loading. Git commands are now batched more efficiently — fetching more data in a single call where possible, and deferring expensive lookups (like stash file details) until they're actually needed. Stash loading now also benefits from deferred file detail loading (previously only available for commits) — enable the gitlens.advanced.commits.delayLoadingFileDetails setting to take advantage of both. The result is noticeably less overhead, especially in large repositories or multi-repo workspaces.
+
+**Less Contention, More Responsiveness**
+
+Git operations are now queued and throttled to a configurable maximum number of concurrent processes (defaulting to 7), which reduces system contention and keeps things responsive — especially in large or multi-repo workspaces where GitLens previously could flood the system with parallel Git calls. A new `gitlens.advanced.git.maxConcurrentProcesses` setting lets you tune this limit to match your machine's capabilities.
+
+**Smarter File Watching**
+
+GitLens is now smarter about reacting to file and Git changes. Improvements to how Git ignore rules are evaluated mean fewer unnecessary file events are processed, reducing background work that could cause brief UI hiccups. Additionally, GitLens metadata (like merge targets and linked issues) has also moved to a dedicated `.git/gk/config` file, which prevents metadata updates from triggering repository change events that previously caused unnecessary refreshes across the extension and VS Code.
+
+**Snappier, More Focused Sidebar Views**
+
+Sidebar views like Commits, Branches, and Stashes have been optimized by reducing unnecessary updates. We also optimized loading the views with multiple repositories — deferring work until specific interactions (hover, expand) need it, and avoiding automatically expandingmore than one repository when multiple repositories are open. A new "Filter Repositories..." command also lets you scope any view to specific repositories — or exclude worktrees entirely — so you only see what's relevant. These changes make the sidebar noticeably more responsive in complex workspaces.
 
 ---
 
