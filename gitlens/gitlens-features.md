@@ -780,7 +780,7 @@ You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
-*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)
+*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)*
 
 ---
 
