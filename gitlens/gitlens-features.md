@@ -780,6 +780,8 @@ You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
+*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)
+
 ---
 
 ### Pin or Snooze PRs
@@ -941,6 +943,8 @@ Automatically generate detailed and structured changelogs from a set of selected
 
 ### Commit Composer View `Pro`
 The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the new Commit Composer view gives you complete control over the composition process, with options to auto-compose with AI or compose manually.
+
+*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)*
 
 Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
 
