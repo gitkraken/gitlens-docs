@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 17.10
 
-#### Tuesday, February 10, 2026
+#### Wednesday, February 11, 2026
 
 GitLens 17.10 delivers significant improvements to Commit Composer, introduces commit signing support across all GitLens operations, and adds powerful new MCP tools for AI-assisted workflows. This release also includes major performance optimizations for worktree users, making GitLens faster and more efficient when working with multiple worktrees.
 
