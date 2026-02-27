@@ -5,7 +5,7 @@ taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen title="Accelerate PR Reviews with GitLens"></iframe>

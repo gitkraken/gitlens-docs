@@ -1,0 +1,679 @@
+# GitLens Documentation
+
+> GitLens is the #1 most downloaded VS Code Git extension, supercharging developer workflows with powerful Git visualization, history exploration, collaboration tools, and AI features. This is the official GitLens support documentation.
+
+## Getting Started
+
+- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): How to install and start using GitLens in Visual Studio Code
+- [Start Here](https://help.gitkraken.com/gitlens/gitlens-start-here/): Introduction to the GitLens documentation site
+- [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Complete overview of GitLens features
+- [GitLens Settings](https://help.gitkraken.com/gitlens/gitlens-settings/): How to access and customize GitLens settings
+- [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Differences between free and paid tiers
+
+## Core Features
+
+- [Commit Graph](https://help.gitkraken.com/gitlens/GL-Commit-Graph/): Visualize repository history, branches, and collaborators
+- [Interactive Code History](https://help.gitkraken.com/gitlens/GL-Interactive-Code-History/): Explore commit history through inline annotations and views
+- [Visual File History](https://help.gitkraken.com/gitlens/GL-Visual-File-History/): Explore file evolution, changes, and authorship over time
+- [Launchpad](https://help.gitkraken.com/gitlens/GL-Launchpad/): Organize and prioritize pull requests in VS Code
+- [Worktrees](https://help.gitkraken.com/gitlens/GL-Worktrees/): Work on multiple branches simultaneously without switching
+- [Workspaces](https://help.gitkraken.com/gitlens/GL-Workspaces/): Create and manage multi-repository workspaces
+
+## Collaboration
+
+- [Cloud Patches](https://help.gitkraken.com/gitlens/GL-Cloud-Patches/): Share work-in-progress changes before creating a pull request
+- [Code Suggest](https://help.gitkraken.com/gitlens/GL-Code-Suggest/): Propose code edits on pull requests across entire projects
+- [Streamline Collaboration](https://help.gitkraken.com/gitlens/GL-Streamline-Collaboration/): How GitLens helps teams collaborate efficiently
+- [Accelerate PR Reviews](https://help.gitkraken.com/gitlens/GL-accelerate-pr-reviews/): Streamline pull request reviews using Launchpad and Worktrees
+
+## AI Features
+
+- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/GL-GK-AI/): AI-powered capabilities integrated into your Git workflow
+
+## Integrations & Account
+
+- [Integrations](https://help.gitkraken.com/gitlens/GL-Integrations/): Connect GitLens with GitHub, GitLab, Bitbucket, Azure DevOps, and more
+- [GitKraken Account](https://help.gitkraken.com/gitlens/GL-GK-Account/): Create and manage your GitKraken account
+- [Security](https://help.gitkraken.com/gitlens/GL-Security/): How GitLens handles data collection, transfer, and storage
+
+## UI & Navigation
+
+- [Home View](https://help.gitkraken.com/gitlens/home-view/): Track current work, plan next steps, and review recent activity
+- [Sidebar](https://help.gitkraken.com/gitlens/side-bar/): GitLens sidebar views for repositories, commits, branches, and stashes
+
+## Workflows
+
+- [Understanding an Unfamiliar Codebase](https://help.gitkraken.com/gitlens/GL-Workflow-Understanding-Codebases/): Use GitLens to gain context and make confident changes
+- [Cleaning Up and Preparing Work for Review](https://help.gitkraken.com/gitlens/GL-Workflow-Cleanup-prepare-for-review/): Transform iterative work into clean, reviewable history
+- [Orchestrating Complex Git Operations](https://help.gitkraken.com/gitlens/GL-Workflow-Orchestrate-Complex-Git-Operations/): Manage complex branch history safely with AI context
+
+## Support
+
+- [FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens
+- [Troubleshooting](https://help.gitkraken.com/gitlens/gitlens-troubleshooting/): Common issues and solutions
+- [Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): Latest GitLens release notes
+- [Terms and Conditions](https://help.gitkraken.com/gitlens/gl-terms-and-conditions/): GitLens Support Terms and Conditions
+
+---
+
+# Full Page Content
+
+## Get Started with GitLens
+
+URL: https://help.gitkraken.com/gitlens/gitlens-home/
+
+Welcome to the GitLens Support Documentation site!
+
+GitLens is the #1 most downloaded Visual Studio Code Git extension that supercharges your developer workflows. GitLens is known for its blame, hover, and annotations, but there's much more to the extension. Users are leveraging its rich features to increase their developer productivity through Interactive Code History, Accelerate PR Reviews, and Streamline Collaboration.
+
+### Interactive Code History
+
+Understanding your repository's history is easier with GitLens. Whether you're navigating complex branches or reviewing past changes, GitLens offers intuitive tools to reveal who changed what and why.
+
+**Commit Graph** – The Commit Graph provides an interactive visual history of your branches and commits. It helps you follow the development of features and bug fixes over time, quickly search and jump to specific commits or branches, and understand commit context through messages and structure. Open it via Command Palette > "GitLens: Show Commit Graph View".
+
+**GitLens Inspect** – Helps you dive deeper into a specific commit. It shows modified files and changed lines, related Jira issues or pull requests via autolinks, and file or line history for better context. Right-click any commit and select "Inspect Details".
+
+**Inline Blame and Hovers** – Reveals who last modified each line and why. Hover over any line to view commit details, navigate to the previous revision, open the associated pull request, or see the commit in the Commit Graph.
+
+### Accelerate PR Reviews
+
+GitLens helps you stay focused in Visual Studio Code by organizing pull request tasks and supporting multiple workspaces with worktrees.
+
+**Launchpad (PRO)** – Provides a centralized view of your pull requests. View PRs by action status: needs review, follow-up, blocked, draft, and more. Open pull requests in a new worktree or switch branches directly. Access via Command Palette > "GitLens: Open Launchpad".
+
+**Worktrees** – Let you check out multiple branches at once without stashing or committing changes in progress. Review pull requests without leaving your current work, keep separate working directories for isolated tasks.
+
+### Streamline Team Collaboration
+
+GitLens enables flexible collaboration without needing to commit or push unfinished code.
+
+**Cloud Patches (PRO)** – Sharable Git patches that can be applied across your GitKraken organization. Share changes without committing to remote.
+
+**Code Suggest (PRO)** – Suggest code edits to any file, even those not changed in the original PR. The pull request owner can apply, modify, and commit these suggestions.
+
+### Connect GitLens to External Services
+
+Boost productivity by integrating GitLens with GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Trello.
+
+**Integrations** – Connect to your code host and issue tracker to sync repositories, automatically show pull requests related to your branch, and avoid switching between your editor and browser.
+
+**Autolinks** – Automatically link external issues like Jira tickets or Trello cards directly in commit messages, file annotations, and code lenses.
+
+---
+
+## GitLens Community vs. GitLens Pro
+
+URL: https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/
+
+### GitLens Community (Free)
+
+The GitLens Community edition is free and offers powerful tools:
+- Blame annotations, hovers, and CodeLens – See who changed what and why at a glance
+- Revision Navigation – Step through the history of a file to trace its evolution over time
+- In-editor Git insights – Understand your codebase without leaving your IDE
+
+Perfect for: Individual developers and teams starting with GitLens.
+
+### GitLens Pro
+
+GitLens Pro takes your development workflow to the next level:
+- Accelerate PR reviews with Launchpad—an actionable pull request hub built into VS Code
+- Manage commits visually using the Commit Graph with rebase, merge, and advanced search
+- Streamline collaboration by integrating with GitHub, GitLab, and Bitbucket
+- AI-powered Git workflow automation
+- Advanced Git operations and visualizations
+- Collaboration tools for teams
+
+Perfect for: Professional developers, collaborative teams, and organizations optimizing for productivity.
+
+Start a free 14-day trial at https://gitkraken.dev/register
+
+---
+
+## GitLens FAQ
+
+URL: https://help.gitkraken.com/gitlens/gitlens-faq/
+
+**What is GitLens Community vs GitLens Pro?**
+See the GitLens Community vs GitLens Pro page for differences between the two versions.
+
+**How Do I Sign In or Out of GitLens?**
+To sign in: Click the GitLens icon in the sidebar, under GITKRAKEN ACCOUNT select Sign In. Or use Command Palette > "GitLens: Sign In to GitKraken...".
+To sign out: Click the GitLens icon in the sidebar, under GITKRAKEN ACCOUNT select Sign Out. Or use Command Palette > "GitLens: Sign Out of GitKraken".
+
+**How do I enable debug logging?**
+Open Command Palette and run "GitLens: Enable Debug Logging". View logs in the Output Window (View > Output) in the GitLens and GitLens (Git) channels.
+
+**How can I export logs?**
+Use the actions in the overflow menu of the Output view.
+
+**Can GitLens or Visual Studio Code Work with a Proxy?**
+Yes, configure proxy settings from Visual Studio Code settings (Cmd/Ctrl+,), search for "proxy".
+
+**Can I Use My GitLens Paid License on More Than One Computer?**
+Yes. Your GitLens Pro license is tied to your email address, not a specific device. You can activate and use GitLens on multiple computers using the same account.
+
+---
+
+## GitLens Troubleshooting
+
+URL: https://help.gitkraken.com/gitlens/gitlens-troubleshooting/
+
+**Enable showing Bitbucket pull request for a commit**
+
+GitLens can show a Pull Request for a commit for a connected integration. Bitbucket requires a Pull Request Commit Links app to be installed in the workspace to enable this feature. To enable this feature, visit any commit in the Bitbucket UI and click on the "Pull requests" link in the "Apps" section at the bottom-right of the page. After that, pull requests for commits will be shown in GitLens.
+
+---
+
+## GitKraken AI Features in GitLens
+
+URL: https://help.gitkraken.com/gitlens/GL-GK-AI/
+
+Merge cutting-edge AI capabilities with your Git workflow to save time, increase clarity, and enhance collaboration. GitLens' AI features transform how you create, understand, and document code changes.
+
+### Available AI Features
+
+**AI Generate Commit (Pro)** – Generate clear, descriptive commit messages based on your code changes. Available via Command Palette: "GitLens: Generate Commit Message with AI" or from the SCM panel.
+
+**AI Stash Messages (Pro)** – Create intelligent descriptions for stashed changes. Available via Command Palette: "GitLens: Generate Stash Message with AI".
+
+**AI Commit Explain (Pro)** – Understand the reasoning behind changes with AI-generated explanations. Find the AI explanation panel in the "Commit Details" view.
+
+**AI Changes Explain (Preview)** – Generate summaries in Branches, Working changes, and Stashes. Explains what changed across all commits in a branch, what you've modified in your working directory, or what you've previously stashed. Found in the Commit Graph, command palette, and many GitLens views.
+
+**AI Changelog Creation (Advanced/Business)** – Automatically generate comprehensive changelogs from selected commits. Available in Search/Compare view or by right-clicking commits in the Graph.
+
+**AI Open Pull Request (Advanced/Business)** – Generate clear PR titles and descriptions directly from your branch changes. Access from the GitLens Home View panel.
+
+### Configuring Your AI Provider
+
+GitLens offers flexibility in choosing your AI provider:
+1. GitKraken AI (default) – Pre-configured and ready to use
+2. GitHub Copilot – If installed, can be used as your AI provider
+3. Custom Provider (BYOK) – Connect your own key from supported AI services including OpenAI, Google, Azure AI, Ollama, OpenRouter, and OpenAI-compatible APIs
+
+To configure: Open GitLens settings > Navigate to the "AI" section > Select your preferred provider.
+
+---
+
+## GitLens Commit Graph
+
+URL: https://help.gitkraken.com/gitlens/GL-Commit-Graph/
+
+The GitLens Commit Graph provides an interactive view of your repository history. It shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
+
+### Open the Commit Graph
+Open Command Palette (Cmd/Ctrl+Shift+P) > type "Show Commit Graph" and select it.
+
+The Commit Graph opens in a new tab where you can scroll through history and resize column widths.
+
+### Availability
+- Available to all users for public and local repositories
+- A paid GitLens subscription or trial is required for use with private repositories
+
+### Configuration and Layout
+
+**Columns** – Drag and drop column headers to rearrange. Right-click a column header to toggle columns on or off. The Changes column shows added lines in green and deleted lines in red.
+
+**Layout Options** – Panel Layout (bottom panel) or Editor Layout (editor tab). Switch layouts via the settings gear in the top-right corner.
+
+**Compact Graph Layout** – Right-click the Graph column header and select "Compact Graph Column Layout" to reduce visual complexity.
+
+**Scroll Markers** – Highlight checked-out branches, selected rows, and search results. Toggle in Commit Graph settings.
+
+### Rich Commit Search
+Search by commit, message, author, file, or specific code changes. Filters: `Commit:`, `Message:`, `Author:`, `File:`, `Change:`, `@me`. Also supports match all, match case, and regular expressions.
+
+### Full Context Menu Support
+Right-click branches, commits, tags, authors, or column headers for context menu actions including "Compare with Common Base" and "Open All Changes with Common Base".
+
+### Pull Request Information
+For GitHub and GitLab, displays a Pull Request icon for any branch with an open pull request. Requires a rich integration to be connected.
+
+### Hiding Remotes, Branches, or Tags
+Hover over any ref to use the Hide option. Filter options: Show Current Branch Only or Show All Local Branches (default). Can also hide/show remote-only branches, stashes, and tags.
+
+### Minimap (Experimental)
+Provides a high-level overview of repository activity. Shows commits, branches, HEAD/upstream. Enable via "Toggle Minimap" icon in the Commit Graph toolbar.
+
+---
+
+## GitLens Cloud Patches
+
+URL: https://help.gitkraken.com/gitlens/GL-Cloud-Patches/
+
+A Cloud Patch is a Git patch securely stored by GitKraken so it can be easily shared across GitLens, GitKraken Desktop, and the GitKraken CLI. The patch is transferred directly from your machine into secure storage.
+
+Cloud Patches let you collaborate with your team before creating a pull request. You can share work in progress, gather feedback early, and minimize delays in pull request reviews.
+
+### Create and Share Cloud Patches
+A Cloud Patch can be created from Working Changes, Commits, Stashes, or Comparisons by selecting "Share as Cloud Patch" from the Command Palette or the Share submenu in applicable GitLens views.
+
+**Sharing Options:**
+- Anyone with the link: Public access for anyone with the link
+- Anyone in my org: Accessible to members of your GitKraken Organization (authentication required)
+- Only collaborators: Restricted to selected GitKraken Organization members (authentication required)
+
+### Apply and Manage Cloud Patches
+Open a Cloud Patch from a shared URL to view it in GitLens. Apply it to your working tree or to a new/existing branch.
+
+To delete: Right-click the patch in the Cloud Patches view and select "Delete Cloud Patch…"
+
+### Self-Host Cloud Patch Data
+If you do not want Cloud Patch data stored on GitKraken servers, you can host Cloud Patches on your own AWS S3 storage instance.
+
+---
+
+## GitLens Code Suggest
+
+URL: https://help.gitkraken.com/gitlens/GL-Code-Suggest/
+
+GitLens Code Suggest simplifies code review by allowing you to make suggestions and edits across the entire project, not just on changed lines. Suggestions can be created within GitLens, GitKraken Desktop, or gitkraken.dev and attached to pull requests. Reviewers can then view, accept, and apply these suggestions directly to the pull request branch.
+
+Note: Code Suggest is currently supported only for repositories on GitHub.com.
+
+### Start a Code Suggestion
+1. Open the GitLens Inspect Overview for your repository
+2. Check out a branch with an open pull request
+3. Select "Start Review for PR #PR"
+4. Modify and save any files you want to include in the suggestion
+5. Select "Suggest Changes for PR" → provide a title → "Create Code Suggestion"
+
+This adds a comment on the pull request with options to review in gitkraken.dev or locally in GitLens/GitKraken Desktop.
+
+### Review and Apply Suggestions Locally
+1. Select "Locally on your machine"
+2. Open the suggestion in GitLens or GitKraken Desktop
+3. Review changes file by file
+4. Choose Apply to apply to your current branch, or "Apply to a Branch" for a new or existing branch
+
+### Review and Commit Suggestions in gitkraken.dev
+1. Select "Code Suggestion for #PR" to open in gitkraken.dev
+2. Review each file and its proposed changes
+3. Select "Commit Suggestions" to create a new commit on the remote branch
+
+---
+
+## GitLens Launchpad
+
+URL: https://help.gitkraken.com/gitlens/GL-Launchpad/
+
+The GitLens Launchpad (PRO) helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
+
+### Open the Launchpad
+Command Palette (Cmd/Ctrl+Shift+P) > "GitLens: Open Launchpad", or select "Pull Request" from the status bar in VS Code.
+
+### Review Pull Requests
+Pull requests are grouped by status:
+- Ready to merge
+- Blocked
+- Requires follow-up
+- Needs your review
+- Waiting for review
+- Draft
+- Snoozed
+
+Select a pull request to view details, open in browser, merge (if ready), or switch to the branch or worktree.
+
+### Code Suggestions
+Start or review Code Suggestions directly from pull requests in the Launchpad.
+
+### Pin or Snooze Pull Requests
+- Pin: Move a pull request to the pinned group
+- Snooze: Move it to the snoozed group
+- To unpin or unsnooze, select the same icon again
+
+### Availability
+Supported for GitHub.com and GitLab.com repositories only. Requires a Pro subscription tier or higher.
+
+---
+
+## GitLens Worktrees
+
+URL: https://help.gitkraken.com/gitlens/GL-Worktrees/
+
+The GitLens Worktrees view lets you create, view, and manage worktrees. Worktrees allow you to check out multiple branches of the same repository at the same time. This makes it easier to develop or test different branches in parallel while minimizing the context switching between them.
+
+The Community plan supports only public and local repositories.
+
+---
+
+## GitLens Workspaces
+
+URL: https://help.gitkraken.com/gitlens/GL-Workspaces/
+
+Workspaces in GitLens help you organize and manage multiple repositories from one convenient interface. A Workspace can include local repositories (open in your VS Code window) or Cloud Workspaces (hosted by GitKraken and accessible anywhere, requires GitKraken account).
+
+Note: Shared cloud Workspaces require a GitKraken trial or subscription.
+
+### Creating a Workspace
+In the GitLens Home panel, click the + button next to GitKraken Workspaces. Enter a name and optional description, then optionally connect a Git provider.
+
+### Managing Repositories
+Add repositories using the + button under the Workspace tab. Locate a repository's disk path using the Locate Repositories (pin icon). Open repositories using the Open Repository in New Window icon (hold Alt/Option to open in current window). Remove repositories by right-clicking and selecting "Remove repository from Workspace".
+
+### Converting to Cloud Workspaces
+Click the Convert to Cloud Workspace icon, enter a name and description. Your Cloud Workspace will be synced to your GitKraken account and accessible via GitKraken Desktop, GitLens, and the GitKraken CLI.
+
+### Workspace Linking
+Link VS Code workspaces to GitKraken Workspaces. When you add repositories to a GitKraken Workspace, they can be auto-added to its linked VS Code workspace.
+
+---
+
+## GitLens Integrations
+
+URL: https://help.gitkraken.com/gitlens/GL-Integrations/
+
+GitLens supports a wide range of remote providers: GitHub (including GitHub Enterprise), GitLab, Gitea, Gerrit, Bitbucket (Cloud and Server), Azure DevOps, and custom remote providers.
+
+### Integration Capabilities
+
+Basic integrations include auto-linking for issues and pull requests.
+
+Enhanced integrations (GitHub, GitLab) offer:
+- Launchpad support to manage pull requests and workflows
+- Rich hovers showing issue and PR details
+- Pull request associations with branches and commits
+- Avatars for contributors and reviewers
+
+### Connect GitHub or GitLab Integration
+1. Open Command Palette > "GitLens: Manage Integrations"
+2. Log into your GitKraken account
+3. Click "Connect with GitHub" or "Connect with GitLab" and complete the sign-in process
+4. Select "Complete Setup" to return to Visual Studio Code
+
+### GitHub Enterprise Server and GitLab Self-Managed Integration (PRO)
+Add a `gitlens.remotes` entry in settings.json with your domain and provider type:
+```json
+"gitlens.remotes": [{ "domain": "git.corporate-url.com", "type": "GitHub" }]
+```
+Then open the Remotes View and click Connect to Remote, providing a Personal Access Token.
+
+### Jira Integration (PRO)
+GitLens Pro supports integration with Jira Cloud via your GitKraken Account, automatically linking Jira issue keys (e.g., ABC-123) in commit messages and views.
+
+To connect: Open GitLens Sidebar > GitKraken Account view > Cloud Integrations > Jira Cloud.
+
+---
+
+## GitLens Interactive Code History
+
+URL: https://help.gitkraken.com/gitlens/GL-Interactive-Code-History/
+
+GitLens helps simplify understanding code history in large repositories through:
+
+- **Commit Graph** – Visualize the structure of your repository
+- **GitLens Inspect** – Drill into file and line-level history
+- **Inline Blame and Hovers** – Quickly see who changed what and when
+
+These features make it easier to navigate your repository, understand changes, and make informed decisions about your code.
+
+---
+
+## GitLens Visual File History
+
+URL: https://help.gitkraken.com/gitlens/GL-Visual-File-History/
+
+The GitLens Visual File History shows how a file has evolved, including when changes were made, the size of those changes, and who made them.
+
+### Open Visual File History
+From the GitLens Inspect sidebar, or via Command Palette > "GitLens: Show Visual File History View".
+
+### Understand the Graph
+- Authors (y-axis, left): Each author shown in a swimlane, mapping commits over time
+- Commits: Plotted as color-coded bubbles by author; bubble size represents magnitude of changes
+- Changes (y-axis, right): Additions (green) and deletions (red) shown as stacked vertical bars
+
+Hover over any commit bubble or bar to see author, commit message, and additions/deletions.
+
+### Availability
+The Community plan supports Public and Local repositories only. A paid GitLens subscription is required for private repositories.
+
+---
+
+## GitLens Security Information
+
+URL: https://help.gitkraken.com/gitlens/GL-Security/
+
+### Data Collection and Storage
+
+| Service | Data Collected | Secured in Transfer | Storage Location | Secured in Storage |
+|---|---|---|---|---|
+| Subscriptions | Billing info: name, payment type, last 4 digits, zip code, country, card type | TLS | MongoDB Atlas | AES-256 at rest |
+| Launchpad | URLs of issues and pull requests (for pin/snooze only) | TLS | Postgres (RDS) | AES-256 at rest |
+| Cloud Patches | Patch metadata and patch content | TLS | Metadata in Postgres; content in AWS S3 | AES-256 (metadata); SSE-S3 AES-256 (content) |
+| Cloud Workspaces | Repository info: URL, provider, organization name, repository name | TLS | MongoDB Atlas | AES-256 at rest |
+
+### SOC 2 Compliance
+GitKraken and its tools, including GitLens, are SOC 2 certified. Request a copy at https://trust.gitkraken.com/ (MNDA required; available for Business and Enterprise customers only).
+
+---
+
+## GitLens Streamline Collaboration
+
+URL: https://help.gitkraken.com/gitlens/GL-Streamline-Collaboration/
+
+GitLens helps streamline collaboration through Cloud Patches (share uncommitted code changes without pushing to a remote) and Code Suggest (propose changes on any file, not just modified ones).
+
+**Cloud Patches (PRO)** – Git patches shared with anyone in your GitKraken organization. To create: make and save changes > Command Palette > "GitLens: Share as Cloud Patch…" > select teammates.
+
+**Code Suggest (PRO)** – Propose edits to any file regardless of whether it was modified. To create: check out a branch with an open PR > make and save changes > Command Palette > "GitLens: Show Inspect View" > "Suggest Changes for PR".
+
+---
+
+## Accelerate PR Reviews
+
+URL: https://help.gitkraken.com/gitlens/GL-accelerate-pr-reviews/
+
+GitLens helps streamline PR reviews directly inside Visual Studio Code. With Launchpad and Worktrees, you can view all relevant PRs grouped by actionable categories, avoid context switching with an integrated experience, and work across multiple branches using separate working directories.
+
+**Launchpad (PRO)** – Connect your GitHub Integration, open Command Palette > "GitLens: Open Launchpad". View pull requests grouped by: on your current branch, assigned to you for review, waiting for follow-up, blocked or in draft. To start reviewing: select a PR > choose "Open in Worktree" or "Switch to Branch or Worktree".
+
+**Worktrees** – Check out multiple branches simultaneously in separate working directories. No need to commit or stash in-progress changes before switching to another branch. After opening a worktree, use the Pull Request sidebar to review all commits, explore changed files, and view diffs line by line.
+
+---
+
+## GitKraken Account – GitLens
+
+URL: https://help.gitkraken.com/gitlens/GL-GK-Account/
+
+Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
+
+### Sign In or Create an Account
+Create a GitKraken account at gitkraken.dev or directly within GitLens. Choose from identity providers: GitHub, GitLab, Bitbucket, Azure DevOps, Email, Google, or Single Sign-On (SSO).
+
+### Personalize Your Account
+Visit gitkraken.dev/account to update your avatar, edit your name/username/email, and change your password. Avatars are retrieved from Gravatar.
+
+### Delete Your Account
+1. Go to gitkraken.dev/account
+2. Select "Delete my Account" (highlighted in red)
+3. Follow on-screen confirmation steps
+
+GitKraken complies with GDPR. Once deleted, your account cannot be restored. This action permanently removes your subscriptions, Cloud Workspaces, Insights data, and organizations.
+
+Note: Non-admin members of a GitKraken organization must ask an admin to remove their account before deleting it.
+
+---
+
+## GitLens Home View
+
+URL: https://help.gitkraken.com/gitlens/home-view/
+
+The GitLens Home View helps you stay focused by organizing your work around three key questions:
+1. What am I actively working on now?
+2. What should I work on next?
+3. What have I worked on recently?
+
+### View Your Active Repository and Branch
+At the top of the GitLens Home View, see the current state of your active repository and branch. Quick access to sync actions (push, pull, fetch), switch active repositories, view working directory changes, and launch the GitLens Commit Graph.
+
+### Plan Next Steps with Launchpad (Pro)
+The Launchpad section highlights upcoming priorities. Surfaces pull requests needing your review and lets you start new work by creating branches and worktrees for issues assigned to you.
+
+**Review Pull Request Statuses** – The Launchpad Summary shows how many pull requests are blocking your team and provides reasons. Click a status to open the related pull request in Launchpad.
+
+**Start Work on an Issue** – Click "Start Work on an Issue" to see assigned issues from connected integrations. GitLens helps you create a branch named after the issue.
+
+### Return to Recent Work
+The Recent section shows your recent branches, worktrees, and pull requests. Makes it easy to return to recent tasks or review merged and closed pull requests.
+
+---
+
+## Using the GitLens Sidebar
+
+URL: https://help.gitkraken.com/gitlens/side-bar/
+
+GitLens provides multiple sidebars extending VS Code functionality:
+- **GitLens Inspect** — View blame annotations, code lenses, and commit details
+- **GitLens** — Access commit history, branches, and remotes
+- **Source Control** — Integrates with GitLens to enhance the built-in source control panel
+
+### GitLens Inspect Sidebar
+Provides contextual information about your current file, line, or repository activity. Includes: Commit Details, Overview, Line History, File History, Visual File History, Search & Compare.
+
+### GitLens Sidebar
+Centralizes collaboration features and user tools. Includes: Home View, GitKraken Workspaces, GitKraken Account, Cloud Patches (PRO), Launchpad (PRO).
+
+### Source Control Sidebar
+Enhances VS Code's native Git interface with: Commits, Branches, Remotes, Stashes, Tags, Worktrees, Contributors, Repositories views.
+
+### Views
+
+**Commits View** – All commits on the current branch. Toggle between all commits or your own. Shows branch comparison tool, upstream status, and associated pull requests.
+
+**GitLens Inspect** – Two tabs: Commit Details (updates as you move cursor through file) and Overview (stage/unstage changes, access pull requests, view Code Suggestions).
+
+**Repositories View** – Lists all open Git repositories with upstream status indicators and branch comparison tools. Hidden by default.
+
+**File History View** – All commits that modified the current file on the active branch. Toggle between file and line history, follow renames, and show commits from all branches.
+
+**Line History View** – All commits that modified the selected lines. Hidden by default.
+
+**Branches View** – All local branches with upstream status icons, status indicators, and associated pull requests.
+
+**Remotes View** – All remotes and their remote branches. Toggle between list or tree layout.
+
+**Stashes View** – All stashes with file layout options.
+
+**Tags View** – All tags with list or tree layout.
+
+**Launchpad View (PRO)** – Always-visible panel for pull request activity in tree format.
+
+**Workspaces** – Group and manage multiple repositories. Access from GitLens Home menu.
+
+**Worktrees View** – Create, view, and manage Git worktrees.
+
+**Contributors View** – Explore repository contributors. Hidden by default.
+
+**Search & Compare View** – Search commit history or compare branches, tags, commits, and more. Hidden by default.
+
+---
+
+## Understanding an Unfamiliar Codebase
+
+URL: https://help.gitkraken.com/gitlens/GL-Workflow-Understanding-Codebases/
+
+**Level:** New Developers
+**Primary Goal:** Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
+
+### When to use this workflow
+- New to a repository or team
+- Modifying code you did not write
+- Unsure why certain logic exists
+- Looking to understand history, ownership, and intent before making changes
+
+### How GitLens helps
+
+You open the file and **CodeLens** appears automatically, showing who last modified the code, when it changed, and how many commits touched it. Clicking the CodeLens opens commit details with the diff and reasoning.
+
+**Inline Blame** reveals the author, commit message, and timestamp for each line of code as you move through the file.
+
+The **Commit Graph** lets you visually trace commits, branches, and merges related to the file.
+
+**Launchpad** centralizes pull requests, reviews, and branch status so you can confirm there is no overlapping work.
+
+**GitKraken AI** can explain what a function does and summarize your uncommitted changes.
+
+### Key GitLens features used
+- CodeLens (inline commit and author context)
+- Inline Blame (line-level history and intent)
+- Commit Graph (visual repository history)
+- Launchpad (PR and branch awareness)
+- GitKraken AI (explanations and summaries)
+
+### Outcome
+You make a well-informed change backed by Git intelligence, reducing risk and building confidence in an unfamiliar codebase.
+
+---
+
+## Cleaning Up and Preparing Work for Review
+
+URL: https://help.gitkraken.com/gitlens/GL-Workflow-Cleanup-prepare-for-review/
+
+**Level:** Intermediate Developers
+**Primary Goal:** Use Git intelligence to transform iterative work into clean, reviewable history
+
+### When to use this workflow
+- Preparing a pull request for review
+- Cleaning up "wip" or noisy commit history
+- Juggling multiple streams of work
+- Optimizing for reviewer clarity and speed
+
+### How GitLens helps
+
+Open the **Commit Graph** from the GitLens sidebar for a visual view of your branch history and how your work diverges from main. Select commits and open **Commit Composer** directly from the graph.
+
+**Commit Composer** with Selective Recomposition lets you choose relevant commits, rewrite messages, split changes, or combine related work—all before anything is rewritten on disk.
+
+**Launchpad** lets you check for open pull requests, review feedback, or dependencies.
+
+**Worktrees** let you check out another branch in a separate folder without stashing or disturbing your current work.
+
+**Commit Graph context menu actions** (right-click on commits) let you compare branches, inspect diffs, and validate your history.
+
+### Key GitLens features used
+- Commit Graph (visual branch and commit context)
+- Commit Composer with Selective Recomposition
+- Launchpad (PR and review awareness)
+- Worktrees (parallel branch workflows)
+- Commit Graph context menu actions
+
+### Outcome
+You submit a pull request with a clean, intentional commit history that reviewers can understand quickly and confidently.
+
+---
+
+## Orchestrating Complex Git Operations
+
+URL: https://help.gitkraken.com/gitlens/GL-Workflow-Orchestrate-Complex-Git-Operations/
+
+**Level:** Advanced Developers
+**Primary Goal:** Apply Git intelligence and AI-aware context to manage complex history safely
+
+### When to use this workflow
+- Managing long-lived or high-risk branches
+- Performing complex interactive rebases
+- Pulling targeted fixes across branches
+- Coordinating advanced workflows with AI assistance
+
+### How GitLens helps
+
+**GitKraken MCP** provides Git-aware context to AI assistants so they can reason accurately about your repository, including commits, branches, pull requests, and issues.
+
+From the **Commit Graph**, launch the enhanced **Rebase Editor** which uses Git intelligence to detect potential conflicts before the rebase begins. Perform bulk operations such as squashing, reordering, or editing commits using full keyboard navigation. Switch to the raw rebase todo file when you need fine-grained control.
+
+**Cherry-pick** specific commits from the Commit Graph by right-clicking the exact commit—avoiding manual hash copying or terminal commands.
+
+**Cloud Patches** package your changes so teammates can review or apply them without branch friction.
+
+### Key GitLens features used
+- GitKraken MCP (Git-aware AI context)
+- Commit Graph (advanced history visualization)
+- Rebase Editor (conflict-aware interactive rebasing)
+- Cherry-picking (precise commit reuse)
+- Cloud Patches (lightweight collaboration)
+
+### Outcome
+You safely execute complex Git operations with full visibility, precision, and collaboration support, even in high-stakes scenarios.

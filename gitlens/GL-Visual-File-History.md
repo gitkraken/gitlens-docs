@@ -6,7 +6,7 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 ## Visual File History
 

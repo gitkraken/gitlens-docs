@@ -4,7 +4,7 @@ description: Learn how to use GitLens autolinks, terminal links, powerful Git co
 taxonomy:
   category: gitlens
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 

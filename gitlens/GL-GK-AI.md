@@ -7,6 +7,8 @@ taxonomy:
 
 ---
 
+<kbd>Last updated: February 2026</kbd>
+
 Merge cutting-edge AI capabilities with your Git workflow to save time, increase clarity, and enhance collaboration. GitLens' AI features transform how you create, understand, and document code changes.
 
 ---

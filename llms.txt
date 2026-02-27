@@ -1,0 +1,55 @@
+# GitLens Documentation
+
+> GitLens is the #1 most downloaded VS Code Git extension, supercharging developer workflows with powerful Git visualization, history exploration, collaboration tools, and AI features. This is the official GitLens support documentation.
+
+## Getting Started
+
+- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): How to install and start using GitLens in Visual Studio Code
+- [Start Here](https://help.gitkraken.com/gitlens/gitlens-start-here/): Introduction to the GitLens documentation site
+- [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Complete overview of GitLens features including autolinks, terminal links, Git commands, remote provider integrations, and UI customizations
+- [GitLens Settings](https://help.gitkraken.com/gitlens/gitlens-settings/): How to access and customize GitLens settings in Visual Studio Code
+- [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Differences between free and paid GitLens tiers
+
+## Core Features
+
+- [Commit Graph](https://help.gitkraken.com/gitlens/GL-Commit-Graph/): Visualize your repository history, branches, and collaborators with an interactive graph in VS Code
+- [Interactive Code History](https://help.gitkraken.com/gitlens/GL-Interactive-Code-History/): Explore and understand your repository's commit history through inline annotations and views
+- [Visual File History](https://help.gitkraken.com/gitlens/GL-Visual-File-History/): Explore file evolution, changes, and authorship over time with a visual timeline
+- [Launchpad](https://help.gitkraken.com/gitlens/GL-Launchpad/): Organize and prioritize pull requests from multiple repositories directly in VS Code
+- [Worktrees](https://help.gitkraken.com/gitlens/GL-Worktrees/): Work on multiple branches simultaneously without switching or stashing
+- [Workspaces](https://help.gitkraken.com/gitlens/GL-Workspaces/): Create and manage multi-repository workspaces across GitKraken tools
+
+## Collaboration
+
+- [Cloud Patches](https://help.gitkraken.com/gitlens/GL-Cloud-Patches/): Securely share work-in-progress changes with teammates before creating a pull request
+- [Code Suggest](https://help.gitkraken.com/gitlens/GL-Code-Suggest/): Propose code edits and review suggestions directly on pull requests across entire projects
+- [Streamline Collaboration](https://help.gitkraken.com/gitlens/GL-Streamline-Collaboration/): How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest
+- [Accelerate PR Reviews](https://help.gitkraken.com/gitlens/GL-accelerate-pr-reviews/): Streamline pull request reviews using Launchpad and Worktrees
+
+## AI Features
+
+- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/GL-GK-AI/): AI-powered capabilities integrated into your Git workflow for commit messages, explanations, and more
+
+## Integrations & Account
+
+- [Integrations](https://help.gitkraken.com/gitlens/GL-Integrations/): Connect GitLens with GitHub, GitLab, Bitbucket, Azure DevOps, and other remote providers
+- [GitKraken Account](https://help.gitkraken.com/gitlens/GL-GK-Account/): Create and manage your GitKraken account to unlock Pro features
+- [Security](https://help.gitkraken.com/gitlens/GL-Security/): How GitLens handles data collection, transfer, storage, and SOC 2 certification
+
+## UI & Navigation
+
+- [Home View](https://help.gitkraken.com/gitlens/home-view/): The GitLens Home View for tracking current work, planning next steps, and reviewing recent activity
+- [Sidebar](https://help.gitkraken.com/gitlens/side-bar/): GitLens sidebar views for repositories, file history, authors, commits, branches, and stashes
+
+## Workflows
+
+- [Understanding an Unfamiliar Codebase](https://help.gitkraken.com/gitlens/GL-Workflow-Understanding-Codebases/): Use GitLens Git intelligence to gain context, reduce risk, and make confident changes as a new developer
+- [Cleaning Up and Preparing Work for Review](https://help.gitkraken.com/gitlens/GL-Workflow-Cleanup-prepare-for-review/): Use Git intelligence to transform iterative work into clean, reviewable history
+- [Orchestrating Complex Git Operations](https://help.gitkraken.com/gitlens/GL-Workflow-Orchestrate-Complex-Git-Operations/): Apply Git intelligence and AI-aware context to manage complex branch history safely
+
+## Support
+
+- [FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens and GitKraken account integration
+- [Troubleshooting](https://help.gitkraken.com/gitlens/gitlens-troubleshooting/): Common issues and solutions for GitLens
+- [Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): Latest GitLens release notes and changelog
+- [Terms and Conditions](https://help.gitkraken.com/gitlens/gl-terms-and-conditions/): GitLens Support Terms and Conditions

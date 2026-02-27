@@ -7,7 +7,7 @@ taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Get answers to frequently asked questions about GitLens features, sign-in options, and GitKraken account integration.
 

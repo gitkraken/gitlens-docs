@@ -5,6 +5,8 @@ taxonomy:
   category: gitlens
 ---
 
+<kbd>Last updated: February 2026</kbd>
+
 **Level:** Advanced Developers
 **Primary Goal:** Apply Git intelligence and AI-aware context to manage complex history safely
 

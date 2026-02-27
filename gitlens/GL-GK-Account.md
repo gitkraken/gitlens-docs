@@ -5,7 +5,7 @@ taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
 

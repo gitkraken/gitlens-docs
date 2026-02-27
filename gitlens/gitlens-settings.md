@@ -4,7 +4,7 @@ description: Learn how to access and customize GitLens settings in Visual Studio
 taxonomy:
     category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 ## Overview
 
