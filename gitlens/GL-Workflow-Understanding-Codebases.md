@@ -6,6 +6,8 @@ taxonomy:
   category: gitlens
 ---
 
+<kbd>Last updated: February 2026</kbd>
+
 **Level**: New Developers
 **Primary Goal:** Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
 

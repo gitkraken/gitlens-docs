@@ -5,6 +5,8 @@ taxonomy:
   category: gitlens
 ---
 
+<kbd>Last updated: February 2026</kbd>
+
 ## Enable showing Bitbucket pull request for a commit
 
 GitLens can show a Pull Request for a commit for a connected integration. But Bitbucket [requires](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/#api-repositories-workspace-repo-slug-commit-commit-pullrequests-get)

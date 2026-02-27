@@ -4,7 +4,7 @@ description: Learn how the GitLens Home View helps you track current work, plan 
 taxonomy:
     category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 ## Overview
 

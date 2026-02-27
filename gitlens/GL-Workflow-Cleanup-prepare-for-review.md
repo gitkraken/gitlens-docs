@@ -5,6 +5,8 @@ taxonomy:
   category: gitlens
 ---
 
+<kbd>Last updated: February 2026</kbd>
+
 **Level:** Intermediate Developers
 **Primary Goal:** Use Git intelligence to transform iterative work into clean, reviewable history
 

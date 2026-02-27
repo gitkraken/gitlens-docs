@@ -5,7 +5,7 @@ taxonomy:
     category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 Workspaces in GitLens help you organize and manage multiple repositories from one convenient interface. Whether you're working solo or collaborating with a team, Workspaces simplify project access and context switching.
 

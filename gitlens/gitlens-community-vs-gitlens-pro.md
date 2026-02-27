@@ -4,7 +4,7 @@ description: Learn the differences between GitLens Community and GitLens Pro
 taxonomy:
   category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/dOLvYFgJPyY?si=TXJOGHH_LoajOen6' frameborder='0' allowfullscreen title="GitLens Community vs. GitLens Pro video overview"></iframe>

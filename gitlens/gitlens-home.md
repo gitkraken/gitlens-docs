@@ -8,7 +8,7 @@ taxonomy:
 ---
 
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: February 2026</kbd>
  
 Welcome to the GitLens Support Documentation site! 
 
