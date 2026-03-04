@@ -36,7 +36,7 @@ This release also reduces noise during multi-pass composition sessions: you'll s
 
 ### MCP Tools Now Available in Cursor
 
-The GitKraken MCP tools introduced in GitLens 17.10 (_Start Work_, _Start Review_, _Commit Composer_, and _Launchpad_) are now available in Cursor and other VS Code-based IDEs. Previously limited to VS Code, these tools enable AI agents in your IDE to automate branch creation, code review setup, commit composition, and PR triage directly from natural language prompts. Support is automatic, so no additional setup is required.
+The GitKraken MCP tools introduced in GitLens 17.10 (_Start Work_, _Start Review_, _Commit Composer_, and _Launchpad_) are now available in Cursor and other VS Code-based IDEs. Previously limited to VS Code, these tools enable AI agents in your IDE to automate branch creation, code review setup, commit composition, and PR triage directly from natural language prompts.
 
 ### New AI Models
 
@@ -44,19 +44,24 @@ GitLens 17.11 adds support for **Claude Sonnet 4.6**, **Claude Opus 4.6**, and *
 
 ### Standalone Welcome View
 
-The _Welcome_ view is now a standalone view, separate from the _Home_ view. This improves modularity and allows the Welcome walkthrough to be displayed independently without requiring the Welcome Overlay, which is useful in environments that don't support VS Code's standard walkthrough UI.
+The Welcome view is now its own standalone view, separate from Home, so it won't interfere with your Home view experience.
 
 ---
 
 ### Added
 
-- Adds support for Claude Sonnet 4.6, Claude Opus 4.6, and Gemini 3.1 Pro AI models ([#4991](https://github.com/gitkraken/vscode-gitlens/issues/4991))
+- Adds support for Claude Sonnet 4.6, Claude Opus 4.6, Gemini 3.1 Pro Preview, and Gemini 3.1 Flash-Lite Preview AI models ([#4991](https://github.com/gitkraken/vscode-gitlens/issues/4991))
+- Adds basic support for Git submodules &mdash; including repository discovery, tracking, and UI icons and tooltips to distinguish submodules in views and quick picks ([#1048](https://github.com/gitkraken/vscode-gitlens/issues/1048), [#1803](https://github.com/gitkraken/vscode-gitlens/issues/1803))
 
 ### Changed
 
 - Improves tracking for connecting flow actions by adding ide attributes to gk.dev links ([#4905](https://github.com/gitkraken/vscode-gitlens/issues/4905))
 - Refactors the Welcome view to be a standalone view separate from the _Home_ view, improving modularity and allowing the Welcome walkthrough to be displayed independently without requiring the Welcome Overlay ([#4970](https://github.com/gitkraken/vscode-gitlens/issues/4970))
 - Improves the quality of output when recomposing branches in the _Commit Composer_ by including commit messages of the previous commits as context ([#4874](https://github.com/gitkraken/vscode-gitlens/issues/4874))
+- Changes logging to use VS Code's native LogOutputChannel &mdash; the custom output level setting has been deprecated in favor of native VS Code log level controls
+- Switches out deprecated Bitbucket provider API method ([#4967](https://github.com/gitkraken/vscode-gitlens/issues/4967))
+- Improves performance of the file system provider by adding an LRU cache to the search tree
+- Improves Git shell operations by converting synchronous file system calls to async
 
 ### Fixed
 
@@ -67,6 +72,10 @@ The _Welcome_ view is now a standalone view, separate from the _Home_ view. This
 - Fixes highlighting delays that can occur in _Commit Composer_ when selecting large commits ([#4872](https://github.com/gitkraken/vscode-gitlens/issues/4872))
 - Fixes repeated warnings about large token usage in the same session in _Commit Composer_ ([#4800](https://github.com/gitkraken/vscode-gitlens/issues/4800))
 - Fixes an issue where MCP registration can stop working if CLI binary goes missing after the CLI was successfully installed
+- Fixes an issue where continuing a paused revert operation would incorrectly abort instead of continuing
+- Fixes an issue with rebase todo parsing when using newer Git versions that use `#` prefixes in commit messages
+- Fixes an issue with incorrect ref resolution for merge conflict nodes
+- Fixes an issue where nested repositories could fail to be removed when workspaces change
 
 <a id="v17-10"></a>
 
