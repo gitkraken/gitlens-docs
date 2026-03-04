@@ -16,6 +16,67 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v17-11"></a>
+
+## Version 17.11
+
+#### Wednesday, March 4, 2026
+
+GitLens 17.11 brings smarter Commit Composer composition that uses your existing commits as context, expands MCP tool support to Cursor and other VS Code-based IDEs, and adds the latest Claude and Gemini AI models. This release also delivers a focused set of bug fixes for Jira and Linear integration, GitLab workflows, and stash operations.
+
+<img src="/wp-content/uploads/gl-17-11-hero.png" class="help-center-img img-bordered">
+
+### Commit Composer: Context-Aware Composition
+
+Commit Composer is now smarter about what it knows when generating commits for you. When you have existing commits on your branch and compose new changes, Commit Composer reads those prior commit messages and uses them as context. Commit Composer understands the narrative arc of your branch, what you've already captured in previous commits, and produces new commits that are consistent in style, scope, and intent.
+
+Previously, Commit Composer analyzed only the raw diff of your working changes. If you'd already made two well-structured commits and had more WIP to compose, it had no awareness of those earlier commits. Now it does, and the result is a more coherent commit history.
+
+This release also reduces noise during multi-pass composition sessions: you'll see far fewer repeated warnings about large token usage when recomposing within the same session.
+
+### MCP Tools Now Available in Cursor
+
+The GitKraken MCP tools introduced in GitLens 17.10 (_Start Work_, _Start Review_, _Commit Composer_, and _Launchpad_) are now available in Cursor and other VS Code-based IDEs. Previously limited to VS Code, these tools enable AI agents in your IDE to automate branch creation, code review setup, commit composition, and PR triage directly from natural language prompts.
+
+### New AI Models
+
+GitLens 17.11 adds support for **Claude Sonnet 4.6**, **Claude Opus 4.6**, and **Gemini 3.1 Pro** for AI-powered features. Select your preferred model in GitLens settings under _AI providers_.
+
+### Standalone Welcome View
+
+The Welcome view is now its own standalone view, separate from Home, so it won't interfere with your Home view experience.
+
+---
+
+### Added
+
+- Adds support for Claude Sonnet 4.6, Claude Opus 4.6, Gemini 3.1 Pro Preview, and Gemini 3.1 Flash-Lite Preview AI models ([#4991](https://github.com/gitkraken/vscode-gitlens/issues/4991))
+- Adds basic support for Git submodules &mdash; including repository discovery, tracking, and UI icons and tooltips to distinguish submodules in views and quick picks ([#1048](https://github.com/gitkraken/vscode-gitlens/issues/1048), [#1803](https://github.com/gitkraken/vscode-gitlens/issues/1803))
+
+### Changed
+
+- Improves tracking for connecting flow actions by adding ide attributes to gk.dev links ([#4905](https://github.com/gitkraken/vscode-gitlens/issues/4905))
+- Refactors the Welcome view to be a standalone view separate from the _Home_ view, improving modularity and allowing the Welcome walkthrough to be displayed independently without requiring the Welcome Overlay ([#4970](https://github.com/gitkraken/vscode-gitlens/issues/4970))
+- Improves the quality of output when recomposing branches in the _Commit Composer_ by including commit messages of the previous commits as context ([#4874](https://github.com/gitkraken/vscode-gitlens/issues/4874))
+- Changes logging to use VS Code's native LogOutputChannel &mdash; the custom output level setting has been deprecated in favor of native VS Code log level controls
+- Switches out deprecated Bitbucket provider API method ([#4967](https://github.com/gitkraken/vscode-gitlens/issues/4967))
+- Improves performance of the file system provider by adding an LRU cache to the search tree
+- Improves Git shell operations by converting synchronous file system calls to async
+
+### Fixed
+
+- Fixes an issue in the _Start Review_ command where it opens the wrong branch with GitLab repos ([#4975](https://github.com/gitkraken/vscode-gitlens/issues/4975))
+- Fixes an issue where authentication errors were not properly displayed in _Launchpad_ when GitLab integration credentials were revoked ([#4944](https://github.com/gitkraken/vscode-gitlens/issues/4944))
+- Fixes an issue where stashing only unstaged changes could incorrectly stash everything ([#4503](https://github.com/gitkraken/vscode-gitlens/issues/4503))
+- Fixes an issue where Jira and Linear issues were not shown on the _Commit Graph_ unless a Git hosting integration (e.g. GitHub) was also connected ([#4640](https://github.com/gitkraken/vscode-gitlens/issues/4640))
+- Fixes highlighting delays that can occur in _Commit Composer_ when selecting large commits ([#4872](https://github.com/gitkraken/vscode-gitlens/issues/4872))
+- Fixes repeated warnings about large token usage in the same session in _Commit Composer_ ([#4800](https://github.com/gitkraken/vscode-gitlens/issues/4800))
+- Fixes an issue where MCP registration can stop working if CLI binary goes missing after the CLI was successfully installed
+- Fixes an issue where continuing a paused revert operation would incorrectly abort instead of continuing
+- Fixes an issue with rebase todo parsing when using newer Git versions that use `#` prefixes in commit messages
+- Fixes an issue with incorrect ref resolution for merge conflict nodes
+- Fixes an issue where nested repositories could fail to be removed when workspaces change
+
 <a id="v17-10"></a>
 
 ## Version 17.10
