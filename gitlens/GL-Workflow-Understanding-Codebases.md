@@ -1,6 +1,13 @@
 ---
 title: Understanding an Unfamiliar Codebase
 description: Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
+product: GitLens
+feature: Understanding Codebases
+content_type: how-to
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 
 taxonomy:
   category: gitlens
@@ -8,6 +15,19 @@ taxonomy:
 
 **Level**: New Developers
 **Primary Goal:** Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
+
+**Requirements:**
+- **Audience:** Developers new to a repository or unfamiliar area of the codebase
+- **GitLens features used:** CodeLens, Inline Blame, Commit Graph, Launchpad, GitKraken AI
+- **Plan requirements:** Some referenced features may require Pro, Advanced, Business, or Enterprise
+- **Best for:** Understanding ownership, history, and intent before changing code
+
+| Question you need answered | Best GitLens feature | Why |
+|---|---|---|
+| Who changed this code? | CodeLens or Inline Blame | Surfaces author, commit, and timing directly in the editor |
+| How did this file evolve? | Commit Graph | Provides broader historical and branch context |
+| Is someone already working on this area? | Launchpad | Shows pull request and issue activity tied to current work |
+| What does this code or change set do? | GitKraken AI | Summarizes intent before you modify or review it |
 
 ## When to use this workflow
 

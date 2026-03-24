@@ -1,9 +1,21 @@
 ---
 title: GitLens Troubleshooting
 description: GitLens Troubleshooting
+product: GitLens
+feature: Troubleshooting
+content_type: troubleshooting
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
+
+**Symptom:** GitLens does not show the related Bitbucket pull request for a commit.  
+**Applies to:** GitLens with a connected Bitbucket integration.  
+**Requires:** Access to the Bitbucket workspace and commit page.  
+**Expected result:** GitLens can display pull request information for commits after Bitbucket activates the required service.
 
 ## Enable showing Bitbucket pull request for a commit
 

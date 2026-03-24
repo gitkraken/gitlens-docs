@@ -1,16 +1,29 @@
 ---
 title: GitLens Commit Graph
-description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
+description: Visualize your repository history, branches, and collaborators with GitLens Commit Graph across supported GitLens IDEs.
+product: GitLens
+feature: Commit Graph
+content_type: reference
+audience: developer
+plan_required: Pro
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ## Commit Graph <code>PRO</code>
 
-The GitLens Commit Graph provides an interactive view of your repository history. It shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
+GitLens Commit Graph gives GitLens users an interactive repository history view for branches, commits, and collaborators. Use it when you need branch-level context or commit relationships that are harder to see in file history, line history, or the standard Source Control view.
+
+| View | Best for | Scope | Access |
+|---|---|---|---|
+| Commit Graph | Branch relationships, rebases, and repository-wide history | Entire repository | Public and local repos for all users; private repos require paid access |
+| Visual File History | Understanding how one file evolved | Single file | Available in GitLens |
+| Line History / Inline Blame | Tracing one line or code region | Single line or selection | Available in GitLens |
 
 <figure>
   <img src="/wp-content/uploads/commit-graph.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
@@ -19,7 +32,7 @@ The GitLens Commit Graph provides an interactive view of your repository history
 
 ---
 
-### Open the Commit Graph
+### How to Open the Commit Graph
 
 1. Open the Command Palette:
    - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
@@ -35,7 +48,7 @@ The Commit Graph opens in a new tab, where you can scroll through history and re
 
 ---
 
-### Repository Information
+### How to Read Repository Information
 
 At the top of the Commit Graph, you’ll see:
 
@@ -62,7 +75,7 @@ At the top of the Commit Graph, you’ll see:
 We’d love your input! Share ideas and feedback in the [GitLens Commit Graph discussion on GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
 
 
-### Configuration and Layout
+### How to Configure the Commit Graph Layout
 
 You can configure the Commit Graph to control what information is shown and how it is displayed.
 
@@ -115,7 +128,7 @@ Use scroll markers to quickly jump to important points such as `HEAD` or refs. Y
 
 ---
 
-### Settings
+### How to Open Commit Graph Settings
 
 Adjust Commit Graph settings from the Command Palette:
 - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
@@ -130,7 +143,7 @@ Search for **GitLens: Open Settings**.
 
 ---
 
-### Rich Commit Search
+### How to Search Commits in the Commit Graph
 
 The Commit Graph supports rich search across your entire repository. You can search by commit, message, author, file, or even specific code changes.
 

@@ -1,18 +1,32 @@
 ---
 title: GitLens Features
 description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
+product: GitLens
+feature: Features Overview
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
-<kbd>Last updated: June 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
+Features marked with <span style="color: #888;">`PRO`</span> require a [Pro, Advanced, Business, or Enterprise plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
 Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) (Community, Pro, etc).
 
+| Feature area | What it helps you do | Access notes |
+|---|---|---|
+| Revision Navigation | Compare file revisions and line changes | Available in GitLens |
+| Current Line Blame | See who changed the current line and when | Available in GitLens |
+| Git CodeLens | Inspect commit context from the editor | Available in GitLens |
+| Remote integrations | Open files, commits, and branches on connected hosts | Some actions require connected providers |
+
 ***
 
-## Revision Navigation
+## How to Navigate Revisions
 
 <figure>
   <img src="/wp-content/uploads/revision-navigation.gif" alt="GitLens revision navigation animated demo" class="help-center-img img-bordered">
@@ -47,7 +61,7 @@ Available commands:
 
 ***
 
-## Current Line Blame
+## How to Use Current Line Blame
 
 <figure>
   <img src="/wp-content/uploads/current-line-blame.png" alt="GitLens current line blame showing inline annotation" class="help-center-img img-bordered">
@@ -802,7 +816,7 @@ Click the icon again to unpin or unsnooze as needed.
 </div>
 
 <div class='callout callout--warning'>
-  <p>This feature is only available on GitLens Pro subscription tiers or higher.</p>
+  <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 
@@ -1248,7 +1262,7 @@ The Jira Integration, connected through your GitKraken Account, enables Jira [Au
 </figure>
 
 <div class='callout callout--warning'>
-  <p>This feature is only available for Pro subscription tiers or higher.</p>
+  <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 To connect the integration:

@@ -1,20 +1,27 @@
 ---
 title: GitLens Visual File History
-description: Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code.
+description: Use GitLens Visual File History to explore file evolution, changes, and authorship across supported GitLens IDEs.
+product: GitLens
+feature: Visual File History
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ## Visual File History
 
-The GitLens **Visual File History** shows how a file has evolved, including when changes were made, the size of those changes, and who made them.
+GitLens Visual File History helps GitLens users inspect how one file changed over time, including authorship, change size, and sequence. Use it when you need file-scoped history; use Commit Graph when you need repository-wide branch and commit relationships.
 
 ---
 
-### Open Visual File History
+### How to Open Visual File History
 
 You can open the Visual File History view in two ways:
 
@@ -32,7 +39,7 @@ You can open the Visual File History view in two ways:
 
 ---
 
-### Understand the Graph
+### How to Read the Visual File History Graph
 
 - **Authors (y-axis, left):** Each author is shown in a swimlane, mapping their commits over time.  
 - **Commits:** Plotted as color-coded bubbles by author. Bubble size represents the relative magnitude of changes.  
@@ -47,7 +54,7 @@ You can open the Visual File History view in two ways:
 
 ---
 
-### Gain Insights on Hover
+### How to Inspect Commit Details on Hover
 
 Hover over any commit bubble or bar to see details about:  
 - Author  

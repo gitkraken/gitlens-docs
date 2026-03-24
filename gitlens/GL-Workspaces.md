@@ -1,21 +1,33 @@
 ---
 title: Manage Multiple Repositories with GitLens Workspaces
 description: Learn how to create and use Workspaces in GitLens to organize your repositories
+product: GitLens
+feature: Workspaces
+content_type: how-to
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Workspaces in GitLens help you organize and manage multiple repositories from one convenient interface. Whether you're working solo or collaborating with a team, Workspaces simplify project access and context switching.
+GitLens Workspaces help GitLens users organize multiple repositories in one place, either locally or as shared Cloud Workspaces. Use local Workspaces for personal multi-repository context and Cloud Workspaces when teammates need shared repository sets and GitKraken account-based access.
 
 A Workspace can include:
 - **Local repositories**: The ones currently open in your VS Code window.
 - **Cloud Workspaces**: Hosted by GitKraken and accessible anywhere (GitKraken account required).
 
-> 💡 **Note:** Shared cloud Workspaces require a GitKraken trial or subscription.
+| Workspace type | Requires account | Shareable | Best for |
+|---|---|---|---|
+| Local Workspace | No | No | Personal multi-repository context in one VS Code environment |
+| Cloud Workspace | Yes | Yes | Shared repository sets across GitKraken tools and teammates |
 
-### Accessing Workspaces
+> 💡 **Note:** Shared Cloud Workspaces require a GitKraken trial or subscription.
+
+### How to Access Workspaces
 
 You can open your Workspaces in two ways:
 
@@ -27,7 +39,7 @@ You can open your Workspaces in two ways:
   <figcaption style="text-align: center; color: #888">Workspaces section in the GitLens Home panel</figcaption>
 </figure>
 
-### Creating a Workspace
+### How to Create a Workspace
 
 To create a new GitLens Workspace:
 
@@ -40,7 +52,7 @@ To create a new GitLens Workspace:
   <figcaption style="text-align: center; color: #888">Create Workspace dialog with name, description, and provider options</figcaption>
 </figure>
 
-### Adding Repositories
+### How to Add Repositories to a Workspace
 
 To add repositories to a Workspace:
 
@@ -52,7 +64,7 @@ To add repositories to a Workspace:
   <figcaption style="text-align: center; color: #888">Add repositories to your Workspace</figcaption>
 </figure>
 
-### Locating Repositories
+### How to Locate Repositories from a Cloud Workspace
 
 To find the disk location of a repository in a Cloud Workspace:
 
@@ -64,7 +76,7 @@ To find the disk location of a repository in a Cloud Workspace:
   <figcaption style="text-align: center; color: #888">Locate local disk path of repositories in your Workspace</figcaption>
 </figure>
 
-### Opening Repositories
+### How to Open Repositories from a Workspace
 
 To open a repository from a Workspace:
 
@@ -76,7 +88,7 @@ To open a repository from a Workspace:
   <figcaption style="text-align: center; color: #888">Open repositories from a Workspace in VS Code</figcaption>
 </figure>
 
-### Removing Repositories
+### How to Remove Repositories from a Workspace
 
 To remove a repository from a Workspace:
 
@@ -88,7 +100,7 @@ To remove a repository from a Workspace:
   <figcaption style="text-align: center; color: #888">Remove repositories from a Workspace</figcaption>
 </figure>
 
-### Converting to Cloud Workspaces
+### How to Convert a Local Workspace to a Cloud Workspace
 
 To convert a local VS Code workspace into a GitKraken Cloud Workspace:
 
@@ -102,7 +114,7 @@ Your Cloud Workspace will be synced to your GitKraken account and accessible via
   <figcaption style="text-align: center; color: #888">Convert local Workspace to GitKraken Cloud Workspace</figcaption>
 </figure>
 
-### Understanding Workspace Indicators and Colors
+### How to Read Workspace Indicators and Colors
 
 Visual indicators in Workspaces help you quickly understand their status. For example:
 - A **green Workspace** with an **O** symbol indicates it is open in your current window.
@@ -112,7 +124,7 @@ Visual indicators in Workspaces help you quickly understand their status. For ex
   <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
 </figure>
 
-### Workspace Linking
+### How to Link a VS Code Workspace to a GitKraken Workspace
 
 You can link a VS Code workspace to a GitKraken Workspace:
 
@@ -138,4 +150,3 @@ To manually sync repositories:
   <img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Manage repository linking for VS Code and GitKraken Workspaces</figcaption>
 </figure>
-

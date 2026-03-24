@@ -1,12 +1,32 @@
 ---
 title: Orchestrating Complex Git Operations
 description: Apply Git intelligence and AI-aware context to manage complex history safely
+product: GitLens
+feature: Complex Git Operations
+content_type: how-to
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
 **Level:** Advanced Developers
 **Primary Goal:** Apply Git intelligence and AI-aware context to manage complex history safely
+
+**Requirements:**
+- **Audience:** Developers managing advanced or high-risk Git history
+- **GitLens features used:** GitKraken MCP, Commit Graph, Rebase Editor, Cloud Patches
+- **Plan requirements:** Some referenced features may require Pro, Advanced, Business, or Enterprise
+- **Best for:** Rebases, cherry-picks, and other complex history operations
+
+| Task | GitLens feature | Why it helps |
+|---|---|---|
+| Gather repository-aware AI context | GitKraken MCP | Gives AI assistants accurate Git context before acting |
+| Inspect branch relationships | Commit Graph | Makes high-risk history easier to reason about |
+| Reorder or squash commits | Rebase Editor | Supports interactive rebases with clear state visibility |
+| Share work in progress | Cloud Patches | Lets teammates review changes without opening a pull request |
 
 ## When to use this workflow
 

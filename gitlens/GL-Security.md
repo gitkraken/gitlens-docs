@@ -1,12 +1,21 @@
 ---
 title: GitLens Security Information
 description: Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
+product: GitLens
+feature: Security Information
+content_type: security
+audience: all
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+This page explains GitLens data collection, storage, transport security, and SOC 2 status for users evaluating GitLens security and compliance. Use it when you need to confirm what GitLens stores, where service data lives, and which protections apply to subscription, account, and AI-related data.
 
 ## Data Collection and Storage
 

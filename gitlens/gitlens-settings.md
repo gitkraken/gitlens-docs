@@ -1,10 +1,24 @@
 ---
 title: GitLens Settings Overview
 description: Learn how to access and customize GitLens settings in Visual Studio Code
+product: GitLens
+feature: Settings
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+| Settings area | What it controls | Best for |
+|---|---|---|
+| Current Line Blame | Inline blame annotations on the active line | Understanding recent line history |
+| Git CodeLens | Commit and authorship details above code | Navigating file and symbol history |
+| Hovers | Hover cards for commits, lines, and revisions | Inspecting details without leaving the editor |
+| Views | Sidebar panels and history surfaces | Tailoring GitLens navigation to your workflow |
 
 ## Overview
 
@@ -19,7 +33,7 @@ To open the editor, run the _GitLens: Open Settings_ command (`gitlens.showSetti
 
 GitLens is highly customizable—nearly every feature can be tailored to fit your workflow using the available settings.
 
-## Current Line Blame Settings
+## How to Configure Current Line Blame
 
 Use these settings to customize how GitLens displays blame annotations for the current line of code. These annotations help identify the last commit that modified a line, along with contextual details like date, author, and related pull requests.
 
@@ -76,7 +90,7 @@ Use these settings to customize how GitLens displays blame annotations for the c
 
 ***
 
-## Git CodeLens Settings
+## How to Customize Git CodeLens
 
 These settings control GitLens CodeLens overlays, which provide inline contextual information such as author and commit history directly in your code.
 
@@ -179,7 +193,7 @@ These settings control how GitLens displays blame information in the status bar,
 
 ***
 
-## Hover Settings
+## How to Customize GitLens Hovers
 
 Use these settings to control when and how GitLens displays hover popups that show commit details, line changes, avatars, and pull request information.
 

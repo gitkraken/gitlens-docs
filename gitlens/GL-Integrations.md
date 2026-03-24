@@ -1,13 +1,22 @@
 ---
 title: GitLens Integrations
 description: Explore GitLens integrations with remote providers
+product: GitLens
+feature: Integrations
+content_type: integration
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitLens supports a wide range of remote providers to enhance your Git workflow inside Visual Studio Code. Supported platforms include:
+This page explains which remote services GitLens integrates with across supported GitLens IDEs, what each integration enables, and how to connect supported providers. Use it when you need pull request, issue, repository, or Launchpad features that depend on an authenticated Git host or Jira connection.
+
+Supported platforms include:
 
 - GitHub (including GitHub Enterprise)
 - GitLab
@@ -162,7 +171,7 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 </figure>
 
 <div class='callout callout--warning'>
-  <p>This feature is only available for Pro subscription tiers or higher.</p>
+  <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 ### Connect the Jira Integration

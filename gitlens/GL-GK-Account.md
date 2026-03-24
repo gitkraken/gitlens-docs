@@ -1,13 +1,20 @@
 ---
 title: GitKraken Account – GitLens
 description: Learn how to create and manage your GitKraken account for GitLens features.
+product: GitLens
+feature: GitKraken Account
+content_type: how-to
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
+This page explains how GitLens users create, sign in to, personalize, and delete a GitKraken account for GitLens features that require authentication. Use it when GitLens prompts for a GitKraken account or when you need to update account settings used across GitKraken products.
 
 <figure class='callout callout--basic'>
   <p><strong>Note:</strong> GitKraken accounts are not compatible with <a href="/git-integration-for-jira-cloud/git-integration-for-jira-home-gij-cloud/">Git Integration for Jira</a>.</p>
@@ -73,4 +80,3 @@ To delete your GitKraken account:
 > Important: If you're a non-admin member of a GitKraken organization, you must ask an admin to remove your account before you can delete it. Organization admins have control over employee accounts.
 
 GitKraken complies with GDPR. Once deleted, your account cannot be restored. This action permanently removes your subscriptions, Cloud Workspaces, Insights data, and organizations.
-

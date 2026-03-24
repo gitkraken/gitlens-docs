@@ -1,20 +1,31 @@
 ---
-
 title: Start Here
-description: How to start working with GitLens
+description: How to start working with GitLens in VS Code, Cursor, Windsurf, Trae, and Kiro
+product: GitLens
+feature: Getting Started
+content_type: install
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
     
 ---
----
 
-Welcome to the GitLens Support Documentation site! 
+This page helps GitLens users install GitLens and choose the first workflows to try after installation in VS Code, Cursor, Windsurf, Trae, or Kiro. Start here if you are new to GitLens and want a guided path into history inspection, pull request review, collaboration features, and integrations.
 
-GitLens is the #1 most downloaded [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) Git extension that supercharges your developer workflows. You can download GitLens from the VS Code marketplace: 
+GitLens can be installed for **VS Code**, **Cursor**, **Windsurf**, **Trae**, and **Kiro**. Use the install flow for your IDE:
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens</a> 
 
-GitLens is known for its blame, hover, and annotations, but there’s much more to the extension. Users are leveraging its rich features to increase their developer productivity, which you can learn more about in the popular workflows below. 
+GitLens includes history inspection, pull request review, collaboration, and integration workflows, which you can explore below. 
+
+**Quick start:**
+1. Install GitLens in your IDE.
+2. Open a repository in your IDE.
+3. Start with Commit Graph, GitLens Inspect, or Inline Blame.
+4. Connect integrations if you need pull request or issue workflows.
 
 * [Interactive Code History](/gitlens/gitlens-home/#interactive-code-history)
 * [Accelerate PR Reviews](/gitlens/gitlens-home/#accelerate-pr-reviews)
@@ -70,7 +81,7 @@ To begin reviewing a pull request, simply select a pull request and then Open in
 
 <a href="vscode://eamodio.gitlens/link/command/launchpad">Open the Launchpad in GitLens</a>.
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 #### Worktrees
 
@@ -106,7 +117,7 @@ When you select members to share it with, they will see this in the Cloud Patch 
 
 <a href="vscode://eamodio.gitlens/link/command/cloud-patches">Open the Cloud Patches View in GitLens</a>.
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 #### Code Suggest `PRO`
@@ -118,7 +129,7 @@ To create a Code Suggestion, have a branch checked out with an open pull request
 The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
 
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 ***

@@ -1,20 +1,20 @@
 # GitLens Documentation
 
-> GitLens documentation — the #1 Git extension for Visual Studio Code. Supercharge your Git workflows with blame, code history, commit graphs, and more.
+> GitLens documentation for VS Code, Cursor, Windsurf, Trae, and Kiro.
 
 ## Getting Started
 
-- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): How to install and start using GitLens in Visual Studio Code
+- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): How to install and start using GitLens in VS Code, Cursor, Windsurf, Trae, and Kiro
 
 ## Documentation Pages
 
 - [Accelerate PR Reviews](https://help.gitkraken.com/gitlens/gl-accelerate-pr-reviews/): Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees.
 - [Cleaning Up and Preparing Work for Review](https://help.gitkraken.com/gitlens/gl-workflow-cleanup-prepare-for-review/): Use Git intelligence to transform iterative work into clean, reviewable history
 - [GitKraken Account – GitLens](https://help.gitkraken.com/gitlens/gl-gk-account/): Learn how to create and manage your GitKraken account for GitLens features.
-- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/gl-gk-ai/): Learn more about the use of Gitkraken AI in Gitlens!
+- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/gl-gk-ai/): Learn how to use GitKraken AI features in GitLens.
 - [GitLens Cloud Patches](https://help.gitkraken.com/gitlens/gl-cloud-patches/): Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
 - [GitLens Code Suggest](https://help.gitkraken.com/gitlens/gl-code-suggest/): Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
-- [GitLens Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/): Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
+- [GitLens Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/): Visualize your repository history, branches, and collaborators with GitLens Commit Graph across supported GitLens IDEs.
 - [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Learn the differences between GitLens Community and GitLens Pro
 - [GitLens FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens and GitKraken account integration.
 - [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
@@ -27,11 +27,11 @@
 - [GitLens Streamline Collaboration](https://help.gitkraken.com/gitlens/gl-streamline-collaboration/): How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
 - [GitLens Support Terms and Conditions](https://help.gitkraken.com/gitlens/gl-terms-and-conditions/): Learn about GitLens Support terms and conditions
 - [GitLens Troubleshooting](https://help.gitkraken.com/gitlens/gitlens-troubleshooting/): GitLens Troubleshooting
-- [GitLens Visual File History](https://help.gitkraken.com/gitlens/gl-visual-file-history/): Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code.
+- [GitLens Visual File History](https://help.gitkraken.com/gitlens/gl-visual-file-history/): Use GitLens Visual File History to explore file evolution, changes, and authorship across supported GitLens IDEs.
 - [GitLens Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/): Use GitLens Worktrees to develop and test multiple branches in VS Code without switching.
-- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/): Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
+- [GitLens Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/): Use GitLens Launchpad to organize and prioritize pull requests across supported GitLens IDEs.
 - [Manage Multiple Repositories with GitLens Workspaces](https://help.gitkraken.com/gitlens/gl-workspaces/): Learn how to create and use Workspaces in GitLens to organize your repositories
 - [Orchestrating Complex Git Operations](https://help.gitkraken.com/gitlens/gl-workflow-orchestrate-complex-git-operations/): Apply Git intelligence and AI-aware context to manage complex history safely
-- [Start Here](https://help.gitkraken.com/gitlens/gitlens-start-here/): How to start working with GitLens
+- [Start Here](https://help.gitkraken.com/gitlens/gitlens-start-here/): How to start working with GitLens in VS Code, Cursor, Windsurf, Trae, and Kiro
 - [Understanding an Unfamiliar Codebase](https://help.gitkraken.com/gitlens/gl-workflow-understanding-codebases/): Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
 - [Using the GitLens Sidebar](https://help.gitkraken.com/gitlens/side-bar/): Explore GitLens sidebar views for working with repositories, authors, commits, and branches.

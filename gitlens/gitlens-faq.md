@@ -1,13 +1,18 @@
 ---
-
----
 title: GitLens FAQ
 description: Frequently asked questions about GitLens and GitKraken account integration.
+product: GitLens
+feature: FAQ
+content_type: faq
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 Get answers to frequently asked questions about GitLens features, sign-in options, and GitKraken account integration.
 

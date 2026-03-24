@@ -1,10 +1,17 @@
 ---
 title: GitLens Community vs. GitLens Pro
 description: Learn the differences between GitLens Community and GitLens Pro
+product: GitLens
+feature: Plan Comparison
+content_type: concept
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/dOLvYFgJPyY?si=TXJOGHH_LoajOen6' frameborder='0' allowfullscreen title="GitLens Community vs. GitLens Pro video overview"></iframe>
@@ -12,9 +19,17 @@ taxonomy:
 
 &nbsp;
 
-Whether you're reviewing code, managing pull requests, or exploring your project history, GitLens enhances your Git experience—directly inside Visual Studio Code.
+This page compares GitLens Community and GitLens Pro for GitLens users choosing between free and paid GitLens capabilities across supported IDEs. Use it to decide whether your repository type, collaboration needs, and advanced history or review workflows require GitLens Pro.
 
 Let’s explore the key differences between the **Community** and **Pro** editions to help you choose the version that fits your workflow.
+
+| Capability | GitLens Community | GitLens Pro | Best for |
+|---|---|---|---|
+| Blame, hovers, and CodeLens | Yes | Yes | Everyday authorship and file history |
+| Revision navigation | Yes | Yes | Inspecting prior file versions |
+| Launchpad and advanced PR review workflows | No | Yes | Teams reviewing pull requests in VS Code |
+| Advanced collaboration and integrations | Limited | Yes | Multi-repository and team workflows |
+| Advanced Git operations and AI workflows | Limited | Yes | Power users and collaborative teams |
 
 ## GitLens Community (Free)
 
