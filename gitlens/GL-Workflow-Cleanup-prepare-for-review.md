@@ -1,12 +1,32 @@
 ---
 title: Cleaning Up and Preparing Work for Review
 description: Use Git intelligence to transform iterative work into clean, reviewable history
+product: GitLens
+feature: Preparing Work for Review
+content_type: how-to
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
 **Level:** Intermediate Developers
 **Primary Goal:** Use Git intelligence to transform iterative work into clean, reviewable history
+
+**Requirements:**
+- **Audience:** Developers preparing a branch for review
+- **GitLens features used:** Commit Graph, Commit Composer, Launchpad, Worktrees
+- **Plan requirements:** Some referenced features may require Pro, Advanced, Business, or Enterprise
+- **Best for:** Cleaning up noisy history before opening or updating a pull request
+
+| Task | GitLens feature | Why it helps |
+|---|---|---|
+| Review branch structure | Commit Graph | Shows divergence, commit order, and related branch context |
+| Rewrite noisy commits | Commit Composer | Recompose commits into cleaner review units |
+| Check review status | Launchpad | Surfaces pull request state and related follow-up |
+| Handle interruptions | Worktrees | Lets you switch to urgent work without disturbing your branch |
 
 ## When to use this workflow
 

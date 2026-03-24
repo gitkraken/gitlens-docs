@@ -1,20 +1,35 @@
 ---
 title: Using the GitLens Sidebar
 description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
+product: GitLens
+feature: Sidebar
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
-GitLens provides multiple sidebars that extend the functionality of Visual Studio Code, making it easier to navigate and understand your Git repositories. These include:
+GitLens provides multiple sidebars that make it easier to navigate and understand your Git repositories across supported GitLens IDEs. These include:
 
 - **GitLens Inspect** — View blame annotations, code lenses, and commit details.
 - **GitLens** — Access features like commit history, branches, and remotes.
 - **Source Control** — Integrates with GitLens to enhance the built-in source control panel.
 
-Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
+Features marked with `PRO` require a [Pro, Advanced, Business, or Enterprise plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+
+Use the GitLens Inspect sidebar for file and line context, the GitLens sidebar for repository and branch exploration, and the Source Control sidebar when you want GitLens features inside VS Code's native Git surface.
+
+| Sidebar | Best for | Key views |
+|---|---|---|
+| GitLens Inspect | File, line, and commit context | Commit Details, Overview, Line History, File History |
+| GitLens | Repository navigation and collaboration | Home, Workspaces, GitKraken Account, Cloud Patches, Launchpad |
+| Source Control | Native VS Code Git workflows with GitLens enhancements | Commits, Branches, Remotes, Stashes, Tags, Worktrees |
 
 ***
 
@@ -339,7 +354,7 @@ Workspaces offer a convenient way to group and manage multiple repositories for 
 
 To access Workspaces, open the GitLens Home menu and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
 
-> Note: Using cloud Workspaces requires a GitKraken account. Sharing cloud Workspaces requires a trial or paid subscription.
+> Note: Using Cloud Workspaces requires a GitKraken account. Sharing Cloud Workspaces requires a Pro, Advanced, Business, or Enterprise plan.
 
 <figure>
   <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered" alt="GitLens Workspaces in the sidebar">

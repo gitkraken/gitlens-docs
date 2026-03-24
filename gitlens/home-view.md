@@ -1,10 +1,28 @@
 ---
 title: GitLens Home View Overview
 description: Learn how the GitLens Home View helps you track current work, plan next steps, and review recent activity
+product: GitLens
+feature: Home View
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
+
+**Requirements:**
+- **Requires GitLens:** GitLens installed in VS Code, Cursor, Windsurf, Trae, or Kiro
+- **Works best with:** Connected GitHub, GitLab, or Jira integrations
+- **Plan notes:** Some Home View actions, including Launchpad-related features, may require Pro, Advanced, Business, or Enterprise
+
+| Home View section | Purpose | Requires |
+|---|---|---|
+| Repository and branch | Shows current repo state, branch, and sync actions | An open repository |
+| Launchpad | Highlights pull requests and assigned issues | Connected integrations; some actions require paid access |
+| Recent | Returns to recent branches, worktrees, and pull requests | GitLens activity history |
 
 ## Overview
 
@@ -61,7 +79,7 @@ If a pull request isn’t open or your branch isn't yet linked to an issue, GitL
 ## Plan Next Steps with Launchpad <span class="badge badge--pro">Pro</span>
 
 <div class='callout callout--warning'>
-    <p>This feature is available with GitLens Pro or higher subscription tiers.</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 The Launchpad section highlights upcoming priorities to help you decide what to work on next. It surfaces pull requests needing your review and lets you start new work by creating branches and worktrees for issues assigned to you.

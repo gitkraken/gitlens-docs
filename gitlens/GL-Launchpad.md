@@ -1,16 +1,29 @@
 ---
-title: Launchpad
-description: Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
+title: GitLens Launchpad
+description: Use GitLens Launchpad to organize and prioritize pull requests across supported GitLens IDEs.
+product: GitLens
+feature: Launchpad
+content_type: how-to
+audience: developer
+plan_required: Pro
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ## Launchpad <code>PRO</code>
 
-The GitLens Launchpad helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
+GitLens Launchpad helps GitLens users organize pull requests by status and next action without leaving the editor. Use it when you need a prioritized review queue across repositories and connected Git hosts, especially for pull requests waiting on you or needing follow-up.
+
+| Workflow | Recommended tool | Best for |
+|---|---|---|
+| Prioritizing pull requests across repositories | Launchpad | A single action queue for reviews and follow-up |
+| Inspecting current repository activity | Home View | Quick status and recent work in one repository |
+| Reviewing one pull request in the host UI | Browser or host UI | Host-specific merge or admin actions |
 
 <figure>
   <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="help-center-img img-bordered" alt="Launchpad view showing pull requests organized by status" />
@@ -19,7 +32,7 @@ The GitLens Launchpad helps you manage pull requests by status, so you can quick
 
 ---
 
-### Open the Launchpad
+### How to Open Launchpad
 
 1. Open the Command Palette:
    - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
@@ -33,7 +46,7 @@ The GitLens Launchpad helps you manage pull requests by status, so you can quick
 
 ---
 
-### Review Pull Requests
+### How to Review Pull Requests from Launchpad
 
 The Launchpad displays pull requests for your repositories, grouped by status:
 - Ready to merge
@@ -57,7 +70,7 @@ Select a pull request to:
 
 ---
 
-### Code Suggestions
+### How to Start or Review Code Suggestions from Launchpad
 
 You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from pull requests in the Launchpad.
 
@@ -68,7 +81,7 @@ You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-sugge
 
 ---
 
-### Pin or Snooze Pull Requests
+### How to Pin or Snooze Pull Requests
 
 - **Pin**: Use the pin icon <i class="fa-solid fa-thumbtack"></i> to move a pull request to the pinned group.
 - **Snooze**: Use the snooze icon <i class="fa-solid fa-snooze"></i> to move it to the snoozed group.
@@ -85,4 +98,4 @@ You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-sugge
 
 - Supported for **GitHub.com** and **GitLab.com** repositories only. Connect the [GitHub or GitLab integration](/gitlens/gitlens-features/#connecting-the-github-and-gitlab-integration) to use Launchpad.
 - Launchpad prioritizes items that require immediate action, placing them at the top. (This may change in future updates.)
-- This feature is available with a **Pro subscription tier or higher**.
+- This feature is available on **Pro, Advanced, Business, and Enterprise** plans.

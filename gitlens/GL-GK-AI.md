@@ -1,13 +1,19 @@
 ---
-
 title: GitKraken AI Features in GitLens
-description: Learn more about the use of Gitkraken AI in Gitlens!
+description: Learn how to use GitKraken AI features in GitLens.
+product: GitLens
+feature: GitKraken AI
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-Merge cutting-edge AI capabilities with your Git workflow to save time, increase clarity, and enhance collaboration. GitLens' AI features transform how you create, understand, and document code changes.
+This page explains GitLens AI features for Visual Studio Code users, including commit generation, explanations, changelog creation, and pull request workflows. Use it to identify which GitLens AI features are available on your plan and which provider settings or token limits apply before enabling them.
 
 ---
 

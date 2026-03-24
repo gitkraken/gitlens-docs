@@ -1,11 +1,18 @@
 ---
 title: GitLens Release Notes
 description: GitLens Release Notes
+product: GitLens
+feature: Release Notes
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
 
-Find out what’s new, what’s fixed, or just take a trip down memory lane remembering those bugs of yesterday.
+This page lists the current GitLens release notes, including new features, changes, fixes, and removals for each released version. Use it when you need to confirm when a GitLens capability shipped, changed behavior, or became available in a specific release.
 
 Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/CHANGELOG.md) to see linked issues and past changes.
 

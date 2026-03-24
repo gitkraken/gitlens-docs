@@ -1,19 +1,29 @@
 ---
 title: GitLens Code Suggest
 description: Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
+product: GitLens
+feature: Code Suggest
+content_type: how-to
+audience: developer
+plan_required: Pro
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ## What Is Code Suggest?
 
-**GitLens Code Suggest** simplifies code review by allowing you to make suggestions and edits across the entire project, not just on changed lines.  
-Suggestions can be created within **GitLens**, **GitKraken Desktop**, or **gitkraken.dev** and attached to pull requests.  
+GitLens Code Suggest lets GitLens users propose project-wide edits and review suggestions for GitHub pull requests from **GitLens**, **GitKraken Desktop**, or **gitkraken.dev**. Use it when review feedback spans files beyond changed-line comments and your repository supports Code Suggest workflows.
 
-Reviewers can then view, accept, and apply these suggestions directly to the pull request branch.
+**Requirements:**
+- **Supported host:** GitHub.com repositories
+- **Requires:** An open pull request on the branch you are reviewing
+- **Review surfaces:** GitLens, GitKraken Desktop, or gitkraken.dev
+- **Best for:** Multi-file or project-wide pull request suggestions
 
 <figure>
   <img src="/wp-content/uploads/gl-code-suggest.png" class="help-center-img img-bordered" alt="GitLens Code Suggest view showing suggestion options" />
@@ -22,7 +32,7 @@ Reviewers can then view, accept, and apply these suggestions directly to the pul
 
 ---
 
-## Start a Code Suggestion
+## How to Start a Code Suggestion
 
 1. Open the [GitLens Inspect Overview](/gitlens/side-bar/#overview) for your repository.  
 2. Check out a branch with an open pull request.  
@@ -46,7 +56,7 @@ This action adds a comment on the pull request with two options:
 
 ---
 
-## Review and Apply Suggestions Locally
+## How to Review and Apply Suggestions Locally
 
 1. Select **Locally on your machine**.  
 2. Open the suggestion in GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes).  
@@ -60,7 +70,7 @@ This action adds a comment on the pull request with two options:
 
 ---
 
-## Review and Commit Suggestions in gitkraken.dev
+## How to Review and Commit Suggestions in gitkraken.dev
 
 1. Select **Code Suggestion for #PR** to open the suggestion in **gitkraken.dev**.  
 2. Review each file and its proposed changes.  

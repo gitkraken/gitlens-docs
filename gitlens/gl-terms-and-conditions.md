@@ -1,16 +1,28 @@
 ---
-
 title: GitLens Support Terms and Conditions
 description: Learn about GitLens Support terms and conditions
+product: GitLens
+feature: Support Terms and Conditions
+content_type: reference
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-
-Our goal is to ensure you can use GitLens effortlessly and with minimal friction. In the unlikely event that you need to reach out to a human, refer to our current Terms and Conditions below.
+This page defines GitLens support terms, support periods, and end-of-life expectations for GitLens users who need to know what support is available and how long releases remain supported.
 
 You can always reach out to us by using the [Contact support](https://help.gitkraken.com/gitlens/gl-contact-support/).
+
+| Support topic | Policy | Applies to | Notes |
+|---|---|---|---|
+| Support channel | Contact Support form | Supported GitLens plans | Primary support is handled by email |
+| Support hours | 10:00 am to 10:00 pm, Monday to Friday, UTC | Supported GitLens plans | Requests can be submitted at any time |
+| Support period | Current GA major and minor release lines | Supported GitLens plans | Customers may be asked to upgrade during troubleshooting |
+| End-of-life notice | At least 60 days before discontinuation | Product or feature retirement | May accelerate in exceptional circumstances |
 
 ---
 
@@ -26,7 +38,7 @@ You can always reach out to us by using the [Contact support](https://help.gitkr
 | :--- | :--- | :--- | :--- | :--- |
 | Response Time | 3 Business Days | 1 Business day | 12 Hours | 6 Hours |
 
-- GitLens is available only for Visual Studio Code
+- GitLens is available for VS Code, Cursor, Windsurf, Trae, and Kiro
 
 - While we try to get to everyone who reaches out, a response is not guaranteed to all users. This includes any users who are on Student and Community plans. We encourage all users to engage in our community and utilize our self servicefree resources. [Additional Resources](https://help.gitkraken.com/gitkraken-desktop/gitkraken-desktop-home/#additional-resources)
 

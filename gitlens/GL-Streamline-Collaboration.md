@@ -1,10 +1,17 @@
 ---
 title: GitLens Streamline Collaboration
 description: How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
+product: GitLens
+feature: Collaboration Workflows
+content_type: concept
+audience: developer
+plan_required: Pro
+status: GA
+last_verified: 2026-03
 taxonomy:
   category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen title="GitLens Streamline Collaboration video overview"></iframe>
@@ -12,14 +19,21 @@ taxonomy:
 
 &nbsp;
 
-Collaborating in a repository can be tricky—especially when you want to share work without flooding the remote with temporary commits or branches. Traditional pull request workflows also limit which files you can review or comment on—typically only those that have changed.
+This page explains when GitLens users should choose Cloud Patches or Code Suggest to collaborate before or during pull request review. Use Cloud Patches for sharing local work in progress before a pull request exists, and use Code Suggest for structured pull request feedback across whole files or projects.
+
+Collaborating in a repository can be tricky, especially when you want to share work without flooding the remote with temporary commits or branches. Traditional pull request workflows also limit which files you can review or comment on, typically only those that have changed.
 
 GitLens helps streamline collaboration through:
 
 - **Cloud Patches** – Share uncommitted code changes without pushing to a remote.
 - **Code Suggest** – Propose changes on any file, not just modified ones.
 
-## Cloud Patches <span style="color: #888;">`PRO`</span>
+| Workflow stage | Recommended feature | Best for |
+|---|---|---|
+| Before a pull request exists | Cloud Patches | Sharing local work in progress for early feedback |
+| During pull request review | Code Suggest | Proposing structured edits across files in an open pull request |
+
+## When to Use Cloud Patches <span style="color: #888;">`PRO`</span>
 
 Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization. Teammates can apply them directly to their working directory—ideal for reviewing or collaborating on code before it’s committed.
 
@@ -39,7 +53,7 @@ Recipients will see the patch in the **Cloud Patch** sidebar and can apply it di
 </figure>
 
 
-## Code Suggest <span style="color: #888;">`PRO`</span>
+## When to Use Code Suggest <span style="color: #888;">`PRO`</span>
 
 Code Suggest lets you propose edits to any file in a repository—regardless of whether the file was modified. You can submit these suggestions directly to another team member’s open pull request.
 
@@ -59,4 +73,3 @@ The PR creator can:
 <figure class='callout callout--warning'>
   <p>This feature is available with a GitLens Pro subscription or higher.</p>
 </figure>
-

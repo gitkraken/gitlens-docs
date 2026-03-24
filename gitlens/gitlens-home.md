@@ -1,22 +1,39 @@
 ---
-
 title: Get Started with GitLens
-description: How to install and start using GitLens in Visual Studio Code
+description: How to install and start using GitLens in VS Code, Cursor, Windsurf, Trae, and Kiro
+product: GitLens
+feature: Getting Started
+content_type: install
+audience: developer
+plan_required: all
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
     
 ---
 
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
  
-Welcome to the GitLens Support Documentation site! 
+This page helps GitLens users install GitLens and choose the first workflows to try after installation in VS Code, Cursor, Windsurf, Trae, or Kiro. Start here if you are new to GitLens and want a guided path into history inspection, pull request review, collaboration features, and integrations.
 
-GitLens is the #1 most downloaded [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) Git extension that supercharges your developer workflows. You can download GitLens from the VS Code marketplace: 
+GitLens can be installed for **VS Code**, **Cursor**, **Windsurf**, **Trae**, and **Kiro**. Use the install flow for your IDE:
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens</a> 
 
-GitLens is known for its blame, hover, and annotations, but there’s much more to the extension. Users are leveraging its rich features to increase their developer productivity, which you can learn more about in the popular workflows below. 
+- [Install GitLens in Cursor](cursor:extension/eamodio.gitlens)
+- [Install GitLens in Windsurf](windsurf:extension/eamodio.gitlens)
+- [Install GitLens in Trae](trae:extension/eamodio.gitlens)
+- [Install GitLens in Kiro](kiro:extension/eamodio.gitlens)
+
+GitLens includes history inspection, pull request review, collaboration, and integration workflows, which you can explore below. 
+
+**Quick start:**
+1. Install GitLens in your IDE.
+2. Open a repository in your IDE.
+3. Open Commit Graph or GitLens Inspect to start exploring history.
+4. Connect GitHub, GitLab, or Jira integrations if you need pull request and issue workflows.
 
 * [Interactive Code History](/gitlens/gitlens-home/#interactive-code-history)
 * [Accelerate PR Reviews](/gitlens/gitlens-home/#accelerate-pr-reviews)
@@ -89,7 +106,7 @@ Manually switching between browser tabs, emails, and PR tools can interrupt your
 
 ### Launchpad `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher.</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 Launchpad provides a centralized view of your pull requests. You can:
@@ -135,7 +152,7 @@ GitLens enables flexible collaboration without needing to commit or push unfinis
 
 ### Cloud Patches `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher.</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 Cloud Patches are sharable Git patches that can be applied across your GitKraken organization:
@@ -148,7 +165,7 @@ Cloud Patches are sharable Git patches that can be applied across your GitKraken
 
 ### Code Suggest `PRO`
 <div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher.</p>
+    <p>This feature is available on Pro, Advanced, Business, and Enterprise plans.</p>
 </div>
 
 Suggest code edits to any file—even those not changed in the original PR:

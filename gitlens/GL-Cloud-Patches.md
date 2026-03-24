@@ -1,23 +1,27 @@
 ---
 title: GitLens Cloud Patches
 description: Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
+product: GitLens
+feature: Cloud Patches
+content_type: how-to
+audience: developer
+plan_required: Pro
+status: GA
+last_verified: 2026-03
 taxonomy:
     category: gitlens
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: March 2026</kbd>
 
 ## What Are Cloud Patches?
 
-A **Cloud Patch** is a Git patch securely stored by GitKraken so it can be easily shared across **GitLens**, **GitKraken Desktop**, and the **GitKraken CLI**.  
-The patch is transferred directly from your machine into secure storage.
-
-Cloud Patches let you collaborate with your team **before creating a pull request**. You can share work in progress, gather feedback early, and minimize delays in pull request reviews.
+GitLens Cloud Patches let GitLens users securely share uncommitted or in-progress changes across **GitLens**, **GitKraken Desktop**, and the **GitKraken CLI** before opening a pull request. Use this feature when you need early feedback on work in progress and have a GitKraken account with Cloud Patch access.
 
 ---
 
-## Set Up Cloud Patches
+## How to Set Up GitLens Cloud Patches
 
 To enable or disable Cloud Patches per client:
 
@@ -31,7 +35,7 @@ To enable or disable Cloud Patches per client:
 
 ---
 
-## Create and Share Cloud Patches
+## How to Create and Share a Cloud Patch
 
 You can manage Cloud Patches from the **Cloud Patches view** in the GitLens sidebar.
 
@@ -52,6 +56,12 @@ A Cloud Patch can be created from **Working Changes, Commits, Stashes, or Compar
 ### Sharing Options
 When creating a Cloud Patch, choose one of the following:
 
+| Sharing option | Requires account | Best for | Limitation |
+|---|---|---|---|
+| Anyone with the link | No | Fast sharing outside your organization | Anyone with the link can access it |
+| Anyone in my org | Yes | Broad sharing within a GitKraken organization | Limited to organization members |
+| Only collaborators | Yes | Restricted review with named teammates | Requires selecting collaborators |
+
 - **Anyone with the link**: Public access for anyone with the link.  
 - **Anyone in my org**: Accessible to members of your GitKraken Organization (authentication required).  
 - **Only collaborators**: Restricted to selected GitKraken Organization members (authentication required). Use **Invite** to select members.  
@@ -65,7 +75,7 @@ Cloud Patches shared with you appear under **Shared with Me** in the Cloud Patch
 
 ---
 
-## Apply and Manage Cloud Patches
+## How to Apply or Delete a Cloud Patch
 
 - Open a Cloud Patch from a shared URL to view it in GitLens.  
 - Apply it to your **working tree** or to a **new/existing branch** by following the prompts in GitLens.  
