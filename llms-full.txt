@@ -458,11 +458,11 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 - From the GitLens Home View panel: Click the ✨button next to “Create a Pull Request”
 
 ---
-## AI Token Allocation by Plan
+## AI Credit Allocation by Plan
 
-GitKraken AI features operate on a token-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
+GitKraken AI features operate on a credit-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
 
-Tokens refresh weekly and are shared across all AI features. More complex operations like changelog generation typically use more tokens than simpler ones like commit messages.
+Credits refresh weekly and are shared across all AI features. More complex operations like changelog generation typically use more credits than simpler ones like commit messages.
 
 ---
 ## Configuring Your AI Provider
@@ -471,7 +471,7 @@ Tokens refresh weekly and are shared across all AI features. More complex operat
 
 GitLens offers flexibility in choosing your AI provider:
 
-1. **GitKraken AI** (default): Pre-configured and ready to use with your token allocation
+1. **GitKraken AI** (default): Pre-configured and ready to use with your credit allocation
 2. **GitHub Copilot**: If installed, can be used as your AI provider
 3. **Custom Provider** (BYOK): Connect your own key from supported AI services
 >
@@ -495,14 +495,14 @@ To configure your AI provider:
 ### User-Level Customization
 
 - **Customize AI prompts**: Tailor the prompts used for various AI features to match your team's style
-- **Token usage monitoring**: Track your token consumption for better allocation management
+- **Credit usage monitoring**: Track your credit consumption for better allocation management
 - **Default AI mode**: Choose between concise or detailed outputs for each feature
 
 ### Organization-Level Controls `Business`
 
 - **Enforceable AI rules**: Set organization-wide policies for AI usage
 - **Private AI model providers**: Connect to your organization's approved AI services
-- **Token allocation management**: Distribute tokens across teams and projects
+- **Credit allocation management**: Distribute credits across teams and projects
 
 ---
 
