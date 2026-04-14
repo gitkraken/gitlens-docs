@@ -40,7 +40,7 @@ Inline blame annotations are now faster and more responsive. Instead of spawning
 
 ### MCP Agent Expansion
 
-The GitKraken MCP server can now be registered with additional AI agents detected on your machine, including Claude Desktop, Codex, and Gemini CLI. Connect them after MCP installation or via the "Connect More Agents" action in the Home view and Welcome page.
+The GitKraken MCP server can now be registered with additional AI agents detected on your machine, including Claude Desktop, Codex, and Gemini CLI. Connect them after MCP installation or via the "Connect More Agents" action in the Home view, Welcome view, or Command Palette.
 
 ### Branch Activity in the Home View
 
