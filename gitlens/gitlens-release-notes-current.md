@@ -22,7 +22,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Wednesday, April 15, 2026
 
-GitLens 17.12 introduces an expandable sidebar for the Commit Graph, a conflict files panel in the Interactive Rebase Editor, and significantly faster inline blame powered by in-memory snapshots and progressive streaming. This release also expands MCP agent support beyond VS Code, adds branch activity dates to the Home view, and delivers a wide range of fixes across worktree handling, graph rendering, and integration reliability.
+GitLens 17.12 introduces an expandable sidebar for the Commit Graph, a conflicted files panel in the Interactive Rebase Editor, and significantly faster inline blame powered by in-memory snapshots and progressive streaming. This release also expands MCP agent support beyond VS Code, adds branch activity dates to the Home view, and delivers a wide range of fixes across worktree handling, graph rendering, and integration reliability.
 
 <img src="/wp-content/uploads/gl-17-12-hero.png" class="help-center-img img-bordered">
 
@@ -32,7 +32,7 @@ The Commit Graph now includes an expandable sidebar that puts branches, remotes,
 
 ### Conflict Resolution in the Interactive Rebase Editor
 
-When a rebase encounters conflicts, the Interactive Rebase Editor now surfaces a dedicated conflict files panel. Each conflicting file shows per-file conflict counts, a status indicator, and actions to view either the current or incoming changes.
+When a rebase encounters conflicts, the Interactive Rebase Editor now surfaces a dedicated conflicted files panel. Each conflicting file shows per-file conflict counts, a status indicator, and actions to view either the current or incoming changes.
 
 ### Faster Inline Blame
 
