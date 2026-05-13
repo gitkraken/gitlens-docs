@@ -16,6 +16,206 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v18-0"></a>
+
+## Version 18.0
+
+#### Tuesday, May 19, 2026
+
+GitLens 18 turns the _Commit Graph_ into a workbench: an embedded details panel lets you inspect, compare, review, stage, and commit without switching views, while a new overview sidebar puts your work and associated agent sessions within easy reach. AI agents become first-class citizens, integrated deeply within your workflows &mdash; see sessions associated with your current branch in the details panel, plus monitor active sessions with contextual actions wherever you work in GitLens. This release also adds branch pinning, multi-worktree WIP rows, a focused graph scope for the branch you care about, and a wide range of performance and quality-of-life improvements throughout the Graph.
+
+<img src="/wp-content/uploads/gl-18-0-hero.png" class="help-center-img img-bordered">
+
+### The Commit Graph, Now a Workbench
+
+The _Commit Graph_ is no longer just a place to read history &mdash; it's where you work. A new embedded details panel allows you to inspect commits, working changes, compare branches, conduct reviews with AI, and compose commits without leaving the context of your Graph. The panel can be anchored to the right (the default) or to the bottom of the Graph &mdash; hold <kbd>Alt</kbd> while clicking the details toggle to switch between the two. 
+
+This revamped commit details panel adds richer file-tree actions, multi-diff support, and quick toggles to jump into **Compose**, **Review**, and **Compare** modes. 
+
+### Review and Compose, Directly in the Graph
+
+Both _Commit Composer_ and a new _AI Code Review_ tool are now available right inside the Graph's details panel. Switch into compose mode to generate organized commits from your working changes, with multi-diff editor support for previewing proposed commits. Switch into review mode to get an AI-powered review of your changes, with summaries that identify focus areas with severity indicators, so you can check your work before you ship.
+
+
+### AI Agents in GitLens
+
+GitLens 18 introduces support for integrating AI coding agents, starting with Claude Code. Agent status is now surfaced throughout GitLens so you can monitor, focus, and act on parallel agent sessions without leaving the IDE and context from GitLens.
+
+**Agent status everywhere** &mdash; A new agent status pill appears on _Home_ view branch cards, the _Commit Graph_ overview cards, the _Commit Graph_ commit details panel, and the new _Agent Sessions_ sidebar panel. Pills are color-coded by state (running, idle, waiting for input, etc.), with subtle animations for active sessions and when an agent is waiting for your input. Sessions awaiting input also surface on overview cards so you can find what needs attention at a glance.
+
+**Agent Sessions panel** &mdash; A new panel in the _Home_ view and the _Commit Graph_ sidebar lists all your agent sessions in a streamlined view, with the same rich status hovers and quick actions as the inline pills. Switch between list and tree layouts to organize sessions by workspace or worktree.
+
+**Claude Code hooks integration** &mdash; Install Claude Code hooks directly from GitLens via the _Home_ view banner, the _Commit Graph_ header, the agents sidebar banner, or the integrations menu. Hooks give GitLens real-time visibility into Claude Code session state. A dedicated command lets you uninstall hooks at any time.
+
+### Multi-Worktree WIP Rows
+
+The Graph now displays a work-in-progress row for **each** worktree, not just the active one, so you can see, review, and act on changes across all your parallel work without switching. Each WIP row shows live file stats, supports the full set of WIP actions (commit composition, conflict resolution, generating commit messages, and more), and updates in real time as files change. WIP scrollbar markers help you quickly locate uncommitted changes, with a configurable theme color and a setting to toggle them on or off.
+
+### Commit Graph Sidebar
+
+The expandable sidebar introduced in 17.12 expands significantly in 18.0:
+
+- **Overview panel** &mdash; surfaces active and recent branches as cards with WIP changes, upstream tracking status, pull requests, associated issues, contributor avatars, and quick actions (Switch, Open Worktree, Fetch, Publish Branch, and compare actions). Rich hover popovers expand each card with the full action set, autolink chips, and Launchpad mergeability tinting.
+- **Agent Sessions panel** &mdash; see all your active agent sessions with status pills, branch/worktree associations, and quick actions to keep your agents unblocked.
+- **Remote actions** &mdash; full context-menu support for remotes alongside branches, tags, stashes, and worktrees.
+- **Worktree parity** &mdash; worktrees now have the same context-menu actions as branches, including AI-powered explain and generate changelog actions.
+- **Tree-mode layout toggle** has moved into the filter actions area for a cleaner, more contextual placement.
+- **Pin or overlay** &mdash; pin the sidebar in place, or float it as an auto-collapsing overlay over the Graph.
+
+### Focus on the Work You Care About
+
+You can now pin a branch to the leftmost column of the _Commit Graph_ so it always stays visible as a reference, even as other branches come and go. Pin or unpin from the row's context menu, and click the pinned ref in the Graph header to jump straight to it.
+
+A new focused branch mode on the _Commit Graph_ header lets you focus the Graph on a single branch, with a searchable tree or list view to pick the focus. While scoped, the Graph renders along the focused branch's first-parent line (with the "Simplify Merge History" toggle automatically applied), and the minimap zooms to the relevant range. Clear visual indicators show when the Graph is scoped or modified by filters. The minimap settings have moved into the minimap itself, and dedicated header buttons toggle the sidebar, minimap, and details panel.
+
+### Conflict Resolution Workflows
+
+Conflict resolution now reaches into the _Commit Graph_ and _Interactive Rebase_ editor:
+
+- Resolve conflicts directly from the Graph's WIP details panel, with merge-conflict status surfaced inline
+- Conflict resolution actions are also available in the _Interactive Rebase_ editor's conflict file list, with dedicated diff-left/diff-right icons
+- The _Interactive Rebase_ editor now shows a dismissible banner during the planning phase clarifying that closing the tab automatically starts the rebase
+
+### Timeline Mode for the Graph
+
+A new Timeline mode renders the _Commit Graph_ as a time-bucketed view of activity, with author avatars, configurable additions/deletions colors, and richer hover, zoom, scroll, brush, slider scrub, and slice filtering interactions. The _Visual File History_ also gets a canvas-backed timeline for smoother rendering of dense histories.
+
+### Open the Graph in a New Window
+
+A new "Open in New Window" command opens the _Commit Graph_ in a detached window for multi-monitor workflows. It's now the primary action in the Graph view's menus, with "Open in Editor" available as a modifier-key alternative.
+
+### Performance and Reliability
+
+GitLens 18 continues to invest in performance and stability improvements:
+
+- **Faster Graph details loading** &mdash; commit metadata is now eagerly rendered from graph rows to instantly populate the details panel and skip IPC delays, with cached base file contents during compose sessions to eliminate redundant git reads.
+- **Smarter caching** &mdash; granular TTLs based on ref mutability (5 minutes for full SHAs, 60 seconds for symbolic refs), cached branch merged-status checks, cached left/right commit counts for comparisons, and shared branch metadata across worktrees.
+- **Lazy enrichment** &mdash; branch overview enrichment shifts from eager bootstrap to lazy loading, dramatically reducing initial resource contention during graph rendering.
+- **Better cancellation** &mdash; abort signals now propagate through the Git command queue, RPC layer, and webview enrichment, so cancelled work stops instead of running to completion.
+- **Coalesced refresh** &mdash; working-tree change emissions are coalesced into a single event per tick, eliminating redundant UI refreshes
+- **Startup improvements** &mdash; Git and MCP providers now register in parallel, and the CLI version check is deferred to reduce extension activation time.
+
+---
+
+### Added
+
+- Adds an embedded details panel to the _Commit Graph_ &mdash; replaces the standalone _Graph Details_ view with an integrated, resizable panel inside the Graph for inspecting commits, working changes, branch comparisons, AI reviews, and commit composition without leaving the Graph context
+  - Adds support for anchoring the details panel to the right or bottom of the Graph &mdash; hold <kbd>Alt</kbd> while clicking the details toggle to switch between locations, with independent persistence of panel positions
+  - Adds multi-diff actions to file panes in the details view
+  - Adds folder actions to the details views
+  - Adds quick actions for applying or popping stashes directly from the metadata bar
+  - Adds context menu support across shadow DOM boundaries via a context menu proxy
+  - Adds a generic `gitlens-virtual://` filesystem provider so _Commit Composer_ can synthesize per-commit diffs in the multi-diff editor without writing to `.git/objects/`
+- Adds an _AI Code Review_ mode to the _Commit Graph_ details panel `PRO`
+- Adds a new overview panel to the _Commit Graph_ sidebar &mdash; surfaces active and recent branches as rich cards with WIP changes, upstream tracking, pull requests, associated issues, contributor avatars, and quick actions; rich hover popovers expand the card with the full action set and Launchpad mergeability tinting
+- Adds a new _Agent Sessions_ panel to the _Home_ view and the _Commit Graph_ sidebar &mdash; lists all agent sessions with status pills, branch/worktree associations, list and tree layouts, and quick actions
+- Adds an agent status pill to the _Home_ view branch cards, _Commit Graph_ overview cards, and _Commit Graph_ commit details panel &mdash; color-coded by state with pulse animations for active sessions and a breathing animation for sessions awaiting input
+- Adds an agent status banner with animated transitions to the _Commit Graph_
+- Adds an agent status provider framework with a Claude Code implementation for hook-based status reporting
+- Adds the ability to install Claude Code hooks directly from GitLens &mdash; via banners in the _Home_ view, _Commit Graph_ header, agents sidebar, and integrations popover, plus a command to uninstall hooks
+- Adds the ability to pin a branch to the leftmost column of the _Commit Graph_ &mdash; with jump-to-pinned and persistence across Graph reopens ([#5181](https://github.com/gitkraken/vscode-gitlens/issues/5181), [#5139](https://github.com/gitkraken/vscode-gitlens/issues/5139))
+- Adds a Focus Branch scope to the _Commit Graph_ via a new scope popover &mdash; focuses the Graph on a single branch with first-parent simplification automatically applied, searchable tree/list pickers, and minimap zooming
+- Adds work-in-progress (WIP) rows for non-active worktrees in the _Commit Graph_ &mdash; with live file stats, conflict resolution actions, and the full set of WIP actions per worktree
+- Adds WIP scrollbar markers to the _Commit Graph_ &mdash; with a configurable theme color and a setting to toggle them on or off
+- Adds conflict resolution actions to the _Commit Graph_ WIP panel and the _Interactive Rebase_ editor's conflict file list
+- Adds a Timeline mode to the _Commit Graph_ &mdash; with bucketed activity rendering, author avatars, configurable additions/deletions colors, and rich hover, zoom, scroll, brush, and slice filtering interactions
+- Adds an "Open in New Window" command for the _Commit Graph_ as the primary action in the view menus &mdash; "Open in Editor" is available as a modifier-key alternative
+- Adds pin/overlay modes to the _Commit Graph_ sidebar &mdash; with a pin/unpin toggle button, auto-collapse when focus is lost in overlay mode, and a setting to persist the pinned state
+- Adds remote actions to the _Commit Graph_ sidebar
+- Adds comprehensive context menu support for worktrees in the _Commit Graph_ and sidebar, with parity to branches &mdash; including AI features like explain WIP and generate changelog
+- Adds a tree-mode layout to the agents sidebar
+- Adds a close-tab warning banner to the _Interactive Rebase_ editor &mdash; displays a dismissible informational banner during the planning phase to clarify that closing the tab automatically starts the rebase ([#5123](https://github.com/gitkraken/vscode-gitlens/issues/5123))
+- Adds Seti file icon theme support for webviews
+- Adds an experimental features toggle for the _Commit Graph_ &mdash; gates unreleased AI compose, review, and overview functionality
+- Adds an "Open in Search & Compare" action within the compare panel to allow persisting ad-hoc comparisons started from sidebar context menus
+- Adds stage and unstage all methods to the git staging provider for bulk staging operations
+- Adds an AI working ring animation to the commit input while AI generation is running
+- Adds a `gitlens.advanced.git.maxConcurrentProcesses` increase to the default and maximum limits for concurrent background Git processes
+
+### Changed
+
+- Migrates core webview UI primitives (selects, overlays, sliders, tooltips) to the modern WebAwesome component library, with theme-aware styling
+- Defaults the _Commit Graph_ sidebar to visible on first use to improve discoverability of new sidebar features
+- Defaults to opening the _Commit Graph_ in a new window from view menus, with "Open in Editor" as the modifier-key alternative
+- Improves branch comparison default-target logic to suggest the merge target of a specific branch as the default right-side reference, with stash comparisons defaulting to the stash's base reference
+- Improves comparison actions from sidebar context menus to open in the Graph's internal compare mode instead of the _Search & Compare_ view by default
+- Improves the _Commit Graph_ scope popover styling to align with standard VS Code menu patterns, with theme-aware hover and selection feedback
+- Improves WIP enrichment performance with deferred merge-target lookups, smarter abort handling, and queued worktree change refreshes
+- Improves _Commit Graph_ overview card layout with stable per-state heights, a one-row pill set for issues/PRs/autolinks, and a rich hover popover with the full action set
+- Improves the _Commit Graph_ scope mode by always rendering as if `--first-parent` were applied and disabling the "Simplify Merge History" toggle while scoped
+- Improves the _Commit Graph_ minimap with canvas-backed scope highlights, accurate day-bar alignment, and preserved zoom state during scope transitions
+- Improves _Commit Graph_ details loading by eagerly rendering commit metadata from graph rows, caching base file contents during compose sessions, and showing a loading spinner in the file tree while full details are fetched
+- Improves _Commit Graph_ details refresh and replay behavior so the iframe doesn't get torn down while it is still rendering, with a short-lived IPC replay window for startup reconnects
+- Improves repository switch handling in the _Commit Graph_ details panel &mdash; exits active modes, aborts in-flight requests, and clears enrichment caches when switching repositories
+- Improves commit form state management to track dirty state and prevent accidental loss of user-authored commit messages, with automatic reset when the repository HEAD moves
+- Improves stash interaction in details views with quick apply and pop actions, and preserves index state when restoring a workspace stash from the composer
+- Improves _Commit Composer_ to include untracked files with unstaged changes when composing from the Graph
+- Improves caching of left/right commit counts for branch comparisons, branch merged status checks, and branch contribution overviews keyed by resolved merge target
+- Improves caching of Git command results with granular TTLs based on ref mutability &mdash; 5 minutes for immutable full SHAs, 60 seconds for symbolic refs
+- Improves branch overview enrichment with lazy fetching, `allSettled` parallel metadata lookups, and explicit cache invalidation when merge-base configs change
+- Improves stash reachability filtering by matching the branch name stored in git's authoritative stash metadata, eliminating expensive parent-timestamp ancestry tracking
+- Improves diff performance by using `numstat` and summary flags instead of `name-status` for status and changed-files queries
+- Improves Git command queue with `AbortSignal` support, soft-invalidation of cached promises, and aggregate cancellation that keeps shared operations alive for non-cancelling callers
+- Improves working-tree change emission by coalescing redundant events to a single per-tick microtask, eliminating multiplied UI refreshes
+- Improves startup performance by registering Git and MCP providers in parallel and deferring the CLI version check
+- Improves _Visual History_ rendering by replacing the charting dependency with a canvas-backed timeline, with richer hover, zoom, scroll, brush, and slice interactions
+- Improves the _Commit Graph_ minimap settings responsiveness with relative units and container queries for adaptive layout
+- Improves breadcrumb overflow behavior with priority-based collapsing and overflow popovers
+- Improves the _Commit Graph_ overview card to highlight cards whose branch contains the selected graph row(s)
+- Improves the _Connect More Agents_ picker to only show agents that don't already have the GitKraken MCP installed, with a clearer empty state when all detected agents are already connected ([#5142](https://github.com/gitkraken/vscode-gitlens/issues/5142))
+- Refactors the undo commit command to use an internal soft reset rather than VS Code's built-in git undo command, with manual restoration of the previous commit message into the SCM input box
+- Removes the standalone _Graph Details_ view in favor of the integrated panel inside the Graph &mdash; legacy command support retained for existing context menus
+- Removes the redundant `gitkraken.cli.integration.enabled` setting
+- Removes the _Open File_ action when diffing staged new files &mdash; VS Code introduced a duplicate action in 1.106.0 ([#5081](https://github.com/gitkraken/vscode-gitlens/issues/5081))
+
+### Fixed
+
+- Fixes an issue where the pinned branch state was not restoring when the _Commit Graph_ was reopened ([#5181](https://github.com/gitkraken/vscode-gitlens/issues/5181), [#5139](https://github.com/gitkraken/vscode-gitlens/issues/5139))
+- Fixes an issue where untracked files were missing from the _Compare Working Tree with&hellip;_ file list unless manually staged with `git add -N` first ([#5158](https://github.com/gitkraken/vscode-gitlens/issues/5158))
+- Fixes an issue where newlines in commit messages were not rendered in hovers and tooltips, collapsing multi-line commit bodies onto a single line &mdash; regression in v17.12.0 ([#5157](https://github.com/gitkraken/vscode-gitlens/issues/5157))
+- Fixes an issue where the status bar blame does not appear after updating to v17.12.0+ &mdash; regression in v17.12.0 ([#5160](https://github.com/gitkraken/vscode-gitlens/issues/5160))
+- Fixes an issue where commit tooltips and hovers could render with corrupted tokens when an async formatter call was interleaved by a concurrent formatter call &mdash; async template resolution now uses a fresh formatter instance
+- Fixes _MCP Reinstall_ errors when the proxy binary is locked on Windows ([#5126](https://github.com/gitkraken/vscode-gitlens/issues/5126))
+- Fixes an issue where the terminal integration was not detected until relaunched ([#4977](https://github.com/gitkraken/vscode-gitlens/issues/4977))
+- Fixes an issue where missing diff hunks were not shown for renamed files
+- Fixes an issue where the _Commit Graph_ WIP indicator could get stuck at zero across rapid index/file events
+- Fixes an issue where worktree sidebar items pointed at the branch commit instead of their WIP revisions, causing selection and actions to target the wrong changes
+- Fixes an issue where the agent workspace filter could fail on Windows
+- Fixes an issue where stale commits could leak from stashes into the _Commit Graph_ when a stash still referenced rebased or reset-away commits
+- Fixes an issue where invalid revision errors during diff stat retrieval could fail loudly instead of gracefully
+- Fixes an issue where the _Commit Graph_ compose mode could fail with no configured AI model
+- Fixes an issue where untracked files were not included with unstaged files in _Commit Graph_ compose
+- Fixes an issue where diffs sometimes did not render properly in _Commit Graph_ compose previews
+- Fixes an issue where compose/review state could leak when changing WIP rows between worktrees
+- Fixes an issue where checkboxes were not rendering correctly in production builds due to CSP
+- Fixes an issue where the "Files changed" header checkbox state could become stale
+- Fixes an issue where `AbortSignal` reason serialization across the RPC wire could lose error metadata
+- Fixes an issue where the _Reset Filters_ button failed to clear the Focus Branch scope
+- Fixes an issue where the minimap scope zoom could become inaccurate during scope transitions
+- Fixes an issue where the _Commit Graph_ details panel could open in the wrong mode after switching repositories
+- Fixes an issue where sidebar inline actions could fail to execute because of missing webview and instance identifiers in the command context
+- Fixes intermittent "detach" of SCM grouped views by removing alt commands from those views &mdash; VS Code's alt detection is unreliable
+- Fixes an issue where authentication errors could noisily bubble up &mdash; now bypasses notifications and logging for missing authentication
+- Fixes an issue where the _Connect Remote Integration_, _Disconnect Remote Integration_, _Open Branches on Remote_, and _Open on Remote_ actions on remote nodes in the _Remotes_ view (and other tree views) failed with a "command not found" error &mdash; regression in v17.12.0 ([#5150](https://github.com/gitkraken/vscode-gitlens/issues/5150))
+- Fixes an issue where custom AI provider URLs were ignored after updating to v17.12.0 ([#5147](https://github.com/gitkraken/vscode-gitlens/issues/5147))
+- Fixes an issue where, in a multi-repository scenario, clicking the Pull button on a specific branch of one repository would bring up a dialog asking you to select which repository to fetch ([#5015](https://github.com/gitkraken/vscode-gitlens/issues/5015))
+- Fixes an issue where opening a commit, issue, or pull request on the remote would open an unusable `ssh://` URL when the repository's remote used an `ssh://`-scheme URL &mdash; regression in v17.12.0 ([#5148](https://github.com/gitkraken/vscode-gitlens/issues/5148))
+- Fixes an issue where the MCP banner on the Home view couldn't be dismissed and never showed the install variant &mdash; regression in v17.12.0 ([#5151](https://github.com/gitkraken/vscode-gitlens/issues/5151))
+- Fixes an issue where popovers would lose their click-suppression state, causing flicker on hover-to-click transitions
+- Fixes nested popover containment across shadow DOM boundaries
+- Fixes an issue where file actions on non-active worktree WIPs would target the wrong worktree
+- Fixes WIP refresh after conflict-resolution actions on non-active worktrees
+- Fixes an issue where focus-area reviews would not render in review mode
+- Fixes broken file links in review mode
+- Fixes most line-number reference inaccuracies in review mode comments
+
+### Removed
+
+- Removes the standalone _Graph Details_ view &mdash; replaced by the integrated panel inside the _Commit Graph_
+- Removes the redundant `gitkraken.cli.integration.enabled` setting
+
+---
+
 <a id="v17-12"></a>
 
 ## Version 17.12
