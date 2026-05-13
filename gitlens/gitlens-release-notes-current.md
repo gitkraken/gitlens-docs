@@ -47,6 +47,10 @@ GitLens 18 introduces support for integrating AI coding agents, starting with Cl
 
 **Claude Code hooks integration** &mdash; Install Claude Code hooks directly from GitLens via the _Home_ view banner, the _Commit Graph_ header, the agents sidebar banner, or the integrations menu. Hooks give GitLens real-time visibility into Claude Code session state. A dedicated command lets you uninstall hooks at any time.
 
+### Multi-Worktree WIP Rows
+
+The Graph now displays a work-in-progress row for **each** worktree, not just the active one, so you can see, review, and act on changes across all your parallel work without switching. Each WIP row shows live file stats, supports the full set of WIP actions (commit composition, conflict resolution, generating commit messages, and more), and updates in real time as files change. WIP scrollbar markers help you quickly locate uncommitted changes, with a configurable theme color and a setting to toggle them on or off.
+
 ### Commit Graph Sidebar
 
 The expandable sidebar introduced in 17.12 expands significantly in 18.0:
@@ -63,10 +67,6 @@ The expandable sidebar introduced in 17.12 expands significantly in 18.0:
 You can now pin a branch to the leftmost column of the _Commit Graph_ so it always stays visible as a reference, even as other branches come and go. Pin or unpin from the row's context menu, and click the pinned ref in the Graph header to jump straight to it.
 
 A new focused branch mode on the _Commit Graph_ header lets you focus the Graph on a single branch, with a searchable tree or list view to pick the focus. While scoped, the Graph renders along the focused branch's first-parent line (with the "Simplify Merge History" toggle automatically applied), and the minimap zooms to the relevant range. Clear visual indicators show when the Graph is scoped or modified by filters. The minimap settings have moved into the minimap itself, and dedicated header buttons toggle the sidebar, minimap, and details panel.
-
-### Multi-Worktree WIP Rows
-
-The Graph now displays a work-in-progress row for **each** worktree, not just the active one, so you can see, review, and act on changes across all your parallel work without switching. Each WIP row shows live file stats, supports the full set of WIP actions (commit composition, conflict resolution, generating commit messages, and more), and updates in real time as files change. WIP scrollbar markers help you quickly locate uncommitted changes, with a configurable theme color and a setting to toggle them on or off.
 
 ### Conflict Resolution Workflows
 
