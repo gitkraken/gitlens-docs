@@ -273,9 +273,9 @@ Open in New Window
 
 GitLens agent workflows work especially well alongside:
 
-- Commit Composer
-- AI Code Review
-- Worktrees
-- Launchpad
-- Interactive Rebase
-- GitKraken MCP integrations
+- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro)
+- AI Code Review *(Coming Soon)*
+- [Worktrees](/gitlens/gl-worktrees/)
+- [Launchpad](/gitlens/gl-launchpad/)
+- [Interactive Rebase](/gitlens/gitlens-features/#interactive-rebase-editor)
+- [GitKraken MCP integrations](https://help.gitkraken.com/mcp/mcp-tools-reference/)
