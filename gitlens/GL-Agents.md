@@ -7,7 +7,9 @@ taxonomy:
 
 ---
 
-# Using AI Agents in GitLens
+<kbd>Last updated: May 2026</kbd>
+
+## Using AI Agents in GitLens
 
 GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph and Home View.
 
@@ -24,13 +26,13 @@ GitLens 18 currently supports Claude Code integrations through GitLens-managed h
 
 ---
 
-# What Are Agent Sessions?
+## Understand Agent Sessions
 
 An agent session represents an active AI coding workflow associated with a repository, branch, or worktree.
 
-GitLens tracks these sessions and surfaces their status throughout the interface so you can monitor progress and act on changes without constantly switching between terminals, chat panels, or external applications.
+GitLens tracks these sessions and surfaces their status throughout the interface so you can monitor progress and act on changes without switching between terminals, chat panels, or external applications.
 
-Agent sessions can appear in:
+Agent sessions appear in:
 
 - The Home View
 - The Commit Graph overview cards
@@ -48,11 +50,9 @@ Each session displays contextual Git information including:
 
 ---
 
-# Installing Claude Code Hooks
+## Install Claude Code Hooks
 
 GitLens integrates with Claude Code using hooks that provide real-time session visibility.
-
-## Install Claude Code Hooks
 
 You can install hooks from several locations in GitLens:
 
@@ -61,20 +61,18 @@ You can install hooks from several locations in GitLens:
 - Agent Sessions sidebar banner
 - Integrations menu
 
-To install hooks:
+### Install Hooks
 
-1. Open the GitLens Home View or Commit Graph
-2. Select the Claude Code integration prompt
-3. Follow the setup instructions
-4. Reload VS Code or your IDE if prompted
+1. Open the GitLens Home View or Commit Graph.
+2. Select the Claude Code integration prompt.
+3. Follow the setup instructions.
+4. Reload VS Code or your IDE if prompted.
 
 Once installed, GitLens automatically detects Claude Code sessions and surfaces their state throughout the UI.
 
-## Uninstall Hooks
+### Uninstall Hooks
 
-To remove Claude Code hooks:
-
-1. Open the Command Palette
+1. Open the Command Palette.
 2. Run:
 
 ```text
@@ -83,25 +81,17 @@ GitLens: Uninstall Claude Code Hooks
 
 ---
 
-# Understanding Agent Status Pills
+## Understand Agent Status Pills
 
-GitLens surfaces agent activity through status pills shown throughout the interface.
-
-Status pills are color-coded and animated to help you quickly understand what requires attention.
-
-## Agent States
+GitLens surfaces agent activity through status pills shown throughout the interface. Status pills are color-coded and animated to help you quickly identify what requires attention.
 
 ### Running
 
-The agent is actively processing changes or generating code.
-
-Running sessions display subtle pulse animations.
+The agent is actively processing changes or generating code. Running sessions display subtle pulse animations.
 
 ### Waiting for Input
 
-The agent requires developer input before continuing.
-
-Waiting sessions display attention-grabbing animations and are surfaced prominently in overview cards.
+The agent requires your input before continuing. Waiting sessions display attention-grabbing animations and appear prominently in overview cards.
 
 ### Idle
 
@@ -109,20 +99,15 @@ The session is connected but not currently performing actions.
 
 ### Completed
 
-The agent finished its current task and changes are ready for inspection or review.
+The agent finished its current task. Changes are ready for inspection or review.
 
 ---
 
-# Using the Agent Sessions Panel
+## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from:
+GitLens 18 adds a dedicated Agent Sessions panel available from the Home View and the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
 
-- The Home View
-- The Commit Graph sidebar
-
-The Agent Sessions panel provides a centralized place to monitor all active sessions.
-
-## Features
+### Panel Features
 
 The panel includes:
 
@@ -132,18 +117,13 @@ The panel includes:
 - List and tree layouts
 - Session grouping by workspace or worktree
 
-## Switch Between List and Tree Layouts
+### Switch Between List and Tree Layouts
 
-Use the layout toggle in the Agent Sessions panel toolbar to switch between:
-
-- List layout
-- Tree layout
-
-Tree layout is especially useful when working across multiple repositories or worktrees.
+Use the layout toggle in the Agent Sessions panel toolbar to switch between list and tree layouts. Tree layout is especially useful when working across multiple repositories or worktrees.
 
 ---
 
-# Reviewing Agent-Generated Code
+## Review Agent-Generated Code
 
 GitLens 18 turns the Commit Graph into a full review surface for AI-assisted workflows.
 
@@ -156,33 +136,26 @@ From the Commit Graph details panel you can:
 - Resolve conflicts
 - Stage and unstage files
 
-## Open the Commit Graph Details Panel
+### Open the Commit Graph Details Panel
 
-To open the details panel:
+1. Open the Commit Graph.
+2. Select a commit, branch, or WIP row.
+3. Toggle the details panel if it is hidden.
 
-1. Open the Commit Graph
-2. Select a commit, branch, or WIP row
-3. Toggle the details panel if it is hidden
-
-The panel can be docked:
-
-- On the right side of the Graph
-- At the bottom of the Graph
-
-Hold `Alt` while toggling the panel to switch docking locations.
+The panel can be docked on the right side or at the bottom of the Commit Graph. Hold `Alt` while toggling the panel to switch docking locations.
 
 ---
 
-# AI Code Review in the Graph
+## Run AI Code Review in the Commit Graph
 
 GitLens 18 adds AI-powered review workflows directly inside the Commit Graph.
 
-## Start an AI Review
+### Start an AI Code Review
 
-1. Open the Commit Graph
-2. Select a WIP row or commit
-3. Open the details panel
-4. Switch to Review mode
+1. Open the Commit Graph.
+2. Select a WIP row or commit.
+3. Open the details panel.
+4. Switch to Review mode.
 
 GitLens generates:
 
@@ -197,21 +170,19 @@ This helps you validate AI-generated changes before committing or opening a pull
 
 ---
 
-# Compose Commits from Agent Changes
+## Compose Commits from Agent Changes
 
-Commit Composer is now integrated directly into the Commit Graph details panel.
+Commit Composer is integrated directly into the Commit Graph details panel. You can generate structured commits from working changes without leaving the Commit Graph.
 
-You can generate structured commits from working changes without leaving the Graph.
+### Compose a Commit
 
-## Compose a Commit
-
-1. Open the Commit Graph
-2. Select a WIP row
-3. Open the details panel
-4. Switch to Compose mode
-5. Review proposed commit groupings
-6. Edit the generated commit message if needed
-7. Commit the changes
+1. Open the Commit Graph.
+2. Select a WIP row.
+3. Open the details panel.
+4. Switch to Compose mode.
+5. Review proposed commit groupings.
+6. Edit the generated commit message if needed.
+7. Commit the changes.
 
 Compose mode supports:
 
@@ -222,11 +193,9 @@ Compose mode supports:
 
 ---
 
-# Multi-Worktree Workflows
+## Manage Multi-Worktree Workflows
 
-GitLens 18 introduces multi-worktree WIP rows in the Commit Graph.
-
-Instead of only showing changes for the active worktree, the Graph now displays work-in-progress rows for every connected worktree.
+GitLens 18 introduces multi-worktree WIP rows in the Commit Graph. Instead of showing changes only for the active worktree, the Commit Graph displays work-in-progress rows for every connected worktree.
 
 This makes it easier to:
 
@@ -238,82 +207,59 @@ This makes it easier to:
 
 Each WIP row updates live as files change.
 
-## WIP Scroll Markers
+### Use WIP Scroll Markers
 
-The Commit Graph minimap now includes WIP scroll markers that highlight work-in-progress rows.
-
-You can:
-
-- Customize marker colors
-- Enable or disable markers in settings
+The Commit Graph minimap includes WIP scroll markers that highlight work-in-progress rows. You can customize marker colors or enable and disable markers in settings.
 
 ---
 
-# Focus Branch Mode
+## Use Focus Branch Mode
 
-Focus Branch mode helps reduce Graph noise when working on a specific branch or task.
+Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph scopes itself to the branch you select.
 
-When enabled, the Commit Graph scopes itself to the branch you care about.
+### Enable Focus Branch Mode
 
-## Enable Focus Branch Mode
-
-1. Open the Commit Graph
-2. Open the scope menu in the Graph header
-3. Select a branch to focus
+1. Open the Commit Graph.
+2. Open the scope menu in the Commit Graph header.
+3. Select a branch to focus.
 
 While focused:
 
-- The Graph follows the branch's first-parent history
+- The Commit Graph follows the branch's first-parent history
 - The minimap zooms to the relevant commit range
-- Simplify Merge History is automatically applied
-- Visual indicators show that the Graph is scoped
+- Simplify Merge History applies automatically
+- Visual indicators show that the Commit Graph is scoped
 
 ---
 
-# Pin a Branch to the Left Side of the Graph
+## Pin a Branch in the Commit Graph
 
-GitLens 18 allows you to pin an important branch to the leftmost column of the Commit Graph.
+GitLens 18 allows you to pin an important branch to the leftmost column of the Commit Graph. This keeps long-lived reference branches like `main` or `develop` visible while you navigate complex histories.
 
-This helps keep long-lived reference branches like `main` or `develop` visible while navigating complex histories.
+### Pin a Branch
 
-## Pin a Branch
-
-1. Right-click a branch row
+1. Right-click a branch row.
 2. Select:
 
 ```text
 Pin Branch
 ```
 
-Pinned branches remain visible across Graph sessions.
+Pinned branches remain visible across Commit Graph sessions.
 
 ---
 
-# Conflict Resolution Workflows
+## Resolve Conflicts in the Commit Graph
 
-Conflict resolution workflows now extend directly into the Commit Graph.
-
-You can resolve merge conflicts from:
-
-- Commit Graph WIP rows
-- The Interactive Rebase editor
-
-Conflict states are surfaced inline inside the details panel.
+Conflict resolution workflows extend directly into the Commit Graph. You can resolve merge conflicts from Commit Graph WIP rows or the Interactive Rebase editor. Conflict states appear inline inside the details panel.
 
 ---
 
-# Open the Commit Graph in a New Window
+## Open the Commit Graph in a New Window
 
-GitLens 18 adds support for opening the Commit Graph in a detached window.
+GitLens 18 adds support for opening the Commit Graph in a detached window. This is especially useful for multi-monitor setups, large repositories, persistent review workflows, and parallel agent workflows.
 
-This is especially useful for:
-
-- Multi-monitor setups
-- Large repositories
-- Persistent review workflows
-- Parallel agent workflows
-
-## Open in a New Window
+### Open in a New Window
 
 From the Commit Graph menu, select:
 
@@ -323,7 +269,7 @@ Open in New Window
 
 ---
 
-# Related Features
+## Related Features
 
 GitLens agent workflows work especially well alongside:
 
