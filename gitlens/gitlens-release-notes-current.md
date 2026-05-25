@@ -51,6 +51,8 @@ GitLens 18 introduces support for integrating AI coding agents, starting with Cl
 
 The Graph now displays a work-in-progress row for **each** worktree, not just the active one, so you can see, review, and act on changes across all your parallel work without switching. Each WIP row shows live file stats, supports the full set of WIP actions (commit composition, conflict resolution, generating commit messages, and more), and updates in real time as files change. WIP scrollbar markers help you quickly locate uncommitted changes, with a configurable theme color and a setting to toggle them on or off.
 
+<img src="/wp-content/uploads/gl-18-0-multi-wip.png" class="help-center-img img-bordered">
+
 ### Commit Graph Sidebar
 
 The expandable sidebar introduced in 17.12 expands significantly in 18.0:
