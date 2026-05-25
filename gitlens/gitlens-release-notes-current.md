@@ -36,6 +36,7 @@ This revamped commit details panel adds richer file-tree actions, multi-diff sup
 
 Both _Commit Composer_ and a new _AI Code Review_ tool are now available right inside the Graph's details panel. Switch into compose mode to generate organized commits from your working changes, with multi-diff editor support for previewing proposed commits. Switch into review mode to get an AI-powered review of your changes, with summaries that identify focus areas with severity indicators, so you can check your work before you ship.
 
+<img src="/wp-content/uploads/gl-18-0-review-mode.png" class="help-center-img img-bordered">
 
 ### AI Agents in GitLens
 
