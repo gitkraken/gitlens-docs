@@ -79,9 +79,11 @@ Conflict resolution now reaches into the _Commit Graph_ and _Interactive Rebase_
 - Conflict resolution actions are also available in the _Interactive Rebase_ editor's conflict file list, with dedicated diff-left/diff-right icons
 - The _Interactive Rebase_ editor now shows a dismissible banner during the planning phase clarifying that closing the tab automatically starts the rebase
 
-### Timeline Mode for the Graph
+### Visualizations in the Graph
 
-A new Timeline mode renders the _Commit Graph_ as a time-bucketed view of activity, with author avatars, configurable additions/deletions colors, and richer hover, zoom, scroll, brush, slider scrub, and slice filtering interactions. The _Visual File History_ also gets a canvas-backed timeline for smoother rendering of dense histories.
+A new Visual History view renders your repo's history as a time-bucketed view of activity, with author avatars, configurable additions/deletions colors, and richer hover, zoom, scroll, brush, slider scrub, and slice filtering interactions. Open the visualization by clicking on the 'Show Visualizations' button at the bottom of the Graph sidebar, scope the history down to specific files and folers, and slice the changes by branches rather than authors if needed. The _Visual File History_ also gets a canvas-backed timeline for smoother rendering of dense histories.
+
+<img src="/wp-content/uploads/gl-18-0-graph-visual-history.png" class="help-center-img img-bordered">
 
 ### Open the Graph in a New Window
 
