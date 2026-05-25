@@ -41,7 +41,7 @@ Both _Commit Composer_ and a new _AI Code Review_ tool are now available right i
 
 GitLens 18 introduces support for integrating AI coding agents, starting with Claude Code. Agent status is now surfaced throughout GitLens so you can monitor, focus, and act on parallel agent sessions without leaving the IDE and context from GitLens.
 
-**Agent status everywhere** &mdash; A new agent status pill appears on _Home_ view branch cards, the _Commit Graph_ overview cards, the _Commit Graph_ commit details panel, and the new _Agent Sessions_ sidebar panel. Pills are color-coded by state (running, idle, waiting for input, etc.), with subtle animations for active sessions and when an agent is waiting for your input. Sessions awaiting input also surface on overview cards so you can find what needs attention at a glance.
+**Your agents' status, deeply integrated** &mdash; A new agent status pill appears on _Home_ view branch cards, the _Commit Graph_ overview cards, the _Commit Graph_ commit details panel, and the new _Agent Sessions_ sidebar panel. Pills are color-coded by state (running, idle, waiting for input, etc.), with subtle animations when sessions are active or when an agent is waiting for your input. Sessions awaiting input also surface on overview cards so you can find what needs attention at a glance.
 
 **Agent Sessions panel** &mdash; A new panel in the _Home_ view and the _Commit Graph_ sidebar lists all your agent sessions in a streamlined view, with the same rich status hovers and quick actions as the inline pills. Switch between list and tree layouts to organize sessions by workspace or worktree.
 
