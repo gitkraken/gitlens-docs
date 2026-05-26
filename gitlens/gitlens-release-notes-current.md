@@ -51,6 +51,10 @@ GitLens 18 introduces support for integrating AI coding agents, starting with Cl
 
 **Claude Code hooks integration** &mdash; Install Claude Code hooks directly from GitLens via the _Home_ view banner, the _Commit Graph_ header, the agents sidebar banner, or the integrations menu. Hooks give GitLens real-time visibility into Claude Code session state. A dedicated command lets you uninstall hooks at any time.
 
+**Agent Kanban (Experimental)** &mdash; A new experimental _Agent Kanban_ view turns the _Commit Graph_ into an interactive board for tracking your active AI agent sessions. Toggle it from the graph sidebar ('_Show Agent Kanban_') to see sessions partitioned across four columns: _Needs Input_, _Working_, _Idle_, and _Inactive_. From each session card you can approve or deny pending agent permissions, view a proposed plan, and jump straight to the session's working changes.
+
+The _Agent Kanban_ view is enabled by default and can be toggled with the `gitlens.graph.experimental.kanban.enabled` setting.
+
 ### Multi-Worktree WIP Rows
 
 The Graph now displays a work-in-progress row for **each** worktree, not just the active one, so you can see, review, and act on changes across all your parallel work without switching. Each WIP row shows live file stats, supports the full set of WIP actions (commit composition, conflict resolution, generating commit messages, and more), and updates in real time as files change. WIP scrollbar markers help you quickly locate uncommitted changes, with a configurable theme color and a setting to toggle them on or off.
@@ -84,9 +88,25 @@ Conflict resolution now reaches into the _Commit Graph_ and _Interactive Rebase_
 
 ### Visualizations in the Graph
 
-A new Visual History view renders your repo's history as a time-bucketed view of activity, with author avatars, configurable additions/deletions colors, and richer hover, zoom, scroll, brush, slider scrub, and slice filtering interactions. Open the visualization by clicking on the 'Show Visualizations' button at the bottom of the Graph sidebar, scope the history down to specific files and folers, and slice the changes by branches rather than authors if needed. The _Visual File History_ also gets a canvas-backed timeline for smoother rendering of dense histories.
+GitLens 18.0 brings powerful new ways to visualize your repository directly in the _Commit Graph_. A more capable _Visual History_ view has been integrated into a _Visualizations_ mode that now hosts new experimental Treemap views to visualize changes by file, commit, and agent activity.
+
+Open the visualizations by clicking on the 'Show Visualizations' pulse icon at the bottom of the Graph sidebar, then use the switcher in the header to move between the _Visual History_ timeline and the new Treemap views.
+
+#### Visual History
+
+The _Visual History_ view renders your repo's history as a time-bucketed view of activity, with author avatars, configurable additions/deletions colors, and richer hover, zoom, scroll, brush, slider scrub, and slice filtering interactions. Scope the history down to specific files and folders, and slice the changes by branches rather than authors if needed.
 
 <img src="/wp-content/uploads/gl-18-0-graph-visual-history.png" class="help-center-img img-bordered">
+
+#### Treemap Visualizations (Experimental)
+
+As an alternative to the _Visual History_ timeline, the _Commit Graph_ now offers three Treemap views that lay your repository out spatially. Each supports hover tooltips, click-to-zoom into folders, and breadcrumb navigation to track and retrace your path:
+
+- **Files Treemap** &mdash; lays out your files and folders as nested rectangles, sized by their footprint, for a bird's-eye view of how the repository is structured.
+- **Commits Treemap** &mdash; highlights where development is concentrated by sizing files and folders according to commit activity, making your most-changed areas stand out at a glance.
+- **Agent Activity Treemap** &mdash; projects live AI agent presence onto your file structure in real time, distinguishing the files an agent is reading from the ones it's editing.
+
+The Treemap visualizations are enabled by default and can be toggled with the `gitlens.graph.experimental.visualizations.enabled` setting. When disabled, only the _Visual History_ is available.
 
 ### Open the Graph in a New Window
 
