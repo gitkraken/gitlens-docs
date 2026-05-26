@@ -72,20 +72,6 @@ The expandable sidebar introduced in 17.12 gets new, powerful views and actions 
 - **Tree-mode layout toggle** has moved into the filter actions area for a cleaner, more contextual placement.
 - **Pin or overlay** &mdash; pin the sidebar in place, or float it as an auto-collapsing overlay over the Graph.
 
-### Focus on the Work You Care About
-
-You can now pin a branch to the leftmost column of the _Commit Graph_ so it always stays visible as a reference, even as other branches come and go. Pin or unpin from the row's context menu, and click the pinned ref in the Graph header to jump straight to it.
-
-A new focused branch mode on the _Commit Graph_ header lets you focus the Graph on a single branch, with a searchable tree or list view to pick the focus. While scoped, the Graph renders along the focused branch's first-parent line (with the "Simplify Merge History" toggle automatically applied), and the minimap zooms to the relevant range. Clear visual indicators show when the Graph is scoped or modified by filters. The minimap settings have moved into the minimap itself, and dedicated header buttons toggle the sidebar, minimap, and details panel.
-
-### Conflict Resolution Workflows
-
-Conflict resolution now reaches into the _Commit Graph_ and _Interactive Rebase_ editor:
-
-- Resolve conflicts directly from the Graph's WIP details panel, with merge-conflict status surfaced inline
-- Conflict resolution actions are also available in the _Interactive Rebase_ editor's conflict file list, with dedicated diff-left/diff-right icons
-- The _Interactive Rebase_ editor now shows a dismissible banner during the planning phase clarifying that closing the tab automatically starts the rebase
-
 ### Visualizations in the Graph
 
 GitLens 18.0 brings powerful new ways to visualize your repository directly in the _Commit Graph_. A more capable _Visual History_ view has been integrated into a _Visualizations_ mode that now hosts new experimental Treemap views to visualize changes by file, commit, and agent activity.
@@ -107,6 +93,20 @@ As an alternative to the _Visual History_ timeline, the _Commit Graph_ now offer
 - **Agent Activity Treemap** &mdash; projects live AI agent presence onto your file structure in real time, distinguishing the files an agent is reading from the ones it's editing.
 
 The Treemap visualizations are enabled by default and can be toggled with the `gitlens.graph.experimental.visualizations.enabled` setting. When disabled, only the _Visual History_ is available.
+
+### Focus on the Work You Care About
+
+You can now pin a branch to the leftmost column of the _Commit Graph_ so it always stays visible as a reference, even as other branches come and go. Pin or unpin from the row's context menu, and click the pinned ref in the Graph header to jump straight to it.
+
+A new focused branch mode on the _Commit Graph_ header lets you focus the Graph on a single branch, with a searchable tree or list view to pick the focus. While scoped, the Graph renders along the focused branch's first-parent line (with the "Simplify Merge History" toggle automatically applied), and the minimap zooms to the relevant range. Clear visual indicators show when the Graph is scoped or modified by filters. The minimap settings have moved into the minimap itself, and dedicated header buttons toggle the sidebar, minimap, and details panel.
+
+### Conflict Resolution Workflows
+
+Conflict resolution now reaches into the _Commit Graph_ and _Interactive Rebase_ editor:
+
+- Resolve conflicts directly from the Graph's WIP details panel, with merge-conflict status surfaced inline
+- Conflict resolution actions are also available in the _Interactive Rebase_ editor's conflict file list, with dedicated diff-left/diff-right icons
+- The _Interactive Rebase_ editor now shows a dismissible banner during the planning phase clarifying that closing the tab automatically starts the rebase
 
 ### Open the Graph in a New Window
 
