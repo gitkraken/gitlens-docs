@@ -20,7 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 18.0
 
-#### Tuesday, May 26, 2026
+#### Wednesday, May 27, 2026
 
 GitLens 18 turns the _Commit Graph_ into a workbench: an embedded details panel lets you inspect, compare, review, stage, and commit without switching views, while a new overview sidebar puts your work and associated agent sessions within easy reach. AI agents become first-class citizens, integrated deeply within your workflows &mdash; see sessions associated with your current branch in the details panel, plus monitor active sessions with contextual actions wherever you work in GitLens. This release also adds branch pinning, multi-worktree WIP rows, a focused graph scope for the branch you care about, and a wide range of performance and quality-of-life improvements throughout the Graph.
 
