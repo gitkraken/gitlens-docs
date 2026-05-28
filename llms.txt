@@ -21,6 +21,7 @@
 - [GitLens Home View Overview](https://help.gitkraken.com/gitlens/home-view/): Learn how the GitLens Home View helps you track current work, plan next steps, and review recent activity
 - [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Explore GitLens integrations with remote providers
 - [GitLens Interactive Code History](https://help.gitkraken.com/gitlens/gl-interactive-code-history/): Learn how GitLens helps you explore and understand your repository’s commit history.
+- [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in GitLens — integrated agent workflows, status pills, sessions panel, and Claude Code hooks
 - [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes (Current — v18.x)
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
