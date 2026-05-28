@@ -86,7 +86,19 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-release-notes-current/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://help.gitkraken.com/gitlens/GL-Release-v17-x/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://help.gitkraken.com/gitlens/GL-Releases-Old/</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
