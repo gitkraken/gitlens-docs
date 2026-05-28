@@ -2478,10 +2478,10 @@ These features make it easier to navigate your repository, understand changes, a
 
 ---
 
-## GitLens Release Notes
+## GitLens Release Notes (Current — v18.x)
 
 URL: https://help.gitkraken.com/gitlens/gitlens-release-notes-current/
-Description: GitLens Release Notes
+Description: GitLens Release Notes — Current version (v18.x). See also: Version 17.x (https://help.gitkraken.com/gitlens/GL-Release-v17-x/) and Older Versions (https://help.gitkraken.com/gitlens/GL-Releases-Old/)
 
 Find out what’s new, what’s fixed, or just take a trip down memory lane remembering those bugs of yesterday.
 
@@ -2493,6 +2493,13 @@ Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
 
 ---
+
+---
+
+## GitLens Release Notes — Version 17.x
+
+URL: https://help.gitkraken.com/gitlens/GL-Release-v17-x/
+Description: GitLens Release Notes for Version 17.x
 
 ## Version 17.11
 
@@ -3676,6 +3683,13 @@ Pro subscribers can now refer colleagues and friends to GitLens through the new 
 - Fixes Launchpad indicator not updating when an item is snoozed ([#4103](https://github.com/gitkraken/vscode-gitlens/issues/4103))
 - Fixes autolinks sometimes not shown in the Inspect view when integrations were disconnected
 - Fixes an issue with overlapping popover UI elements
+
+---
+
+## GitLens Release Notes — Older Versions
+
+URL: https://help.gitkraken.com/gitlens/GL-Releases-Old/
+Description: GitLens Release Notes for Version 16.x and earlier
 
 ## Version 16.3
 
