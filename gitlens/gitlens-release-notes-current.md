@@ -16,6 +16,62 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v18-2"></a>
+
+## Version 18.2
+
+#### Monday, June 15, 2026
+
+GitLens 18.2 brings AI-powered conflict resolution into your workflow. When a merge, rebase, or cherry-pick pauses on conflicts, you can now hand the messy parts to AI &mdash; it works through your conflicted files in parallel, proposes a resolution for each, and lets you review every change before anything touches your working tree. Refine the whole run with a prompt, give per-file feedback, or take just the resolutions you trust.
+
+<img src="/wp-content/uploads/gl-18-2-hero.png" class="help-center-img img-bordered">
+
+### Resolve Conflicts with AI
+
+Merge conflicts can be one of the most disruptive moments in a developer's day. GitLens 18.2 introduces a brand-new **Resolve** mode in the _Commit Graph_ details panel that uses AI to work through them for you &mdash; across merges, rebases, and cherry-picks alike.
+
+When an operation pauses on conflicts, the working changes (WIP) details panel leads with a **Resolve** action. Resolve mode opens to a list of your conflicted files &mdash; click any file to open it (conflict markers and all) and inspect it first &mdash; then hit **Resolve** to let AI go to work. It resolves files in parallel, streaming its progress as it goes, and for each file reports what it did: **merged** the changes, **kept current**, **took incoming**, **deleted**, or flagged the file as **needs review** when it wasn't confident enough to resolve it automatically.
+
+Nothing is applied until you say so. Every proposed resolution is reviewable as a diff before it lands, and from the results you can:
+
+- **Refine the whole run** &mdash; add a prompt with extra guidance and re-resolve everything at once.
+- **Give per-file feedback** &mdash; not happy with a single file? Add a note and re-resolve just that one.
+- **Apply or Discard** &mdash; apply the resolutions you trust to your working tree, or discard them and resolve manually. Files marked _needs review_ are left conflicted for you to handle.
+
+You can start a resolution from wherever you run into a conflict:
+
+- The **Resolve** action on the working changes (WIP) details header and on the paused-operation (merge/rebase/cherry-pick) banner
+- Context menus and WIP row buttons in the _Commit Graph_ &mdash; **Resolve All Conflicts with AI**, or scope it to selected conflicted files
+- The Command Palette &mdash; **Resolve Conflicts with AI**
+- The **Resolve Conflict with AI** action on individual conflicted files in the sidebar views
+
+
+---
+
+### Added
+
+- Introduces AI-powered conflict resolution &mdash; a new **Resolve** mode in the _Commit Graph_ WIP details panel that uses AI to resolve merge, rebase, and cherry-pick conflicts `PREVIEW`
+  - Resolves conflicted files in parallel with streamed progress, proposing a per-file resolution (merged, kept current, took incoming, deleted, or flagged as needs review) that you review as a diff before anything is applied
+  - Adds the ability to refine the whole run with a prompt, give per-file feedback to re-resolve a single file, and apply or discard the proposed resolutions
+  - Adds entry points across GitLens: a **Resolve** action on the WIP details header and the paused-operation banner, _Commit Graph_ context menus and WIP row buttons (all conflicts or selected files), the **Resolve Conflicts with AI** Command Palette command, and a **Resolve Conflict with AI** action on individual conflicted files in the sidebar views
+  - Adds clickable file links in the resolve panel that open a conflicted working-tree file so you can inspect it before resolving
+- Adds a redesigned feature gate as a native modal dialog &mdash; a top-layer dialog with a blurred backdrop and brand-gradient border &mdash; with an optional _Switch Repos_ action to move to a repository where the feature is available ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
+
+### Changed
+
+- Changes the working changes (WIP) details header to lead with the _Resolve_ action when conflicts are present, ahead of _Compose_, _Review_, and _Compare_
+- Updates the AI quota-exceeded experience with role-aware messaging &mdash; a direct link to purchase a credit add-on for users who can buy credits, or guidance to contact an org admin for those who can't ([#5298](https://github.com/gitkraken/vscode-gitlens/issues/5298))
+- Updates the _Visual History_ and _Commit Graph_ feature gates to use the new native dialog ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
+- Optimizes the details header layout and label collapse for resolve mode
+
+### Fixed
+
+- Fixes AI conflict resolution being charged the flat per-feature fee on every request &mdash; a resolve session (including _Refine_ re-runs and per-file retries) is now billed once per session rather than once per model call
+- Fixes a stale single-file scope when re-entering resolve mode after a per-file resolution
+- Fixes misaligned buttons on the verification-required feature gate ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
+
+---
+
 <a id="v18-1"></a>
 
 ## Version 18.1
