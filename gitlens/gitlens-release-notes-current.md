@@ -50,25 +50,17 @@ You can start a resolution from wherever you run into a conflict:
 
 ### Added
 
-- Introduces AI-powered conflict resolution &mdash; a new **Resolve** mode in the _Commit Graph_ WIP details panel that uses AI to resolve merge, rebase, and cherry-pick conflicts `PREVIEW`
+- Introduces AI-powered conflict resolution (Preview) &mdash; a new **Resolve** mode in the _Commit Graph_ WIP details panel that uses AI to resolve merge, rebase, and cherry-pick conflicts ([#5306](https://github.com/gitkraken/vscode-gitlens/issues/5306))
   - Resolves conflicted files in parallel with streamed progress, proposing a per-file resolution (merged, kept current, took incoming, deleted, or flagged as needs review) that you review as a diff before anything is applied
   - Adds the ability to refine the whole run with a prompt, give per-file feedback to re-resolve a single file, and apply or discard the proposed resolutions
   - Adds entry points across GitLens: a **Resolve** action on the WIP details header and the paused-operation banner, _Commit Graph_ context menus and WIP row buttons (all conflicts or selected files), the **Resolve Conflicts with AI** Command Palette command, and a **Resolve Conflict with AI** action on individual conflicted files in the sidebar views
   - Adds clickable file links in the resolve panel that open a conflicted working-tree file so you can inspect it before resolving
-- Adds a redesigned feature gate as a native modal dialog &mdash; a top-layer dialog with a blurred backdrop and brand-gradient border &mdash; with an optional _Switch Repos_ action to move to a repository where the feature is available ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
 
 ### Changed
 
 - Changes the working changes (WIP) details header to lead with the _Resolve_ action when conflicts are present, ahead of _Compose_, _Review_, and _Compare_
-- Updates the AI quota-exceeded experience with role-aware messaging &mdash; a direct link to purchase a credit add-on for users who can buy credits, or guidance to contact an org admin for those who can't ([#5298](https://github.com/gitkraken/vscode-gitlens/issues/5298))
-- Updates the _Visual History_ and _Commit Graph_ feature gates to use the new native dialog ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
-- Optimizes the details header layout and label collapse for resolve mode
-
-### Fixed
-
-- Fixes AI conflict resolution being charged the flat per-feature fee on every request &mdash; a resolve session (including _Refine_ re-runs and per-file retries) is now billed once per session rather than once per model call
-- Fixes a stale single-file scope when re-entering resolve mode after a per-file resolution
-- Fixes misaligned buttons on the verification-required feature gate ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
+- Updates the design and readbility of the Pro feature gates (e.g. _Commit Graph_, _Visual History_) &mdash; with an optional _Switch Repos_ action to move to a repository where the feature is available ([#5335](https://github.com/gitkraken/vscode-gitlens/issues/5335))
+- Improves the AI weekly usage-limit message with a _Get More Credits_ action to purchase additional AI credits for users who can buy credits, or guidance to contact an org admin for those who can't ([#5298](https://github.com/gitkraken/vscode-gitlens/issues/5298))
 
 ---
 
