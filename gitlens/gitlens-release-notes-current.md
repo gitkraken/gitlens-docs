@@ -30,7 +30,7 @@ This release also sharpens working changes and worktree control in the _Commit G
 
 ### Leveled-up AI Workflows
 
-AI-powered workflows in GitLens get meaningfully stronger, with more capability and increased control to 
+AI-powered workflows in GitLens get meaningfully stronger, with more capability and increased control:
 
 - **A more capable _Compose_ mode** &mdash; a dual commit/recompose posture, drag to reorder draft commits, drag to move one or more files between draft commits, and multi-diff _Open Changes_ actions right in the curation file trees.
 - **Conversations in _Review_** &mdash; AI _Review_ mode now supports follow-up conversations, with _Discard_ and _Refine_ actions available in both _Compose_ and _Review_.
