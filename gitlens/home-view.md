@@ -127,12 +127,18 @@ For larger or more active repositories, you can focus the Commit Graph on a sing
 
 ## Explore More GitLens Workflows
 Continue exploring the workflows available from the Commit Graph:
-- Agent Sessions to monitor supported coding agent activity
-- Worktrees to manage parallel development
-- Review to understand and validate changes
-- Commit Composer to shape changes into logical commits
-- Compare to understand differences across your work
-- AI-powered Rebase to automate and clean up rebases
-- AI-assisted Conflict Resolution to resolve overlapping work
-- Visual History to understand how your codebase evolved
-- Launchpad to prioritize pull requests and move work toward merge
+- [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) to monitor supported coding agent activity
+- [Worktrees](/gitlens/gl-worktrees/) to manage parallel development
+- [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) to understand and validate changes
+- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
+- [Compare](/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
+- [AI-powered Rebase](/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
+- [AI-assisted Conflict Resolution](/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
+- [Visual History](/gitlens/gl-visual-file-history/) to understand how your codebase evolved
+- [Launchpad](/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)

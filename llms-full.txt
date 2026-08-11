@@ -74,12 +74,18 @@ GitLens supports agent-driven development across VS Code, Cursor, Windsurf, Trae
 ## Where to Go Next
 Start with the Commit Graph to get familiar with your development workbench, then explore GitLens workflows and features as you need them:
 
-- Commit Graph for understanding and acting on repository activity
-- Agent Sessions for monitoring supported coding agents
-- Worktrees for parallel development
-- Review for understanding and validating changes
-- Commit Composer for shaping clean, logical commits
-- Launchpad for prioritizing pull requests and review work
+- [Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/) for understanding and acting on repository activity
+- [Agent Sessions](https://help.gitkraken.com/gitlens/gl-agents/#use-the-agent-sessions-panel) for monitoring supported coding agents
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/) for parallel development
+- [Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for understanding and validating changes
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro) for shaping clean, logical commits
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/) for prioritizing pull requests and review work
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
 
 
 ## Interactive Code History
@@ -2344,15 +2350,21 @@ For larger or more active repositories, you can focus the Commit Graph on a sing
 
 ## Explore More GitLens Workflows
 Continue exploring the workflows available from the Commit Graph:
-- Agent Sessions to monitor supported coding agent activity
-- Worktrees to manage parallel development
-- Review to understand and validate changes
-- Commit Composer to shape changes into logical commits
-- Compare to understand differences across your work
-- AI-powered Rebase to automate and clean up rebases
-- AI-assisted Conflict Resolution to resolve overlapping work
-- Visual History to understand how your codebase evolved
-- Launchpad to prioritize pull requests and move work toward merge
+- [Agent Sessions](https://help.gitkraken.com/gitlens/gl-agents/#use-the-agent-sessions-panel) to monitor supported coding agent activity
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/) to manage parallel development
+- [Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) to understand and validate changes
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
+- [Compare](https://help.gitkraken.com/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
+- [AI-powered Rebase](https://help.gitkraken.com/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
+- [AI-assisted Conflict Resolution](https://help.gitkraken.com/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
+- [Visual History](https://help.gitkraken.com/gitlens/gl-visual-file-history/) to understand how your codebase evolved
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
 
 ---
 
@@ -2771,12 +2783,18 @@ From the Commit Graph menu, select Open in New Window.
 
 GitLens agent workflows work especially well alongside:
 
-- Commit Composer
-- AI Code Review
-- Worktrees
-- Launchpad
-- Interactive Rebase
-- GitKraken MCP integrations
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro)
+- [AI Code Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph)
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/)
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/)
+- [Interactive Rebase](https://help.gitkraken.com/gitlens/gitlens-features/#interactive-rebase-editor)
+- [GitKraken MCP integrations](https://help.gitkraken.com/mcp/mcp-tools-reference/)
+
+These end-to-end workflows build on the same agent features:
+
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
 
 ---
 

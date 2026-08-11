@@ -71,12 +71,18 @@ GitLens supports agent-driven development across VS Code, Cursor, Windsurf, Trae
 ## Where to Go Next
 Start with the Commit Graph to get familiar with your development workbench, then explore GitLens workflows and features as you need them:
 
-- Commit Graph for understanding and acting on repository activity
-- Agent Sessions for monitoring supported coding agents
-- Worktrees for parallel development
-- Review for understanding and validating changes
-- Commit Composer for shaping clean, logical commits
-- Launchpad for prioritizing pull requests and review work
+- [Commit Graph](/gitlens/gl-commit-graph/) for understanding and acting on repository activity
+- [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) for monitoring supported coding agents
+- [Worktrees](/gitlens/gl-worktrees/) for parallel development
+- [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for understanding and validating changes
+- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for shaping clean, logical commits
+- [Launchpad](/gitlens/gl-launchpad/) for prioritizing pull requests and review work
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)
 
 ## Interactive Code History
 
