@@ -1,12 +1,12 @@
 ---
 
 title: Manage Parallel Development from the Commit Graph
-description: Gitlens is now home to 
+description: Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
 taxonomy:
     category: gitlens
 
 ---
-<kbd>Last Update: August 2026</kbd
+<kbd>Last updated: August 2026</kbd>
 
 Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
 
@@ -63,7 +63,7 @@ Use AI-powered Rebase to automate tedious rebasing while staying in control of t
 
 Instead of leaving your workflow to manually untangle the final steps, you can continue moving the work forward from the same workbench where you’ve been monitoring and reviewing it.
 
-# Keep Parallel Development Under Control
+## Keep Parallel Development Under Control
 The Commit Graph gives you one place to follow parallel development from active work to merge readiness.
 
 **See every stream of work. Know what needs your attention. Review and shape the changes. Get parallel work ready to merge from one connected workbench.**

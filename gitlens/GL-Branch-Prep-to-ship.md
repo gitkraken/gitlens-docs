@@ -59,7 +59,8 @@ Once your branch is updated and conflicts are resolved, give the resulting chang
 Use AI-powered Review to surface meaningful findings, inspect important changes, and validate the work before opening or updating your pull request.
 
 If something needs another pass, address it before the branch moves forward.
-Ship with Confidence
+
+## Ship with Confidence
 
 The Commit Graph keeps the final steps between finished code and merge-ready work connected:
 

@@ -18,10 +18,13 @@
 - [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Learn the differences between GitLens Community and GitLens Pro
 - [GitLens FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens and GitKraken account integration.
 - [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
-- [GitLens Home View Overview](https://help.gitkraken.com/gitlens/home-view/): Learn how the GitLens Home View helps you track current work, plan next steps, and review recent activity
+- [Commit Graph is Home](https://help.gitkraken.com/gitlens/home-view/): GitLens Commit Graph: Your Development Workbench
 - [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Explore GitLens integrations with remote providers
 - [GitLens Interactive Code History](https://help.gitkraken.com/gitlens/gl-interactive-code-history/): Learn how GitLens helps you explore and understand your repository’s commit history.
 - [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in GitLens — integrated agent workflows, status pills, sessions panel, and Claude Code hooks
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/): Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Managing and Preparing branches to ship
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Code Change to Merged branches all through GitLens
 - [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes (Current — v18.x)
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier

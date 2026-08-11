@@ -19,19 +19,19 @@ A Workspace can include:
 
 You can open your Workspaces in two ways:
 
-1. Click the **GitLens Home** icon in the Activity Bar.
+1. Click the **GitLens** icon in the Activity Bar.
 2. Use the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for `GitLens: Open Workspaces`.
 
 <figure>
   <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Workspaces section in the GitLens Home panel</figcaption>
+  <figcaption style="text-align: center; color: #888">Workspaces section in the GitLens sidebar</figcaption>
 </figure>
 
 ### Creating a Workspace
 
 To create a new GitLens Workspace:
 
-1. In the GitLens Home panel, click the **+** button next to **GitKraken Workspaces**.
+1. In the GitLens sidebar, click the **+** button next to **GitKraken Workspaces**.
 2. Enter a **name** and an optional **description**.
 3. (Optional) Connect a Git provider (such as GitHub or GitLab) to link repositories.
 

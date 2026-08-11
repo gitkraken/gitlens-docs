@@ -861,7 +861,7 @@ Automatically generate descriptive commit messages based on staged changes.
 
 To use:
 - Stage your changes.
-- Open the **Home View** and click **Generate Commit Message**, or
+- Open the **Commit Graph** and click **Generate Commit Message**, or
 - Use the Command Palette: `GitLens: Generate Commit Message (Experimental)`
 
 GitKraken AI will analyze the diff of staged changes to generate a message. You may provide additional context in the commit box to improve results.
@@ -907,7 +907,6 @@ Let GitKraken AI help explain complex changes across your repo with natural lang
 - Commit Graph
 - Command Palette
 - GitLens views: Commits, Branches, Stashes, Search & Compare
-- Branch cards in the Home view
 
 With GitKraken AI explanations, you can quickly understand:
 - What changed across all commits in a branch
@@ -966,7 +965,7 @@ You can launch the new Commit Composer view from several places in GitLens:
 
 - **GitLens commit details view**
 - **Context menu on the WIP row** in the GitLens Commit Graph  
-- **Active branch card** in the GitLens Home View
+- **Commit Graph details panel**: Switch to **Compose** mode
 - **✨ icon in the SCM view header**
 - **Command palette**: Search for "Compose Commits"
 

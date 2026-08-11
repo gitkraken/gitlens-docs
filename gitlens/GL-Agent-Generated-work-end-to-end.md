@@ -6,7 +6,8 @@ taxonomy:
     category: gitlens
 
 ---
-<kbd>Last Update: August 2026</kbd>
+<kbd>Last updated: August 2026</kbd>
+
 Coding agents can produce changes quickly, but generated code still needs to be understood, organized, and prepared before it is ready to merge.
 
 GitLens keeps that workflow connected inside the Commit Graph. Review what your agent changed, send feedback back for another pass, shape the result into clean commits, and use AI-powered Rebase to prepare the branch for merge without jumping between disconnected views and tools.
