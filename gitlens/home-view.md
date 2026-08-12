@@ -1,91 +1,144 @@
 ---
-title: GitLens Home View Overview
-description: Learn how the GitLens Home View helps you track current work, plan next steps, and review recent activity
+title: Commit Graph is Home
+description: GitLens Commit Graph: Your Development Workbench
 taxonomy:
     category: gitlens
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: August 2026</kbd>
 
-## Overview
+The Commit Graph is your starting point for working in GitLens. More than a visualization of repository history, it brings your repository state, working changes, branches, worktrees, and supported coding agent activity together in one connected workbench.
+From here, you can understand what’s happening across your repository, coordinate parallel work, review and shape changes, and move work toward merge without rebuilding context across disconnected views and tools.
 
-<a href="vscode://eamodio.gitlens/link/command/home">Open the Home View in GitLens</a>
-
-The GitLens Home View helps you stay focused by organizing your work around three key questions:
-
-1. [What am I actively working on now?](/gitlens/home-view/#View-Your-Active-Repository-and-Branch)
-2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
-3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
-
-Each section in the Home View offers direct insights and actionable links to help you manage tasks efficiently across your repositories.
-
+**One Graph. Your development workflow, end to end.**
 <figure>
-  <div class='embed-container embed-container--16-9'>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jVzhyVBgNGg?si=T5hmEEe0jO09RNbl" title="Introducing the GitLens Home View" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <figcaption style="text-align:center; color:#888">Video overview: Introducing the GitLens Home View</figcaption>
+  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Graph" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
-## Connect to GitHub, GitLab, and Jira
+## Start in the Commit Graph
+When you open GitLens, the Commit Graph gives you a connected view of your repository and the work happening across it.
 
-GitLens integrates with popular code hosting and issue tracking services—including GitHub, GitLab, and Jira—to help you monitor branches, track issues, and manage pull requests.
+At a glance, you can understand:
 
-You can connect integrations directly from the top of the Home View.
+- Your current branch, HEAD, upstream, and merge target
+- Working changes across multiple worktrees
+- Incoming and outgoing work
+- Branches and commits across your repository
+- Supported coding agent sessions and their status
+- Work that may need review or attention
 
-Some advanced integration features are available with <a href="https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/">GitLens Pro features</a>.
+The Commit Graph gives you both the big picture and the context to decide what to do next. When you need to narrow your focus, you can focus the Graph on a single branch while keeping the broader repository within reach.
 
-<figure>
-  <img src="/wp-content/uploads/home-view-integrations.png" alt="GitLens Home View showing integration panel" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">GitLens Home View integration panel</figcaption>
-</figure>
+## Manage Parallel Human and Agent Work
 
-## View Your Active Repository and Branch
-
-At the top of the GitLens Home View, you can see the current state of your active repository and branch.
-
-This section gives you quick access to:
-- Sync actions (push, pull, fetch)
-- Switch active repositories
-- View working directory changes
-- Launch the <a href="https://help.gitkraken.com/gitlens/gitlens-home/#commit-graph">GitLens Commit Graph</a>
+As development spreads across multiple branches, worktrees, and coding agents, keeping track of what is happening becomes more challenging. The Commit Graph keeps these parallel streams visible and connected to the Git context behind them.
 
 <figure>
-  <img src="/wp-content/uploads/home-view-active-work.png" alt="GitLens Home View showing active repository section" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">GitLens Home View active repository section</figcaption>
+  <img src="/wp-content/uploads/GL-Worktrees-tab-open.png" class="help-center-img img-bordered">
 </figure>
 
-When you connect integrations and associate issues or pull requests with your current branch, GitLens Pro groups them for streamlined access. You can check pull request statuses, resume reviews, or revisit linked issue details—all from within this view.
-
-If a pull request isn’t open or your branch isn't yet linked to an issue, GitLens guides you through connecting it.
-
-
-## Plan Next Steps with Launchpad <span class="badge badge--pro">Pro</span>
-
-<div class='callout callout--warning'>
-    <p>This feature is available with GitLens Pro or higher subscription tiers.</p>
-</div>
-
-The Launchpad section highlights upcoming priorities to help you decide what to work on next. It surfaces pull requests needing your review and lets you start new work by creating branches and worktrees for issues assigned to you.
+Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
-  <img src="/wp-content/uploads/home-view-next.png" alt="GitLens Home View showing Launchpad section" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">GitLens Home View Launchpad section</figcaption>
+  <img src="/wp-content/uploads/GL-Worktrees-multi-wip.png" class="help-center-img img-bordered">
 </figure>
 
-### Review Pull Request Statuses
+From the Commit Graph, you can:
 
-The Launchpad Summary shows how many pull requests are blocking your team and provides reasons for each. With GitLens Pro, you can click a status to open the related pull request in <a href="https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro">Launchpad</a>. You can then take actions like checking out the PR in a worktree, enabling fast reviews without changing your main branch.
+- See work in progress across multiple worktrees
+- Monitor supported coding agent sessions
+- Identify sessions that need your attention
+- Understand where agent work is happening
+- Jump directly into working changes
+- Resume work with the surrounding repository context intact
 
-### Start Work on an Issue
+## Agent Kanban
 
-To begin working on an assigned issue, click **Start Work on an Issue**. GitLens displays a list of assigned issues from connected integrations and helps you create a branch named after the issue. The issue becomes linked to the new branch, keeping context visible throughout your work.
+Agent Kanban provides a visual way to understand parallel agent work at a glance. Agent sessions are organized by status, including **Needs Input, Working, Idle, and Inactive**, so you can quickly identify what is progressing and where your attention is needed.
 
-## Return to Recent Work
-
-The Recent section minimizes context switching by showing your recent branches, worktrees, and pull requests. This makes it easy to return to recent tasks or review merged and closed pull requests.
-
-By default, the section collapses details like associated issues and branches to reduce clutter. Click any item to expand it for more context.
+From the board, you can inspect agent work and jump into the associated session and working changes.
 
 <figure>
-  <img src="/wp-content/uploads/home-view-recent.png" alt="GitLens Home View showing recent activity section" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">GitLens Home View recent activity section</figcaption>
+  <img src="/wp-content/uploads/GL-Agent-Kanban.png" class="help-center-img img-bordered">
 </figure>
+
+## Run Your Development Workflow from the Commit Graph
+
+The Commit Graph is more than a place to see the work. It gives you the context and tools to move that work forward.
+
+1. Monitor
+See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
+<figure>
+  <img src="/wp-content/uploads/GL-Agent-working.png" class="help-center-img img-bordered">
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/GL-Agent-approval.png" class="help-center-img img-bordered">
+</figure>
+
+2. Review
+Review human or agent-generated changes with AI-powered Review. Surface meaningful findings, ask follow-up questions, and send feedback back to your coding agent when another pass is needed.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Graph-Review.png" class="help-center-img img-bordered">
+</figure>
+
+3. Compose
+Turn working changes into clean, logical commits with Commit Composer. Organize related changes, refine commits with AI assistance, and preview the result before writing it to your history.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Graph-Compose.png" class="help-center-img img-bordered">
+</figure>
+
+4. Compare
+Compare branches, commits, revisions, and working changes to quickly understand exactly what changed before moving work forward.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Graph-Compare.png" class="help-center-img img-bordered">
+</figure>
+
+5. Rebase
+Use AI-powered Rebase to automate tedious rebasing while staying in control of how your commit history is prepared.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" class="help-center-img img-bordered">
+</figure>
+
+6. Resolve
+When parallel work collides, use AI-assisted conflict resolution to understand and resolve conflicts while keeping the surrounding repository context in view.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Conflict-detection-auto-rebase.png" class="help-center-img img-bordered">
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/GL-Auto-rebase-resolve.png" class="help-center-img img-bordered">
+</figure>
+
+**Monitor parallel work. Review what changed. Shape it. Compare it. Rebase and resolve it. Get it ready to merge. All from the Commit Graph.**
+
+## Stay Oriented as Work Moves
+
+The Commit Graph keeps important reference points visible as your repository changes.
+
+HEAD, upstream, merge target, ahead and behind status, and incoming work indicators help you understand where you are, what has changed remotely, and where your work is headed.
+
+For larger or more active repositories, you can focus the Commit Graph on a single branch, pin important branches, or use search to quickly find commits, authors, files, messages, and specific code changes.
+
+## Explore More GitLens Workflows
+Continue exploring the workflows available from the Commit Graph:
+- [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) to monitor supported coding agent activity
+- [Worktrees](/gitlens/gl-worktrees/) to manage parallel development
+- [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) to understand and validate changes
+- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
+- [Compare](/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
+- [AI-powered Rebase](/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
+- [AI-assisted Conflict Resolution](/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
+- [Visual History](/gitlens/gl-visual-file-history/) to understand how your codebase evolved
+- [Launchpad](/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)

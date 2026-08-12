@@ -64,7 +64,6 @@ You’ll find ✨Explain options for commits, branches, stashes, and working cha
 - In the Commit Graph
 - Available as commands in the command palette
 - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
-- In branch cards in the Home view
 
 ### AI Changelog Creation `Pro`
 **Available in:** Advanced and Business plans only
@@ -84,7 +83,7 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 Open Pull Requests: Automatically generate clear PR titles and descriptions directly from your branch changes, speeding up review cycles.
 
 **How to access:**
-- From the GitLens Home View panel: Click the ✨button next to “Create a Pull Request”
+- From the GitLens Commit Graph: Click the ✨button next to “Create a Pull Request”
 
 <img src="/wp-content/uploads/GL-ai-create-pr.png" class="help-center-img img-bordered">
 

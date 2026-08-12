@@ -6,9 +6,7 @@ taxonomy:
     category: gitlens
     
 ---
-
-
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: August 2026</kbd>
  
 Welcome to the GitLens Support Documentation site! 
 
@@ -23,6 +21,68 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 * [Streamline Collaboration](/gitlens/gitlens-home/#streamline-collaboration)
 
 ***
+GitLens brings your repository context and development workflows directly into your IDE. Start in the Commit Graph to understand what’s happening across your repository, keep human and agent work visible, and move changes forward without rebuilding context across tools.
+
+## Start in the Commit Graph
+The Commit Graph is your central development workbench in GitLens. It brings commits, branches, working changes, worktrees, upstream state, and supported coding agent activity together in one connected view.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Grpah" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">GitLens Commit Graph view</figcaption>
+</figure>
+
+Use the Commit Graph to quickly understand:
+- What’s changing across your repository
+- Where work is happening across branches and worktrees
+- What’s ahead, behind, or incoming
+- Which supported coding agents are actively working
+- Which work or agent sessions need your attention
+- How changes relate before you move them forward
+
+From there, you can move directly into the workflow you need.
+
+## One Workbench for Your Development Workflow
+Development work is often spread across source control views, terminal sessions, editor windows, pull requests, and separate tools. As more work happens in parallel across developers and coding agents, rebuilding that context can slow you down.
+
+The Commit Graph brings those workflows together. Instead of jumping between views and windows to understand and move work forward, you can stay connected to the repository context behind the work from start to finish.
+
+From the Commit Graph, you can monitor parallel work, review changes, compose commits, compare revisions, rebase with AI, resolve conflicts, and prepare work for merge. Each step stays connected to the branches, worktrees, commits, and changes involved.
+
+See the work, understand it, shape it, and get it ready to merge from one connected workbench.
+
+## Move Work Forward from the Commit Graph
+The Commit Graph gives you more than visibility into your repository. It brings the workflows you use to understand, shape, and prepare work for merge into the same workbench.
+- Monitor: Keep parallel human and agent work visible across branches and worktrees.
+- Review: Review changes with AI, investigate findings, and send feedback back to your coding agent.
+- Compose: Organize working changes into clean, logical commits with Commit Composer.
+- Compare: Compare commits, branches, revisions, and working changes to understand exactly what changed.
+- Rebase: Use AI-powered Rebase to automate tedious rebasing while staying in control.
+- Resolve: Resolve merge conflicts with AI assistance while keeping the surrounding repository context in view.
+
+Whether you’re working on a single branch or coordinating development across multiple worktrees and coding agents, GitLens keeps the work and its context connected.
+
+## Working with Coding Agents
+GitLens connects supported coding agent activity to the branches, worktrees, and changes where that work is happening.
+
+From the Commit Graph, you can monitor supported agent sessions, see their status, understand where agents are working, and identify sessions that need your attention. Multi-worktree WIP keeps changes across parallel worktrees visible, helping you stay oriented as human and agent work progresses at the same time.
+
+GitLens supports agent-driven development across VS Code, Cursor, Windsurf, Trae, and Kiro, so you can bring Git context and parallel development workflows into the IDE where you already work.
+
+## Where to Go Next
+Start with the Commit Graph to get familiar with your development workbench, then explore GitLens workflows and features as you need them:
+
+- [Commit Graph](/gitlens/gl-commit-graph/) for understanding and acting on repository activity
+- [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) for monitoring supported coding agents
+- [Worktrees](/gitlens/gl-worktrees/) for parallel development
+- [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for understanding and validating changes
+- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for shaping clean, logical commits
+- [Launchpad](/gitlens/gl-launchpad/) for prioritizing pull requests and review work
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)
 
 ## Interactive Code History
 

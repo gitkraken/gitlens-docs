@@ -11,7 +11,7 @@ taxonomy:
 
 ## Using AI Agents in GitLens
 
-GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph and Home View.
+GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph.
 
 With GitLens, you can:
 
@@ -34,7 +34,6 @@ GitLens tracks these sessions and surfaces their status throughout the interface
 
 Agent sessions appear in:
 
-- The Home View
 - The Commit Graph overview cards
 - The Commit Graph details panel
 - The Agent Sessions sidebar panel
@@ -56,14 +55,13 @@ GitLens integrates with Claude Code using hooks that provide real-time session v
 
 You can install hooks from several locations in GitLens:
 
-- Home View banner
 - Commit Graph header
 - Agent Sessions sidebar banner
 - Integrations menu
 
 ### Install Hooks
 
-1. Open the GitLens Home View or Commit Graph.
+1. Open the GitLens Commit Graph.
 2. Select the Claude Code integration prompt.
 3. Follow the setup instructions.
 4. Reload VS Code or your IDE if prompted.
@@ -105,7 +103,7 @@ The agent finished its current task. Changes are ready for inspection or review.
 
 ## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from the Home View and the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
+GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
 
 ### Panel Features
 
@@ -274,8 +272,14 @@ Open in New Window
 GitLens agent workflows work especially well alongside:
 
 - [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro)
-- AI Code Review *(Coming Soon)*
+- [AI Code Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph)
 - [Worktrees](/gitlens/gl-worktrees/)
 - [Launchpad](/gitlens/gl-launchpad/)
 - [Interactive Rebase](/gitlens/gitlens-features/#interactive-rebase-editor)
 - [GitKraken MCP integrations](https://help.gitkraken.com/mcp/mcp-tools-reference/)
+
+These end-to-end workflows build on the same agent features:
+
+- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
+- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)
+- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)

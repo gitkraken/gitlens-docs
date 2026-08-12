@@ -45,25 +45,29 @@ The **GitLens** sidebar centralizes collaboration features and user tools, inclu
 
 This sidebar includes:
 
-- **Home View**
 - **GitKraken Workspaces**
 - **GitKraken Account**
 - **Cloud Patches** `PRO`
 - **Launchpad** `PRO`
 
 <figure>
-  <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar showing Home view">
+  <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar">
 </figure>
 
-#### Home View Details
+#### Start in the Commit Graph
 
-The **Home View** provides visibility into current tasks and recent activity. To get the most out of this view, [connect your Git provider and issue integrations](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+The [**Commit Graph**](/gitlens/gl-commit-graph/) is your starting point in GitLens, providing visibility into current work and recent activity. To get the most out of it, [connect your Git provider and issue integrations](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
 
-Sections include:
+From the Commit Graph you can see:
 
-- **REPOSITORY** — Displays the active repository and branch, sync status, and actions for fetch/push/pull. Shows linked PRs or issues when available, or offers to start a new PR.
-- **LAUNCHPAD** — Highlights pull requests needing review, those blocked, or ready to merge. Start new branches or worktrees tied to issues.
-- **RECENT** — Quickly access recent branches, PRs, and worktrees.
+- The active repository and branch, sync status, and merge target, along with actions for fetch/push/pull. Linked PRs or issues appear when available, or you can start a new PR.
+- Working changes across your worktrees, including work in progress outside the worktree you currently have open.
+- Branches, commits, and recent activity across your repository, so you can find and return to the work you were last on.
+- Supported coding agent sessions and their status, including sessions that need your attention.
+
+<figure>
+  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered" alt="GitLens Commit Graph">
+</figure>
 
 ### Source Control Sidebar
 
@@ -337,7 +341,7 @@ To enable this experimental feature, either run the _Show Launchpad View_ comman
 
 Workspaces offer a convenient way to group and manage multiple repositories for easy access. Whether working solo or as part of a team, Workspaces help streamline your development process. You can include local repositories or GitKraken Workspaces—cloud-hosted repositories or those managed through GitKraken services.
 
-To access Workspaces, open the GitLens Home menu and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
+To access Workspaces, open the GitLens sidebar and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
 
 > Note: Using cloud Workspaces requires a GitKraken account. Sharing cloud Workspaces requires a trial or paid subscription.
 

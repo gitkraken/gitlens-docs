@@ -2,7 +2,7 @@
 
 > GitLens documentation — the #1 Git extension for Visual Studio Code. Supercharge your Git workflows with blame, code history, commit graphs, and more.
 
-Generated: 2026-03-23
+Generated: 2026-08-11
 
 ---
 
@@ -26,6 +26,67 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 * [Streamline Collaboration](/gitlens/gitlens-home/#streamline-collaboration)
 
 ***
+GitLens brings your repository context and development workflows directly into your IDE. Start in the Commit Graph to understand what’s happening across your repository, keep human and agent work visible, and move changes forward without rebuilding context across tools.
+
+## Start in the Commit Graph
+The Commit Graph is your central development workbench in GitLens. It brings commits, branches, working changes, worktrees, upstream state, and supported coding agent activity together in one connected view.
+
+
+GitLens Commit Graph view
+
+Use the Commit Graph to quickly understand:
+- What’s changing across your repository
+- Where work is happening across branches and worktrees
+- What’s ahead, behind, or incoming
+- Which supported coding agents are actively working
+- Which work or agent sessions need your attention
+- How changes relate before you move them forward
+
+From there, you can move directly into the workflow you need.
+
+## One Workbench for Your Development Workflow
+Development work is often spread across source control views, terminal sessions, editor windows, pull requests, and separate tools. As more work happens in parallel across developers and coding agents, rebuilding that context can slow you down.
+
+The Commit Graph brings those workflows together. Instead of jumping between views and windows to understand and move work forward, you can stay connected to the repository context behind the work from start to finish.
+
+From the Commit Graph, you can monitor parallel work, review changes, compose commits, compare revisions, rebase with AI, resolve conflicts, and prepare work for merge. Each step stays connected to the branches, worktrees, commits, and changes involved.
+
+See the work, understand it, shape it, and get it ready to merge from one connected workbench.
+
+## Move Work Forward from the Commit Graph
+The Commit Graph gives you more than visibility into your repository. It brings the workflows you use to understand, shape, and prepare work for merge into the same workbench.
+- Monitor: Keep parallel human and agent work visible across branches and worktrees.
+- Review: Review changes with AI, investigate findings, and send feedback back to your coding agent.
+- Compose: Organize working changes into clean, logical commits with Commit Composer.
+- Compare: Compare commits, branches, revisions, and working changes to understand exactly what changed.
+- Rebase: Use AI-powered Rebase to automate tedious rebasing while staying in control.
+- Resolve: Resolve merge conflicts with AI assistance while keeping the surrounding repository context in view.
+
+Whether you’re working on a single branch or coordinating development across multiple worktrees and coding agents, GitLens keeps the work and its context connected.
+
+## Working with Coding Agents
+GitLens connects supported coding agent activity to the branches, worktrees, and changes where that work is happening.
+
+From the Commit Graph, you can monitor supported agent sessions, see their status, understand where agents are working, and identify sessions that need your attention. Multi-worktree WIP keeps changes across parallel worktrees visible, helping you stay oriented as human and agent work progresses at the same time.
+
+GitLens supports agent-driven development across VS Code, Cursor, Windsurf, Trae, and Kiro, so you can bring Git context and parallel development workflows into the IDE where you already work.
+
+## Where to Go Next
+Start with the Commit Graph to get familiar with your development workbench, then explore GitLens workflows and features as you need them:
+
+- [Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/) for understanding and acting on repository activity
+- [Agent Sessions](https://help.gitkraken.com/gitlens/gl-agents/#use-the-agent-sessions-panel) for monitoring supported coding agents
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/) for parallel development
+- [Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for understanding and validating changes
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro) for shaping clean, logical commits
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/) for prioritizing pull requests and review work
+
+Or follow a complete workflow from start to finish:
+
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
+
 
 ## Interactive Code History
 
@@ -437,7 +498,6 @@ You’ll find ✨Explain options for commits, branches, stashes, and working cha
 - In the Commit Graph
 - Available as commands in the command palette
 - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
-- In branch cards in the Home view
 
 ### AI Changelog Creation `Pro`
 **Available in:** Advanced and Business plans only
@@ -455,7 +515,7 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 Open Pull Requests: Automatically generate clear PR titles and descriptions directly from your branch changes, speeding up review cycles.
 
 **How to access:**
-- From the GitLens Home View panel: Click the ✨button next to “Create a Pull Request”
+- From the GitLens Commit Graph: Click the ✨button next to “Create a Pull Request”
 
 ---
 ## AI Credit Allocation by Plan
@@ -1782,7 +1842,7 @@ AI-generated commit messages from staged changes
 
 To use:
 - Stage your changes.
-- Open the **Home View** and click **Generate Commit Message**, or
+- Open the **Commit Graph** and click **Generate Commit Message**, or
 - Use the Command Palette: `GitLens: Generate Commit Message (Experimental)`
 
 GitKraken AI will analyze the diff of staged changes to generate a message. You may provide additional context in the commit box to improve results.
@@ -1824,7 +1884,6 @@ AI summaries in rendered markdown for improved clarity
 - Commit Graph
 - Command Palette
 - GitLens views: Commits, Branches, Stashes, Search & Compare
-- Branch cards in the Home view
 
 With GitKraken AI explanations, you can quickly understand:
 - What changed across all commits in a branch
@@ -1877,7 +1936,7 @@ You can launch the new Commit Composer view from several places in GitLens:
 
 - **GitLens commit details view**
 - **Context menu on the WIP row** in the GitLens Commit Graph
-- **Active branch card** in the GitLens Home View
+- **Commit Graph details panel**: Switch to **Compose** mode
 - **✨ icon in the SCM view header**
 - **Command palette**: Search for "Compose Commits"
 
@@ -2214,83 +2273,98 @@ VS Code 1.86 or later is required for these capabilities.
 
 ---
 
-## GitLens Home View Overview
+## Commit Graph is Home
 
 URL: https://help.gitkraken.com/gitlens/home-view/
-Description: Learn how the GitLens Home View helps you track current work, plan next steps, and review recent activity
+Description: GitLens Commit Graph: Your Development Workbench
 
-Last updated: July 2025
+Last updated: August 2026
 
-## Overview
+The Commit Graph is your starting point for working in GitLens. More than a visualization of repository history, it brings your repository state, working changes, branches, worktrees, and supported coding agent activity together in one connected workbench.
+From here, you can understand what’s happening across your repository, coordinate parallel work, review and shape changes, and move work toward merge without rebuilding context across disconnected views and tools.
 
-Open the Home View in GitLens
+**One Graph. Your development workflow, end to end.**
 
-The GitLens Home View helps you stay focused by organizing your work around three key questions:
+GitLens Commit Graph
 
-1. [What am I actively working on now?](/gitlens/home-view/#View-Your-Active-Repository-and-Branch)
-2. [What should I work on next?](/gitlens/home-view/#launchpad-section)
-3. [What have I worked on recently?](/gitlens/home-view/#recent-section)
+## Start in the Commit Graph
+When you open GitLens, the Commit Graph gives you a connected view of your repository and the work happening across it.
 
-Each section in the Home View offers direct insights and actionable links to help you manage tasks efficiently across your repositories.
+At a glance, you can understand:
 
+- Your current branch, HEAD, upstream, and merge target
+- Working changes across multiple worktrees
+- Incoming and outgoing work
+- Branches and commits across your repository
+- Supported coding agent sessions and their status
+- Work that may need review or attention
 
+The Commit Graph gives you both the big picture and the context to decide what to do next. When you need to narrow your focus, you can focus the Graph on a single branch while keeping the broader repository within reach.
 
+## Manage Parallel Human and Agent Work
 
-Video overview: Introducing the GitLens Home View
+As development spreads across multiple branches, worktrees, and coding agents, keeping track of what is happening becomes more challenging. The Commit Graph keeps these parallel streams visible and connected to the Git context behind them.
 
-## Connect to GitHub, GitLab, and Jira
+Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
-GitLens integrates with popular code hosting and issue tracking services—including GitHub, GitLab, and Jira—to help you monitor branches, track issues, and manage pull requests.
+From the Commit Graph, you can:
 
-You can connect integrations directly from the top of the Home View.
+- See work in progress across multiple worktrees
+- Monitor supported coding agent sessions
+- Identify sessions that need your attention
+- Understand where agent work is happening
+- Jump directly into working changes
+- Resume work with the surrounding repository context intact
 
-Some advanced integration features are available with GitLens Pro features.
+## Agent Kanban
 
+Agent Kanban provides a visual way to understand parallel agent work at a glance. Agent sessions are organized by status, including **Needs Input, Working, Idle, and Inactive**, so you can quickly identify what is progressing and where your attention is needed.
 
-GitLens Home View integration panel
+From the board, you can inspect agent work and jump into the associated session and working changes.
 
-## View Your Active Repository and Branch
+## Run Your Development Workflow from the Commit Graph
 
-At the top of the GitLens Home View, you can see the current state of your active repository and branch.
+The Commit Graph is more than a place to see the work. It gives you the context and tools to move that work forward.
+1. Monitor
+See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
+2. Review
+Review human or agent-generated changes with AI-powered Review. Surface meaningful findings, ask follow-up questions, and send feedback back to your coding agent when another pass is needed.
+3. Compose
+Turn working changes into clean, logical commits with Commit Composer. Organize related changes, refine commits with AI assistance, and preview the result before writing it to your history.
+4. Compare
+Compare branches, commits, revisions, and working changes to quickly understand exactly what changed before moving work forward.
+5. Rebase
+Use AI-powered Rebase to automate tedious rebasing while staying in control of how your commit history is prepared.
+6. Resolve
+When parallel work collides, use AI-assisted conflict resolution to understand and resolve conflicts while keeping the surrounding repository context in view.
 
-This section gives you quick access to:
-- Sync actions (push, pull, fetch)
-- Switch active repositories
-- View working directory changes
-- Launch the GitLens Commit Graph
+**Monitor parallel work. Review what changed. Shape it. Compare it. Rebase and resolve it. Get it ready to merge. All from the Commit Graph.**
 
+## Stay Oriented as Work Moves
 
-GitLens Home View active repository section
+The Commit Graph keeps important reference points visible as your repository changes.
 
-When you connect integrations and associate issues or pull requests with your current branch, GitLens Pro groups them for streamlined access. You can check pull request statuses, resume reviews, or revisit linked issue details—all from within this view.
+HEAD, upstream, merge target, ahead and behind status, and incoming work indicators help you understand where you are, what has changed remotely, and where your work is headed.
 
-If a pull request isn’t open or your branch isn't yet linked to an issue, GitLens guides you through connecting it.
+For larger or more active repositories, you can focus the Commit Graph on a single branch, pin important branches, or use search to quickly find commits, authors, files, messages, and specific code changes.
 
-## Plan Next Steps with Launchpad Pro
+## Explore More GitLens Workflows
+Continue exploring the workflows available from the Commit Graph:
+- [Agent Sessions](https://help.gitkraken.com/gitlens/gl-agents/#use-the-agent-sessions-panel) to monitor supported coding agent activity
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/) to manage parallel development
+- [Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) to understand and validate changes
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
+- [Compare](https://help.gitkraken.com/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
+- [AI-powered Rebase](https://help.gitkraken.com/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
+- [AI-assisted Conflict Resolution](https://help.gitkraken.com/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
+- [Visual History](https://help.gitkraken.com/gitlens/gl-visual-file-history/) to understand how your codebase evolved
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
 
-This feature is available with GitLens Pro or higher subscription tiers.
+Or follow a complete workflow from start to finish:
 
-The Launchpad section highlights upcoming priorities to help you decide what to work on next. It surfaces pull requests needing your review and lets you start new work by creating branches and worktrees for issues assigned to you.
-
-
-GitLens Home View Launchpad section
-
-### Review Pull Request Statuses
-
-The Launchpad Summary shows how many pull requests are blocking your team and provides reasons for each. With GitLens Pro, you can click a status to open the related pull request in Launchpad. You can then take actions like checking out the PR in a worktree, enabling fast reviews without changing your main branch.
-
-### Start Work on an Issue
-
-To begin working on an assigned issue, click **Start Work on an Issue**. GitLens displays a list of assigned issues from connected integrations and helps you create a branch named after the issue. The issue becomes linked to the new branch, keeping context visible throughout your work.
-
-## Return to Recent Work
-
-The Recent section minimizes context switching by showing your recent branches, worktrees, and pull requests. This makes it easy to return to recent tasks or review merged and closed pull requests.
-
-By default, the section collapses details like associated issues and branches to reduce clutter. Click any item to expand it for more context.
-
-
-GitLens Home View recent activity section
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
 
 ---
 
@@ -2487,7 +2561,7 @@ Last updated: May 2026
 
 ## Using AI Agents in GitLens
 
-GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph and Home View.
+GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph.
 
 With GitLens, you can:
 
@@ -2508,7 +2582,6 @@ GitLens tracks these sessions and surfaces their status throughout the interface
 
 Agent sessions appear in:
 
-- The Home View
 - The Commit Graph overview cards
 - The Commit Graph details panel
 - The Agent Sessions sidebar panel
@@ -2528,14 +2601,13 @@ GitLens integrates with Claude Code using hooks that provide real-time session v
 
 You can install hooks from several locations in GitLens:
 
-- Home View banner
 - Commit Graph header
 - Agent Sessions sidebar banner
 - Integrations menu
 
 ### Install Hooks
 
-1. Open the GitLens Home View or Commit Graph.
+1. Open the GitLens Commit Graph.
 2. Select the Claude Code integration prompt.
 3. Follow the setup instructions.
 4. Reload VS Code or your IDE if prompted.
@@ -2569,7 +2641,7 @@ The agent finished its current task. Changes are ready for inspection or review.
 
 ## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from the Home View and the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
+GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
 
 ### Panel Features
 
@@ -2711,12 +2783,232 @@ From the Commit Graph menu, select Open in New Window.
 
 GitLens agent workflows work especially well alongside:
 
-- Commit Composer
-- AI Code Review
-- Worktrees
-- Launchpad
-- Interactive Rebase
-- GitKraken MCP integrations
+- [Commit Composer](https://help.gitkraken.com/gitlens/gitlens-features/#commit-composer-view-pro)
+- [AI Code Review](https://help.gitkraken.com/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph)
+- [Worktrees](https://help.gitkraken.com/gitlens/gl-worktrees/)
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-launchpad/)
+- [Interactive Rebase](https://help.gitkraken.com/gitlens/gitlens-features/#interactive-rebase-editor)
+- [GitKraken MCP integrations](https://help.gitkraken.com/mcp/mcp-tools-reference/)
+
+These end-to-end workflows build on the same agent features:
+
+- [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/)
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/)
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/)
+
+---
+
+## Manage Parallel Development from the Commit Graph
+
+URL: https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/
+Description: Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
+
+Last updated: August 2026
+
+Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
+
+The Commit Graph brings those streams together in one development workbench. See what’s changing, understand where work is happening, identify what needs your attention, and move work forward without jumping between branches, terminal sessions, and disconnected views.
+
+GitLens Commit Graph
+
+## 1. See All Active Work
+Start in the Commit Graph to get a connected view of your repository and the work happening across it.
+See branches, worktrees, working changes, commits, HEAD, upstream, merge targets, and ahead and behind status together, giving you the context to understand how each stream of work relates to the rest of your repository.
+
+Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree.
+
+## 2. Monitor Agent Work
+When coding agents are working in parallel, GitLens keeps supported agent activity connected to the branches and worktrees where that work is happening.
+
+From the Commit Graph, you can:
+
+- Monitor supported coding agent sessions
+- See which sessions are working, idle, or need attention
+- Understand which branch and worktree an agent is working in
+- Jump into the work associated with an agent session
+- Resume active or previous sessions with the surrounding Git context intact
+
+Instead of tracking agent work across separate terminal sessions, you can see where the work lives and when it needs you.
+
+## 3. Understand Changes Across Worktrees
+Worktrees let developers and agents work on multiple branches from the same repository without constantly switching branches or stashing changes.
+
+GitLens brings work in progress across those worktrees into the Commit Graph, giving you visibility into parallel development from one place.
+
+Use Multi-WIP to see working changes across multiple worktrees, understand which branches have active work, and move between parallel streams without losing sight of the bigger picture.
+
+## 4. Review Work as It Happens
+You don’t have to wait until parallel work becomes a pull request to understand what changed.
+
+Open working changes from the Commit Graph and use AI-powered Review to analyze human or agent-generated work while it’s still in progress. Surface meaningful findings, investigate specific areas, ask follow-up questions, and send an entire review or individual finding back to your coding agent when another pass is needed.
+
+Reviewing work earlier helps keep changes understandable before multiple streams of development come back together.
+
+## 5. Shape and Compare the Work
+Once changes are ready, use Commit Composer to turn scattered work into clean, logical commits that are easier to understand and review.
+
+Organize related changes, move work between commits, reorder and refine commits, and use AI assistance to help shape the resulting history.
+
+Then use Compare directly from the Commit Graph to compare commits, branches, revisions, and working changes so you can understand exactly what’s different before moving forward.
+
+## 6. Prepare Parallel Work to Land
+As parallel branches come back together, GitLens helps you handle the Git work required to prepare them for merge.
+
+Use AI-powered Rebase to automate tedious rebasing while staying in control of the result. If overlapping work creates merge conflicts, AI-assisted conflict resolution helps you understand and resolve competing changes while keeping the surrounding repository context in view.
+
+Instead of leaving your workflow to manually untangle the final steps, you can continue moving the work forward from the same workbench where you’ve been monitoring and reviewing it.
+
+## Keep Parallel Development Under Control
+The Commit Graph gives you one place to follow parallel development from active work to merge readiness.
+
+**See every stream of work. Know what needs your attention. Review and shape the changes. Get parallel work ready to merge from one connected workbench.**
+
+---
+
+## Prepare Your Branch to Ship
+
+URL: https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/
+Description: Managing and Preparing branches to ship
+
+Last updated: August 2026
+
+Writing the code is only part of getting work ready to merge. Upstream changes, messy commit history, overlapping work, and merge conflicts can all stand between a finished change and a branch that’s ready to ship.
+
+The Commit Graph brings those final workflows together in one workbench. Understand where your branch stands, compare what changed, clean up your commits, rebase with AI, resolve conflicts, and review the result without jumping between disconnected views and tools.
+
+## 1. See Where Your Branch Stands
+Start in the Commit Graph to understand your branch in the context of the repository around it.
+
+See HEAD, upstream, merge target, incoming work, and ahead and behind status together so you can quickly understand what has changed and what needs attention before moving forward.
+
+## 2. Compare Before You Merge
+Before making changes to your branch history, use Compare to understand exactly how your work differs from its target.
+
+From the Commit Graph, compare branches, commits, revisions, and working changes to see what you’re introducing and identify anything that needs another look.
+
+This gives you a clear baseline before you start preparing the branch for merge.
+
+## 3. Clean Up Your Commits
+Development rarely produces perfectly organized commits on the first pass.
+
+Use Commit Composer to turn working changes into clean, logical commits that make the work easier to understand and review.
+
+With Compose, you can:
+
+- Group related changes into commits
+- Move files between commits
+- Reorder and refine work
+- Generate commit messages with AI
+- Preview the resulting changes before committing
+
+A cleaner commit structure gives reviewers a clearer picture of what changed and why.
+
+## 4. Rebase with AI
+When upstream work has moved ahead, use AI-powered Rebase to bring your branch up to date and prepare its history for merge.
+
+Instead of manually stepping through a traditional interactive rebase, GitLens can automate the rebase process with AI while keeping you in control of the result.
+
+This helps reduce the repetitive work involved in updating and cleaning up your branch before it ships.
+
+## 5. Resolve Conflicts
+
+Parallel development means changes sometimes collide.
+
+When conflicts occur, GitLens keeps resolution connected to the same repository context you’ve been using throughout the workflow. AI-assisted Resolve can generate proposed resolutions, provide explanations and confidence indicators, and help you understand competing changes before accepting the result.
+
+You can always make the final decision or resolve the conflict manually when needed.
+
+## 6. Review the Final Changes
+Once your branch is updated and conflicts are resolved, give the resulting changes one final review.
+Use AI-powered Review to surface meaningful findings, inspect important changes, and validate the work before opening or updating your pull request.
+
+If something needs another pass, address it before the branch moves forward.
+
+## Ship with Confidence
+
+The Commit Graph keeps the final steps between finished code and merge-ready work connected:
+
+**Understand → Compare → Compose → Rebase → Resolve → Review**
+
+Know where your branch stands. Clean up the work. Bring it up to date. Resolve conflicts. Review the result. **Ship with confidence.**
+
+---
+
+## Take Agent-Generated Work from Change to Merge
+
+URL: https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/
+Description: Code Change to Merged branches all through GitLens
+
+Last updated: August 2026
+
+Coding agents can produce changes quickly, but generated code still needs to be understood, organized, and prepared before it is ready to merge.
+
+GitLens keeps that workflow connected inside the Commit Graph. Review what your agent changed, send feedback back for another pass, shape the result into clean commits, and use AI-powered Rebase to prepare the branch for merge without jumping between disconnected views and tools.
+
+## 1. Start with the Agent’s Changes
+Open the agent’s working changes from the Commit Graph to understand what was modified and how that work relates to the branch and repository around it.
+
+Keeping the agent session, worktree, and changes connected makes it easier to understand the work before deciding what happens next.
+
+## 2. Review the Work While It’s Fresh
+
+Use AI-powered Review directly from the Commit Graph to analyze the agent-generated changes before they become a pull request.
+
+Review can surface meaningful findings, highlight areas that deserve attention, and help you understand the changes through a streamlined semantic diff.
+
+From the review, you can:
+
+- Inspect findings in the affected code
+- Ask follow-up questions for more context
+- Focus the review on specific areas
+- Send an entire review, focus area, or individual finding back to your coding agent
+
+Review becomes part of the development loop instead of something that happens only after the work is finished.
+
+## 3. Send Findings Back for Another Pass
+When Review surfaces something that needs to change, send the feedback directly back to your coding agent.
+
+GitLens keeps the review context attached so the agent can address the finding without you manually reconstructing the issue in another terminal or chat session.
+Once the agent updates the code, return to the working changes and review the result again.
+
+## 4. Compose Clean, Reviewable Commits
+
+Agent-generated work may span multiple files and concerns that do not belong in a single commit.
+
+Use Commit Composer from the Commit Graph to organize those changes into clean, logical commits that are easier for you and your teammates to understand.
+
+
+With Compose, you can:
+
+- Group related changes into draft commits
+- Move files between commits
+- Reorder commits
+- Generate commit messages with AI
+- Preview synthesized diffs before committing
+- Refine the proposed commit structure before writing it to your history
+
+Compose helps turn raw agent output into a history that explains the work instead of simply recording it.
+
+## 5. Compare Before Moving Forward
+Before preparing the branch for merge, use Compare to understand exactly how the work differs from another commit, branch, revision, or working state.
+
+Comparing from the Commit Graph keeps the changes and their surrounding repository context together, making it easier to validate the final result before moving on.
+
+## 6. Rebase with AI
+Once the work is reviewed and organized, the branch may still need to be rebased before it is ready to merge.
+
+GitLens AI-powered Rebase automates much of the tedious work traditionally involved in interactive rebasing while keeping you in control of the resulting history.
+
+Use AI-powered Rebase to help prepare a cleaner branch without manually stepping through every rebase operation.
+
+If the rebase creates conflicts, GitLens keeps the workflow connected so you can move directly into conflict resolution without rebuilding context elsewhere.
+
+## From Agent Output to Merge-Ready Work
+The Commit Graph keeps the steps between generated code and merge-ready work connected:
+
+**Agent changes → Review → Agent feedback → Compose → Compare → AI-powered Rebase**
+
+Instead of treating agent output as finished code, GitLens gives you a workflow for understanding it, improving it, shaping it, and preparing it to ship with confidence.
 
 ---
 
@@ -8030,17 +8322,17 @@ A Workspace can include:
 
 You can open your Workspaces in two ways:
 
-1. Click the **GitLens Home** icon in the Activity Bar.
+1. Click the **GitLens** icon in the Activity Bar.
 2. Use the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for `GitLens: Open Workspaces`.
 
 
-Workspaces section in the GitLens Home panel
+Workspaces section in the GitLens sidebar
 
 ### Creating a Workspace
 
 To create a new GitLens Workspace:
 
-1. In the GitLens Home panel, click the **+** button next to **GitKraken Workspaces**.
+1. In the GitLens sidebar, click the **+** button next to **GitKraken Workspaces**.
 2. Enter a **name** and an optional **description**.
 3. (Optional) Connect a Git provider (such as GitHub or GitLab) to link repositories.
 
@@ -8446,7 +8738,6 @@ The **GitLens** sidebar centralizes collaboration features and user tools, inclu
 
 This sidebar includes:
 
-- **Home View**
 - **GitKraken Workspaces**
 - **GitKraken Account**
 - **Cloud Patches** `PRO`
@@ -8454,15 +8745,20 @@ This sidebar includes:
 
 
 
-#### Home View Details
+GitLens sidebar
 
-The **Home View** provides visibility into current tasks and recent activity. To get the most out of this view, [connect your Git provider and issue integrations](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+#### Start in the Commit Graph
 
-Sections include:
+The [**Commit Graph**](/gitlens/gl-commit-graph/) is your starting point in GitLens, providing visibility into current work and recent activity. To get the most out of it, [connect your Git provider and issue integrations](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
 
-- **REPOSITORY** — Displays the active repository and branch, sync status, and actions for fetch/push/pull. Shows linked PRs or issues when available, or offers to start a new PR.
-- **LAUNCHPAD** — Highlights pull requests needing review, those blocked, or ready to merge. Start new branches or worktrees tied to issues.
-- **RECENT** — Quickly access recent branches, PRs, and worktrees.
+From the Commit Graph you can see:
+
+- The active repository and branch, sync status, and merge target, along with actions for fetch/push/pull. Linked PRs or issues appear when available, or you can start a new PR.
+- Working changes across your worktrees, including work in progress outside the worktree you currently have open.
+- Branches, commits, and recent activity across your repository, so you can find and return to the work you were last on.
+- Supported coding agent sessions and their status, including sessions that need your attention.
+
+GitLens Commit Graph
 
 ### Source Control Sidebar
 
@@ -8699,7 +8995,7 @@ To enable this experimental feature, either run the _Show Launchpad View_ comman
 
 Workspaces offer a convenient way to group and manage multiple repositories for easy access. Whether working solo or as part of a team, Workspaces help streamline your development process. You can include local repositories or GitKraken Workspaces—cloud-hosted repositories or those managed through GitKraken services.
 
-To access Workspaces, open the GitLens Home menu and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
+To access Workspaces, open the GitLens sidebar and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
 
 > Note: Using cloud Workspaces requires a GitKraken account. Sharing cloud Workspaces requires a trial or paid subscription.
 
