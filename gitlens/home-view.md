@@ -1,6 +1,6 @@
 ---
 title: Commit Graph is Home
-description: GitLens Commit Graph: Your Development Workbench
+description: "GitLens Commit Graph: Your Development Workbench"
 taxonomy:
     category: gitlens
     
