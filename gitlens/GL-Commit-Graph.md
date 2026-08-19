@@ -21,12 +21,16 @@ The GitLens Commit Graph provides an interactive view of your repository history
 
 ### Open the Commit Graph
 
+The Commit Graph leads the GitLens side bar as its main view, so it is already open when you open GitLens. Only the default location changed: a graph you moved yourself stays where you put it, and a one-time prompt offers the bottom panel instead.
+
+To open it from the Command Palette:
+
 1. Open the Command Palette:
    - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
    - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 2. Type **Show Commit Graph** and select it.
 
-The Commit Graph opens in a new tab, where you can scroll through history and resize column widths.
+In the side bar, the Commit Graph adapts to the width available. Narrow widths show compact list-style rows with the details panel below the graph. Widen the view, or move it to the bottom panel, for the columnar table layout this article describes.
 
 <figure>
   <img src="/wp-content/uploads/show-commit-graph.gif" class="help-center-img img-bordered" alt="GIF showing how to open the Commit Graph from the Command Palette" />
@@ -106,7 +110,9 @@ Scroll markers highlight key points in the Commit Graph, including:
 - Selected rows
 - Search results
 
-Use scroll markers to quickly jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gitlens-features/#settings).
+Select a marker to select and focus its row. Right-click the marker rail to turn marker types on or off without leaving the graph, or use the [Commit Graph settings](/gitlens/gitlens-features/#settings).
+
+Additional marker types are off by default. Turn on the ones you want from the marker rail.
 
 <figure>
   <img src="/wp-content/uploads/gl-scroll-markers.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
