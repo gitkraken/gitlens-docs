@@ -434,7 +434,7 @@ Learn how to configure this in our [Self-Hosting Guide](/gk-dev/gk-dev-home/#sel
 The Commit Graph helps visualize your repository's commit history by displaying branches, commits, and contributors in a unified view. This makes it easier to understand project activity and make informed decisions quickly.
 
 <figure>
-  <img src="/wp-content/uploads/commit-graph.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-01-v2@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Explore your full Git history at a glance</figcaption>
 </figure>
 
@@ -613,7 +613,7 @@ You can also refine results with:
 - **Regular expression**
 
 <figure>
-  <img src="/wp-content/uploads/search-options.png" alt="Commit Graph search filter toggles" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-search-options-01-v2@2x.png" alt="Commit Graph search filter toggles" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Adjust search filters for more precision</figcaption>
 </figure>
 

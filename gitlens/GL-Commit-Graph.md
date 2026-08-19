@@ -13,7 +13,7 @@ taxonomy:
 The GitLens Commit Graph provides an interactive view of your repository history. It shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
 
 <figure>
-  <img src="/wp-content/uploads/commit-graph.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
+  <img src="/wp-content/uploads/gl-commit-graph-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
   <figcaption style="text-align: center; color: #888">Commit Graph overview in GitLens</figcaption>
 </figure>
 
@@ -168,7 +168,7 @@ Additional options:
 - Use regular expressions
 
 <figure>
-  <img src="/wp-content/uploads/search-options.png" class="help-center-img img-bordered" alt="Commit Graph search options for case sensitivity and regex" />
+  <img src="/wp-content/uploads/gl-search-options-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph search options for case sensitivity and regex" />
   <figcaption style="text-align: center; color: #888">Commit Graph search options</figcaption>
 </figure>
 
