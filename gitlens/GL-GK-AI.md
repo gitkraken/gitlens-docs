@@ -52,7 +52,7 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 
 <img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
 
-### AI Changes Explain `Preview`
+### AI Changes Explain
 Gitkraken AI can also be used to generate summaries in Branches, Working changes, and Stashes.
 
 What changed across all commits in a branch – ✨Explain Branch
