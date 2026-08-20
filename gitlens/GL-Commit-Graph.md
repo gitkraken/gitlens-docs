@@ -81,13 +81,13 @@ You can configure the Commit Graph to control what information is shown and how 
 </figure>
 
 #### Layout Options
-- **Panel Layout**: Displays the Commit Graph in the bottom panel (near the Terminal) with a details view alongside it.
-- **Editor Layout**: Opens the Commit Graph in an editor tab.
+- **View**: Shows the Commit Graph in the GitLens side bar, with the details panel below it. This is the default.
+- **Editor**: Opens the Commit Graph in an editor tab.
 - You can open the Commit Graph in both layouts simultaneously.
 
 To switch layouts:
-1. Select the settings gear in the top-right corner of the Commit Graph editor.
-2. Choose **Prefer Commit Graph in Panel Layout** or **Prefer Commit Graph in Editor Area**.
+1. Select the settings gear in the top-right corner of the Commit Graph.
+2. Choose **Prefer Commit Graph as a View** or **Prefer Commit Graph in Editor**.
 
 <figure>
   <img src="/wp-content/uploads/gl-prefer-commit-graph-location.png" class="help-center-img img-bordered" alt="Commit Graph layout preference menu" />
