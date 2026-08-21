@@ -1080,6 +1080,14 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 
 ---
 
+## Git Submodules
+
+GitLens provides basic support for Git submodules, automatically discovering and tracking submodules within your repositories. Submodules are distinguished from regular repositories and worktrees in GitLens views with dedicated icons and tooltips, making it easy to identify which repositories are submodules at a glance.
+
+When viewing changes to a submodule, GitLens displays the submodule commit reference in the standard Git format, allowing you to see which commit a submodule points to and how it has changed.
+
+---
+
 ## Interactive Rebase Editor
 
 <figure>
