@@ -1436,7 +1436,11 @@ Another custom example:<br>
 <code>anthropic:claude-3-5-sonnet-latest</code><br>
 <code>anthropic:claude-3-sonnet-20240229</code><br>
 <code>anthropic:claude-3-5-sonnet-20240620</code><br>
-<code>anthropic:claude-3-5-sonnet-20241022</code>
+<code>anthropic:claude-3-5-sonnet-20241022</code><br>
+<code>anthropic:claude-sonnet-4-6</code><br>
+<code>anthropic:claude-opus-4-6</code><br>
+<code>google:gemini-3.1-pro-preview</code><br>
+<code>google:gemini-3.1-flash-lite-preview</code>
 </td>
 </tr>
 <tr>
@@ -1547,11 +1551,11 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.outputLevel</code></td>
-<td>Controls the verbosity of output sent to the GitLens output channel.</td>
+<td><em>Deprecated.</em> Use the <strong>GitLens: Enable Debug (Trace) Logging</strong> and <strong>GitLens: Disable Debug (Trace) Logging</strong> commands, or the <strong>Developer: Set Log Level...</strong> command to control logging.</td>
 </tr>
 <tr>
 <td><code>gitlens.showWelcomeOnInstall</code></td>
-<td>Shows the Welcome (Quick Setup) experience on first install.</td>
+<td>Shows the Welcome view on first install.</td>
 </tr>
 <tr>
 <td><code>gitlens.showWhatsNewAfterUpgrades</code></td>
