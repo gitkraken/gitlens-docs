@@ -1547,7 +1547,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.outputLevel</code></td>
-<td>Controls the verbosity of output sent to the GitLens output channel.</td>
+<td>Deprecated. Use the <strong>GitLens: Enable Debug (Trace) Logging</strong> and <strong>GitLens: Disable Debug (Trace) Logging</strong> commands, or the <strong>Developer: Set Log Level...</strong> command to control logging.</td>
 </tr>
 <tr>
 <td><code>gitlens.showWelcomeOnInstall</code></td>

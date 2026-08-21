@@ -1287,8 +1287,8 @@ GitLens provides powerful commands to improve your workflow:
 - **Open Blame Prior to Change** (`gitlens.openBlamePriorToChange`) — Show blame for the prior revision of a line.
 - **Open Changed Files** (`gitlens.openChangedFiles`) — Open all changed files in the working tree.
 - **Close Unchanged Files** (`gitlens.closeUnchangedFiles`) — Close all files without changes.
-- **Enable Debug Logging** (`gitlens.enableDebugLogging`) — Enable debug logging in the GitLens output.
-- **Disable Debug Logging** (`gitlens.disableDebugLogging`) — Disable debug logging.
+- **Enable Debug (Trace) Logging** (`gitlens.enableDebugLogging`) — Enable debug logging in the GitLens output.
+- **Disable Debug (Trace) Logging** (`gitlens.disableDebugLogging`) — Disable debug logging.
 - **Copy as Patch** (`gitlens.copyPatchToClipboard`) — Copy patch data from views, changes, or stashes.
 - **Apply Copied Patch** (`gitlens.applyPatchFromClipboard`) — Apply a patch from clipboard contents.
 
