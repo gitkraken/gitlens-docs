@@ -69,7 +69,7 @@ Or use the VS Code Command Palette:
 
 ## How do I enable debug logging?
 
-You can enable debug logging by opening the Command Palette (`ctrl+shift+p` or `command+shift+p`) and running the command `GitLens: Enable Debug Logging`.
+You can enable debug logging by opening the Command Palette (`ctrl+shift+p` or `command+shift+p`) and running the command `GitLens: Enable Debug (Trace) Logging`.
 
 <img src="/wp-content/uploads/gl-enable-debug-log.png" class="help-center-img img-bordered">
 

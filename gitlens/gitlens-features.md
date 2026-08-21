@@ -1016,6 +1016,12 @@ Commit Composer is also more discoverable, with a new button on the WIP row in t
 
 ***
 
+## Git Submodule Support
+
+GitLens provides basic support for Git submodules, including automatic repository discovery and tracking of submodule repositories within your workspace. Submodules are distinguished in the sidebar and quick picks with a dedicated icon and tooltip, making it easy to identify them at a glance. Context menus are submodule-aware, so actions like external diffs and change highlighting are appropriately scoped to avoid unsupported operations on submodule entries.
+
+***
+
 ## Git Command Palette
 
 <img src="/wp-content/uploads/git-command-palette.png" class="help-center-img img-bordered">
@@ -1287,8 +1293,8 @@ GitLens provides powerful commands to improve your workflow:
 - **Open Blame Prior to Change** (`gitlens.openBlamePriorToChange`) — Show blame for the prior revision of a line.
 - **Open Changed Files** (`gitlens.openChangedFiles`) — Open all changed files in the working tree.
 - **Close Unchanged Files** (`gitlens.closeUnchangedFiles`) — Close all files without changes.
-- **Enable Debug Logging** (`gitlens.enableDebugLogging`) — Enable debug logging in the GitLens output.
-- **Disable Debug Logging** (`gitlens.disableDebugLogging`) — Disable debug logging.
+- **Enable Debug (Trace) Logging** (`gitlens.enableDebugLogging`) — Enable debug (trace) logging using VS Code's native log level controls.
+- **Disable Debug (Trace) Logging** (`gitlens.disableDebugLogging`) — Disable debug (trace) logging.
 - **Copy as Patch** (`gitlens.copyPatchToClipboard`) — Copy patch data from views, changes, or stashes.
 - **Apply Copied Patch** (`gitlens.applyPatchFromClipboard`) — Apply a patch from clipboard contents.
 
