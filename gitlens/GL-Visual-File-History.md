@@ -8,26 +8,32 @@ taxonomy:
 
 <kbd>Last updated: August 2025</kbd>
 
-## Visual File History
+## Visual History
 
-The GitLens **Visual File History** shows how a file has evolved, including when changes were made, the size of those changes, and who made them.
+The GitLens **Visual History** (formerly Visual File History) shows how your code has evolved, including when changes were made, the size of those changes, and who made them. Visual History supports multiple scopes: view the history of a single file, a folder, an entire repository, or a specific branch.
 
 ---
 
-### Open Visual File History
+### Open Visual History
 
-You can open the Visual File History view in two ways:
+You can open the Visual History view in two ways:
 
 1. From the **GitLens Inspect** sidebar.  
-   - Open the sidebar, then select the **Visual File History** view.  
+   - Open the sidebar, then select the **Visual History** view.  
 2. From the **Command Palette**:  
    - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>  
    - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>  
-   - Search for **GitLens: Show Visual File History View**.
+   - Search for **GitLens: Show Visual History View**.
+
+### Scope Options
+
+- **File or Folder**: Visualize the history of a specific file or folder
+- **Repository**: See the full history of your entire repository
+- **Branch**: Slice history by branch to focus on a specific line of work
 
 <figure>
-  <img src="/wp-content/uploads/visual-file-history.png" class="help-center-img img-bordered" alt="Visual File History view in GitLens showing commits plotted by author and time" />
-  <figcaption style="text-align: center; color: #888">Visual File History view</figcaption>
+  <img src="/wp-content/uploads/visual-file-history.png" class="help-center-img img-bordered" alt="Visual History view in GitLens showing commits plotted by author and time" />
+  <figcaption style="text-align: center; color: #888">Visual History view</figcaption>
 </figure>
 
 ---

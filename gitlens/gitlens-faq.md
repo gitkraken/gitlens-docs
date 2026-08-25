@@ -96,6 +96,12 @@ Yes, you can configure proxy settings from the Visual Studio Code settings. To o
 
 ***
 
+## Does GitLens Support Git Submodules?
+
+Yes. GitLens provides basic Git submodule support, including automatic discovery and tracking of submodules in your workspace. Submodules are distinguished with their own icons in sidebar views, and diffs correctly handle submodule pointer changes. GitLens detects superproject paths and tracks submodule status alongside your main repository.
+
+***
+
 ## Can I Use My GitLens Paid License on More Than One Computer?
 
 Yes. Your GitLens Pro license is tied to your email address, not a specific device. You can activate and use GitLens on multiple computers using the same account.

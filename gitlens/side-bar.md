@@ -32,7 +32,7 @@ This sidebar includes:
 - **Overview**
 - **Line History**
 - **File History**
-- **Visual File History**
+- **Visual History**
 - **Search & Compare**
 
 <figure>
@@ -214,6 +214,7 @@ The **File History** view lists all commits that modified the current file on th
 
 - A toggle to pin (pause) automatic tracking of the current editor
 - A toggle to switch between file and line history
+- A toggle to switch between **Commits** mode (default) and **Contributors** mode, which shows all contributors to the file instead of the commit list
 - The ability to change the base branch or reference for history
 - (File history only) A toggle to follow renames
 - (File history only) A toggle to show commits from all branches
@@ -254,6 +255,7 @@ A [customizable](/gitlens/settings/#branches-view-settings) view to visualize, e
 
 The **Branches** view lists all local branches and includes:
 
+- A repository filter with an **All Repositories excluding worktrees** option that hides linked worktrees whose main repository is also open
 - A toggle to switch between list or tree layout
 - A toggle to change file layout: list, tree, or auto
 - Upstream status icons:
@@ -467,7 +469,9 @@ The **Search & Compare** view displays pinnable results from search or compariso
 
 ### Pinnable Search
 
-Search commits by message, author, file, ID, or patch using:
+Search commits by message, author, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges.
+
+Search using:
 
 - **Search Commits** (`gitlens.showCommitSearch`):
   - `<message>` — message match

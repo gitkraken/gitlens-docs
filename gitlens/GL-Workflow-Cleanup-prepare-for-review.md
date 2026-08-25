@@ -71,6 +71,8 @@ GitLens uses Git intelligence to help you ship work that is easier to review, re
 
 - [Launchpad (PR and review awareness)](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro)
 
+- [Start Review](/gitlens/gl-accelerate-pr-reviews/#start-review-pro) (quick-pick wizard to select a PR, check out branch or worktree, and optionally open AI review chat)
+
 - Worktrees (parallel branch workflows)
 
 - Commit Graph context menu actions
