@@ -13,7 +13,7 @@ GitLens is highly customizable. Nearly every feature can be tailored through the
 To open the editor, run _GitLens: Open Settings_ (`gitlens.showSettingsPage`) from the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-01.png" alt="GitLens Visual Settings Editor showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-01-v2@2x.png" alt="GitLens Visual Settings Editor showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">The Visual Settings Editor — Inline Blame category</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Settings for AI, cloud integrations, and external service connections.
 Annotation and decoration settings for the code editor.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-01.png" alt="GitLens Settings Inline Blame category showing current line blame annotation options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-01-v2@2x.png" alt="GitLens Settings Inline Blame category showing current line blame annotation options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Inline Blame category — the default view</figcaption>
 </figure>
 

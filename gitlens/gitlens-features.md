@@ -654,14 +654,14 @@ Compare mode lets you view comparisons directly inside the Commit Graph rather t
 Compose mode integrates commit composition directly within the Commit Graph. Select the WIP row to see your working changes, then switch to Compose mode in the details panel to create commits from your changes or restructure branch history using AI.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-17-4-01.png" alt="Commit Graph in Compose mode showing the commit composer panel with message input and staged files" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v4@2x.png" alt="Commit Graph in Compose mode showing the commit composer panel with message input and staged files" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Compose mode in the Commit Graph details panel</figcaption>
 </figure>
 
 Click the **Compose** button to generate an AI-assisted commit message based on your staged changes, or write your own message manually.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v5@2x.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit message populated in the composer</figcaption>
 </figure>
 
