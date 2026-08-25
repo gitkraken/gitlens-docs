@@ -13,7 +13,7 @@ taxonomy:
 The GitLens Commit Graph is the main view in the GitLens sidebar, providing an interactive visualization of your repository history. Built on a high-performance rendering engine, it shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
 
 <figure>
-  <img src="/wp-content/uploads/commit-graph.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
+  <img src="/wp-content/uploads/gl-commit-graph-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
   <figcaption style="text-align: center; color: #888">Commit Graph overview in GitLens</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 - **Colored reference pills**: merge target and other branch roles
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-settings.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
+  <img src="/wp-content/uploads/gl-column-gl-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
   <figcaption style="text-align: center; color: #888">Commit Graph column settings</figcaption>
 </figure>
 
@@ -228,7 +228,7 @@ Adjust Commit Graph settings from the Command Palette:
 Search for **GitLens: Open Settings**.
 
 <figure>
-  <img src="/wp-content/uploads/commit-graph-settings.png" class="help-center-img img-bordered" alt="Commit Graph settings in VS Code" />
+  <img src="/wp-content/uploads/gl-commit-graph-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph settings in VS Code" />
   <figcaption style="text-align: center; color: #888">Opening Commit Graph settings</figcaption>
 </figure>
 
@@ -249,7 +249,7 @@ The Commit Graph supports rich search across your entire repository. You can sea
    - Previous result: <kbd>Shift</kbd> + <kbd>F3</kbd> (Windows/Linux) or <kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>G</kbd> (macOS)
 
 <figure>
-  <img src="/wp-content/uploads/Rich-Commit-Search.png" class="help-center-img img-bordered" alt="Commit Graph search bar highlighting results" />
+  <img src="/wp-content/uploads/gl-rich-commit-search-02-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph search bar highlighting results" />
   <figcaption style="text-align: center; color: #888">Searching commits in the Commit Graph</figcaption>
 </figure>
 
@@ -257,7 +257,7 @@ You can also:
 - Jump to the **first or last result** by holding <kbd>Shift</kbd> while clicking the arrow icons.
 
 <figure>
-  <img src="/wp-content/uploads/Commit-Search-Moving-Arrow-Keys.gif" class="help-center-img img-bordered" alt="Navigating commit search results with arrow keys" />
+  <img src="/wp-content/uploads/gl-commit-search-moving-arrow-keys-02-v2@2x.gif" class="help-center-img img-bordered" alt="Navigating commit search results with arrow keys" />
   <figcaption style="text-align: center; color: #888">Navigating commit search results</figcaption>
 </figure>
 
@@ -278,7 +278,7 @@ Additional options:
 - Use regular expressions
 
 <figure>
-  <img src="/wp-content/uploads/search-options.png" class="help-center-img img-bordered" alt="Commit Graph search options for case sensitivity and regex" />
+  <img src="/wp-content/uploads/gl-search-options-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph search options for case sensitivity and regex" />
   <figcaption style="text-align: center; color: #888">Commit Graph search options</figcaption>
 </figure>
 
@@ -354,7 +354,7 @@ Additional options let you hide or show:
 You can also dim merge commit rows for clarity.
 
 <figure>
-  <img src="/wp-content/uploads/filter-options-2.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
   <figcaption style="text-align: center; color: #888">Commit Graph filter options</figcaption>
 </figure>
 
@@ -375,7 +375,7 @@ The Minimap provides a high-level overview of repository activity. It shows comm
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-settings.png" class="help-center-img img-bordered" alt="Commit Graph Minimap settings with commits or lines changed options" />
+  <img src="/wp-content/uploads/gl-minimap-gl-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph Minimap settings with commits or lines changed options" />
   <figcaption style="text-align: center; color: #888">Minimap settings and options</figcaption>
 </figure>
 

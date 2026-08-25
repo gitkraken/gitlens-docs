@@ -27,7 +27,7 @@ The GitLens Launchpad helps you manage pull requests by status, so you can quick
 2. Search for **GitLens: Open Launchpad**, or select **Pull Request** from the status bar in VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-launchpad.gif" class="help-center-img img-bordered" alt="Opening the Launchpad from the Command Palette in VS Code" />
+  <img src="/wp-content/uploads/gl-access-launchpad-01-v2@2x.gif" class="help-center-img img-bordered" alt="Opening the Launchpad from the Command Palette in VS Code" />
   <figcaption style="text-align: center; color: #888">Accessing the Launchpad</figcaption>
 </figure>
 

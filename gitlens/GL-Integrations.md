@@ -125,7 +125,7 @@ Once authenticated, GitLens enhances autolinks for these services in hover cards
 - Pull request and issue details directly in the Sidebar views
 
 <figure>
-  <img src="/wp-content/uploads/gitlab-github-integration.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Enhanced hover cards with issue and PR metadata</figcaption>
 </figure>
 
@@ -185,6 +185,6 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Jira integration via GitLens Cloud Integrations panel</figcaption>
 </figure>
