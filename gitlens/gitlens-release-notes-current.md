@@ -20,9 +20,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Version 19.1
 
-<!-- TODO: set the release date, e.g. "Tuesday, September 15, 2026" -->
-
-#### September 2026
+#### Tuesday, September 1, 2026
 
 GitLens 19.1 now supports live agent status for more coding agents - Codex, GitHub Copilot CLI, and OpenCode sessions now appear everywhere Claude Code's already do &mdash; the _Agents_ side bar panel, details panel, Graph WIP rows, and more. Each session displays the agent's state with full right-click controls so you can jump in when your Agent needs you without distrupting your focus. You can start an agent session or run a VS Code task on any worktree without opening it, and the graph will follow your active terminal to the worktree it's in. Install GitKraken Hooks for each agent to integrate its status directly into your GitLens workflows from _GitLens Settings_. 
 
