@@ -81,7 +81,7 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 - When selecting multiple commits in the Graph: Right-click and choose "Generate Changelog"
 - From the Command Palette: `GitLens: Generate Changelog from Commits`
 
-<img src="/wp-content/uploads/gl-ai-generate-changelog-01-v2@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GL-ai-generate-changelog.png" class="help-center-img img-bordered">
 
 ### AI Open Pull Request `Advanced`
 **Available in:** Advanced and Business plans only

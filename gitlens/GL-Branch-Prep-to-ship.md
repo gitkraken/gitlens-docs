@@ -74,7 +74,7 @@ When conflicts occur, GitLens keeps resolution connected to the same repository 
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-auto-rebase-resolve-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-rebase-resolve.png" class="help-center-img img-bordered">
 </figure>
 You can always make the final decision or resolve the conflict manually when needed.
 

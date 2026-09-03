@@ -65,7 +65,7 @@ Agent Kanban provides a visual way to understand parallel agent work at a glance
 From the board, you can inspect agent work and jump into the associated session and working changes.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agent-kanban-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Agent-Kanban.png" class="help-center-img img-bordered">
 </figure>
 
 ## Run Your Development Workflow from the Commit Graph
@@ -118,7 +118,7 @@ When parallel work collides, use AI-assisted conflict resolution to understand a
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-auto-rebase-resolve-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-rebase-resolve.png" class="help-center-img img-bordered">
 </figure>
 
 **Monitor parallel work. Review what changed. Shape it. Compare it. Rebase and resolve it. Get it ready to merge. All from the Commit Graph.**

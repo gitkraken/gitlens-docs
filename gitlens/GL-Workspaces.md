@@ -36,7 +36,7 @@ To create a new GitLens Workspace:
 3. (Optional) Connect a Git provider (such as GitHub or GitLab) to link repositories.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-workspace-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-create-workspace.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Create Workspace dialog with name, description, and provider options</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ To convert a local VS Code workspace into a GitKraken Cloud Workspace:
 Your Cloud Workspace will be synced to your GitKraken account and accessible via GitKraken Desktop, GitLens, and the GitKraken CLI.
 
 <figure>
-  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Convert local Workspace to GitKraken Cloud Workspace</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ You can link a VS Code workspace to a GitKraken Workspace:
 2. Use the **Open VS Code Workspace in New Window** option (hold **Alt** to open in the current window).
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Create a VS Code workspace from a GitKraken Workspace</figcaption>
 </figure>
 

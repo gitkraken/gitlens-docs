@@ -131,11 +131,11 @@ The **Commits** view displays all commits on the current branch. It also provide
   - **Merging or rebasing** — indicates in-progress merge or rebase actions and lists conflicted files
 
 <figure>
-  <img src="/wp-content/uploads/gl-commits-view-merge-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view with merge in progress">
+  <img src="/wp-content/uploads/commits-view-merge.png" class="help-center-img img-bordered" alt="GitLens Commits view with merge in progress">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-commits-view-rebase-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view with rebase in progress">
+  <img src="/wp-content/uploads/commits-view-rebase.png" class="help-center-img img-bordered" alt="GitLens Commits view with rebase in progress">
 </figure>
 
 - Associated pull request — displays if a pull request is linked to the current branch
@@ -356,7 +356,7 @@ To access Workspaces, open the GitLens sidebar and find them in the lower-left p
 Click the **+** icon next to GitKraken Workspaces to create a new Workspace. Enter a name and description, and optionally connect a provider.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-workspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Create a GitLens Workspace">
+  <img src="/wp-content/uploads/gl-create-workspace.png" class="help-center-img img-bordered" alt="Create a GitLens Workspace">
 </figure>
 
 ### Adding Repositories
@@ -398,7 +398,7 @@ Right-click a repository and choose **Remove repository from Workspace** to remo
 To convert a local Workspace, click **Convert to Cloud Workspace**, add a name and description, and save. Your Workspace will be available across GitKraken tools.
 
 <figure>
-  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud-01-v2@2x.png" class="help-center-img img-bordered" alt="Convert local Workspace to GitKraken Cloud">
+  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered" alt="Convert local Workspace to GitKraken Cloud">
 </figure>
 
 ### Workspace Indicators and Colors
@@ -414,7 +414,7 @@ Workspace status indicators use symbols and colors, such as a green **O** for th
 You can link a GitKraken Workspace to a VS Code workspace.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl-01-v2@2x.png" class="help-center-img img-bordered" alt="Create a VS Code Workspace from GitKraken">
+  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered" alt="Create a VS Code Workspace from GitKraken">
 </figure>
 
 Linked VS Code workspaces can be opened from their cloud counterpart using **Open VS Code Workspace in New Window** (hold <kbd>Alt</kbd> to open in the current window).

@@ -16,7 +16,7 @@ Suggestions can be created within **GitLens**, **GitKraken Desktop**, or **gitkr
 Reviewers can then view, accept, and apply these suggestions directly to the pull request branch.
 
 <figure>
-  <img src="/wp-content/uploads/gl-code-suggest-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Code Suggest view showing suggestion options" />
+  <img src="/wp-content/uploads/gl-code-suggest.png" class="help-center-img img-bordered" alt="GitLens Code Suggest view showing suggestion options" />
   <figcaption style="text-align: center; color: #888">GitLens Code Suggest view</figcaption>
 </figure>
 

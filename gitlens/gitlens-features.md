@@ -287,7 +287,7 @@ When a pull request is open, you can make suggestions that collaborators can rev
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-code-suggest-01-v2@2x.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-code-suggest.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Suggest changes beyond just modified lines</figcaption>
 </figure>
 
@@ -909,7 +909,7 @@ GitKraken AI enhances your development workflow with automated commit messages, 
 Automatically generate descriptive commit messages based on staged changes.
 
 <figure>
-  <img src="/wp-content/uploads/gl-ai-generated-commit-message-01-v3@2x.gif" alt="Generating AI commit messages" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-ai-generated-commit-message.gif" alt="Generating AI commit messages" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit messages from staged changes</figcaption>
 </figure>
 
@@ -946,7 +946,7 @@ Automatically generate meaningful stash descriptions to make your stashes easier
 Let GitKraken AI help explain complex changes across your repo with natural language summaries.
 
 <figure>
-  <img src="/wp-content/uploads/gl-ai-branch-summary-01-v3@2x.png" alt="AI branch summary explanation" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-ai-branch-summary.png" alt="AI branch summary explanation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI summaries in rendered markdown for improved clarity</figcaption>
 </figure>
 
