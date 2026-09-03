@@ -36,7 +36,7 @@ This sidebar includes:
 - **Search & Compare**
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-side-bar.png" class="help-center-img img-bordered" alt="GitLens Inspect sidebar overview">
+  <img src="/wp-content/uploads/gl-inspect-side-bar-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect sidebar overview">
 </figure>
 
 ### GitLens Sidebar
@@ -51,7 +51,7 @@ This sidebar includes:
 - **Launchpad** `PRO`
 
 <figure>
-  <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar">
+  <img src="/wp-content/uploads/gl-home-view-v16-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens sidebar">
 </figure>
 
 #### Start in the Commit Graph
@@ -66,7 +66,7 @@ From the Commit Graph you can see:
 - Supported coding agent sessions and their status, including sessions that need your attention.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered" alt="GitLens Commit Graph">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commit Graph">
 </figure>
 
 ### Source Control Sidebar
@@ -85,13 +85,13 @@ This sidebar includes:
 - Repositories
 
 <figure>
-  <img src="/wp-content/uploads/gl-source-control.gif" class="help-center-img img-bordered" alt="GitLens Source Control sidebar with enhanced Git views">
+  <img src="/wp-content/uploads/gl-source-control-01-v2@2x.gif" class="help-center-img img-bordered" alt="GitLens Source Control sidebar with enhanced Git views">
 </figure>
 
 Views can be detached from the sidebar and [moved](/gitlens/side-bar/#moving-views) or reattached using the ellipsis icon menu.
 
 <figure>
-  <img src="/wp-content/uploads/gl-source-control-detach.png" class="help-center-img img-bordered" alt="Detaching GitLens views from the Source Control sidebar">
+  <img src="/wp-content/uploads/gl-source-control-detach-01-v2@2x.png" class="help-center-img img-bordered" alt="Detaching GitLens views from the Source Control sidebar">
 </figure>
 
 ### Move Views Between Sidebars
@@ -99,7 +99,7 @@ Views can be detached from the sidebar and [moved](/gitlens/side-bar/#moving-vie
 You can move any GitLens view between the GitLens Inspect, GitLens, and Source Control sidebars. To move a view, simply drag and drop it to the desired sidebar.
 
 <figure>
-  <img src="/wp-content/uploads/move-view.gif" class="help-center-img img-bordered" alt="Drag and drop GitLens views to reposition them between sidebars">
+  <img src="/wp-content/uploads/gl-move-view-01-v2@2x.gif" class="help-center-img img-bordered" alt="Drag and drop GitLens views to reposition them between sidebars">
 </figure>
 
 To restore the default layout, open the Command Palette (<kbd>Cmd/Ctrl + Shift + P</kbd>) and run:
@@ -111,7 +111,7 @@ To restore the default layout, open the Command Palette (<kbd>Cmd/Ctrl + Shift +
 ## Commits View
 
 <figure>
-  <img src="/wp-content/uploads/commits-view.png" class="help-center-img img-bordered" alt="GitLens Commits view">
+  <img src="/wp-content/uploads/gl-commits-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view">
 </figure>
 
 A [customizable](/gitlens/settings/#commits-view-settings) view to visualize, explore, and manage Git commits.
@@ -131,11 +131,11 @@ The **Commits** view displays all commits on the current branch. It also provide
   - **Merging or rebasing** — indicates in-progress merge or rebase actions and lists conflicted files
 
 <figure>
-  <img src="/wp-content/uploads/commits-view-merge.png" class="help-center-img img-bordered" alt="GitLens Commits view with merge in progress">
+  <img src="/wp-content/uploads/gl-commits-view-merge-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view with merge in progress">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/commits-view-rebase.png" class="help-center-img img-bordered" alt="GitLens Commits view with rebase in progress">
+  <img src="/wp-content/uploads/gl-commits-view-rebase-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view with rebase in progress">
 </figure>
 
 - Associated pull request — displays if a pull request is linked to the current branch
@@ -155,7 +155,7 @@ To open GitLens Inspect, launch the Command Palette (<kbd>Cmd/Ctrl + Shift + P</
 The **Commit Details** tab updates as you move your cursor through the file or select a commit in the Commit Graph. It shows information such as commit author, ID, modified files, and autolinks.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-commit-details.png" class="help-center-img img-bordered" alt="Commit details in GitLens Inspect view">
+  <img src="/wp-content/uploads/gl-inspect-commit-details-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit details in GitLens Inspect view">
 </figure>
 
 ### Overview
@@ -163,7 +163,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) when working on a pull request.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-overview.png" class="help-center-img img-bordered" alt="GitLens Inspect view with code overview and pull request context">
+  <img src="/wp-content/uploads/gl-inspect-overview-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view with code overview and pull request context">
 </figure>
 
 
@@ -172,7 +172,7 @@ The **Overview** tab helps you stage or unstage changes, open files to view modi
 ## Repositories View
 
 <figure>
-  <img src="/wp-content/uploads/repositories-view.png" class="help-center-img img-bordered" alt="GitLens Repositories view">
+  <img src="/wp-content/uploads/gl-repositories-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Repositories view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories.
@@ -205,7 +205,7 @@ The **Repositories** view lists all open Git repositories. It includes:
 ## File History View
 
 <figure>
-  <img src="/wp-content/uploads/file-history-view.png" class="help-center-img img-bordered" alt="GitLens File History view">
+  <img src="/wp-content/uploads/gl-file-history-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens File History view">
 </figure>
 
 A [customizable](/gitlens/settings/#file-history-view-settings) view to visualize, navigate, and explore the revision history of the current file or selected lines.
@@ -222,7 +222,7 @@ The **File History** view lists all commits that modified the current file on th
   - **Merge Changes** — compare base and incoming changes to aid in resolving conflicts
 
 <figure>
-  <img src="/wp-content/uploads/file-history-view-merge-conflict.png" class="help-center-img img-bordered" alt="File History view showing a merge conflict">
+  <img src="/wp-content/uploads/gl-file-history-view-merge-conflict-01-v2@2x.png" class="help-center-img img-bordered" alt="File History view showing a merge conflict">
 </figure>
 
 ***
@@ -230,7 +230,7 @@ The **File History** view lists all commits that modified the current file on th
 ## Line History View
 
 <figure>
-  <img src="/wp-content/uploads/line-history-view.png" class="help-center-img img-bordered" alt="GitLens Line History view">
+  <img src="/wp-content/uploads/gl-line-history-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Line History view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#line-history-view-settings) view to visualize, navigate, and explore the revision history of the selected lines of the current file.
@@ -248,7 +248,7 @@ The **Line History** view lists all commits that modified the selected lines. It
 ## Branches View
 
 <figure>
-  <img src="/wp-content/uploads/branches-view.png" class="help-center-img img-bordered" alt="GitLens Branches view">
+  <img src="/wp-content/uploads/gl-branches-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Branches view">
 </figure>
 
 A [customizable](/gitlens/settings/#branches-view-settings) view to visualize, explore, and manage Git branches.
@@ -285,7 +285,7 @@ The **Branches** view lists all local branches and includes:
 ## Remotes View
 
 <figure>
-  <img src="/wp-content/uploads/remotes-view.png" class="help-center-img img-bordered" alt="GitLens Remotes view">
+  <img src="/wp-content/uploads/gl-remotes-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Remotes view">
 </figure>
 
 A [customizable](/gitlens/settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches.
@@ -301,7 +301,7 @@ The **Remotes** view lists all remotes and their remote branches. It includes:
 ## Stashes View
 
 <figure>
-  <img src="/wp-content/uploads/stashes-view.png" class="help-center-img img-bordered" alt="GitLens Stashes view">
+  <img src="/wp-content/uploads/gl-stashes-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Stashes view">
 </figure>
 
 A [customizable](/gitlens/settings/#stashes-view-settings) view to visualize, explore, and manage Git stashes.
@@ -315,7 +315,7 @@ The **Stashes** view lists all stashes and includes:
 ## Tags View
 
 <figure>
-  <img src="/wp-content/uploads/tags-view.png" class="help-center-img img-bordered" alt="GitLens Tags view">
+  <img src="/wp-content/uploads/gl-tags-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Tags view">
 </figure>
 
 A [customizable](/gitlens/settings/#tags-view-settings) view to visualize, explore, and manage Git tags.
@@ -330,7 +330,7 @@ The **Tags** view lists all tags and includes:
 ## Launchpad View `PRO`
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="help-center-img img-bordered" alt="GitLens Launchpad view (experimental)">
+  <img src="/wp-content/uploads/gl-launchpad-view-experimental-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Launchpad view (experimental)">
 </figure>
 
 The **Launchpad** view provides an always-visible panel for pull request activity. You can view pull request details in a tree format and take action directly from the sidebar.
@@ -348,7 +348,7 @@ To access Workspaces, open the GitLens sidebar and find them in the lower-left p
 > Note: Using cloud Workspaces requires a GitKraken account. Sharing cloud Workspaces requires a trial or paid subscription.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered" alt="GitLens Workspaces in the sidebar">
+  <img src="/wp-content/uploads/gl-workspaces-sidebar-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Workspaces in the sidebar">
 </figure>
 
 ### Creating a Workspace
@@ -356,7 +356,7 @@ To access Workspaces, open the GitLens sidebar and find them in the lower-left p
 Click the **+** icon next to GitKraken Workspaces to create a new Workspace. Enter a name and description, and optionally connect a provider.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-workspace.png" class="help-center-img img-bordered" alt="Create a GitLens Workspace">
+  <img src="/wp-content/uploads/gl-create-workspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Create a GitLens Workspace">
 </figure>
 
 ### Adding Repositories
@@ -364,7 +364,7 @@ Click the **+** icon next to GitKraken Workspaces to create a new Workspace. Ent
 Add repositories to your Workspace using the **+** icon under the Workspace tab. Click the Refresh icon to sync updates.
 
 <figure>
-  <img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="help-center-img img-bordered" alt="Add a repository to a Workspace">
+  <img src="/wp-content/uploads/gl-add-repo-to-workspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Add a repository to a Workspace">
 </figure>
 
 ### Locating Repositories
@@ -372,7 +372,7 @@ Add repositories to your Workspace using the **+** icon under the Workspace tab.
 To find a repository’s location on disk, click the **Locate Repositories** (pin icon). Select a parent folder, and GitLens will scan it for repositories.
 
 <figure>
-  <img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="help-center-img img-bordered" alt="Locate a repo in a Workspace">
+  <img src="/wp-content/uploads/gl-locate-repo-in-workspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Locate a repo in a Workspace">
 </figure>
 
 ### Opening Repositories
@@ -382,7 +382,7 @@ To open a repository, click the **Open Repository in New Window** icon.
 > Pro Tip: Hold <kbd>Alt/Option</kbd> while clicking to open in the current window.
 
 <figure>
-  <img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="help-center-img img-bordered" alt="Open Workspace repository in VS Code">
+  <img src="/wp-content/uploads/gl-open-as-vscode-workspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Open Workspace repository in VS Code">
 </figure>
 
 ### Removing Repositories
@@ -390,7 +390,7 @@ To open a repository, click the **Open Repository in New Window** icon.
 Right-click a repository and choose **Remove repository from Workspace** to remove it.
 
 <figure>
-  <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="help-center-img img-bordered" alt="Remove repository from Workspace">
+  <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace-01-v2@2x.png" class="help-center-img img-bordered" alt="Remove repository from Workspace">
 </figure>
 
 ### Converting to Cloud Workspaces
@@ -398,7 +398,7 @@ Right-click a repository and choose **Remove repository from Workspace** to remo
 To convert a local Workspace, click **Convert to Cloud Workspace**, add a name and description, and save. Your Workspace will be available across GitKraken tools.
 
 <figure>
-  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered" alt="Convert local Workspace to GitKraken Cloud">
+  <img src="/wp-content/uploads/gl-convert-workspace-to-cloud-01-v2@2x.png" class="help-center-img img-bordered" alt="Convert local Workspace to GitKraken Cloud">
 </figure>
 
 ### Workspace Indicators and Colors
@@ -406,7 +406,7 @@ To convert a local Workspace, click **Convert to Cloud Workspace**, add a name a
 Workspace status indicators use symbols and colors, such as a green **O** for the currently open Workspace.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered" alt="GitLens Workspace status indicators">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Workspace status indicators">
 </figure>
 
 ### Workspace Linking
@@ -414,7 +414,7 @@ Workspace status indicators use symbols and colors, such as a green **O** for th
 You can link a GitKraken Workspace to a VS Code workspace.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered" alt="Create a VS Code Workspace from GitKraken">
+  <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl-01-v2@2x.png" class="help-center-img img-bordered" alt="Create a VS Code Workspace from GitKraken">
 </figure>
 
 Linked VS Code workspaces can be opened from their cloud counterpart using **Open VS Code Workspace in New Window** (hold <kbd>Alt</kbd> to open in the current window).
@@ -422,7 +422,7 @@ Linked VS Code workspaces can be opened from their cloud counterpart using **Ope
 When you add repositories to a GitKraken Workspace, they can be auto-added to its linked VS Code workspace. You choose the auto-add behavior when creating the workspace and can modify it later via the **Change Linked Workspace Auto-Add Behavior** command.
 
 <figure>
-  <img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered" alt="Link repositories to VS Code workspace">
+  <img src="/wp-content/uploads/gl-link-repositories-in-workspaces-01-v2@2x.png" class="help-center-img img-bordered" alt="Link repositories to VS Code workspace">
 </figure>
 
 To manually add repositories, use the **Add Repositories from Linked Workspace** command.
@@ -433,7 +433,7 @@ To manually add repositories, use the **Add Repositories from Linked Workspace**
 ## Worktrees View
 
 <figure>
-  <img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
+  <img src="/wp-content/uploads/gl-worktrees-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
 </figure>
 
 A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
@@ -443,7 +443,7 @@ A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to crea
 ## Contributors View
 
 <figure>
-  <img src="/wp-content/uploads/contributors-view.png" class="help-center-img img-bordered" alt="GitLens Contributors view">
+  <img src="/wp-content/uploads/gl-contributors-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Contributors view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#contributors-view-settings) view to explore repository contributors.
@@ -457,7 +457,7 @@ The **Contributors** view lists all contributors and includes:
 ## Search & Compare View
 
 <figure>
-  <img src="/wp-content/uploads/search-and-compare-view.png" class="help-center-img img-bordered" alt="GitLens Search and Compare view">
+  <img src="/wp-content/uploads/gl-search-and-compare-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Search and Compare view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#search-and-compare-view-settings) view to search commit history or compare branches, tags, commits, and more.

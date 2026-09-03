@@ -13,7 +13,7 @@ GitLens is highly customizable. Nearly every feature can be tailored through the
 To open the editor, run _GitLens: Open Settings_ (`gitlens.showSettingsPage`) from the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-01-v2@2x.png" alt="GitLens Visual Settings Editor showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-01-v3@2x.png" alt="GitLens Visual Settings Editor showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">The Visual Settings Editor — Inline Blame category</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ You can deep-link to any category by appending its anchor to the command: `gitle
 The Setup group contains account management and onboarding.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-account-01.png" alt="GitLens Settings Account category showing subscription status and account management" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-account-01-v2.png" alt="GitLens Settings Account category showing subscription status and account management" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 
@@ -37,14 +37,14 @@ The Setup group contains account management and onboarding.
 Settings for AI, cloud integrations, and external service connections.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-ai-01.png" alt="GitLens Settings AI category showing AI provider selection and model configuration" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-ai-01-v2.png" alt="GitLens Settings AI category showing AI provider selection and model configuration" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">AI category</figcaption>
 </figure>
 
 **AI** (`ai`) — choose your AI provider, configure models, and control AI-powered features like commit message generation and code explanations. **Agents** (`agents`) — configure AI agent behavior for automated code tasks. **Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v2.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
@@ -55,14 +55,14 @@ Settings for AI, cloud integrations, and external service connections.
 Annotation and decoration settings for the code editor.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-01-v2@2x.png" alt="GitLens Settings Inline Blame category showing current line blame annotation options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-01-v3@2x.png" alt="GitLens Settings Inline Blame category showing current line blame annotation options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Inline Blame category — the default view</figcaption>
 </figure>
 
 **Inline Blame** (`current-line`) — configure the blame annotation shown at the end of the current line, including format, date style, and pull request information. **Git CodeLens** (`code-lens`) — toggle and format the authorship and change indicators above code blocks. **Status Bar Blame** (`status-bar`) — control the blame summary in the VS Code status bar. **Hovers** (`hovers`) — configure hover tooltips that appear over blame annotations and code, including details, changes, and pull request information.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-hovers-01.png" alt="GitLens Settings Hovers category showing hover annotation toggles" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-hovers-01-v2.png" alt="GitLens Settings Hovers category showing hover annotation toggles" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Hovers category</figcaption>
 </figure>
 
@@ -73,14 +73,14 @@ Annotation and decoration settings for the code editor.
 Configuration for Commit Graph and source control tree views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-commit-graph-01.png" alt="GitLens Settings Commit Graph category showing graph layout and column options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v2.png" alt="GitLens Settings Commit Graph category showing graph layout and column options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 
 **Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — file layout, avatars, and pull request display in the Commits view. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-views-01.png" alt="GitLens Settings Commits view category showing file layout and display options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-views-01-v2.png" alt="GitLens Settings Commits view category showing file layout and display options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commits view category</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ Configuration for Commit Graph and source control tree views.
 Date formatting and UI customization.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-dates-01.png" alt="GitLens Settings Dates and Times category showing date format options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-dates-01-v2.png" alt="GitLens Settings Dates and Times category showing date format options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Dates & Times category</figcaption>
 </figure>
 

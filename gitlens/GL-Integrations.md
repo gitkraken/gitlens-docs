@@ -87,7 +87,7 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 2. Go to the **GitKraken Account** section in the GitLens Activity Bar and choose **Integrations**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Navigate to Integrations in the GitKraken Account menu</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 You can connect multiple integrations if needed, including multiple accounts for the same provider. For example, you can connect both a personal and a work GitHub account simultaneously. Use the integration settings to set a primary account, manage connections, and scope searches to a specific account.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Select the service you want to integrate and finish setup</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ Once authenticated, GitLens enhances autolinks for these services in hover cards
 - Pull request and issue details directly in the Sidebar views
 
 <figure>
-  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Enhanced hover cards with issue and PR metadata</figcaption>
 </figure>
 
@@ -151,7 +151,7 @@ Or for GitLab:
 5. Click <i class="fa-solid fa-plug"></i> **Connect to Remote**
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Use the plug icon to connect a self-managed remote</figcaption>
 </figure>
 
@@ -167,7 +167,7 @@ Or for GitLab:
 GitLens Pro supports integration with Jira Cloud via your GitKraken Account. This allows GitLens to automatically link Jira issue keys (e.g., `ABC-123`) in commit messages and views wherever autolinks are supported.
 
 <figure>
-  <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-jira-integration-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Jira issues auto-linked in GitLens hovers and views</figcaption>
 </figure>
 
@@ -185,6 +185,6 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Jira integration via GitLens Cloud Integrations panel</figcaption>
 </figure>

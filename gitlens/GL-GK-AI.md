@@ -29,7 +29,7 @@ In addition to single commit messages, GitLens offers AI Generate Commits, which
 - From the SCM panel: Click the "Generate Commit Message" button
 - During the commit process: Look for the AI option in the commit interface
 
-<img src="/wp-content/uploads/GL-ai-commit-generate.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Stash Messages`Pro`
 **Available in:** Pro, Advanced, and Business plans
@@ -41,7 +41,7 @@ Create intelligent descriptions for stashed changes, making it easier to find an
 - When creating a stash: Look for the AI option in the stash creation interface
 - From the stash view: Generate descriptions for existing stashes
 
-<img src="/wp-content/uploads/GL-ai-stash.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Commit Explain `Pro`
 **Available in:** Pro, Advanced, and Business plans
@@ -54,7 +54,7 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 - When reviewing commits: Option to generate explanations for any selected commit
 
 
-<img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-explain-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Changes Explain `Preview`
 Gitkraken AI can also be used to generate summaries for Commits, Branches, Working Changes, and Stashes.
@@ -81,7 +81,7 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 - When selecting multiple commits in the Graph: Right-click and choose "Generate Changelog"
 - From the Command Palette: `GitLens: Generate Changelog from Commits`
 
-<img src="/wp-content/uploads/GL-ai-generate-changelog.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-generate-changelog-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Open Pull Request `Advanced`
 **Available in:** Advanced and Business plans only
@@ -91,7 +91,7 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 **How to access:**
 - From the GitLens Commit Graph: Click the ✨button next to “Create a Pull Request”
 
-<img src="/wp-content/uploads/GL-ai-create-pr.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-create-pr-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Review `Pro`
 **Available in:** Pro, Advanced, and Business plans

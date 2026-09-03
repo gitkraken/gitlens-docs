@@ -32,7 +32,7 @@ You can open the Visual History view in two ways:
 - **Branch**: Slice history by branch to focus on a specific line of work
 
 <figure>
-  <img src="/wp-content/uploads/visual-file-history.png" class="help-center-img img-bordered" alt="Visual History view in GitLens showing commits plotted by author and time" />
+  <img src="/wp-content/uploads/gl-visual-file-history-01-v2@2x.png" class="help-center-img img-bordered" alt="Visual History view in GitLens showing commits plotted by author and time" />
   <figcaption style="text-align: center; color: #888">Visual History view</figcaption>
 </figure>
 

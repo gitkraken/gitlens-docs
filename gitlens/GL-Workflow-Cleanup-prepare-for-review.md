@@ -50,14 +50,14 @@ Commit Composer uses Git intelligence to understand the structure of your change
 As you review your branch, you open **Launchpad** to check for open pull requests, review feedback, or dependencies that might affect your changes, keeping everything in one place instead of jumping between tools.
 
 <figure>
-  <img src="/wp-content/uploads/workflows-2-cleaning-and-prep-launchpad.png" class="help-center-img img-bordered" alt="A screenshot of GitKraken Launchpad which shows issues assigned to the user" />
+  <img src="/wp-content/uploads/gl-workflows-2-cleaning-and-prep-launchpad-01-v2@2x.png" class="help-center-img img-bordered" alt="A screenshot of GitKraken Launchpad which shows issues assigned to the user" />
   <figcaption style="text-align: center; color: #888">Launchpad</figcaption>
 </figure>
 
 When an urgent fix on another branch comes up, you create a **Worktree** from GitLens, which lets you check out another branch in a separate folder without stashing or disturbing your current work. Throughout the process, you rely on advanced **Commit Graph context menu actions**, accessed by right-clicking commits, to compare branches, inspect diffs, and validate that your history tells a clear story.
 
 <figure>
-  <img src="/wp-content/uploads/workflows-2-cleaning-and-prep-context-menu.png" class="help-center-img img-bordered" alt="A screenshot of the Commit Graph context menu showing all of the options available" />
+  <img src="/wp-content/uploads/gl-workflows-2-cleaning-and-prep-context-me-01-v2@2x.png" class="help-center-img img-bordered" alt="A screenshot of the Commit Graph context menu showing all of the options available" />
   <figcaption style="text-align: center; color: #888">Commit Graph Context Menu</figcaption>
 </figure>
 

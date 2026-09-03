@@ -13,7 +13,7 @@ taxonomy:
 The GitLens Commit Graph is the main view in the GitLens sidebar, providing an interactive visualization of your repository history. Built on a high-performance rendering engine, it shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
+  <img src="/wp-content/uploads/gl-commit-graph-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
   <figcaption style="text-align: center; color: #888">Commit Graph overview in GitLens</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ You can also open it from the Command Palette:
 The Commit Graph opens in a new tab, where you can scroll through history and resize column widths.
 
 <figure>
-  <img src="/wp-content/uploads/show-commit-graph.gif" class="help-center-img img-bordered" alt="GIF showing how to open the Commit Graph from the Command Palette" />
+  <img src="/wp-content/uploads/gl-show-commit-graph-01-v2@2x.gif" class="help-center-img img-bordered" alt="GIF showing how to open the Commit Graph from the Command Palette" />
   <figcaption style="text-align: center; color: #888">Opening the Commit Graph from the Command Palette</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ At the top of the Commit Graph, you’ll see:
 You can enable automatic fetching with the `gitlens.graph.autoFetch` setting. When enabled, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, keeping your view up to date without manual refreshes.
 
 <figure>
-  <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" class="help-center-img img-bordered" alt="Repository details in the Commit Graph toolbar" />
+  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" class="help-center-img img-bordered" alt="Repository details in the Commit Graph toolbar" />
   <figcaption style="text-align: center; color: #888">Repository details in the Commit Graph toolbar</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ The sidebar contains several panels:
 - **Agent Sessions**: A Kanban-style panel for monitoring and managing active agent sessions. Branches with running agent sessions display status pills directly in the graph, so you can track agent activity at a glance.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-sidebar-01.png" class="help-center-img img-bordered" alt="The Commit Graph with the sidebar panel expanded, showing branches, remotes, stashes, tags, and worktrees in a tree view" />
+  <img src="/wp-content/uploads/gl-graph-sidebar-01-v2.png" class="help-center-img img-bordered" alt="The Commit Graph with the sidebar panel expanded, showing branches, remotes, stashes, tags, and worktrees in a tree view" />
   <figcaption style="text-align: center; color: #888">The Commit Graph sidebar with branches, remotes, and worktrees</figcaption>
 </figure>
 
@@ -111,7 +111,7 @@ The ref-finder widget provides a typeahead search for quickly jumping to any bra
 The Commit Graph displays a WIP bar at the top of the graph with one pill per worktree. Each pill shows the branch name, a dirty indicator when there are uncommitted changes, an unpushed arrow with ahead count when commits have not been pushed, and changed file counts on hover. Clicking a pill scrolls the graph to that worktree's WIP row.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-wip-bar-01.png" class="help-center-img img-bordered" alt="The Commit Graph WIP bar showing worktree pills with branch name and dirty indicator for uncommitted changes" />
+  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v2.png" class="help-center-img img-bordered" alt="The Commit Graph WIP bar showing worktree pills with branch name and dirty indicator for uncommitted changes" />
   <figcaption style="text-align: center; color: #888">WIP bar with worktree pills above the graph</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ The details panel supports multiple modes:
 - **Review mode**: Uses AI to analyze commits or working changes and surfaces severity-tagged insights such as potential bugs, security issues, or style concerns. You can configure separate AI models for compose and review using per-feature model scoping, and customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-details-panel-01.png" class="help-center-img img-bordered" alt="The Commit Graph with the embedded details panel on the right, showing commit message, author, and changed files for the selected commit" />
+  <img src="/wp-content/uploads/gl-graph-details-panel-01-v2.png" class="help-center-img img-bordered" alt="The Commit Graph with the embedded details panel on the right, showing commit message, author, and changed files for the selected commit" />
   <figcaption style="text-align: center; color: #888">Embedded details panel showing commit information</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 - **Colored reference pills**: merge target and other branch roles
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-gl-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
+  <img src="/wp-content/uploads/gl-column-gl-settings-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
   <figcaption style="text-align: center; color: #888">Commit Graph column settings</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ To switch layouts:
 The `gitlens.graph.editorOpeningBehavior` setting controls how files open from the graph — either in the active editor group or automatically based on context. You can also open the Commit Graph in a separate VS Code window using the **GitLens: Open Commit Graph in New Window** command.
 
 <figure>
-  <img src="/wp-content/uploads/gl-prefer-commit-graph-location.png" class="help-center-img img-bordered" alt="Commit Graph layout preference menu" />
+  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph layout preference menu" />
   <figcaption style="text-align: center; color: #888">Switching between Editor and Panel Layout</figcaption>
 </figure>
 
@@ -197,7 +197,7 @@ The `gitlens.graph.editorOpeningBehavior` setting controls how files open from t
 - Columns that become too narrow automatically switch to icons to preserve information.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" class="help-center-img img-bordered" alt="Compact Commit Graph layout with icons and avatars" />
+  <img src="/wp-content/uploads/gl-commit-graph-compact-graph-01-v2@2x.gif" class="help-center-img img-bordered" alt="Compact Commit Graph layout with icons and avatars" />
   <figcaption style="text-align: center; color: #888">Compact Graph and Author column with avatars</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ Use scroll markers to quickly jump to important points such as `HEAD` or refs. Y
 The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree WIP rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
 
 <figure>
-  <img src="/wp-content/uploads/gl-scroll-markers.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
+  <img src="/wp-content/uploads/gl-scroll-markers-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
   <figcaption style="text-align: center; color: #888">Scroll markers in the Commit Graph</figcaption>
 </figure>
 
@@ -228,7 +228,7 @@ Adjust Commit Graph settings from the Command Palette:
 Search for **GitLens: Open Settings**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph settings in VS Code" />
+  <img src="/wp-content/uploads/gl-commit-graph-settings-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph settings in VS Code" />
   <figcaption style="text-align: center; color: #888">Opening Commit Graph settings</figcaption>
 </figure>
 
@@ -257,7 +257,7 @@ You can also:
 - Jump to the **first or last result** by holding <kbd>Shift</kbd> while clicking the arrow icons.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-search-moving-arrow-keys-02-v2@2x.gif" class="help-center-img img-bordered" alt="Navigating commit search results with arrow keys" />
+  <img src="/wp-content/uploads/gl-commit-search-moving-arrow-keys-02-v3@2x.gif" class="help-center-img img-bordered" alt="Navigating commit search results with arrow keys" />
   <figcaption style="text-align: center; color: #888">Navigating commit search results</figcaption>
 </figure>
 
@@ -287,7 +287,7 @@ Additional options:
 You can right-click a branch, commit, tag, author, or column header (Author, Commit Date/Time, or SHA) to access context menu actions.
 
 <figure>
-  <img src="/wp-content/uploads/gl-context-menu.gif" class="help-center-img img-bordered" alt="Context menu in Commit Graph with options for branches, commits, and authors" />
+  <img src="/wp-content/uploads/gl-context-menu-01-v2@2x.gif" class="help-center-img img-bordered" alt="Context menu in Commit Graph with options for branches, commits, and authors" />
   <figcaption style="text-align: center; color: #888">Commit Graph context menu options</figcaption>
 </figure>
 
@@ -324,7 +324,7 @@ For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any bra
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
 <figure>
-  <img src="/wp-content/uploads/pull-request-icon.png" class="help-center-img img-bordered" alt="Commit Graph branch showing pull request icon" />
+  <img src="/wp-content/uploads/gl-pull-request-icon-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph branch showing pull request icon" />
   <figcaption style="text-align: center; color: #888">Pull request icon in Commit Graph</figcaption>
 </figure>
 
@@ -337,7 +337,7 @@ The Commit Graph shows refs to your remotes, branches, and tags.
 - To show them again, hover over the **Hide** option at the top of the Commit Graph and select the desired refs.
 
 <figure>
-  <img src="/wp-content/uploads/gl-hide-refs.gif" class="help-center-img img-bordered" alt="Hiding refs from the Commit Graph view" />
+  <img src="/wp-content/uploads/gl-hide-refs-01-v2@2x.gif" class="help-center-img img-bordered" alt="Hiding refs from the Commit Graph view" />
   <figcaption style="text-align: center; color: #888">Hiding refs in the Commit Graph</figcaption>
 </figure>
 
@@ -354,7 +354,7 @@ Additional options let you hide or show:
 You can also dim merge commit rows for clarity.
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
   <figcaption style="text-align: center; color: #888">Commit Graph filter options</figcaption>
 </figure>
 
@@ -370,12 +370,12 @@ The Minimap provides a high-level overview of repository activity. It shows comm
 - The `gitlens.graph.minimap.defaultVisibility` setting controls when the minimap appears: `hidden`, `onSearch` (default, shows during search), or `always`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-2.png" class="help-center-img img-bordered" alt="Commit Graph Minimap enabled in the toolbar" />
+  <img src="/wp-content/uploads/gl-minimap-2-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph Minimap enabled in the toolbar" />
   <figcaption style="text-align: center; color: #888">Commit Graph Minimap</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-gl-settings-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph Minimap settings with commits or lines changed options" />
+  <img src="/wp-content/uploads/gl-minimap-gl-settings-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph Minimap settings with commits or lines changed options" />
   <figcaption style="text-align: center; color: #888">Minimap settings and options</figcaption>
 </figure>
 

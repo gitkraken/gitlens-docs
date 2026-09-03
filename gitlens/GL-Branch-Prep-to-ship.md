@@ -18,14 +18,14 @@ Start in the Commit Graph to understand your branch in the context of the reposi
 See HEAD, upstream, merge target, incoming work, and ahead and behind status together so you can quickly understand what has changed and what needs attention before moving forward.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 ## 2. Compare Before You Merge
 Before making changes to your branch history, use Compare to understand exactly how your work differs from its target.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compare.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compare-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 From the Commit Graph, compare branches, commits, revisions, and working changes to see what you’re introducing and identify anything that needs another look.
@@ -38,7 +38,7 @@ Development rarely produces perfectly organized commits on the first pass.
 Use Commit Composer to turn working changes into clean, logical commits that make the work easier to understand and review.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compose.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compose-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 With Compose, you can:
@@ -57,7 +57,7 @@ When upstream work has moved ahead, use AI-powered Rebase to bring your branch u
 Instead of manually stepping through a traditional interactive rebase, GitLens can automate the rebase process with AI while keeping you in control of the result.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-auto-ai-rebase-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 This helps reduce the repetitive work involved in updating and cleaning up your branch before it ships.
@@ -74,7 +74,7 @@ When conflicts occur, GitLens keeps resolution connected to the same repository 
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-rebase-resolve.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-auto-rebase-resolve-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 You can always make the final decision or resolve the conflict manually when needed.
 
@@ -83,7 +83,7 @@ Once your branch is updated and conflicts are resolved, give the resulting chang
 Use AI-powered Review to surface meaningful findings, inspect important changes, and validate the work before opening or updating your pull request.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 If something needs another pass, address it before the branch moves forward.

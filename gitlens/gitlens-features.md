@@ -15,7 +15,7 @@ Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKr
 ## Revision Navigation
 
 <figure>
-  <img src="/wp-content/uploads/revision-navigation.gif" alt="GitLens revision navigation animated demo" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-revision-navigation-01-v2@2x.gif" alt="GitLens revision navigation animated demo" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Step through revisions using built-in navigation commands</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Available commands:
 ## Current Line Blame
 
 <figure>
-  <img src="/wp-content/uploads/gl-current-line-blame-01-v2@2x.png" alt="GitLens current line blame showing inline annotation" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-current-line-blame-01-v3@2x.png" alt="GitLens current line blame showing inline annotation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Blame annotation showing author, date, and commit message</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ You can control visibility with the command:
 ## Git CodeLens
 
 <figure>
-  <img src="/wp-content/uploads/gl-code-lens-01-v2@2x.png" alt="GitLens CodeLens annotations above file and code blocks" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-code-lens-01-v3@2x.png" alt="GitLens CodeLens annotations above file and code blocks" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Inline Git insights for authorship and history</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ Click behavior for each CodeLens is fully [customizable](/gitlens/settings/#git-
 ## Status Bar Blame
 
 <figure>
-  <img src="/wp-content/uploads/status-bar.png" alt="Status bar showing Git blame annotation with author and date" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-status-bar-01-v2@2x.png" alt="Status bar showing Git blame annotation with author and date" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Quick access to blame details in the VS Code status bar</figcaption>
 </figure>
 
@@ -143,14 +143,14 @@ GitLens provides rich, [customizable](/gitlens/settings/#hover-settings) hover a
 ### Current Line Hovers
 
 <figure>
-  <img src="/wp-content/uploads/hovers-current-line.png" alt="Current line hover in GitLens" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-current-line-01-v2@2x.png" alt="Current line hover in GitLens" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Git blame hover shown over the current line</figcaption>
 </figure>
 
 #### Details Hover
 
 <figure>
-  <img src="/wp-content/uploads/hovers-current-line-details.png" alt="GitLens current line details hover with commit info and actions" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-current-line-details-01-v2@2x.png" alt="GitLens current line details hover with commit info and actions" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Expanded commit info and quick actions</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ Features:
 #### Changes (Diff) Hover
 
 <figure>
-  <img src="/wp-content/uploads/hovers-current-line-changes.png" alt="GitLens diff hover showing current vs. previous line version" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-current-line-changes-01-v2@2x.png" alt="GitLens diff hover showing current vs. previous line version" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View the previous version of a changed line</figcaption>
 </figure>
 
@@ -178,7 +178,7 @@ Displays the previous version of the current line.
 ### Annotation Hovers
 
 <figure>
-  <img src="/wp-content/uploads/hovers-annotations.png" alt="GitLens annotation hover example" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-annotations-01-v2@2x.png" alt="GitLens annotation hover example" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Hover insights while annotating with blame</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ Accessible when blame annotations are active, these hovers provide the same deta
 #### Details Hover
 
 <figure>
-  <img src="/wp-content/uploads/hovers-annotations-details.png" alt="Details hover during annotation" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-annotations-details-01-v2@2x.png" alt="Details hover during annotation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Commit metadata and action menu per line</figcaption>
 </figure>
 
@@ -200,7 +200,7 @@ Shows rich commit details per line with:
 #### Changes (Diff) Hover
 
 <figure>
-  <img src="/wp-content/uploads/hovers-annotations-changes.png" alt="Changes hover during annotation" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hovers-annotations-changes-01-v2@2x.png" alt="Changes hover during annotation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Inline diff hover showing previous line content</figcaption>
 </figure>
 
@@ -215,7 +215,7 @@ Reveals the previous version of each annotated line.
 ## File Blame
 
 <figure>
-  <img src="/wp-content/uploads/gutter-blame.png" alt="GitLens file blame annotations in the editor gutter" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gutter-blame-01-v2@2x.png" alt="GitLens file blame annotations in the editor gutter" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View who last modified each line and when</figcaption>
 </figure>
 
@@ -238,7 +238,7 @@ File Blame adds [customizable](/gitlens/settings/#gutter-blame-settings), [thema
 ## File Changes
 
 <figure>
-  <img src="/wp-content/uploads/gutter-blame.png" alt="File changes annotations highlighting modified lines" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gutter-blame-01-v2@2x.png" alt="File changes annotations highlighting modified lines" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Highlight unpublished or most recent changes</figcaption>
 </figure>
 
@@ -258,7 +258,7 @@ This feature is [customizable](/gitlens/settings/#file-changes-settings) and [th
 ## File Heatmap
 
 <figure>
-  <img src="/wp-content/uploads/gutter-heatmap.png" alt="GitLens file heatmap on the right gutter of the editor" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gutter-heatmap-01-v2@2x.png" alt="GitLens file heatmap on the right gutter of the editor" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Visualize how recently each line was modified</figcaption>
 </figure>
 
@@ -287,7 +287,7 @@ When a pull request is open, you can make suggestions that collaborators can rev
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-code-suggest.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-code-suggest-01-v2@2x.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Suggest changes beyond just modified lines</figcaption>
 </figure>
 
@@ -369,7 +369,7 @@ To disable Cloud Patches, change the value to `false`.
 Cloud Patches are accessible from the **Cloud Patches** view in the GitLens sidebar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-patch-create.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-patch-create-01-v2@2x.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Create a patch directly from your sidebar</figcaption>
 </figure>
 
@@ -383,7 +383,7 @@ You can create a Cloud Patch from:
 To create one, use **Share as Cloud Patch** from the command palette or the **Share** submenu in applicable GitLens views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" alt="Share as Cloud Patch in context menu" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-create-cloud-patch-example-01-v2@2x.png" alt="Share as Cloud Patch in context menu" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Share patches from a variety of Git sources</figcaption>
 </figure>
 
@@ -416,7 +416,7 @@ You can also apply Cloud Patches directly from a shared URL. Simply click or pas
 To delete a Cloud Patch, right-click it and choose **Delete Cloud Patch...**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-delete-cloud-patch.png" alt="Delete option in GitLens Cloud Patch view" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-delete-cloud-patch-01-v2@2x.png" alt="Delete option in GitLens Cloud Patch view" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Remove unused patches with one click</figcaption>
 </figure>
 
@@ -434,7 +434,7 @@ Learn how to configure this in our [Self-Hosting Guide](/gk-dev/gk-dev-home/#sel
 The Commit Graph is the main view in the GitLens sidebar, providing an interactive visualization of your repository history. Built on a high-performance rendering engine, it shows commits, branches, and contributors in one place, helping you understand project activity and make informed decisions quickly.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-01-v2@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-01-v3@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Explore your full Git history at a glance</figcaption>
 </figure>
 
@@ -451,7 +451,7 @@ The Commit Graph opens automatically when you click the GitLens icon in the Acti
    `GitLens: Show Commit Graph`
 
 <figure>
-  <img src="/wp-content/uploads/show-commit-graph.gif" alt="Using the Command Palette to open the GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-show-commit-graph-01-v2@2x.gif" alt="Using the Command Palette to open the GitLens Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Launch the graph directly from the Command Palette</figcaption>
 </figure>
 
@@ -471,7 +471,7 @@ From here, you can:
 - Click **Fetch** to update commit data
 
 <figure>
-  <img src="/wp-content/uploads/graph-info.png" srcset="/wp-content/uploads/graph-info@2x.png" alt="Commit Graph header with repo name, branch, and fetch option" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" alt="Commit Graph header with repo name, branch, and fetch option" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Access key branch controls directly from the header</figcaption>
 </figure>
 
@@ -496,7 +496,7 @@ All columns in the Commit Graph are fully customizable:
 - The **Changes** column visualizes added and deleted lines per commit. The `gitlens.graph.changesColumn.mode` setting controls the display style: `numbers` (numeric counts), `squares` (colored blocks), `bar` (horizontal bar), or `bipolar` (split additions/deletions bar).
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-gl-settings-01-v2@2x.png" alt="Column customization context menu in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-column-gl-settings-01-v3@2x.png" alt="Column customization context menu in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize visible columns with right-click options</figcaption>
 </figure>
 
@@ -517,7 +517,7 @@ To switch layouts:
 You can even open both layouts simultaneously.
 
 <figure>
-  <img src="/wp-content/uploads/gl-prefer-commit-graph-location.png" alt="Layout settings for Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v2@2x.png" alt="Layout settings for Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Choose where the graph displays: Panel or Editor</figcaption>
 </figure>
 
@@ -534,7 +534,7 @@ For smaller screens or simplified views:
 To enable the compact graph layout, right-click the **Graph** column header and select **Compact Graph Column Layout**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-compact-graph.gif" alt="Compact layout in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-compact-graph-01-v2@2x.gif" alt="Compact layout in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Enable compact mode for cleaner visuals</figcaption>
 </figure>
 
@@ -553,7 +553,7 @@ They provide quick navigation to key locations like `HEAD` or specific refs.
 You can toggle scroll markers in [Commit Graph settings](/gitlens/gitlens-features/#settings).
 
 <figure>
-  <img src="/wp-content/uploads/gl-scroll-markers.png" alt="Scroll markers in the GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-scroll-markers-01-v2@2x.png" alt="Scroll markers in the GitLens Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Navigate instantly using visual markers</figcaption>
 </figure>
 
@@ -569,7 +569,7 @@ You can adjust Commit Graph preferences through the GitLens Settings panel.
    `GitLens: Open Settings`
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-settings-01-v2@2x.png" alt="Commit Graph settings in GitLens" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-settings-01-v3@2x.png" alt="Commit Graph settings in GitLens" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Access GitLens settings from the Command Palette</figcaption>
 </figure>
 
@@ -607,7 +607,7 @@ Use keyboard shortcuts to navigate results:
 - Hold <kbd>Shift</kbd> and click arrows to jump to first or last match
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-search-moving-arrow-keys-02-v2@2x.gif" alt="Navigating through commit search results" class="img-responsive center img-bordered">
+  <img src="/wp-content/uploads/gl-commit-search-moving-arrow-keys-02-v3@2x.gif" alt="Navigating through commit search results" class="img-responsive center img-bordered">
   <figcaption style="text-align: center; color: #888">Jump through results using keyboard or search controls</figcaption>
 </figure>
 
@@ -629,7 +629,7 @@ You can also refine results with:
 The Commit Graph supports right-click actions on branches, commits, tags, authors, and column headers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-context-menu.gif" alt="Right-click menu on commit for extra options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-context-menu-01-v2@2x.gif" alt="Right-click menu on commit for extra options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Use context menus for advanced Git actions</figcaption>
 </figure>
 
@@ -654,14 +654,14 @@ Compare mode lets you view comparisons directly inside the Commit Graph rather t
 Compose mode integrates commit composition directly within the Commit Graph. Select the WIP row to see your working changes, then switch to Compose mode in the details panel to create commits from your changes or restructure branch history using AI.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v4@2x.png" alt="Commit Graph in Compose mode showing the commit composer panel with message input and staged files" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v5@2x.png" alt="Commit Graph in Compose mode showing the commit composer panel with message input and staged files" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Compose mode in the Commit Graph details panel</figcaption>
 </figure>
 
 Click the **Compose** button to generate an AI-assisted commit message based on your staged changes, or write your own message manually.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v5@2x.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v6@2x.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit message populated in the composer</figcaption>
 </figure>
 
@@ -679,7 +679,7 @@ For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with
 2. The icon will appear next to branches in the graph once linked.
 
 <figure>
-  <img src="/wp-content/uploads/pull-request-icon.png" alt="Pull request icon displayed in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-pull-request-icon-01-v2@2x.png" alt="Pull request icon displayed in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Active pull requests are shown with branch-level icons</figcaption>
 </figure>
 
@@ -693,7 +693,7 @@ You can hide individual remotes, branches, or tags from the Commit Graph to redu
 - **To show again**: Use the **Hide** panel at the top of the graph and reselect the ref.
 
 <figure>
-  <img src="/wp-content/uploads/gl-hide-refs.gif" alt="Hiding Git refs in the Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-hide-refs-01-v2@2x.gif" alt="Hiding Git refs in the Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Use the “Hide” option to declutter the graph</figcaption>
 </figure>
 
@@ -710,7 +710,7 @@ You can further control what is shown using the filter dropdown:
 - Option to **dim merge commits**
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v2@2x.png" alt="Commit Graph filter options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v3@2x.png" alt="Commit Graph filter options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize your view with filter presets</figcaption>
 </figure>
 
@@ -725,7 +725,7 @@ The **Minimap** gives you a visual summary of repository activity at a glance:
 - Toggle it via the **Minimap icon** in the top right
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-2.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-minimap-2-01-v2@2x.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Quickly navigate with the Commit Graph Minimap</figcaption>
 </figure>
 
@@ -740,7 +740,7 @@ Customize the Minimap via the **graph icon dropdown**:
   - Markers for branches, tags, stashes, search results
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-gl-settings-01-v2@2x.png" alt="Minimap settings in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-minimap-gl-settings-01-v3@2x.png" alt="Minimap settings in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Choose your preferred Minimap display and markers</figcaption>
 </figure>
 
@@ -768,7 +768,7 @@ Customize the Minimap via the **graph icon dropdown**:
 Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="Launchpad PR overview" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" alt="Launchpad PR overview" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View and act on PRs based on current status</figcaption>
 </figure>
 
@@ -784,7 +784,7 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 - Or select the **Pull Request status bar item** in VS Code
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-launchpad-01-v2@2x.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-access-launchpad-01-v3@2x.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open Launchpad from the status bar or Command Palette</figcaption>
 </figure>
 
@@ -808,14 +808,14 @@ Click a PR to:
 - Switch to the branch or open in a worktree
 
 <figure>
-  <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-view-pull-request-01-v2@2x.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Interact with pull requests directly in VS Code</figcaption>
 </figure>
 
 You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from the PR action menu.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-code-suggest-01-v2@2x.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
@@ -840,7 +840,7 @@ Use the snooze icon <i class="fa-solid fa-snooze"></i> to move less urgent PRs i
 Click the icon again to unpin or unsnooze as needed.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" alt="Pin or snooze pull requests" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze-01-v2@2x.png" alt="Pin or snooze pull requests" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Pin or snooze PRs to manage your workflow</figcaption>
 </figure>
 
@@ -871,7 +871,7 @@ To open Visual History:
 - From the **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
 
 <figure>
-  <img src="/wp-content/uploads/visual-file-history.png" alt="Visual File History overview" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-visual-file-history-01-v2@2x.png" alt="Visual File History overview" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Track authorship, size, and timing of file changes</figcaption>
 </figure>
 
@@ -909,7 +909,7 @@ GitKraken AI enhances your development workflow with automated commit messages, 
 Automatically generate descriptive commit messages based on staged changes.
 
 <figure>
-  <img src="/wp-content/uploads/gl-ai-generated-commit-message-01-v2@2x.gif" alt="Generating AI commit messages" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-ai-generated-commit-message-01-v3@2x.gif" alt="Generating AI commit messages" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit messages from staged changes</figcaption>
 </figure>
 
@@ -946,7 +946,7 @@ Automatically generate meaningful stash descriptions to make your stashes easier
 Let GitKraken AI help explain complex changes across your repo with natural language summaries.
 
 <figure>
-  <img src="/wp-content/uploads/gl-ai-branch-summary-01-v2@2x.png" alt="AI branch summary explanation" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-ai-branch-summary-01-v3@2x.png" alt="AI branch summary explanation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI summaries in rendered markdown for improved clarity</figcaption>
 </figure>
 
@@ -1000,7 +1000,7 @@ Automatically generate detailed and structured changelogs from a set of selected
 Generate well-structured commits from your working tree changes using AI analysis. The **Generate Commits** command analyzes your staged and unstaged changes, groups them logically, and creates commits with descriptive messages. A first-time confirmation dialog explains what the command will do, and an **Undo** button is available after generation to revert if needed.
 
 <figure>
-  <img src="/wp-content/uploads/gl-ai-generated-commit-message-01.gif" alt="AI commit message generation flow showing staged changes then an AI-generated message appearing" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-ai-generated-commit-message-01-v2.gif" alt="AI commit message generation flow showing staged changes then an AI-generated message appearing" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Generate AI commit messages from the Source Control view</figcaption>
 </figure>
 
@@ -1028,7 +1028,7 @@ The Commit Composer has evolved from a simple one-step process into a comprehens
 Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v4@2x.png" alt="Commit Composer view showing draft commits with AI-generated messages and staged file grouping" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v5@2x.png" alt="Commit Composer view showing draft commits with AI-generated messages and staged file grouping" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">The Commit Composer drafting view</figcaption>
 </figure>
 
@@ -1043,7 +1043,7 @@ When composing commits, GitLens now creates "draft" commits that you can review,
 - **Review and edit**: Manually tweak any commit message or approach
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v5@2x.png" alt="Commit Composer with AI-composed commit message populated and ready for review" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v6@2x.png" alt="Commit Composer with AI-composed commit message populated and ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-composed commit message ready for review</figcaption>
 </figure>
 
@@ -1056,12 +1056,12 @@ You can launch the new Commit Composer view from several places in GitLens:
 - **Command palette**: Search for "Compose Commits"
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-composer-1-17-4-01-v2@2x.png" alt="Commit Graph toolbar showing the Compose button entry point" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-access-composer-1-17-4-01-v3@2x.png" alt="Commit Graph toolbar showing the Compose button entry point" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Access Commit Composer from the graph toolbar</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-composer-2-17-4-01-v2@2x.png" alt="Commit Graph WIP details panel with Compose and Review mode toggle chips" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-access-composer-2-17-4-01-v3@2x.png" alt="Commit Graph WIP details panel with Compose and Review mode toggle chips" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Or switch to Compose mode in the WIP details panel</figcaption>
 </figure>
 
@@ -1074,7 +1074,7 @@ Whether you prefer to let AI handle the heavy lifting or want granular control o
 Commit Composer now lets you clean up and reorganize commits on existing branches, making it perfect for preparing pull requests or refining your commit history before pushing.
 
 <figure>
-  <img src="/wp-content/uploads/gl-17-7-recompose-branch-01-v2@2x.png" alt="Commit Graph showing branch topology for AI-assisted branch recomposition" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-17-7-recompose-branch-01-v3@2x.png" alt="Commit Graph showing branch topology for AI-assisted branch recomposition" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Recompose an entire branch from the Commit Graph</figcaption>
 </figure>
 
@@ -1101,7 +1101,7 @@ Commit Composer now handles edge cases that previously blocked composition:
 Commit Composer now lets you recompose specific commits within a branch, giving you precise control over cleaning up your commit history.
 
 <figure>
-  <img src="/wp-content/uploads/gl-17-8-recompose-selected-commits-01-v3@2x.png" alt="Commit Graph showing selective commit recomposition with multiple commits selected" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-17-8-recompose-selected-commits-01-v4@2x.png" alt="Commit Graph showing selective commit recomposition with multiple commits selected" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Select specific commits to recompose</figcaption>
 </figure>
 
@@ -1112,7 +1112,7 @@ Select multiple contiguous commits on the same branch using <kbd>Shift</kbd> or 
 Commit Composer is also more discoverable, with a new button on the WIP row in the Commit Graph that opens the composer for all working directory changes. Additionally, when rebasing, you can now switch directly into Commit Composer from the Rebase Editor, canceling your rebase to let AI handle the composition instead.
 
 <figure>
-  <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v3@2x.png" alt="WIP row in the Commit Graph with Compose button for working directory changes" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v4@2x.png" alt="WIP row in the Commit Graph with Compose button for working directory changes" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open Commit Composer from the WIP row</figcaption>
 </figure>
 
@@ -1132,7 +1132,7 @@ These commands are available from the Commit Graph context menu, branch context 
 ## Git Command Palette
 
 <figure>
-  <img src="/wp-content/uploads/gl-git-command-palette-01-v2@2x.png" alt="GitLens Git Command Palette showing guided step-by-step command options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-git-command-palette-01-v3@2x.png" alt="GitLens Git Command Palette showing guided step-by-step command options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Guided Git commands through the Command Palette</figcaption>
 </figure>
 
@@ -1144,12 +1144,12 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 
 - **Show Branch History** (`gitlens.showQuickBranchHistory`): Explore the commit history of any selected branch.
   
-  <img src="/wp-content/uploads/menu-branch-history.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-branch-history-01-v2@2x.png" class="help-center-img img-bordered">
 
 - **Show Current Branch History** (`gitlens.showQuickRepoHistory`): View the commit history of your current branch.
 - **Show File History** (`gitlens.showQuickFileHistory`): Access the full commit history of the current file. The File History view supports a **contributors mode** (`gitlens.views.fileHistory.mode`) that shows all contributors to the file instead of the commit list.
 
-  <img src="/wp-content/uploads/menu-file-history.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-file-history-01-v2@2x.png" class="help-center-img img-bordered">
 
 - **Search Commits** (`gitlens.showCommitSearch`): Use a quick pick menu to search by:
 
@@ -1159,27 +1159,27 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
   - File path or glob: `:<path/glob>`
   - Patch changes: `~<pattern>`
 
-  <img src="/wp-content/uploads/menu-commit-search.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-search-01-v2@2x.png" class="help-center-img img-bordered">
 
   Refer to the [Git log documentation](https://git-scm.com/docs/git-log) for advanced usage.
 
 - **Show Commit Details** (`gitlens.showQuickCommitDetails`): Review commit information and actions.
 
-  <img src="/wp-content/uploads/menu-commit-details.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-details-01-v2@2x.png" class="help-center-img img-bordered">
 
 - **Show Line Commit Details** (`gitlens.showQuickCommitFileDetails`): Explore the file's commit and take action on it.
 
-  <img src="/wp-content/uploads/menu-commit-file-details.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-file-details-01-v2@2x.png" class="help-center-img img-bordered">
 
 
 ### Quick Stash Access
 
 <figure>
-  <img src="/wp-content/uploads/menu-stash-list.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-stash-list-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/menu-stash-details.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-stash-details-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 - Adds a _Show Stashes_ command (`gitlens.showQuickStashList`) to show a quick pick menu to explore your stashes.
@@ -1191,7 +1191,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 - Adds a _Show Repository Status_ command (`gitlens.showQuickRepoStatus`) to show a quick pick menu for visualizing the current repository status.
 
 <figure>
-  <img src="/wp-content/uploads/menu-repo-status.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-repo-status-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 ---
@@ -1199,7 +1199,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 ## Interactive Rebase Editor
 
 <figure>
-  <img src="/wp-content/uploads/rebase.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-rebase-01-v2@2x.gif" class="help-center-img img-bordered">
 </figure>
 
 Adds a user-friendly interactive rebase editor to easily configure an interactive rebase session:
@@ -1271,14 +1271,14 @@ Access it from the Command Palette: `GitLens: Manage Allowed Signers`
 Use autolinks to convert external references—such as Jira issues or Zendesk tickets—into clickable links directly from commit messages.
 
 <figure>
-  <img src="/wp-content/uploads/gl-autolinks-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-autolinks-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example of autolinks in commit messages</figcaption>
 </figure>
 
 ## Terminal Links
 
 <figure>
-  <img src="/wp-content/uploads/terminal-links.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-terminal-links-01-v2@2x.gif" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Autolinks in the integrated terminal</figcaption>
 </figure>
 
@@ -1332,7 +1332,7 @@ To connect an integration:
 3. Alternatively, open **GitKraken Account** from the GitLens Activity Bar and select **Integrations**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Connect integrations from the GitKraken dashboard</figcaption>
 </figure>
 
@@ -1341,7 +1341,7 @@ If you're not already signed in, you'll be prompted to log in to your GitKraken 
 Finish the process by selecting **Complete Setup** to return to VS Code and begin using the integrations.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage your connected integrations</figcaption>
 </figure>
 
@@ -1357,7 +1357,7 @@ GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab
 Once authenticated, GitLens enhances autolinks in hovers with additional context. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, and a summary of pull request or issue details. Sidebar views for commits or branches also show this contextual information.
 
 <figure>
-  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Enhanced hover integration with GitHub Enterprise and GitLab Self-Managed</figcaption>
 </figure>
 
@@ -1386,7 +1386,7 @@ Or
    - If this option is missing, verify the format in your `settings.json` matches the example above.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Connect to a GitHub Enterprise or GitLab Self-Managed instance</figcaption>
 </figure>
 
@@ -1401,7 +1401,7 @@ Or
 The Jira Integration, connected through your GitKraken Account, enables Jira [Autolinks](/gitlens/gitlens-features#autolinks) wherever autolinks are supported in GitLens. Once connected, GitLens automatically converts Jira issue keys (e.g., `ABC-123`) in commit messages into clickable links.
 
 <figure>
-  <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-jira-integration-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Jira autolinks in commit messages</figcaption>
 </figure>
 
@@ -1417,7 +1417,7 @@ To connect the integration:
 4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Connect Jira from GitKraken Cloud Integrations</figcaption>
 </figure>
 
@@ -1535,7 +1535,7 @@ The agent settings panel provides a centralized view for managing agent configur
 ## Menus & Toolbars
 
 <figure>
-  <img src="/wp-content/uploads/menus.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menus-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">GitLens menu and toolbar options</figcaption>
 </figure>
 
@@ -1544,7 +1544,7 @@ GitLens provides [customizable](/gitlens/gitlens-settings/#elementor-toc__headin
 For example, disabling **Add to the editor group toolbar** removes those items from the toolbar:
 
 <figure>
-  <img src="/wp-content/uploads/menus-example.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menus-example-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Editor group toolbar items removed</figcaption>
 </figure>
 

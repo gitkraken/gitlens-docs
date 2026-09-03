@@ -36,7 +36,7 @@ To enable or disable Cloud Patches per client:
 You can manage Cloud Patches from the **Cloud Patches view** in the GitLens sidebar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-patch-create.webp" class="help-center-img img-bordered" alt="Creating a Cloud Patch from the GitLens sidebar" />
+  <img src="/wp-content/uploads/gl-cloud-patch-create-01-v2@2x.webp" class="help-center-img img-bordered" alt="Creating a Cloud Patch from the GitLens sidebar" />
   <figcaption style="text-align: center; color: #888">Creating a Cloud Patch</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ A Cloud Patch can be created from **Working Changes, Commits, Stashes, or Compar
 - The **Share** submenu in applicable GitLens views  
 
 <figure>
-  <img src="/wp-content/uploads/gl-create-cloud-patch-example.png" class="help-center-img img-bordered" alt="Creating a Cloud Patch from working changes in GitLens" />
+  <img src="/wp-content/uploads/gl-create-cloud-patch-example-01-v2@2x.png" class="help-center-img img-bordered" alt="Creating a Cloud Patch from working changes in GitLens" />
   <figcaption style="text-align: center; color: #888">Example of creating a Cloud Patch</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Cloud Patches shared with you appear under **Shared with Me** in the Cloud Patch
 2. Select **Delete Cloud Patch…**  
 
 <figure>
-  <img src="/wp-content/uploads/gl-delete-cloud-patch.png" class="help-center-img img-bordered" alt="Deleting a Cloud Patch in GitLens" />
+  <img src="/wp-content/uploads/gl-delete-cloud-patch-01-v2@2x.png" class="help-center-img img-bordered" alt="Deleting a Cloud Patch in GitLens" />
   <figcaption style="text-align: center; color: #888">Deleting a Cloud Patch</figcaption>
 </figure>
 
