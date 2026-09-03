@@ -32,7 +32,7 @@ You can also open it from the Command Palette:
 The Commit Graph opens in a new tab, where you can scroll through history and resize column widths.
 
 <figure>
-  <img src="/wp-content/uploads/gl-show-commit-graph-01-v2@2x.gif" class="help-center-img img-bordered" alt="GIF showing how to open the Commit Graph from the Command Palette" />
+  <img src="/wp-content/uploads/show-commit-graph.gif" class="help-center-img img-bordered" alt="GIF showing how to open the Commit Graph from the Command Palette" />
   <figcaption style="text-align: center; color: #888">Opening the Commit Graph from the Command Palette</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 - **Colored reference pills**: merge target and other branch roles
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-gl-settings-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
+  <img src="/wp-content/uploads/gl-column-settings.png" class="help-center-img img-bordered" alt="Commit Graph column settings menu showing toggle options" />
   <figcaption style="text-align: center; color: #888">Commit Graph column settings</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ Use scroll markers to quickly jump to important points such as `HEAD` or refs. Y
 The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree WIP rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
 
 <figure>
-  <img src="/wp-content/uploads/gl-scroll-markers-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
+  <img src="/wp-content/uploads/gl-scroll-markers.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
   <figcaption style="text-align: center; color: #888">Scroll markers in the Commit Graph</figcaption>
 </figure>
 
@@ -287,7 +287,7 @@ Additional options:
 You can right-click a branch, commit, tag, author, or column header (Author, Commit Date/Time, or SHA) to access context menu actions.
 
 <figure>
-  <img src="/wp-content/uploads/gl-context-menu-01-v2@2x.gif" class="help-center-img img-bordered" alt="Context menu in Commit Graph with options for branches, commits, and authors" />
+  <img src="/wp-content/uploads/gl-context-menu.gif" class="help-center-img img-bordered" alt="Context menu in Commit Graph with options for branches, commits, and authors" />
   <figcaption style="text-align: center; color: #888">Commit Graph context menu options</figcaption>
 </figure>
 
@@ -370,7 +370,7 @@ The Minimap provides a high-level overview of repository activity. It shows comm
 - The `gitlens.graph.minimap.defaultVisibility` setting controls when the minimap appears: `hidden`, `onSearch` (default, shows during search), or `always`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-2-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph Minimap enabled in the toolbar" />
+  <img src="/wp-content/uploads/gl-minimap-2.png" class="help-center-img img-bordered" alt="Commit Graph Minimap enabled in the toolbar" />
   <figcaption style="text-align: center; color: #888">Commit Graph Minimap</figcaption>
 </figure>
 

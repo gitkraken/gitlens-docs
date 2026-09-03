@@ -13,7 +13,7 @@ taxonomy:
 The GitLens Launchpad helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" class="help-center-img img-bordered" alt="Launchpad view showing pull requests organized by status" />
+  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="help-center-img img-bordered" alt="Launchpad view showing pull requests organized by status" />
   <figcaption style="text-align: center; color: #888">GitLens Launchpad pull request overview</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ The GitLens Launchpad helps you manage pull requests by status, so you can quick
 2. Search for **GitLens: Open Launchpad**, or select **Pull Request** from the status bar in VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-launchpad-01-v3@2x.gif" class="help-center-img img-bordered" alt="Opening the Launchpad from the Command Palette in VS Code" />
+  <img src="/wp-content/uploads/gl-access-launchpad.gif" class="help-center-img img-bordered" alt="Opening the Launchpad from the Command Palette in VS Code" />
   <figcaption style="text-align: center; color: #888">Accessing the Launchpad</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Select a pull request to:
 - Switch to the branch or worktree
 
 <figure>
-  <img src="/wp-content/uploads/gl-view-pull-request-01-v2@2x.png" class="help-center-img img-bordered" alt="Pull request details in the Launchpad" />
+  <img src="/wp-content/uploads/gl-view-pull-request.png" class="help-center-img img-bordered" alt="Pull request details in the Launchpad" />
   <figcaption style="text-align: center; color: #888">Viewing pull request details</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Select a pull request to:
 You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from pull requests in the Launchpad.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-code-suggest-01-v2@2x.png" class="help-center-img img-bordered" alt="Launchpad pull request actions with Code Suggest option" />
+  <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="help-center-img img-bordered" alt="Launchpad pull request actions with Code Suggest option" />
   <figcaption style="text-align: center; color: #888">Starting or reviewing Code Suggestions</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-sugge
 - To unpin or unsnooze, select the same icon again.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze-01-v2@2x.png" class="help-center-img img-bordered" alt="Pinning or snoozing pull requests in the Launchpad" />
+  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" class="help-center-img img-bordered" alt="Pinning or snoozing pull requests in the Launchpad" />
   <figcaption style="text-align: center; color: #888">Pinning and snoozing pull requests</figcaption>
 </figure>
 

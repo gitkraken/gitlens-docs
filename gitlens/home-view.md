@@ -13,7 +13,7 @@ From here, you can understand what’s happening across your repository, coordin
 
 **One Graph. Your development workflow, end to end.**
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ The Commit Graph gives you both the big picture and the context to decide what t
 As development spreads across multiple branches, worktrees, and coding agents, keeping track of what is happening becomes more challenging. The Commit Graph keeps these parallel streams visible and connected to the Git context behind them.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktrees-tab-open-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Worktrees-tab-open.png" class="help-center-img img-bordered">
 </figure>
 
 Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
@@ -86,7 +86,7 @@ See human and agent work happening across branches, worktrees, and sessions, and
 Review human or agent-generated changes with AI-powered Review. Surface meaningful findings, ask follow-up questions, and send feedback back to your coding agent when another pass is needed.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Graph-Review.png" class="help-center-img img-bordered">
 </figure>
 
 3. Compose
@@ -100,14 +100,14 @@ Turn working changes into clean, logical commits with Commit Composer. Organize 
 Compare branches, commits, revisions, and working changes to quickly understand exactly what changed before moving work forward.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-compare-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Graph-Compare.png" class="help-center-img img-bordered">
 </figure>
 
 5. Rebase
 Use AI-powered Rebase to automate tedious rebasing while staying in control of how your commit history is prepared.
 
 <figure>
-  <img src="/wp-content/uploads/gl-auto-ai-rebase-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" class="help-center-img img-bordered">
 </figure>
 
 6. Resolve

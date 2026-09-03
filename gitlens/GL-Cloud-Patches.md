@@ -36,7 +36,7 @@ To enable or disable Cloud Patches per client:
 You can manage Cloud Patches from the **Cloud Patches view** in the GitLens sidebar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-patch-create-01-v2@2x.webp" class="help-center-img img-bordered" alt="Creating a Cloud Patch from the GitLens sidebar" />
+  <img src="/wp-content/uploads/gl-cloud-patch-create.webp" class="help-center-img img-bordered" alt="Creating a Cloud Patch from the GitLens sidebar" />
   <figcaption style="text-align: center; color: #888">Creating a Cloud Patch</figcaption>
 </figure>
 

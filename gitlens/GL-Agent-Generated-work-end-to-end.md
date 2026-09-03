@@ -49,7 +49,7 @@ Agent-generated work may span multiple files and concerns that do not belong in 
 Use Commit Composer from the Commit Graph to organize those changes into clean, logical commits that are easier for you and your teammates to understand.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Graph Compose" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Graph Compose" class="help-center-img img-bordered">
   </figure>
 With Compose, you can:
 

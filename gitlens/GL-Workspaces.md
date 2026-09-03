@@ -23,7 +23,7 @@ You can open your Workspaces in two ways:
 2. Use the Command Palette (`Cmd+Shift+P` or `Ctrl+Shift+P`) and search for `GitLens: Open Workspaces`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspaces-sidebar-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-workspaces-sidebar.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Workspaces section in the GitLens sidebar</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ To add repositories to a Workspace:
 2. To sync repository status, click the **Refresh** icon.
 
 <figure>
-  <img src="/wp-content/uploads/gl-add-repo-to-workspace-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-add-repo-to-workspace.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Add repositories to your Workspace</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ To find the disk location of a repository in a Cloud Workspace:
 2. If you have a folder with multiple repositories, select the parent folder. GitLens will detect and associate all repositories within it.
 
 <figure>
-  <img src="/wp-content/uploads/gl-locate-repo-in-workspace-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Locate local disk path of repositories in your Workspace</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ To open a repository from a Workspace:
 - _Pro Tip:_ To open the repository in the **current window**, hold the **Alt/Option** key (Mac) while clicking **Open Repo**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-open-as-vscode-workspace-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open repositories from a Workspace in VS Code</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ To remove a repository from a Workspace:
 2. Select **Remove repository from Workspace** from the context menu.
 
 <figure>
-  <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Remove repositories from a Workspace</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ To manually sync repositories:
 - Use the `Add Repositories from Linked Workspace` command at any time.
 
 <figure>
-  <img src="/wp-content/uploads/gl-link-repositories-in-workspaces-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Manage repository linking for VS Code and GitKraken Workspaces</figcaption>
 </figure>
 

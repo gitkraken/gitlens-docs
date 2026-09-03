@@ -54,7 +54,7 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 - When reviewing commits: Option to generate explanations for any selected commit
 
 
-<img src="/wp-content/uploads/gl-ai-commit-explain-01-v2@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
 
 ### AI Changes Explain `Preview`
 Gitkraken AI can also be used to generate summaries for Commits, Branches, Working Changes, and Stashes.
@@ -91,7 +91,7 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 **How to access:**
 - From the GitLens Commit Graph: Click the ✨button next to “Create a Pull Request”
 
-<img src="/wp-content/uploads/gl-ai-create-pr-01-v2@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/GL-ai-create-pr.png" class="help-center-img img-bordered">
 
 ### AI Review `Pro`
 **Available in:** Pro, Advanced, and Business plans

@@ -29,7 +29,7 @@ To sign in with your GitKraken account:
 - Under **GITKRAKEN ACCOUNT**, select `Sign In`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-sign-in-ls-update-01-v3@2x.png" alt="GitLens sidebar with sign-in option" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-sign-in-LS-Update.png" alt="GitLens sidebar with sign-in option" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Sign in from the GitLens sidebar</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ You can enable debug logging by opening the Command Palette (`ctrl+shift+p` or `
 
 To view logs, open the Output Window (View > Output). The logs will be listed in the _GitLens_ and _GitLens (Git)_ channels. These channels can be toggled from the dropdown.
 
-<img src="/wp-content/uploads/gl-output-01-v3@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-output.png" class="help-center-img img-bordered">
 
 ***
 
@@ -83,7 +83,7 @@ To view logs, open the Output Window (View > Output). The logs will be listed in
 
 You can export logs using the actions in the overflow menu of the Output view.
 
-<img src="/wp-content/uploads/gl-export-logs-01-v3@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-export-logs.png" class="help-center-img img-bordered">
 
 ***
 

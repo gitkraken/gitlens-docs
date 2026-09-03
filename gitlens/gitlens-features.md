@@ -15,7 +15,7 @@ Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKr
 ## Revision Navigation
 
 <figure>
-  <img src="/wp-content/uploads/gl-revision-navigation-01-v2@2x.gif" alt="GitLens revision navigation animated demo" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/revision-navigation.gif" alt="GitLens revision navigation animated demo" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Step through revisions using built-in navigation commands</figcaption>
 </figure>
 
@@ -369,7 +369,7 @@ To disable Cloud Patches, change the value to `false`.
 Cloud Patches are accessible from the **Cloud Patches** view in the GitLens sidebar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-patch-create-01-v2@2x.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-patch-create.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Create a patch directly from your sidebar</figcaption>
 </figure>
 
@@ -451,7 +451,7 @@ The Commit Graph opens automatically when you click the GitLens icon in the Acti
    `GitLens: Show Commit Graph`
 
 <figure>
-  <img src="/wp-content/uploads/gl-show-commit-graph-01-v2@2x.gif" alt="Using the Command Palette to open the GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/show-commit-graph.gif" alt="Using the Command Palette to open the GitLens Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Launch the graph directly from the Command Palette</figcaption>
 </figure>
 
@@ -496,7 +496,7 @@ All columns in the Commit Graph are fully customizable:
 - The **Changes** column visualizes added and deleted lines per commit. The `gitlens.graph.changesColumn.mode` setting controls the display style: `numbers` (numeric counts), `squares` (colored blocks), `bar` (horizontal bar), or `bipolar` (split additions/deletions bar).
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-gl-settings-01-v3@2x.png" alt="Column customization context menu in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-column-settings.png" alt="Column customization context menu in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize visible columns with right-click options</figcaption>
 </figure>
 
@@ -553,7 +553,7 @@ They provide quick navigation to key locations like `HEAD` or specific refs.
 You can toggle scroll markers in [Commit Graph settings](/gitlens/gitlens-features/#settings).
 
 <figure>
-  <img src="/wp-content/uploads/gl-scroll-markers-01-v2@2x.png" alt="Scroll markers in the GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-scroll-markers.png" alt="Scroll markers in the GitLens Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Navigate instantly using visual markers</figcaption>
 </figure>
 
@@ -629,7 +629,7 @@ You can also refine results with:
 The Commit Graph supports right-click actions on branches, commits, tags, authors, and column headers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-context-menu-01-v2@2x.gif" alt="Right-click menu on commit for extra options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-context-menu.gif" alt="Right-click menu on commit for extra options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Use context menus for advanced Git actions</figcaption>
 </figure>
 
@@ -661,7 +661,7 @@ Compose mode integrates commit composition directly within the Commit Graph. Sel
 Click the **Compose** button to generate an AI-assisted commit message based on your staged changes, or write your own message manually.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v6@2x.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/commit-composer-composed-17-4.png" alt="Commit Graph composer with AI-generated commit message ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit message populated in the composer</figcaption>
 </figure>
 
@@ -725,7 +725,7 @@ The **Minimap** gives you a visual summary of repository activity at a glance:
 - Toggle it via the **Minimap icon** in the top right
 
 <figure>
-  <img src="/wp-content/uploads/gl-minimap-2-01-v2@2x.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-minimap-2.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Quickly navigate with the Commit Graph Minimap</figcaption>
 </figure>
 
@@ -768,7 +768,7 @@ Customize the Minimap via the **graph icon dropdown**:
 Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" alt="Launchpad PR overview" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="Launchpad PR overview" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View and act on PRs based on current status</figcaption>
 </figure>
 
@@ -784,7 +784,7 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 - Or select the **Pull Request status bar item** in VS Code
 
 <figure>
-  <img src="/wp-content/uploads/gl-access-launchpad-01-v3@2x.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-access-launchpad.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open Launchpad from the status bar or Command Palette</figcaption>
 </figure>
 
@@ -808,14 +808,14 @@ Click a PR to:
 - Switch to the branch or open in a worktree
 
 <figure>
-  <img src="/wp-content/uploads/gl-view-pull-request-01-v2@2x.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Interact with pull requests directly in VS Code</figcaption>
 </figure>
 
 You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from the PR action menu.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-code-suggest-01-v2@2x.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
@@ -840,7 +840,7 @@ Use the snooze icon <i class="fa-solid fa-snooze"></i> to move less urgent PRs i
 Click the icon again to unpin or unsnooze as needed.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze-01-v2@2x.png" alt="Pin or snooze pull requests" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-pin-or-snooze.png" alt="Pin or snooze pull requests" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Pin or snooze PRs to manage your workflow</figcaption>
 </figure>
 
@@ -1043,7 +1043,7 @@ When composing commits, GitLens now creates "draft" commits that you can review,
 - **Review and edit**: Manually tweak any commit message or approach
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-composer-composed-17-4-01-v6@2x.png" alt="Commit Composer with AI-composed commit message populated and ready for review" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/commit-composer-composed-17-4.png" alt="Commit Composer with AI-composed commit message populated and ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-composed commit message ready for review</figcaption>
 </figure>
 
@@ -1144,7 +1144,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 
 - **Show Branch History** (`gitlens.showQuickBranchHistory`): Explore the commit history of any selected branch.
   
-  <img src="/wp-content/uploads/gl-menu-branch-history-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-branch-history.png" class="help-center-img img-bordered">
 
 - **Show Current Branch History** (`gitlens.showQuickRepoHistory`): View the commit history of your current branch.
 - **Show File History** (`gitlens.showQuickFileHistory`): Access the full commit history of the current file. The File History view supports a **contributors mode** (`gitlens.views.fileHistory.mode`) that shows all contributors to the file instead of the commit list.
@@ -1169,7 +1169,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 
 - **Show Line Commit Details** (`gitlens.showQuickCommitFileDetails`): Explore the file's commit and take action on it.
 
-  <img src="/wp-content/uploads/gl-menu-commit-file-details-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-commit-file-details.png" class="help-center-img img-bordered">
 
 
 ### Quick Stash Access
@@ -1191,7 +1191,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 - Adds a _Show Repository Status_ command (`gitlens.showQuickRepoStatus`) to show a quick pick menu for visualizing the current repository status.
 
 <figure>
-  <img src="/wp-content/uploads/gl-menu-repo-status-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-repo-status.png" class="help-center-img img-bordered">
 </figure>
 
 ---
@@ -1341,7 +1341,7 @@ If you're not already signed in, you'll be prompted to log in to your GitKraken 
 Finish the process by selecting **Complete Setup** to return to VS Code and begin using the integrations.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage your connected integrations</figcaption>
 </figure>
 
@@ -1401,7 +1401,7 @@ Or
 The Jira Integration, connected through your GitKraken Account, enables Jira [Autolinks](/gitlens/gitlens-features#autolinks) wherever autolinks are supported in GitLens. Once connected, GitLens automatically converts Jira issue keys (e.g., `ABC-123`) in commit messages into clickable links.
 
 <figure>
-  <img src="/wp-content/uploads/gl-jira-integration-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Jira autolinks in commit messages</figcaption>
 </figure>
 
