@@ -108,7 +108,7 @@ Visual indicators in Workspaces help you quickly understand their status. For ex
 - A **green Workspace** with an **O** symbol indicates it is open in your current window.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
 </figure>
 

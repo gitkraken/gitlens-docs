@@ -32,7 +32,7 @@ This sidebar includes:
 - **Overview**
 - **Line History**
 - **File History**
-- **Visual File History**
+- **Visual History**
 - **Search & Compare**
 
 <figure>
@@ -111,7 +111,7 @@ To restore the default layout, open the Command Palette (<kbd>Cmd/Ctrl + Shift +
 ## Commits View
 
 <figure>
-  <img src="/wp-content/uploads/commits-view.png" class="help-center-img img-bordered" alt="GitLens Commits view">
+  <img src="/wp-content/uploads/gl-commits-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view">
 </figure>
 
 A [customizable](/gitlens/settings/#commits-view-settings) view to visualize, explore, and manage Git commits.
@@ -155,7 +155,7 @@ To open GitLens Inspect, launch the Command Palette (<kbd>Cmd/Ctrl + Shift + P</
 The **Commit Details** tab updates as you move your cursor through the file or select a commit in the Commit Graph. It shows information such as commit author, ID, modified files, and autolinks.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-commit-details.png" class="help-center-img img-bordered" alt="Commit details in GitLens Inspect view">
+  <img src="/wp-content/uploads/gl-inspect-commit-details-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit details in GitLens Inspect view">
 </figure>
 
 ### Overview
@@ -163,7 +163,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) when working on a pull request.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-overview.png" class="help-center-img img-bordered" alt="GitLens Inspect view with code overview and pull request context">
+  <img src="/wp-content/uploads/gl-inspect-overview-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view with code overview and pull request context">
 </figure>
 
 
@@ -172,7 +172,7 @@ The **Overview** tab helps you stage or unstage changes, open files to view modi
 ## Repositories View
 
 <figure>
-  <img src="/wp-content/uploads/repositories-view.png" class="help-center-img img-bordered" alt="GitLens Repositories view">
+  <img src="/wp-content/uploads/gl-repositories-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Repositories view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories.
@@ -214,6 +214,7 @@ The **File History** view lists all commits that modified the current file on th
 
 - A toggle to pin (pause) automatic tracking of the current editor
 - A toggle to switch between file and line history
+- A toggle to switch between **Commits** mode (default) and **Contributors** mode, which shows all contributors to the file instead of the commit list
 - The ability to change the base branch or reference for history
 - (File history only) A toggle to follow renames
 - (File history only) A toggle to show commits from all branches
@@ -229,7 +230,7 @@ The **File History** view lists all commits that modified the current file on th
 ## Line History View
 
 <figure>
-  <img src="/wp-content/uploads/line-history-view.png" class="help-center-img img-bordered" alt="GitLens Line History view">
+  <img src="/wp-content/uploads/gl-line-history-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Line History view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#line-history-view-settings) view to visualize, navigate, and explore the revision history of the selected lines of the current file.
@@ -247,13 +248,14 @@ The **Line History** view lists all commits that modified the selected lines. It
 ## Branches View
 
 <figure>
-  <img src="/wp-content/uploads/branches-view.png" class="help-center-img img-bordered" alt="GitLens Branches view">
+  <img src="/wp-content/uploads/gl-branches-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Branches view">
 </figure>
 
 A [customizable](/gitlens/settings/#branches-view-settings) view to visualize, explore, and manage Git branches.
 
 The **Branches** view lists all local branches and includes:
 
+- A repository filter with an **All Repositories excluding worktrees** option that hides linked worktrees whose main repository is also open
 - A toggle to switch between list or tree layout
 - A toggle to change file layout: list, tree, or auto
 - Upstream status icons:
@@ -283,7 +285,7 @@ The **Branches** view lists all local branches and includes:
 ## Remotes View
 
 <figure>
-  <img src="/wp-content/uploads/remotes-view.png" class="help-center-img img-bordered" alt="GitLens Remotes view">
+  <img src="/wp-content/uploads/gl-remotes-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Remotes view">
 </figure>
 
 A [customizable](/gitlens/settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches.
@@ -404,7 +406,7 @@ To convert a local Workspace, click **Convert to Cloud Workspace**, add a name a
 Workspace status indicators use symbols and colors, such as a green **O** for the currently open Workspace.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered" alt="GitLens Workspace status indicators">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Workspace status indicators">
 </figure>
 
 ### Workspace Linking
@@ -431,7 +433,7 @@ To manually add repositories, use the **Add Repositories from Linked Workspace**
 ## Worktrees View
 
 <figure>
-  <img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
+  <img src="/wp-content/uploads/gl-worktrees-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
 </figure>
 
 A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
@@ -441,7 +443,7 @@ A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to crea
 ## Contributors View
 
 <figure>
-  <img src="/wp-content/uploads/contributors-view.png" class="help-center-img img-bordered" alt="GitLens Contributors view">
+  <img src="/wp-content/uploads/gl-contributors-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Contributors view">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#contributors-view-settings) view to explore repository contributors.
@@ -467,7 +469,9 @@ The **Search & Compare** view displays pinnable results from search or compariso
 
 ### Pinnable Search
 
-Search commits by message, author, file, ID, or patch using:
+Search commits by message, author, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges.
+
+Search using:
 
 - **Search Commits** (`gitlens.showCommitSearch`):
   - `<message>` — message match

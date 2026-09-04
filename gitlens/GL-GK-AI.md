@@ -20,12 +20,16 @@ GitLens integrates powerful AI capabilities across different subscription tiers,
 
 Generate clear, descriptive commit messages based on your code changes, saving time and ensuring consistency across your repository. The AI analyzes your staged changes and creates meaningful messages that accurately describe what you've modified.
 
+In addition to single commit messages, GitLens offers AI Generate Commits, which creates multiple logical commits from your working tree changes, and AI Rebase, which restructures an existing branch onto a target commit with AI-generated commits. Both commands include undo support and first-time confirmation dialogs.
+
 **How to access:**
 - From the Command Palette: `GitLens: Generate Commit Message with AI`
+- From the Command Palette: `GitLens: Generate Commits with AI` (creates multiple commits from working changes)
+- From the Command Palette: `GitLens: AI Rebase` (restructures branch commits)
 - From the SCM panel: Click the "Generate Commit Message" button
 - During the commit process: Look for the AI option in the commit interface
 
-<img src="/wp-content/uploads/GL-ai-commit-generate.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Stash Messages`Pro`
 **Available in:** Pro, Advanced, and Business plans
@@ -37,7 +41,7 @@ Create intelligent descriptions for stashed changes, making it easier to find an
 - When creating a stash: Look for the AI option in the stash creation interface
 - From the stash view: Generate descriptions for existing stashes
 
-<img src="/wp-content/uploads/GL-ai-stash.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" class="help-center-img img-bordered">
 
 ### AI Commit Explain `Pro`
 **Available in:** Pro, Advanced, and Business plans
@@ -53,8 +57,9 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 <img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
 
 ### AI Changes Explain `Preview`
-Gitkraken AI can also be used to generate summaries in Branches, Working changes, and Stashes.
+Gitkraken AI can also be used to generate summaries for Commits, Branches, Working Changes, and Stashes.
 
+What a specific commit introduced – ✨Explain Commit
 What changed across all commits in a branch – ✨Explain Branch
 What you’ve modified in your working directory – ✨Explain Working Changes
 What you’ve previously stashed – ✨Explain Stash
@@ -64,6 +69,7 @@ You’ll find ✨Explain options for commits, branches, stashes, and working cha
 - In the Commit Graph
 - Available as commands in the command palette
 - In many GitLens views: Commits, Branches, Stashes, Search & Compare, etc.
+- In editor blame hovers via the ✨Explain button
 
 ### AI Changelog Creation `Pro`
 **Available in:** Advanced and Business plans only
@@ -87,6 +93,43 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 
 <img src="/wp-content/uploads/GL-ai-create-pr.png" class="help-center-img img-bordered">
 
+### AI Review `Pro`
+**Available in:** Pro, Advanced, and Business plans
+
+Review commits and working changes with AI-powered analysis that surfaces severity-tagged insights directly in the Commit Graph details panel. AI Review identifies potential issues, highlights notable patterns, and provides actionable feedback on your changes.
+
+**How to access:**
+- In the Commit Graph: Select a commit or working changes, then open the Review mode in the details panel
+- Customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting
+
+You can configure separate AI models for different features (such as compose and review) to optimize for your preferred balance of speed and quality.
+
+### AI Auto Rebase `Pro`
+**Available in:** Pro, Advanced, and Business plans
+
+Automate rebasing with AI-assisted conflict resolution. AI Auto Rebase handles the end-to-end rebase process, automatically resolving conflicts based on a configurable confidence threshold. A rebase summary sheet shows what was resolved and how, and full undo support lets you revert the operation if needed.
+
+**How to access:**
+- From the Command Palette: `GitLens: AI Auto Rebase`
+- From the Commit Graph: Right-click a branch and select AI Auto Rebase
+
+**Key settings:**
+- `gitlens.ai.autoRebase.confidenceThreshold` — Set the minimum confidence level (0-1) for automatic conflict resolution
+- `gitlens.ai.resolveConflicts.customInstructions` — Provide custom instructions for how conflicts should be resolved
+
+### Compose and Recompose `Pro`
+**Available in:** Pro, Advanced, and Business plans
+
+Shape your commit history with AI-assisted commit crafting and branch restructuring.
+
+- **Compose**: Craft clean, logical commits from your uncommitted working changes using the Commit Composer in the Commit Graph
+- **Recompose**: Restructure existing commits on a branch using AI. Recompose commands let you reorganize, split, or combine commits for a clearer history
+
+**How to access:**
+- From the Commit Graph: Enter Compose mode to create commits from working changes
+- From the Commit Graph context menu: Right-click commits to access Recompose Branch, Recompose from Commit, or Recompose Selected Commits
+- From the Command Palette: `GitLens: Recompose Branch`
+
 ---
 ## AI Credit Allocation by Plan
 
@@ -106,6 +149,7 @@ GitLens offers flexibility in choosing your AI provider:
 3. **Custom Provider** (BYOK): Connect your own key from supported AI services
 >
 - New OpenAI and Google models
+- Mistral
 - Self-hosted Azure AI models
 - OpenAI-compatible API providers
 - Local Ollama models
@@ -127,6 +171,14 @@ To configure your AI provider:
 - **Customize AI prompts**: Tailor the prompts used for various AI features to match your team's style
 - **Credit usage monitoring**: Track your credit consumption for better allocation management
 - **Default AI mode**: Choose between concise or detailed outputs for each feature
+
+### AI File Exclusions
+
+Control which files are included in AI context to protect sensitive data:
+
+- **Ignore files**: GitLens respects `.aiignore`, `.cursorignore`, and `.aiexclude` files in your repository to exclude matching paths from AI prompts
+- **Exclude setting**: Use the `gitlens.ai.exclude.files` setting to define additional file patterns to exclude
+- Common files like lock files, minified assets, and build output directories are excluded by default
 
 ### Organization-Level Controls `Business`
 

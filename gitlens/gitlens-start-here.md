@@ -34,7 +34,7 @@ Understanding code history can be difficult when looking at complex repositories
 
 #### Commit Graph
 
-Once you have a repository open in VS Code, the Commit Graph gives you an interactive, action oriented visual of your commit and branch history. This allows you to follow your repository over time to see what is happening with branches and see why it was done with commit messages. You can quickly jump to any point in history by searching for either branches or commits. To view the commit graph, use the command palette (command/ctrl + shift + P) > _GitLens: Show Commit Graph View_ or select the _Show Commit Graph_ icon.
+The Commit Graph is the main view in the GitLens sidebar and your starting point for working with GitLens. Once you have a repository open in VS Code, it gives you an interactive, action-oriented visual of your commit and branch history, powered by a high-performance rendering engine built for speed at scale. This allows you to follow your repository over time to see what is happening with branches and see why it was done with commit messages. You can quickly jump to any point in history by searching for either branches or commits. The Commit Graph opens automatically in the GitLens sidebar, or you can access it from the command palette (command/ctrl + shift + P) > _GitLens: Show Commit Graph View_.
 
 <a href="vscode://eamodio.gitlens/link/command/graph">Open the Commit Graph in GitLens</a>.
 

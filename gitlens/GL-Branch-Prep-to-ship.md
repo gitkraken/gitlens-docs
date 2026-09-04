@@ -38,7 +38,7 @@ Development rarely produces perfectly organized commits on the first pass.
 Use Commit Composer to turn working changes into clean, logical commits that make the work easier to understand and review.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compose.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compose-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 With Compose, you can:

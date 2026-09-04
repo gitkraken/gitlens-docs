@@ -17,6 +17,10 @@ From here, you can understand what’s happening across your repository, coordin
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
+## Welcome View
+
+When you first install or update GitLens, the **Welcome** sidebar view appears above the Commit Graph. It provides a multi-step walkthrough covering Getting Started, Home, Commit Graph, AI Features, Git Blame, PR Reviews, and MCP. The content adapts to your subscription level, helping you discover the features available on your plan.
+
 ## Start in the Commit Graph
 When you open GitLens, the Commit Graph gives you a connected view of your repository and the work happening across it.
 
@@ -42,7 +46,7 @@ As development spreads across multiple branches, worktrees, and coding agents, k
 Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Worktrees-multi-wip.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 From the Commit Graph, you can:
@@ -71,7 +75,7 @@ The Commit Graph is more than a place to see the work. It gives you the context 
 1. Monitor
 See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-working.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 <figure>
@@ -89,7 +93,7 @@ Review human or agent-generated changes with AI-powered Review. Surface meaningf
 Turn working changes into clean, logical commits with Commit Composer. Organize related changes, refine commits with AI assistance, and preview the result before writing it to your history.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compose.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compose-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 4. Compare
@@ -119,6 +123,14 @@ When parallel work collides, use AI-assisted conflict resolution to understand a
 
 **Monitor parallel work. Review what changed. Shape it. Compare it. Rebase and resolve it. Get it ready to merge. All from the Commit Graph.**
 
+## Change Branch Merge Target
+
+You can set or reset the merge target for any branch using the Change Branch Merge Target command. This multi-step wizard lets you pick a repository, select a local branch, and choose a remote branch as its merge target. You can also reset the merge target if one was previously set.
+
+**How to access:**
+- From the Commit Graph: Use the merge target indicator in the branch header
+- From the Command Palette: `GitLens: Change Branch Merge Target`
+
 ## Stay Oriented as Work Moves
 
 The Commit Graph keeps important reference points visible as your repository changes.
@@ -136,7 +148,7 @@ Continue exploring the workflows available from the Commit Graph:
 - [Compare](/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
 - [AI-powered Rebase](/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
 - [AI-assisted Conflict Resolution](/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
-- [Visual History](/gitlens/gl-visual-file-history/) to understand how your codebase evolved
+- [Visual History](/gitlens/gl-visual-file-history/) to visualize how files, branches, or your entire repository evolved over time
 - [Launchpad](/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
 
 Or follow a complete workflow from start to finish:

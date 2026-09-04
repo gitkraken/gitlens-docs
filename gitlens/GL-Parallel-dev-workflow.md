@@ -27,7 +27,7 @@ See branches, worktrees, working changes, commits, HEAD, upstream, merge targets
 Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Worktrees-multi-wip.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 ## 2. Monitor Agent Work
@@ -42,7 +42,7 @@ From the Commit Graph, you can:
 - Resume active or previous sessions with the surrounding Git context intact
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-working.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v2@2x.png" class="help-center-img img-bordered">
 </figure>
 
 <figure>

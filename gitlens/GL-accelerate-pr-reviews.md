@@ -48,6 +48,20 @@ To start reviewing:
 </figure>
 
 
+## Start Review `PRO`
+
+The **Start Review** command provides a quick-pick wizard for jumping into a pull request review. It walks you through selecting an integration, picking a PR, and choosing how to check it out (as a branch or in a new worktree). You can also optionally open an AI chat with a review prompt to assist your review.
+
+To use Start Review:
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Run: `GitLens: Start Review`.
+3. Select your integration and pull request, then choose your checkout method.
+
+<figure class='callout callout--warning'>
+  <p>This feature is available with a GitLens Pro subscription or higher.</p>
+</figure>
+
 ## Worktrees
 
 Worktrees let you check out multiple branches simultaneously in separate working directories. This means you don’t need to commit or stash in-progress changes before switching to another branch—perfect for reviewing pull requests without disrupting your workflow.
