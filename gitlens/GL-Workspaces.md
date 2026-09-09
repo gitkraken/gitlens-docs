@@ -105,10 +105,10 @@ Your Cloud Workspace will be synced to your GitKraken account and accessible via
 ### Understanding Workspace Indicators and Colors
 
 Visual indicators in Workspaces help you quickly understand their status. For example:
-- A **green Workspace** with an **O** symbol indicates it is open in your current window.
+- A **green Workspace** with a **green dot** indicates it is open in your current window.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" alt="GitKraken Workspaces tree view showing the status indicators and colors, including the green dot on the currently open workspace" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
 </figure>
 

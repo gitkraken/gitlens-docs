@@ -181,8 +181,8 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 - You can open the Commit Graph in both layouts simultaneously.
 
 To switch layouts:
-1. Select the settings gear in the top-right corner of the Commit Graph editor.
-2. Choose **Prefer Commit Graph in Panel Layout** or **Prefer Commit Graph in Editor Area**.
+1. Open the **More Actions…** (⋯) menu in the top-right corner of the Commit Graph editor tab (or of the Commit Graph view in the side bar).
+2. Choose **Prefer Commit Graph in Editor** or **Prefer Commit Graph as a View**.
 
 The `gitlens.graph.editorOpeningBehavior` setting controls how files open from the graph — either in the active editor group or automatically based on context. You can also open the Commit Graph in a separate VS Code window using the **GitLens: Open Commit Graph in New Window** command.
 
@@ -192,7 +192,7 @@ The `gitlens.graph.editorOpeningBehavior` setting controls how files open from t
 </figure>
 
 #### Compact Graph Layout
-- Right-click the **Graph** column header and select **Compact Graph Column Layout** to reduce visual complexity.
+- Select the gear in the **Graph** column header and choose **Use Compact Graph Column** to reduce visual complexity.
 - When the **Author** column is resized to minimum width, it shows avatars instead of text.
 - Columns that become too narrow automatically switch to icons to preserve information.
 
@@ -333,7 +333,7 @@ For GitHub repositories, the graph also recognizes **stacked pull requests**. Wh
 ### Hiding Remotes, Branches, or Tags
 
 The Commit Graph shows refs to your remotes, branches, and tags.  
-- Hover over any ref to use the **Hide** option.  
+- Right-click a branch or tag pill and select **Hide Local Branch**, **Hide Remote Branch**, or **Hide Tag**. To hide whole classes of refs, use the scope/filter popover next to the search box.  
 - To show them again, hover over the **Hide** option at the top of the Commit Graph and select the desired refs.
 
 <figure>
@@ -343,8 +343,9 @@ The Commit Graph shows refs to your remotes, branches, and tags.
 
 #### Filter Options
 Access filters from the dropdown menu to choose:  
-- **Show Current Branch Only**: Displays the current branch and its upstream remote.  
-- **Show All Local Branches** *(default)*.  
+- **All Branches**: Displays all branches.  
+- **Current Branch**: Displays the current branch and its upstream remote.  
+- **Smart Branches**: Displays only the relevant branches — the current branch, its upstream, and its base or target branch.  
 
 Additional options let you hide or show:  
 - Remote-only branches  
@@ -365,7 +366,7 @@ You can also dim merge commit rows for clarity.
 The Minimap provides a high-level overview of repository activity. It shows commits, branches, HEAD/upstream, and more, letting you quickly jump to points of interest.
 
 - Select the **Toggle Minimap** icon in the Commit Graph toolbar to enable or disable it.  
-- Use the graph icon dropdown to switch between **Commits** or **Lines Changed** views.  
+- Use the gear at the right end of the minimap to switch between **Commits** or **Lines Changed** views.  
 - Toggle markers on or off from the same menu.
 - The `gitlens.graph.minimap.defaultVisibility` setting controls when the minimap appears: `hidden`, `onSearch` (default, shows during search), or `always`.
 

@@ -17,13 +17,13 @@ To open the editor, run _GitLens: Open Settings_ (`gitlens.showSettingsPage`) fr
   <figcaption style="text-align:center; color:#888">The Visual Settings Editor — Inline Blame category</figcaption>
 </figure>
 
-The editor organizes settings into five groups with a navigation rail on the left: **Setup**, **Integrations**, **Editor**, **Views**, and **General**. Each category shows its controls with live previews — changes apply immediately. A search bar at the top filters across all categories, and a **User / Workspace** scope toggle determines whether changes apply globally or to the current workspace.
+The editor's navigation rail on the left lists **Account** and **Get Started** at the top, followed by four groups: **Integrations**, **Views**, **Editor**, and **General**. Each category shows its controls with live previews — changes apply immediately. A search bar at the top filters across all categories, and a **User / Workspace** scope toggle determines whether changes apply globally or to the current workspace.
 
 You can deep-link to any category by appending its anchor to the command: `gitlens.showSettingsPage!<anchor>` (for example, `gitlens.showSettingsPage!ai` opens the AI category directly).
 
 ### Setup
 
-The Setup group contains account management and onboarding.
+The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-account-01-v2.png" alt="GitLens Settings Account category showing subscription status and account management" class="help-center-img img-bordered">
@@ -73,14 +73,14 @@ Annotation and decoration settings for the code editor.
 Configuration for Commit Graph and source control tree views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v2.png" alt="GitLens Settings Commit Graph category showing graph layout and column options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v2.png" alt="GitLens Settings Commit Graph category showing graph layout options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 
-**Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — file layout, avatars, and pull request display in the Commits view. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
+**Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — format templates for the Commits view (commit label, description, and tooltip formats; file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-views-01-v2.png" alt="GitLens Settings Commits view category showing file layout and display options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-views-01-v2.png" alt="GitLens Settings Commits view category showing the commit and file format templates" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commits view category</figcaption>
 </figure>
 

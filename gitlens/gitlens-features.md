@@ -166,8 +166,8 @@ Features:
 #### Changes (Diff) Hover
 
 <figure>
-  <img src="/wp-content/uploads/gl-hovers-current-line-changes-01-v2@2x.png" alt="GitLens diff hover showing current vs. previous line version" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">View the previous version of a changed line</figcaption>
+  <img src="/wp-content/uploads/gl-hovers-current-line-changes-01-v2@2x.png" alt="GitLens changes hover showing the diff hunk of the commit that changed the current line" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">View the diff of the commit that changed the current line</figcaption>
 </figure>
 
 Displays the previous version of the current line.
@@ -511,8 +511,8 @@ You can choose where the Commit Graph appears:
 
 To switch layouts:
 
-1. Click the gear icon in the top-right of the Commit Graph.
-2. Select **Prefer Commit Graph in Panel Layout** or **Prefer Commit Graph in Editor Area**.
+1. Open the **More Actions…** (⋯) menu in the top-right of the Commit Graph editor tab (or of the Commit Graph view in the side bar).
+2. Select **Prefer Commit Graph in Editor** or **Prefer Commit Graph as a View**.
 
 You can even open both layouts simultaneously.
 
@@ -527,11 +527,11 @@ You can even open both layouts simultaneously.
 
 For smaller screens or simplified views:
 
-- **Compact Graph Column Layout** reduces the visual size of the graph.
+- **Use Compact Graph Column** reduces the visual size of the graph.
 - The **Author** column shows avatars when minimized.
 - Columns display icons instead of truncated text when resized to narrow widths.
 
-To enable the compact graph layout, right-click the **Graph** column header and select **Compact Graph Column Layout**.
+To enable the compact graph layout, select the gear in the **Graph** column header and choose **Use Compact Graph Column**.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-compact-graph-01-v2@2x.gif" alt="Compact layout in Commit Graph" class="help-center-img img-bordered">
@@ -689,7 +689,7 @@ For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with
 
 You can hide individual remotes, branches, or tags from the Commit Graph to reduce clutter and focus your view.
 
-- **To hide**: Hover over any ref and click **Hide**.
+- **To hide**: Right-click a branch or tag pill and select **Hide Local Branch**, **Hide Remote Branch**, or **Hide Tag**. To hide whole classes of refs, use the scope/filter popover next to the search box.
 - **To show again**: Use the **Hide** panel at the top of the graph and reselect the ref.
 
 <figure>
@@ -701,8 +701,9 @@ You can hide individual remotes, branches, or tags from the Commit Graph to redu
 
 You can further control what is shown using the filter dropdown:
 
-- **Show Current Branch Only** — Display the current branch and its upstream (minimal view)
-- **Show All Local Branches** — Default view showing all local refs
+- **All Branches** — Display all branches
+- **Current Branch** — Display the current branch and its upstream (minimal view)
+- **Smart Branches** — Display only the relevant branches: the current branch, its upstream, and its base or target branch
 - Toggle visibility of:
   - Remote-only branches
   - Tags
@@ -731,7 +732,7 @@ The **Minimap** gives you a visual summary of repository activity at a glance:
 
 #### Minimap Settings
 
-Customize the Minimap via the **graph icon dropdown**:
+Customize the Minimap via the **gear at the right end of the minimap**:
 
 - Toggle between:
   - **Commits view**
@@ -1149,7 +1150,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 - **Show Current Branch History** (`gitlens.showQuickRepoHistory`): View the commit history of your current branch.
 - **Show File History** (`gitlens.showQuickFileHistory`): Access the full commit history of the current file. The File History view supports a **contributors mode** (`gitlens.views.fileHistory.mode`) that shows all contributors to the file instead of the commit list.
 
-  <img src="/wp-content/uploads/gl-menu-file-history-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-file-history-01-v2@2x.png" alt="File History QuickPick for README.md listing its commits with message, author, date, SHA, and line-change counts, with the newest commit highlighted" class="help-center-img img-bordered">
 
 - **Search Commits** (`gitlens.showCommitSearch`): Use a quick pick menu to search by:
 
@@ -1159,13 +1160,13 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
   - File path or glob: `:<path/glob>`
   - Patch changes: `~<pattern>`
 
-  <img src="/wp-content/uploads/gl-menu-commit-search-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-search-01-v2@2x.png" alt="Commit Search QuickPick showing the search mode options, including Search by Message, Author, Commit ID, File, and Changes, with their usage patterns" class="help-center-img img-bordered">
 
   Refer to the [Git log documentation](https://git-scm.com/docs/git-log) for advanced usage.
 
 - **Show Commit Details** (`gitlens.showQuickCommitDetails`): Review commit information and actions.
 
-  <img src="/wp-content/uploads/gl-menu-commit-details-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-details-01-v2@2x.png" alt="Commit Details QuickPick showing the commit message, author, SHA, and changed-file count, with actions including Revert, Reset, Create Branch, and Create Tag" class="help-center-img img-bordered">
 
 - **Show Line Commit Details** (`gitlens.showQuickCommitFileDetails`): Explore the file's commit and take action on it.
 
@@ -1175,11 +1176,11 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 ### Quick Stash Access
 
 <figure>
-  <img src="/wp-content/uploads/gl-menu-stash-list-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-stash-list-01-v2@2x.png" alt="Stash list QuickPick showing all stash entries in the repository with their stash messages" class="help-center-img img-bordered">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-menu-stash-details-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-stash-details-01-v2@2x.png" alt="Stash details QuickPick for a stash showing its files-changed summary and the Apply Stash, Rename Stash, Drop Stash, Copy Message, Open, Compare, and Browse Repository actions" class="help-center-img img-bordered">
 </figure>
 
 - Adds a _Show Stashes_ command (`gitlens.showQuickStashList`) to show a quick pick menu to explore your stashes.
@@ -1199,7 +1200,7 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 ## Interactive Rebase Editor
 
 <figure>
-  <img src="/wp-content/uploads/gl-rebase-01-v2@2x.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-rebase-01-v2@2x.gif" alt="GitLens interactive rebase editor showing the commit list with action dropdowns for pick, reword, squash, and drop, and drag handles for reordering commits" class="help-center-img img-bordered">
 </figure>
 
 Adds a user-friendly interactive rebase editor to easily configure an interactive rebase session:
@@ -1271,14 +1272,14 @@ Access it from the Command Palette: `GitLens: Manage Allowed Signers`
 Use autolinks to convert external references—such as Jira issues or Zendesk tickets—into clickable links directly from commit messages.
 
 <figure>
-  <img src="/wp-content/uploads/gl-autolinks-01-v3@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-autolinks-01-v3@2x.png" alt="Commit details in the GitLens Inspect view for a commit whose message ends in Closes #7, with the #7 reference rendered as a link and the Autolinks section resolving it to the open pull request" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example of autolinks in commit messages</figcaption>
 </figure>
 
 ## Terminal Links
 
 <figure>
-  <img src="/wp-content/uploads/gl-terminal-links-01-v2@2x.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-terminal-links-01-v2@2x.gif" alt="Integrated terminal showing git log output with commit SHAs detected by GitLens as clickable terminal links" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Autolinks in the integrated terminal</figcaption>
 </figure>
 
@@ -1332,7 +1333,7 @@ To connect an integration:
 3. Alternatively, open **GitKraken Account** from the GitLens Activity Bar and select **Integrations**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="VS Code Command Palette showing the GitLens Connect Remote Integration command used to start cloud integration setup" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Connect integrations from the GitKraken dashboard</figcaption>
 </figure>
 
@@ -1357,7 +1358,7 @@ GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab
 Once authenticated, GitLens enhances autolinks in hovers with additional context. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, and a summary of pull request or issue details. Sidebar views for commits or branches also show this contextual information.
 
 <figure>
-  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v3@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v3@2x.png" alt="VS Code Settings editor filtered to the GitLens remote service configuration options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Enhanced hover integration with GitHub Enterprise and GitLab Self-Managed</figcaption>
 </figure>
 
@@ -1386,7 +1387,7 @@ Or
    - If this option is missing, verify the format in your `settings.json` matches the example above.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v2@2x.png" alt="GitLens Remotes view listing the repository remotes, with the Connect to Remote plug icon on the GitHub Enterprise remote row" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Connect to a GitHub Enterprise or GitLab Self-Managed instance</figcaption>
 </figure>
 
@@ -1411,14 +1412,14 @@ The Jira Integration, connected through your GitKraken Account, enables Jira [Au
 
 To connect the integration:
 
-1. Open the GitLens Sidebar.
-2. From the GitKraken Account view, select **Cloud Integrations**.
+1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
+2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
 3. Choose **Jira Cloud**, and authorize access to your Atlassian Account.
 4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Connect Jira from GitKraken Cloud Integrations</figcaption>
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards for GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Cloud Integrations category in the GitLens Settings editor</figcaption>
 </figure>
 
 
@@ -1535,7 +1536,7 @@ The agent settings panel provides a centralized view for managing agent configur
 ## Menus & Toolbars
 
 <figure>
-  <img src="/wp-content/uploads/gl-menus-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menus-01-v2@2x.png" alt="GitLens Visual Settings Editor showing the Menus and Toolbars category, with toggle options controlling where GitLens commands appear in editor menus, context menus, and toolbars" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">GitLens menu and toolbar options</figcaption>
 </figure>
 
@@ -1544,7 +1545,7 @@ GitLens provides [customizable](/gitlens/gitlens-settings/#elementor-toc__headin
 For example, disabling **Add to the editor group toolbar** removes those items from the toolbar:
 
 <figure>
-  <img src="/wp-content/uploads/gl-menus-example-01-v2@2x.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menus-example-01-v2@2x.png" alt="VS Code editor tab bar with the GitLens editor group toolbar items removed, showing a toolbar without GitLens action buttons" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Editor group toolbar items removed</figcaption>
 </figure>
 

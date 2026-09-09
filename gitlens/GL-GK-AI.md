@@ -29,7 +29,7 @@ In addition to single commit messages, GitLens offers AI Generate Commits, which
 - From the SCM panel: Click the "Generate Commit Message" button
 - During the commit process: Look for the AI option in the commit interface
 
-<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" alt="Select AI Provider QuickPick listing the available providers, including GitKraken AI, Copilot, Anthropic, Google, and OpenAI, for generating AI commit messages" class="help-center-img img-bordered">
 
 ### AI Stash Messages`Pro`
 **Available in:** Pro, Advanced, and Business plans
@@ -41,7 +41,7 @@ Create intelligent descriptions for stashed changes, making it easier to find an
 - When creating a stash: Look for the AI option in the stash creation interface
 - From the stash view: Generate descriptions for existing stashes
 
-<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" alt="Push Stash QuickPick with an AI-generated stash message filled into the message input by GitKraken AI" class="help-center-img img-bordered">
 
 ### AI Commit Explain `Pro`
 **Available in:** Pro, Advanced, and Business plans
