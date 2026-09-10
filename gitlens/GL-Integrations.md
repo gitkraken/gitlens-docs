@@ -84,11 +84,11 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 #### Steps to Connect:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
-2. Go to the **GitKraken Account** section in the GitLens Activity Bar and choose **Integrations**.
+2. Or, in the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="VS Code Command Palette showing the GitLens Connect Remote Integration command used to start cloud integration setup" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Navigate to Integrations in the GitKraken Account menu</figcaption>
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: each provider with its connection state, and the Manage Integrations gear ringed" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Open the Integrations popover from the Home view header</figcaption>
 </figure>
 
 3. If you’re not already signed in, log into your GitKraken account.

@@ -20,16 +20,16 @@ GitLens integrates powerful AI capabilities across different subscription tiers,
 
 Generate clear, descriptive commit messages based on your code changes, saving time and ensuring consistency across your repository. The AI analyzes your staged changes and creates meaningful messages that accurately describe what you've modified.
 
-In addition to single commit messages, GitLens offers AI Generate Commits, which creates multiple logical commits from your working tree changes, and AI Rebase, which restructures an existing branch onto a target commit with AI-generated commits. Both commands include undo support and first-time confirmation dialogs.
+In addition to single commit messages, the Commit Composer can create multiple logical commits from your working tree changes, and Automatic Rebase restructures an existing branch onto a target commit with AI-generated commits. Both include undo support and first-time confirmation dialogs.
 
 **How to access:**
-- From the Command Palette: `GitLens: Generate Commit Message with AI`
-- From the Command Palette: `GitLens: Generate Commits with AI` (creates multiple commits from working changes)
-- From the Command Palette: `GitLens: AI Rebase` (restructures branch commits)
-- From the SCM panel: Click the "Generate Commit Message" button
+- From the Command Palette: `GitLens: Generate Commit Message`
+- From the Command Palette: `GitLens: Compose Commits...` (the Commit Composer creates multiple logical commits from your working changes)
+- From the Command Palette: `GitLens: Automatic Rebase...` (restructures branch commits)
+- From the SCM panel: Open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**
 - During the commit process: Look for the AI option in the commit interface
 
-<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" alt="Select AI Provider QuickPick listing the available providers, including GitKraken AI, Copilot, Anthropic, Google, and OpenAI, for generating AI commit messages" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" alt="The Source Control view with a staged file and an empty commit message box; GitLens's sparkle button in the Changes header, which generates the commit message with AI, is ringed" class="help-center-img img-bordered">
 
 ### AI Stash Messages`Pro`
 **Available in:** Pro, Advanced, and Business plans

@@ -42,14 +42,14 @@ The Commit Graph opens in a new tab, where you can scroll through history and re
 
 At the top of the Commit Graph, you’ll see:
 
-- **Repository name**
+- **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch** (click to switch branches)
-- **Last fetched time** (click **Fetch** to update)
+- **Last fetched time** — shown beside **Fetch** and in its hover (click **Fetch** to update)
 
-You can enable automatic fetching with the `gitlens.graph.autoFetch` setting. When enabled, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, keeping your view up to date without manual refreshes.
+You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` setting. When enabled, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, keeping your view up to date without manual refreshes.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" class="help-center-img img-bordered" alt="Repository details in the Commit Graph toolbar" />
+  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" class="help-center-img img-bordered" alt="The top of the Commit Graph in the editor area: the tab reads Commit Graph: Playground2026, the header shows the current branch with Push and Fetch (1wk ago) buttons, and the Fetch hover lists the upstream and Last fetched last week" />
   <figcaption style="text-align: center; color: #888">Repository details in the Commit Graph toolbar</figcaption>
 </figure>
 

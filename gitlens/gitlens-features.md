@@ -461,9 +461,9 @@ The Commit Graph opens automatically when you click the GitLens icon in the Acti
 
 At the top of the graph, you’ll see:
 
-- **Repository name**
+- **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch**
-- **Last fetched timestamp**
+- **Last fetched time** — beside **Fetch** and in its hover
 
 From here, you can:
 
@@ -471,7 +471,7 @@ From here, you can:
 - Click **Fetch** to update commit data
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" alt="Commit Graph header with repo name, branch, and fetch option" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-info-01-v2@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v2@2x.png" alt="The top of the Commit Graph in the editor area: the tab reads Commit Graph: Playground2026, the header shows the current branch with Push and Fetch (1wk ago) buttons, and the Fetch hover lists the upstream and Last fetched last week" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Access key branch controls directly from the header</figcaption>
 </figure>
 
@@ -1279,7 +1279,7 @@ Use autolinks to convert external references—such as Jira issues or Zendesk ti
 ## Terminal Links
 
 <figure>
-  <img src="/wp-content/uploads/gl-terminal-links-01-v2@2x.gif" alt="Integrated terminal showing git log output with commit SHAs detected by GitLens as clickable terminal links" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-terminal-links-01-v2@2x.gif" alt="The integrated terminal showing git log --oneline output with the pointer on the first commit's SHA: GitLens underlines it as a link and shows the Show Commit (ctrl + click) hover" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Autolinks in the integrated terminal</figcaption>
 </figure>
 
@@ -1330,11 +1330,11 @@ To connect an integration:
 
 1. Open the Command Palette (`Cmd`/`Ctrl`+`Shift`+`P`).
 2. Run `GitLens: Manage Integrations`.
-3. Alternatively, open **GitKraken Account** from the GitLens Activity Bar and select **Integrations**.
+3. Alternatively, in the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="VS Code Command Palette showing the GitLens Connect Remote Integration command used to start cloud integration setup" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Connect integrations from the GitKraken dashboard</figcaption>
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: each provider with its connection state, and the Manage Integrations gear ringed" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Open the Integrations popover from the Home view header</figcaption>
 </figure>
 
 If you're not already signed in, you'll be prompted to log in to your GitKraken account. Then, select **Connect with GitHub** or **Connect with GitLab**, and follow the sign-in steps. You can connect multiple integrations if needed.
