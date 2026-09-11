@@ -6,7 +6,7 @@ taxonomy:
     category: gitlens
 
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Writing the code is only part of getting work ready to merge. Upstream changes, messy commit history, overlapping work, and merge conflicts can all stand between a finished change and a branch that’s ready to ship.
 

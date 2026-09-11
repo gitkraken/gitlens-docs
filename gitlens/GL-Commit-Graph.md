@@ -6,7 +6,7 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 ## Commit Graph <code>PRO</code>
 

@@ -6,7 +6,7 @@ taxonomy:
     category: gitlens
 
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
 

@@ -6,7 +6,7 @@ taxonomy:
     
 ---
 
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 The Commit Graph is your starting point for working in GitLens. More than a visualization of repository history, it brings your repository state, working changes, branches, worktrees, and supported coding agent activity together in one connected workbench.
 From here, you can understand what’s happening across your repository, coordinate parallel work, review and shape changes, and move work toward merge without rebuilding context across disconnected views and tools.
