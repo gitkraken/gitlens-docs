@@ -6,12 +6,12 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 ## Worktrees View
 
 <figure>
-  <img src="/wp-content/uploads/worktrees-view.png" class="help-center-img img-bordered" alt="GitLens Worktrees view in VS Code showing multiple branches" />
+  <img src="/wp-content/uploads/gl-worktrees-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Worktrees view in VS Code showing multiple branches" />
   <figcaption style="text-align: center; color: #888">GitLens Worktrees view</figcaption>
 </figure>
 

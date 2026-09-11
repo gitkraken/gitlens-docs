@@ -6,7 +6,7 @@ taxonomy:
     category: gitlens
 
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Writing the code is only part of getting work ready to merge. Upstream changes, messy commit history, overlapping work, and merge conflicts can all stand between a finished change and a branch that’s ready to ship.
 
@@ -38,7 +38,7 @@ Development rarely produces perfectly organized commits on the first pass.
 Use Commit Composer to turn working changes into clean, logical commits that make the work easier to understand and review.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compose.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compose-01-v3@2x.png" alt="Commit Graph with the Composing Changes panel open beside it: the main branch, an Unstaged changes entry with four files changed (README.md, reports.ts, spending-analysis.ts, user-management.ts) and the Instructions box with the Compose button" class="help-center-img img-bordered">
 </figure>
 
 With Compose, you can:

@@ -5,7 +5,7 @@ taxonomy:
     category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 GitLens supports a wide range of remote providers to enhance your Git workflow inside Visual Studio Code. Supported platforms include:
 
@@ -14,7 +14,8 @@ GitLens supports a wide range of remote providers to enhance your Git workflow i
 - Gitea
 - Gerrit
 - Bitbucket (Cloud and Server)
-- Azure DevOps
+- Azure DevOps (Cloud and Server)
+- Linear (issue tracking)
 
 You can also define [custom remote providers or providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
 
@@ -42,6 +43,7 @@ You can use the following GitLens commands to interact with files, commits, and 
 ### Files
 
 - **Open File from Remote** (`gitlens.openFileFromRemote`) — Open a local file by specifying a remote file URL
+- **Open Revision from Remote** (`gitlens.openRevisionFromRemote`) — Open a specific file revision from a remote URL, resolving the exact revision rather than the working copy
 - **Open File on Remote** (`gitlens.openFileOnRemote`) — Open the current file or revision on the remote
 - **Copy Remote File URL** (`gitlens.copyRemoteFileUrlToClipboard`) — Copy the URL of the current file or revision
 - **Open File on Remote From...** (`gitlens.openFileOnRemoteFrom`) — Open a file/revision from a specific branch or tag
@@ -82,18 +84,18 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 #### Steps to Connect:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
-2. Go to the **GitKraken Account** section in the GitLens Activity Bar and choose **Integrations**.
+2. In the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration.png" srcset="/wp-content/uploads/gl-connect-remote-integration@2x.png" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Navigate to Integrations in the GitKraken Account menu</figcaption>
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: a list of providers — GitHub, GitLab, Azure DevOps, Bitbucket, Jira, Linear — each with what it supports and a connected check mark, a Show: All | Connected filter, and the Manage Integrations gear ringed in the popover header" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Open the Integrations popover from the Home view header</figcaption>
 </figure>
 
 3. If you’re not already signed in, log into your GitKraken account.
 4. Click **Connect with GitHub** or **Connect with GitLab** and complete the sign-in process.
 5. Select **Complete Setup** to return to Visual Studio Code and activate the integration.
 
-You can connect multiple integrations if needed.
+You can connect multiple integrations if needed, including multiple accounts for the same provider. For example, you can connect both a personal and a work GitHub account simultaneously. Use the integration settings to set a primary account, manage connections, and scope searches to a specific account.
 
 <figure>
   <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
@@ -103,6 +105,14 @@ You can connect multiple integrations if needed.
 <div class='callout callout--warning'>
   <p>Community users are limited to basic functionality only.</p>
 </div>
+
+## GitHub PR Stacks `PRO`
+
+GitLens supports stacked pull request workflows on GitHub.com. When working with stacked PRs, GitLens shows stack information including the stack size, your PR's position within the stack, and the base ref. Merge operations are stack-aware, letting you choose to merge a single layer or the entire stack.
+
+PR stack details appear in the Commit Graph pull request sheet when viewing a PR that belongs to a stack.
+
+***
 
 ## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
 
@@ -115,7 +125,7 @@ Once authenticated, GitLens enhances autolinks for these services in hover cards
 - Pull request and issue details directly in the Sidebar views
 
 <figure>
-  <img src="/wp-content/uploads/gitlab-github-integration.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v4@2x.png" alt="The Commit Graph with the pull-request hover card open over the #7 badge of the fixture/code-suggest-demo branch pill: the pull request's title &quot;fix: add types and config to rate limiter&quot;, its number, who opened it and when it was last updated — metadata supplied by the connected GitHub integration" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Enhanced hover cards with issue and PR metadata</figcaption>
 </figure>
 
@@ -141,7 +151,7 @@ Or for GitLab:
 5. Click <i class="fa-solid fa-plug"></i> **Connect to Remote**
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-to-remote-ghe.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v3@2x.png" alt="GitLens Remotes sidebar view listing repository remotes with the Connect to Remote action icon for linking a self-hosted provider" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Use the plug icon to connect a self-managed remote</figcaption>
 </figure>
 
@@ -167,14 +177,14 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 
 ### Connect the Jira Integration
 
-1. Open the GitLens Sidebar and navigate to the **GitKraken Account** view.
-2. Select **Cloud Integrations**.
+1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
+2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
 3. Choose **Jira Cloud** and follow the prompts to connect.
 4. Allow GitKraken access to your Atlassian Account.
 
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations.png" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Jira integration via GitLens Cloud Integrations panel</figcaption>
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards for GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Cloud Integrations category in the GitLens Settings editor</figcaption>
 </figure>

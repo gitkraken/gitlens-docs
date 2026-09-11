@@ -5,7 +5,7 @@ taxonomy:
   category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/FJ_IdTcqBi0?si=PFT5wDTiGs87Eu0-' frameborder='0' allowfullscreen title="Accelerate PR Reviews with GitLens"></iframe>
@@ -47,6 +47,20 @@ To start reviewing:
   <p>This feature is available with a GitLens Pro subscription or higher.</p>
 </figure>
 
+
+## Start Review `PRO`
+
+The **Start Review** command provides a quick-pick wizard for jumping into a pull request review. It walks you through selecting an integration, picking a PR, and choosing how to check it out (as a branch or in a new worktree). You can also optionally open an AI chat with a review prompt to assist your review.
+
+To use Start Review:
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Run: `GitLens: Start Review`.
+3. Select your integration and pull request, then choose your checkout method.
+
+<figure class='callout callout--warning'>
+  <p>This feature is available with a GitLens Pro subscription or higher.</p>
+</figure>
 
 ## Worktrees
 

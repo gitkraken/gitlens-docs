@@ -5,6 +5,8 @@ taxonomy:
   category: gitlens
 ---
 
+<kbd>Last updated: September 2026</kbd>
+
 **Level:** Intermediate Developers
 **Primary Goal:** Use Git intelligence to transform iterative work into clean, reviewable history
 
@@ -70,6 +72,8 @@ GitLens uses Git intelligence to help you ship work that is easier to review, re
 - [Commit Composer with Selective Recomposition](https://help.gitkraken.com/gitlens/gitlens-features/###Commit-composer:-Selective-Recomposition)
 
 - [Launchpad (PR and review awareness)](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro)
+
+- [Start Review](/gitlens/gl-accelerate-pr-reviews/#start-review-pro) (quick-pick wizard to select a PR, check out branch or worktree, and optionally open AI review chat)
 
 - Worktrees (parallel branch workflows)
 
