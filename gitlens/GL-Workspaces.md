@@ -108,7 +108,7 @@ Visual indicators in Workspaces help you quickly understand their status. For ex
 - A **green Workspace** with a **green dot** indicates it is open in your current window.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" alt="GitKraken Workspaces tree view showing the status indicators and colors, including the green dot on the currently open workspace" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v3@2x.png" alt="The Cloud Workspaces view filtered to Playground2026: under Current Window the repository is listed, and in the Demo2026 workspace the same repository is drawn in green with a green dot at the end of its row — the indicator for the repository open in the current window" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
 </figure>
 

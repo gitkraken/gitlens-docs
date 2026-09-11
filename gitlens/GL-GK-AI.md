@@ -29,7 +29,7 @@ In addition to single commit messages, the Commit Composer can create multiple l
 - From the SCM panel: Open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**
 - During the commit process: Look for the AI option in the commit interface
 
-<img src="/wp-content/uploads/gl-ai-commit-generate-01-v2@2x.png" alt="The Source Control view with a staged file and an empty commit message box; GitLens's sparkle button in the Changes header, which generates the commit message with AI, is ringed" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-commit-generate-01-v3@2x.png" alt="The Source Control view with a staged file and an empty commit message box; GitLens's sparkle button in the Changes header — the way to generate the commit message with AI — is ringed" class="help-center-img img-bordered">
 
 ### AI Stash Messages`Pro`
 **Available in:** Pro, Advanced, and Business plans

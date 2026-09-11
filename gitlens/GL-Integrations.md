@@ -84,10 +84,10 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 #### Steps to Connect:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
-2. Or, in the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
+2. In the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v2@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: each provider with its connection state, and the Manage Integrations gear ringed" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: a list of providers — GitHub, GitLab, Azure DevOps, Bitbucket, Jira, Linear — each with what it supports and a connected check mark, a Show: All | Connected filter, and the Manage Integrations gear ringed in the popover header" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Open the Integrations popover from the Home view header</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ Once authenticated, GitLens enhances autolinks for these services in hover cards
 - Pull request and issue details directly in the Sidebar views
 
 <figure>
-  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v3@2x.png" alt="VS Code Settings editor filtered to the GitLens remote service configuration options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v4@2x.png" alt="The Commit Graph with the pull-request hover card open over the #7 badge of the fixture/code-suggest-demo branch pill: the pull request's title &quot;fix: add types and config to rate limiter&quot;, its number, who opened it and when it was last updated — metadata supplied by the connected GitHub integration" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Enhanced hover cards with issue and PR metadata</figcaption>
 </figure>
 
@@ -151,7 +151,7 @@ Or for GitLab:
 5. Click <i class="fa-solid fa-plug"></i> **Connect to Remote**
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v2@2x.png" alt="GitLens Remotes view listing the repository remotes, with the Connect to Remote plug icon on the GitHub Enterprise remote row" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-to-remote-ghe-01-v3@2x.png" alt="GitLens Remotes sidebar view listing repository remotes with the Connect to Remote action icon for linking a self-hosted provider" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Use the plug icon to connect a self-managed remote</figcaption>
 </figure>
 

@@ -46,7 +46,7 @@ As development spreads across multiple branches, worktrees, and coding agents, k
 Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v2@2x.png" alt="Commit Graph showing Working Changes rows for multiple worktrees, with branch pills, changed-file counts, and commit messages across the parallel worktrees" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v3@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
 </figure>
 
 From the Commit Graph, you can:
@@ -75,7 +75,7 @@ The Commit Graph is more than a place to see the work. It gives you the context 
 1. Monitor
 See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
 <figure>
-  <img src="/wp-content/uploads/gl-agent-working-01-v2@2x.png" alt="Agents section in the Commit Graph showing agent sessions with Working and Idle status indicators, their file changes, and commit controls" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v3@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Completed — above the changed files and the commit box" class="help-center-img img-bordered">
 </figure>
 
 <figure>
@@ -93,7 +93,7 @@ Review human or agent-generated changes with AI-powered Review. Surface meaningf
 Turn working changes into clean, logical commits with Commit Composer. Organize related changes, refine commits with AI assistance, and preview the result before writing it to your history.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-compose-01-v2@2x.png" alt="Commit Graph with the Composing Changes panel open beside it, showing an Unstaged changes entry with four changed files and the Instructions box with the Compose button" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-compose-01-v3@2x.png" alt="Commit Graph with the Composing Changes panel open beside it: the main branch, an Unstaged changes entry with four files changed (README.md, reports.ts, spending-analysis.ts, user-management.ts) and the Instructions box with the Compose button" class="help-center-img img-bordered">
 </figure>
 
 4. Compare

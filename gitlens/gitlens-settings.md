@@ -26,7 +26,7 @@ You can deep-link to any category by appending its anchor to the command: `gitle
 The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-account-01-v2.png" alt="GitLens Settings Account category showing subscription status and account management" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-account-01-v3@2x.png" alt="GitLens Settings with the Account category selected: the GitLens Pro plan header with its badge and the Synchronize Status, Manage Account and Sign Out buttons, the signed-in account and organization rows (masked here), a referral line and a Learn more link" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Annotation and decoration settings for the code editor.
 **Inline Blame** (`current-line`) — configure the blame annotation shown at the end of the current line, including format, date style, and pull request information. **Git CodeLens** (`code-lens`) — toggle and format the authorship and change indicators above code blocks. **Status Bar Blame** (`status-bar`) — control the blame summary in the VS Code status bar. **Hovers** (`hovers`) — configure hover tooltips that appear over blame annotations and code, including details, changes, and pull request information.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-hovers-01-v2.png" alt="GitLens Settings Hovers category showing hover annotation toggles" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-hovers-01-v2@2x.png" alt="GitLens Settings Hovers category showing hover annotation toggles" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Hovers category</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Configuration for Commit Graph and source control tree views.
 **Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — format templates for the Commits view (commit label, description, and tooltip formats; file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-views-01-v2.png" alt="GitLens Settings Commits view category showing the commit and file format templates" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-views-01-v3@2x.png" alt="GitLens Settings with the Commits view category selected in the Views group: format templates for the commit label, commit description, commit tooltip, file rows and file description, each with a token picker, and a footer link to the full gitlens.views.commits options in the VS Code Settings UI" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commits view category</figcaption>
 </figure>
 

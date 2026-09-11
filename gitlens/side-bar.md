@@ -155,7 +155,7 @@ To open GitLens Inspect, launch the Command Palette (<kbd>Cmd/Ctrl + Shift + P</
 The **Commit Details** tab updates as you move your cursor through the file or select a commit in the Commit Graph. It shows information such as commit author, ID, modified files, and autolinks.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-commit-details-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit details in GitLens Inspect view">
+  <img src="/wp-content/uploads/gl-inspect-commit-details-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view showing the details of the commit under the caret: the author and date, the commit message ending in &quot;Closes #7&quot;, the Autolinks section listing the resolved #7 pull-request chip, and the changed file">
 </figure>
 
 ### Overview
@@ -163,7 +163,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) when working on a pull request.
 
 <figure>
-  <img src="/wp-content/uploads/gl-inspect-overview-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view Overview showing the working changes: the Compose and Review mode toggle, the Working row with its change counts, and the modified files">
+  <img src="/wp-content/uploads/gl-inspect-overview-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view showing the Overview of the working changes: the Compose and Review mode toggle, the Working row with its change counts, and the three modified TypeScript files">
 </figure>
 
 
@@ -172,7 +172,7 @@ The **Overview** tab helps you stage or unstage changes, open files to view modi
 ## Repositories View
 
 <figure>
-  <img src="/wp-content/uploads/gl-repositories-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Repositories view">
+  <img src="/wp-content/uploads/gl-repositories-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Repositories view with the Playground2026 repository expanded: its upstream status on the repository row and the sub-views beneath it — Commits, Branches, Remotes, Tags, Worktrees and Contributors (Stashes is an optional sub-view, off by default)">
 </figure>
 
 A hidden by default, [customizable](/gitlens/settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories.
@@ -248,7 +248,7 @@ The **Line History** view lists all commits that modified the selected lines. It
 ## Branches View
 
 <figure>
-  <img src="/wp-content/uploads/gl-branches-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Branches view">
+  <img src="/wp-content/uploads/gl-branches-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Branches view showing local branches with upstream status indicators, commit history, and branch comparison tools">
 </figure>
 
 A [customizable](/gitlens/settings/#branches-view-settings) view to visualize, explore, and manage Git branches.
@@ -285,7 +285,7 @@ The **Branches** view lists all local branches and includes:
 ## Remotes View
 
 <figure>
-  <img src="/wp-content/uploads/gl-remotes-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Remotes view">
+  <img src="/wp-content/uploads/gl-remotes-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Remotes view with two remotes: origin, expanded to show its GitHub provider icon, the gitkraken/Playground2026 repository and its remote branches with their last-commit dates, and a self-hosted enterprise remote below it">
 </figure>
 
 A [customizable](/gitlens/settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches.
@@ -406,7 +406,7 @@ To convert a local Workspace, click **Convert to Cloud Workspace**, add a name a
 Workspace status indicators use symbols and colors, such as a green **O** for the currently open Workspace.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Workspace status indicators">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v3@2x.png" class="help-center-img img-bordered" alt="The Cloud Workspaces view filtered to Playground2026: under Current Window the repository is listed, and in the Demo2026 workspace the same repository is drawn in green with a green dot at the end of its row — the indicator for the repository open in the current window">
 </figure>
 
 ### Workspace Linking
