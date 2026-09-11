@@ -6,6 +6,9 @@ taxonomy:
     category: gitlens
     
 ---
+
+<kbd>Last updated: September 2026</kbd>
+
 ---
 
 Welcome to the GitLens Support Documentation site! 
