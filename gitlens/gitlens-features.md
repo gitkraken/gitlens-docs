@@ -429,9 +429,13 @@ Learn how to configure this in our [Self-Hosting Guide](/gk-dev/gk-dev-home/#sel
 
 ***
 
-## Commit Graph <span style="color: #888;">`PRO`</span>
+## Commit Graph
 
-The Commit Graph is the main view in the GitLens sidebar, providing an interactive visualization of your repository history. Built on a high-performance rendering engine, it shows commits, branches, and contributors in one place, helping you understand project activity and make informed decisions quickly.
+The Commit Graph is the starting point for working in GitLens. It brings repository history, branches, worktrees, Working Changes, pull requests, and supported agent activity into one connected workbench, so you can understand what's happening and move changes toward merge without rebuilding context across tools.
+
+Built on a high-performance rendering engine, the graph stays responsive on large repositories, showing commits, branches, and contributors in one place.
+
+The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> is required only for private repositories.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-01-v4@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
@@ -476,8 +480,8 @@ From here, you can:
 </figure>
 
 <figure class='callout callout--basic'>
-  <p><strong>Note:</strong> The Commit Graph is available to all users on public or local repositories without needing an account.</br></br>
-  Private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>.</p>
+  <p><strong>Note:</strong> The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.</br></br>
+  Only private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>.</p>
   <p>We welcome your input—join the discussion on <a href="https://github.com/gitkraken/vscode-gitlens/discussions/2158" target="_blank">GitHub</a>.</p>
 </figure>
 
@@ -651,7 +655,7 @@ Compare mode lets you view comparisons directly inside the Commit Graph rather t
 
 ### Compose Mode `PRO`
 
-Compose mode integrates commit composition directly within the Commit Graph. Select the WIP row to see your working changes, then switch to Compose mode in the details panel to create commits from your changes or restructure branch history using AI.
+Compose mode integrates commit composition directly within the Commit Graph. Select the Working Changes row to see your uncommitted work, then switch to Compose mode in the details panel to create commits from those changes or to reorganize branch history. GitKraken AI can propose the commits and messages for you to review and refine before applying them.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v6@2x.png" alt="Commit Graph in Compose mode: the ringed Compose (wand) action on the Working Changes row, and the composer panel beside the graph listing Staged changes and Unstaged changes entries, the changed files, and the Instructions box with the Compose button" class="help-center-img img-bordered">
@@ -669,7 +673,7 @@ Click the **Compose** button to generate an AI-assisted commit message based on 
 
 ### Multi-File Selection
 
-The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in WIP, commit details, compare, compose, and review file lists. Selected files can be batch-operated on with stage, unstage, discard, and stash actions. Inline per-file action buttons are also available for individual operations.
+The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. Selected files can be batch-operated on with stage, unstage, discard, and stash actions. Inline per-file action buttons are also available for individual operations.
 
 ### Pull Request Indicators
 
@@ -1006,15 +1010,15 @@ The **AI Rebase** command restructures commits on an existing branch onto a targ
 
 ### AI Auto Rebase `PRO`
 
-AI Auto Rebase (`gitlens.ai.autoRebase`) takes interactive rebasing further by automatically resolving conflicts end-to-end. When a rebase encounters conflicts, AI analyzes each conflict and resolves it based on a configurable confidence threshold.
+AI Auto Rebase (`gitlens.ai.autoRebase`) carries a rebase forward through the conflicts GitKraken AI can resolve confidently, and hands the rest back to you. When a rebase encounters a conflict, AI analyzes it and resolves it only when its confidence meets the threshold you set; anything below that threshold pauses the rebase so you can resolve the conflict yourself and continue. Every run is reviewable and reversible.
 
 Key capabilities:
 
-- **Automatic conflict resolution** — AI resolves merge conflicts during rebase without manual intervention
-- **Confidence threshold** — Configure `gitlens.ai.autoRebase.confidenceThreshold` (0 to 1) to control how confident the AI must be before auto-resolving a conflict
+- **Confidence threshold** — Configure `gitlens.ai.autoRebase.confidenceThreshold` (0 to 1) to control how confident the AI must be before resolving a conflict on its own. Raise it to keep more decisions in your hands.
+- **Stops rather than guesses** — Conflicts that fall below the threshold are left for you to resolve manually, with the rebase paused at that point.
 - **Custom instructions** — Use `gitlens.ai.resolveConflicts.customInstructions` to provide project-specific guidance for conflict resolution
-- **Full undo support** — Undo the entire auto-rebase with `gitlens.ai.autoRebase.undo` if the results are not satisfactory
-- **Rebase summary sheet** — After completion, a summary sheet shows what was resolved and how
+- **Rebase summary sheet** — After the rebase completes, a summary sheet shows what was resolved and how, so you can review each decision
+- **Full undo support** — Undo the entire auto-rebase with `gitlens.ai.autoRebase.undo` to return to the pre-rebase state if the results are not what you wanted
 
 Access it from the Commit Graph context menu or the Command Palette: `GitLens: AI Auto Rebase`
 
@@ -1046,7 +1050,7 @@ When composing commits, GitLens now creates "draft" commits that you can review,
 You can launch the new Commit Composer view from several places in GitLens:
 
 - **GitLens commit details view**
-- **Context menu on the WIP row** in the GitLens Commit Graph  
+- **Context menu on the Working Changes row** in the GitLens Commit Graph  
 - **Commit Graph details panel**: Switch to **Compose** mode
 - **✨ icon in the SCM view header**
 - **Command palette**: Search for "Compose Commits"
@@ -1058,7 +1062,7 @@ You can launch the new Commit Composer view from several places in GitLens:
 
 <figure>
   <img src="/wp-content/uploads/gl-access-composer-2-17-4-01-v4@2x.png" alt="The Commit Graph's Working Changes details panel with the Compose and Review mode chips ringed in its header, above the branch row, the four changed files and the commit-message box" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Or switch to Compose mode in the WIP details panel</figcaption>
+  <figcaption style="text-align: center; color: #888">Or switch to Compose mode in the Working Changes details panel</figcaption>
 </figure>
 
 The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
@@ -1109,7 +1113,7 @@ Commit Composer is also more discoverable, with a new wand button on the Working
 
 <figure>
   <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v4@2x.png" alt="The Working Changes row at the top of the Commit Graph with its row actions at the right: the wand button that opens Commit Composer for all working directory changes is ringed" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Open Commit Composer from the WIP row</figcaption>
+  <figcaption style="text-align: center; color: #888">Open Commit Composer from the Working Changes row</figcaption>
 </figure>
 
 ### Compose and Recompose Commands
@@ -1117,9 +1121,9 @@ Commit Composer is also more discoverable, with a new wand button on the Working
 Commit Composer can also be launched via dedicated commands:
 
 - **Compose Commits** (`gitlens.compose`) — Opens the Commit Composer for working changes in the current repository, or from a Compose mode entry in the Commit Graph details panel.
-- **Recompose Branch** (`gitlens.recomposeBranch`) — Opens the Commit Composer for an entire branch, allowing AI to restructure all commits.
-- **Recompose from Commit** (`gitlens.recomposeFromCommit`) — Recomposes from a specific commit onward.
-- **Recompose Selected Commits** (`gitlens.recomposeSelectedCommits`) — Recomposes only the selected commits on a branch.
+- **Recompose Branch** (`gitlens.recomposeBranch`) — Opens the Commit Composer scoped to an entire branch. GitKraken AI can propose a clearer, more intentional sequence of commits and messages for you to review and refine before applying the result.
+- **Recompose from Commit** (`gitlens.recomposeFromCommit`) — Scopes the same workflow to a specific commit onward.
+- **Recompose Selected Commits** (`gitlens.recomposeSelectedCommits`) — Scopes the same workflow to only the selected commits on a branch.
 
 These commands are available from the Commit Graph context menu, branch context menus throughout GitLens, and the Command Palette. Coach marks guide first-time users through the workflow.
 

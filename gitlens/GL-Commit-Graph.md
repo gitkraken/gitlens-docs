@@ -8,9 +8,13 @@ taxonomy:
 
 <kbd>Last updated: September 2026</kbd>
 
-## Commit Graph <code>PRO</code>
+## Commit Graph
 
-The GitLens Commit Graph is the main view in the GitLens sidebar, providing an interactive visualization of your repository history. Built on a high-performance rendering engine, it shows commits, branches, and collaborators in one place, helping you understand contributions and make faster decisions.
+The Commit Graph is the starting point for working in GitLens. It brings repository history, branches, worktrees, Working Changes, pull requests, and supported agent activity into one connected workbench, so you can understand what's happening and move changes toward merge without rebuilding context across tools.
+
+Built on a high-performance rendering engine, the graph stays responsive on large repositories, showing commits, branches, and collaborators in one place.
+
+The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A GitLens Pro subscription or trial is required only for private repositories.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-01-v4@2x.png" class="help-center-img img-bordered" alt="Commit Graph in GitLens showing branches and commits" />
@@ -57,8 +61,8 @@ You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` set
 
 ### Availability
 
-- The Commit Graph is available to all users for **public** and **local** repositories.
-- A **paid GitLens subscription or trial** is required for use with **private repositories**.
+- The Commit Graph is included in **GitLens Community** and available to all users on **public** and **local** repositories, with no account required.
+- A **GitLens Pro subscription or trial** is required only for use with **private repositories**.
 
 ---
 
@@ -74,7 +78,7 @@ The Commit Graph includes an expandable sidebar panel that provides quick access
 
 The sidebar contains several panels:
 
-- **Overview**: Displays branch cards with WIP stats and upstream tracking information at a glance.
+- **Overview**: Displays branch cards with Working Changes stats and upstream tracking information at a glance.
 - **Focus Branch**: Scopes the graph to a single branch, filtering out unrelated history.
 - **Agent Branches**: Filters branches to show only those associated with AI agent sessions.
 - **Agent Sessions**: A Kanban-style panel for monitoring and managing active agent sessions. Branches with running agent sessions display status pills directly in the graph, so you can track agent activity at a glance.
@@ -96,24 +100,20 @@ Clicking on a branch, pull request, or comparison in the sidebar opens a slide-o
 
 ---
 
-### Overview Bar
+### Worktree Overview
 
-The overview bar is a horizontal strip displayed above the graph showing one pill per worktree. Each pill indicates the branch's WIP status, and hovering reveals additional details. The `gitlens.graph.overviewBar.visibility` setting controls when the overview bar is shown.
+See branch state, uncommitted changes, and unpushed commits across your worktrees. Each worktree has a pill above the graph; select it to jump to that worktree's Working Changes row.
+
+Each pill shows the branch name, a dirty indicator when there are uncommitted changes, an unpushed arrow with an ahead count when commits have not been pushed, and changed file counts on hover. The `gitlens.graph.overviewBar.visibility` setting controls when the overview bar is shown.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v3@2x.png" class="help-center-img img-bordered" alt="The worktree overview above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty indicator and an unpushed arrow" />
+  <figcaption style="text-align: center; color: #888">Worktree pills above the graph</figcaption>
+</figure>
 
 #### Ref Find
 
-The ref-finder widget provides a typeahead search for quickly jumping to any branch, tag, or WIP row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
-
----
-
-### WIP Bar
-
-The Commit Graph displays a WIP bar at the top of the graph with one pill per worktree. Each pill shows the branch name, a dirty indicator when there are uncommitted changes, an unpushed arrow with ahead count when commits have not been pushed, and changed file counts on hover. Clicking a pill scrolls the graph to that worktree's WIP row.
-
-<figure>
-  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v3@2x.png" class="help-center-img img-bordered" alt="The WIP bar above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty indicator and an unpushed arrow" />
-  <figcaption style="text-align: center; color: #888">WIP bar with worktree pills above the graph</figcaption>
-</figure>
+The ref-finder widget provides a typeahead search for quickly jumping to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
 
 ---
 
@@ -127,8 +127,8 @@ The details panel supports multiple modes:
 
 - **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits. This replaces navigating to the standalone Search and Compare view for graph comparisons.
 - **Compose mode**: Provides an integrated commit composition experience, letting you craft commit messages and select files to commit without leaving the graph. You can also access Compose from the graph context menu.
-- **Recompose**: Restructures the commit history on a branch using AI. Available from the graph context menu, Recompose can operate on an entire branch, from a specific commit, or on selected commits. It analyzes your changes and reorganizes them into cleaner, more logical commits.
-- **Review mode**: Uses AI to analyze commits or working changes and surfaces severity-tagged insights such as potential bugs, security issues, or style concerns. You can configure separate AI models for compose and review using per-feature model scoping, and customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting.
+- **Recompose**: Helps clean up existing branch history by reorganizing selected commits into a clearer, more intentional sequence. GitKraken AI can propose the new structure and commit messages for you to review and refine before applying the result. Available from the graph context menu, Recompose can operate on an entire branch, from a specific commit, or on selected commits.
+- **Review mode**: Helps you inspect commits or Working Changes before they move forward. GitKraken AI can surface potential bugs, security issues, and other areas that deserve attention &mdash; tagged by severity &mdash; while you decide what needs to change. You can configure separate AI models for compose and review using per-feature model scoping, and customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-details-panel-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with the embedded details panel on the right, showing commit message, author, and changed files for the selected commit" />
@@ -137,7 +137,7 @@ The details panel supports multiple modes:
 
 #### Multi-file Selection
 
-File lists in the details panel (WIP, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for quick single-file operations.
+File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for quick single-file operations.
 
 #### Co-authors
 
@@ -206,11 +206,11 @@ Scroll markers highlight key points in the Commit Graph, including:
 - Checked-out branches
 - Selected rows
 - Search results
-- Work-in-progress (WIP) rows
+- Working Changes rows
 
 Use scroll markers to quickly jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gitlens-features/#settings).
 
-The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree WIP rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
+The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree Working Changes rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
 
 <figure>
   <img src="/wp-content/uploads/gl-scroll-markers.png" class="help-center-img img-bordered" alt="Commit Graph scroll markers indicating branch and search results" />
@@ -306,7 +306,7 @@ Helpful context menu actions include:
 
 ### AI Auto Rebase <code>PRO</code>
 
-AI Auto Rebase automatically resolves conflicts during a rebase operation. When conflicts arise, GitLens uses AI to analyze and resolve them end-to-end based on a configurable confidence threshold.
+AI Auto Rebase carries a rebase forward through the conflicts GitKraken AI can resolve confidently. When conflicts arise, GitLens analyzes each one and resolves it only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself.
 
 - Run **GitLens: AI Auto Rebase** from the Command Palette or the graph context menu.
 - The `gitlens.ai.autoRebase.confidenceThreshold` setting (0 to 1) controls how confident the AI must be before automatically applying a resolution.

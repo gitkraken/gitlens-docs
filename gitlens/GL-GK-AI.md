@@ -98,10 +98,10 @@ Open Pull Requests: Automatically generate clear PR titles and descriptions dire
 ### AI Review `Pro`
 **Available in:** Pro, Advanced, and Business plans
 
-Review commits and working changes with AI-powered analysis that surfaces severity-tagged insights directly in the Commit Graph details panel. AI Review identifies potential issues, highlights notable patterns, and provides actionable feedback on your changes.
+Inspect commits or Working Changes before they move forward. GitKraken AI surfaces potential bugs, security issues, and other areas that deserve attention &mdash; tagged by severity &mdash; directly in the Commit Graph details panel, while you decide what needs to change.
 
 **How to access:**
-- In the Commit Graph: Select a commit or working changes, then open the Review mode in the details panel
+- In the Commit Graph: Select a commit or the Working Changes row, then open Review mode in the details panel
 - Customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting
 
 You can configure separate AI models for different features (such as compose and review) to optimize for your preferred balance of speed and quality.
@@ -109,7 +109,7 @@ You can configure separate AI models for different features (such as compose and
 ### AI Auto Rebase `Pro`
 **Available in:** Pro, Advanced, and Business plans
 
-Automate rebasing with AI-assisted conflict resolution. AI Auto Rebase handles the end-to-end rebase process, automatically resolving conflicts based on a configurable confidence threshold. A rebase summary sheet shows what was resolved and how, and full undo support lets you revert the operation if needed.
+Move a rebase forward with AI-assisted conflict resolution. AI Auto Rebase resolves a conflict only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself. A rebase summary sheet shows what was resolved and how, and full undo support returns you to the pre-rebase state if the result is not what you wanted.
 
 **How to access:**
 - From the Command Palette: `GitLens: AI Auto Rebase`
@@ -124,8 +124,8 @@ Automate rebasing with AI-assisted conflict resolution. AI Auto Rebase handles t
 
 Shape your commit history with AI-assisted commit crafting and branch restructuring.
 
-- **Compose**: Craft clean, logical commits from your uncommitted working changes using the Commit Composer in the Commit Graph
-- **Recompose**: Restructure existing commits on a branch using AI. Recompose commands let you reorganize, split, or combine commits for a clearer history
+- **Compose**: Craft clean, logical commits from your Working Changes using the Commit Composer in the Commit Graph
+- **Recompose**: Clean up existing branch history by reorganizing selected commits into a clearer, more intentional sequence. GitKraken AI can propose the new structure and commit messages for you to review and refine before applying the result
 
 **How to access:**
 - From the Commit Graph: Enter Compose mode to create commits from working changes

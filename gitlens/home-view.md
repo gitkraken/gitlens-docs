@@ -43,7 +43,7 @@ As development spreads across multiple branches, worktrees, and coding agents, k
   <img src="/wp-content/uploads/GL-Worktrees-tab-open.png" class="help-center-img img-bordered">
 </figure>
 
-Multi-worktree WIP shows working changes across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
+Multi-worktree Working Changes shows uncommitted work across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
   <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v3@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">

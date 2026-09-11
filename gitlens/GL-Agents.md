@@ -20,7 +20,7 @@ With GitLens, you can:
 - Review AI-generated changes inside the Commit Graph
 - Compose commits directly from agent-produced work
 - Quickly identify sessions waiting for input
-- Manage parallel worktrees and WIP changes visually
+- Manage parallel worktrees and Working Changes visually
 
 GitLens 18 currently supports Claude Code integrations through GitLens-managed hooks.
 
@@ -137,7 +137,7 @@ From the Commit Graph details panel you can:
 ### Open the Commit Graph Details Panel
 
 1. Open the Commit Graph.
-2. Select a commit, branch, or WIP row.
+2. Select a commit, branch, or Working Changes row.
 3. Toggle the details panel if it is hidden.
 
 The panel can be docked on the right side or at the bottom of the Commit Graph. Hold `Alt` while toggling the panel to switch docking locations.
@@ -151,7 +151,7 @@ GitLens 18 adds AI-powered review workflows directly inside the Commit Graph.
 ### Start an AI Code Review
 
 1. Open the Commit Graph.
-2. Select a WIP row or commit.
+2. Select a Working Changes row or commit.
 3. Open the details panel.
 4. Switch to Review mode.
 
@@ -175,7 +175,7 @@ Commit Composer is integrated directly into the Commit Graph details panel. You 
 ### Compose a Commit
 
 1. Open the Commit Graph.
-2. Select a WIP row.
+2. Select a Working Changes row.
 3. Open the details panel.
 4. Switch to Compose mode.
 5. Review proposed commit groupings.
@@ -193,7 +193,7 @@ Compose mode supports:
 
 ## Manage Multi-Worktree Workflows
 
-GitLens 18 introduces multi-worktree WIP rows in the Commit Graph. Instead of showing changes only for the active worktree, the Commit Graph displays work-in-progress rows for every connected worktree.
+GitLens 18 introduces multi-worktree Working Changes rows in the Commit Graph. Instead of showing changes only for the active worktree, the Commit Graph displays a Working Changes row for every connected worktree.
 
 This makes it easier to:
 
@@ -203,11 +203,11 @@ This makes it easier to:
 - Resolve conflicts
 - Compose commits from multiple worktrees
 
-Each WIP row updates live as files change.
+Each Working Changes row updates live as files change.
 
-### Use WIP Scroll Markers
+### Use Working Changes Scroll Markers
 
-The Commit Graph minimap includes WIP scroll markers that highlight work-in-progress rows. You can customize marker colors or enable and disable markers in settings.
+The Commit Graph minimap includes scroll markers that highlight Working Changes rows. You can customize marker colors or enable and disable markers in settings.
 
 ---
 
@@ -249,7 +249,7 @@ Pinned branches remain visible across Commit Graph sessions.
 
 ## Resolve Conflicts in the Commit Graph
 
-Conflict resolution workflows extend directly into the Commit Graph. You can resolve merge conflicts from Commit Graph WIP rows or the Interactive Rebase editor. Conflict states appear inline inside the details panel.
+Conflict resolution workflows extend directly into the Commit Graph. You can resolve merge conflicts from Commit Graph Working Changes rows or the Interactive Rebase editor. Conflict states appear inline inside the details panel.
 
 ---
 
