@@ -3,6 +3,7 @@ title: Cleaning Up and Preparing Work for Review
 description: Use Git intelligence to transform iterative work into clean, reviewable history
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

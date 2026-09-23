@@ -3,6 +3,7 @@ title: Commit Graph is Home
 description: "GitLens Commit Graph: Your Development Workbench"
 taxonomy:
     category: gitlens
+last_updated: 2026-09
     
 ---
 

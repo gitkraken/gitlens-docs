@@ -3,7 +3,10 @@ title: GitLens Release Notes — Older Versions
 description: GitLens Release Notes for Version 16.x and earlier
 taxonomy:
   category: gitlens
+last_updated: 2026-05
 ---
+
+<kbd>Last updated: May 2026</kbd>
 
 Release notes for older GitLens versions (v16.x and earlier).
 

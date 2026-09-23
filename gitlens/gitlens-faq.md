@@ -3,6 +3,7 @@ title: GitLens FAQ
 description: Frequently asked questions about GitLens and GitKraken account integration.
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

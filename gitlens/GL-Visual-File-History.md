@@ -3,6 +3,7 @@ title: GitLens Visual File History
 description: Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code.
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 

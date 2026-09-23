@@ -3,6 +3,7 @@ title: GitLens Cloud Patches
 description: Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 

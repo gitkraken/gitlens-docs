@@ -3,6 +3,7 @@ title: GitLens Commit Graph
 description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 

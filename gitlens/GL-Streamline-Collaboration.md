@@ -3,6 +3,7 @@ title: GitLens Streamline Collaboration
 description: How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
 taxonomy:
   category: gitlens
+last_updated: 2025-07
 ---
 <kbd>Last updated: July 2025</kbd>
 

@@ -3,7 +3,10 @@ title: GitLens Release Notes
 description: GitLens Release Notes
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
+
+<kbd>Last updated: September 2026</kbd>
 
 Find out what's new, what's fixed, or just take a trip down memory lane remembering those bugs of yesterday.
 

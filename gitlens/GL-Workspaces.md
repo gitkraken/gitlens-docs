@@ -3,6 +3,7 @@ title: Manage Multiple Repositories with GitLens Workspaces
 description: Learn how to create and use Workspaces in GitLens to organize your repositories
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

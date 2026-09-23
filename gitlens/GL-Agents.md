@@ -4,6 +4,7 @@ title: AI Agents in Gitlens
 description: Using AI Agents in Gitlens
 taxonomy:
     category: gitlens
+last_updated: 2026-05
 
 ---
 

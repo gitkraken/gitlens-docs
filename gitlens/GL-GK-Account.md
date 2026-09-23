@@ -3,6 +3,7 @@ title: GitKraken Account – GitLens
 description: Learn how to create and manage your GitKraken account for GitLens features.
 taxonomy:
   category: gitlens
+last_updated: 2025-07
 ---
 
 <kbd>Last updated: July 2025</kbd>

@@ -3,6 +3,7 @@ title: GitLens Code Suggest
 description: Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
 taxonomy:
     category: gitlens
+last_updated: 2025-08
 
 ---
 

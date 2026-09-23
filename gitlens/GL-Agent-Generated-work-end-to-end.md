@@ -4,6 +4,7 @@ title: Take Agent-Generated Work from Change to Merge
 description: Code Change to Merged branches all through GitLens
 taxonomy:
     category: gitlens
+last_updated: 2026-08
 
 ---
 <kbd>Last updated: August 2026</kbd>

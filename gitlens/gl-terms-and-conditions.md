@@ -4,9 +4,12 @@ title: GitLens Support Terms and Conditions
 description: Learn about GitLens Support terms and conditions
 taxonomy:
     category: gitlens
+last_updated: 2025-03
 
 ---
 
+
+<kbd>Last updated: March 2025</kbd>
 
 Our goal is to ensure you can use GitLens effortlessly and with minimal friction. In the unlikely event that you need to reach out to a human, refer to our current Terms and Conditions below.
 

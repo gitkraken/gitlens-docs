@@ -3,7 +3,10 @@ title: Orchestrating Complex Git Operations
 description: Apply Git intelligence and AI-aware context to manage complex history safely
 taxonomy:
   category: gitlens
+last_updated: 2026-01
 ---
+
+<kbd>Last updated: January 2026</kbd>
 
 **Level:** Advanced Developers
 **Primary Goal:** Apply Git intelligence and AI-aware context to manage complex history safely

@@ -3,6 +3,7 @@ title: GitLens Settings Overview
 description: Learn how to access and customize GitLens settings in Visual Studio Code
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 ---
 <kbd>Last updated: September 2026</kbd>
 
