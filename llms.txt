@@ -25,7 +25,7 @@
 - [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/): Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
 - [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Managing and Preparing branches to ship
 - [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Code Change to Merged branches all through GitLens
-- [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes (Current — v18.x)
+- [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes (Current — v19.x and v18.x)
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
 - [GitLens Security Information](https://help.gitkraken.com/gitlens/gl-security/): Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
