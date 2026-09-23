@@ -1,6 +1,4 @@
 ---
-
----
 title: GitLens FAQ
 description: Frequently asked questions about GitLens and GitKraken account integration.
 taxonomy:
