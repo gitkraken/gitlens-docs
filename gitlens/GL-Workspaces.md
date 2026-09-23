@@ -5,7 +5,7 @@ taxonomy:
     category: gitlens
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Workspaces in GitLens help you organize and manage multiple repositories from one convenient interface. Whether you're working solo or collaborating with a team, Workspaces simplify project access and context switching.
 
@@ -105,10 +105,10 @@ Your Cloud Workspace will be synced to your GitKraken account and accessible via
 ### Understanding Workspace Indicators and Colors
 
 Visual indicators in Workspaces help you quickly understand their status. For example:
-- A **green Workspace** with an **O** symbol indicates it is open in your current window.
+- A **green Workspace** with a **green dot** indicates it is open in your current window.
 
 <figure>
-  <img src="/wp-content/uploads/gl-workspace-indicators.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-workspace-indicators-01-v3@2x.png" alt="The Cloud Workspaces view filtered to Playground2026: under Current Window the repository is listed, and in the Demo2026 workspace the same repository is drawn in green with a green dot at the end of its row — the indicator for the repository open in the current window" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Workspace status indicators</figcaption>
 </figure>
 

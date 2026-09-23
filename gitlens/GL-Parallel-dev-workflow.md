@@ -6,7 +6,7 @@ taxonomy:
     category: gitlens
 
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
 
@@ -27,7 +27,7 @@ See branches, worktrees, working changes, commits, HEAD, upstream, merge targets
 Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Worktrees-multi-wip.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v3@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
 </figure>
 
 ## 2. Monitor Agent Work
@@ -42,7 +42,7 @@ From the Commit Graph, you can:
 - Resume active or previous sessions with the surrounding Git context intact
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-working.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v3@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Completed — above the changed files and the commit box" class="help-center-img img-bordered">
 </figure>
 
 <figure>

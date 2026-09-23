@@ -6,7 +6,7 @@ taxonomy:
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 ## What Are Cloud Patches?
 
@@ -80,7 +80,7 @@ Cloud Patches shared with you appear under **Shared with Me** in the Cloud Patch
 2. Select **Delete Cloud Patch…**  
 
 <figure>
-  <img src="/wp-content/uploads/gl-delete-cloud-patch.png" class="help-center-img img-bordered" alt="Deleting a Cloud Patch in GitLens" />
+  <img src="/wp-content/uploads/gl-delete-cloud-patch-01-v3@2x.png" class="help-center-img img-bordered" alt="Cloud Patches view in the GitLens sidebar showing a right-click context menu with Delete Cloud Patch option on a patch entry" />
   <figcaption style="text-align: center; color: #888">Deleting a Cloud Patch</figcaption>
 </figure>
 
