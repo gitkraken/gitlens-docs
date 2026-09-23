@@ -8,13 +8,13 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-accelerate-pr-reviews/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-workflow-cleanup-prepare-for-review/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,13 +26,13 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-gk-ai/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-cloud-patches/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-commit-graph/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,25 +56,25 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-faq/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-features/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/home-view/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-integrations/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -86,19 +86,19 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-agents/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-release-notes-current/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -134,7 +134,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-settings/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -158,13 +158,13 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-visual-file-history/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-worktrees/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,7 +176,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gl-workspaces/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -188,7 +188,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/gitlens-start-here/</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -200,7 +200,7 @@
   </url>
   <url>
     <loc>https://help.gitkraken.com/gitlens/side-bar/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
