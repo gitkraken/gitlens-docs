@@ -4,6 +4,7 @@ title: GitKraken AI Features in GitLens
 description: Learn more about the use of Gitkraken AI in Gitlens!
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 

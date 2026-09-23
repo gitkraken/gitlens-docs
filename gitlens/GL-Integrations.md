@@ -3,6 +3,7 @@ title: GitLens Integrations
 description: Explore GitLens integrations with remote providers
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

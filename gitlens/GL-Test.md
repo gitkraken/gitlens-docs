@@ -3,7 +3,10 @@ title: GitLens Release Notes
 description: GitLens Release Notes
 taxonomy:
   category: gitlens
+last_updated: 2025-11
 ---
+
+<kbd>Last updated: November 2025</kbd>
 
 ## Test Page
 

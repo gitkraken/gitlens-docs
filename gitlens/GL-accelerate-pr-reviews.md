@@ -3,6 +3,7 @@ title: Accelerate PR Reviews
 description: Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees.
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

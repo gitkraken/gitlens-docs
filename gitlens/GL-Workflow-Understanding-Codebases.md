@@ -4,7 +4,10 @@ description: Use GitLens Git intelligence to gain context, reduce risk, and make
 
 taxonomy:
   category: gitlens
+last_updated: 2026-01
 ---
+
+<kbd>Last updated: January 2026</kbd>
 
 **Level**: New Developers
 **Primary Goal:** Use GitLens Git intelligence to gain context, reduce risk, and make confident changes

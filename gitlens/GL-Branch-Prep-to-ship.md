@@ -4,6 +4,7 @@ title: Prepare Your Branch to Ship
 description: Managing and Preparing branches to ship
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 <kbd>Last updated: September 2026</kbd>

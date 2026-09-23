@@ -4,6 +4,7 @@ title: Manage Parallel Development from the Commit Graph
 description: Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
 taxonomy:
     category: gitlens
+last_updated: 2026-09
 
 ---
 <kbd>Last updated: September 2026</kbd>

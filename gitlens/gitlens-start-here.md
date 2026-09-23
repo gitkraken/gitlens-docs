@@ -4,6 +4,7 @@ title: Start Here
 description: How to start working with GitLens
 taxonomy:
     category: gitlens
+last_updated: 2026-09
     
 ---
 

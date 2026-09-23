@@ -3,6 +3,7 @@ title: Launchpad
 description: Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
 taxonomy:
     category: gitlens
+last_updated: 2025-08
 
 ---
 

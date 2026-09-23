@@ -3,7 +3,10 @@ title: GitLens Troubleshooting
 description: GitLens Troubleshooting
 taxonomy:
   category: gitlens
+last_updated: 2025-04
 ---
+
+<kbd>Last updated: April 2025</kbd>
 
 ## Enable showing Bitbucket pull request for a commit
 

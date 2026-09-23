@@ -3,6 +3,7 @@ title: Using the GitLens Sidebar
 description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
 
 <kbd>Last updated: September 2026</kbd>

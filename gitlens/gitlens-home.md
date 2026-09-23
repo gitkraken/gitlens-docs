@@ -4,6 +4,7 @@ title: Get Started with GitLens
 description: How to install and start using GitLens in Visual Studio Code
 taxonomy:
     category: gitlens
+last_updated: 2026-08
     
 ---
 <kbd>Last updated: August 2026</kbd>

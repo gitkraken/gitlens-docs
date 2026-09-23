@@ -3,6 +3,7 @@ title: GitLens Security Information
 description: Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
 taxonomy:
     category: gitlens
+last_updated: 2025-08
 
 ---
 

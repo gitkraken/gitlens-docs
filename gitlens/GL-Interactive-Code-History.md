@@ -3,6 +3,7 @@ title: GitLens Interactive Code History
 description: Learn how GitLens helps you explore and understand your repository’s commit history.
 taxonomy:
   category: gitlens
+last_updated: 2025-07
 ---
 
 <kbd>Last updated: July 2025</kbd>

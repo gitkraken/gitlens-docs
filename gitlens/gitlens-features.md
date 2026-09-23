@@ -3,6 +3,7 @@ title: GitLens Features
 description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
 taxonomy:
   category: gitlens
+last_updated: 2026-09
 ---
 <kbd>Last updated: September 2026</kbd>
 
