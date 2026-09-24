@@ -532,7 +532,7 @@ All columns in the Commit Graph are fully customizable:
 - The **Changes** column visualizes added and deleted lines per commit. The `gitlens.graph.changesColumn.mode` setting controls the display style: `numbers` (numeric counts), `squares` (colored blocks), `bar` (horizontal bar), or `bipolar` (split additions/deletions bar).
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-settings-v2@2x.png" alt="Commit Graph settings menu showing options to hide the Author, Date, SHA, Changes, and other columns, switch the graph layout, and use a compact layout" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-column-gl-settings-01-01-v2@2x.png" alt="Commit Graph settings menu showing options to hide the Author, Date, SHA, Changes, and other columns, switch the graph layout, and use a compact layout" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize visible columns with right-click options</figcaption>
 </figure>
 
@@ -553,7 +553,7 @@ To switch layouts:
 You can even open both layouts simultaneously.
 
 <figure>
-  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v3@2x.png" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Choose where the graph displays: Panel or Editor</figcaption>
 </figure>
 
@@ -618,7 +618,7 @@ GitLens keeps Git fast in your repositories. While VS Code is open, it runs safe
 The **Repository Health** visualization in the Commit Graph shows the state of each optimization and suggests the ones that would help your repository. To open it, run `GitLens: Show Repository Health` from the Command Palette, or select **Show Visualizations & Health** in the Commit Graph side bar and choose **Repository Health**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-repository-health.png" class="help-center-img img-bordered" alt="The Repository Health visualization in the Commit Graph, with the verdict &quot;This repository is in good shape&quot; above the Optimizations list of Commit-graph cache, Untracked cache, File system monitor, Large-repository index, Sparse index, and Scheduled maintenance." />
+  <img src="/wp-content/uploads/gl-graph-repository-health-01-v2@2x.png" class="help-center-img img-bordered" alt="The Repository Health visualization in the Commit Graph, with the ringed verdict &quot;This repository is in good shape&quot; above its facts strip and the Optimizations ledger listing the Commit-graph cache, Untracked cache, File system monitor, Large-repository index, Sparse index and Scheduled maintenance rows with their status, and Run Maintenance Now in the header." />
 </figure>
 
 The view shows a verdict for the repository and an **Optimizations** list:
@@ -791,7 +791,7 @@ You can further control what is shown using the filter dropdown:
 - Option to **dim merge commits**
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v3@2x.png" alt="Commit Graph filter options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" alt="Commit Graph filter options for branches, tags, and stashes" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize your view with filter presets</figcaption>
 </figure>
 
@@ -851,7 +851,7 @@ To send feedback from inside VS Code, select **Send Feedback...** (the feedback 
 Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="Launchpad PR overview" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" alt="Launchpad QuickPick showing pull request categories grouped by action needed, such as review, follow-up, or merge readiness" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View and act on PRs based on current status</figcaption>
 </figure>
 
@@ -1195,7 +1195,7 @@ Select multiple contiguous commits on the same branch using <kbd>Shift</kbd> or 
 Commit Composer is also more discoverable, with a new wand button on the Working Changes row in the Commit Graph that opens the composer for all working directory changes. Additionally, when rebasing, you can now switch directly into Commit Composer from the Rebase Editor, canceling your rebase to let AI handle the composition instead.
 
 <figure>
-  <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v4@2x.png" alt="The Working Changes row at the top of the Commit Graph with its row actions at the right: the wand button that opens Commit Composer for all working directory changes is ringed" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v5@2x.png" alt="The Commit Graph's Working Changes row with its action buttons, Compose ringed between Run Default Task and Review." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open Commit Composer from the Working Changes row</figcaption>
 </figure>
 
@@ -1226,13 +1226,13 @@ Adds a [customizable](/gitlens/settings/#git-command-palette-settings) Git Comma
 On a command's confirmation step, choose the action row, then turn options on or off with the checkbox toggles under the **Options** separator. Examples include **Prune** for Fetch, **Force** for Push Tags and branch deletion, **Keep Staged** for stashes, **Fast-forward** and **Don't Commit** for Merge, **Update Branches** and **Autosquash** for Rebase, and **In a New Worktree** for Switch. Where a matching Git config value exists, such as `fetch.prune`, `merge.ff`, `rebase.updateRefs`, or `rebase.autosquash`, the toggle starts from that value. Some commands also offer a **Don't Ask Again** toggle, which adds the command to [`gitlens.gitCommands.skipConfirmations`](/gitlens/settings/#git-command-palette-settings) so the confirmation is skipped from then on.
 
 <figure>
-  <img src="/wp-content/uploads/gl-git-command-palette-confirm-options.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Fetch step with the Fetch and Fetch All Remotes rows above an Options separator and the ringed Prune checkbox toggle." />
+  <img src="/wp-content/uploads/gl-git-command-palette-confirm-options-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Fetch step with the Fetch and Fetch All Remotes rows above an Options separator and the ringed Prune checkbox toggle, which removes remote-tracking branches that no longer exist on the remote." />
 </figure>
 
 To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick one or more tags, choose a remote (skipped when the repository has only one), and confirm; turn on **Force** to overwrite a tag that already exists on the remote. You can also push tags from the side bar views (**Push Tag...** or **Push Tags...** on tag nodes) and from the Commit Graph (**Push Tag...** on a tag's context menu).
 
 <figure>
-  <img src="/wp-content/uploads/gl-git-command-palette-push-tags.png" class="help-center-img img-bordered" alt="The Git Command Palette's Push Tags step asking you to choose tags to push, with the repository's v1.0.0, v1.1.0, and v2.0.0 tags listed as selectable rows." />
+  <img src="/wp-content/uploads/gl-git-command-palette-push-tags-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Push Tags step, titled Push Tags, asking to choose tags to push with the repository's v1.0.0, v1.1.0 and v2.0.0 tags listed as selectable rows." />
 </figure>
 
 ---
@@ -1259,7 +1259,7 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
   - Patch changes: `~<pattern>`
   - Merge commits only: `type:merge` or `is:merge`
 
-  <img src="/wp-content/uploads/gl-menu-commit-search-01-v2@2x.png" alt="Commit Search QuickPick showing the search mode options, including Search by Message, Author, Commit ID, File, and Changes, with their usage patterns" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-search-01-v3@2x.png" alt="Commit Search QuickPick showing search mode options including Search by Message, Author, Commit ID, File, and Changes with usage patterns" class="help-center-img img-bordered">
 
   Refer to the [Git log documentation](https://git-scm.com/docs/git-log) for advanced usage.
 
@@ -1299,7 +1299,7 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
 ## Interactive Rebase Editor
 
 <figure>
-  <img src="/wp-content/uploads/gl-rebase-01-v3@2x.gif" alt="GitLens interactive rebase editor: five commits each with an action dropdown, the second entry's dropdown open on pick / reword / edit / squash / fixup / drop, and then squash applied to it; the footer lists the keyboard shortcuts including alt + up/down to move a commit" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-rebase-01-v4@2x.gif" alt="GitLens interactive rebase editor: five commits each with an action dropdown, the second entry's dropdown open on pick / reword / edit / squash / fixup / drop, and then squash applied to it; the footer lists the keyboard shortcuts including alt + up/down to move a commit" class="help-center-img img-bordered">
 </figure>
 
 Adds a user-friendly interactive rebase editor to easily configure an interactive rebase session:
@@ -1313,7 +1313,7 @@ Adds a user-friendly interactive rebase editor to easily configure an interactiv
 When AI features are allowed, the editor footer shows a **Start Auto-Rebase** split button next to **Start Rebase**. Start Auto-Rebase runs the rebase with [Auto-Rebase](#auto-rebase-pro), which resolves conflicts it's confident about and pauses at commits you marked `edit` or when its confidence is low. After a rebase has started, the footer shows **Continue with Auto-Rebase** beside **Continue** and **Skip**. The chevron menu of each split button holds **Recompose Commits...**, which aborts the rebase and opens the Commit Composer.
 
 <figure>
-  <img src="/wp-content/uploads/gl-rebase-auto-rebase-start.png" class="help-center-img img-bordered" alt="The Interactive Rebase Editor before a rebase starts, with the footer's Start Rebase button beside the ringed Start Auto-Rebase split button." />
+  <img src="/wp-content/uploads/gl-rebase-auto-rebase-start-01-v2@2x.png" class="help-center-img img-bordered" alt="The Interactive Rebase Editor before a rebase starts, with the footer's Start Rebase button beside the ringed Start Auto-Rebase split button, whose chevron menu holds Recompose Commits, and Abort." />
 </figure>
 
 ### Conflict Detection
@@ -1440,7 +1440,7 @@ To connect an integration:
 3. Alternatively, select the account button (your avatar and plan) in the Commit Graph header, then select the **Integrations** row (or **Set up integrations** if none are connected) to open the integrations settings in GitLens Settings.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: a list of providers — GitHub, GitLab, Azure DevOps, Bitbucket, Jira, Linear — each with what it supports and a connected check mark, a Show: All | Connected filter, and the Manage Integrations gear ringed in the popover header" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" alt="The Commit Graph header's account menu open with its Integrations row ringed; the row shows the connected providers and opens GitLens Settings > Integrations." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Choose an integration to connect</figcaption>
 </figure>
 
@@ -1449,7 +1449,7 @@ If you're not already signed in, you'll be prompted to log in to your GitKraken 
 Finish the process by selecting **Complete Setup** to return to VS Code and begin using the integrations.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" alt="GitLens Settings Cloud Integrations page showing connected providers including GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear with Connect and Manage buttons for each service" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage your connected integrations</figcaption>
 </figure>
 
@@ -1525,7 +1525,7 @@ To connect the integration:
 4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards for GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v4@2x.png" alt="GitLens Settings Cloud Integrations page showing provider connection cards for GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Cloud Integrations category in the GitLens Settings editor</figcaption>
 </figure>
 

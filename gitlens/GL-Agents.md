@@ -106,7 +106,7 @@ The session is connected but not currently performing actions.
 The session has ended. Past sessions stay listed, dimmed, until you archive them or until they are removed after 30 days. To list past sessions in the Agent Sessions panel, turn on **Show Past Sessions** in the panel toolbar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-panel-past-sessions.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar on its Agents panel with the Show Past Sessions toggle ringed, listing a working Claude Code session, an idle OpenCode session and a dimmed past Codex session under the main worktree." />
+  <img src="/wp-content/uploads/gl-agents-panel-past-sessions-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar on its Agents panel with the Show Past Sessions toggle ringed, listing three sessions under the main worktree, each with its agent's logomark and phase mark: a working Claude Code session running an edit, an idle OpenCode session and a dimmed past Codex session." />
 </figure>
 
 ### Resume a Past Session
@@ -119,7 +119,7 @@ You can resume a past session from any supported agent: Claude Code, Codex, GitH
 To choose from a list of sessions, right-click a Working Changes row in the Commit Graph, or a worktree in a side bar view, and select **Resume Agent Session...**. The **Resume Agent Session** quick pick lists that worktree's sessions under **Active** and **Past**. Select a session's destination button to resume it there.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-resume-session-picker.png" class="help-center-img img-bordered" alt="The Resume Agent Session quick pick for the main worktree, with two Claude Code sessions under Active and two under Past; the focused past session shows its Resume in Terminal button, ringed." />
+  <img src="/wp-content/uploads/gl-agents-resume-session-picker-01-v2@2x.png" class="help-center-img img-bordered" alt="The Resume Agent Session quick pick for the main worktree, with two Claude Code sessions under Active and two under Past; the focused past session shows its Resume in Terminal button, ringed." />
 </figure>
 
 If you select a session without choosing a destination, the `gitlens.agents.resumeTarget` setting decides where it resumes:
@@ -131,7 +131,7 @@ If you select a session without choosing a destination, the `gitlens.agents.resu
 A past session's sheet in the Commit Graph details panel shows a **Resume** button and an **Archive** action in its header.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-session-sheet-past.png" class="help-center-img img-bordered" alt="The agent session sheet for a past Codex session in the Commit Graph details panel, showing the Past status, the Playground2026 worktree chip and the ringed Resume button with its Archive action above the session's last prompt." />
+  <img src="/wp-content/uploads/gl-agents-session-sheet-past-01-v2@2x.png" class="help-center-img img-bordered" alt="The agent session sheet for a past Codex session, &quot;Update README with API rate limiting docs&quot;, in the Commit Graph details panel: the Past status, the Playground2026 worktree chip and the ringed Resume button with its Archive action, above the session's last prompt." />
 </figure>
 
 ---
@@ -167,7 +167,7 @@ Right-click a session in the Agent Sessions panel or in the Commit Graph details
 - **Archive Session** removes a past session from the list.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-session-context-menu.png" class="help-center-img img-bordered" alt="The right-click menu of a past Codex session in the Commit Graph's Agents panel, with Resume in Terminal ringed above the worktree, copy and Archive Session actions." />
+  <img src="/wp-content/uploads/gl-agents-session-context-menu-01-v2@2x.png" class="help-center-img img-bordered" alt="The right-click menu of a past Codex session in the Commit Graph's Agents panel, with Resume in Terminal ringed above Open in Integrated Terminal, Open Worktree, Open Worktree in New Window, Copy Last Prompt, Copy Session ID and Archive Session." />
 </figure>
 
 ### Open a Session Sheet
@@ -183,7 +183,7 @@ Select a session card in the Agents section of the Commit Graph details panel to
 Use the previous and next arrows in the sheet to move between agent sessions.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-session-sheet-working.png" class="help-center-img img-bordered" alt="The agent session sheet in the Commit Graph details panel for a working Claude Code session, showing its Working status, the main worktree chip, the Open Session button, the running Edit step, File Activity and the session's last prompt." />
+  <img src="/wp-content/uploads/gl-agents-session-sheet-working-01-v2@2x.png" class="help-center-img img-bordered" alt="The agent session sheet in the Commit Graph details panel for a working Claude Code session, &quot;Add retry logic to the rate limiter middleware&quot;: its Working status, the main worktree chip and the Open Session button, the running Edit step, File Activity showing reports.ts being edited and user-management.ts read, and the session's last prompt." />
 </figure>
 
 ---
@@ -293,7 +293,7 @@ Right-click a Working Changes row in the Commit Graph, or a worktree in a side b
 A CLI agent starts in a new terminal at the worktree. The `gitlens.openInTerminalLocation` setting controls whether that terminal opens in the terminal panel or as an editor tab. A chat or extension agent receives a prompt to work in the worktree.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-wip-row-start-agent-session.png" class="help-center-img img-bordered" alt="The right-click menu of the Working Changes row in the Commit Graph, with Start Agent Session... ringed above Start Agent Session With... and Resume Agent Session..., beneath Open in Integrated Terminal." />
+  <img src="/wp-content/uploads/gl-graph-wip-row-start-agent-session-01-v2@2x.png" class="help-center-img img-bordered" alt="The right-click menu of the Working Changes row in the Commit Graph, with Start Agent Session... ringed above Start Agent Session With... and Resume Agent Session..., beneath Open in Integrated Terminal." />
 </figure>
 
 ### Follow the Active Terminal

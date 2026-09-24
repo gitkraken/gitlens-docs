@@ -14,7 +14,7 @@ From here, you can understand what’s happening across your repository, coordin
 
 **One Graph. Your development workflow, end to end.**
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph filling the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the Working Changes row, and commit rows with branch and tag pills, authors, and short SHAs." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ As development spreads across multiple branches, worktrees, and coding agents, k
 Multi-worktree Working Changes shows uncommitted work across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v3@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v4@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
 </figure>
 
 From the Commit Graph, you can:
@@ -80,7 +80,7 @@ Agent Kanban provides a visual way to understand parallel agent work at a glance
 From the board, you can inspect agent work and jump into the associated session and working changes.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-Kanban.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-kanban-01-v2@2x.png" alt="The Agent Kanban board in the Commit Graph with four sessions sorted into Needs Input (a permission ask with Allow and Deny), Working, Idle and Inactive columns, each card showing its title, status, worktree and latest activity." class="help-center-img img-bordered">
 </figure>
 
 ### Resume Past Sessions
@@ -99,11 +99,11 @@ The Commit Graph is more than a place to see the work. It gives you the context 
 1. Monitor
 See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
 <figure>
-  <img src="/wp-content/uploads/gl-agent-working-01-v3@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Completed — above the changed files and the commit box" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v4@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Past — above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-approval.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-approval-01-v2@2x.png" alt="The Working Changes details panel with its Agents section showing a Claude Code session that needs input: it asks to edit user-management.ts and offers Allow, Always Allow and Deny, above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 2. Review

@@ -14,7 +14,7 @@ last_updated: 2026-09
 The GitLens Launchpad helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="help-center-img img-bordered" alt="Launchpad view showing pull requests organized by status" />
+  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" class="help-center-img img-bordered" alt="Launchpad QuickPick showing pull request categories grouped by action needed, such as review, follow-up, or merge readiness" />
   <figcaption style="text-align: center; color: #888">GitLens Launchpad pull request overview</figcaption>
 </figure>
 

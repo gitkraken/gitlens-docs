@@ -30,7 +30,7 @@ Select **Create Worktree...** in the **Worktrees** view, then choose the branch 
 - Under **After Creating**, choose **Open in New Window**, **Open in Current Window**, **Add to Workspace**, or **Don't Open**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktree-create-confirm.png" class="help-center-img img-bordered" alt="The Create Worktree confirm step for feature/api-rate-limiting, with the Location rows Root Folder and Specific Folder and the After Creating options, with Open in New Window selected." />
+  <img src="/wp-content/uploads/gl-worktree-create-confirm-01-v2@2x.png" class="help-center-img img-bordered" alt="The Create Worktree confirm step for feature/api-rate-limiting, with the Location rows Root Folder and Specific Folder and the After Creating radios Open in New Window (ringed and selected), Open in Current Window, Add to Workspace and Don't Open." />
 </figure>
 
 GitLens saves your **After Creating** choice to the `gitlens.worktrees.openAfterCreate` setting, so the same option is selected the next time you create a worktree. The setting's default is `newWindow`.

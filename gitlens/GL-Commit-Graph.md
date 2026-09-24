@@ -75,7 +75,7 @@ You can send feedback to the GitKraken team without leaving the Commit Graph. Se
 When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add more details. After you send a feature request, you can select **File on GitHub** to file it as a GitHub issue as well.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-send-feedback-dialog.png" class="help-center-img img-bordered" alt="The Send Feedback dialog over the Commit Graph with its General, Bug and Feature choices, an empty Message box, links to the Help Center, Discussions and Issues, and the Cancel and Send Feedback buttons." />
+  <img src="/wp-content/uploads/gl-graph-send-feedback-dialog-01-v2@2x.png" class="help-center-img img-bordered" alt="The Send Feedback dialog over the Commit Graph with its General, Bug and Feature choices, an empty Message box, links to the Help Center, Discussions and Issues, and the Cancel and Send Feedback buttons." />
   <figcaption style="text-align: center; color: #888">The Send Feedback dialog</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ See branch state, uncommitted changes, and unpushed commits across your worktree
 Each pill shows the branch name, a dirty indicator when there are uncommitted changes, an unpushed arrow with an ahead count when commits have not been pushed, and changed file counts on hover. The `gitlens.graph.overviewBar.visibility` setting controls when the overview bar is shown: `always`, `worktrees` (when the repository has more than one worktree), `dirtyWorktrees` (the default, when another worktree has working changes or unpushed commits), or `never`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v3@2x.png" class="help-center-img img-bordered" alt="The worktree overview above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty indicator and an unpushed arrow" />
+  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v4@2x.png" class="help-center-img img-bordered" alt="The WIP bar above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty indicator and an unpushed arrow" />
   <figcaption style="text-align: center; color: #888">Worktree pills above the graph</figcaption>
 </figure>
 
@@ -139,14 +139,14 @@ Each worktree's uncommitted work appears on a **Working Changes** row, which sho
 To run a VS Code task in a worktree, select the **Run Default Task** (play) button on its Working Changes row. The first time, GitLens asks you to choose the default task. <kbd>Alt</kbd>-click the button to choose a different task to run. While the task runs, the button reads **Running: &lt;task&gt;**, and clicking it shows the running task.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-wip-run-default-task.png" class="help-center-img img-bordered" alt="The selected Working Changes row in the Commit Graph with its row actions showing; the ringed play button's tooltip reads Run Default Task, with Alt-click offering Choose Task to Run." />
+  <img src="/wp-content/uploads/gl-graph-wip-run-default-task-01-v2@2x.png" class="help-center-img img-bordered" alt="The selected Working Changes row in the Commit Graph with its row actions showing; the ringed play button's tooltip reads Run Default Task, with Alt-click offering Choose Task to Run." />
   <figcaption style="text-align: center; color: #888">Running the default task on a Working Changes row</figcaption>
 </figure>
 
 You can also right-click a worktree's Working Changes row and select **Run Task on Worktree...** to pick any task. The picker lists recent and workspace tasks first, with **All Tasks...** for the rest. Select a task's checkmark to set it as the default task, or select it again to unset it.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktree-run-task-picker.png" class="help-center-img img-bordered" alt="The Run Task on Worktree quick pick for the api-hardening worktree listing the workspace tasks Run unit tests, Lint and Start dev server above All Tasks; the focused row's ringed checkmark sets that task as the default." />
+  <img src="/wp-content/uploads/gl-worktree-run-task-picker-01-v2@2x.png" class="help-center-img img-bordered" alt="The Run Task on Worktree quick pick for the api-hardening worktree listing the workspace tasks Run unit tests, Lint and Start dev server above All Tasks; the focused row's ringed checkmark sets that task as the default." />
   <figcaption style="text-align: center; color: #888">Choosing a task and setting the default</figcaption>
 </figure>
 
@@ -159,14 +159,14 @@ Scope the graph to another worktree to work in it without leaving the Commit Gra
 - Double-click another worktree's Working Changes row or its pill in the overview bar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-worktree-scope-action.png" class="help-center-img img-bordered" alt="The Commit Graph side bar on its Worktrees panel, listing main, feature/api-hardening and docs/contributing-refresh; the hovered feature/api-hardening row shows its inline actions with Scope to Worktree ringed." />
+  <img src="/wp-content/uploads/gl-graph-worktree-scope-action-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph side bar on its Worktrees panel, listing main, feature/api-hardening and docs/contributing-refresh; the hovered feature/api-hardening row shows its inline actions with Scope to Worktree ringed." />
   <figcaption style="text-align: center; color: #888">Scope to Worktree in the sidebar Worktrees panel</figcaption>
 </figure>
 
 GitLens marks the scope in yellow on the header's branch pill, which names the worktree's branch, and on the worktree's row in the sidebar. To return to your active worktree, select **Unscope Worktree** on the branch pill or on the worktree's sidebar row.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-worktree-scoped.png" class="help-center-img img-bordered" alt="The Commit Graph scoped to the feature/api-hardening worktree: the titlebar carries the scoped tint, the branch pill names the worktree's branch and the ringed Unscope Worktree control beside it returns the graph to the main worktree." />
+  <img src="/wp-content/uploads/gl-graph-worktree-scoped-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph scoped to the feature/api-hardening worktree: the titlebar carries the scoped tint, the branch pill names the worktree's branch and the ringed Unscope Worktree control beside it returns the graph to the main worktree." />
   <figcaption style="text-align: center; color: #888">The Commit Graph scoped to a worktree</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ When the Commit Graph is visible, it follows your active terminal. Switching to 
 - By default, the graph ignores terminals in other repositories. Enable `gitlens.graph.followTerminal.allowRepositorySwitching` to let the graph switch to another repository.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-follow-terminal.png" class="help-center-img img-bordered" alt="The Commit Graph following the active terminal: with the api-hardening terminal focused in the panel below, the graph has selected that worktree's Working Changes row." />
+  <img src="/wp-content/uploads/gl-graph-follow-terminal-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph following the active terminal: with the api-hardening terminal focused in the panel below, the graph has selected that worktree's Working Changes row." />
   <figcaption style="text-align: center; color: #888">The Commit Graph following the active terminal</figcaption>
 </figure>
 
@@ -216,7 +216,7 @@ The details panel supports multiple modes:
 When you select a Working Changes row that has no uncommitted changes, the details panel suggests **Next steps** for the branch. Depending on the branch, the list offers actions such as publishing the branch, pulling or pushing commits, creating or viewing its pull request, and reviewing or recomposing its changes. If the branch has diverged from its upstream, the list starts with a **Diverged from &lt;remote&gt; — N behind, M ahead** step. Select **Pull** to bring in the remote commits, or select **Force Push** beside it to overwrite the remote branch with your local commits.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-next-steps-diverged.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on fix/settlement-retry, whose Next steps list opens with the ringed &quot;Diverged from origin — 1 behind, 1 ahead&quot; step offering Pull and, as its alternate, Force Push." />
+  <img src="/wp-content/uploads/gl-graph-next-steps-diverged-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on fix/settlement-retry, whose Next steps list opens with the ringed &quot;Diverged from origin — 1 behind, 1 ahead&quot; step offering Pull and, as its alternate, Force Push." />
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
@@ -227,7 +227,7 @@ File lists in the details panel (Working Changes, commit details, compare, compo
 To ignore an untracked file, right-click it in the Working Changes file list and select **Add to .gitignore**. With several files selected, the action applies to the untracked ones. GitLens adds each file as a pattern anchored to the repository root, such as `/local-config.json`, to the `.gitignore` file at the root of the repository. GitLens creates the file if it doesn't exist and opens it so you can see what was added.
 
 <figure>
-  <img src="/wp-content/uploads/gl-wip-add-to-gitignore.png" class="help-center-img img-bordered" alt="The Commit Graph details panel listing the Working Changes files, with the context menu open on the untracked local-config.json and its ringed Add to .gitignore action beneath the stage and discard actions." />
+  <img src="/wp-content/uploads/gl-wip-add-to-gitignore-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel listing the Working Changes files, with the context menu open on the untracked local-config.json and its ringed Add to .gitignore action beneath the stage and discard actions." />
   <figcaption style="text-align: center; color: #888">Adding an untracked file to .gitignore</figcaption>
 </figure>
 
@@ -255,7 +255,7 @@ Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> while you hover a commit to highlight its
 To change or turn off shortcuts, select **Customize…** in the Keyboard Shortcuts sheet to open the `gitlens.graph.shortcuts` settings. Hover a shortcut in the sheet to see its id. In `gitlens.graph.shortcuts.overrides`, set an id to a different key combination, or to `false` to turn it off. To turn off all customizable shortcuts, disable `gitlens.graph.shortcuts.enabled`. Navigation keys such as the arrow keys, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-keyboard-shortcuts-sheet.png" class="help-center-img img-bordered" alt="The Commit Graph's Keyboard Shortcuts sheet listing the graph's shortcut groups with their key chips; the footer notes that holding Ctrl or Alt highlights the lane and the ringed Customize link opens the shortcut settings." />
+  <img src="/wp-content/uploads/gl-graph-keyboard-shortcuts-sheet-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph's Keyboard Shortcuts sheet listing the graph's shortcut groups with their key chips; the footer notes that holding Ctrl or Alt highlights the lane and the ringed Customize link opens the shortcut settings." />
   <figcaption style="text-align: center; color: #888">The Commit Graph Keyboard Shortcuts sheet</figcaption>
 </figure>
 
@@ -287,19 +287,19 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 By default, each row shows one branch or tag pill and collapses the rest behind a **+N** badge. To show more pills on a row, set `gitlens.graph.refs.maxInline` to a number from 1 to 10, or to `auto` to fit as many pills as the row allows.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-ref-pills-overflow.png" class="help-center-img img-bordered" alt="The top of the Commit Graph where the commit carrying origin/main and two worktree branches shows a single branch pill with a ringed +2 badge folding the other branches (and a separate +1 tag badge), the default one-pill-per-row layout." />
+  <img src="/wp-content/uploads/gl-graph-ref-pills-overflow-01-v2@2x.png" class="help-center-img img-bordered" alt="The top of the Commit Graph where the commit carrying origin/main and two worktree branches shows a single branch pill with a ringed +2 badge folding the other branches (and a separate +1 tag badge), the default one-pill-per-row layout." />
   <figcaption style="text-align: center; color: #888">The default layout, with extra refs behind a +N badge</figcaption>
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-ref-pills-inline.png" class="help-center-img img-bordered" alt="The same Commit Graph rows with the branch and tag pill cap set to auto: the commit carrying origin/main and the two worktree branches shows each branch as its own inline pill, with only the commit's tag folded behind a +1 tag badge." />
+  <img src="/wp-content/uploads/gl-graph-ref-pills-inline-01-v2@2x.png" class="help-center-img img-bordered" alt="The same Commit Graph rows with the branch and tag pill cap set to auto: the commit carrying origin/main and the two worktree branches shows each branch as its own inline pill, with only the commit's tag folded behind a +1 tag badge." />
   <figcaption style="text-align: center; color: #888">Several branch pills per row with the pill cap set to auto</figcaption>
 </figure>
 
 To show pills on their own line above the commit, set `gitlens.graph.refs.layout` to `stacked`; rows with pills become taller. The `gitlens.graph.refs.maxStacked` setting (default `auto`) limits the pills on that line. The stacked layout applies when the graph style is `table` and the Branches/Tags column is grouped with the Graph column. You can also change these options in the GitLens settings (**GitLens: Open Settings**).
 
 <figure>
-  <img src="/wp-content/uploads/gl-column-settings-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph settings menu showing options to hide the Author, Date, SHA, Changes, and other columns, switch the graph layout, and use a compact layout" />
+  <img src="/wp-content/uploads/gl-column-gl-settings-01-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph settings menu showing options to hide the Author, Date, SHA, Changes, and other columns, switch the graph layout, and use a compact layout" />
   <figcaption style="text-align: center; color: #888">Commit Graph column settings</figcaption>
 </figure>
 
@@ -317,7 +317,7 @@ The same menu holds **Follow Active Terminal** and **Stop Following Active Termi
 The `gitlens.graph.editorOpeningBehavior` setting controls how files open from the graph — either in the active editor group or automatically based on context. You can also open the Commit Graph in a separate VS Code window using the **GitLens: Open Commit Graph in New Window** command.
 
 <figure>
-  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" />
+  <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" />
   <figcaption style="text-align: center; color: #888">Switching between Editor and Panel Layout</figcaption>
 </figure>
 
@@ -330,7 +330,7 @@ You can also open the Commit Graph from a terminal. Right-click a terminal tab i
 Claude Code conversation tabs offer the same actions in their title bar and tab context menu, for the worktree of the agent session in that tab.
 
 <figure>
-  <img src="/wp-content/uploads/gl-terminal-editor-worktree-actions.png" class="help-center-img img-bordered" alt="A terminal opened as an editor tab, its Focus in Commit Graph title button ringed and the tab's More Actions menu expanded to show Open in Commit Graph and Open in New Window for the worktree the terminal is in." />
+  <img src="/wp-content/uploads/gl-terminal-editor-worktree-actions-01-v2@2x.png" class="help-center-img img-bordered" alt="A terminal opened as an editor tab, its Focus in Commit Graph title button ringed and the tab's More Actions menu expanded to show Open in Commit Graph and Open in New Window for the worktree the terminal is in." />
   <figcaption style="text-align: center; color: #888">Commit Graph actions on a terminal editor tab</figcaption>
 </figure>
 
@@ -455,7 +455,7 @@ Helpful context menu actions include:
 - **Copy Worktree Path**: Copies the path of the worktree where the selected branch is checked out.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-fixup-commit-box.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for the Working Changes row with the message &quot;fixup! feat: add status field&quot; in the commit box; the ringed Commit Fixup split button replaces Commit, its menu offering Commit Fixup &amp; Squash." />
+  <img src="/wp-content/uploads/gl-graph-fixup-commit-box-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for the Working Changes row with the message &quot;fixup! feat: add status field&quot; in the commit box; the ringed Commit Fixup split button replaces Commit, its menu offering Commit Fixup & Squash." />
   <figcaption style="text-align: center; color: #888">Committing a fixup from the details panel</figcaption>
 </figure>
 
@@ -528,7 +528,7 @@ Additional options let you hide or show:
 You can also dim merge commit rows for clarity.
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
   <figcaption style="text-align: center; color: #888">Commit Graph filter options</figcaption>
 </figure>
 

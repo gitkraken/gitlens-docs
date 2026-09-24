@@ -27,7 +27,7 @@ You can deep-link to any category by appending its anchor to the command: `gitle
 The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-account-01-v3@2x.png" alt="GitLens Settings with the Account category selected: the GitLens Pro plan header with its badge and the Synchronize Status, Manage Account and Sign Out buttons, the signed-in account and organization rows (masked here), a referral line and a Learn more link" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-account-01-v4@2x.png" alt="GitLens Settings with the Account category selected, stacked as cards: the signed-in identity with Manage Account and Sign Out, the plan card with its tier badge and included features, the GitKraken AI Usage card with its weekly credits bar and reset date, the active organization and a referral card (account details and usage figures masked here)." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 
@@ -47,14 +47,14 @@ Settings for AI, cloud integrations, and external service connections.
 **Agents** (`agents`) — lists the chat, extension, CLI, and editor agents GitLens detects. For each agent, choose whether it is the **Default** agent GitLens uses for AI features, install or uninstall the GitKraken MCP server (**MCP**), and install or uninstall GitKraken Hooks (**Hooks**), which let GitLens track the agent's sessions and coordinate permissions. Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. Codex won't run the hooks until you trust them by running `/hooks` in Codex, so a warning icon next to an installed Codex row shows that reminder and a button to start a Codex session.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-agents-table.png" alt="The Agents category of GitLens Settings: a table of detected agents with Default, MCP and Hooks columns, showing the GitKraken Hooks state for the Claude Code, Codex, GitHub Copilot CLI and OpenCode CLIs." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-agents-table-01-v2@2x.png" alt="The Agents category of GitLens Settings: a table of agents with Default, MCP and Hooks columns, listing Copilot Chat and the detected Claude Code, Codex, GitHub Copilot CLI and OpenCode CLIs with their GitKraken Hooks state, the Hooks column header ringed." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Agents category</figcaption>
 </figure>
 
 **Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Linear, and Trello issue trackers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v2.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v3.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ Annotation and decoration settings for the code editor.
 Configuration for Commit Graph and source control tree views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v2.png" alt="GitLens Settings Commit Graph category showing graph layout options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v3.png" alt="GitLens Settings Commit Graph category showing graph layout and column options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 

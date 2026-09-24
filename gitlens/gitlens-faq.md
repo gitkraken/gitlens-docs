@@ -50,7 +50,7 @@ To sign out:
 - Select the **Account** button (your avatar and plan badge) in the Commit Graph header, then select the **Sign Out** button in the popover.
 
 <figure>
-  <img src="/wp-content/uploads/gl-sign-out-ls-update-01-v4@2x.png" alt="The GitLens Home view with the account chip's popover open: the GitLens Pro plan header with its ENTERPRISE badge and the Synchronize Status, Manage Account and Sign Out icon buttons — Sign Out ringed — above the organization row and the Refer a friend link (the account's name, e-mail and avatar are blanked)" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-sign-out-ls-update-01-v5@2x.png" alt="The Commit Graph header's account menu open: the GitLens plan header with its Send Feedback, Synchronize Status, Account Settings, Manage Account and Sign Out buttons, Sign Out ringed, above the signed-in account and the AI, Agents and Integrations sections." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Sign out from the Commit Graph account popover</figcaption>
 </figure>
 

@@ -70,7 +70,7 @@ From the Commit Graph you can see:
 - Supported coding agent sessions and their status, including sessions that need your attention.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered" alt="GitLens Commit Graph">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph filling the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the Working Changes row, and commit rows with branch and tag pills, authors, and short SHAs.">
 </figure>
 
 ### Source Control Sidebar

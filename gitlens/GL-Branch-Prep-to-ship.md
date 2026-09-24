@@ -19,7 +19,7 @@ Start in the Commit Graph to understand your branch in the context of the reposi
 See HEAD, upstream, merge target, incoming work, and ahead and behind status together so you can quickly understand what has changed and what needs attention before moving forward.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph filling the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the Working Changes row, and commit rows with branch and tag pills, authors, and short SHAs." class="help-center-img img-bordered">
 </figure>
 
 When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
