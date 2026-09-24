@@ -22,6 +22,18 @@ See HEAD, upstream, merge target, incoming work, and ahead and behind status tog
   <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" class="help-center-img img-bordered">
 </figure>
 
+When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
+
+- **Publish**, when the branch doesn't have an upstream yet
+- **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
+- **Pull** or **Force Push**, when the branch has diverged from its upstream
+- **Create PR** when a published branch has no pull request, or **View** when it has one
+- **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it
+- **Delete Branch** or **Delete Worktree**, when the branch has been merged into its merge target
+- **Review** and **Recompose**, to review the branch's changes or recompose its commits
+
+A diverged branch shows a step that reads **Diverged from** its remote, followed by how many commits the branch is behind and ahead. **Pull** is the main action for this step. If you want to replace the remote branch with your local commits instead, for example after a rebase, select **Force Push**, the secondary action on the same split button.
+
 ## 2. Compare Before You Merge
 Before making changes to your branch history, use Compare to understand exactly how your work differs from its target.
 

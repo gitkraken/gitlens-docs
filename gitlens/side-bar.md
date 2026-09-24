@@ -42,14 +42,17 @@ This sidebar includes:
 
 ### GitLens Sidebar
 
-The **GitLens** sidebar centralizes collaboration features and user tools, including GitKraken Workspaces and account settings.
+The **GitLens** sidebar is where you start working in GitLens. It holds the Commit Graph, the GitLens onboarding guide, and collaboration views.
 
 This sidebar includes:
 
-- **GitKraken Workspaces**
-- **GitKraken Account**
-- **Cloud Patches** `PRO`
-- **Launchpad** `PRO`
+- **Graph** — The [Commit Graph](/gitlens/gl-commit-graph/)
+- **Welcome** — The GitLens onboarding guide, with walkthroughs of GitLens and the Commit Graph
+- **Launchpad** `PRO` — Hidden by default
+- **Cloud Patches** `PRO` — Hidden by default
+- **Cloud Workspaces** — Hidden by default
+
+GitLens 19.2 removed the Home view. Your GitKraken account and the setup status of AI, agents, and integrations now appear in the account menu in the Commit Graph header. Links that used to open the Home view open the Commit Graph instead.
 
 <figure>
   <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar">
@@ -140,6 +143,8 @@ The **Commits** view displays all commits on the current branch. It also provide
 </figure>
 
 - Associated pull request — displays if a pull request is linked to the current branch
+
+In repositories where loading commit file details has been slow, the Commits view and other history views load a commit's file details on demand instead of up front. This automatic behavior requires `gitlens.gitOptimizations.enabled`. To always or never delay loading file details, set `gitlens.advanced.commits.delayLoadingFileDetails` to `true` or `false`.
 
 ***
 
@@ -325,6 +330,9 @@ The **Tags** view lists all tags and includes:
 
 - A toggle to switch tag layout: list or tree
 - A toggle to change file layout: list, tree, or auto
+- **Push Tag...** on a tag, or **Push Tags...** when you select several tags, to push tags to a remote. These actions appear when the repository has a remote.
+
+When you push tags, GitLens asks you to choose a remote if the repository has more than one. The confirmation step includes a **Force** option that overwrites a tag that already exists on the remote. You can also push tags from the **GitLens: Git Command Palette** command by selecting **Tag** and then **Push Tags**.
 
 ***
 
@@ -439,6 +447,28 @@ To manually add repositories, use the **Add Repositories from Linked Workspace**
 
 A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
 
+### Create a Worktree
+
+Select **Create Worktree...** to create a worktree. The confirmation step includes two groups of options:
+
+- **Location**: Select **Root Folder…** to choose a different root folder for worktrees, or **Specific Folder…** to create the worktree directly in an exact folder instead of under the root.
+- **After Creating**: Choose **Open in New Window**, **Open in Current Window**, **Add to Workspace**, or **Don't Open**.
+
+Your **After Creating** choice updates the `gitlens.worktrees.openAfterCreate` setting, so GitLens uses it as the default the next time you create a worktree.
+
+### Worktree Actions
+
+Right-click a worktree in the Worktrees view to run these actions:
+
+- **Start Agent Session...**: Starts a coding agent session in the worktree. GitLens uses your default agent from `gitlens.ai.defaultAgent`, or asks you to choose an agent if no default is set. Command-line agents open in a terminal in the worktree's folder.
+- **Start Agent Session With...**: Asks you to choose the agent to start in the worktree.
+- **Resume Agent Session...**: Opens a list of agent sessions you can resume.
+- **Run Task on Worktree...**: Runs a VS Code task in the worktree's folder.
+
+The agent session actions appear when GitLens AI features are enabled.
+
+When you select **Run Task on Worktree...**, the list shows your recent tasks and the tasks defined in your workspace first. Select **All Tasks...** to see every available task. To set a default task, select the checkmark next to a task. The **Run Default Task** button on Working Changes rows in the Commit Graph runs the default task.
+
 ***
 
 ## Contributors View
@@ -470,16 +500,19 @@ The **Search & Compare** view displays pinnable results from search or compariso
 
 ### Pinnable Search
 
-Search commits by message, author, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges.
+Search commits by message, author, committer, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges. If GitLens can't build a search from your description, it shows the reason and returns you to the search box with your description intact, so you can reword it. The Commit Graph search box offers more help, such as broader alternatives when a natural language search finds nothing and a **Match literally** option when a pattern isn't a valid regular expression. For details, see [Rich Commit Search](/gitlens/gl-commit-graph/#rich-commit-search).
 
 Search using:
 
 - **Search Commits** (`gitlens.showCommitSearch`):
   - `<message>` — message match
+  - `-message:<message>` — excludes commits whose message contains the term. You can't combine `message:` and `-message:` in the same query.
   - `@<pattern>` — author match
+  - `committer:<committer>` — committer match. Use `committer:@me` to match commits where you are the committer.
   - `#<sha>` — commit SHA
   - `:<path/glob>` — filename pattern
   - `~<pattern>` — patch content match
+  - `type:merge` (or `is:merge`) — merge commits only
 - **Show File History** (`gitlens.showQuickFileHistory`)
 - **Show Commit** (`gitlens.showQuickCommitDetails`)
 

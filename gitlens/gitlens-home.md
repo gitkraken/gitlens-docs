@@ -4,10 +4,10 @@ title: Get Started with GitLens
 description: How to install and start using GitLens in Visual Studio Code
 taxonomy:
     category: gitlens
-last_updated: 2026-08
+last_updated: 2026-09
     
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
  
 Welcome to the GitLens Support Documentation site! 
 
@@ -245,7 +245,7 @@ To set up an integration, go to **Settings > Integrations** or visit the [GitLen
 
 ### Autolinks
 
-Autolinks let you automatically link external issues—like Jira tickets or Trello cards—directly in commit messages, file annotations, and code lenses.
+Autolinks let you automatically link external issues, like Jira tickets, directly in commit messages, file annotations, and code lenses. The Trello integration (`PRO`) doesn't add autolinks for Trello cards. When a branch is linked to a Trello card, the branch shows a Trello badge in the Commit Graph.
 
 You can also create custom autolinks by defining pattern-matching rules for external references like Zendesk or Linear. This helps keep your codebase traceable and well-documented.
 

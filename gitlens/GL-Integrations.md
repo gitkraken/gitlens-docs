@@ -17,6 +17,7 @@ GitLens supports a wide range of remote providers to enhance your Git workflow i
 - Bitbucket (Cloud and Server)
 - Azure DevOps (Cloud and Server)
 - Linear (issue tracking)
+- Trello (issue tracking)
 
 You can also define [custom remote providers or providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
 
@@ -85,11 +86,11 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 #### Steps to Connect:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
-2. In the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
+2. Open the Commit Graph and select the **Account** button (your avatar and plan badge) in its header. In the popover, select the **Integrations** row, or **Set up integrations** if nothing is connected yet, to open **Cloud Integrations** in GitLens Settings.
 
 <figure>
   <img src="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v3@2x.png" alt="The GitLens Home view with the Integrations popover open from the header's integrations chip: a list of providers — GitHub, GitLab, Azure DevOps, Bitbucket, Jira, Linear — each with what it supports and a connected check mark, a Show: All | Connected filter, and the Manage Integrations gear ringed in the popover header" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">Open the Integrations popover from the Home view header</figcaption>
+  <figcaption style="text-align:center; color:#888">Open your integrations from the Commit Graph account popover</figcaption>
 </figure>
 
 3. If you’re not already signed in, log into your GitKraken account.
@@ -182,6 +183,8 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
 3. Choose **Jira Cloud** and follow the prompts to connect.
 4. Allow GitKraken access to your Atlassian Account.
+
+Linear and Trello connect the same way from the **Cloud Integrations** category, and both require a Pro plan or higher. After you connect Trello, branches associated with a Trello card show a Trello badge in the Commit Graph. GitLens does not autolink Trello cards or list them in Start Work or Launchpad.
 
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 

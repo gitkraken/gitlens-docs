@@ -18,9 +18,23 @@ From here, you can understand what’s happening across your repository, coordin
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
+GitLens 19.2 removed the separate Home view, and the Commit Graph now covers its workflows. Your GitKraken account and the setup status of AI, agents, and integrations appear in the account menu in the Commit Graph header. Agent sessions appear on the branch cards in the Graph sidebar, in the details panel for working changes, and on the Agent Kanban. Links that used to open the Home view now open the Commit Graph.
+
 ## Welcome View
 
-When you first install or update GitLens, the **Welcome** sidebar view appears above the Commit Graph. It provides a multi-step walkthrough covering Getting Started, Home, Commit Graph, AI Features, Git Blame, PR Reviews, and MCP. The content adapts to your subscription level, helping you discover the features available on your plan.
+The **Welcome** view in the GitLens sidebar is the GitLens onboarding guide. Running **GitLens: Get Started**, or selecting **Start the GitLens Welcome Guide** in the GitLens walkthrough on the VS Code Get Started page, opens the Welcome view.
+
+The Welcome view walks you through these steps:
+
+- **Getting started**: Content that adapts to your subscription level, so you discover the features available on your plan.
+- **Commit Graph**: Work with worktrees, agents, and your Git workflow from the Commit Graph.
+- **AI features**: Compose commits, explain commits and branches, and create pull request titles and descriptions.
+- **Git Blame**: Learn who changed a line, when, and why.
+- **Launchpad and Worktrees**: Manage your pull requests, branches, and parallel work in one place.
+- **Kepler**: Learn about Kepler, GitKraken's Agentic Development Environment (ADE), with a **Get Kepler** button.
+- **GitKraken MCP**: Install GitKraken MCP or connect it to more agents.
+
+Select **Get Started with the Commit Graph** to open a second walkthrough about the Commit Graph. It covers monitoring agent sessions, parallel work, reviewing changes, composing commits, and comparing refs.
 
 ## Start in the Commit Graph
 When you open GitLens, the Commit Graph gives you a connected view of your repository and the work happening across it.
@@ -68,6 +82,15 @@ From the board, you can inspect agent work and jump into the associated session 
 <figure>
   <img src="/wp-content/uploads/GL-Agent-Kanban.png" class="help-center-img img-bordered">
 </figure>
+
+### Resume Past Sessions
+
+The **Inactive** column collects sessions that have been idle for more than an hour and past sessions, which are sessions that have ended. You can resume past sessions for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. A past session's card offers one resume action for each place the session can open:
+
+- **Resume in Terminal**: Opens a new integrated terminal in the session's folder and resumes the session there.
+- **Resume in Claude Code Extension**: Opens the session in the Claude Code extension. This action appears for Claude Code sessions when the extension is installed and the session's folder is open in your workspace.
+
+To remove a past session from the board, select **Archive Session** on its card. When a session can open in both places, the `gitlens.agents.resumeTarget` setting controls where resuming opens it. By default, GitLens asks the first time and lets you remember your choice.
 
 ## Run Your Development Workflow from the Commit Graph
 

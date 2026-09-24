@@ -4,11 +4,11 @@ title: AI Agents in Gitlens
 description: Using AI Agents in Gitlens
 taxonomy:
     category: gitlens
-last_updated: 2026-05
+last_updated: 2026-09
 
 ---
 
-<kbd>Last updated: May 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 ## Using AI Agents in GitLens
 
@@ -23,7 +23,7 @@ With GitLens, you can:
 - Quickly identify sessions waiting for input
 - Manage parallel worktrees and Working Changes visually
 
-GitLens 18 currently supports Claude Code integrations through GitLens-managed hooks.
+GitLens tracks sessions from Claude Code, Codex, GitHub Copilot CLI, and OpenCode through GitKraken Hooks.
 
 ---
 
@@ -50,33 +50,38 @@ Each session displays contextual Git information including:
 
 ---
 
-## Install Claude Code Hooks
+## Install GitKraken Hooks
 
-GitLens integrates with Claude Code using hooks that provide real-time session visibility.
+GitLens tracks agent sessions using GitKraken Hooks, which give GitLens real-time visibility into each session. Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode.
 
 You can install hooks from several locations in GitLens:
 
 - Commit Graph header
 - Agent Sessions sidebar banner
 - Integrations menu
+- The Command Palette
+- The **Agents** section of the GitLens settings, which lists each detected agent with its hooks status
 
 ### Install Hooks
 
-1. Open the GitLens Commit Graph.
-2. Select the Claude Code integration prompt.
-3. Follow the setup instructions.
-4. Reload VS Code or your IDE if prompted.
+1. Open the Command Palette.
+2. Run `GitLens: Install GitKraken Hooks for All AI Agents`.
+3. Reload VS Code or your IDE if prompted.
 
-Once installed, GitLens automatically detects Claude Code sessions and surfaces their state throughout the UI.
+GitLens installs hooks for every supported agent it detects on your machine. To install hooks for a single agent, select **Manage Agents** in the Agent Sessions panel toolbar, then use the install button in that agent's **Hooks** column.
+
+Once installed, GitLens automatically detects sessions from those agents and surfaces their state throughout the UI.
+
+Codex doesn't run the installed hooks until you trust them. Run `/hooks` in Codex to trust the hooks, and trust them again after you reinstall them. GitLens shows this reminder when the install finishes, with a **Start Codex Session** button.
+
+GitLens can answer permission requests directly only for Claude Code sessions. For other agents, GitLens shows the pending request, and you answer it in the agent's session.
 
 ### Uninstall Hooks
 
 1. Open the Command Palette.
-2. Run:
+2. Run `GitLens: Uninstall GitKraken Hooks for All AI Agents`.
 
-```text
-GitLens: Uninstall Claude Code Hooks
-```
+To uninstall hooks for a single agent, use the uninstall button in that agent's **Hooks** column in the **Agents** settings.
 
 ---
 
@@ -96,15 +101,44 @@ The agent requires your input before continuing. Waiting sessions display attent
 
 The session is connected but not currently performing actions.
 
-### Completed
+### Past
 
-The agent finished its current task. Changes are ready for inspection or review.
+The session has ended. Past sessions stay listed, dimmed, until you archive them or until they are removed after 30 days. To list past sessions in the Agent Sessions panel, turn on **Show Past Sessions** in the panel toolbar.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-panel-past-sessions.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar on its Agents panel with the Show Past Sessions toggle ringed, listing a working Claude Code session, an idle OpenCode session and a dimmed past Codex session under the main worktree." />
+</figure>
+
+### Resume a Past Session
+
+You can resume a past session from any supported agent: Claude Code, Codex, GitHub Copilot CLI, or OpenCode. Resume actions appear on the session's status pill, its card in the details panel, its session sheet, its Kanban card, and its row in the Agent Sessions panel. Each action names where the session resumes:
+
+- **Resume in Terminal** opens a new integrated terminal in the session's directory and runs the agent's resume command.
+- **Resume in Claude Code Extension** reopens the session in the Claude Code extension. This action appears only when the extension is installed and the session's directory is open as a workspace folder.
+
+To choose from a list of sessions, right-click a Working Changes row in the Commit Graph, or a worktree in a side bar view, and select **Resume Agent Session...**. The **Resume Agent Session** quick pick lists that worktree's sessions under **Active** and **Past**. Select a session's destination button to resume it there.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-resume-session-picker.png" class="help-center-img img-bordered" alt="The Resume Agent Session quick pick for the main worktree, with two Claude Code sessions under Active and two under Past; the focused past session shows its Resume in Terminal button, ringed." />
+</figure>
+
+If you select a session without choosing a destination, the `gitlens.agents.resumeTarget` setting decides where it resumes:
+
+- **Not set** (default): GitLens asks where to resume the first time a session can open in either place. Select the pin button in that prompt to remember your choice.
+- `terminal`: Always resume in a new integrated terminal.
+- `extension`: Resume in the agent's VS Code extension when it can open the session, otherwise in a terminal.
+
+A past session's sheet in the Commit Graph details panel shows a **Resume** button and an **Archive** action in its header.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-session-sheet-past.png" class="help-center-img img-bordered" alt="The agent session sheet for a past Codex session in the Commit Graph details panel, showing the Past status, the Playground2026 worktree chip and the ringed Resume button with its Archive action above the session's last prompt." />
+</figure>
 
 ---
 
 ## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
+GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar, where it appears as **Agents**. The panel provides a centralized place to monitor all active sessions.
 
 ### Panel Features
 
@@ -112,13 +146,45 @@ The panel includes:
 
 - Session status pills
 - Branch and worktree associations
-- Quick actions
+- Quick actions to open, resume, and archive sessions
+- Past sessions, shown when **Show Past Sessions** is on
 - List and tree layouts
 - Session grouping by workspace or worktree
 
 ### Switch Between List and Tree Layouts
 
 Use the layout toggle in the Agent Sessions panel toolbar to switch between list and tree layouts. Tree layout is especially useful when working across multiple repositories or worktrees.
+
+### Act on a Session from Its Context Menu
+
+Right-click a session in the Agent Sessions panel or in the Commit Graph details panel to act on it without opening the agent. The menu shows only the actions that apply to that session:
+
+- **Allow**, **Always Allow**, and **Deny** answer a pending permission request.
+- **Approve Plan**, **Reject Plan**, and **View Plan** handle a plan the agent proposed.
+- **Open Session** opens a live session. For a past session, **Resume in Terminal** or **Resume in Claude Code Extension** resumes it.
+- **Open in Integrated Terminal**, **Open Worktree**, and **Open Worktree in New Window** open the session's worktree.
+- **Copy Last Prompt** and **Copy Session ID** copy session details to the clipboard.
+- **Archive Session** removes a past session from the list.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-session-context-menu.png" class="help-center-img img-bordered" alt="The right-click menu of a past Codex session in the Commit Graph's Agents panel, with Resume in Terminal ringed above the worktree, copy and Archive Session actions." />
+</figure>
+
+### Open a Session Sheet
+
+Select a session card in the Agents section of the Commit Graph details panel to open that session's sheet in the details panel. The sheet gathers what you need to follow or pick up a session:
+
+- The session's status, agent, and the worktree and branch it runs in
+- Actions for the session's current state, such as **Open Session**, **Allow** and **Deny** for a pending request, or **Resume** and **Archive** for a past session
+- What the agent is doing now, and **File Activity** listing the files it read and edited
+- The **Last prompt** and **First prompt**
+- **Also worked in**, which lists other worktrees the session visited
+
+Use the previous and next arrows in the sheet to move between agent sessions.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-session-sheet-working.png" class="help-center-img img-bordered" alt="The agent session sheet in the Commit Graph details panel for a working Claude Code session, showing its Working status, the main worktree chip, the Open Session button, the running Edit step, File Activity and the session's last prompt." />
+</figure>
 
 ---
 
@@ -142,6 +208,16 @@ From the Commit Graph details panel you can:
 3. Toggle the details panel if it is hidden.
 
 The panel can be docked on the right side or at the bottom of the Commit Graph. Hold `Alt` while toggling the panel to switch docking locations.
+
+### Jump from a Terminal to Its Worktree
+
+When an agent runs in a terminal or a Claude Code conversation tab, you can go straight to the worktree it works in. Right-click the terminal tab, or the title of a terminal editor or Claude Code tab, and select one of these actions:
+
+- **Open in Commit Graph** opens the Commit Graph with that worktree's Working Changes row selected.
+- **Focus in Commit Graph** also focuses the Commit Graph on the worktree's branch.
+- **Open in New Window** opens the worktree folder in a new window.
+
+GitLens resolves the worktree from the agent session running in the terminal, or otherwise from the terminal's current folder. For a Claude Code tab, GitLens matches the tab to its agent session.
 
 ---
 
@@ -204,7 +280,29 @@ This makes it easier to:
 - Resolve conflicts
 - Compose commits from multiple worktrees
 
-Each Working Changes row updates live as files change.
+Each Working Changes row updates live as files change. The row shows its branch in an inline branch pill. Rows for other worktrees also carry a worktree row marker, and a row with a paused operation shows that state, such as **Rebasing**.
+
+### Start an Agent Session in a Worktree
+
+Right-click a Working Changes row in the Commit Graph, or a worktree in a side bar view, to launch an agent in that worktree:
+
+- **Start Agent Session...** starts your default agent. If no default agent is set, GitLens asks you to choose one.
+- **Start Agent Session With...** always asks which agent to start.
+- **Resume Agent Session...** lists the worktree's sessions so you can [resume one](#resume-a-past-session).
+
+A CLI agent starts in a new terminal at the worktree. The `gitlens.openInTerminalLocation` setting controls whether that terminal opens in the terminal panel or as an editor tab. A chat or extension agent receives a prompt to work in the worktree.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-wip-row-start-agent-session.png" class="help-center-img img-bordered" alt="The right-click menu of the Working Changes row in the Commit Graph, with Start Agent Session... ringed above Start Agent Session With... and Resume Agent Session..., beneath Open in Integrated Terminal." />
+</figure>
+
+### Follow the Active Terminal
+
+When the Commit Graph is visible, it follows your active terminal or Claude Code conversation tab and selects the Working Changes row of the worktree that terminal is in. If an agent session runs in the terminal, the Commit Graph selects that session's worktree. Following never opens the Commit Graph for you, and a tip appears the first time it moves the selection.
+
+To stop following, select **Stop Following Active Terminal** from the Commit Graph's overflow menu, or set `gitlens.graph.followTerminal.enabled` to `false`. Select **Follow Active Terminal** to turn it back on.
+
+By default, the Commit Graph ignores terminals in other repositories. Set `gitlens.graph.followTerminal.allowRepositorySwitching` to `true` to let it switch repositories.
 
 ### Use Working Changes Scroll Markers
 
@@ -214,20 +312,24 @@ The Commit Graph minimap includes scroll markers that highlight Working Changes 
 
 ## Use Focus Branch Mode
 
-Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph scopes itself to the branch you select.
+Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph focuses on the branch you select.
 
 ### Enable Focus Branch Mode
 
 1. Open the Commit Graph.
-2. Open the scope menu in the Commit Graph header.
-3. Select a branch to focus.
+2. Open the branch visibility menu in the Commit Graph header.
+3. Select **Focus Branch**, then select a branch to focus.
+
+You can also right-click a branch and select **Focus on Branch**.
 
 While focused:
 
 - The Commit Graph follows the branch's first-parent history
 - The minimap zooms to the relevant commit range
 - Simplify Merge History applies automatically
-- Visual indicators show that the Commit Graph is scoped
+- The branch visibility menu shows the focused branch, with the tooltip "Showing *branch* Only"
+
+Focusing a branch is separate from scoping the Commit Graph to a worktree with **Scope to Worktree**.
 
 ---
 
