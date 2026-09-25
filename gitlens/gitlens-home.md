@@ -28,7 +28,7 @@ GitLens brings your repository context and development workflows directly into y
 The Commit Graph is your central development workbench in GitLens. It brings commits, branches, working changes, worktrees, upstream state, and supported coding agent activity together in one connected view.
 
 <figure>
-  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph filling the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the Working Changes row, and commit rows with branch and tag pills, authors, and short SHAs." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph in the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the selected Working Changes row, and commit rows with their branch and tag pills." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph view</figcaption>
 </figure>
 

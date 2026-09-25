@@ -27,7 +27,7 @@ You can deep-link to any category by appending its anchor to the command: `gitle
 The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-account-01-v4@2x.png" alt="GitLens Settings with the Account category selected, stacked as cards: the signed-in identity with Manage Account and Sign Out, the plan card with its tier badge and included features, the GitKraken AI Usage card with its weekly credits bar and reset date, the active organization and a referral card (account details and usage figures masked here)." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-account-01-v4@2x.png" alt="GitLens Settings with the Account category selected, stacked as cards: the signed-in identity with Manage Account and Sign Out, the plan card with its tier badge and included features, the GitKraken AI Usage card with its weekly credits bar and reset date, the active organization and a referral card; the name, e-mail and organization are placeholder values." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 

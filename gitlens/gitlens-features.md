@@ -1441,7 +1441,7 @@ To connect an integration:
 
 <figure>
   <img src="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" alt="The Commit Graph header's account menu open with its Integrations row ringed; the row shows the connected providers and opens GitLens Settings > Integrations." class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Choose an integration to connect</figcaption>
+  <figcaption style="text-align: center; color: #888;">Open your integrations from the Commit Graph account menu</figcaption>
 </figure>
 
 If you're not already signed in, you'll be prompted to log in to your GitKraken account. Then, select **Connect with GitHub** or **Connect with GitLab**, and follow the sign-in steps. You can connect multiple integrations if needed.
