@@ -54,7 +54,7 @@ Settings for AI, cloud integrations, and external service connections.
 **Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Linear, and Trello issue trackers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v3.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ Annotation and decoration settings for the code editor.
 Configuration for Commit Graph and source control tree views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v3.png" alt="GitLens Settings on the Commit Graph category: the live preview of graph rows with branch and tag pills at the top, then the setting for where the Commit Graph opens, the row paging limits and the scrollbar marker options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v3@2x.png" alt="GitLens Settings on the Commit Graph category: the live preview of graph rows with branch and tag pills at the top, then the setting for where the Commit Graph opens, the row paging limits and the scrollbar marker options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 

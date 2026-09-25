@@ -287,7 +287,7 @@ The graph uses perceptually-uniform lane colors that are tuned for both dark and
 By default, each row shows one branch or tag pill and collapses the rest behind a **+N** badge. To show more pills on a row, set `gitlens.graph.refs.maxInline` to a number from 1 to 10, or to `auto` to fit as many pills as the row allows.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-ref-pills-overflow-01-v2@2x.png" class="help-center-img img-bordered" alt="The top of the Commit Graph where the commit carrying origin/main and two worktree branches shows a single branch pill with a ringed +2 badge folding the other branches (and a separate +1 tag badge), the default one-pill-per-row layout." />
+  <img src="/wp-content/uploads/gl-graph-ref-pills-overflow-01-v2@2x.png" class="help-center-img img-bordered" alt="Commit Graph rows where the commit carrying origin/main and two worktree branches shows a single branch pill with a ringed +2 badge folding the other branches (and a separate +1 tag badge), the default one-pill-per-row layout." />
   <figcaption style="text-align: center; color: #888">The default layout, with extra refs behind a +N badge</figcaption>
 </figure>
 

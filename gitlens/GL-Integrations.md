@@ -181,7 +181,7 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 
 1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
 2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
-3. Choose **Jira Cloud** and follow the prompts to connect.
+3. Select **Connect** on the **Jira** card and follow the prompts to connect.
 4. Allow GitKraken access to your Atlassian Account.
 
 Linear and Trello connect the same way from the **Cloud Integrations** category, and both require a Pro plan or higher. After you connect Trello, branches associated with a Trello card show a Trello badge in the Commit Graph. GitLens does not autolink Trello cards or list them in Start Work or Launchpad.
