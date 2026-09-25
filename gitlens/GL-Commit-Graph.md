@@ -75,7 +75,7 @@ You can send feedback to the GitKraken team without leaving the Commit Graph. Se
 When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add more details. After you send a feature request, you can select **File on GitHub** to file it as a GitHub issue as well.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-send-feedback-dialog-01-v2@2x.png" class="help-center-img img-bordered" alt="The Send Feedback dialog over the Commit Graph with its General, Bug and Feature choices, an empty Message box, links to the Help Center, Discussions and Issues, and the Cancel and Send Feedback buttons." />
+  <img src="/wp-content/uploads/gl-graph-send-feedback-dialog-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph's Send Feedback dialog with its General, Bug and Feature choices, an empty Message box, links to the Help Center, Discussions and Issues, and the Cancel and Send Feedback buttons." />
   <figcaption style="text-align: center; color: #888">The Send Feedback dialog</figcaption>
 </figure>
 

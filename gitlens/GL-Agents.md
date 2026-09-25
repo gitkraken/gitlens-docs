@@ -106,7 +106,7 @@ The session is connected but not currently performing actions.
 The session has ended. Past sessions stay listed, dimmed, until you archive them or until they are removed after 30 days. To list past sessions in the Agent Sessions panel, turn on **Show Past Sessions** in the panel toolbar.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-panel-past-sessions-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar on its Agents panel with the Show Past Sessions toggle ringed, listing three sessions under the main worktree, each with its agent's logomark and phase mark: a working Claude Code session running an edit, an idle OpenCode session and a dimmed past Codex session." />
+  <img src="/wp-content/uploads/gl-agents-panel-past-sessions-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar on its Agents panel with the Show Past Sessions toggle ringed, listing three sessions under the main worktree: a working Claude Code session running an edit, an idle OpenCode session and a dimmed past Codex session." />
 </figure>
 
 ### Resume a Past Session

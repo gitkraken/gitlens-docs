@@ -1440,7 +1440,7 @@ To connect an integration:
 3. Alternatively, select the account button (your avatar and plan) in the Commit Graph header, then select the **Integrations** row (or **Set up integrations** if none are connected) to open the integrations settings in GitLens Settings.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" alt="The Commit Graph header's account menu open with its Integrations row ringed; the row shows the connected providers and opens GitLens Settings > Integrations." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" alt="The Commit Graph header's account button with its menu open and the Integrations row ringed, a row of provider icons that opens GitLens Settings > Integrations." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Open your integrations from the Commit Graph account menu</figcaption>
 </figure>
 
@@ -1520,14 +1520,15 @@ The Jira Integration, connected through your GitKraken Account, enables Jira [Au
 To connect the integration:
 
 1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
-2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
-3. Choose **Jira Cloud**, and authorize access to your Atlassian Account.
-4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
+2. Select **Cloud Integrations** under **Integrations** in the navigation rail. Each provider has a card: a provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v4@2x.png" alt="GitLens Settings Cloud Integrations page showing provider connection cards for GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888;">Cloud Integrations category in the GitLens Settings editor</figcaption>
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v4@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, GitLab, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center and Trello" class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888;">Cloud Integrations in GitLens Settings, shown here with Jira already connected</figcaption>
 </figure>
+
+3. Select **Connect** on the **Jira** card, and authorize access to your Atlassian Account.
+4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
 You can also connect **Trello** (a Pro integration) from the same **Cloud Integrations** list. Once Trello is connected, branches associated with Trello cards show a Trello badge on their Commit Graph pills. GitLens doesn't create autolinks for Trello cards.
 

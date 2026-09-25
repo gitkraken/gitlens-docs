@@ -80,7 +80,7 @@ Agent Kanban provides a visual way to understand parallel agent work at a glance
 From the board, you can inspect agent work and jump into the associated session and working changes.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agent-kanban-01-v2@2x.png" alt="The Agent Kanban board in the Commit Graph with four sessions sorted into Needs Input (a permission ask with Allow and Deny), Working, Idle and Inactive columns, each card showing its title, status, worktree and latest activity." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-kanban-01-v2@2x.png" alt="The Agent Kanban board with four sessions sorted into Needs Input (a permission ask with Allow and Deny), Working, Idle and Inactive columns, each card showing its title, status, worktree and latest activity." class="help-center-img img-bordered">
 </figure>
 
 ### Resume Past Sessions
