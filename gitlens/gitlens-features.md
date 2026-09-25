@@ -533,7 +533,7 @@ All columns in the Commit Graph are fully customizable:
 
 <figure>
   <img src="/wp-content/uploads/gl-column-gl-settings-01-01-v2@2x.png" alt="Commit Graph settings menu showing options to hide the Author, Date, SHA, Changes, and other columns, switch the graph layout, and use a compact layout" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Customize visible columns with right-click options</figcaption>
+  <figcaption style="text-align: center; color: #888">Customize visible columns and the layout from the column settings menu</figcaption>
 </figure>
 
 ---
@@ -554,7 +554,7 @@ You can even open both layouts simultaneously.
 
 <figure>
   <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Choose where the graph displays: Panel or Editor</figcaption>
+  <figcaption style="text-align: center; color: #888">Choose where the graph displays: in the editor area or as a view</figcaption>
 </figure>
 
 ---
@@ -618,7 +618,7 @@ GitLens keeps Git fast in your repositories. While VS Code is open, it runs safe
 The **Repository Health** visualization in the Commit Graph shows the state of each optimization and suggests the ones that would help your repository. To open it, run `GitLens: Show Repository Health` from the Command Palette, or select **Show Visualizations & Health** in the Commit Graph side bar and choose **Repository Health**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-repository-health-01-v2@2x.png" class="help-center-img img-bordered" alt="The Repository Health visualization in the Commit Graph, with the ringed verdict &quot;This repository is in good shape&quot; above its facts strip and the Optimizations ledger listing the Commit-graph cache, Untracked cache, File system monitor, Large-repository index, Sparse index and Scheduled maintenance rows with their status, and Run Maintenance Now in the header." />
+  <img src="/wp-content/uploads/gl-graph-repository-health-01-v2@2x.png" class="help-center-img img-bordered" alt="The Repository Health visualization in the Commit Graph, with the ringed verdict &quot;This repository is in good shape&quot; above its facts strip and the Optimizations ledger listing the Commit-graph cache, Untracked cache, File system monitor, Scheduled maintenance, Large-repository index and Sparse index rows with their status, and Run Maintenance Now in the header." />
 </figure>
 
 The view shows a verdict for the repository and an **Optimizations** list:
@@ -791,7 +791,7 @@ You can further control what is shown using the filter dropdown:
 - Option to **dim merge commits**
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" alt="Commit Graph filter options for branches, tags, and stashes" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" alt="The Commit Graph branch-visibility menu: All, Current, Smart, Agent and Favorited Branches, Focus Branch and Focus Pull Request, and under Graph Options the ringed toggles for remote-only branches, stashes and tags, then Simplify Merge History and Dim Merge Commit Rows" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Customize your view with filter presets</figcaption>
 </figure>
 
@@ -851,7 +851,7 @@ To send feedback from inside VS Code, select **Send Feedback...** (the feedback 
 Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick-01-v2@2x.png" alt="Launchpad QuickPick showing pull request categories grouped by action needed, such as review, follow-up, or merge readiness" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="The Launchpad quick pick with pull requests grouped by status" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">View and act on PRs based on current status</figcaption>
 </figure>
 
@@ -1252,14 +1252,14 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
 
   - Message: `<message>`
   - Excluded message: `-message:<message>` (removes commits whose message contains the term)
-  - Author: `@<pattern>`
+  - Author: `author:<author>` or `@:<author>`
   - Committer: `committer:<committer>`
-  - Commit SHA: `#<sha>`
-  - File path or glob: `:<path/glob>`
-  - Patch changes: `~<pattern>`
+  - Commit SHA: `commit:<sha>` or `#:<sha>`
+  - File path or glob: `file:<glob>` or `?:<glob>`
+  - Patch changes: `change:<pattern>` or `~:<pattern>`
   - Merge commits only: `type:merge` or `is:merge`
 
-  <img src="/wp-content/uploads/gl-menu-commit-search-01-v3@2x.png" alt="Commit Search QuickPick showing search mode options including Search by Message, Author, Commit ID, File, and Changes with usage patterns" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-menu-commit-search-01-v2@2x.png" alt="Commit Search quick pick listing the search modes, including Search by Message, Exclude by Message, Author, Committer, Commit SHA, File and Changes" class="help-center-img img-bordered">
 
   Refer to the [Git log documentation](https://git-scm.com/docs/git-log) for advanced usage.
 
@@ -1449,7 +1449,7 @@ If you're not already signed in, you'll be prompted to log in to your GitKraken 
 Finish the process by selecting **Complete Setup** to return to VS Code and begin using the integrations.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" alt="GitLens Settings Cloud Integrations page showing connected providers including GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear with Connect and Manage buttons for each service" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" alt="The GitKraken integrations page with Connect buttons for GitLab, Azure DevOps, Bitbucket, Jira Cloud and Trello and a Complete Setup button" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Manage your connected integrations</figcaption>
 </figure>
 

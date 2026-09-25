@@ -125,10 +125,10 @@ While VS Code is open, GitLens also runs safe, repository-local Git maintenance 
 
 See branch state, uncommitted changes, and unpushed commits across your worktrees. Each worktree has a pill above the graph; select it to jump to that worktree's Working Changes row.
 
-Each pill shows the branch name, a dirty indicator when there are uncommitted changes, an unpushed arrow with an ahead count when commits have not been pushed, and changed file counts on hover. The `gitlens.graph.overviewBar.visibility` setting controls when the overview bar is shown: `always`, `worktrees` (when the repository has more than one worktree), `dirtyWorktrees` (the default, when another worktree has working changes or unpushed commits), or `never`.
+Each pill shows the branch name, a dirty indicator when there are uncommitted changes, and an unpushed arrow when commits have not been pushed. Hover a pill to see its ahead and behind counts and changed files. The `gitlens.graph.overviewBar.visibility` setting controls when the overview bar is shown: `always`, `worktrees` (when the repository has more than one worktree), `dirtyWorktrees` (the default, when another worktree has working changes or unpushed commits), or `never`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v4@2x.png" class="help-center-img img-bordered" alt="The WIP bar above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty indicator and an unpushed arrow" />
+  <img src="/wp-content/uploads/gl-graph-wip-bar-01-v4@2x.png" class="help-center-img img-bordered" alt="The overview bar above the Commit Graph, ringed, with one pill per worktree: main with its upstream legs, and the feature/api-hardening and docs/contributing-refresh worktree pills each showing a dirty dot and an unpushed arrow" />
   <figcaption style="text-align: center; color: #888">Worktree pills above the graph</figcaption>
 </figure>
 
@@ -318,7 +318,7 @@ The `gitlens.graph.editorOpeningBehavior` setting controls how files open from t
 
 <figure>
   <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" />
-  <figcaption style="text-align: center; color: #888">Switching between Editor and Panel Layout</figcaption>
+  <figcaption style="text-align: center; color: #888">Switching between the editor and view layouts</figcaption>
 </figure>
 
 You can also open the Commit Graph from a terminal. Right-click a terminal tab in the Terminal panel, or open the **More Actions…** (⋯) menu of a terminal editor tab, and choose one of these actions for the worktree the terminal is in:
@@ -528,7 +528,7 @@ Additional options let you hide or show:
 You can also dim merge commit rows for clarity.
 
 <figure>
-  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" class="help-center-img img-bordered" alt="Commit Graph filter options for branches, tags, and stashes" />
+  <img src="/wp-content/uploads/gl-filter-options-2-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph branch-visibility menu: All, Current, Smart, Agent and Favorited Branches, Focus Branch and Focus Pull Request, and under Graph Options the ringed toggles for remote-only branches, stashes and tags, then Simplify Merge History and Dim Merge Commit Rows" />
   <figcaption style="text-align: center; color: #888">Commit Graph filter options</figcaption>
 </figure>
 

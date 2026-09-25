@@ -100,7 +100,7 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 You can connect multiple integrations if needed, including multiple accounts for the same provider. For example, you can connect both a personal and a work GitHub account simultaneously. Use the integration settings to set a primary account, manage connections, and scope searches to a specific account.
 
 <figure>
-  <img src="/wp-content/uploads/gl-connect-remote-integration-manager-01-v2@2x.png" alt="GitLens Settings Cloud Integrations page showing connected providers including GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Linear with Connect and Manage buttons for each service" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" alt="The GitKraken integrations page with Connect buttons for GitLab, Azure DevOps, Bitbucket, Jira Cloud and Trello and a Complete Setup button" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Select the service you want to integrate and finish setup</figcaption>
 </figure>
 

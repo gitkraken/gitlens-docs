@@ -28,7 +28,7 @@ See branches, worktrees, working changes, commits, HEAD, upstream, merge targets
 Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree. Each worktree's **Working Changes** row shows the worktree's branch as a pill inside the row; select the pill to jump to that branch. A **Worktree** marker beside the row names the worktree it belongs to. When a rebase, merge, or similar operation is paused in a worktree, its row shows that state, such as the number of conflicts left to resolve.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v4@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v4@2x.png" alt="Commit Graph with a Working Changes row for each of three worktrees: the main worktree's row at the top, then the feature/api-hardening and docs/contributing-refresh worktree rows, each with its changed-file count and inline branch pill, above that branch's unpushed commit" class="help-center-img img-bordered">
 </figure>
 
 ## 2. Monitor Agent Work
@@ -43,11 +43,11 @@ From the Commit Graph, you can:
 - Open live sessions, and resume past sessions with the surrounding Git context intact
 
 <figure>
-  <img src="/wp-content/uploads/gl-agent-working-01-v4@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Past — above the changed files and the commit box." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v4@2x.png" alt="The Working Changes details panel with its Agents section expanded: three agent session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Past — above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-agent-approval-01-v2@2x.png" alt="The Working Changes details panel with its Agents section showing a Claude Code session that needs input: it asks to edit user-management.ts and offers Allow, Always Allow and Deny, above the changed files and the commit box." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-approval-01-v2@2x.png" alt="The Working Changes details panel with its Agents section showing a session that needs input: it asks to edit user-management.ts and offers Allow, Always Allow and Deny, above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 Instead of tracking agent work across separate terminal sessions, you can see where the work lives and when it needs you.

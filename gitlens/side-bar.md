@@ -507,11 +507,11 @@ Search using:
 - **Search Commits** (`gitlens.showCommitSearch`):
   - `<message>` — message match
   - `-message:<message>` — excludes commits whose message contains the term. You can't combine `message:` and `-message:` in the same query.
-  - `@<pattern>` — author match
+  - `author:<author>` or `@:<author>` — author match
   - `committer:<committer>` — committer match. Use `committer:@me` to match commits where you are the committer.
-  - `#<sha>` — commit SHA
-  - `:<path/glob>` — filename pattern
-  - `~<pattern>` — patch content match
+  - `commit:<sha>` or `#:<sha>` — commit SHA
+  - `file:<glob>` or `?:<glob>` — filename pattern
+  - `change:<pattern>` or `~:<pattern>` — patch content match
   - `type:merge` (or `is:merge`) — merge commits only
 - **Show File History** (`gitlens.showQuickFileHistory`)
 - **Show Commit** (`gitlens.showQuickCommitDetails`)
