@@ -4,10 +4,10 @@ title: Get Started with GitLens
 description: How to install and start using GitLens in Visual Studio Code
 taxonomy:
     category: gitlens
-last_updated: 2026-08
+last_updated: 2026-09
     
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
  
 Welcome to the GitLens Support Documentation site! 
 
@@ -28,7 +28,7 @@ GitLens brings your repository context and development workflows directly into y
 The Commit Graph is your central development workbench in GitLens. It brings commits, branches, working changes, worktrees, upstream state, and supported coding agent activity together in one connected view.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Grpah" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph in the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the selected Working Changes row, and commit rows with their branch and tag pills." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph view</figcaption>
 </figure>
 
@@ -245,7 +245,7 @@ To set up an integration, go to **Settings > Integrations** or visit the [GitLen
 
 ### Autolinks
 
-Autolinks let you automatically link external issues—like Jira tickets or Trello cards—directly in commit messages, file annotations, and code lenses.
+Autolinks let you automatically link external issues, like Jira tickets, directly in commit messages, file annotations, and code lenses. The Trello integration (`PRO`) doesn't add autolinks for Trello cards. When a branch is linked to a Trello card, the branch shows a Trello badge in the Commit Graph.
 
 You can also create custom autolinks by defining pattern-matching rules for external references like Zendesk or Linear. This helps keep your codebase traceable and well-documented.
 
