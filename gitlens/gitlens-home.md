@@ -10,7 +10,7 @@ taxonomy:
 
 This guide takes you from installing GitLens to using its core features on your own repository. Each step shows where to find a feature and what to try first, then links to the page that covers it in full.
 
-For an overview of what GitLens is and what each feature does, see the [GitLens Documentation Home](/gitlens/gitlens-docs-home/).
+For an overview of what GitLens is and what each feature does, see the [GitLens Documentation](/gitlens/gitlens-docs-home/).
 
 ## Before You Begin
 
@@ -263,6 +263,6 @@ See [Autolinks](/gitlens/gitlens-features/#autolinks) for all options.
 
 ## Next Steps
 
-You have now used the main parts of GitLens. To put them together into complete tasks, follow one of the end-to-end workflow guides listed on the [GitLens Documentation Home](/gitlens/gitlens-docs-home/#follow-a-complete-workflow), such as [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/).
+You have now used the main parts of GitLens. To put them together into complete tasks, follow one of the end-to-end workflow guides listed on the [GitLens Documentation](/gitlens/gitlens-docs-home/#follow-a-complete-workflow), such as [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/).
 
-If something doesn't work as expected, see [GitLens Troubleshooting](/gitlens/gitlens-troubleshooting/) or the other help resources on the [GitLens Documentation Home](/gitlens/gitlens-docs-home/#get-help).
+If something doesn't work as expected, see [GitLens Troubleshooting](/gitlens/gitlens-troubleshooting/) or the other help resources on the [GitLens Documentation](/gitlens/gitlens-docs-home/#get-help).

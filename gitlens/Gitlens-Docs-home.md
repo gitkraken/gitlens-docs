@@ -1,6 +1,6 @@
 ---
 
-title: GitLens Documentation Home
+title: GitLens Documentation
 description: What GitLens is, what it does, and where to go in the GitLens Help Center for the Commit Graph, coding agents, worktrees, AI review, Launchpad, blame, integrations, settings, and support.
 taxonomy:
     category: gitlens
@@ -10,13 +10,15 @@ last_updated: 2026-09
 
 <kbd>Last updated: September 2026</kbd>
 
-Welcome to the GitLens Help Center. This page explains what GitLens is, what it does, and where to find the guide you need. It assumes you already use Git and Visual Studio Code or a VS Code-based IDE. It does not cover installation steps or individual settings, which the pages linked below describe in full.
+GitLens is an [open-source](https://github.com/gitkraken/vscode-gitlens) Git extension for Visual Studio Code, built and maintained by GitKraken. It is the most installed Git extension for VS Code, and it also runs in VS Code-based IDEs such as Cursor, Windsurf, Trae, and Kiro.
+
+This page is the starting point for the GitLens Help Center. It explains what GitLens does and where to find the guide you need. It assumes you already use Git and Visual Studio Code or a VS Code-based IDE. It does not cover installation steps or individual settings, which the pages linked below describe in full.
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens from the VS Code Marketplace</a>
 
 ## What GitLens is
 
-GitLens is an [open-source](https://github.com/gitkraken/vscode-gitlens) Git extension built and maintained by GitKraken. It is the most installed Git extension for Visual Studio Code, and it also runs in VS Code-based IDEs such as Cursor, Windsurf, Trae, and Kiro. GitLens brings your repository history, working changes, branches, worktrees, pull requests, and coding agent activity into one interactive workbench inside the editor, so you can understand what changed, shape it into clean commits, and move it to merge without leaving your IDE.
+GitLens brings your repository history, working changes, branches, worktrees, pull requests, and coding agent activity into one interactive workbench inside the editor, so you can understand what changed, shape it into clean commits, and move it to merge without leaving your IDE.
 
 GitLens Community is free and open source. GitLens Pro unlocks the Commit Graph, Worktrees, Visual History, Launchpad, agent sessions, and GitKraken AI on private repositories. The [GitLens Community vs. GitLens Pro comparison](/gitlens/gitlens-community-vs-gitlens-pro/) lists exactly what each plan includes.
 
