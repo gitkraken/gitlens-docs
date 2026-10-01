@@ -3,10 +3,10 @@ title: GitLens Release Notes
 description: GitLens Release Notes
 taxonomy:
   category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Find out what's new, what's fixed, or just take a trip down memory lane remembering those bugs of yesterday.
 
@@ -16,6 +16,119 @@ Check out our [Changelog](https://github.com/gitkraken/vscode-gitlens/blob/main/
 
 Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+
+---
+
+<a id="v19-3"></a>
+
+## Version 19.3
+
+#### Thursday, October 1, 2026
+
+GitLens 19.3 connects to Kepler, GitKraken's Agentic Development Environment (ADE). You can start a task on a repository, or a review of a pull request, in Kepler from the GitLens views, _Launchpad_, and the _Commit Graph_. Kepler opens with the repository or pull request ready to go. _Start Work_ and _Start PR Review_ can also send an issue or pull request to Kepler, and if Kepler isn't installed yet, GitLens offers to get it for you.
+
+You can now rebase all of your stacked pull requests in one action. _Rebase Stack..._ replays each layer onto the one below it, from the bottom up, so none get skipped. _Auto-Rebase Stack..._ does the same with AI resolving conflicts the whole way, and pauses for your help instead of unwinding. When the cascade is done, _Force Push Stack_ publishes every rewritten branch, and you can hold back any of them.
+
+Getting started takes fewer detours. With no repository open, the _Commit Graph_ now offers ways to begin: open a folder, clone a repository, or start a new project. _Start Work_ and _Start PR Review_ also work without a repository. They list your issues and pull requests across your connected integrations, then find the repository locally or clone it for you. When a sign-in or upgrade screen interrupts you, it now names the commit, branch, or comparison you were opening, and opens it for you once you have access.
+
+The rest of the release is polish and fixes. GitLens section headers match VS Code's Modern UI. _Hide Remote-only Branches_ in the graph now hides only what it says it does. A set of Azure DevOps link problems are fixed, and autolinked pull requests and issues no longer disappear after a single failed lookup.
+
+<img src="/wp-content/uploads/gl-19-3-hero.png" class="help-center-img img-bordered">
+
+### Start Tasks and Reviews in Kepler
+
+Kepler is GitKraken's Agentic Development Environment (ADE), and GitLens can now hand work to it from wherever you are.
+
+**_Start Task in Kepler_** is available on repositories, and **_Start Review in Kepler_** is available on pull requests. Both appear in GitLens views, _Launchpad_, and the _Commit Graph_. Each one opens Kepler with the repository or pull request already loaded, so you can start working without setting anything up first.
+
+**Kepler in _Start Work_ and _Start PR Review_** &mdash; for items Kepler supports, both flows now offer _Open in Kepler_ alongside opening in an agent or continuing manually. If Kepler is always where you want to go, set `gitlens.ai.openInAgent` to `kepler` and both flows will go straight there.
+
+If Kepler isn't installed, GitLens offers to get it for you. Once it's installed, the _Try Kepler_ banner stops appearing.
+
+### Rebase Stacked Pull Requests
+
+Keeping stacked pull requests current used to mean rebasing them one branch at a time, in the right order, without missing one. **_Rebase Stack..._** now does the whole chain in one go. It replays each layer onto the one below it and the bottom layer onto the stack's trunk. If you haven't checked out a layer, it creates a local branch for it so the cascade stays unbroken. Every message tells you where you are (_Branch 2 of 4_), and when it finishes you're back on the branch you started from.
+
+**_Auto-Rebase Stack..._** hands conflicts to AI the whole way up. When it needs your help it pauses instead of unwinding. Once you've resolved the conflict, _Continue with Auto-Rebase_ carries on through the rest of the stack, not just the branch you fixed.
+
+**Publishing the result** &mdash; when the rebase completes, GitLens offers _Force Push Stack_ with every rewritten branch pre-checked, so you can uncheck any you want to hold back. The offer also appears on the _Auto-Rebase Summary_ and as the _Git Force Push Stacked Pull Requests..._ command, so dismissing the notification doesn't lose it. It goes away on its own once every branch is published.
+
+Stack rebasing is only offered when the stack has drifted from its trunk, either by falling behind or by conflicting with it, so a stack that's already current won't prompt you. You'll find it on the _Commit Graph_'s pull request sheet and side bar stack rows, in _Launchpad_, in the rebase quick pick, and as the _Git Rebase Stacked Pull Requests..._ and _Auto-Rebase Stacked Pull Requests..._ commands.
+
+### Start From Anywhere
+
+**A no-repository state that helps you begin** &mdash; when no repository is open, the _Commit Graph_'s empty state now offers grouped ways to start: open a folder, clone a repository, or start a new project by opening a remote repository on the web. _Start Work on an Issue_ and _Start Review on a PR_ sit alongside them.
+
+**_Start Work_ and _Start PR Review_ without a repository** &mdash; both now list your issues and pull requests across all your connected integrations, even with nothing open. Once you pick one, GitLens offers to locate the repository in a local folder, or to clone it when the integration provides a repository URL (every pull request, and GitHub issues). When an integration can't search issues across your whole account, _Start Work_ now says so. Bitbucket, for example, has no account-wide issue search, so instead of quietly contributing nothing to the list, it tells you and points you to open a repository.
+
+**Hand it to an agent, or don't** &mdash; _Start Work_ and _Start PR Review_ now follow the `gitlens.ai.openInAgent` setting. After you pick an issue or pull request, they ask whether to open it in an agent (or in Kepler, as described above) or continue yourself, unless you've already set a default. The agent pickers also remember your choice with a single _Always use this choice_ / _Always use this agent_ option, instead of a checkbox on every row.
+
+### Sign-in Screens That Remember What You Were Doing
+
+Opening something in the _Commit Graph_ while signed out, or before upgrading, used to land you on a generic screen and forget what you'd asked for. Now the sign-in and upgrade screens name the task that was interrupted, whether that's a commit, branch, tag, or stash, a file or folder's history, a comparison, your working changes, a branch focus, or an automatic rebase summary. Once you have access, it opens in the graph.
+
+That includes Ctrl-clicking a commit hash in the terminal: instead of an unexplained sign-in screen, you see which commit you clicked, and GitLens holds it until you're signed in. Comparisons and file or folder histories opened this way are no longer discarded, and if a second task arrives while the screen is open, the screen updates to describe it.
+
+### Everyday Improvements
+
+- Section headers in GitLens views, such as _Files Changed_ in _Inspect_ and the _Commit Graph_'s side bar panels, now match VS Code's Modern UI headers when Modern UI is on.
+- _Hide Remote-only Branches_ in the _Commit Graph_ now hides only remote branches with no local counterpart. Remote branches that your local branches track keep their pills and commits.
+- _Create Branch..._ with _Create Branch in New Worktree_ now always keeps the branch name you entered. Deleting a branch that has a worktree now deletes both in a single confirmation.
+- Azure DevOps pull request links are fixed: they're no longer malformed, they keep the collection when the server sits behind a virtual directory, and they always point at your configured organization.
+- Autolinked pull requests and issues no longer disappear from _Inspect_, hovers, and views after a failed lookup. GitLens retries the next time they're needed.
+- The _GitKraken AI_ usage meter now reads _Allowance used_ when your weekly allowance is fully spent, and shows enough precision to tell a nearly-spent allowance from a spent one.
+
+---
+
+### Added
+
+- Adds starting a task or a pull request review in Kepler, right from where you are in GitLens ([#5760](https://github.com/gitkraken/vscode-gitlens/issues/5760))
+  - Adds _Start Task in Kepler_ to repositories, and _Start Review in Kepler_ to pull requests in GitLens views, _Launchpad_, and the _Commit Graph_ &mdash; each opens Kepler with the repository or pull request ready to go
+  - Adds _Open in Kepler_ to _Start Work_ and _Start PR Review_ for items Kepler supports, alongside opening in an agent or continuing manually &mdash; or choose `kepler` for `gitlens.ai.openInAgent` to go straight there
+  - Offers to get the Kepler application when it isn't installed, and stops showing the _Try Kepler_ banner once it is
+- Adds rebasing an entire stacked pull request chain in one action ([#5838](https://github.com/gitkraken/vscode-gitlens/issues/5838))
+  - _Rebase Stack..._ cascades bottom to top, replaying each layer onto the one below it and the bottom layer onto the stack's trunk &mdash; and creates a local branch for any layer you haven't checked out, so no link in the chain is skipped
+  - _Auto-Rebase Stack..._ resolves conflicts with AI the whole way up, pausing instead of unwinding when it needs your help &mdash; _Continue with Auto-Rebase_ then picks up the rest of the stack, not just the branch you fixed
+  - Every message names where you are in the stack (_Branch 2 of 4_), and the cascade puts you back on the branch you started from
+  - Offers _Force Push Stack_ on completion, listing each rewritten branch pre-checked so you can hold any of them back &mdash; the offer also lives on the _Auto-Rebase Summary_ and as a _Git Force Push Stacked Pull Requests..._ command, so it survives the notification being dismissed, and retires itself once every branch is published
+  - Offered only when the stack has drifted from its trunk &mdash; behind it, or conflicting with it &mdash; so an already-current stack isn't invited into a rebase that would do nothing
+  - Reachable from the _Commit Graph_'s pull request sheet and side bar stack rows, _Launchpad_, the rebase quick pick, and the _Git Rebase Stacked Pull Requests..._ and _Auto-Rebase Stacked Pull Requests..._ commands
+- Adds start actions to the _Commit Graph_'s no-repository empty state &mdash; grouped ways to get going: open a folder, clone a repository, or start a new project (open a remote repository on the web), alongside _Start Work on an Issue_ and _Start Review on a PR_
+  - Adds _Start Work_ and _Start PR Review_ support when no repository is open &mdash; both now list your issues and pull requests across your connected integrations, and offer to locate the repository in a local folder before continuing, or to clone it when the integration supplies a repository URL (every pull request, and GitHub issues)
+  - _Start Work_ now tells you when a connected integration can't search issues account-wide, instead of letting it contribute nothing to a seemingly empty list &mdash; Bitbucket has no account-wide issue search, so it now says so and points you to open a repository
+- Adds task-specific context to the _Commit Graph_'s sign-in and upgrade screens when navigating to it from other areas of GitLens ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820), [#5784](https://github.com/gitkraken/vscode-gitlens/issues/5784))
+  - Names the task that was interrupted &mdash; opening a commit, branch, tag, or stash, a file or folder's history, a comparison, your working changes, a branch focus, or an automatic rebase summary &mdash; and confirms it will open in the _Commit Graph_ once you have access
+  - Ctrl-clicking a commit hash in the terminal now names the commit and holds it until you're signed in, instead of landing on an unexplained sign-in screen
+
+### Changed
+
+- Changes _Start Work_ and _Start PR Review_ to follow the `gitlens.ai.openInAgent` setting &mdash; after you pick an issue or pull request they now ask whether to open it in an agent or continue manually, unless you've set a default
+- Changes the agent pickers to remember your choice with a single _Always use this choice_ / _Always use this agent_ option, instead of a checkbox on every row
+- Changes section headers in GitLens views, such as _Files Changed_ in _Inspect_ and the _Commit Graph_'s sidebar panels, to match VS Code's Modern UI headers &mdash; with Modern UI on they use its 12px semibold header text in title case (or all caps when `workbench.experimental.modernUIUppercaseViewHeaders` is enabled), and they're unchanged when it's off
+
+### Fixed
+
+- Fixes GitKraken AI telling someone on a Pro trial to _Upgrade to GitLens Pro_ when a request is refused for lack of entitlement &mdash; it now names the trial and offers to upgrade to the trialed plan ([#5789](https://github.com/gitkraken/vscode-gitlens/issues/5789))
+- Fixes a comparison, or a file or folder history, opened in the _Commit Graph_ while signed out or before upgrading being discarded instead of opening once access is granted ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820))
+- Fixes the _Commit Graph_'s sign-in and upgrade screens still describing the previous task when a second one arrives while they're open ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820))
+- Fixes _Create Branch..._ discarding the branch name you entered when you choose _Create Branch in New Worktree_ ([#4501](https://github.com/gitkraken/vscode-gitlens/issues/4501)) &mdash; from a remote base the worktree step replaced your name with the remote branch's own and re-prompted with _A branch named 'main' already exists_, and from a local base that isn't checked out anywhere it quietly created the worktree on that branch instead of a new one; a requested branch name is now always honored, including the `pr/` branch _Open Worktree for Pull Request_ asks for
+- Fixes _Delete Branch..._ on a branch that has a worktree deleting the worktree but leaving the branch behind &mdash; Git refuses to delete a branch that's checked out in a worktree, so both now happen together in a single confirm with _Delete Branch_ pre-checked; uncheck it to keep the branch. _Prune Branches..._ works the same way
+- Fixes the _Delete Worktree_ confirm offering to delete a branch's upstream when that upstream is already missing from the remote
+- Fixes the _GitKraken AI_ usage meter saying _Nearly out_ when the weekly allowance is spent in full &mdash; it now reads _Allowance used_ in the error color, in both _GitLens Settings_ and the _Commit Graph_'s account rollup
+  - Fixes the credits figure rounding a nearly-spent allowance to look identical to a fully-spent one (`3.2M of 3.2M credits` for either) &mdash; it now shows enough precision to tell the two counts apart, and the account rollup's percentage no longer rounds up to `100%` while credits remain
+- Fixes _Hide Remote-only Branches_ in the _Commit Graph_ hiding every remote branch ([#5852](https://github.com/gitkraken/vscode-gitlens/issues/5852)) &mdash; a remote branch that a local branch tracks isn't remote-only, so it now keeps its pill and its commits stay in the graph; only remote branches with no local counterpart are hidden
+  - Fixes a tracked remote branch still counting as remote-only when its local branch's tip sat outside the loaded commits &mdash; tracking is now resolved from all of your branches instead of only the ones the graph had walked, which also restores the upstream half of the ref pills it affected
+- Fixes the _Commit Graph_'s commit hover ignoring its minimum width &mdash; the width rule was invalid CSS and silently dropped, so a short commit message rendered as a narrow sliver instead of keeping the card's intended size
+- Fixes hard-to-read text on customized _Commit Graph_ lane colors &mdash; labels on a mid-lightness `gitlens.graphLaneNColor` color used white text where black was far more legible; they now pick whichever gives more contrast
+- Fixes Azure DevOps pull requests returning `undefined` for their base and head repository links &mdash; the repository reference Azure embeds in a pull request does not include a web URL, so the link is now built from the organization and server the pull request was read from ([#5839](https://github.com/gitkraken/vscode-gitlens/issues/5839))
+- Fixes Azure DevOps Server links dropping the collection when the server sits behind a virtual directory &mdash; `https://server/tfs/DefaultCollection/…` read `tfs` as the organization and lost everything after it ([#5840](https://github.com/gitkraken/vscode-gitlens/issues/5840))
+- Fixes an Azure DevOps pull request's repository links being able to point at another organization, or another server entirely, when the pull request payload said so &mdash; the links are built from the configured organization now, and a fork's link must belong to it ([#5842](https://github.com/gitkraken/vscode-gitlens/issues/5842))
+- Fixes malformed Azure DevOps pull request web URLs &mdash; the URL had a double slash after the host (both `dev.azure.com` and `*.visualstudio.com`) and left project and repository names unencoded, so a project or repository named with a space put a literal space in the link ([#5836](https://github.com/gitkraken/vscode-gitlens/issues/5836))
+- Fixes autolinked pull requests and issues disappearing from _Inspect_, hovers, and views until the window is reloaded &mdash; a failed lookup (a rate limit, server error, or timeout) was remembered as "not found" for the rest of the session, and enrichment done before an integration finished connecting was kept for 30 minutes; failed lookups are now retried the next time they're needed
+- Fixes files you uncheck in the _Commit Graph_'s _Review_ and _Compose_ modes getting checked again &mdash; the details panel refreshing reset your exclusions (and, in _Compose_, your excluded commits), so an unchecked file could quietly end up back in the review or commit plan
+- Fixes the commit range appearing twice at the top of the _Commit Graph_'s _Review_ results for a commit selection
+- Fixes the _Commit Graph_'s _Next steps_ permanently listing a branch's merged or closed pull request as something to act on ([#5846](https://github.com/gitkraken/vscode-gitlens/issues/5846)) &mdash; only an open pull request is offered now, and a branch whose pull request is merged or closed gets _Create a Pull Request_ instead; the header still shows the merged or closed pull request
+- Fixes entering a reference in the _Git Command Palette_'s _show_ command discarding it and going back to the command menu ([#5855](https://github.com/gitkraken/vscode-gitlens/issues/5855)) &mdash; pressing Enter before the reference finished resolving chose _Back_, and a branch or tag name never resolved at all; Enter now waits for the reference, branch and tag names resolve to their commit in every commit step, and a reference that doesn't resolve keeps what you typed
 
 ---
 
