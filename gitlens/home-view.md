@@ -14,13 +14,27 @@ From here, you can understand what’s happening across your repository, coordin
 
 **One Graph. Your development workflow, end to end.**
 <figure>
-  <img src="/wp-content/uploads/GL-Commit-Graph-Full.png" alt="GitLens Commit Graph" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph in the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the selected Working Changes row, and commit rows with their branch and tag pills." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
 </figure>
 
+GitLens 19.2 removed the separate Home view, and the Commit Graph now covers its workflows. Your GitKraken account and the setup status of AI, agents, and integrations appear in the account menu in the Commit Graph header. Agent sessions appear on the branch cards in the Graph sidebar, in the details panel for working changes, and on the Agent Kanban. Links that used to open the Home view now open the Commit Graph.
+
 ## Welcome View
 
-When you first install or update GitLens, the **Welcome** sidebar view appears above the Commit Graph. It provides a multi-step walkthrough covering Getting Started, Home, Commit Graph, AI Features, Git Blame, PR Reviews, and MCP. The content adapts to your subscription level, helping you discover the features available on your plan.
+The **Welcome** view in the GitLens sidebar is the GitLens onboarding guide. Running **GitLens: Get Started**, or selecting **Start the GitLens Welcome Guide** in the GitLens walkthrough on the VS Code Get Started page, opens the Welcome view.
+
+The Welcome view walks you through these steps:
+
+- **Getting started**: Content that adapts to your subscription level, so you discover the features available on your plan.
+- **Commit Graph**: Work with worktrees, agents, and your Git workflow from the Commit Graph.
+- **AI features**: Compose commits, explain commits and branches, and create pull request titles and descriptions.
+- **Git Blame**: Learn who changed a line, when, and why.
+- **Launchpad and Worktrees**: Manage your pull requests, branches, and parallel work in one place.
+- **Kepler**: Learn about Kepler, GitKraken's Agentic Development Environment (ADE), with a **Get Kepler** button.
+- **GitKraken MCP**: Install GitKraken MCP or connect it to more agents.
+
+Select **Get Started with the Commit Graph** to open a second walkthrough about the Commit Graph. It covers monitoring agent sessions, parallel work, reviewing changes, composing commits, and comparing refs.
 
 ## Start in the Commit Graph
 When you open GitLens, the Commit Graph gives you a connected view of your repository and the work happening across it.
@@ -47,7 +61,7 @@ As development spreads across multiple branches, worktrees, and coding agents, k
 Multi-worktree Working Changes shows uncommitted work across your worktrees, not just the one you currently have open. Agent Sessions connects supported coding agent activity to the branches and worktrees where that work is happening.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v3@2x.png" alt="Commit Graph with Working Changes rows for three worktrees: the main worktree's row at the top, then &quot;Working Changes (feature/api-hardening)&quot; and &quot;Working Changes (docs/contributing-refresh)&quot; above their branches' unpushed commits, each branch pill showing its ahead count" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v4@2x.png" alt="Commit Graph with a Working Changes row for each of three worktrees: the main worktree's row at the top, then the feature/api-hardening and docs/contributing-refresh worktree rows, each with its changed-file count and inline branch pill, above that branch's unpushed commit" class="help-center-img img-bordered">
 </figure>
 
 From the Commit Graph, you can:
@@ -66,8 +80,17 @@ Agent Kanban provides a visual way to understand parallel agent work at a glance
 From the board, you can inspect agent work and jump into the associated session and working changes.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-Kanban.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-kanban-01-v2@2x.png" alt="The Agent Kanban board with four sessions sorted into Needs Input (a permission ask with Allow and Deny), Working, Idle and Inactive columns, each card showing its title, status, worktree and latest activity." class="help-center-img img-bordered">
 </figure>
+
+### Resume Past Sessions
+
+The **Inactive** column collects sessions that have been idle for more than an hour and past sessions, which are sessions that have ended. You can resume past sessions for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. A past session's card offers one resume action for each place the session can open:
+
+- **Resume in Terminal**: Opens a new integrated terminal in the session's folder and resumes the session there.
+- **Resume in Claude Code Extension**: Opens the session in the Claude Code extension. This action appears for Claude Code sessions when the extension is installed and the session's folder is open in your workspace.
+
+To remove a past session from the board, select **Archive Session** on its card. When a session can open in both places, the `gitlens.agents.resumeTarget` setting controls where resuming opens it. By default, GitLens asks the first time and lets you remember your choice.
 
 ## Run Your Development Workflow from the Commit Graph
 
@@ -76,11 +99,11 @@ The Commit Graph is more than a place to see the work. It gives you the context 
 1. Monitor
 See human and agent work happening across branches, worktrees, and sessions, and quickly identify what needs your attention.
 <figure>
-  <img src="/wp-content/uploads/gl-agent-working-01-v3@2x.png" alt="The Working Changes details panel with its Agents section expanded: three Claude Code session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Completed — above the changed files and the commit box" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-working-01-v4@2x.png" alt="The Working Changes details panel with its Agents section expanded: three agent session cards — &quot;Add retry logic to the rate limiter middleware&quot; marked Working with the file it is editing, &quot;Review the authentication module for discrepancies&quot; marked Idle, and &quot;Update README with API rate limiting docs&quot; marked Past — above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/GL-Agent-approval.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-agent-approval-01-v2@2x.png" alt="The Working Changes details panel with its Agents section showing a session that needs input: it asks to edit user-management.ts and offers Allow, Always Allow and Deny, above the changed files and the commit box." class="help-center-img img-bordered">
 </figure>
 
 2. Review

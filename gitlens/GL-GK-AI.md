@@ -23,12 +23,11 @@ GitLens integrates powerful AI capabilities across different subscription tiers,
 
 Generate clear, descriptive commit messages based on your code changes, saving time and ensuring consistency across your repository. The AI analyzes your staged changes and creates meaningful messages that accurately describe what you've modified.
 
-In addition to single commit messages, the Commit Composer can create multiple logical commits from your working tree changes, and Automatic Rebase restructures an existing branch onto a target commit with AI-generated commits. Both include undo support and first-time confirmation dialogs.
+In addition to single commit messages, the Commit Composer can create multiple logical commits from your working tree changes. To have AI resolve conflicts while you rebase a branch, use [Auto-Rebase](#auto-rebase-pro) instead.
 
 **How to access:**
 - From the Command Palette: `GitLens: Generate Commit Message`
 - From the Command Palette: `GitLens: Compose Commits...` (the Commit Composer creates multiple logical commits from your working changes)
-- From the Command Palette: `GitLens: Automatic Rebase...` (restructures branch commits)
 - From the SCM panel: Open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**
 - During the commit process: Look for the AI option in the commit interface
 
@@ -107,14 +106,20 @@ Inspect commits or Working Changes before they move forward. GitKraken AI surfac
 
 You can configure separate AI models for different features (such as compose and review) to optimize for your preferred balance of speed and quality.
 
-### AI Auto Rebase `Pro`
+### Auto-Rebase `Pro`
 **Available in:** Pro, Advanced, and Business plans
 
-Move a rebase forward with AI-assisted conflict resolution. AI Auto Rebase resolves a conflict only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself. A rebase summary sheet shows what was resolved and how, and full undo support returns you to the pre-rebase state if the result is not what you wanted.
+Move a rebase forward with AI-assisted conflict resolution. Auto-Rebase resolves a conflict only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself. A rebase summary sheet shows what was resolved and how, and full undo support returns you to the pre-rebase state if the result is not what you wanted.
+
+Auto-Rebase respects the steps you plan in the Interactive Rebase Editor. When a `reword` or `squash` step needs a new commit message, Auto-Rebase opens the message in VS Code and waits until you finish editing it. At a commit you marked `edit`, it resolves and stages any conflicts, then pauses so you can make your changes before you continue the rebase.
+
+When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
 
 **How to access:**
-- From the Command Palette: `GitLens: AI Auto Rebase`
-- From the Commit Graph: Right-click a branch and select AI Auto Rebase
+- From the Command Palette: `GitLens: Auto-Rebase...`
+- From the Commit Graph: Right-click a branch, select **Rebase Current Branch onto Branch...**, and choose **Auto-Rebase** in the rebase confirmation step
+- From the Interactive Rebase Editor: Select **Start Auto-Rebase** next to **Start Rebase**, or **Continue with Auto-Rebase** once the rebase has started
+- For a rebase that is already paused: Run `GitLens: Continue with Auto-Rebase` from the Command Palette
 
 **Key settings:**
 - `gitlens.ai.autoRebase.confidenceThreshold` — Set the minimum confidence level (0-1) for automatic conflict resolution
@@ -139,6 +144,15 @@ Shape your commit history with AI-assisted commit crafting and branch restructur
 GitKraken AI features operate on a credit-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
 
 Credits refresh weekly and are shared across all AI features. More complex operations like changelog generation typically use more credits than simpler ones like commit messages.
+
+### Check Your AI Credit Usage
+
+GitLens shows your GitKraken AI usage in two places:
+
+- **GitLens Settings**: Run `GitLens: Open Settings` from the Command Palette and select **Account** under **Setup**. The **GitKraken AI Usage** card shows how many of your weekly credits you have used and when your weekly allowance resets. If your organization has a shared credit pool, a **Weekly Shared Organization Pool** row splits it into your usage, the rest of the organization's usage, and what remains.
+- **Commit Graph header**: Select the **Account** button (your avatar and plan badge) in the Commit Graph header. The **GitKraken AI** row in the popover shows your usage as a percentage; select it to open the Account settings.
+
+Both places show **Nearly out** when you have used more than 90% of your credits. On paid plans, the **GitKraken AI Usage** card includes a **Get more AI credits** button if you have no active organization or you are an owner, admin, or billing contact of your active organization. Other organization members see a note to contact their organization admin or owner for more credits.
 
 ---
 ## Configuring Your AI Provider
@@ -172,7 +186,7 @@ To configure your AI provider:
 ### User-Level Customization
 
 - **Customize AI prompts**: Tailor the prompts used for various AI features to match your team's style
-- **Credit usage monitoring**: Track your credit consumption for better allocation management
+- **Credit usage monitoring**: Track your credit consumption on the **GitKraken AI Usage** card in the **Account** category of GitLens Settings (see [Check Your AI Credit Usage](#check-your-ai-credit-usage))
 - **Default AI mode**: Choose between concise or detailed outputs for each feature
 
 ### AI File Exclusions

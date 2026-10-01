@@ -46,12 +46,12 @@ You can also sign in via the VS Code Command Palette:
 
 To sign out:
 
-- Click the GitLens icon in the sidebar to open the **Home** view.
-- Select the account chip (your plan name) at the top of the view, then select the **Sign Out** button in the popover.
+- Open the Commit Graph (run `GitLens: Show Commit Graph` from the Command Palette).
+- Select the **Account** button (your avatar and plan badge) in the Commit Graph header, then select the **Sign Out** button in the popover.
 
 <figure>
-  <img src="/wp-content/uploads/gl-sign-out-ls-update-01-v4@2x.png" alt="The GitLens Home view with the account chip's popover open: the GitLens Pro plan header with its ENTERPRISE badge and the Synchronize Status, Manage Account and Sign Out icon buttons — Sign Out ringed — above the organization row and the Refer a friend link (the account's name, e-mail and avatar are blanked)" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Sign out from the GitLens sidebar</figcaption>
+  <img src="/wp-content/uploads/gl-sign-out-ls-update-01-v5@2x.png" alt="The Commit Graph header's account menu open: the GitLens Pro plan header with its Send Feedback, Synchronize Status, Account Settings and ringed Sign Out buttons, above the signed-in account, the organization, and the AI and Integrations sections." class="help-center-img img-bordered">
+  <figcaption style="text-align: center; color: #888">Sign out from the Commit Graph account popover</figcaption>
 </figure>
 
 Or use the VS Code Command Palette:
@@ -98,6 +98,20 @@ Yes. GitLens has no proxy setting of its own; it uses Visual Studio Code's **Htt
 ## Does GitLens Support Git Submodules?
 
 Yes. GitLens provides basic Git submodule support, including automatic discovery and tracking of submodules in your workspace. Submodules are distinguished with their own icons in sidebar views, and diffs correctly handle submodule pointer changes. GitLens detects superproject paths and tracks submodule status alongside your main repository.
+
+***
+
+## How Do I Change the Language GitLens Displays In?
+
+GitLens follows the Visual Studio Code display language and has no language setting of its own. Spanish, Simplified Chinese, and Traditional Chinese translations are available as experimental translations. Any text that is not yet translated appears in English.
+
+To switch GitLens to one of these languages:
+
+1. Install the Microsoft language pack for the language in Visual Studio Code.
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **Configure Display Language**.
+3. Select the language, then restart Visual Studio Code when prompted.
+
+The `gitlens.defaultDateLocale` setting controls only how GitLens formats dates, not the language of the interface.
 
 ***
 

@@ -3,10 +3,10 @@ title: GitKraken Account – GitLens
 description: Learn how to create and manage your GitKraken account for GitLens features.
 taxonomy:
   category: gitlens
-last_updated: 2025-07
+last_updated: 2026-09
 ---
 
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
 
@@ -37,6 +37,13 @@ When prompted with the login screen, select **Create an account** to begin. Choo
 </figure>
 
 Once your account is created, it is linked to the primary email associated with your selected login method. If you choose **Sign up with Email**, check your inbox for a verification link to complete the process.
+
+After you sign in, you can manage your account from two places in GitLens:
+
+- **GitLens Settings**: Run `GitLens: Open Settings` from the Command Palette and select **Account** under **Setup**. The Account category shows your plan, **Manage Account** and **Sign Out** buttons, your active organization with an option to switch it, and a **GitKraken AI Usage** card with your weekly AI credit usage. On paid plans, owners, admins, and billing contacts of the active organization (and users with no active organization) can select **Get more AI credits** there.
+- **Commit Graph header**: Select the **Account** button (your avatar and plan badge) in the Commit Graph header. The popover offers **Synchronize Status**, **Account Settings**, **Manage Account**, **Sign Out**, and **Switch Active Organization**, along with a **GitKraken AI** row that shows your credit usage.
+
+For more about AI credits, see [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/#check-your-ai-credit-usage).
 
 
 ***

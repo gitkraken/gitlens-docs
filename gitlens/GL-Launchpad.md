@@ -3,18 +3,18 @@ title: Launchpad
 description: Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
 taxonomy:
     category: gitlens
-last_updated: 2025-08
+last_updated: 2026-09
 
 ---
 
-<kbd>Last updated: August 2025</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 ## Launchpad <code>PRO</code>
 
 The GitLens Launchpad helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="help-center-img img-bordered" alt="Launchpad view showing pull requests organized by status" />
+  <img src="/wp-content/uploads/gl-launchpad-quickpick.png" class="help-center-img img-bordered" alt="The Launchpad quick pick with pull requests grouped by status" />
   <figcaption style="text-align: center; color: #888">GitLens Launchpad pull request overview</figcaption>
 </figure>
 
@@ -26,6 +26,8 @@ The GitLens Launchpad helps you manage pull requests by status, so you can quick
    - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
    - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 2. Search for **GitLens: Open Launchpad**, or select **Pull Request** from the status bar in VS Code.
+
+To learn more about Launchpad, select **Click to learn more about Launchpad** when Launchpad asks you to connect an integration, the **What is this?** icon in the Launchpad status bar tooltip, or **Learn about Launchpad...** in the Launchpad view. Each of these opens the GitLens **Welcome** view, which includes a Launchpad and Worktrees step.
 
 <figure>
   <img src="/wp-content/uploads/gl-access-launchpad.gif" class="help-center-img img-bordered" alt="Opening the Launchpad from the Command Palette in VS Code" />
@@ -50,6 +52,8 @@ Select a pull request to:
 - Open it in a browser
 - Merge it (if ready)
 - Switch to the branch or worktree
+
+To find a pull request that isn't in your list, select **Search for Pull Request...** and enter a term. Launchpad matches the term against pull request titles and descriptions. You can also paste a pull request URL to act on that pull request.
 
 <figure>
   <img src="/wp-content/uploads/gl-view-pull-request.png" class="help-center-img img-bordered" alt="Pull request details in the Launchpad" />
@@ -84,6 +88,6 @@ You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-sugge
 
 ### Availability
 
-- Supported for **GitHub.com** and **GitLab.com** repositories only. Connect the [GitHub or GitLab integration](/gitlens/gitlens-features/#connecting-the-github-and-gitlab-integration) to use Launchpad.
+- Supported for pull requests on **GitHub**, **GitHub Enterprise**, **GitLab**, **GitLab Self-Hosted**, **Azure DevOps**, **Azure DevOps Server**, **Bitbucket**, and **Bitbucket Data Center**. Connect the [integration for your provider](/gitlens/gl-integrations/) to use Launchpad. **Search for Pull Request...** searches every connected provider.
 - Launchpad prioritizes items that require immediate action, placing them at the top. (This may change in future updates.)
 - This feature is available with a **Pro subscription tier or higher**.

@@ -4,10 +4,10 @@ title: Take Agent-Generated Work from Change to Merge
 description: Code Change to Merged branches all through GitLens
 taxonomy:
     category: gitlens
-last_updated: 2026-08
+last_updated: 2026-09
 
 ---
-<kbd>Last updated: August 2026</kbd>
+<kbd>Last updated: September 2026</kbd>
 
 Coding agents can produce changes quickly, but generated code still needs to be understood, organized, and prepared before it is ready to merge.
 
@@ -19,6 +19,8 @@ Open the agent’s working changes from the Commit Graph to understand what was 
   <img src="/wp-content/uploads/GL-Agent-needs-approval-full-view.png" class="help-center-img img-bordered">
 </figure>
 Keeping the agent session, worktree, and changes connected makes it easier to understand the work before deciding what happens next.
+
+If the agent's session has already ended, it stays listed as a Past session, so you can pick up where the agent left off. Resume a past session from Claude Code, Codex, GitHub Copilot CLI, or OpenCode with **Resume in Terminal**, or, for Claude Code, with **Resume in Claude Code Extension**. To choose from the worktree's sessions, right-click its Working Changes row and select **Resume Agent Session...**. For details, see [Resume a Past Session](/gitlens/gl-agents/#resume-a-past-session).
 
 ## 2. Review the Work While It’s Fresh
 <figure>
