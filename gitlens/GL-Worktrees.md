@@ -35,6 +35,20 @@ Select **Create Worktree...** in the **Worktrees** view, then choose the branch 
 
 GitLens saves your **After Creating** choice to the `gitlens.worktrees.openAfterCreate` setting, so the same option is selected the next time you create a worktree. The setting's default is `newWindow`.
 
+### Delete a Worktree
+
+Git can't delete a branch while a worktree has it checked out. When you delete a branch that's checked out in a worktree, for example with **Delete Branch...** in the **Branches** view or the Git Command Palette, GitLens deletes the branch and its worktree together in one step. The confirmation step is titled **Confirm Delete Branch & Worktree**:
+
+- The **Delete Branch & Worktree** row shows the branch and the worktree folder that will be deleted.
+- Under **Options**, turn on **Force** to delete the worktree even if it has uncommitted changes. GitLens warns you first when a worktree has uncommitted changes.
+- Under **Additional Actions**, **Delete Branch** starts out selected. Clear it to delete only the worktree and keep the branch. Turn on **Delete Upstream** to also delete the branch's upstream from the remote. **Delete Upstream** appears only when the upstream branch still exists.
+
+<figure>
+  <img src="/wp-content/uploads/gl-worktree-delete-branch-confirm-01-v3@2x.png" class="help-center-img img-bordered" alt="The Confirm Delete Branch & Worktree step for feature/api-hardening: a warning that the worktree has uncommitted changes, the ringed Delete Branch & Worktree row, the Force option, and under Additional Actions Delete Branch (checked) and Delete Upstream." />
+</figure>
+
+If you delete several branches at once and only some of them are checked out in worktrees, GitLens handles those branches and their worktrees in this step, then deletes the remaining branches. When you prune a branch instead of deleting it, the step reads **Prune Branch & Delete Worktree**.
+
 ### Start an Agent Session in a Worktree
 
 Right-click a worktree in the **Worktrees** view, or a worktree's Working Changes row in the Commit Graph, and select one of the following:
@@ -42,6 +56,13 @@ Right-click a worktree in the **Worktrees** view, or a worktree's Working Change
 - **Start Agent Session...** starts a coding agent in that worktree. GitLens uses your default agent from the `gitlens.ai.defaultAgent` setting when one is set; otherwise, it asks you to choose an agent.
 - **Start Agent Session With...** always asks which agent to use.
 - **Resume Agent Session...** lists the worktree's agent sessions so you can open a live session or resume a past one.
+
+When GitLens asks you to choose an agent, the **Choose an Agent** list ends with an **Always use this agent** option. Select it, then choose an agent, to save that agent as your default so **Start Agent Session...** uses it from then on. Selecting the option on its own saves nothing, and you can change the default later with the `gitlens.ai.defaultAgent` setting.
+
+<figure>
+  <img src="/wp-content/uploads/gl-agents-choose-agent-picker-01-v2@2x.png" class="help-center-img img-bordered" alt="The Choose an Agent picker listing the detected agents, with the Always use this agent toggle ringed under Options." />
+  <figcaption style="text-align: center; color: #888">Saving a default agent from the agent picker</figcaption>
+</figure>
 
 A command-line agent starts in a new integrated terminal opened in the worktree folder. An agent that runs in VS Code chat or in an extension receives a prompt that asks it to work in the worktree. In the Commit Graph, a Working Changes row's context menu also includes **Copy Branch Name**.
 

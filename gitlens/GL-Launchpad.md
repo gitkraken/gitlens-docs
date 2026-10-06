@@ -51,6 +51,7 @@ Select a pull request to:
 - View detailed information
 - Open it in a browser
 - Merge it (if ready)
+- Rebase its stack with **Rebase Stack...**, for a GitHub stacked pull request
 - Switch to the branch or worktree
 
 To find a pull request that isn't in your list, select **Search for Pull Request...** and enter a term. Launchpad matches the term against pull request titles and descriptions. You can also paste a pull request URL to act on that pull request.

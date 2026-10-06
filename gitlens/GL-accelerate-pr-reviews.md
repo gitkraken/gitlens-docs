@@ -59,7 +59,11 @@ To use Start Review:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 2. Run: `GitLens: Start Review`.
-3. Select your integration and pull request, then choose your checkout method.
+3. Select your integration and pull request.
+4. When AI features are enabled, choose how to continue: **Open in an agent**, **Continue manually**, or **Open in Kepler** when [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler) supports the pull request's provider. To skip this step next time, select **Always use this choice** before you choose. GitLens saves your choice to the `gitlens.ai.openInAgent` setting.
+5. Unless you opened the pull request in Kepler, choose your checkout method.
+
+If GitLens can't find a local copy of the pull request's repository, it asks how to find it. Select **Clone Repository...** to clone it into a folder you choose, or **Choose a Local Folder...** to point GitLens at an existing clone. If the folder you choose doesn't look like a clone of that repository, GitLens asks you to confirm before using it.
 
 <figure class='callout callout--warning'>
   <p>This feature is available with a GitLens Pro subscription or higher.</p>

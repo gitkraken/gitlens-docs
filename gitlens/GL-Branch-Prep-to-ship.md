@@ -27,7 +27,7 @@ When you have no uncommitted changes, the Working Changes details panel shows a 
 - **Publish**, when the branch doesn't have an upstream yet
 - **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
 - **Pull** or **Force Push**, when the branch has diverged from its upstream
-- **Create PR** when a published branch has no pull request, or **View** when it has one
+- **Create PR** when a published branch has no open pull request, or **View** when it has one
 - **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it
 - **Delete Branch** or **Delete Worktree**, when the branch has been merged into its merge target
 - **Review** and **Recompose**, to review the branch's changes or recompose its commits

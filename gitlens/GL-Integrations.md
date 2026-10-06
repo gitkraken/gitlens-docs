@@ -114,6 +114,8 @@ GitLens supports stacked pull request workflows on GitHub.com. When working with
 
 PR stack details appear in the Commit Graph pull request sheet when viewing a PR that belongs to a stack.
 
+To bring a whole stack up to date with its base branch, select **Rebase Stack...** in the pull request sheet or in Launchpad. GitLens rebases each branch onto the one below it, from the bottom of the stack up, and then offers to force push the rebased branches. **Auto-Rebase Stack...** does the same and resolves conflicts with AI. For details, see [Pull Request Information](/gitlens/gl-commit-graph/#pull-request-information) in the Commit Graph documentation.
+
 ***
 
 ## GitHub Enterprise Server and GitLab Self-Managed Integration `PRO`
