@@ -44,7 +44,7 @@ Git can't delete a branch while a worktree has it checked out. When you delete a
 - Under **Additional Actions**, **Delete Branch** starts out selected. Clear it to delete only the worktree and keep the branch. Turn on **Delete Upstream** to also delete the branch's upstream from the remote. **Delete Upstream** appears only when the upstream branch still exists.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktree-delete-branch-confirm.png" class="help-center-img img-bordered" alt="The Confirm Delete Branch &amp; Worktree step for feature/api-hardening: a warning that the worktree has uncommitted changes, the ringed Delete Branch &amp; Worktree row, the Force option, and under Additional Actions Delete Branch (checked) and Delete Upstream." />
+  <img src="/wp-content/uploads/gl-worktree-delete-branch-confirm-01-v2@2x.png" class="help-center-img img-bordered" alt="The Confirm Delete Branch & Worktree step for feature/api-hardening: a warning that the worktree has uncommitted changes, the ringed Delete Branch & Worktree row, the Force option, and under Additional Actions Delete Branch (checked) and Delete Upstream." />
 </figure>
 
 If you delete several branches at once and only some of them are checked out in worktrees, GitLens handles those branches and their worktrees in this step, then deletes the remaining branches. When you prune a branch instead of deleting it, the step reads **Prune Branch & Delete Worktree**.
@@ -60,7 +60,7 @@ Right-click a worktree in the **Worktrees** view, or a worktree's Working Change
 When GitLens asks you to choose an agent, the **Choose an Agent** list ends with an **Always use this agent** option. Select it, then choose an agent, to save that agent as your default so **Start Agent Session...** uses it from then on. Selecting the option on its own saves nothing, and you can change the default later with the `gitlens.ai.defaultAgent` setting.
 
 <figure>
-  <img src="/wp-content/uploads/gl-agents-choose-agent-picker.png" class="help-center-img img-bordered" alt="The Choose an Agent picker listing the detected agents, with the Always use this agent toggle ringed under Options." />
+  <img src="/wp-content/uploads/gl-agents-choose-agent-picker-01-v2@2x.png" class="help-center-img img-bordered" alt="The Choose an Agent picker listing the detected agents, with the Always use this agent toggle ringed under Options." />
   <figcaption style="text-align: center; color: #888">Saving a default agent from the agent picker</figcaption>
 </figure>
 

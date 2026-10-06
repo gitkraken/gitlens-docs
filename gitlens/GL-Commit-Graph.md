@@ -47,7 +47,7 @@ If no repository is open, the Commit Graph shows **No repository open** with two
 - **Start from your work**: **Start Work on an Issue** picks an issue from your connected integrations and creates a branch for it, and **Start Review on a PR** checks out a pull request for review. This group isn't available in VS Code for the Web.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-no-repo-empty-state.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
+  <img src="/wp-content/uploads/gl-graph-no-repo-empty-state-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
   <figcaption style="text-align: center; color: #888">The Commit Graph when no repository is open</figcaption>
 </figure>
 
