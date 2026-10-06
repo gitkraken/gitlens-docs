@@ -503,6 +503,11 @@ For GitHub repositories, the graph also recognizes **stacked pull requests**. Wh
 
 When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
 
+<figure>
+  <img src="/wp-content/uploads/gl-graph-pr-sheet-rebase-stack.png" class="help-center-img img-bordered" alt="The PR sheet for Document rate limiting, the top pull request in a three-layer stack: Ready to merge, with the Rebase Stack button and its count of 3 ringed beside Merge Stack, and the stack's layers listed below." />
+  <figcaption style="text-align: center; color: #888">Rebase Stack in the PR sheet for a stacked pull request</figcaption>
+</figure>
+
 GitLens asks you to choose how to run the rebase:
 
 - **Rebase Stack**: Stops at each conflict. Resolve the conflicts and continue the rebase, and GitLens moves on to the next branch. Select **Stop Stack Rebase** in the notification to end the run.
