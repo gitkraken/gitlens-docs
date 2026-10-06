@@ -370,6 +370,25 @@ Open in New Window
 
 ---
 
+## Start Tasks and Reviews in Kepler
+
+Kepler is GitKraken's agentic development environment, a desktop app that runs AI agents across a task, from an issue or pull request to a merged change. If you use Kepler, GitLens can hand an issue, a pull request, or a repository to Kepler's task composer, so you set up and run the work there instead of in VS Code. Kepler creates its own worktree for the task, so GitLens doesn't create a branch or worktree.
+
+You can start a Kepler task from these places:
+
+- **Start Task in Kepler**: Right-click a repository in the **Repositories** view.
+- **Start Review in Kepler**: Right-click a pull request in a GitLens view, in the Launchpad view, or in the Commit Graph.
+- **Open in Kepler**: Choose this option in the first step of **Start Work** or **Start PR Review**, above **Open in an agent** and **Continue manually**. To skip that step and always use Kepler, set `gitlens.ai.openInAgent` to `kepler`.
+
+<figure>
+  <img src="/wp-content/uploads/gl-kepler-start-task-menu.png" class="help-center-img img-bordered" alt="The Repositories view with the Playground2026 repository's context menu open and Start Task in Kepler ringed among its actions." />
+  <figcaption style="text-align: center; color: #888">Starting a Kepler task from a repository</figcaption>
+</figure>
+
+GitLens offers Kepler only for providers that Kepler supports: GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, and Bitbucket for pull requests, and the same providers except Bitbucket, plus Jira, Linear, and Trello, for issues. Kepler options don't appear in VS Code for the Web. If Kepler isn't installed, GitLens shows a message with a **Get Kepler** button. When GitLens detects Kepler on your computer, the Kepler step in the Welcome view counts as complete.
+
+---
+
 ## Related Features
 
 GitLens agent workflows work especially well alongside:

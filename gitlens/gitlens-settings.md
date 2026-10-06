@@ -1682,6 +1682,20 @@ Another custom example:<br>
 </td>
 </tr>
 <tr>
+<td><code>gitlens.ai.openInAgent</code></td>
+<td>Specifies the default route for Start Work and Start PR Review when opening in an agent is offered<br><br>
+<code>ask</code> — asks each time (default)<br>
+<code>manual</code> — always continues manually<br>
+<code>agent</code> — always opens in an agent, using <code>gitlens.ai.defaultAgent</code> when it's set<br>
+<code>kepler</code> — always starts a task in Kepler, without creating a branch or worktree, when Kepler supports the item; otherwise asks
+</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.defaultAgent</code></td>
+<td>Specifies the default agent for Start Work, Start PR Review, and starting an agent session. When the saved agent is no longer available, GitLens asks you to choose one. Set it by selecting <strong>Always use this agent</strong> in the agent picker
+</td>
+</tr>
+<tr>
 <td><code>gitlens.ai.exclude.files</code></td>
 <td>Glob patterns for files to exclude from AI context. Also respects <code>.aiignore</code>, <code>.cursorignore</code>, and <code>.aiexclude</code> files.</td>
 </tr>

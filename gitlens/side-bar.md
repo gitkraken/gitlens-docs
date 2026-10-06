@@ -460,7 +460,7 @@ Your **After Creating** choice updates the `gitlens.worktrees.openAfterCreate` s
 
 Right-click a worktree in the Worktrees view to run these actions:
 
-- **Start Agent Session...**: Starts a coding agent session in the worktree. GitLens uses your default agent from `gitlens.ai.defaultAgent`, or asks you to choose an agent if no default is set. Command-line agents open in a terminal in the worktree's folder.
+- **Start Agent Session...**: Starts a coding agent session in the worktree. GitLens uses your default agent from `gitlens.ai.defaultAgent`, or asks you to choose an agent if no default is set. To save the agent you choose as your default, select **Always use this agent** in the list first. Command-line agents open in a terminal in the worktree's folder.
 - **Start Agent Session With...**: Asks you to choose the agent to start in the worktree.
 - **Resume Agent Session...**: Opens a list of agent sessions you can resume.
 - **Run Task on Worktree...**: Runs a VS Code task in the worktree's folder.

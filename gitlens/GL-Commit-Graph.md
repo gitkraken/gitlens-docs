@@ -41,6 +41,18 @@ The Commit Graph opens in a new tab, where you can scroll through history and re
   <figcaption style="text-align: center; color: #888">Opening the Commit Graph from the Command Palette</figcaption>
 </figure>
 
+If no repository is open, the Commit Graph shows **No repository open** with two groups of ways to get going:
+
+- **Get started**: **Open a Folder**, **Clone a Repository**, or **Start a New Project**. In VS Code for the Web, this group offers **Open a Remote Repository** instead.
+- **Start from your work**: **Start Work on an Issue** picks an issue from your connected integrations and creates a branch for it, and **Start Review on a PR** checks out a pull request for review. This group isn't available in VS Code for the Web.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-no-repo-empty-state.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
+  <figcaption style="text-align: center; color: #888">The Commit Graph when no repository is open</figcaption>
+</figure>
+
+With no repository open, Start Work lists issues from all of your connected integrations. If GitLens can't find the repository of the issue you pick, it asks how to find it: select **Clone Repository...** or **Choose a Local Folder...**, then continue to create the branch. Start Review offers the same two options when it can't find a local copy of the pull request's repository.
+
 ---
 
 ### Repository Information
@@ -461,7 +473,7 @@ Helpful context menu actions include:
 
 Right-click a Working Changes row for actions on its worktree:
 
-- **Start Agent Session...**: Starts a session in the worktree with your default agent, or asks you to choose an agent if you haven't set one. A CLI agent starts in a terminal at the worktree.
+- **Start Agent Session...**: Starts a session in the worktree with your default agent, or asks you to choose an agent if you haven't set one. Select **Always use this agent** in that list before you choose to make the agent your default. A CLI agent starts in a terminal at the worktree.
 - **Start Agent Session With...**: Asks you to choose the agent before starting the session.
 - **Run Task on Worktree...**: Runs a VS Code task in the worktree (see [Working Changes Rows](#working-changes-rows)).
 - **Copy Branch Name**: Copies the name of the branch checked out in the worktree.
@@ -488,6 +500,15 @@ During the rebase, a progress animation appears in the graph to indicate the ope
 For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/settings/#remote-provider-integration-settings).
 
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
+
+When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
+
+GitLens asks you to choose how to run the rebase:
+
+- **Rebase Stack**: Stops at each conflict. Resolve the conflicts and continue the rebase, and GitLens moves on to the next branch. Select **Stop Stack Rebase** in the notification to end the run.
+- **Auto-Rebase Stack** `PRO`: Resolves conflicts with AI for every branch, as [Auto-Rebase](#auto-rebase-pro) does, and pauses only when it needs your help. Progress appears in the resolve panel with the branch's position in the stack, for example **Branch 2 of 4**. When it pauses, select **Review & Resolve** or **Continue with Auto-Rebase**.
+
+When the rebase finishes, GitLens switches back to the branch you started on and offers **Force Push Stack**. Clear any branch you want to hold back, then confirm to force push the rest. If you dismiss the offer, select **Force Push Stack** in the rebase summary sheet or run **GitLens: Git Force Push Stacked Pull Requests...** from the Command Palette. You can also start a rebase with **GitLens: Git Rebase Stacked Pull Requests...** or **GitLens: Auto-Rebase Stacked Pull Requests...**.
 
 <figure>
   <img src="/wp-content/uploads/gl-pull-request-icon-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with the fixture/code-suggest-demo branch pill ringed: after the branch name and its origin remote the pill carries the pull-request icon, which marks the branch as having an associated open pull request" />

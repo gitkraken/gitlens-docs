@@ -888,6 +888,7 @@ Click a PR to:
 - View full details
 - Open in your browser
 - Merge (if eligible)
+- Rebase the stack (for a GitHub stacked pull request)
 - Switch to the branch or open in a worktree
 
 To find a pull request that isn't in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term.
@@ -913,6 +914,8 @@ You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-
 The **Start Review** command (`gitlens.startReview`) provides a guided wizard for beginning a pull request review. It walks you through selecting a PR from your connected integration, choosing whether to check out the branch or create a worktree, and optionally launching an AI chat pre-filled with a review prompt.
 
 Access it from the Command Palette: `GitLens: Start Review`
+
+When AI features are enabled, Start Review asks whether to open the review in an agent, continue manually, or, when Kepler supports the pull request's provider, open it in [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler). Select **Always use this choice** to skip that step next time; the `gitlens.ai.openInAgent` setting stores your choice. If no local clone of the pull request's repository is found, Start Review offers **Clone Repository...** and **Choose a Local Folder...** instead of stopping.
 
 ---
 
@@ -1102,6 +1105,8 @@ Key capabilities:
 - **Your messages and edit stops** — When a `reword` or `squash` step needs a new commit message, Auto-Rebase opens the message in VS Code for you to edit. At a commit you marked `edit`, it resolves and stages any conflicts, then pauses so you can make your changes before you continue.
 
 To start Auto-Rebase, run `GitLens: Auto-Rebase...` from the Command Palette, choose the **Auto-Rebase** option in the Git Command Palette's rebase confirmation, or select **Start Auto-Rebase** in the [Interactive Rebase Editor](#interactive-rebase-editor). If a rebase is already paused, run `GitLens: Continue with Auto-Rebase`.
+
+For a GitHub [stacked pull request](/gitlens/gl-commit-graph/#pull-request-information), **Auto-Rebase Stack** rebases every branch in the stack from the bottom up, each onto the one below it, and resolves conflicts with AI along the way. **Rebase Stack** does the same but stops at each conflict for you to resolve. Start either one from the Commit Graph pull request sheet, from Launchpad, from the Git Command Palette's rebase confirmation when the current branch belongs to a stack, or with `GitLens: Git Rebase Stacked Pull Requests...` or `GitLens: Auto-Rebase Stacked Pull Requests...`. When the rebase finishes, GitLens offers **Force Push Stack** so you can publish the rebased branches.
 
 When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
 
