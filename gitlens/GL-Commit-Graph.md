@@ -47,7 +47,7 @@ If no repository is open, the Commit Graph shows **No repository open** with two
 - **Start from your work**: **Start Work on an Issue** picks an issue from your connected integrations and creates a branch for it, and **Start Review on a PR** checks out a pull request for review. This group isn't available in VS Code for the Web.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-no-repo-empty-state-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
+  <img src="/wp-content/uploads/gl-graph-no-repo-empty-state-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
   <figcaption style="text-align: center; color: #888">The Commit Graph when no repository is open</figcaption>
 </figure>
 
@@ -504,7 +504,7 @@ For GitHub repositories, the graph also recognizes **stacked pull requests**. Wh
 When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-pr-sheet-rebase-stack-01-v2@2x.png" class="help-center-img img-bordered" alt="The pull request sheet for Document rate limiting, the top pull request in a three-layer stack, with the Rebase Stack split button and its stack count ringed beside Merge Stack." />
+  <img src="/wp-content/uploads/gl-graph-pr-sheet-rebase-stack-01-v3@2x.png" class="help-center-img img-bordered" alt="The pull request sheet for Document rate limiting, the top pull request in a three-layer stack, with the Rebase Stack split button and its stack count ringed beside Merge Stack." />
   <figcaption style="text-align: center; color: #888">Rebase Stack in the PR sheet for a stacked pull request</figcaption>
 </figure>
 

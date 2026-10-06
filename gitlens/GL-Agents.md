@@ -381,7 +381,7 @@ You can start a Kepler task from these places:
 - **Open in Kepler**: Choose this option in the first step of **Start Work** or **Start PR Review**, above **Open in an agent** and **Continue manually**. To skip that step and always use Kepler, set `gitlens.ai.openInAgent` to `kepler`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-kepler-start-task-menu-01-v2@2x.png" class="help-center-img img-bordered" alt="The Repositories view with the Playground2026 repository's context menu open and Start Task in Kepler ringed among its actions." />
+  <img src="/wp-content/uploads/gl-kepler-start-task-menu-01-v3@2x.png" class="help-center-img img-bordered" alt="The Repositories view with the Playground2026 repository's context menu open and Start Task in Kepler ringed among its actions." />
   <figcaption style="text-align: center; color: #888">Starting a Kepler task from a repository</figcaption>
 </figure>
 

@@ -44,7 +44,7 @@ Git can't delete a branch while a worktree has it checked out. When you delete a
 - Under **Additional Actions**, **Delete Branch** starts out selected. Clear it to delete only the worktree and keep the branch. Turn on **Delete Upstream** to also delete the branch's upstream from the remote. **Delete Upstream** appears only when the upstream branch still exists.
 
 <figure>
-  <img src="/wp-content/uploads/gl-worktree-delete-branch-confirm-01-v2@2x.png" class="help-center-img img-bordered" alt="The Confirm Delete Branch & Worktree step for feature/api-hardening: a warning that the worktree has uncommitted changes, the ringed Delete Branch & Worktree row, the Force option, and under Additional Actions Delete Branch (checked) and Delete Upstream." />
+  <img src="/wp-content/uploads/gl-worktree-delete-branch-confirm-01-v3@2x.png" class="help-center-img img-bordered" alt="The Confirm Delete Branch & Worktree step for feature/api-hardening: a warning that the worktree has uncommitted changes, the ringed Delete Branch & Worktree row, the Force option, and under Additional Actions Delete Branch (checked) and Delete Upstream." />
 </figure>
 
 If you delete several branches at once and only some of them are checked out in worktrees, GitLens handles those branches and their worktrees in this step, then deletes the remaining branches. When you prune a branch instead of deleting it, the step reads **Prune Branch & Delete Worktree**.
