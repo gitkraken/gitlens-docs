@@ -27,11 +27,11 @@ You can deep-link to any category by appending its anchor to the command: `gitle
 The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-account-01-v3@2x.png" alt="GitLens Settings with the Account category selected: the GitLens Pro plan header with its badge and the Synchronize Status, Manage Account and Sign Out buttons, the signed-in account and organization rows (masked here), a referral line and a Learn more link" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-account-01-v4@2x.png" alt="GitLens Settings with the Account category selected, stacked as cards: the signed-in identity with Manage Account and Sign Out, the plan card with its tier badge and included features, the GitKraken AI Usage card with its weekly credits bar and reset date, the active organization and a referral card; the name, e-mail and organization are placeholder values." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 
-**Account** (`account`) — view your subscription status, manage your GitKraken account, and sign in or out. **Get Started** (`setup`) — onboarding steps for new users and feature discovery.
+**Account** (`account`) — view your plan and subscription status, manage your GitKraken account, sign in or out, and switch your active organization. The **GitKraken AI Usage** card shows how many of your weekly AI credits you have used and when the allowance resets. On a paid plan, select **Get more AI credits** to buy more; if you belong to an organization, only its owners, admins, and billing contacts can buy credits, and other members see a note to ask an admin or owner. **Get Started** (`setup`) — onboarding steps for new users and feature discovery.
 
 ### Integrations
 
@@ -42,10 +42,19 @@ Settings for AI, cloud integrations, and external service connections.
   <figcaption style="text-align:center; color:#888">AI category</figcaption>
 </figure>
 
-**AI** (`ai`) — choose your AI provider, configure models, and control AI-powered features like commit message generation and code explanations. **Agents** (`agents`) — configure AI agent behavior for automated code tasks. **Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links.
+**AI** (`ai`) — choose your AI provider, configure models, and control AI-powered features like commit message generation and code explanations.
+
+**Agents** (`agents`) — lists the chat, extension, CLI, and editor agents GitLens detects. For each agent, choose whether it is the **Default** agent GitLens uses for AI features, install or uninstall the GitKraken MCP server (**MCP**), and install or uninstall GitKraken Hooks (**Hooks**), which let GitLens track the agent's sessions and coordinate permissions. Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. Codex won't run the hooks until you trust them by running `/hooks` in Codex, so a warning icon next to an installed Codex row shows that reminder and a button to start a Codex session.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v2.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-agents-table-01-v2@2x.png" alt="The Agents category of GitLens Settings: a table of agents with Default, MCP and Hooks columns, listing Copilot Chat and the detected Claude Code, Codex, GitHub Copilot CLI and OpenCode CLIs with their GitKraken Hooks state, the Hooks column header ringed." class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Agents category</figcaption>
+</figure>
+
+**Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Linear, and Trello issue trackers.
+
+<figure>
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
@@ -74,11 +83,11 @@ Annotation and decoration settings for the code editor.
 Configuration for Commit Graph and source control tree views.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v2.png" alt="GitLens Settings Commit Graph category showing graph layout options" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-commit-graph-01-v3@2x.png" alt="GitLens Settings on the Commit Graph category: the live preview of graph rows with branch and tag pills at the top, then the setting for where the Commit Graph opens, the row paging limits and the setting that shows markers" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 
-**Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — format templates for the Commits view (commit label, description, and tooltip formats; file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
+**Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, branch and tag pill layout, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — format templates for the Commits view (commit label, description, and tooltip formats; file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-views-01-v3@2x.png" alt="GitLens Settings with the Commits view category selected in the Views group: format templates for the commit label, commit description, commit tooltip, file rows and file description, each with a token picker, and a footer link to the full gitlens.views.commits options in the VS Code Settings UI" class="help-center-img img-bordered">
@@ -1234,7 +1243,7 @@ These settings control the display options for files and avatars in the GitLens 
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.skipConfirmations</code></td>
-<td>Specifies which Git commands skip confirmation prompts. Format: <code>git-command-name:(menu/command)</code>.</td>
+<td>Specifies which (and when) Git commands skip the confirmation step, using the format <code>git-command-name:(menu|command)</code>. Supported commands are <code>branch-create</code>, <code>co-authors</code>, <code>fetch</code>, <code>pull</code>, <code>push</code>, <code>stash-apply</code>, <code>stash-pop</code>, <code>stash-push</code>, <code>switch</code>, <code>tag-create</code>, and <code>tag-push</code>.<br><br>You can also select the <em>Don't Ask Again</em> toggle under <em>Options</em> in a supported confirmation step to add or remove that command here; its gear button opens this setting.</td>
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.sortBy</code></td>
@@ -1403,7 +1412,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.defaultDateLocale</code></td>
-<td>Specifies the locale for date formatting, using a <a href="https://en.wikipedia.org/wiki/IETF_language_tag#List_of_major_primary_language_subtags" rel="nofollow">BCP 47 language tag</a>. Defaults to the VS Code locale. Use <code>system</code> to follow the current system locale or specify a locale like <code>en-US</code> (US English), <code>en-GB</code> (British English), <code>de-DE</code> (German), <code>ja-JP</code> (Japanese), etc.</td>
+<td>Specifies the locale for date formatting, using a <a href="https://en.wikipedia.org/wiki/IETF_language_tag#List_of_major_primary_language_subtags" rel="nofollow">BCP 47 language tag</a>. Defaults to the VS Code locale. Use <code>system</code> to follow the current system locale or specify a locale like <code>en-US</code> (US English), <code>en-GB</code> (British English), <code>de-DE</code> (German), <code>ja-JP</code> (Japanese), etc.<br><br>This setting affects only date formatting. GitLens has no separate interface-language setting: it follows VS Code's display language, with translations for Spanish, Simplified Chinese, and Traditional Chinese and English as the fallback. To change it, run <em>Configure Display Language</em> from the Command Palette.</td>
 </tr>
 <tr>
 <td><code>gitlens.defaultDateShortFormat</code></td>
@@ -1772,6 +1781,13 @@ Another custom example:<br>
 </td>
 </tr>
 <tr>
+<td><code>gitlens.advanced.commits.delayLoadingFileDetails</code></td>
+<td>Specifies whether to delay loading commit file details until they are shown. Delaying makes large histories open faster but adds a Git call each time a commit's files are shown.<br><br>
+<code>null</code> (default) – delays only in repositories where loading file details has been slow (requires <code>gitlens.gitOptimizations.enabled</code>)<br>
+<code>true</code> – always delays<br>
+<code>false</code> – never delays</td>
+</tr>
+<tr>
 <td><code>gitlens.advanced.externalDiffTool</code></td>
 <td>Optional external diff tool for file comparisons (must be a configured <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-difftool" rel="nofollow">Git difftool</a>).</td>
 </tr>
@@ -1832,6 +1848,15 @@ Another custom example:<br>
 </td>
 </tr>
 <tr>
+<td><code>gitlens.worktrees.openAfterCreate</code></td>
+<td>Specifies how and when to open a worktree after it is created. Choosing an <em>After Creating</em> option (<em>Open in New Window</em>, <em>Open in Current Window</em>, <em>Add to Workspace</em>, or <em>Don't Open</em>) in the Create Worktree dialog updates this setting.<br><br>
+<code>newWindow</code> (default) – always open the new worktree in a new window<br>
+<code>currentWindow</code> – always open the new worktree in the current window<br>
+<code>addToWorkspace</code> – always add the new worktree to the current workspace<br>
+<code>none</code> – never open the new worktree<br>
+<code>onlyWhenEmpty</code> – open the new worktree in the current window only when no folder is opened, otherwise in a new window</td>
+</tr>
+<tr>
 <td><code>gitlens.visualHistory.allowMultiple</code></td>
 <td>Allows opening multiple Visual History instances in the editor area.</td>
 </tr>
@@ -1869,7 +1894,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.advanced.skipOnboarding</code></td>
-<td>Skips the welcome walkthrough on new installations.</td>
+<td>Skips onboarding experiences, such as the Welcome view. Useful for ephemeral environments like containers or sandboxes.</td>
 </tr>
 <tr>
 <td><code>gitlens.sortWorkingChangesBy</code></td>
@@ -1880,6 +1905,24 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.visualHistory.editorOpeningBehavior</code></td>
 <td>Controls how files open from the Visual History view.</td>
+</tr>
+<tr>
+<td><code>gitlens.gitOptimizations.enabled</code></td>
+<td>Specifies whether GitLens automatically applies safe, repo-local Git performance optimizations in the background (loose-object packing, incremental repack, and commit-graph) while VS Code is open. Enabled by default.<br><br>
+This is the same routine work Git performs during <code>git gc</code> or <code>git maintenance</code>: packing and repacking reorganize objects the repository already contains without altering history, and the commit-graph is an acceleration cache that can be deleted at any time. More invasive optimizations (untracked cache, FSMonitor, system-scheduled maintenance, <code>feature.manyFiles</code>) are never applied automatically. Turning this off also turns off Repository Health in the Commit Graph and the automatic behavior of <code>gitlens.advanced.commits.delayLoadingFileDetails</code>.</td>
+</tr>
+<tr>
+<td><code>gitlens.openInTerminalLocation</code></td>
+<td>Specifies where GitLens opens the terminals it creates, such as agent session terminals and <em>Open in Integrated Terminal</em>. The first time GitLens creates a terminal, it offers <em>Use Editor Tabs</em> to switch this setting to <code>editor</code>.<br><br>
+<code>panel</code> (default) – open in the terminal panel<br>
+<code>editor</code> – open as an editor tab</td>
+</tr>
+<tr>
+<td><code>gitlens.agents.resumeTarget</code></td>
+<td><strong>Preview</strong> — Specifies where a past agent session is resumed when both a terminal and the agent's VS Code extension could open it. Actions that name a destination, such as <em>Resume in Terminal</em>, are unaffected.<br><br>
+<code>null</code> (default) – ask which to use the first time a session can be resumed in either place, with an option to remember<br>
+<code>terminal</code> – always resume in a new integrated terminal<br>
+<code>extension</code> – resume in the agent's VS Code extension when it can open the session, otherwise in a terminal</td>
 </tr>
 </tbody>
 </table>
@@ -1994,6 +2037,14 @@ Honored when opening the Commit Graph from the command palette.
 <td>Enables periodic automatic git fetch in the Commit Graph.</td>
 </tr>
 <tr>
+<td><code>gitlens.graph.followTerminal.enabled</code></td>
+<td>Specifies whether a visible Commit Graph follows the active terminal or Claude Code conversation tab, selecting the working changes row of the repository or worktree it is in. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.followTerminal.allowRepositorySwitching</code></td>
+<td>Specifies whether following the active terminal or Claude Code conversation tab can switch the Commit Graph to a different repository. When disabled (the default), terminals in other repositories are ignored.</td>
+</tr>
+<tr>
 <td><code>gitlens.graph.details.location</code></td>
 <td>Controls where the details panel appears relative to the graph.<br><br>
 <code>right</code> – details panel on the right<br>
@@ -2029,7 +2080,23 @@ Honored when opening the Commit Graph from the command palette.
 </tr>
 <tr>
 <td><code>gitlens.graph.overviewBar.visibility</code></td>
-<td>Controls visibility of the overview bar in the graph.</td>
+<td>Specifies when to show the overview bar above the Commit Graph: the per-worktree <em>WIP</em> pills and the HEAD, upstream, and merge target jumps. When shown, the primary worktree is always included.<br><br>
+<code>always</code> – always shown, with every secondary worktree<br>
+<code>worktrees</code> – shown when the repository has more than one worktree, with every secondary worktree<br>
+<code>dirtyWorktrees</code> (default) – shown when another worktree has working changes or unpushed commits, and includes only those worktrees<br>
+<code>never</code> – never shown</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.scopeBehavior</code></td>
+<td>Specifies what <em>Scope to Worktree</em> does in the Commit Graph.<br><br>
+<code>scope</code> – only moves HEAD-derived state onto the worktree, leaving every commit visible<br>
+<code>scopeAndFocus</code> (default) – also focuses the worktree's branch, narrowing the visible rows</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.doubleClickWorktreeAction</code></td>
+<td>Specifies what double-clicking a secondary worktree's working changes row, its overview bar pill, or its sidebar row does in the Commit Graph.<br><br>
+<code>scope</code> (default) – scopes the Commit Graph to the worktree, as set by <code>gitlens.graph.scopeBehavior</code><br>
+<code>focus</code> – toggles the classic branch focus without scoping</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.refFindAutoHide</code></td>
@@ -2053,6 +2120,29 @@ Honored when opening the Commit Graph from the command palette.
 <code>squares</code> – shows colored squares<br>
 <code>bar</code> – shows a bar indicator<br>
 <code>bipolar</code> – shows a bipolar indicator</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.refs.layout</code></td>
+<td>Specifies how branch and tag pills are laid out on each row of the Commit Graph.<br><br>
+<code>inline</code> (default) – shows pills inline with the commit row<br>
+<code>stacked</code> – shows pills on their own line above the commit, growing the row</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.refs.maxInline</code></td>
+<td>Specifies the maximum number of branch and tag pills to show on each row, as space allows: <code>1</code> (default) to <code>10</code>, or <code>auto</code> to fit as many pills as the row area allows. Additional refs are collapsed behind a <em>+N</em> counter on the last pill.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.refs.maxStacked</code></td>
+<td>Specifies the maximum number of branch and tag pills to show on the stacked pill line when <code>gitlens.graph.refs.layout</code> is <code>stacked</code>: <code>1</code> to <code>10</code>, or <code>auto</code> (default) to fit as many pills as the line allows. Additional refs are collapsed behind a <em>+N</em> counter on the last pill.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.shortcuts.enabled</code></td>
+<td>Specifies whether the customizable keyboard shortcuts of the Commit Graph (those using <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, or <kbd>⌘</kbd>, such as <kbd>Alt+M</kbd> or <kbd>Ctrl+↑</kbd>) are enabled. Navigation keys such as the arrows, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.shortcuts.overrides</code></td>
+<td>Changes or disables individual Commit Graph keyboard shortcuts, keyed by shortcut id. To see an id, press <kbd>?</kbd> in the Commit Graph and hover a shortcut; only shortcuts that show an id can be changed.<br><br>
+Set an id to a key combination, a list of them, or <code>false</code> to disable it. A key ending in <code>.*</code> set to <code>false</code> disables every shortcut with that prefix (for example, <code>"panels.*": false</code>), and <code>"*": false</code> disables them all; wildcards cannot rebind. Key combinations join modifiers (<code>ctrl</code>, <code>alt</code>, <code>shift</code>, <code>meta</code>, or <code>mod</code> for <kbd>Ctrl</kbd>, or <kbd>⌘</kbd> on macOS) with <code>+</code> before a key, for example <code>"mod+shift+ArrowUp"</code>. Letters and digits use physical key names (<code>KeyA</code> to <code>KeyZ</code>, <code>Digit0</code> to <code>Digit9</code>); other keys use their <code>KeyboardEvent.key</code> value (<code>ArrowUp</code>, <code>Enter</code>, <code>/</code>).</td>
 </tr>
 </tbody>
 </table>

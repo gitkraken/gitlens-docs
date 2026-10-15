@@ -26,7 +26,7 @@ GitLens helps streamline PR reviews directly inside Visual Studio Code. With **L
 
 To use Launchpad:
 
-1. Connect your [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+1. Connect a [supported integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens): GitHub, GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps, Azure DevOps Server, Bitbucket, or Bitbucket Data Center.
 2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 3. Run: `GitLens: Open Launchpad`.
 
@@ -36,6 +36,8 @@ Launchpad displays grouped pull requests:
 - Assigned to you for review
 - Waiting for follow-up
 - Blocked or in draft
+
+To find a pull request that isn't in these groups, select **Search for Pull Request...** and enter a search term. Launchpad searches every connected integration. For Azure DevOps, Azure DevOps Server, and Bitbucket Data Center, the term matches pull request titles and descriptions. Bitbucket Data Center searches only the repositories of the remotes in your open workspace.
 
 To start reviewing:
 
