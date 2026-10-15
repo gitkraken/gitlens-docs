@@ -19,6 +19,108 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ---
 
+<a id="v19-4"></a>
+
+## Version 19.4
+
+#### Thursday, October 15, 2026
+
+GitLens 19.4 opens up the _Commit Graph_. You no longer need an account to use it on public and local repositories: install GitLens, open the graph, and it's all there, with no sign-in prompts. On privately hosted repositories, a 3-day preview now starts the first time you open the graph, so you can try it on your own work before deciding whether to sign in.
+
+A brand new repository can now go from your machine to a host without leaving the graph. When a repository has no remotes, the _Commit Graph_ offers _Publish Repository_ instead of a _Publish Branch_ button that could only tell you "No remotes found." For hosts VS Code can't publish to, _Add Remote_ sits right beside it.
+
+_Start Work_ can now name branches the way your team does. A new branch name format, built from the issue's ID and title, has its own editor in _GitLens Settings_ with a live preview of the result.
+
+The rest of the release tightens safety and correctness. A pull you started can no longer be undercut by the graph's auto-fetch, and worktree deletes warn you when GitLens can't check for changes. Renamed files open at the right path, and _Start Work_ and _Launchpad_ now read from every self-managed host you've connected instead of just one.
+
+<img src="/wp-content/uploads/gl-19-4-hero.png" class="help-center-img img-bordered">
+
+### The Commit Graph, No Account Required
+
+The _Commit Graph_ no longer asks you to sign in on public and local repositories. If you're signed out, you get the full graph with no prompts and no walls.
+
+**A real preview on private repositories** &mdash; the first time you open the graph on a privately hosted repository while signed out, a 3-day preview starts on its own. A notice above the graph shows how much time is left, offers _Sign In_, and reminds you that public and local repositories stay free. The sign-in screen only appears after the preview ends. If your workspace also has public or local repositories, that screen offers to switch to one of them.
+
+The preview used to be three separate one-day sessions, each started by hand with _Continue Preview_. It's now one continuous 3-day window, so you can use the graph over a few working days without having to restart it.
+
+**Signed-out states that make sense** &mdash; the account panel in _GitLens Settings_ now shows a sign-in card and a _Sign in to use GitKraken AI_ line instead of blank cards, and its footer offers _Sign in_ instead of a _Manage subscription_ link. _Start Work_ and _Start Review_ now ask you to sign in up front, instead of signing you in silently when you connect an integration.
+
+The potential-conflicts check on the merge-target status chip now requires a trial or Pro subscription, like every other conflict check in GitLens. Ahead and behind counts and merged status stay available to everyone.
+
+### Publish a Repository from the Commit Graph
+
+Run `git init`, commit some work, and the graph used to offer _Publish Branch_, which could only fail because there was nowhere to publish to. Now, when a repository has no remotes, the graph header, _Working Changes_ panel, overview, and branch details offer **_Publish Repository_**. It uses VS Code's publish flow to create the hosted repository and push your work in one step.
+
+The _Git Command Palette_'s _Push_ offers the same option when there are no remotes. If your host isn't one VS Code can publish to, **_Add Remote_** appears beside _Publish Repository_ in the push wizard and in the _Working Changes_ next steps. _Fetch_ is hidden until the repository has a remote to fetch from.
+
+<img src="/wp-content/uploads/gl-19-4-publish-repository.png" class="help-center-img img-bordered">
+
+### Name Your Start Work Branches
+
+_Start Work_ creates a branch for the issue you pick, and until now you got whatever name it chose. The new `gitlens.startWork.branchNameFormat` setting lets you decide. Use `${id}` for the issue ID and `${title}` for a lowercase, slugged version of its title, so `feature/${id}-${title}` or `${id}` alone both work. The default is `${id}-${title}`.
+
+You'll find it under _Integrations > Start Work_ in _GitLens Settings_, with an editor that shows a live preview of the branch name as you type. Characters Git doesn't allow in branch names are normalized for you, `/` keeps your branch hierarchy, and you can still edit the suggested name before the branch is created.
+
+<img src="/wp-content/uploads/gl-19-4-branch-name-format.png" class="help-center-img img-bordered">
+
+### Everyday Improvements
+
+- If you've connected more than one host for the same self-managed provider, _Start Work_ and _Launchpad_ now read from all of them instead of only one. _Launchpad_ also keeps pins, snoozes, and selections separate between hosts, even when their pull requests share an ID.
+- Self-managed integrations, including Azure DevOps Server behind a virtual directory, now keep the installation path in their API requests. Azure DevOps names and branches with spaces or reserved characters are encoded correctly.
+- A new `gitlens.views.searchAndCompare.files.openDiffOnClick` setting chooses whether clicking a file in the _Search & Compare_ view opens its changes or the working file. Thanks to Steven Vaught ([@Svaught598](https://github.com/Svaught598)) and Ehab Younes ([@EhabY](https://github.com/EhabY)) for their contributions.
+- The _Commit Graph_'s auto-fetch no longer replaces `FETCH_HEAD` while a `git pull` you started is between its fetch and its merge, which could have made the pull merge the wrong changes.
+- Force-deleting a worktree now asks first when GitLens couldn't check it for uncommitted changes. GitLens also no longer treats a failed check for changes as "no changes" in _Auto-Rebase_, patch apply, and _Copy Changes_.
+- Opening a renamed or added file from a comparison or a commit's file list now uses the file's path at that revision, and the _Ahead_ files node no longer shows a rename as an added file.
+- Cloning a large repository from a GitLens link no longer fails when it runs past the Git timeout. The clone runs as long as it needs, and you can cancel it from its progress notification.
+- Choosing _Open in an agent_ from _Start Work_, _Start Review_, or _Launchpad_ no longer freezes when agent detection stalls. The picker opens right away while agents load.
+- _Start Work_ and _Launchpad_ now say when GitHub's API rate limit is reached and when to try again, instead of showing a raw `GraphqlResponseError`.
+- Repositories with no commits yet now show their staged and modified files, and diffs against the first commit work in SHA-256 repositories.
+
+---
+
+### Added
+
+- Adds _Publish Repository_ to the _Commit Graph_ for a repository with no remotes &mdash; the header, _Working Changes_ panel, overview, and branch details now offer to create a hosted repository (through VS Code's publish flow) instead of a _Publish Branch_ that could only report "No remotes found"; the _Git Command Palette_'s _Push_ offers the same escape when there are no remotes
+  - Offers _Add Remote…_ beside _Publish Repository…_ in the push wizard and the _Working Changes_ next steps, for hosts VS Code can't publish to, and hides _Fetch_ while the repository has no remotes
+- Adds configurable branch names for _Start Work_ with `gitlens.startWork.branchNameFormat`, using `${id}` and `${title}` tokens, plus a format editor and live preview in GitLens Settings ([#5925](https://github.com/gitkraken/vscode-gitlens/issues/5925))
+- Adds connecting a self-hosted _Jira Data Center_ (or Jira Server) instance from the integrations in _GitLens Settings_ ([#5864](https://github.com/gitkraken/vscode-gitlens/issues/5864)) &mdash; it connects through your GitKraken account like the other self-hosted integrations, with each configured host as its own connection. For now, a connected instance is used only to show the issues associated with a branch; _Start Work_, autolinks, and the _Commit Graph_'s issue tracker picker don't support it yet
+  - The _Commit Graph_'s check for whether any issue integration is connected now looks at every configured host of a self-hosted tracker, so disconnecting one host no longer turns off issue enrichment while another is still connected
+  - Reads a branch's associated _Jira Data Center_ issues from the instance the association names, never from another configured host that happens to be primary ([#5872](https://github.com/gitkraken/vscode-gitlens/issues/5872))
+- Adds a `gitlens.views.searchAndCompare.files.openDiffOnClick` setting to specify whether to open the changes or the working file when clicking a file in the _Search & Compare_ view ([#1651](https://github.com/gitkraken/vscode-gitlens/issues/1651)) &mdash; thanks to [PR #2845](https://github.com/gitkraken/vscode-gitlens/pull/2845) by Steven Vaught ([@Svaught598](https://github.com/Svaught598)) and [PR #3583](https://github.com/gitkraken/vscode-gitlens/pull/3583) by Ehab Younes ([@EhabY](https://github.com/EhabY))
+
+### Changed
+
+- Changes the _Commit Graph_ to no longer require an account on public and local repos &mdash; signed-out users get the full graph with no prompts
+  - On privately hosted repos, a preview starts automatically on first open, with a persistent notice above the graph showing the time left, a _Sign In_ action, and a reminder that public and local repos stay free; the sign-in screen now appears only after the preview ends (or for unverified accounts)
+  - _Start Work_ and _Start Review_ now ask you to sign in up front instead of implicitly signing you in when connecting an integration
+  - Account surfaces get real signed-out states &mdash; the _GitLens Settings_ account panel shows a sign-in card and a _Sign in to use GitKraken AI_ line instead of blank cards, and its footer offers _Sign in_ instead of a _Manage subscription_ link that opened gk.dev signed out
+  - The merge-target status chip's potential-conflicts check now requires a trial or Pro subscription, like every other conflict check; ahead/behind counts and merged status stay available to everyone
+- Changes the _Commit Graph_ preview for privately hosted repos to one continuous 3-day window &mdash; previously three separate one-day sessions, each started manually with _Continue Preview_
+- Renames the `gitlens.views.publishRepository` command to `gitlens.publishRepository:views`; the old id still works but is deprecated
+
+### Fixed
+
+- Fixes Pro feature gates and account surfaces still offering _Reactivate Pro Trial_ after the server refused the reactivation &mdash; once refused, they show the _Upgrade to Pro_ messaging instead ([#5987](https://github.com/gitkraken/vscode-gitlens/issues/5987))
+- Fixes _Push_ from the _Git Command Palette_ on a branch with no upstream showing a plain push confirmation (which then failed) instead of the publish step
+- Fixes pressing <kbd>Space</kbd> on a _Git Command Palette_ confirmation step breaking the command &mdash; e.g. _Delete Worktree_ would stop responding and never delete the worktree
+- Fixes force-deleting a worktree skipping the uncommitted-changes warning when GitLens couldn't check the worktree for changes &mdash; it now asks before deleting a worktree it couldn't check
+- Fixes a repository or worktree with no commits yet showing no changes when it has staged or modified files
+- Fixes features treating a failed check for changes as "no changes": _Auto-Rebase_ could report a commit as skipped for being empty, applying a patch could skip offering to stash your changes, and _Copy Changes_ could leave out untracked files without saying so
+- Fixes diffs against a repository's first commit failing in a SHA-256 repository, including a stash's untracked files and, for a range starting at the first commit, the _Commit Graph_'s scope file list and _Compose_
+- Fixes cloning a large repository from a GitLens link failing once it runs past the Git timeout (`gitlens.advanced.git.timeout`) &mdash; the clone now runs as long as it needs, and its progress notification can cancel it
+- Fixes branch-associated issues from self-managed Git hosts resolving through the wrong server when an older association has no host. These associations remain usable with a single configured host, and new Bitbucket Server issue associations retain their host ([#5883](https://github.com/gitkraken/vscode-gitlens/issues/5883))
+- Fixes Azure DevOps requests escaping the configured installation path with specially encoded remote names, and preserves names and branches containing spaces or reserved characters ([#5878](https://github.com/gitkraken/vscode-gitlens/issues/5878))
+- Fixes self-managed integrations dropping the installation path from API requests, including Azure DevOps Server virtual directories, while keeping existing connections usable ([#5871](https://github.com/gitkraken/vscode-gitlens/issues/5871))
+- Fixes _Start Work_ and _Launchpad_ reads covering only one host per supported self-managed provider ([#5873](https://github.com/gitkraken/vscode-gitlens/issues/5873)) &mdash; connected hosts are read independently, with open repository scopes kept on their matching host
+- Fixes _Launchpad_ mixing pins, snoozes, selections, and tree items between self-managed hosts whose pull requests share an identifier ([#5873](https://github.com/gitkraken/vscode-gitlens/issues/5873))
+- Fixes _Start Work_ and _Launchpad_ showing a raw `GraphqlResponseError` when GitHub's API rate limit is exhausted &mdash; they now report that the rate limit was reached and when to try again
+- Fixes the GitKraken MCP server staying in VS Code's _Configure Tools_ after turning off `gitlens.gitkraken.mcp.autoEnabled` or AI features ([#5961](https://github.com/gitkraken/vscode-gitlens/issues/5961))
+- Fixes _Start Work_, _Start Review_, and _Launchpad_ freezing after choosing _Open in an agent_ when agent detection stalls &mdash; the agent picker now opens right away while agents load, and agent detection gives up after 10 seconds instead of hanging, still offering the editor's chat and the _Claude Code_ extension
+- Fixes opening a renamed or added file from a comparison or a commit's file list &mdash; _Open File at Revision_, _Open File_, and file history now use the file's path at that revision, and the _Ahead_ files node no longer shows a rename as an added file ([#5975](https://github.com/gitkraken/vscode-gitlens/issues/5975))
+- Fixes the _Commit Graph_'s auto-fetch replacing `FETCH_HEAD` while a `git pull` you started is between its fetch and merge, which could make the pull merge the wrong changes
+
+---
+
 <a id="v19-3"></a>
 
 ## Version 19.3
