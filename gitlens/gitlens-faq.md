@@ -68,11 +68,11 @@ Or use the VS Code Command Palette:
 
 ## How do I enable debug logging?
 
-You can enable debug logging by opening the Command Palette (`ctrl+shift+p` or `command+shift+p`) and running the command `GitLens: Enable Debug (Trace) Logging`.
+Enable debug logging by running _GitLens: Enable Debug (Trace) Logging_ from the Command Palette (<kbd>F1</kbd> or <kbd>ctrl/cmd</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>). This will enable logging to the _GitLens_ and _GitLens (Git)_ channels in the _Output_ pane.
 
-<img src="/wp-content/uploads/gl-enable-debug-log-01-v4@2x.png" alt="VS Code Command Palette filtered to &quot;GitLens: Debug Logging&quot; with the GitLens: Enable Debug (Trace) Logging command highlighted" class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-enable-debug-trace-logging.png" alt="VS Code Command Palette filtered to &quot;gitlens: enable debug logging&quot; with the GitLens: Enable Debug (Trace) Logging command highlighted" class="help-center-img img-bordered">
 
-To view logs, open the Output Window (View > Output). The logs will be listed in the _GitLens_ and _GitLens (Git)_ channels. These channels can be toggled from the dropdown.
+To view logs, open the _Output_ pane (View > Output) and select the _GitLens_ or _GitLens (Git)_ channel from the dropdown.
 
 <img src="/wp-content/uploads/gl-output.png" class="help-center-img img-bordered">
 
