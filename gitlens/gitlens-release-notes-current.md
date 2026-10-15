@@ -25,35 +25,23 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 #### Thursday, October 15, 2026
 
-GitLens 19.4 opens up the _Commit Graph_. You no longer need an account to use it on public and local repositories: install GitLens, open the graph, and it's all there, with no sign-in prompts. On privately hosted repositories, a 3-day preview now starts the first time you open the graph, so you can try it on your own work before deciding whether to sign in.
+As of GitLens 19.4, the _Commit Graph_ no longer requires an account on public and local repositories. Install GitLens, open the graph, and it's all there, with no sign-in prompts.
 
-A brand new repository can now go from your machine to a host without leaving the graph. When a repository has no remotes, the _Commit Graph_ offers _Publish Repository_ instead of a _Publish Branch_ button that could only tell you "No remotes found." For hosts VS Code can't publish to, _Add Remote_ sits right beside it.
+In 19.0, we made the _Commit Graph_ the home of GitLens and built in new capabilities to help you stay in control of your development workflows. Along with that change, we started requiring a GitKraken account to use it, even on public and local repositories. That got in the way of the very thing we were trying to put front and center, so we've taken it out. Thank you to everyone who told us in issues, discussions, and reviews.
 
-_Start Work_ can now name branches the way your team does. A new branch name format, built from the issue's ID and title, has its own editor in _GitLens Settings_ with a live preview of the result.
+On privately hosted repositories, the _Commit Graph_ is still part of GitLens Pro, but you can try it first. The first time you open it on a private repository, a 3-day preview starts on its own, with no account needed.
 
-The rest of the release tightens safety and correctness. A pull you started can no longer be undercut by the graph's auto-fetch, and worktree deletes warn you when GitLens can't check for changes. Renamed files open at the right path, and _Start Work_ and _Launchpad_ now read from every self-managed host you've connected instead of just one.
+If you haven't explored the new _Commit Graph_, now's a good time to come back and explore how GitLens and the _Commit Graph_ can supercharge your Git workflow.
+
+Beyond the graph, _Start Work_ can now name branches the way your team does, with a format built from the issue's ID and title and a live preview in _GitLens Settings_. A brand new repository can also go from your machine to a host without leaving the graph: when there are no remotes, the graph offers _Publish Repository_, with _Add Remote_ beside it. The rest of the release tightens safety and correctness. A pull you started can no longer be undercut by the graph's auto-fetch, worktree deletes warn you when GitLens can't check for changes, and _Start Work_ and _Launchpad_ now read from every self-managed host you've connected instead of just one.
 
 <img src="/wp-content/uploads/gl-19-4-hero.png" class="help-center-img img-bordered">
 
 ### The Commit Graph, No Account Required
 
-The _Commit Graph_ no longer asks you to sign in on public and local repositories. If you're signed out, you get the full graph with no prompts and no walls.
-
-**A real preview on private repositories** &mdash; the first time you open the graph on a privately hosted repository while signed out, a 3-day preview starts on its own. A notice above the graph shows how much time is left, offers _Sign In_, and reminds you that public and local repositories stay free. The sign-in screen only appears after the preview ends. If your workspace also has public or local repositories, that screen offers to switch to one of them.
-
-The preview used to be three separate one-day sessions, each started by hand with _Continue Preview_. It's now one continuous 3-day window, so you can use the graph over a few working days without having to restart it.
+**Previewing on private repositories** &mdash; while the preview runs, a notice above the graph shows how much time is left, offers _Sign In_, and reminds you that public and local repositories stay free. The sign-in screen only appears once the preview ends, and if your workspace also has public or local repositories, it offers to switch to one of them. The preview used to be three separate one-day sessions, each started by hand with _Continue Preview_. It's now one continuous 3-day window, so you can use the graph over a few working days without having to restart it.
 
 **Signed-out states that make sense** &mdash; the account panel in _GitLens Settings_ now shows a sign-in card and a _Sign in to use GitKraken AI_ line instead of blank cards, and its footer offers _Sign in_ instead of a _Manage subscription_ link. _Start Work_ and _Start Review_ now ask you to sign in up front, instead of signing you in silently when you connect an integration.
-
-The potential-conflicts check on the merge-target status chip now requires a trial or Pro subscription, like every other conflict check in GitLens. Ahead and behind counts and merged status stay available to everyone.
-
-### Publish a Repository from the Commit Graph
-
-Run `git init`, commit some work, and the graph used to offer _Publish Branch_, which could only fail because there was nowhere to publish to. Now, when a repository has no remotes, the graph header, _Working Changes_ panel, overview, and branch details offer **_Publish Repository_**. It uses VS Code's publish flow to create the hosted repository and push your work in one step.
-
-The _Git Command Palette_'s _Push_ offers the same option when there are no remotes. If your host isn't one VS Code can publish to, **_Add Remote_** appears beside _Publish Repository_ in the push wizard and in the _Working Changes_ next steps. _Fetch_ is hidden until the repository has a remote to fetch from.
-
-<img src="/wp-content/uploads/gl-19-4-publish-repository.png" class="help-center-img img-bordered">
 
 ### Name Your Start Work Branches
 
@@ -62,6 +50,14 @@ _Start Work_ creates a branch for the issue you pick, and until now you got what
 You'll find it under _Integrations > Start Work_ in _GitLens Settings_, with an editor that shows a live preview of the branch name as you type. Characters Git doesn't allow in branch names are normalized for you, `/` keeps your branch hierarchy, and you can still edit the suggested name before the branch is created.
 
 <img src="/wp-content/uploads/gl-19-4-branch-name-format.png" class="help-center-img img-bordered">
+
+### Publish a Repository from the Commit Graph
+
+Run `git init`, commit some work, and the graph used to offer _Publish Branch_, which could only fail because there was nowhere to publish to. Now, when a repository has no remotes, the graph header, _Working Changes_ panel, overview, and branch details offer **_Publish Repository_**. It uses VS Code's publish flow to create the hosted repository and push your work in one step.
+
+The _Git Command Palette_'s _Push_ offers the same option when there are no remotes. If your host isn't one VS Code can publish to, **_Add Remote_** appears beside _Publish Repository_ in the push wizard and in the _Working Changes_ next steps. _Fetch_ is hidden until the repository has a remote to fetch from.
+
+<img src="/wp-content/uploads/gl-19-4-publish-repository.png" class="help-center-img img-bordered">
 
 ### Everyday Improvements
 
