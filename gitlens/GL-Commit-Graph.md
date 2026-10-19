@@ -82,7 +82,7 @@ You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` set
 - The preview applies only while you're signed out. If you're signed in without a Pro trial or paid plan, private repositories show the upgrade prompt instead.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-preview-banner.png" class="help-center-img img-bordered" alt="The Commit Graph with the preview banner above the graph reading &quot;Previewing the Commit Graph on privately hosted repos — 3 days left. Public and local repos stay free.&quot; and a Sign In link at its right." />
+  <img src="/wp-content/uploads/gl-graph-preview-banner-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with the preview banner above the graph reading &quot;Previewing the Commit Graph on privately hosted repos — 3 days left. Public and local repos stay free.&quot; and a Sign In link at its right." />
   <figcaption style="text-align: center; color: #888">The Commit Graph preview banner on a privately hosted repository</figcaption>
 </figure>
 
@@ -243,7 +243,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote and publish &lt;branch&gt; to it** with an **Add Remote** button. **Publish Repository** runs VS Code's publish flow, which creates the repository on a hosting provider, adds it as a remote, and pushes the branch. Use **Add Remote** for a host that VS Code can't publish to. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header, the Working Changes header, the branch's context menu, and the branch details, and **Fetch** is hidden.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-publish-repository.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote and publish main to it&quot; with Add Remote." />
+  <img src="/wp-content/uploads/gl-graph-publish-repository-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote and publish main to it&quot; with Add Remote." />
   <figcaption style="text-align: center; color: #888">Next steps for a repository with no remotes</figcaption>
 </figure>
 

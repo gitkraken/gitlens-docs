@@ -1259,7 +1259,7 @@ When you run **Push** on a branch that hasn't been published yet, the command sh
 - **Add Remote…** walks you through adding a remote, then returns to the publish step so you can publish the branch to it.
 
 <figure>
-  <img src="/wp-content/uploads/gl-push-wizard-no-remotes.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) above the Don't Ask Again option and Cancel." />
+  <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) above the Don't Ask Again option and Cancel." />
 </figure>
 
 ---
@@ -1550,7 +1550,7 @@ To connect the integration:
 2. Select **Cloud Integrations** under **Integrations** in the navigation rail. Each provider has a card: a provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v4@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, GitLab, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center and Trello" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v5@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center and Trello" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Cloud Integrations in GitLens Settings, shown here with Jira already connected</figcaption>
 </figure>
 

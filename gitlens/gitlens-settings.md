@@ -54,7 +54,7 @@ Settings for AI, cloud integrations, and external service connections.
 **Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Jira Data Center, Linear, and Trello issue trackers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v4@2x.png" alt="The Cloud Integrations category of GitLens Settings listing each provider, from GitHub to Trello and including Jira Data Center, with Connected and Manage on the connected ones and a Connect button on the rest" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Settings for AI, cloud integrations, and external service connections.
 **Start Work** (`start-work`) — set the **Branch name format** Start Work uses to suggest a branch name when you start work on an issue (`gitlens.startWork.branchNameFormat`, default `${id}-${title}`). Use `${id}` for the issue ID and `${title}` for its lowercase, slugged title; pick them from the field's token list or type them, with the same prefix, suffix, and width modifiers as other GitLens format tokens. GitLens replaces characters that aren't valid in a Git branch name and keeps any `/` as branch folders, and the **Example** line previews the name for a sample issue. Leave the field blank to use the default. Start Work still lets you edit the suggested name before it creates the branch.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-start-work.png" alt="The Start Work category of GitLens Settings, selected under Integrations, with the Branch name format field set to ${id}-${title} and its example branch name ABC-123-update-login-flow." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-start-work-01-v2@2x.png" alt="The Start Work category of GitLens Settings, selected under Integrations, with the Branch name format field set to ${id}-${title} and its example branch name ABC-123-update-login-flow." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Start Work category</figcaption>
 </figure>
 

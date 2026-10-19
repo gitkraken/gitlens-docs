@@ -186,7 +186,7 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 2. Select **Cloud Integrations** under **Integrations** in the navigation rail. Each provider has a card: a provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v4@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, GitLab, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center and Trello" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v5@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center and Trello" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations in GitLens Settings, shown here with Jira already connected</figcaption>
 </figure>
 
