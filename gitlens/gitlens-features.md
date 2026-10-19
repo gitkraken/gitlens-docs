@@ -928,7 +928,7 @@ The **Start Work** command (`gitlens.startWork`) starts work on an issue from yo
 
 Access it from the Command Palette: `GitLens: Start Work`
 
-GitLens suggests a branch name built from the issue, which you can edit before the branch is created. By default the name is the issue ID followed by its title, such as `ABC-123-update-login-flow`. To change the pattern, set **Branch name format** in the **Start Work** category of [GitLens Settings](/gitlens/settings/#integrations) (`gitlens.startWork.branchNameFormat`), using `${id}` for the issue ID and `${title}` for the title, for example `feature/${id}/${title}`.
+GitLens suggests a branch name built from the issue, which you can edit before the branch is created. By default the name is the issue ID followed by its title, such as `ABC-123-update-login-flow`. To change the pattern, set **Branch name format** in the **Start Work** category of [GitLens Settings](/gitlens/gitlens-settings/#integrations) (`gitlens.startWork.branchNameFormat`), using `${id}` for the issue ID and `${title}` for the title, for example `feature/${id}/${title}`.
 
 ---
 

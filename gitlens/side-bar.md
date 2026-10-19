@@ -534,4 +534,4 @@ Comparison commands include:
 
 You can use checkboxes next to files to track review progress.
 
-Clicking a file in the results opens its changes (diff) by default. To open the working file at its first changed line instead, turn off the [`gitlens.views.searchAndCompare.files.openDiffOnClick`](/gitlens/settings/#search-and-compare-view-settings) setting. If the file no longer exists in your working tree, GitLens opens the revision that has it.
+Clicking a file in the results opens its changes (diff) by default. To open the working file at its first changed line instead, turn off the [`gitlens.views.searchAndCompare.files.openDiffOnClick`](/gitlens/gitlens-settings/#search-and-compare-view-settings) setting. If the file no longer exists in your working tree, GitLens opens the revision that has it.
