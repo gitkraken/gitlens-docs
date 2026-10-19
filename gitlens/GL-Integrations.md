@@ -19,7 +19,7 @@ GitLens supports a wide range of remote providers to enhance your Git workflow i
 - Linear (issue tracking)
 - Trello (issue tracking)
 
-You can also define [custom remote providers or providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
+You can also define [custom remote providers or providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 ## Integration Capabilities
 

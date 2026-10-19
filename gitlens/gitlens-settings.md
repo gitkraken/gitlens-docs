@@ -465,7 +465,7 @@ Use these settings to control when and how GitLens displays hover popups that sh
 
 ## Commits View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings control how the GitLens <em>Commits</em> view displays commit data, associated files, and pull request information.
 
@@ -530,7 +530,7 @@ These settings control how the GitLens <em>Commits</em> view displays commit dat
 
 ## Repositories View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings customize how repositories are displayed and interacted with in the GitLens <em>Repositories</em> view.
 
@@ -634,7 +634,7 @@ These settings customize how repositories are displayed and interacted with in t
 
 ## File History View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings configure the behavior and display options for the GitLens <em>File History</em> view.
 
@@ -666,7 +666,7 @@ These settings configure the behavior and display options for the GitLens <em>Fi
 
 ## Line History View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings configure the display behavior of the GitLens <em>Line History</em> view.
 
@@ -689,7 +689,7 @@ These settings configure the display behavior of the GitLens <em>Line History</e
 
 ## Branch View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings configure the display and behavior of the GitLens <em>Branches</em> view.
 
@@ -759,7 +759,7 @@ These settings configure the display and behavior of the GitLens <em>Branches</e
 
 ## Remotes View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings define how branches, files, and pull requests appear in the GitLens <em>Remotes</em> view.
 
@@ -828,7 +828,7 @@ These settings define how branches, files, and pull requests appear in the GitLe
 
 ## Stashes View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings control how files and stash entries are displayed in the GitLens <em>Stashes</em> view.
 
@@ -866,7 +866,7 @@ These settings control how files and stash entries are displayed in the GitLens 
 
 ## Tags View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings control how Git tags and related files appear in the GitLens <em>Tags</em> view.
 
@@ -918,7 +918,7 @@ These settings control how Git tags and related files appear in the GitLens <em>
 
 ## Worktrees View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings control how worktrees and related information appear in the GitLens <em>Worktrees</em> view.
 
@@ -978,7 +978,7 @@ These settings control how worktrees and related information appear in the GitLe
 
 ## Contributors View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings)
+See also [View Settings](/gitlens/gitlens-settings/#view-settings)
 
 <table>
 <thead>
@@ -1025,9 +1025,10 @@ See also [View Settings](/gitlens/settings/#view-settings)
 
 ***
 
+<a id="search-and-compare-view-settings"></a>
 ## Search & Compare View Settings
 
-See also [View Settings](/gitlens/settings/#view-settings).
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 These settings control the display options for files and avatars in the GitLens <em>Search Commits</em> and <em>Compare</em> views.
 
@@ -1435,6 +1436,7 @@ Another custom example:<br>
 
 ***
 
+<a id="menu-and-toolbar-settings"></a>
 ## Menu & Toolbar Settings
 
 <table>
