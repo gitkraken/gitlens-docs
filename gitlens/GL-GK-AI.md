@@ -152,7 +152,7 @@ GitLens shows your GitKraken AI usage in two places:
 - **GitLens Settings**: Run `GitLens: Open Settings` from the Command Palette and select **Account** under **Setup**. The **GitKraken AI Usage** card shows how many of your weekly credits you have used and when your weekly allowance resets. If your organization has a shared credit pool, a **Weekly Shared Organization Pool** row splits it into your usage, the rest of the organization's usage, and what remains.
 - **Commit Graph header**: Select the **Account** button (your avatar and plan badge) in the Commit Graph header. The **GitKraken AI** row in the popover shows your usage as a percentage; select it to open the Account settings.
 
-Both places show **Nearly out** when you have used more than 90% of your credits. On paid plans, the **GitKraken AI Usage** card includes a **Get more AI credits** button if you have no active organization or you are an owner, admin, or billing contact of your active organization. Other organization members see a note to contact their organization admin or owner for more credits.
+Both places show **Nearly out** when you have used more than 90% of your credits, and **Allowance used** in red once you have used all of them. On paid plans, the **GitKraken AI Usage** card includes a **Get more AI credits** button if you have no active organization or you are an owner, admin, or billing contact of your active organization. Other organization members see a note to contact their organization admin or owner for more credits.
 
 ---
 ## Configuring Your AI Provider
