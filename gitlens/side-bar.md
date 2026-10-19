@@ -118,7 +118,7 @@ To restore the default layout, open the Command Palette (<kbd>Cmd/Ctrl + Shift +
   <img src="/wp-content/uploads/gl-commits-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Commits view">
 </figure>
 
-A [customizable](/gitlens/settings/#commits-view-settings) view to visualize, explore, and manage Git commits.
+A [customizable](/gitlens/gitlens-settings/#commits-view-settings) view to visualize, explore, and manage Git commits.
 
 The **Commits** view displays all commits on the current branch. It also provides:
 
@@ -181,7 +181,7 @@ The **Overview** tab helps you stage or unstage changes, open files to view modi
   <img src="/wp-content/uploads/gl-repositories-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Repositories view with the Playground2026 repository expanded: its upstream status on the repository row and the sub-views beneath it — Commits, Branches, Remotes, Tags, Worktrees and Contributors (Stashes is an optional sub-view, off by default)">
 </figure>
 
-A hidden by default, [customizable](/gitlens/settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories.
+A hidden by default, [customizable](/gitlens/gitlens-settings/#repositories-view-settings) view to visualize, explore, and manage Git repositories.
 
 The **Repositories** view lists all open Git repositories. It includes:
 
@@ -214,7 +214,7 @@ The **Repositories** view lists all open Git repositories. It includes:
   <img src="/wp-content/uploads/file-history-view.png" class="help-center-img img-bordered" alt="GitLens File History view">
 </figure>
 
-A [customizable](/gitlens/settings/#file-history-view-settings) view to visualize, navigate, and explore the revision history of the current file or selected lines.
+A [customizable](/gitlens/gitlens-settings/#file-history-view-settings) view to visualize, navigate, and explore the revision history of the current file or selected lines.
 
 The **File History** view lists all commits that modified the current file on the active branch. It includes:
 
@@ -239,7 +239,7 @@ The **File History** view lists all commits that modified the current file on th
   <img src="/wp-content/uploads/gl-line-history-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Line History view">
 </figure>
 
-A hidden by default, [customizable](/gitlens/settings/#line-history-view-settings) view to visualize, navigate, and explore the revision history of the selected lines of the current file.
+A hidden by default, [customizable](/gitlens/gitlens-settings/#line-history-view-settings) view to visualize, navigate, and explore the revision history of the selected lines of the current file.
 
 The **Line History** view lists all commits that modified the selected lines. It provides:
 
@@ -257,7 +257,7 @@ The **Line History** view lists all commits that modified the selected lines. It
   <img src="/wp-content/uploads/gl-branches-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Branches view showing local branches with upstream status indicators, commit history, and branch comparison tools">
 </figure>
 
-A [customizable](/gitlens/settings/#branches-view-settings) view to visualize, explore, and manage Git branches.
+A [customizable](/gitlens/gitlens-settings/#branch-view-settings) view to visualize, explore, and manage Git branches.
 
 The **Branches** view lists all local branches and includes:
 
@@ -294,7 +294,7 @@ The **Branches** view lists all local branches and includes:
   <img src="/wp-content/uploads/gl-remotes-view-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Remotes view with two remotes: origin, expanded to show its GitHub provider icon, the gitkraken/Playground2026 repository and its remote branches with their last-commit dates, and a self-hosted enterprise remote below it">
 </figure>
 
-A [customizable](/gitlens/settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches.
+A [customizable](/gitlens/gitlens-settings/#remotes-view-settings) view to visualize, explore, and manage Git remotes and remote branches.
 
 The **Remotes** view lists all remotes and their remote branches. It includes:
 
@@ -310,7 +310,7 @@ The **Remotes** view lists all remotes and their remote branches. It includes:
   <img src="/wp-content/uploads/stashes-view.png" class="help-center-img img-bordered" alt="GitLens Stashes view">
 </figure>
 
-A [customizable](/gitlens/settings/#stashes-view-settings) view to visualize, explore, and manage Git stashes.
+A [customizable](/gitlens/gitlens-settings/#stashes-view-settings) view to visualize, explore, and manage Git stashes.
 
 The **Stashes** view lists all stashes and includes:
 
@@ -324,7 +324,7 @@ The **Stashes** view lists all stashes and includes:
   <img src="/wp-content/uploads/tags-view.png" class="help-center-img img-bordered" alt="GitLens Tags view">
 </figure>
 
-A [customizable](/gitlens/settings/#tags-view-settings) view to visualize, explore, and manage Git tags.
+A [customizable](/gitlens/gitlens-settings/#tags-view-settings) view to visualize, explore, and manage Git tags.
 
 The **Tags** view lists all tags and includes:
 
@@ -477,7 +477,7 @@ When you select **Run Task on Worktree...**, the list shows your recent tasks an
   <img src="/wp-content/uploads/gl-contributors-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Contributors view">
 </figure>
 
-A hidden by default, [customizable](/gitlens/settings/#contributors-view-settings) view to explore repository contributors.
+A hidden by default, [customizable](/gitlens/gitlens-settings/#contributors-view-settings) view to explore repository contributors.
 
 The **Contributors** view lists all contributors and includes:
 
@@ -491,7 +491,7 @@ The **Contributors** view lists all contributors and includes:
   <img src="/wp-content/uploads/search-and-compare-view.png" class="help-center-img img-bordered" alt="GitLens Search and Compare view">
 </figure>
 
-A hidden by default, [customizable](/gitlens/settings/#search-and-compare-view-settings) view to search commit history or compare branches, tags, commits, and more.
+A hidden by default, [customizable](/gitlens/gitlens-settings/#search-and-compare-view-settings) view to search commit history or compare branches, tags, commits, and more.
 
 The **Search & Compare** view displays pinnable results from search or comparison operations. It includes:
 

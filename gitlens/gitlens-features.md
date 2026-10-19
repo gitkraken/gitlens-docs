@@ -55,7 +55,7 @@ Available commands:
   <figcaption style="text-align: center; color: #888">Blame annotation showing author, date, and commit message</figcaption>
 </figure>
 
-Current Line Blame adds a subtle, [customizable](/gitlens/settings/#current-line-blame-settings), and [themable](/gitlens/settings/#themable-colors) annotation at the end of the active line.
+Current Line Blame adds a subtle, [customizable](/gitlens/gitlens-settings/#current-line-blame-settings), and [themable](/gitlens/gitlens-settings/#themable-colors) annotation at the end of the active line.
 
 By default, the annotation displays:
 
@@ -77,7 +77,7 @@ You can control visibility with the command:
   <figcaption style="text-align: center; color: #888">Inline Git insights for authorship and history</figcaption>
 </figure>
 
-Git CodeLens displays inline Git insights at the top of each file and above code blocks (enabled by [default](/gitlens/settings/#git-codelens-settings), and [customizable](/gitlens/settings/#git-codelens-settings)).
+Git CodeLens displays inline Git insights at the top of each file and above code blocks (enabled by [default](/gitlens/gitlens-settings/#git-codelens-settings), and [customizable](/gitlens/gitlens-settings/#git-codelens-settings)).
 
 ### CodeLens Types
 
@@ -92,7 +92,7 @@ Git CodeLens displays inline Git insights at the top of each file and above code
 
 ### CodeLens Behavior
 
-Click behavior for each CodeLens is fully [customizable](/gitlens/settings/#git-codelens-settings). You can choose from:
+Click behavior for each CodeLens is fully [customizable](/gitlens/gitlens-settings/#git-codelens-settings). You can choose from:
 
 - Toggle file blame annotations
 - Compare the current commit to the previous one
@@ -139,7 +139,7 @@ You can configure what happens when the status bar item is clicked:
 
 ## Hovers
 
-GitLens provides rich, [customizable](/gitlens/settings/#hover-settings) hover annotations to surface Git information directly in your editor. These hovers are enabled by default and support both blame and diff insights.
+GitLens provides rich, [customizable](/gitlens/gitlens-settings/#hover-settings) hover annotations to surface Git information directly in your editor. These hovers are enabled by default and support both blame and diff insights.
 
 ### Current Line Hovers
 
@@ -220,11 +220,11 @@ Reveals the previous version of each annotated line.
   <figcaption style="text-align: center; color: #888">See which commit last modified each line, and when — hover for the author</figcaption>
 </figure>
 
-File Blame adds [customizable](/gitlens/settings/#gutter-blame-settings), [themable](/gitlens/settings/#themable-colors) inline annotations that show the commit and author responsible for each line in a file.
+File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), [themable](/gitlens/gitlens-settings/#themable-colors) inline annotations that show the commit and author responsible for each line in a file.
 
 ### Features
 
-- Displays **commit message** and **commit date** per line (enabled by [default](/gitlens/settings/#file-blame-settings)).
+- Displays **commit message** and **commit date** per line (enabled by [default](/gitlens/gitlens-settings/#file-blame-settings)).
 - Adds a **heatmap (age) indicator** along the right edge to show how recently each line was changed.  
   _(See [File Heatmap](/gitlens/gitlens-features/#file-heatmap) for more info.)_
 - Easily toggle annotations with:
@@ -245,7 +245,7 @@ File Blame adds [customizable](/gitlens/settings/#gutter-blame-settings), [thema
 
 The File Changes annotation highlights lines that have been changed either locally (unpublished) or by the most recent commit.
 
-This feature is [customizable](/gitlens/settings/#file-changes-settings) and [themable](/gitlens/settings/#themable-colors), and is designed for quick visual inspection of file updates.
+This feature is [customizable](/gitlens/gitlens-settings/#file-changes-settings) and [themable](/gitlens/gitlens-settings/#themable-colors), and is designed for quick visual inspection of file updates.
 
 ### Features
 
@@ -267,7 +267,7 @@ The File Heatmap adds a color-coded bar to the edge of your file, helping you qu
 
 ### Features
 
-- Heatmap colors are [customizable](/gitlens/settings/#file-heatmap-settings) and reflect line age:
+- Heatmap colors are [customizable](/gitlens/gitlens-settings/#file-heatmap-settings) and reflect line age:
   - **Hot (bright)** for recent changes
   - **Cold (dim)** for older changes  
     _(Lines default to “cold” after 90 days.)_
@@ -751,7 +751,7 @@ To ignore untracked files, right-click one or more of them in Working Changes an
 
 For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with active pull requests. To enable this:
 
-1. Connect your account using [rich integration settings](/gitlens/settings/#remote-provider-integration-settings).
+1. Connect your account using [rich integration settings](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 2. The icon will appear next to branches in the graph once linked.
 
 <figure>
@@ -1392,14 +1392,14 @@ Use autolinks to convert external references—such as Jira issues or Zendesk ti
 
 Terminal links optionally provide clickable references in the integrated terminal:
 
-- [Branches, tags, and commit ranges](/gitlens/settings/#terminal-links-settings): Quickly explore their commit history.
-- [Individual commits](/gitlens/settings/#terminal-links-settings): Review commit details and take further action.
+- [Branches, tags, and commit ranges](/gitlens/gitlens-settings/#terminal-links-settings): Quickly explore their commit history.
+- [Individual commits](/gitlens/gitlens-settings/#terminal-links-settings): Review commit details and take further action.
 
 ***
 
 ## Remote Provider Integrations
 
-GitLens provides rich integrations with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
+GitLens provides rich integrations with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/gitlens-settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 Basic integrations offer issue and pull request autolinking. Richer integrations, like GitHub or GitLab, include:
 

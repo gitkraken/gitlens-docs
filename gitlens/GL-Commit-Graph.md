@@ -485,7 +485,7 @@ During the rebase, a progress animation appears in the graph to indicate the ope
 
 ### Pull Request Information
 
-For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/settings/#remote-provider-integration-settings).
+For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
