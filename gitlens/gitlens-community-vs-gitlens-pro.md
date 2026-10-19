@@ -33,7 +33,7 @@ _Perfect for: Individual developers and teams starting with GitLens._
 GitLens Pro takes your development workflow to the next level with advanced features and deeper integrations:
 
 - **Accelerate PR reviews** with Launchpad—an actionable pull request hub built into VS Code.
-- **Manage commits visually** using the Commit Graph with features like rebase, merge, and advanced search.
+- **Manage commits visually** using the Commit Graph on private repositories, with features like rebase, merge, and advanced search. The Commit Graph is free on public and local repositories, with no account required.
 - **Streamline collaboration** by integrating with GitHub, GitLab, and Bitbucket. View and manage pull requests directly within VS Code.
 
 _Perfect for: Professional developers, collaborative teams, and organizations optimizing for productivity._  

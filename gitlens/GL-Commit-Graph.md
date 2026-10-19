@@ -61,7 +61,7 @@ At the top of the Commit Graph, you’ll see:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch** (click to switch branches)
-- **Last fetched time** — shown beside **Fetch** and in its hover (click **Fetch** to update)
+- **Last fetched time** — shown beside **Fetch** and in its hover (click **Fetch** to update). A repository with no remotes has nothing to fetch, so **Fetch** isn't shown; instead the header offers **Publish Repository** (see [Next steps](#next-steps))
 - **Account** — the account button opens a popover with your plan and the **Synchronize Status**, **Manage Account**, **Sign Out**, and **Send Feedback** actions, plus rows for your connected integrations, your AI model and GitKraken AI usage, and your agents
 
 You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` setting. When enabled, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, keeping your view up to date without manual refreshes.
@@ -77,6 +77,14 @@ You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` set
 
 - The Commit Graph is included in **GitLens Community** and available to all users on **public** and **local** repositories, with no account required.
 - A **GitLens Pro subscription or trial** is required only for use with **private repositories**.
+- If you aren't signed in, the first time you open the Commit Graph on a privately hosted repository a 3-day preview starts automatically. While it runs, a banner above the graph shows how much time is left (for example, *Previewing the Commit Graph on privately hosted repos — 3 days left.*) with a **Sign In** link. The 3 days run continuously from the first open.
+- When the preview ends, the Commit Graph shows **Commit Graph Preview Ended** for privately hosted repositories. Sign in or start a free Pro trial to keep using it there. If your workspace also has public or local repositories, select **Switch Repos** to keep working in one of them.
+- The preview applies only while you're signed out. If you're signed in without a Pro trial or paid plan, private repositories show the upgrade prompt instead.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-preview-banner.png" class="help-center-img img-bordered" alt="The Commit Graph with the preview banner above the graph reading &quot;Previewing the Commit Graph on privately hosted repos — 3 days left. Public and local repos stay free.&quot; and a Sign In link at its right." />
+  <figcaption style="text-align: center; color: #888">The Commit Graph preview banner on a privately hosted repository</figcaption>
+</figure>
 
 ---
 
@@ -230,6 +238,13 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 <figure>
   <img src="/wp-content/uploads/gl-graph-next-steps-diverged-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on fix/settlement-retry, whose Next steps list opens with the ringed &quot;Diverged from origin — 1 behind, 1 ahead&quot; step offering Pull and, as its alternate, Force Push." />
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
+</figure>
+
+If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote and publish &lt;branch&gt; to it** with an **Add Remote** button. **Publish Repository** runs VS Code's publish flow, which creates the repository on a hosting provider, adds it as a remote, and pushes the branch. Use **Add Remote** for a host that VS Code can't publish to. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header, the Working Changes header, the branch's context menu, and the branch details, and **Fetch** is hidden.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-publish-repository.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote and publish main to it&quot; with Add Remote." />
+  <figcaption style="text-align: center; color: #888">Next steps for a repository with no remotes</figcaption>
 </figure>
 
 #### Multi-file Selection

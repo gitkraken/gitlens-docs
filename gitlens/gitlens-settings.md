@@ -51,7 +51,7 @@ Settings for AI, cloud integrations, and external service connections.
   <figcaption style="text-align:center; color:#888">Agents category</figcaption>
 </figure>
 
-**Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Linear, and Trello issue trackers.
+**Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Jira Data Center, Linear, and Trello issue trackers.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-integrations-01-v3@2x.png" alt="GitLens Settings Cloud Integrations category showing provider connection cards" class="help-center-img img-bordered">
@@ -59,6 +59,13 @@ Settings for AI, cloud integrations, and external service connections.
 </figure>
 
 **Custom Remotes** (`remotes`) — define URL patterns for self-hosted or non-standard remote providers. **Autolinks** (`autolinks`) — create patterns that automatically turn issue references (like `JIRA-123`) into clickable links. **Launchpad** (`launchpad`) — configure the Launchpad status bar indicator and notification behavior. **Terminal Links** (`terminal-links`) — control how git references in the integrated terminal become clickable links.
+
+**Start Work** (`start-work`) — set the **Branch name format** Start Work uses to suggest a branch name when you start work on an issue (`gitlens.startWork.branchNameFormat`, default `${id}-${title}`). Use `${id}` for the issue ID and `${title}` for its lowercase, slugged title; pick them from the field's token list or type them, with the same prefix, suffix, and width modifiers as other GitLens format tokens. GitLens replaces characters that aren't valid in a Git branch name and keeps any `/` as branch folders, and the **Example** line previews the name for a sample issue. Leave the field blank to use the default. Start Work still lets you edit the suggested name before it creates the branch.
+
+<figure>
+  <img src="/wp-content/uploads/gl-settings-start-work.png" alt="The Start Work category of GitLens Settings, selected under Integrations, with the Branch name format field set to ${id}-${title} and its example branch name ABC-123-update-login-flow." class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Start Work category</figcaption>
+</figure>
 
 ### Editor
 
@@ -1030,7 +1037,7 @@ See also [View Settings](/gitlens/gitlens-settings/#view-settings)
 
 See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
-These settings control the display options for files and avatars in the GitLens <em>Search Commits</em> and <em>Compare</em> views.
+These settings control how files and avatars are displayed, and what clicking a file opens, in the GitLens <em>Search &amp; Compare</em> view.
 
 <table>
 <thead>
@@ -1041,38 +1048,27 @@ These settings control the display options for files and avatars in the GitLens 
 </thead>
 <tbody>
 <tr>
-<td><code>gitlens.views.compare.files.compact</code></td>
-<td>Flattens unnecessary file nesting in the <em>Compare</em> view. Applies when layout is set to <code>tree</code> or <code>auto</code>.</td>
+<td><code>gitlens.views.searchAndCompare.files.openDiffOnClick</code></td>
+<td>Specifies whether clicking a file in the <em>Search &amp; Compare</em> view opens its changes (diff). When disabled, clicking a file opens the working file at the first changed line instead. Default: <code>true</code>.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.compare.files.layout</code></td>
-<td>Controls file display in the <em>Compare</em> view:<br><br>
+<td><code>gitlens.views.searchAndCompare.files.layout</code></td>
+<td>Controls file display in the <em>Search &amp; Compare</em> view:<br><br>
 <code>auto</code> – switches between <code>tree</code> and <code>list</code> based on nesting and threshold<br>
 <code>list</code> – shows files in a flat list<br>
 <code>tree</code> – shows files hierarchically</td>
 </tr>
 <tr>
-<td><code>gitlens.views.compare.files.threshold</code></td>
+<td><code>gitlens.views.searchAndCompare.files.threshold</code></td>
 <td>Determines when to switch between <code>tree</code> and <code>list</code> layouts based on the number of files in a nesting level. Applies only when layout is <code>auto</code>.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.compare.avatars</code></td>
-<td>Shows avatar images instead of commit or status icons in the <em>Compare</em> view.</td>
+<td><code>gitlens.views.searchAndCompare.files.compact</code></td>
+<td>Flattens unnecessary file nesting in the <em>Search &amp; Compare</em> view. Applies when layout is set to <code>tree</code> or <code>auto</code>.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.search.files.compact</code></td>
-<td>Flattens unnecessary file nesting in the <em>Search Commits</em> view. Applies when layout is set to <code>tree</code> or <code>auto</code>.</td>
-</tr>
-<tr>
-<td><code>gitlens.views.search.files.layout</code></td>
-<td>Controls file display in the <em>Search Commits</em> view:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> based on nesting and threshold<br>
-<code>list</code> – shows files in a flat list<br>
-<code>tree</code> – shows files hierarchically</td>
-</tr>
-<tr>
-<td><code>gitlens.views.search.avatars</code></td>
-<td>Shows avatar images instead of commit or status icons in the <em>Search Commits</em> view.</td>
+<td><code>gitlens.views.searchAndCompare.avatars</code></td>
+<td>Shows avatar images instead of commit or status icons in the <em>Search &amp; Compare</em> view.</td>
 </tr>
 </tbody>
 </table>
@@ -1573,6 +1569,11 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.ai.enabled</code></td>
 <td>Specifies whether to enable GitLens' AI-powered features<br>
+</td>
+</tr>
+<tr>
+<td><code>gitlens.gitkraken.mcp.autoEnabled</code></td>
+<td>Specifies whether to automatically install and enable the GitKraken MCP server. Applies to VS Code 1.101 and later. Default: <code>true</code>. Turning this setting off, or turning off <code>gitlens.ai.enabled</code>, removes the GitKraken MCP server from VS Code's <strong>Configure Tools</strong> list without reloading the window.<br>
 </td>
 </tr>
 <tr>
@@ -2182,6 +2183,25 @@ Set an id to a key combination, a list of them, or <code>false</code> to disable
 </tbody>
 </table>
 
+
+***
+
+## Start Work Settings
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gitlens.startWork.branchNameFormat</code></td>
+<td>Specifies the branch name format when starting work on an issue. Use <code>${id}</code> for the issue ID and <code>${title}</code> for its lowercase, slugged title; the GitLens token prefix, suffix, and width modifiers are supported. Characters that aren't valid in a Git branch name are replaced, and <code>/</code> keeps branch folders. Leave blank to use the default, <code>${id}-${title}</code>. You can edit the suggested name before the branch is created.</td>
+</tr>
+</tbody>
+</table>
 
 ***
 

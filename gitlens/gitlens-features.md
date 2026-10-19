@@ -438,6 +438,8 @@ Built on a high-performance rendering engine, the graph stays responsive on larg
 
 The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> is required only for private repositories.
 
+If you aren't signed in, opening the Commit Graph on a privately hosted repository for the first time starts a 3-day preview. A banner above the graph shows how much of the preview is left, with a **Sign In** link. When the 3 days are up, the graph shows **Commit Graph Preview Ended** for privately hosted repositories until you sign in or start a free Pro trial. The preview is only for signed-out use; a signed-in account without a Pro trial or paid plan sees the upgrade prompt on private repositories.
+
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-01-v4@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Explore your full Git history at a glance</figcaption>
@@ -475,6 +477,7 @@ From here, you can:
 
 - Click the branch name to switch branches
 - Click **Fetch** to update commit data
+- Click **Publish Repository** to create a repository on a hosting provider and publish the current branch to it. It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then
 - Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that aren't set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
 
 <figure>
@@ -484,7 +487,7 @@ From here, you can:
 
 <figure class='callout callout--basic'>
   <p><strong>Note:</strong> The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.</br></br>
-  Only private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>.</p>
+  Only private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>. Signed out, you get a 3-day preview of the Commit Graph on privately hosted repositories first.</p>
   <p>We welcome your input—join the discussion on <a href="https://github.com/gitkraken/vscode-gitlens/discussions/2158" target="_blank">GitHub</a>.</p>
 </figure>
 
@@ -891,7 +894,7 @@ Click a PR to:
 - Rebase the stack (for a GitHub stacked pull request)
 - Switch to the branch or open in a worktree
 
-To find a pull request that isn't in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term.
+To find a pull request that isn't in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term. You can also paste a pull request's URL to open that pull request; this works for every connected provider, including Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
 
 <figure>
   <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
@@ -916,6 +919,16 @@ The **Start Review** command (`gitlens.startReview`) provides a guided wizard fo
 Access it from the Command Palette: `GitLens: Start Review`
 
 When AI features are enabled, Start Review asks whether to open the review in an agent, continue manually, or, when Kepler supports the pull request's provider, open it in [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler). Select **Always use this choice** to skip that step next time; the `gitlens.ai.openInAgent` setting stores your choice. If no local clone of the pull request's repository is found, Start Review offers **Clone Repository...** and **Choose a Local Folder...** instead of stopping.
+
+---
+
+### Start Work `PRO`
+
+The **Start Work** command (`gitlens.startWork`) starts work on an issue from your connected integrations: pick the issue, and GitLens creates a branch for it. If you aren't signed in, Start Work first asks you to sign in or start a Pro trial before it offers to connect an integration.
+
+Access it from the Command Palette: `GitLens: Start Work`
+
+GitLens suggests a branch name built from the issue, which you can edit before the branch is created. By default the name is the issue ID followed by its title, such as `ABC-123-update-login-flow`. To change the pattern, set **Branch name format** in the **Start Work** category of [GitLens Settings](/gitlens/settings/#integrations) (`gitlens.startWork.branchNameFormat`), using `${id}` for the issue ID and `${title}` for the title, for example `feature/${id}/${title}`.
 
 ---
 
@@ -1240,6 +1253,15 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
   <img src="/wp-content/uploads/gl-git-command-palette-push-tags-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Push Tags step, titled Push Tags, asking to choose tags to push with the repository's v1.0.0, v1.1.0 and v2.0.0 tags listed as selectable rows." />
 </figure>
 
+When you run **Push** on a branch that hasn't been published yet, the command shows a publish step (**Confirm Publish**) so you can choose the remote to publish the branch to. If the repository has no remotes, the **Publish** step reads *Cannot publish; No remotes found* and offers two ways forward:
+
+- **Publish Repository…** (selected by default) creates a new remote repository and publishes the branch to it.
+- **Add Remote…** walks you through adding a remote, then returns to the publish step so you can publish the branch to it.
+
+<figure>
+  <img src="/wp-content/uploads/gl-push-wizard-no-remotes.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) above the Don't Ask Again option and Cancel." />
+</figure>
+
 ---
 
 ### Quick Commit Access
@@ -1537,6 +1559,8 @@ To connect the integration:
 
 You can also connect **Trello** (a Pro integration) from the same **Cloud Integrations** list. Once Trello is connected, branches associated with Trello cards show a Trello badge on their Commit Graph pills. GitLens doesn't create autolinks for Trello cards.
 
+To connect a self-hosted Jira (Jira Data Center or Jira Server), select **Connect** on the **Jira Data Center** card in the same list. Like the other self-hosted integrations, it is a Pro integration connected through your GitKraken Account, and each Jira host is its own connection; instances served under a context path, such as `https://jira.example.com/jira`, are supported. For now, a connected Jira Data Center instance is used only to show the issues associated with a branch: it doesn't create autolinks, and Start Work and the Commit Graph's issue tracker picker don't list it yet.
+
 
 ***
 
@@ -1668,6 +1692,8 @@ GitLens manages the GitKraken MCP server installation on a per-agent basis. The 
 - **Install MCP for All Agents** (`gitlens.mcp.installForAllAgents`) — Install the GitKraken MCP server for all detected agents
 - **Install MCP for Agent** (`gitlens.mcp.installForAgent`) — Install for a specific agent
 - **Uninstall MCP for Agent** (`gitlens.mcp.uninstallForAgent`) — Remove MCP from a specific agent
+
+In VS Code 1.101 and later, GitLens also installs and enables the GitKraken MCP server for VS Code automatically. To turn this off, disable the `gitlens.gitkraken.mcp.autoEnabled` setting. Turning it off, or turning off GitLens AI features (`gitlens.ai.enabled`), removes the GitKraken MCP server from VS Code's **Configure Tools** list right away, without reloading the window; turning it back on adds the server again.
 
 The agent settings panel provides a centralized view for managing agent configurations.
 

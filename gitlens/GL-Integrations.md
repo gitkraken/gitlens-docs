@@ -16,6 +16,7 @@ GitLens supports a wide range of remote providers to enhance your Git workflow i
 - Gerrit
 - Bitbucket (Cloud and Server)
 - Azure DevOps (Cloud and Server)
+- Jira Cloud and Jira Data Center (issue tracking)
 - Linear (issue tracking)
 - Trello (issue tracking)
 
@@ -195,3 +196,9 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
 Linear and Trello connect the same way from the **Cloud Integrations** category, and both require a Pro plan or higher. After you connect Trello, branches associated with a Trello card show a Trello badge in the Commit Graph. GitLens does not autolink Trello cards or list them in Start Work or Launchpad.
 
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
+
+### Connect Jira Data Center
+
+GitLens Pro can also connect a self-hosted Jira (Jira Data Center or Jira Server) through your GitKraken Account. Select **Connect** on the **Jira Data Center** card in **Cloud Integrations** and follow the prompts. Each Jira host is its own connection, and instances served under a context path, such as `https://jira.example.com/jira`, are supported.
+
+For now, a connected Jira Data Center instance is used only to show the issues associated with a branch. It doesn't create autolinks, and Start Work and the Commit Graph's issue tracker picker don't list it yet.
