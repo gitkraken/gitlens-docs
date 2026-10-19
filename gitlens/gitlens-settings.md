@@ -1436,6 +1436,7 @@ Another custom example:<br>
 
 ***
 
+<a id="menu-and-toolbar-settings"></a>
 ## Menu & Toolbar Settings
 
 <table>

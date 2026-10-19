@@ -1675,7 +1675,7 @@ The agent settings panel provides a centralized view for managing agent configur
   <figcaption style="text-align: center; color: #888;">GitLens menu and toolbar options</figcaption>
 </figure>
 
-GitLens provides [customizable](/gitlens/gitlens-settings/#elementor-toc__heading-anchor-16) menu and toolbar contributions to let you control where GitLens commands appear. You can easily manage these settings via the [interactive settings editor](/gitlens/gitlens-settings/).
+GitLens provides [customizable](/gitlens/gitlens-settings/#menu-and-toolbar-settings) menu and toolbar contributions to let you control where GitLens commands appear. You can easily manage these settings via the [interactive settings editor](/gitlens/gitlens-settings/).
 
 For example, disabling **Add to the editor group toolbar** removes those items from the toolbar:
 
