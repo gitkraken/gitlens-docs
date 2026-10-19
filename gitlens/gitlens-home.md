@@ -89,7 +89,7 @@ The Commit Graph is where most work in GitLens starts. It shows your branches, c
 1. Select a commit. The details panel opens with the commit message, author, and changed files.
 2. Select the **Working Changes** row at the top of the graph to see your uncommitted changes.
 3. Right-click a branch or commit to see the actions you can take, such as merge, rebase, and cherry-pick.
-4. In the search bar, type `@me` to find your own commits, or use a filter such as `Message:` or `File:`. Press `F3` (`Cmd+G` on macOS) to move to the next result.
+4. In the search bar, type `@me` to find your own commits, or use a filter such as `message:fix` or `file:README.md`. Press `F3` (`Cmd+G` on macOS) to move to the next result.
 
 To use a larger view, open the **More Actions** (⋯) menu on the Commit Graph and choose **Prefer Commit Graph in Editor**.
 
@@ -97,6 +97,7 @@ See [GitLens Commit Graph](/gitlens/gl-commit-graph/) for layout options, every 
 
 ***
 
+<a id="interactive-code-history"></a>
 ## Step 4: Explore Code History in the Editor
 
 <div class='embed-container embed-container--16-9'>
@@ -122,6 +123,7 @@ See [Current Line Blame](/gitlens/gitlens-features/#current-line-blame), [Hovers
 
 ***
 
+<a id="accelerate-pr-reviews"></a>
 ## Step 5: Review Pull Requests
 
 <figure>
@@ -192,12 +194,13 @@ See [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for o
 
 ### Track Coding Agent Sessions `PRO`
 
-If you use a supported coding agent such as Claude Code, install its hooks so GitLens can show the agent's sessions in the Commit Graph. Select the integration prompt in the Commit Graph header, or run **GitLens: Install Agent Hooks** from the Command Palette. Sessions then appear with their status in the Commit Graph and in the **Agent Sessions** panel.
+If you use a supported coding agent such as Claude Code, install its hooks so GitLens can show the agent's sessions in the Commit Graph. Select the integration prompt in the Commit Graph header, or run **GitLens: Install GitKraken Hooks for All AI Agents** from the Command Palette. Sessions then appear with their status in the Commit Graph and in the **Agent Sessions** panel.
 
 See [AI Agents in GitLens](/gitlens/gl-agents/) for setup and the [list of supported agents](/gitlens/gitlens-features/#supported-agents).
 
 ***
 
+<a id="streamline-collaboration"></a>
 ## Step 7: Share Work with Your Team
 
 <figure>
