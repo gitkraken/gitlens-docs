@@ -25,10 +25,11 @@ See HEAD, upstream, merge target, incoming work, and ahead and behind status tog
 When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
 
 - **Publish**, when the branch doesn't have an upstream yet
+- **Publish Repository** or **Add Remote**, when the repository has no remotes yet
 - **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
 - **Pull** or **Force Push**, when the branch has diverged from its upstream
 - **Create PR** when a published branch has no open pull request, or **View** when it has one
-- **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it
+- **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it. Checking for likely conflicts requires a GitLens Pro trial or paid plan; the ahead and behind counts are available to everyone
 - **Delete Branch** or **Delete Worktree**, when the branch has been merged into its merge target
 - **Review** and **Recompose**, to review the branch's changes or recompose its commits
 
