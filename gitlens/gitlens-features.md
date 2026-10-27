@@ -477,7 +477,7 @@ From here, you can:
 
 - Click the branch name to switch branches
 - Click **Fetch** to update commit data
-- Click **Publish Repository** to create a repository on a hosting provider and publish the current branch to it. It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then
+- Click **Publish Repository** to put a repository with no remotes online. It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then. It opens the push command's publish step with **Publish Repository…** selected, which creates a repository on a hosting provider and publishes the current branch to it; choose **Add Remote…** there instead for a host VS Code can't publish to
 - Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that aren't set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
 
 <figure>
@@ -1256,7 +1256,9 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
 When you run **Push** on a branch that hasn't been published yet, the command shows a publish step (**Confirm Publish**) so you can choose the remote to publish the branch to. If the repository has no remotes, the **Publish** step reads *Cannot publish; No remotes found* and offers two ways forward:
 
 - **Publish Repository…** (selected by default) creates a new remote repository and publishes the branch to it.
-- **Add Remote…** walks you through adding a remote, then returns to the publish step so you can publish the branch to it.
+- **Add Remote…** walks you through adding a remote, then continues to the publish step so you can publish the branch to it.
+
+Before adding a remote, **Add Remote** checks that its URL can be reached. If it can't, the confirm step says why (*Cannot reach remote*) and offers **Add Remote Anyway**, **Change URL**, or a retry. On a repository with no remotes, the remote's name defaults to `origin`. If a remote still turns out to be wrong, for example a push can't reach a remote you've never fetched from, or the fetch after **Add Remote and Fetch** fails, GitLens warns you and offers **Remove Remote**.
 
 <figure>
   <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) above the Don't Ask Again option and Cancel." />
