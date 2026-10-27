@@ -240,7 +240,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
-If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote and publish &lt;branch&gt; to it** with an **Add Remote** button. **Publish Repository** runs VS Code's publish flow, which creates the repository on a hosting provider, adds it as a remote, and pushes the branch. Use **Add Remote** for a host that VS Code can't publish to. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
+If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote and publish &lt;branch&gt; to it** with an **Add Remote** button. Each button opens the push command's publish step with that choice selected. **Publish Repository…** runs VS Code's publish flow, which creates the repository on a hosting provider, adds it as a remote, and pushes the branch. Use **Add Remote…** for a host that VS Code can't publish to; once the remote is added, it continues straight to publishing the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-publish-repository-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote and publish main to it&quot; with Add Remote." />
@@ -513,6 +513,8 @@ During the rebase, a progress animation appears in the graph to indicate the ope
 ### Pull Request Information
 
 For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/gitlens-settings/#remote-provider-integration-settings).
+
+If the repository has no remotes yet, the sidebar's pull request panel explains that publishing it to GitHub, GitLab, Azure DevOps, or Bitbucket lets you see its pull requests there, and offers **Publish Repository…** in place of connecting an integration.
 
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
