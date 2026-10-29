@@ -122,7 +122,7 @@ Select **Show Past Sessions** in the **Agents** panel to include sessions that h
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-prs-panel-publish-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar's Pull Requests panel for a repository with no remotes: &quot;Publish this repository to GitHub, GitLab, Azure DevOps, or Bitbucket to see and act on its pull requests here.&quot; above a Publish Repository… button." />
+  <img src="/wp-content/uploads/gl-graph-prs-panel-publish-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar's Pull Requests panel for a repository with no remotes, with the sidebar rail at its left and Pull Requests selected: &quot;Publish this repository to GitHub, GitLab, Azure DevOps, or Bitbucket to see and act on its pull requests here.&quot; above a Publish Repository… button." />
   <figcaption style="text-align: center; color: #888">The Pull Requests panel in a repository with no remotes</figcaption>
 </figure>
 
