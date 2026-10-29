@@ -3,11 +3,11 @@ title: GitLens Commit Graph
 description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 ## Commit Graph
 

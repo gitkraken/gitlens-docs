@@ -3,10 +3,10 @@ title: Using the GitLens Sidebar
 description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
 taxonomy:
   category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 GitLens provides multiple sidebars that extend the functionality of Visual Studio Code, making it easier to navigate and understand your Git repositories. These include:
 
