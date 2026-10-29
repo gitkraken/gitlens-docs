@@ -1902,8 +1902,8 @@ Another custom example:<br>
 <td>Controls how the current user's name is displayed across blame, hovers, views, and graph.</td>
 </tr>
 <tr>
-<td><code>gitlens.advanced.gitTimeout</code></td>
-<td>Timeout in milliseconds for git operations.</td>
+<td><code>gitlens.advanced.git.timeout</code></td>
+<td>Specifies the timeout (in seconds) for Git commands. Use 0 to disable the timeout. Some long-running operations like merge, rebase, and revert always have the timeout disabled. Default: 60. With 0, background reads that set a time limit of their own still stop at it.</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.resolveSymlinks</code></td>
