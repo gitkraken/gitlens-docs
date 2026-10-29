@@ -289,7 +289,7 @@ The **Branches** view lists all local branches and includes:
 A branch that isn't published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
 
 <figure>
-  <img src="/wp-content/uploads/gl-views-publish-repository-01-v2@2x.png" class="help-center-img img-bordered" alt="The Branches view in the Source Control side bar listing two repositories, Playground2026 and release-notes, with the context menu open on release-notes' main branch. The repository has no remotes, so the menu offers Publish Repository (below Switch Branch... and Open in Commit Graph) and no Publish Branch." />
+  <img src="/wp-content/uploads/gl-views-publish-repository-01-v3@2x.png" class="help-center-img img-bordered" alt="The Branches view in the Source Control side bar listing two repositories, Playground2026 and release-notes, with the context menu open on release-notes' main branch. The repository has no remotes, so the menu offers Publish Repository (below Switch Branch... and Open in Commit Graph) and no Publish Branch." />
   <figcaption style="text-align: center; color: #888">Publish Repository on a branch in a repository with no remotes</figcaption>
 </figure>
 
