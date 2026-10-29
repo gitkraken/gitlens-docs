@@ -1261,7 +1261,7 @@ When you run **Push** on a branch that hasn't been published yet, the command sh
 **Publish Repository** in the Commit Graph and the side bar views opens this same step with your choice already selected.
 
 <figure>
-  <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;), Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) and Cancel. Don't Ask Again is not offered on this step." />
+  <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v3@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) and Cancel. Don't Ask Again is not offered on this step." />
 </figure>
 
 When you push several repositories at once, any without remotes are skipped, and the confirmation step lists them. If none of them has a remote, the step reads *Cannot push; No remotes found*.
@@ -1273,7 +1273,7 @@ When you add a remote with **Add Remote**, from the **Remote** command or the si
 - **Retry**, the button at the end of the input box, to check again.
 
 <figure>
-  <img src="/wp-content/uploads/gl-add-remote-unreachable.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Add Remote step for a URL that can't be reached: placeholder &quot;Cannot reach remote; The host could not be found&quot;, the message &quot;Check the URL, or add the remote anyway&quot;, the row &quot;Unable to reach https://nonexistent.invalid/acme/release-notes.git&quot;, Add Remote Anyway and Change URL selected, with a Retry button at the end of the input box." />
+  <img src="/wp-content/uploads/gl-add-remote-unreachable-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Add Remote step for a URL that can't be reached: placeholder &quot;Cannot reach remote; The host could not be found&quot;, the message &quot;Check the URL, or add the remote anyway&quot;, the row &quot;Unable to reach https://nonexistent.invalid/acme/release-notes.git&quot;, Add Remote Anyway (&quot;Will add origin without checking it; a later fetch or push will report if it is wrong&quot;) and Change URL selected, with a Retry button at the end of the input box." />
   <figcaption style="text-align: center; color: #888">Adding a remote whose URL can't be reached</figcaption>
 </figure>
 

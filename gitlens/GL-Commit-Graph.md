@@ -122,7 +122,7 @@ Select **Show Past Sessions** in the **Agents** panel to include sessions that h
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-prs-panel-publish.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar's Pull Requests panel for a repository with no remotes: &quot;Publish this repository to GitHub, GitLab, Azure DevOps, or Bitbucket to see and act on its pull requests here.&quot; above a Publish Repository… button." />
+  <img src="/wp-content/uploads/gl-graph-prs-panel-publish-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar's Pull Requests panel for a repository with no remotes: &quot;Publish this repository to GitHub, GitLab, Azure DevOps, or Bitbucket to see and act on its pull requests here.&quot; above a Publish Repository… button." />
   <figcaption style="text-align: center; color: #888">The Pull Requests panel in a repository with no remotes</figcaption>
 </figure>
 
@@ -249,7 +249,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code can't publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-publish-repository-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote, then publish main to it&quot; with Add Remote." />
+  <img src="/wp-content/uploads/gl-graph-publish-repository-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote, then publish main to it&quot; with Add Remote." />
   <figcaption style="text-align: center; color: #888">Next steps for a repository with no remotes</figcaption>
 </figure>
 
