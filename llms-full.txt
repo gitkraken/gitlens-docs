@@ -1209,6 +1209,8 @@ During the rebase, a progress animation appears in the graph to indicate the ope
 
 For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
+If the repository has no remotes yet, the sidebar's pull request panel explains that publishing it to GitHub, GitLab, Azure DevOps, or Bitbucket lets you see its pull requests there, and offers **Publish Repository…** in place of connecting an integration.
+
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
 When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
@@ -3905,6 +3907,111 @@ Install Current Version Now
 
 Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+
+---
+
+## Version 19.5
+
+#### Tuesday, October 27, 2026
+
+GitLens 19.5 finishes what 19.4 started for brand-new repositories: getting one online now takes you through a single chooser, checks that a remote is reachable before adding it, and helps you back out when a URL was wrong. Merge targets get smarter about which branch they compare against, a long list of Azure DevOps problems are fixed, from legacy `visualstudio.com` remotes to Team Foundation Server 2018, and the rest of the release makes push, pull, and multi-worktree work faster and more reliable.
+
+### Getting a New Repository Online
+
+In 19.4, the _Commit Graph_ started offering _Publish Repository_ when a repository has no remotes. In 19.5, _Publish Repository_ in the graph and the views opens the push wizard's chooser with your choice pre-selected, so you can publish to a host VS Code supports or pick _Add Remote…_ for one it doesn't, and continue straight to publishing. Branch and worktree rows in the views and the graph's _Pull Requests_ panel now offer it too, and every menu decides based on that row's own repository rather than the whole workspace.
+
+**_Add Remote_ checks before it adds** &mdash; the confirm step now tests the URL. When it can't be reached, it tells you why and offers _Add Remote Anyway_, _Change URL_, or a retry. On a repository with no remotes, the name defaults to `origin`.
+
+**Recover from a mistyped URL** &mdash; if a push can't reach a remote you've never fetched from, the error now offers _Remove Remote_, and an unreachable HTTPS host is reported as unreachable instead of a generic error. _Add Remote and Fetch_ no longer hangs when the fetch fails; it warns you and offers _Remove Remote_.
+
+### Smarter Merge Targets
+
+The _Commit Graph_'s branch cards show how far a branch is from its merge target. When no target is saved or detected, GitLens now picks one more carefully. It finds the default branch from your local branches first (an `upstream` remote's, then `origin`'s) and only asks the remote when they don't name one. The default branch is measured against its own upstream, and a branch created from another branch is measured against that branch until it's merged.
+
+Merge targets are also more accurate:
+
+- A target whose branch was deleted, such as a stacked pull request's base after it merges, is skipped in favor of the next available one instead of sticking.
+- An out-of-date local target no longer counts commits that are already on the remote.
+- A branch card's overview and merge target status now agree on the target for a branch that tracks a remote other than `origin`, and the graph's commit scope picker respects saved and pull request targets.
+- _Explain Branch_ reports when no base branch was found instead of comparing against the current branch, and _Create Pull Request_ keeps the full name of a target like `release/2.0`.
+
+### Azure DevOps, Old and New
+
+- Repositories cloned with a legacy `https://{org}.visualstudio.com/DefaultCollection/…` remote, or with a remote that names no project, now show pull requests, work items, and commit authors.
+- Team Foundation Server 2018 works with the Azure DevOps Server integration. Work item details, pull requests for commits, and team review requests no longer fail on unsupported API versions.
+- Work items whose content lives outside _Description_, such as a Bug's _Repro Steps_, now show it.
+- Removed work items, and completed ones with no closed date, no longer show as open in _Start Work_, autolinks, or a branch's issues.
+- _Launchpad_ now shows your authored and review-requested pull requests, including team review requests, for accounts whose identity differs between organizations.
+
+### Everyday Improvements
+
+- Views and the _Commit Graph_ keep updating during long-running activity, like a long rebase or a build writing into your working tree, instead of waiting until it stops.
+- Working across several worktrees of one repository is faster. Staging, or pausing a merge, rebase, or cherry-pick, in one worktree no longer refreshes the others, and switching branches or locking a worktree costs the others far less work.
+- Staging, unstaging, discarding, and committing now wait and retry when another Git process briefly holds the index lock, instead of failing with an `index.lock` error.
+- File watching follows Git's ignore rules exactly, including nested `.gitignore` files, so build output in ignored folders no longer triggers refreshes.
+- Push, pull, and fetch go to the right place when a remote's name contains a slash, when a custom fetch refspec is in use, or when a branch tracks another local branch. _Push to Here…_ now pushes onto the branch's upstream.
+- The _Commit Graph_ no longer confuses local and remote branches with similar names, and worktrees using `extensions.worktreeConfig` each use their own identity, signing, and pull settings.
+- Terminal links work in multi-repository workspaces.
+- Files that were deleted or renamed away and then re-added open correctly, and _Open Blame Prior to this Change_ explains when a file didn't exist yet.
+- _Start Work_ continues after you sign in from its account prompt, and Jira issues in a done status show as closed.
+
+### Thank you to our contributors
+
+Shout-out to our awesome contributors for this release!
+
+- yuezichong ([@qianxunslimg](https://github.com/qianxunslimg)) &mdash; terminal links in multi-repository workspaces
+- Andrés Martínez ([@amartinez1224](https://github.com/amartinez1224)) &mdash; opening files that were deleted or renamed away and re-added
+
+---
+
+### Added
+
+- Adds a reachability check to _Add Remote_ &mdash; the confirm step probes the URL and, when it can't be reached, says why and offers _Add Remote Anyway_, _Change URL_, or a retry; the name defaults to `origin` on a repository with no remotes
+- Adds _Publish Repository_ to branch and worktree rows in the views when their repository has no remotes
+- Adds _Remove Remote_ to the error shown when a push can't reach a remote that has never been fetched from (e.g. one just added with a mistyped URL)
+- Adds a _Publish Repository…_ call to action to the _Commit Graph_'s _Pull Requests_ panel when the repository has no remotes
+
+### Changed
+
+- Changes _Publish Repository_ in the _Commit Graph_ and views to open the push wizard's chooser (_Publish Repository…_ or _Add Remote…_) with the clicked action pre-selected, rather than handing straight to VS Code's publish flow &mdash; _Add Remote…_ continues into the publish confirm without a fetch step, and a multi-repository push now skips (and names) repositories without remotes instead of failing
+- Changes views and the _Commit Graph_ to keep updating during long-running activity, such as a long rebase or a build writing into the working tree, where they used to wait until it stopped
+- Changes how a branch's merge target is chosen when none is saved or detected &mdash; the default branch is found from local branches first (an `upstream` remote's, then `origin`'s) and the remote is asked only when they name none, the default branch itself is measured against its own upstream, and a branch created from another branch is measured against it until that branch is merged; the guess for a branch created with `git checkout -b` is no longer saved
+- Improves performance when working across several worktrees of one repository &mdash; staging changes, or a merge, rebase or cherry-pick pausing, in one worktree no longer refreshes the views and _Commit Graph_ state of every other worktree, switching branches in one worktree refreshes the others once instead of twice, and locking or unlocking a worktree no longer discards the others' cached Git data
+- Changes _Push to Here…_ to push onto the branch's upstream rather than a remote branch named like the local one &mdash; they differ when, e.g., local `foo` tracks `origin/bar`
+- Improves staging, unstaging, discarding, and committing when another Git process (VS Code's Git extension, a terminal, an AI agent) briefly holds the index lock &mdash; GitLens now waits and retries instead of failing with an `index.lock` error
+- Improves how views and the _Commit Graph_ follow Git's ignore rules when watching for file changes &mdash; changes in folders ignored by a nested `.gitignore` (such as a package's `dist/`) no longer trigger refreshes, and `info/exclude` in linked worktrees, a `~/` path in `core.excludesFile`, the global `~/.config/git/ignore` file, and `core.ignorecase` are now respected
+
+### Fixed
+
+- Fixes a push to an unreachable HTTPS remote (e.g. a mistyped host) reporting a generic error rather than that the remote could not be reached
+- Fixes the views and the _Commit Graph_'s context menus choosing between _Publish Branch_ and _Publish Repository_ by whether any repository in the workspace has remotes &mdash; each row now follows its own repository, and a remote without a recognized host no longer counts as no remote
+- Fixes _Add Remote and Fetch_ hanging (or closing silently) when the fetch failed, leaving the remote behind &mdash; it now warns and offers _Remove Remote_
+- Fixes pressing Enter on an invalid value in a wizard input (a remote URL, a branch name) navigating away &mdash; the field now stays open with the message until the value is valid
+- Fixes _Don't Ask Again_ appearing on push confirmations it cannot skip &mdash; the no-remotes chooser, the publish step, and the behind-upstream guard
+- Fixes GitLens terminal links (commits, branches, tags, ranges, and git commands) not working in multi-repository workspaces &mdash; links now use the repository containing the terminal's working directory, when shell integration reports it ([#5986](https://github.com/gitkraken/vscode-gitlens/issues/5986)) &mdash; thanks to [PR #5196](https://github.com/gitkraken/vscode-gitlens/pull/5196) by yuezichong ([@qianxunslimg](https://github.com/qianxunslimg))
+- Fixes opening the changes of a file that was deleted (or renamed away) and re-added failing with "file not found" &mdash; the comparison now shows an empty previous version ([#5914](https://github.com/gitkraken/vscode-gitlens/issues/5914)) &mdash; thanks to [PR #5930](https://github.com/gitkraken/vscode-gitlens/pull/5930) by Andrés Martínez ([@amartinez1224](https://github.com/amartinez1224))
+- Fixes _Open Blame Prior to this Change_ on a line whose change added the file (including a file that was deleted or renamed away and re-added) opening an empty file picker or a blank document &mdash; it now says the file didn't exist before that change ([#5914](https://github.com/gitkraken/vscode-gitlens/issues/5914))
+- Fixes Azure DevOps work items whose type keeps its content outside Description, such as a Bug's Repro Steps or a custom field on an inherited process, showing no description ([#6047](https://github.com/gitkraken/vscode-gitlens/issues/6047))
+- Fixes Removed Azure DevOps work items, and completed ones with no closed date, showing as open in _Start Work_'s issue list, autolinks, and a branch's associated issues ([#6013](https://github.com/gitkraken/vscode-gitlens/issues/6013), [#6041](https://github.com/gitkraken/vscode-gitlens/issues/6041))
+- Fixes the Azure DevOps Server integration on Team Foundation Server 2018 &mdash; work item details on autolinks, pull requests for commits, pull request details, and team review requests no longer fail on unsupported REST API versions ([#6048](https://github.com/gitkraken/vscode-gitlens/issues/6048))
+- Fixes Azure DevOps repositories cloned with a legacy `https://{org}.visualstudio.com/DefaultCollection/…` remote never showing pull requests, work items or commit authors, and filling the log with `Invalid Azure repository descriptor` errors ([#5999](https://github.com/gitkraken/vscode-gitlens/issues/5999)) &mdash; also fixes remotes that name no project (`…/DefaultCollection/_git/{repo}`, `{org}.visualstudio.com/_git/{repo}` and `dev.azure.com/{org}/_git/{repo}`), whose project is named after the repository
+- Fixes Azure DevOps repositories named after their project and cloned without the project segment (`…/{collection}/_git/{repo}`, as TFS 2018 offers them) never showing pull requests or commit authors ([#6000](https://github.com/gitkraken/vscode-gitlens/issues/6000))
+- Fixes Azure DevOps showing no authored or review-requested pull requests in _Launchpad_, including those requested of the user's teams, for accounts whose profile id differs from their identity in an organization; _Launchpad_ also categorizes those pull requests as the user's ([#6032](https://github.com/gitkraken/vscode-gitlens/issues/6032))
+- Fixes Jira issues in a done status with no resolution set showing as open in autolinks, hovers, and a branch's associated issues
+- Fixes a branch's merge target staying stuck on a deleted branch, such as a stacked pull request's base after it merges and is pruned &mdash; a saved, detected, or pull request merge target whose branch no longer exists locally is now skipped in favor of the next available one
+- Fixes a branch's merge target counting commits that are already on the remote when the target is an out-of-date local branch &mdash; a merge target is now measured against the local branch or its upstream, whichever the branch split off from more recently
+- Fixes the merge target status being hidden when a branch's target is a local branch whose name ends with the branch's own name, such as `release/main` for `main`, and both are at the same commit
+- Fixes _Commit Graph_ branch cards measuring the overview and the merge target status against different targets for a branch that tracks a remote other than `origin`
+- Fixes the _Commit Graph_'s commit scope picker ignoring a branch's saved or pull request merge target
+- Fixes _Explain Branch_ comparing against the current branch, instead of reporting that no base branch was found, for a branch with no merge target
+- Fixes _Create Pull Request_ cutting a local merge target's name at its first slash when choosing the pull request's base &mdash; `release/2.0` became `2.0`
+- Fixes a branch's base never being found from where it was created when Git's `grep.patternType` is set to `fixed`
+- Fixes push, pull, and fetch going to the wrong remote or branch when a remote's name contains a slash (e.g. `team/fork`), when a custom fetch refspec stores a remote's branches under another name, or when a remote is named `remotes`
+- Fixes a branch that tracks another local branch being treated as tracking a remote of that name &mdash; fetch and pull no longer target a nonexistent remote, _Publish Branch_ no longer publishes it under the local branch's name, and pushing a branch whose remote was removed now says it has no upstream instead of pushing somewhere unexpected
+- Fixes the _Commit Graph_ mixing up local and remote branches with similar names &mdash; a local `team/fork/work` beside a remote `team/fork` no longer shows as a remote branch, a local and a remote branch with the same short name no longer merge into one (losing the current-branch and worktree markers), and refs such as `refs/pull/*` no longer show as local branches
+- Fixes worktrees that use `extensions.worktreeConfig` sharing one worktree's Git config &mdash; each worktree now uses its own user identity, commit signing, and pull/rebase settings
+- Fixes _Start Work_ not carrying on after signing in from its account gate &mdash; the flow now continues, and _Start Work_, _Start Review_, and _Launchpad_ no longer offer to connect an integration your account already has ([#5988](https://github.com/gitkraken/vscode-gitlens/issues/5988))
+- Fixes _Reactivate Pro Trial_ occasionally being offered again after the server refused it ([#6008](https://github.com/gitkraken/vscode-gitlens/issues/6008))
 
 ---
 
