@@ -3,11 +3,11 @@ title: Commit Graph is Home
 description: "GitLens Commit Graph: Your Development Workbench"
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
     
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 The Commit Graph is your starting point for working in GitLens. More than a visualization of repository history, it brings your repository state, working changes, branches, worktrees, and supported coding agent activity together in one connected workbench.
 From here, you can understand what’s happening across your repository, coordinate parallel work, review and shape changes, and move work toward merge without rebuilding context across disconnected views and tools.
@@ -154,6 +154,8 @@ You can set or reset the merge target for any branch using the Change Branch Mer
 **How to access:**
 - From the Commit Graph: Use the merge target indicator in the branch header
 - From the Command Palette: `GitLens: Change Branch Merge Target`
+
+**When no merge target is set:** GitLens uses a merge target it detected for the branch, or the base of the branch's pull request. If a saved, detected, or pull request target names a branch that no longer exists locally, such as a stacked pull request's base after it merged and was deleted, GitLens skips it and uses the next one available. With none of these, a branch created from another branch is measured against that branch until it's merged, and any other branch against the default branch. GitLens finds the default branch from your local branches first: an `upstream` remote's, then `origin`'s. The default branch itself is measured against its own upstream. When the target is a local branch that is behind its remote, GitLens measures against whichever of the local branch and its upstream the branch split from more recently, so commits already on the remote aren't counted.
 
 ## Stay Oriented as Work Moves
 

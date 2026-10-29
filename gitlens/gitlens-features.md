@@ -3,9 +3,9 @@ title: GitLens Features
 description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
 taxonomy:
   category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
@@ -477,7 +477,7 @@ From here, you can:
 
 - Click the branch name to switch branches
 - Click **Fetch** to update commit data
-- Click **Publish Repository** to put a repository with no remotes online. It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then. It opens the push command's publish step with **Publish Repository…** selected, which creates a repository on a hosting provider and publishes the current branch to it; choose **Add Remote…** there instead for a host VS Code can't publish to
+- Click **Publish Repository** to open the Git Command Palette's **Publish** step with **Publish Repository…** selected, which creates a repository on a hosting provider and publishes the current branch to it; choose **Add Remote…** there instead to add a remote of your own (see [Git Command Palette](#git-command-palette)). It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then
 - Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that aren't set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
 
 <figure>
@@ -1241,7 +1241,7 @@ These commands are available from the Commit Graph context menu, branch context 
 
 Adds a [customizable](/gitlens/gitlens-settings/#git-command-palette-settings) Git Command Palette (`gitlens.gitCommands`) for guided, step-by-step access to many common Git commands. Quickly navigate Git actions, explore commit history, manage stashes, and more—all through intuitive, confirmable menus.
 
-On a command's confirmation step, choose the action row, then turn options on or off with the checkbox toggles under the **Options** separator. Examples include **Prune** for Fetch, **Force** for Push Tags and branch deletion, **Keep Staged** for stashes, **Fast-forward** and **Don't Commit** for Merge, **Update Branches** and **Autosquash** for Rebase, and **In a New Worktree** for Switch. Where a matching Git config value exists, such as `fetch.prune`, `merge.ff`, `rebase.updateRefs`, or `rebase.autosquash`, the toggle starts from that value. Some commands also offer a **Don't Ask Again** toggle, which adds the command to [`gitlens.gitCommands.skipConfirmations`](/gitlens/gitlens-settings/#git-command-palette-settings) so the confirmation is skipped from then on.
+On a command's confirmation step, choose the action row, then turn options on or off with the checkbox toggles under the **Options** separator. Examples include **Prune** for Fetch, **Force** for Push Tags and branch deletion, **Keep Staged** for stashes, **Fast-forward** and **Don't Commit** for Merge, **Update Branches** and **Autosquash** for Rebase, and **In a New Worktree** for Switch. Where a matching Git config value exists, such as `fetch.prune`, `merge.ff`, `rebase.updateRefs`, or `rebase.autosquash`, the toggle starts from that value. Some commands also offer a **Don't Ask Again** toggle, which adds the command to [`gitlens.gitCommands.skipConfirmations`](/gitlens/gitlens-settings/#git-command-palette-settings) so the confirmation is skipped from then on. Steps that ask you to choose between different actions, such as Push's **Publish** step, and warning steps whose safe choice is selected for you don't offer **Don't Ask Again**.
 
 <figure>
   <img src="/wp-content/uploads/gl-git-command-palette-confirm-options-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Fetch step with the Fetch and Fetch All Remotes rows above an Options separator and the ringed Prune checkbox toggle, which removes remote-tracking branches that no longer exist on the remote." />
@@ -1255,14 +1255,29 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
 
 When you run **Push** on a branch that hasn't been published yet, the command shows a publish step (**Confirm Publish**) so you can choose the remote to publish the branch to. If the repository has no remotes, the **Publish** step reads *Cannot publish; No remotes found* and offers two ways forward:
 
-- **Publish Repository…** (selected by default) creates a new remote repository and publishes the branch to it.
-- **Add Remote…** walks you through adding a remote, then continues to the publish step so you can publish the branch to it.
+- **Publish Repository…** creates a new remote repository and publishes the current branch to it. It's selected by default when you push the current branch. If you push another branch, it still publishes the current branch, and **Add Remote…** is selected instead.
+- **Add Remote…** walks you through adding a remote, then continues to **Confirm Publish** so you can publish the branch to it.
 
-Before adding a remote, **Add Remote** checks that its URL can be reached. If it can't, the confirm step says why (*Cannot reach remote*) and offers **Add Remote Anyway**, **Change URL**, or a retry. On a repository with no remotes, the remote's name defaults to `origin`. If a remote still turns out to be wrong, for example a push can't reach a remote you've never fetched from, or the fetch after **Add Remote and Fetch** fails, GitLens warns you and offers **Remove Remote**.
+**Publish Repository** in the Commit Graph and the side bar views opens this same step with your choice already selected.
 
 <figure>
-  <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) above the Don't Ask Again option and Cancel." />
+  <img src="/wp-content/uploads/gl-push-wizard-no-remotes-01-v3@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Publish step for a repository with no remotes, placeholder &quot;Cannot publish; No remotes found&quot;, with Publish Repository… selected (&quot;Will create a new remote repository and publish branch main to it&quot;) and Add Remote… (&quot;Will add a remote, then publish branch main to it&quot;) and Cancel. Don't Ask Again is not offered on this step." />
 </figure>
+
+When you push several repositories at once, any without remotes are skipped, and the confirmation step lists them. If none of them has a remote, the step reads *Cannot push; No remotes found*.
+
+When you add a remote with **Add Remote**, from the **Remote** command or the side bar's **Remotes** view, the name is pre-filled with `origin` if the repository has no remotes yet. Before adding the remote, GitLens checks that the URL can be reached. If it can't, the confirmation step reads *Cannot reach remote* with the reason, such as *The host could not be found*, and offers:
+
+- **Change URL** (selected) to go back and correct the URL.
+- **Add Remote Anyway** to add it without checking. A later fetch or push reports if the URL is wrong.
+- **Retry**, the button at the end of the input box, to check again.
+
+<figure>
+  <img src="/wp-content/uploads/gl-add-remote-unreachable-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Add Remote step for a URL that can't be reached: placeholder &quot;Cannot reach remote; The host could not be found&quot;, the message &quot;Check the URL, or add the remote anyway&quot;, the row &quot;Unable to reach https://nonexistent.invalid/acme/release-notes.git&quot;, Add Remote Anyway (&quot;Will add origin without checking it; a later fetch or push will report if it is wrong&quot;) and Change URL selected, with a Retry button at the end of the input box." />
+  <figcaption style="text-align: center; color: #888">Adding a remote whose URL can't be reached</figcaption>
+</figure>
+
+If the remote is added but the first fetch from it fails, a warning offers **Remove Remote**. Likewise, if a push can't reach a remote you have never fetched from, for example one you just added with a mistyped URL, the error offers **Remove Remote**. That button doesn't appear for an established remote, where a failure usually means a network problem.
 
 ---
 

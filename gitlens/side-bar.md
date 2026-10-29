@@ -3,10 +3,10 @@ title: Using the GitLens Sidebar
 description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
 taxonomy:
   category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 GitLens provides multiple sidebars that extend the functionality of Visual Studio Code, making it easier to navigate and understand your Git repositories. These include:
 
@@ -128,7 +128,7 @@ The **Commits** view displays all commits on the current branch. It also provide
   - **Behind** — shows commits missing from the current branch
   - **Ahead** — shows commits present on the current branch but not on the selected reference
 - Branch status with upstream info:
-  - **Publish** — option to publish if not yet pushed
+  - **Publish** — option to publish if not yet pushed. In a repository with no remotes, the row offers **Publish Repository** and **Add Remote** instead
   - **Up to date** — when synced with remote
   - **Changes to pull** — if commits are available on the remote
   - **Changes to push** — if there are local unpublished commits
@@ -285,6 +285,13 @@ The **Branches** view lists all local branches and includes:
   - **Changes to push** — unpublished commits
   - **Changes to pull** — incoming commits
 - Associated pull request — shown when linked to a branch
+
+A branch that isn't published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
+
+<figure>
+  <img src="/wp-content/uploads/gl-views-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Branches view in the Source Control side bar listing two repositories, Playground2026 and release-notes, with the context menu open on release-notes' main branch. The repository has no remotes, so the menu offers Publish Repository (below Switch Branch... and Open in Commit Graph) and no Publish Branch." />
+  <figcaption style="text-align: center; color: #888">Publish Repository on a branch in a repository with no remotes</figcaption>
+</figure>
 
 ***
 

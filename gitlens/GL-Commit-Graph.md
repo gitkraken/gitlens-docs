@@ -3,11 +3,11 @@ title: GitLens Commit Graph
 description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-10
 
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: October 2026</kbd>
 
 ## Commit Graph
 
@@ -112,12 +112,18 @@ The sidebar contains several panels, including:
 - **Overview**: Displays branch cards with Working Changes stats and upstream tracking information at a glance.
 - **Agents**: Lists agent sessions so you can monitor and manage them. Branches with running agent sessions display status pills directly in the graph, so you can track agent activity at a glance. Select **Show Agent Kanban** in the sidebar to see sessions as a Kanban board.
 - **Worktrees**: Lists your worktrees. Hover a worktree and select **Scope to Worktree** to work in it from the graph (see [Scope to a Worktree](#scope-to-a-worktree)).
+- **Pull Requests**: Lists the repository's pull requests. If the repository has no remotes yet, the panel explains that publishing comes first and offers a **Publish Repository…** button, which opens the same Publish step as **Publish Repository** in [Next steps](#next-steps).
 
 Select **Show Past Sessions** in the **Agents** panel to include sessions that have ended. You can resume a past Claude Code, Codex, OpenCode, or GitHub Copilot CLI session with **Resume in Terminal**, or with **Resume in &lt;agent&gt; Extension** when the agent's VS Code extension can open it. Select **Archive Session** to remove a past session from the list. The `gitlens.agents.resumeTarget` setting controls where a session resumes when both are possible: GitLens asks the first time by default, `terminal` always resumes in a new integrated terminal, and `extension` uses the agent's extension when it can.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-sidebar-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with its sidebar panel expanded on the Branches section, listing the repository's branches beside the graph; the rail also offers remotes, stashes, tags and worktrees" />
   <figcaption style="text-align: center; color: #888">The Commit Graph sidebar with branches, remotes, and worktrees</figcaption>
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-prs-panel-publish-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph sidebar's Pull Requests panel for a repository with no remotes, with the sidebar rail at its left and Pull Requests selected: &quot;Publish this repository to GitHub, GitLab, Azure DevOps, or Bitbucket to see and act on its pull requests here.&quot; above a Publish Repository… button." />
+  <figcaption style="text-align: center; color: #888">The Pull Requests panel in a repository with no remotes</figcaption>
 </figure>
 
 #### Detail Sheets
@@ -240,10 +246,10 @@ When you select a Working Changes row that has no uncommitted changes, the detai
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
-If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote and publish &lt;branch&gt; to it** with an **Add Remote** button. Each button opens the push command's publish step with that choice selected. **Publish Repository…** runs VS Code's publish flow, which creates the repository on a hosting provider, adds it as a remote, and pushes the branch. Use **Add Remote…** for a host that VS Code can't publish to; once the remote is added, it continues straight to publishing the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
+If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code can't publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-publish-repository-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote and publish main to it&quot; with Add Remote." />
+  <img src="/wp-content/uploads/gl-graph-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote, then publish main to it&quot; with Add Remote." />
   <figcaption style="text-align: center; color: #888">Next steps for a repository with no remotes</figcaption>
 </figure>
 
