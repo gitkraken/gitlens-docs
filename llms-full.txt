@@ -9,230 +9,238 @@ Generated: 2026-10-29
 ## Get Started with GitLens
 
 URL: https://help.gitkraken.com/gitlens/gitlens-home/
-Description: How to install and start using GitLens in Visual Studio Code
+Description: Install GitLens in VS Code or a VS Code-based IDE, sign in, connect your Git host, and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time.
 
-Last updated: August 2026
+Last updated: September 2026
 
-Welcome to the GitLens Support Documentation site!
+This guide takes you from installing GitLens to using its core features on your own repository. Each step shows where to find a feature and what to try first, then links to the page that covers it in full.
 
-GitLens is the #1 most downloaded [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) Git extension that supercharges your developer workflows. You can download GitLens from the VS Code marketplace:
+For an overview of what GitLens is and what each feature does, see the [GitLens Documentation](/gitlens/gitlens-docs-home/).
+
+## Before You Begin
+
+You need:
+
+- Git installed on your machine
+- Visual Studio Code, or a VS Code-based IDE such as Cursor, Windsurf, Trae, or Kiro
+- A Git repository open in the editor
+
+Features marked `PRO` in this guide require a GitLens Pro plan or a free 14-day Pro trial. The Commit Graph and Worktrees are free on public and local repositories, and inline blame, hovers, and Git CodeLens are free everywhere. [GitLens Community vs. GitLens Pro](/gitlens/gitlens-community-vs-gitlens-pro/) compares the plans.
+
+***
+
+## Step 1: Install GitLens
 
 Install GitLens
 
-GitLens is known for its blame, hover, and annotations, but there’s much more to the extension. Users are leveraging its rich features to increase their developer productivity, which you can learn more about in the popular workflows below.
+**To install GitLens in VS Code:**
 
-* [Interactive Code History](/gitlens/gitlens-home/#interactive-code-history)
-* [Accelerate PR Reviews](/gitlens/gitlens-home/#accelerate-pr-reviews)
-* [Streamline Collaboration](/gitlens/gitlens-home/#streamline-collaboration)
+1. Open the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+2. Search for **GitLens**.
+3. Select **GitLens** by GitKraken, then select **Install**.
+
+You can also select **Install GitLens** above to open the extension's VS Code Marketplace listing.
+
+**To install GitLens in Cursor, Windsurf, Trae, or Kiro:** open that IDE's Extensions view, search for **GitLens**, and install it.
+
+After installation, the GitLens icon appears in the Activity Bar. The first time GitLens starts, the **Welcome** view appears above the Commit Graph with a short walkthrough of the Commit Graph, AI features, Git blame, PR reviews, and MCP. Its content adapts to your plan, so it is a good place to see what you have access to.
 
 ***
-GitLens brings your repository context and development workflows directly into your IDE. Start in the Commit Graph to understand what’s happening across your repository, keep human and agent work visible, and move changes forward without rebuilding context across tools.
 
-## Start in the Commit Graph
-The Commit Graph is your central development workbench in GitLens. It brings commits, branches, working changes, worktrees, upstream state, and supported coding agent activity together in one connected view.
+## Step 2: Sign In and Connect Your Git Host
 
-GitLens Commit Graph view
+You can use the Commit Graph, inline blame, and hovers without an account. Sign in when you want to start a Pro trial or connect integrations.
 
-Use the Commit Graph to quickly understand:
-- What’s changing across your repository
-- Where work is happening across branches and worktrees
-- What’s ahead, behind, or incoming
-- Which supported coding agents are actively working
-- Which work or agent sessions need your attention
-- How changes relate before you move them forward
+### Sign In to GitKraken
 
-From there, you can move directly into the workflow you need.
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Run **GitLens: Sign In to GitKraken...**.
+3. Sign in, or create an account with GitHub, GitLab, Bitbucket, Azure DevOps, Google, email, or SSO.
 
-## One Workbench for Your Development Workflow
-Development work is often spread across source control views, terminal sessions, editor windows, pull requests, and separate tools. As more work happens in parallel across developers and coding agents, rebuilding that context can slow you down.
+To try Pro features, [start your free 14-day trial](https://gitkraken.dev/register?source=help_center&product=gitlens&redirect_uri=vscode%3A%2F%2Feamodio.gitlens%2Flogin&flow=gitlens_web). The [GitKraken Account](/gitlens/gl-gk-account/) page covers account creation and management.
 
-The Commit Graph brings those workflows together. Instead of jumping between views and windows to understand and move work forward, you can stay connected to the repository context behind the work from start to finish.
+### Connect an Integration
 
-From the Commit Graph, you can monitor parallel work, review changes, compose commits, compare revisions, rebase with AI, resolve conflicts, and prepare work for merge. Each step stays connected to the branches, worktrees, commits, and changes involved.
+Connecting your code host lets GitLens show pull requests beside your branches and commits. It is also required for Launchpad and Code Suggest.
 
-See the work, understand it, shape it, and get it ready to merge from one connected workbench.
+1. Open the Command Palette and run **GitLens: Manage Integrations**.
+2. Select **Connect** for your provider.
+3. Follow the prompts to authorize GitLens, then return to your IDE.
 
-## Move Work Forward from the Commit Graph
-The Commit Graph gives you more than visibility into your repository. It brings the workflows you use to understand, shape, and prepare work for merge into the same workbench.
-- Monitor: Keep parallel human and agent work visible across branches and worktrees.
-- Review: Review changes with AI, investigate findings, and send feedback back to your coding agent.
-- Compose: Organize working changes into clean, logical commits with Commit Composer.
-- Compare: Compare commits, branches, revisions, and working changes to understand exactly what changed.
-- Rebase: Use AI-powered Rebase to automate tedious rebasing while staying in control.
-- Resolve: Resolve merge conflicts with AI assistance while keeping the surrounding repository context in view.
+You can also manage integrations from your [GitKraken integration settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
 
-Whether you’re working on a single branch or coordinating development across multiple worktrees and coding agents, GitLens keeps the work and its context connected.
+GitLens integrates with GitHub, GitLab, Bitbucket, Azure DevOps, Jira, and Linear. The Jira integration and self-hosted GitHub Enterprise Server and GitLab Self-Managed integrations require Pro. See [GitLens Integrations](/gitlens/gl-integrations/) for provider-specific steps.
 
-## Working with Coding Agents
-GitLens connects supported coding agent activity to the branches, worktrees, and changes where that work is happening.
+***
 
-From the Commit Graph, you can monitor supported agent sessions, see their status, understand where agents are working, and identify sessions that need your attention. Multi-worktree WIP keeps changes across parallel worktrees visible, helping you stay oriented as human and agent work progresses at the same time.
+## Step 3: Open the Commit Graph
 
-GitLens supports agent-driven development across VS Code, Cursor, Windsurf, Trae, and Kiro, so you can bring Git context and parallel development workflows into the IDE where you already work.
-
-## Where to Go Next
-Start with the Commit Graph to get familiar with your development workbench, then explore GitLens workflows and features as you need them:
-
-- [Commit Graph](/gitlens/gl-commit-graph/) for understanding and acting on repository activity
-- [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) for monitoring supported coding agents
-- [Worktrees](/gitlens/gl-worktrees/) for parallel development
-- [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for understanding and validating changes
-- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for shaping clean, logical commits
-- [Launchpad](/gitlens/gl-launchpad/) for prioritizing pull requests and review work
-
-Or follow a complete workflow from start to finish:
-
-- [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/)
-- [Prepare Your Branch to Ship](/gitlens/gl-branch-prep-to-ship/)
-- [Take Agent-Generated Work from Change to Merge](/gitlens/gl-agent-generated-work-end-to-end/)
-
-## Interactive Code History
-
-&nbsp;
-
-Understanding your repository's history is easier with GitLens. Whether you're navigating complex branches or reviewing past changes, GitLens offers intuitive tools to reveal who changed what and why.
-
-### View the Commit Graph
-
-The Commit Graph provides an interactive visual history of your branches and commits. It helps you:
-
-- Follow the development of features and bug fixes over time
-- Quickly search and jump to specific commits or branches
-- Understand commit context through messages and structure
+The Commit Graph is where most work in GitLens starts. It shows your branches, commits, working changes, and worktrees in one view, and every row has actions you can run directly.
 
 **To open the Commit Graph:**
 
-- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **GitLens: Show Commit Graph View**, or
-- Click the **Commit Graph** icon in the sidebar
+- Click the GitLens icon in the Activity Bar. The Commit Graph is the first view in the GitLens sidebar, or
+- Open the Command Palette and run **GitLens: Show Commit Graph**
 
 [Open the Commit Graph in GitLens](vscode://eamodio.gitlens/link/command/graph)
 
-### Use GitLens Inspect
+Select a commit to see its details beside the graph
 
-GitLens Inspect helps you dive deeper into a specific commit. It shows:
+**Try this:**
 
-- Modified files and changed lines
-- Related Jira issues or pull requests via autolinks
-- File or line history for better context
+1. Select a commit. The details panel opens with the commit message, author, and changed files.
+2. Select the **Working Changes** row at the top of the graph to see your uncommitted changes.
+3. Right-click a branch or commit to see the actions you can take, such as merge, rebase, and cherry-pick.
+4. In the search bar, type `@me` to find your own commits, or use a filter such as `message:fix` or `file:README.md`. Press `F3` (`Cmd+G` on macOS) to move to the next result.
 
-**To open Inspect View:**
+To use a larger view, open the **More Actions** (⋯) menu on the Commit Graph and choose **Prefer Commit Graph in Editor**.
 
-- Right-click any commit and select **Inspect Details**
+See [GitLens Commit Graph](/gitlens/gl-commit-graph/) for layout options, every search filter, and the full list of actions.
+
+***
+
+## Step 4: Explore Code History in the Editor
+
+&nbsp;
+
+Inline blame, hovers, and Git CodeLens are on by default and free for all repositories.
+
+**Try this:**
+
+1. Open any file in your repository and place the cursor on a line. The inline blame annotation at the end of the line shows who last changed it, when, and the commit message.
+2. Hover over the annotation to see full commit details, the associated pull request, and actions such as opening the previous revision or showing the commit in the Commit Graph.
+3. Look above functions and at the top of the file for **Git CodeLens**, which shows the most recent change and the number of authors. Select it to open more history actions.
+4. To see everything about one commit, open the Command Palette and run **GitLens: Show Inspect View**. The **Commit Details** tab updates as you move through the file.
 
 [Open the Inspect View in GitLens](vscode://eamodio.gitlens/link/command/inspect)
 
-### Explore Inline Blame and Hovers
+To turn these annotations off, run **GitLens: Toggle Line Blame Annotations** or **GitLens: Toggle Git CodeLens** (`Shift+Alt+B`).
 
-Inline Blame reveals who last modified each line and why. Hover over any line to:
-
-- View commit details
-- Navigate to the previous revision
-- Open the associated pull request
-- See the commit in the Commit Graph
-
-These insights help you trace decisions and collaborate more effectively.
+See [Current Line Blame](/gitlens/gitlens-features/#current-line-blame), [Hovers](/gitlens/gitlens-features/#hovers), and [GitLens Inspect](/gitlens/side-bar/#gitlens-inspect) for customization options, and [GitLens Visual File History](/gitlens/gl-visual-file-history/) for a timeline of how a file changed.
 
 ***
 
-## Accelerate PR Reviews
+## Step 5: Review Pull Requests
 
 Video: Review pull requests without leaving your IDE
 
-Manually switching between browser tabs, emails, and PR tools can interrupt your development flow. GitLens helps you stay focused in Visual Studio Code by organizing pull request tasks and supporting multiple workspaces with worktrees.
+### Open Launchpad `PRO`
 
-### Launchpad `PRO`
+This feature is only available for Pro subscription tiers or higher and requires a connected integration. See Launchpad availability for supported Git hosts.
 
-This feature is only available for Pro subscription tiers or higher.
+Launchpad lists the pull requests you are involved in, grouped by what needs to happen next.
 
-Launchpad provides a centralized view of your pull requests. You can:
-
-- Connect your [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens)
-- View PRs by action status: needs review, follow-up, blocked, draft, and more
-- Open pull requests in a new worktree or switch branches directly
-
-**To access Launchpad:**
-
-- Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **GitLens: Open Launchpad**
+1. Open the Command Palette and run **GitLens: Open Launchpad**, or select **Pull Request** in the status bar.
+2. Find a pull request under **Needs your review**.
+3. Select it to view its details, open it in a browser, or switch to its branch or a worktree.
 
 [Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
 
-### Worktrees
+To start a guided review instead, run **GitLens: Start Review**. It walks you through selecting a pull request, choosing whether to check out its branch or create a worktree, and optionally opening an AI chat with a review prompt. See [Start Review](/gitlens/gitlens-features/#start-review-pro).
+
+The [Launchpad](/gitlens/gl-launchpad/) page covers pinning, snoozing, and every status group.
+
+### Open the Worktrees View
 
 The Community plan supports only public and local repositories.
 
-Worktrees let you check out multiple branches at once without stashing or committing changes in progress. This allows you to:
+Worktrees let you check out several branches at once, so you can review a pull request without stashing or committing the work in progress on your current branch. When you open a pull request in a worktree from Launchpad, GitLens creates the worktree for you. Each worktree then gets its own **Working Changes** row in the Commit Graph.
 
-- Review pull requests without leaving your current work
-- Keep separate working directories for isolated tasks
-- Open a worktree and inspect file diffs, commit history, and changed files directly from the Pull Request sidebar
+[Open the Worktrees View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
 
-**To open Worktree View:**
-
-[Open the Worktree View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
+See [GitLens Worktrees](/gitlens/gl-worktrees/) to create and manage worktrees.
 
 ***
 
-## Streamline Team Collaboration
+## Step 6: Review and Commit Your Changes with AI
+
+Once you have working changes, you can review them and turn them into clean commits from the Commit Graph details panel. Both workflows use GitKraken AI.
+
+### Run an AI Review `PRO`
+
+1. Open the Commit Graph.
+2. Select the **Working Changes** row or a commit.
+3. Open the details panel, then switch to **Review** mode.
+
+GitLens returns a review summary, suggested focus areas, and findings tagged by severity, so you can fix issues before you commit or open a pull request.
+
+[Open the Commit Graph in Review mode](vscode://eamodio.gitlens/link/command/graph?mode=review)
+
+See [Run AI Code Review in the Commit Graph](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for details, and [AI Review](/gitlens/gl-gk-ai/#ai-review-pro) for custom review instructions and plan requirements.
+
+### Compose Commits `PRO`
+
+1. Open the Commit Graph and select the **Working Changes** row.
+2. Open the details panel, then switch to **Compose** mode.
+3. Review the proposed commit groupings and edit any generated commit message.
+4. Commit the changes.
+
+[Open the Commit Graph in Compose mode](vscode://eamodio.gitlens/link/command/graph?mode=compose)
+
+See [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for other ways to open it, and [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) for AI commit messages, AI rebase, and other AI features.
+
+### Track Coding Agent Sessions `PRO`
+
+If you use a supported coding agent such as Claude Code, install its hooks so GitLens can show the agent's sessions in the Commit Graph. Select the integration prompt in the Commit Graph header, or run **GitLens: Install GitKraken Hooks for All AI Agents** from the Command Palette. Sessions then appear with their status in the Commit Graph and in the **Agent Sessions** panel.
+
+See [AI Agents in GitLens](/gitlens/gl-agents/) for setup and the [list of supported agents](/gitlens/gitlens-features/#supported-agents).
+
+***
+
+## Step 7: Share Work with Your Team
 
 Video: Share code and suggest changes in GitLens
 
-GitLens enables flexible collaboration without needing to commit or push unfinished code. Use **Cloud Patches** to share changes privately and **Code Suggest** to offer improvements across a pull request—even for unmodified files.
+You can share changes without pushing a branch, and suggest edits on a pull request, even on files the pull request did not change.
 
-### Cloud Patches `PRO`
+### Share a Cloud Patch `PRO`
 
 This feature is only available for Pro subscription tiers or higher.
 
-Cloud Patches are sharable Git patches that can be applied across your GitKraken organization:
-
-- Make and save changes to any file
-- Open the Command Palette and run **GitLens: Share as Cloud Patch…**
-- Select collaborators to notify via the Cloud Patch sidebar
+1. Make and save changes to any file.
+2. Open the Command Palette and run **GitLens: Share as Cloud Patch...**. You can also choose **Share as Cloud Patch** from the **Share** submenu on working changes, commits, stashes, and comparisons in GitLens views.
+3. Choose who can open it: **Anyone with the link**, **Anyone in my org**, or **Only collaborators**.
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
-### Code Suggest `PRO`
+See [GitLens Cloud Patches](/gitlens/gl-cloud-patches/) to apply and manage patches.
 
-This feature is only available for Pro subscription tiers or higher.
+### Suggest Changes on a Pull Request `PRO`
 
-Suggest code edits to any file—even those not changed in the original PR:
+This feature is only available for Pro subscription tiers or higher and is supported only for repositories on GitHub.com.
 
-- Check out a branch with an open pull request
-- Make and save your proposed changes
-- Open the Command Palette and run **GitLens: Show Inspect View**, then choose **Suggest Changes for PR**
+1. Check out a branch with an open pull request.
+2. Open the Command Palette, run **GitLens: Show Inspect View**, and open the **Overview** tab.
+3. Select **Start Review for PR #**, then make and save your proposed changes.
+4. Select **Suggest Changes for PR**, add a title, and select **Create Code Suggestion**.
 
-The pull request owner can apply, modify, and commit these suggestions to streamline reviews and collaboration.
+The pull request owner can then review, apply, and commit your suggestions. See [GitLens Code Suggest](/gitlens/gl-code-suggest/).
 
 ***
 
-## Connect GitLens to External Services
+## Step 8: Link Commits to Your Issues
 
 Video: Use integrations and autolinks to connect GitLens to tools like Jira
 
-Boost your productivity by integrating GitLens with platforms like GitHub, GitLab, Azure DevOps, Bitbucket, Jira, and Trello. Reduce context switching and bring external issue tracking directly into your Git workflows.
+With an integration connected in [Step 2](#step-2-sign-in-and-connect-your-git-host), GitLens turns issue and pull request references in commit messages into links automatically. For example, a connected Jira integration turns issue keys such as `ABC-123` into links.
 
-### Integrations
+For trackers without an integration, such as Zendesk or an internal tool, add a custom autolink with the `gitlens.autolinks` setting. Each autolink matches a prefix and builds a URL from the reference:
 
-Connect GitLens to your code host and issue tracker to:
+```json
+"gitlens.autolinks": [
+    { "prefix": "JIRA-", "url": "https://jira.company.com/issue?query=<num>" }
+]
+```
 
-- Sync and manage repositories inside Launchpad
-- Automatically show pull requests and issues related to your branch
-- Avoid switching between your editor and browser
+See [Autolinks](/gitlens/gitlens-features/#autolinks) for all options.
 
-To set up an integration, go to **Settings > Integrations** or visit the [GitLens Integrations Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+***
 
-### Autolinks
+## Next Steps
 
-Autolinks let you automatically link external issues—like Jira tickets or Trello cards—directly in commit messages, file annotations, and code lenses.
+You have now used the main parts of GitLens. To put them together into complete tasks, follow one of the end-to-end workflow guides listed on the [GitLens Documentation](/gitlens/gitlens-docs-home/#follow-a-complete-workflow), such as [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/).
 
-You can also create custom autolinks by defining pattern-matching rules for external references like Zendesk or Linear. This helps keep your codebase traceable and well-documented.
-
----
-
-## Other Resources
-
-- 📌 [GitHub Repository](https://github.com/gitkraken/vscode-gitlens) — Submit feature requests or bug reports
-- 💬 [Join GitKraken Slack](https://slack.gitkraken.com/) — Connect with the GitLens community
-- 🛠️ [Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support) — Paid users can get direct help from our support team
+If something doesn't work as expected, see [GitLens Troubleshooting](/gitlens/gitlens-troubleshooting/) or the other help resources on the [GitLens Documentation](/gitlens/gitlens-docs-home/#get-help).
 
 ---
 
@@ -259,7 +267,7 @@ GitLens helps streamline PR reviews directly inside Visual Studio Code. With **L
 
 To use Launchpad:
 
-1. Connect your [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens).
+1. Connect a [supported integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens): GitHub, GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps, Azure DevOps Server, Bitbucket, or Bitbucket Data Center.
 2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 3. Run: `GitLens: Open Launchpad`.
 
@@ -270,14 +278,14 @@ Launchpad displays grouped pull requests:
 - Waiting for follow-up
 - Blocked or in draft
 
+To find a pull request that isn't in these groups, select **Search for Pull Request...** and enter a search term. Launchpad searches every connected integration. For Azure DevOps, Azure DevOps Server, and Bitbucket Data Center, the term matches pull request titles and descriptions. Bitbucket Data Center searches only the repositories of the remotes in your open workspace. You can also paste a pull request's URL to open that pull request directly, including URLs from Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
+
 To start reviewing:
 
 - Select a PR.
 - Choose **Open in Worktree** or **Switch to Branch or Worktree**.
 
 [Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
-
-This feature is available with a GitLens Pro subscription or higher.
 
 ## Start Review `PRO`
 
@@ -287,9 +295,11 @@ To use Start Review:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 2. Run: `GitLens: Start Review`.
-3. Select your integration and pull request, then choose your checkout method.
+3. Select your integration and pull request.
+4. When AI features are enabled, choose how to continue: **Open in an agent**, **Continue manually**, or **Open in Kepler** when [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler) supports the pull request's provider. To skip this step next time, select **Always use this choice** before you choose. GitLens saves your choice to the `gitlens.ai.openInAgent` setting.
+5. Unless you opened the pull request in Kepler, choose your checkout method.
 
-This feature is available with a GitLens Pro subscription or higher.
+If GitLens can't find a local copy of the pull request's repository, it asks how to find it. Select **Clone Repository...** to clone it into a folder you choose, or **Choose a Local Folder...** to point GitLens at an existing clone. If the folder you choose doesn't look like a clone of that repository, GitLens asks you to confirm before using it.
 
 ## Worktrees
 
@@ -302,8 +312,6 @@ After opening a worktree, use the Pull Request sidebar to:
 - View diffs and inspect updates line by line
 
 [Open the Worktree View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
-
-The Community plan supports only public and local repositories.
 
 ---
 
@@ -378,11 +386,9 @@ You submit a pull request with a clean, intentional commit history that reviewer
 URL: https://help.gitkraken.com/gitlens/gl-gk-account/
 Description: Learn how to create and manage your GitKraken account for GitLens features.
 
-Last updated: July 2025
+Last updated: September 2026
 
 Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
-
-Note: GitKraken accounts are not compatible with Git Integration for Jira. We recommend creating and using a single GitKraken account per person. Avoid creating duplicate accounts or sharing your account with others.
 
 ***
 
@@ -403,6 +409,13 @@ When prompted with the login screen, select **Create an account** to begin. Choo
 Select a login method to create your GitKraken account
 
 Once your account is created, it is linked to the primary email associated with your selected login method. If you choose **Sign up with Email**, check your inbox for a verification link to complete the process.
+
+After you sign in, you can manage your account from two places in GitLens:
+
+- **GitLens Settings**: Run `GitLens: Open Settings` from the Command Palette and select **Account** under **Setup**. The Account category shows your plan, **Manage Account** and **Sign Out** buttons, your active organization with an option to switch it, and a **GitKraken AI Usage** card with your weekly AI credit usage. On paid plans, owners, admins, and billing contacts of the active organization (and users with no active organization) can select **Get more AI credits** there.
+- **Commit Graph header**: Select the **Account** button (your avatar and plan badge) in the Commit Graph header. The popover offers **Synchronize Status**, **Account Settings**, **Manage Account**, **Sign Out**, and **Switch Active Organization**, along with a **GitKraken AI** row that shows your credit usage.
+
+For more about AI credits, see [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/#check-your-ai-credit-usage).
 
 ***
 
@@ -457,12 +470,11 @@ GitLens integrates powerful AI capabilities across different subscription tiers,
 
 Generate clear, descriptive commit messages based on your code changes, saving time and ensuring consistency across your repository. The AI analyzes your staged changes and creates meaningful messages that accurately describe what you've modified.
 
-In addition to single commit messages, the Commit Composer can create multiple logical commits from your working tree changes, and Automatic Rebase restructures an existing branch onto a target commit with AI-generated commits. Both include undo support and first-time confirmation dialogs.
+In addition to single commit messages, the Commit Composer can create multiple logical commits from your working tree changes. To have AI resolve conflicts while you rebase a branch, use [Auto-Rebase](#auto-rebase-pro) instead.
 
 **How to access:**
 - From the Command Palette: `GitLens: Generate Commit Message`
 - From the Command Palette: `GitLens: Compose Commits...` (the Commit Composer creates multiple logical commits from your working changes)
-- From the Command Palette: `GitLens: Automatic Rebase...` (restructures branch commits)
 - From the SCM panel: Open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**
 - During the commit process: Look for the AI option in the commit interface
 
@@ -530,14 +542,20 @@ Inspect commits or Working Changes before they move forward. GitKraken AI surfac
 
 You can configure separate AI models for different features (such as compose and review) to optimize for your preferred balance of speed and quality.
 
-### AI Auto Rebase `Pro`
+### Auto-Rebase `Pro`
 **Available in:** Pro, Advanced, and Business plans
 
-Move a rebase forward with AI-assisted conflict resolution. AI Auto Rebase resolves a conflict only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself. A rebase summary sheet shows what was resolved and how, and full undo support returns you to the pre-rebase state if the result is not what you wanted.
+Move a rebase forward with AI-assisted conflict resolution. Auto-Rebase resolves a conflict only when its confidence meets the threshold you configure; anything below that threshold pauses the rebase so you can resolve it yourself. A rebase summary sheet shows what was resolved and how, and full undo support returns you to the pre-rebase state if the result is not what you wanted.
+
+Auto-Rebase respects the steps you plan in the Interactive Rebase Editor. When a `reword` or `squash` step needs a new commit message, Auto-Rebase opens the message in VS Code and waits until you finish editing it. At a commit you marked `edit`, it resolves and stages any conflicts, then pauses so you can make your changes before you continue the rebase.
+
+When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
 
 **How to access:**
-- From the Command Palette: `GitLens: AI Auto Rebase`
-- From the Commit Graph: Right-click a branch and select AI Auto Rebase
+- From the Command Palette: `GitLens: Auto-Rebase...`
+- From the Commit Graph: Right-click a branch, select **Rebase Current Branch onto Branch...**, and choose **Auto-Rebase** in the rebase confirmation step
+- From the Interactive Rebase Editor: Select **Start Auto-Rebase** next to **Start Rebase**, or **Continue with Auto-Rebase** once the rebase has started
+- For a rebase that is already paused: Run `GitLens: Continue with Auto-Rebase` from the Command Palette
 
 **Key settings:**
 - `gitlens.ai.autoRebase.confidenceThreshold` — Set the minimum confidence level (0-1) for automatic conflict resolution
@@ -562,6 +580,15 @@ Shape your commit history with AI-assisted commit crafting and branch restructur
 GitKraken AI features operate on a credit-based system, with different allocations based on your subscription. For more information about Gitkraken AI allocations, please see our [Gitkraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq) page.
 
 Credits refresh weekly and are shared across all AI features. More complex operations like changelog generation typically use more credits than simpler ones like commit messages.
+
+### Check Your AI Credit Usage
+
+GitLens shows your GitKraken AI usage in two places:
+
+- **GitLens Settings**: Run `GitLens: Open Settings` from the Command Palette and select **Account** under **Setup**. The **GitKraken AI Usage** card shows how many of your weekly credits you have used and when your weekly allowance resets. If your organization has a shared credit pool, a **Weekly Shared Organization Pool** row splits it into your usage, the rest of the organization's usage, and what remains.
+- **Commit Graph header**: Select the **Account** button (your avatar and plan badge) in the Commit Graph header. The **GitKraken AI** row in the popover shows your usage as a percentage; select it to open the Account settings.
+
+Both places show **Nearly out** when you have used more than 90% of your credits, and **Allowance used** in red once you have used all of them. On paid plans, the **GitKraken AI Usage** card includes a **Get more AI credits** button if you have no active organization or you are an owner, admin, or billing contact of your active organization. Other organization members see a note to contact their organization admin or owner for more credits.
 
 ---
 ## Configuring Your AI Provider
@@ -595,7 +622,7 @@ To configure your AI provider:
 ### User-Level Customization
 
 - **Customize AI prompts**: Tailor the prompts used for various AI features to match your team's style
-- **Credit usage monitoring**: Track your credit consumption for better allocation management
+- **Credit usage monitoring**: Track your credit consumption on the **GitKraken AI Usage** card in the **Account** category of GitLens Settings (see [Check Your AI Credit Usage](#check-your-ai-credit-usage))
 - **Default AI mode**: Choose between concise or detailed outputs for each feature
 
 ### AI File Exclusions
@@ -613,7 +640,6 @@ Control which files are included in AI context to protect sensitive data:
 - **Credit allocation management**: Distribute credits across teams and projects
 
 ---
-
 More questions about Gitkraken AI? Please see our GitKraken AI FAQ page for more details. For additional questions or support regarding GitKraken AI features, please contact our support team or visit the GitKraken Community forum.
 
 ---
@@ -1291,7 +1317,7 @@ _Perfect for: Individual developers and teams starting with GitLens._
 GitLens Pro takes your development workflow to the next level with advanced features and deeper integrations:
 
 - **Accelerate PR reviews** with Launchpad—an actionable pull request hub built into VS Code.
-- **Manage commits visually** using the Commit Graph with features like rebase, merge, and advanced search.
+- **Manage commits visually** using the Commit Graph on private repositories, with features like rebase, merge, and advanced search. The Commit Graph is free on public and local repositories, with no account required.
 - **Streamline collaboration** by integrating with GitHub, GitLab, and Bitbucket. View and manage pull requests directly within VS Code.
 
 _Perfect for: Professional developers, collaborative teams, and organizations optimizing for productivity._
@@ -1370,10 +1396,10 @@ Sign in using the command palette
 
 To sign out:
 
-- Click the GitLens icon in the sidebar to open the **Home** view.
-- Select the account chip (your plan name) at the top of the view, then select the **Sign Out** button in the popover.
+- Open the Commit Graph (run `GitLens: Show Commit Graph` from the Command Palette).
+- Select the **Account** button (your avatar and plan badge) in the Commit Graph header, then select the **Sign Out** button in the popover.
 
-Sign out from the GitLens sidebar
+Sign out from the Commit Graph account popover
 
 Or use the VS Code Command Palette:
 
@@ -1407,6 +1433,20 @@ Yes. GitLens has no proxy setting of its own; it uses Visual Studio Code's **Htt
 ## Does GitLens Support Git Submodules?
 
 Yes. GitLens provides basic Git submodule support, including automatic discovery and tracking of submodules in your workspace. Submodules are distinguished with their own icons in sidebar views, and diffs correctly handle submodule pointer changes. GitLens detects superproject paths and tracks submodule status alongside your main repository.
+
+***
+
+## How Do I Change the Language GitLens Displays In?
+
+GitLens follows the Visual Studio Code display language and has no language setting of its own. Spanish, Simplified Chinese, and Traditional Chinese translations are available as experimental translations. Any text that is not yet translated appears in English.
+
+To switch GitLens to one of these languages:
+
+1. Install the Microsoft language pack for the language in Visual Studio Code.
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run **Configure Display Language**.
+3. Select the language, then restart Visual Studio Code when prompted.
+
+The `gitlens.defaultDateLocale` setting controls only how GitLens formats dates, not the language of the interface.
 
 ***
 
@@ -3014,9 +3054,11 @@ GitLens supports a wide range of remote providers to enhance your Git workflow i
 - Gerrit
 - Bitbucket (Cloud and Server)
 - Azure DevOps (Cloud and Server)
+- Jira Cloud and Jira Data Center (issue tracking)
 - Linear (issue tracking)
+- Trello (issue tracking)
 
-You can also define [custom remote providers or providers with custom domains](/gitlens/settings/#remote-provider-integration-settings).
+You can also define [custom remote providers or providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 ## Integration Capabilities
 
@@ -3082,9 +3124,9 @@ To connect GitHub or GitLab to GitLens, you'll use your GitKraken account via th
 #### Steps to Connect:
 
 1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run `GitLens: Manage Integrations`, **or**
-2. In the GitLens **Home** view, select the integrations chip in the header to open the **Integrations** popover, then its gear (**Manage Integrations**).
+2. Open the Commit Graph and select the **Account** button (your avatar and plan badge) in its header. In the popover, select the **Integrations** row, or **Set up integrations** if nothing is connected yet, to open **Cloud Integrations** in GitLens Settings.
 
-Open the Integrations popover from the Home view header
+Open your integrations from the Commit Graph account popover
 
 3. If you’re not already signed in, log into your GitKraken account.
 4. Click **Connect with GitHub** or **Connect with GitLab** and complete the sign-in process.
@@ -3101,6 +3143,8 @@ Community users are limited to basic functionality only.
 GitLens supports stacked pull request workflows on GitHub.com. When working with stacked PRs, GitLens shows stack information including the stack size, your PR's position within the stack, and the base ref. Merge operations are stack-aware, letting you choose to merge a single layer or the entire stack.
 
 PR stack details appear in the Commit Graph pull request sheet when viewing a PR that belongs to a stack.
+
+To bring a whole stack up to date with its base branch, select **Rebase Stack...** in the pull request sheet or in Launchpad. GitLens rebases each branch onto the one below it, from the bottom of the stack up, and then offers to force push the rebased branches. **Auto-Rebase Stack...** does the same and resolves conflicts with AI. For details, see [Pull Request Information](/gitlens/gl-commit-graph/#pull-request-information) in the Commit Graph documentation.
 
 ***
 
@@ -3156,13 +3200,22 @@ This feature is only available for Pro subscription tiers or higher.
 ### Connect the Jira Integration
 
 1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
-2. Select **Cloud Integrations** under **Integrations** in the navigation rail.
-3. Choose **Jira Cloud** and follow the prompts to connect.
+2. Select **Cloud Integrations** under **Integrations** in the navigation rail. Each provider has a card: a provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
+
+Cloud Integrations in GitLens Settings, shown here with Jira already connected
+
+3. Select **Connect** on the **Jira** card and follow the prompts to connect.
 4. Allow GitKraken access to your Atlassian Account.
+
+Linear and Trello connect the same way from the **Cloud Integrations** category, and both require a Pro plan or higher. After you connect Trello, branches associated with a Trello card show a Trello badge in the Commit Graph. GitLens does not autolink Trello cards or list them in Start Work or Launchpad.
 
 You can also configure this via the [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
-Cloud Integrations category in the GitLens Settings editor
+### Connect Jira Data Center
+
+GitLens Pro can also connect a self-hosted Jira (Jira Data Center or Jira Server) through your GitKraken Account. Select **Connect** on the **Jira Data Center** card in **Cloud Integrations** and follow the prompts. Each Jira host is its own connection, and instances served under a context path, such as `https://jira.example.com/jira`, are supported.
+
+For now, a connected Jira Data Center instance is used only to show the issues associated with a branch. It doesn't create autolinks, and Start Work and the Commit Graph's issue tracker picker don't list it yet.
 
 ---
 
@@ -3187,12 +3240,12 @@ These features make it easier to navigate your repository, understand changes, a
 
 ---
 
-## AI Agents in GitLens
+## AI Agents in Gitlens
 
 URL: https://help.gitkraken.com/gitlens/gl-agents/
-Description: Using AI Agents in GitLens — integrated agent workflows, status pills, sessions panel, and Claude Code hooks
+Description: Using AI Agents in Gitlens
 
-Last updated: May 2026
+Last updated: September 2026
 
 ## Using AI Agents in GitLens
 
@@ -3207,7 +3260,7 @@ With GitLens, you can:
 - Quickly identify sessions waiting for input
 - Manage parallel worktrees and Working Changes visually
 
-GitLens 18 currently supports Claude Code integrations through GitLens-managed hooks.
+GitLens tracks sessions from Claude Code, Codex, GitHub Copilot CLI, and OpenCode through GitKraken Hooks.
 
 ---
 
@@ -3234,33 +3287,38 @@ Each session displays contextual Git information including:
 
 ---
 
-## Install Claude Code Hooks
+## Install GitKraken Hooks
 
-GitLens integrates with Claude Code using hooks that provide real-time session visibility.
+GitLens tracks agent sessions using GitKraken Hooks, which give GitLens real-time visibility into each session. Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode.
 
 You can install hooks from several locations in GitLens:
 
 - Commit Graph header
 - Agent Sessions sidebar banner
 - Integrations menu
+- The Command Palette
+- The **Agents** section of the GitLens settings, which lists each detected agent with its hooks status
 
 ### Install Hooks
 
-1. Open the GitLens Commit Graph.
-2. Select the Claude Code integration prompt.
-3. Follow the setup instructions.
-4. Reload VS Code or your IDE if prompted.
+1. Open the Command Palette.
+2. Run `GitLens: Install GitKraken Hooks for All AI Agents`.
+3. Reload VS Code or your IDE if prompted.
 
-Once installed, GitLens automatically detects Claude Code sessions and surfaces their state throughout the UI.
+GitLens installs hooks for every supported agent it detects on your machine. To install hooks for a single agent, select **Manage Agents** in the Agent Sessions panel toolbar, then use the install button in that agent's **Hooks** column.
+
+Once installed, GitLens automatically detects sessions from those agents and surfaces their state throughout the UI.
+
+Codex doesn't run the installed hooks until you trust them. Run `/hooks` in Codex to trust the hooks, and trust them again after you reinstall them. GitLens shows this reminder when the install finishes, with a **Start Codex Session** button.
+
+GitLens can answer permission requests directly only for Claude Code sessions. For other agents, GitLens shows the pending request, and you answer it in the agent's session.
 
 ### Uninstall Hooks
 
 1. Open the Command Palette.
-2. Run:
+2. Run `GitLens: Uninstall GitKraken Hooks for All AI Agents`.
 
-```text
-GitLens: Uninstall Claude Code Hooks
-```
+To uninstall hooks for a single agent, use the uninstall button in that agent's **Hooks** column in the **Agents** settings.
 
 ---
 
@@ -3280,15 +3338,32 @@ The agent requires your input before continuing. Waiting sessions display attent
 
 The session is connected but not currently performing actions.
 
-### Completed
+### Past
 
-The agent finished its current task. Changes are ready for inspection or review.
+The session has ended. Past sessions stay listed, dimmed, until you archive them or until they are removed after 30 days. To list past sessions in the Agent Sessions panel, turn on **Show Past Sessions** in the panel toolbar.
+
+### Resume a Past Session
+
+You can resume a past session from any supported agent: Claude Code, Codex, GitHub Copilot CLI, or OpenCode. Resume actions appear on the session's status pill, its card in the details panel, its session sheet, its Kanban card, and its row in the Agent Sessions panel. Each action names where the session resumes:
+
+- **Resume in Terminal** opens a new integrated terminal in the session's directory and runs the agent's resume command.
+- **Resume in Claude Code Extension** reopens the session in the Claude Code extension. This action appears only when the extension is installed and the session's directory is open as a workspace folder.
+
+To choose from a list of sessions, right-click a Working Changes row in the Commit Graph, or a worktree in a side bar view, and select **Resume Agent Session...**. The **Resume Agent Session** quick pick lists that worktree's sessions under **Active** and **Past**. Select a session's destination button to resume it there.
+
+If you select a session without choosing a destination, the `gitlens.agents.resumeTarget` setting decides where it resumes:
+
+- **Not set** (default): GitLens asks where to resume the first time a session can open in either place. Select the pin button in that prompt to remember your choice.
+- `terminal`: Always resume in a new integrated terminal.
+- `extension`: Resume in the agent's VS Code extension when it can open the session, otherwise in a terminal.
+
+A past session's sheet in the Commit Graph details panel shows a **Resume** button and an **Archive** action in its header.
 
 ---
 
 ## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar. The panel provides a centralized place to monitor all active sessions.
+GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar, where it appears as **Agents**. The panel provides a centralized place to monitor all active sessions.
 
 ### Panel Features
 
@@ -3296,13 +3371,37 @@ The panel includes:
 
 - Session status pills
 - Branch and worktree associations
-- Quick actions
+- Quick actions to open, resume, and archive sessions
+- Past sessions, shown when **Show Past Sessions** is on
 - List and tree layouts
 - Session grouping by workspace or worktree
 
 ### Switch Between List and Tree Layouts
 
 Use the layout toggle in the Agent Sessions panel toolbar to switch between list and tree layouts. Tree layout is especially useful when working across multiple repositories or worktrees.
+
+### Act on a Session from Its Context Menu
+
+Right-click a session in the Agent Sessions panel or in the Commit Graph details panel to act on it without opening the agent. The menu shows only the actions that apply to that session:
+
+- **Allow**, **Always Allow**, and **Deny** answer a pending permission request.
+- **Approve Plan**, **Reject Plan**, and **View Plan** handle a plan the agent proposed.
+- **Open Session** opens a live session. For a past session, **Resume in Terminal** or **Resume in Claude Code Extension** resumes it.
+- **Open in Integrated Terminal**, **Open Worktree**, and **Open Worktree in New Window** open the session's worktree.
+- **Copy Last Prompt** and **Copy Session ID** copy session details to the clipboard.
+- **Archive Session** removes a past session from the list.
+
+### Open a Session Sheet
+
+Select a session card in the Agents section of the Commit Graph details panel to open that session's sheet in the details panel. The sheet gathers what you need to follow or pick up a session:
+
+- The session's status, agent, and the worktree and branch it runs in
+- Actions for the session's current state, such as **Open Session**, **Allow** and **Deny** for a pending request, or **Resume** and **Archive** for a past session
+- What the agent is doing now, and **File Activity** listing the files it read and edited
+- The **Last prompt** and **First prompt**
+- **Also worked in**, which lists other worktrees the session visited
+
+Use the previous and next arrows in the sheet to move between agent sessions.
 
 ---
 
@@ -3326,6 +3425,16 @@ From the Commit Graph details panel you can:
 3. Toggle the details panel if it is hidden.
 
 The panel can be docked on the right side or at the bottom of the Commit Graph. Hold `Alt` while toggling the panel to switch docking locations.
+
+### Jump from a Terminal to Its Worktree
+
+When an agent runs in a terminal or a Claude Code conversation tab, you can go straight to the worktree it works in. Right-click the terminal tab, or the title of a terminal editor or Claude Code tab, and select one of these actions:
+
+- **Open in Commit Graph** opens the Commit Graph with that worktree's Working Changes row selected.
+- **Focus in Commit Graph** also focuses the Commit Graph on the worktree's branch.
+- **Open in New Window** opens the worktree folder in a new window.
+
+GitLens resolves the worktree from the agent session running in the terminal, or otherwise from the terminal's current folder. For a Claude Code tab, GitLens matches the tab to its agent session.
 
 ---
 
@@ -3388,7 +3497,25 @@ This makes it easier to:
 - Resolve conflicts
 - Compose commits from multiple worktrees
 
-Each Working Changes row updates live as files change.
+Each Working Changes row updates live as files change. The row shows its branch in an inline branch pill. Rows for other worktrees also carry a worktree row marker, and a row with a paused operation shows that state, such as **Rebasing**.
+
+### Start an Agent Session in a Worktree
+
+Right-click a Working Changes row in the Commit Graph, or a worktree in a side bar view, to launch an agent in that worktree:
+
+- **Start Agent Session...** starts your default agent. If no default agent is set, GitLens asks you to choose one.
+- **Start Agent Session With...** always asks which agent to start.
+- **Resume Agent Session...** lists the worktree's sessions so you can [resume one](#resume-a-past-session).
+
+A CLI agent starts in a new terminal at the worktree. The `gitlens.openInTerminalLocation` setting controls whether that terminal opens in the terminal panel or as an editor tab. A chat or extension agent receives a prompt to work in the worktree.
+
+### Follow the Active Terminal
+
+When the Commit Graph is visible, it follows your active terminal or Claude Code conversation tab and selects the Working Changes row of the worktree that terminal is in. If an agent session runs in the terminal, the Commit Graph selects that session's worktree. Following never opens the Commit Graph for you, and a tip appears the first time it moves the selection.
+
+To stop following, select **Stop Following Active Terminal** from the Commit Graph's overflow menu, or set `gitlens.graph.followTerminal.enabled` to `false`. Select **Follow Active Terminal** to turn it back on.
+
+By default, the Commit Graph ignores terminals in other repositories. Set `gitlens.graph.followTerminal.allowRepositorySwitching` to `true` to let it switch repositories.
 
 ### Use Working Changes Scroll Markers
 
@@ -3398,20 +3525,24 @@ The Commit Graph minimap includes scroll markers that highlight Working Changes 
 
 ## Use Focus Branch Mode
 
-Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph scopes itself to the branch you select.
+Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph focuses on the branch you select.
 
 ### Enable Focus Branch Mode
 
 1. Open the Commit Graph.
-2. Open the scope menu in the Commit Graph header.
-3. Select a branch to focus.
+2. Open the branch visibility menu in the Commit Graph header.
+3. Select **Focus Branch**, then select a branch to focus.
+
+You can also right-click a branch and select **Focus on Branch**.
 
 While focused:
 
 - The Commit Graph follows the branch's first-parent history
 - The minimap zooms to the relevant commit range
 - Simplify Merge History applies automatically
-- Visual indicators show that the Commit Graph is scoped
+- The branch visibility menu shows the focused branch, with the tooltip "Showing *branch* Only"
+
+Focusing a branch is separate from scoping the Commit Graph to a worktree with **Scope to Worktree**.
 
 ---
 
@@ -3452,6 +3583,22 @@ Open in New Window
 
 ---
 
+## Start Tasks and Reviews in Kepler
+
+Kepler is GitKraken's agentic development environment, a desktop app that runs AI agents across a task, from an issue or pull request to a merged change. If you use Kepler, GitLens can hand an issue, a pull request, or a repository to Kepler's task composer, so you set up and run the work there instead of in VS Code. Kepler creates its own worktree for the task, so GitLens doesn't create a branch or worktree.
+
+You can start a Kepler task from these places:
+
+- **Start Task in Kepler**: Right-click a repository in the **Repositories** view.
+- **Start Review in Kepler**: Right-click a pull request in a GitLens view, in the Launchpad view, or in the Commit Graph.
+- **Open in Kepler**: Choose this option in the first step of **Start Work** or **Start PR Review**, above **Open in an agent** and **Continue manually**. To skip that step and always use Kepler, set `gitlens.ai.openInAgent` to `kepler`.
+
+Starting a Kepler task from a repository
+
+GitLens offers Kepler only for providers that Kepler supports: GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, and Bitbucket for pull requests, and the same providers except Bitbucket, plus Jira, Linear, and Trello, for issues. Kepler options don't appear in VS Code for the Web. If Kepler isn't installed, GitLens shows a message with a **Get Kepler** button. When GitLens detects Kepler on your computer, the Kepler step in the Welcome view counts as complete.
+
+---
+
 ## Related Features
 
 GitLens agent workflows work especially well alongside:
@@ -3481,14 +3628,13 @@ Last updated: September 2026
 Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
 
 The Commit Graph brings those streams together in one development workbench. See what’s changing, understand where work is happening, identify what needs your attention, and move work forward without jumping between branches, terminal sessions, and disconnected views.
-
 GitLens Commit Graph
 
 ## 1. See All Active Work
 Start in the Commit Graph to get a connected view of your repository and the work happening across it.
 See branches, worktrees, working changes, commits, HEAD, upstream, merge targets, and ahead and behind status together, giving you the context to understand how each stream of work relates to the rest of your repository.
 
-Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree.
+Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree. Each worktree's **Working Changes** row shows the worktree's branch as a pill inside the row; select the pill to jump to that branch. A **Worktree** marker beside the row names the worktree it belongs to. When a rebase, merge, or similar operation is paused in a worktree, its row shows that state, such as the number of conflicts left to resolve.
 
 ## 2. Monitor Agent Work
 When coding agents are working in parallel, GitLens keeps supported agent activity connected to the branches and worktrees where that work is happening.
@@ -3499,9 +3645,34 @@ From the Commit Graph, you can:
 - See which sessions are working, idle, or need attention
 - Understand which branch and worktree an agent is working in
 - Jump into the work associated with an agent session
-- Resume active or previous sessions with the surrounding Git context intact
+- Open live sessions, and resume past sessions with the surrounding Git context intact
 
 Instead of tracking agent work across separate terminal sessions, you can see where the work lives and when it needs you.
+
+### View an Agent Session's Details
+Select a session card in the **Agents** section of the Working Changes details panel to open that session's details sheet. The sheet includes:
+
+- The session's status, such as how long it has been working, waiting for your input, or idle
+- Pending requests you can answer in place with **Allow**, **Always Allow**, or **Deny**, or with **Approve Plan** or **Reject Plan** for a plan
+- **File Activity**, which lists the files the agent read and edited
+- The session's **Last prompt** and **First prompt**
+- **Also worked in**, which lists other worktrees the session worked in
+
+Use the **Previous Agent Session** and **Next Agent Session** buttons to move between sessions without closing the sheet. A live session offers **Open Session**. An ended session offers **Resume** and, when the agent supports it, **Archive**.
+
+### Resume Past Sessions
+When an agent session ends, GitLens lists it as **Past**. In the **Agents** section, past sessions appear after the live ones; select **Show More** to load older sessions. In the Agent Sessions sidebar panel, select **Show Past Sessions** to include them. Select **Archive Session** on a past session to remove it from these lists.
+
+You can resume past sessions from Claude Code, Codex, OpenCode, and GitHub Copilot CLI. Each resume action names where the session opens:
+
+- **Resume in Terminal** opens a new integrated terminal in the session's folder and resumes the session there.
+- **Resume in Claude Code Extension** opens the session in the Claude Code extension. This action appears only for Claude Code sessions, when the extension is installed and the session's folder is open in your workspace.
+
+If both destinations are available and you resume without choosing one, for example by pressing Enter in the **Resume Agent Session** list, GitLens asks where to resume and lets you pin your choice. The pinned choice is stored in the `gitlens.agents.resumeTarget` setting:
+
+- Not set (default): Ask each time, with an option to remember the choice.
+- `terminal`: Always resume in a new integrated terminal.
+- `extension`: Resume in the agent's VS Code extension when it can open the session, otherwise in a terminal.
 
 ## 3. Understand Changes Across Worktrees
 Worktrees let developers and agents work on multiple branches from the same repository without constantly switching branches or stashing changes.
@@ -3509,6 +3680,26 @@ Worktrees let developers and agents work on multiple branches from the same repo
 GitLens brings work in progress across those worktrees into the Commit Graph, giving you visibility into parallel development from one place.
 
 Use Multi-WIP to see working changes across multiple worktrees, understand which branches have active work, and move between parallel streams without losing sight of the bigger picture.
+
+### Scope the Graph to a Worktree
+Scope the Commit Graph to another worktree to act in that worktree without switching windows. While the graph is scoped, it treats that worktree as the one you have open: you see its branch and its working changes, and anything you commit, push, or pull from the graph happens in that worktree. To scope the graph, do one of the following:
+
+- In the **Worktrees** panel of the Commit Graph sidebar, select **Scope to Worktree** on the worktree's row. Hold Alt (⌥ on macOS) while selecting it to use **Focus on Branch** instead.
+- Right-click the worktree's Working Changes row, or its row in the **Worktrees** panel, and select **Scope to Worktree**.
+- Double-click the worktree's Working Changes row or its pill in the overview bar.
+
+While the graph is scoped, the worktree's row in the **Worktrees** panel shows **Scoped**, and the branch pill in the graph header is marked in yellow. To return to your active worktree, select **Unscope Worktree** in the graph header.
+
+These settings control scoping and the overview bar:
+
+- `gitlens.graph.scopeBehavior`: `scopeAndFocus` (default) also focuses the worktree's branch, narrowing the visible rows. `scope` leaves every commit visible.
+- `gitlens.graph.doubleClickWorktreeAction`: `scope` (default) scopes the graph when you double-click a worktree. `focus` toggles branch focus instead.
+- `gitlens.graph.overviewBar.visibility`: `dirtyWorktrees` (default) shows the overview bar when another worktree has working changes or unpushed commits. `worktrees` shows it when the repository has more than one worktree, `always` always shows it, and `never` hides it.
+
+### Run Tasks in a Worktree
+Each Working Changes row has a **Run Default Task** button that runs a VS Code task in that row's worktree. The first time you select it, choose the task to use as the default; after that, the button runs the default task directly. Hold Alt (⌥ on macOS) while selecting the button to choose a different task. While a task runs, the button's tooltip reads **Running:** followed by the task name, and selecting the button shows the running task instead of starting another.
+
+You can also right-click a worktree's Working Changes row, or a worktree in the **Worktrees** view, and select **Run Task on Worktree...**. In the task list, select the checkmark next to a task to set or unset it as the default.
 
 ## 4. Review Work as It Happens
 You don’t have to wait until parallel work becomes a pull request to understand what changed.
@@ -3553,6 +3744,19 @@ The Commit Graph brings those final workflows together in one workbench. Underst
 Start in the Commit Graph to understand your branch in the context of the repository around it.
 
 See HEAD, upstream, merge target, incoming work, and ahead and behind status together so you can quickly understand what has changed and what needs attention before moving forward.
+
+When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
+
+- **Publish**, when the branch doesn't have an upstream yet
+- **Publish Repository** or **Add Remote**, when the repository has no remotes yet
+- **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
+- **Pull** or **Force Push**, when the branch has diverged from its upstream
+- **Create PR** when a published branch has no open pull request, or **View** when it has one
+- **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it. Checking for likely conflicts requires a GitLens Pro trial or paid plan; the ahead and behind counts are available to everyone
+- **Delete Branch** or **Delete Worktree**, when the branch has been merged into its merge target
+- **Review** and **Recompose**, to review the branch's changes or recompose its commits
+
+A diverged branch shows a step that reads **Diverged from** its remote, followed by how many commits the branch is behind and ahead. **Pull** is the main action for this step. If you want to replace the remote branch with your local commits instead, for example after a rebase, select **Force Push**, the secondary action on the same split button.
 
 ## 2. Compare Before You Merge
 Before making changes to your branch history, use Compare to understand exactly how your work differs from its target.
@@ -3612,7 +3816,7 @@ Know where your branch stands. Clean up the work. Bring it up to date. Resolve c
 URL: https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/
 Description: Code Change to Merged branches all through GitLens
 
-Last updated: August 2026
+Last updated: September 2026
 
 Coding agents can produce changes quickly, but generated code still needs to be understood, organized, and prepared before it is ready to merge.
 
@@ -3622,6 +3826,8 @@ GitLens keeps that workflow connected inside the Commit Graph. Review what your 
 Open the agent’s working changes from the Commit Graph to understand what was modified and how that work relates to the branch and repository around it.
 
 Keeping the agent session, worktree, and changes connected makes it easier to understand the work before deciding what happens next.
+
+If the agent's session has already ended, it stays listed as a Past session, so you can pick up where the agent left off. Resume a past session from Claude Code, Codex, GitHub Copilot CLI, or OpenCode with **Resume in Terminal**, or, for Claude Code, with **Resume in Claude Code Extension**. To choose from the worktree's sessions, right-click its Working Changes row and select **Resume Agent Session...**. For details, see [Resume a Past Session](/gitlens/gl-agents/#resume-a-past-session).
 
 ## 2. Review the Work While It’s Fresh
 
@@ -3687,9 +3893,9 @@ Instead of treating agent output as finished code, GitLens gives you a workflow 
 ## GitLens Release Notes
 
 URL: https://help.gitkraken.com/gitlens/gitlens-release-notes-current/
-Description: GitLens Release Notes (Current — v19.x and v18.x)
+Description: GitLens Release Notes
 
-Last updated: September 2026
+Last updated: October 2026
 
 Find out what's new, what's fixed, or just take a trip down memory lane remembering those bugs of yesterday.
 
@@ -3699,6 +3905,205 @@ Install Current Version Now
 
 Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+
+---
+
+## Version 19.4
+
+#### Thursday, October 15, 2026
+
+As of GitLens 19.4, the _Commit Graph_ no longer requires an account on public and local repositories. Install GitLens, open the graph, and it's all there, with no sign-in prompts.
+
+In 19.0, we made the _Commit Graph_ the home of GitLens and built in new capabilities to help you stay in control of your development workflows. Along with that change, we started requiring a GitKraken account to use it, even on public and local repositories. That got in the way of the very thing we were trying to put front and center, so we've taken it out. Thank you to everyone who told us in issues, discussions, and reviews.
+
+On privately hosted repositories, the _Commit Graph_ is still part of GitLens Pro, but you can try it first. The first time you open it on a private repository, a 3-day preview starts on its own, with no account needed.
+
+If you haven't explored the new _Commit Graph_, now's a good time to come back and explore how GitLens and the _Commit Graph_ can supercharge your Git workflow.
+
+Beyond the graph, _Start Work_ can now name branches the way your team does, with a format built from the issue's ID and title and a live preview in _GitLens Settings_. A brand new repository can also go from your machine to a host without leaving the graph: when there are no remotes, the graph offers _Publish Repository_, with _Add Remote_ beside it. The rest of the release tightens safety and correctness. A pull you started can no longer be undercut by the graph's auto-fetch, worktree deletes warn you when GitLens can't check for changes, and _Start Work_ and _Launchpad_ now read from every self-managed host you've connected instead of just one.
+
+### The Commit Graph, No Account Required
+
+**Previewing on private repositories** &mdash; while the preview runs, a notice above the graph shows how much time is left, offers _Sign In_, and reminds you that public and local repositories stay free. The sign-in screen only appears once the preview ends, and if your workspace also has public or local repositories, it offers to switch to one of them. The preview used to be three separate one-day sessions, each started by hand with _Continue Preview_. It's now one continuous 3-day window, so you can use the graph over a few working days without having to restart it.
+
+**Signed-out states that make sense** &mdash; the account panel in _GitLens Settings_ now shows a sign-in card and a _Sign in to use GitKraken AI_ line instead of blank cards, and its footer offers _Sign in_ instead of a _Manage subscription_ link. _Start Work_ and _Start Review_ now ask you to sign in up front, instead of signing you in silently when you connect an integration.
+
+### Name Your Start Work Branches
+
+_Start Work_ creates a branch for the issue you pick, and until now you got whatever name it chose. The new `gitlens.startWork.branchNameFormat` setting lets you decide. Use `${id}` for the issue ID and `${title}` for a lowercase, slugged version of its title, so `feature/${id}-${title}` or `${id}` alone both work. The default is `${id}-${title}`.
+
+You'll find it under _Integrations > Start Work_ in _GitLens Settings_, with an editor that shows a live preview of the branch name as you type. Characters Git doesn't allow in branch names are normalized for you, `/` keeps your branch hierarchy, and you can still edit the suggested name before the branch is created.
+
+### Publish a Repository from the Commit Graph
+
+Run `git init`, commit some work, and the graph used to offer _Publish Branch_, which could only fail because there was nowhere to publish to. Now, when a repository has no remotes, the graph header, _Working Changes_ panel, overview, and branch details offer **_Publish Repository_**. It uses VS Code's publish flow to create the hosted repository and push your work in one step.
+
+The _Git Command Palette_'s _Push_ offers the same option when there are no remotes. If your host isn't one VS Code can publish to, **_Add Remote_** appears beside _Publish Repository_ in the push wizard and in the _Working Changes_ next steps. _Fetch_ is hidden until the repository has a remote to fetch from.
+
+### Everyday Improvements
+
+- If you've connected more than one host for the same self-managed provider, _Start Work_ and _Launchpad_ now read from all of them instead of only one. _Launchpad_ also keeps pins, snoozes, and selections separate between hosts, even when their pull requests share an ID.
+- Self-managed integrations, including Azure DevOps Server behind a virtual directory, now keep the installation path in their API requests. Azure DevOps names and branches with spaces or reserved characters are encoded correctly.
+- A new `gitlens.views.searchAndCompare.files.openDiffOnClick` setting chooses whether clicking a file in the _Search & Compare_ view opens its changes or the working file. Thanks to Steven Vaught ([@Svaught598](https://github.com/Svaught598)) and Ehab Younes ([@EhabY](https://github.com/EhabY)) for their contributions.
+- The _Commit Graph_'s auto-fetch no longer replaces `FETCH_HEAD` while a `git pull` you started is between its fetch and its merge, which could have made the pull merge the wrong changes.
+- Force-deleting a worktree now asks first when GitLens couldn't check it for uncommitted changes. GitLens also no longer treats a failed check for changes as "no changes" in _Auto-Rebase_, patch apply, and _Copy Changes_.
+- Opening a renamed or added file from a comparison or a commit's file list now uses the file's path at that revision, and the _Ahead_ files node no longer shows a rename as an added file.
+- Cloning a large repository from a GitLens link no longer fails when it runs past the Git timeout. The clone runs as long as it needs, and you can cancel it from its progress notification.
+- Choosing _Open in an agent_ from _Start Work_, _Start Review_, or _Launchpad_ no longer freezes when agent detection stalls. The picker opens right away while agents load.
+- _Start Work_ and _Launchpad_ now say when GitHub's API rate limit is reached and when to try again, instead of showing a raw `GraphqlResponseError`.
+- Repositories with no commits yet now show their staged and modified files, and diffs against the first commit work in SHA-256 repositories.
+
+---
+
+### Added
+
+- Adds _Publish Repository_ to the _Commit Graph_ for a repository with no remotes &mdash; the header, _Working Changes_ panel, overview, and branch details now offer to create a hosted repository (through VS Code's publish flow) instead of a _Publish Branch_ that could only report "No remotes found"; the _Git Command Palette_'s _Push_ offers the same escape when there are no remotes
+  - Offers _Add Remote…_ beside _Publish Repository…_ in the push wizard and the _Working Changes_ next steps, for hosts VS Code can't publish to, and hides _Fetch_ while the repository has no remotes
+- Adds configurable branch names for _Start Work_ with `gitlens.startWork.branchNameFormat`, using `${id}` and `${title}` tokens, plus a format editor and live preview in GitLens Settings ([#5925](https://github.com/gitkraken/vscode-gitlens/issues/5925))
+- Adds connecting a self-hosted _Jira Data Center_ (or Jira Server) instance from the integrations in _GitLens Settings_ ([#5864](https://github.com/gitkraken/vscode-gitlens/issues/5864)) &mdash; it connects through your GitKraken account like the other self-hosted integrations, with each configured host as its own connection. For now, a connected instance is used only to show the issues associated with a branch; _Start Work_, autolinks, and the _Commit Graph_'s issue tracker picker don't support it yet
+  - The _Commit Graph_'s check for whether any issue integration is connected now looks at every configured host of a self-hosted tracker, so disconnecting one host no longer turns off issue enrichment while another is still connected
+  - Reads a branch's associated _Jira Data Center_ issues from the instance the association names, never from another configured host that happens to be primary ([#5872](https://github.com/gitkraken/vscode-gitlens/issues/5872))
+- Adds a `gitlens.views.searchAndCompare.files.openDiffOnClick` setting to specify whether to open the changes or the working file when clicking a file in the _Search & Compare_ view ([#1651](https://github.com/gitkraken/vscode-gitlens/issues/1651)) &mdash; thanks to [PR #2845](https://github.com/gitkraken/vscode-gitlens/pull/2845) by Steven Vaught ([@Svaught598](https://github.com/Svaught598)) and [PR #3583](https://github.com/gitkraken/vscode-gitlens/pull/3583) by Ehab Younes ([@EhabY](https://github.com/EhabY))
+
+### Changed
+
+- Changes the _Commit Graph_ to no longer require an account on public and local repos &mdash; signed-out users get the full graph with no prompts
+  - On privately hosted repos, a preview starts automatically on first open, with a persistent notice above the graph showing the time left, a _Sign In_ action, and a reminder that public and local repos stay free; the sign-in screen now appears only after the preview ends (or for unverified accounts)
+  - _Start Work_ and _Start Review_ now ask you to sign in up front instead of implicitly signing you in when connecting an integration
+  - Account surfaces get real signed-out states &mdash; the _GitLens Settings_ account panel shows a sign-in card and a _Sign in to use GitKraken AI_ line instead of blank cards, and its footer offers _Sign in_ instead of a _Manage subscription_ link that opened gk.dev signed out
+  - The merge-target status chip's potential-conflicts check now requires a trial or Pro subscription, like every other conflict check; ahead/behind counts and merged status stay available to everyone
+- Changes the _Commit Graph_ preview for privately hosted repos to one continuous 3-day window &mdash; previously three separate one-day sessions, each started manually with _Continue Preview_
+- Renames the `gitlens.views.publishRepository` command to `gitlens.publishRepository:views`; the old id still works but is deprecated
+
+### Fixed
+
+- Fixes Pro feature gates and account surfaces still offering _Reactivate Pro Trial_ after the server refused the reactivation &mdash; once refused, they show the _Upgrade to Pro_ messaging instead ([#5987](https://github.com/gitkraken/vscode-gitlens/issues/5987))
+- Fixes _Push_ from the _Git Command Palette_ on a branch with no upstream showing a plain push confirmation (which then failed) instead of the publish step
+- Fixes pressing Space on a _Git Command Palette_ confirmation step breaking the command &mdash; e.g. _Delete Worktree_ would stop responding and never delete the worktree
+- Fixes force-deleting a worktree skipping the uncommitted-changes warning when GitLens couldn't check the worktree for changes &mdash; it now asks before deleting a worktree it couldn't check
+- Fixes a repository or worktree with no commits yet showing no changes when it has staged or modified files
+- Fixes features treating a failed check for changes as "no changes": _Auto-Rebase_ could report a commit as skipped for being empty, applying a patch could skip offering to stash your changes, and _Copy Changes_ could leave out untracked files without saying so
+- Fixes diffs against a repository's first commit failing in a SHA-256 repository, including a stash's untracked files and, for a range starting at the first commit, the _Commit Graph_'s scope file list and _Compose_
+- Fixes cloning a large repository from a GitLens link failing once it runs past the Git timeout (`gitlens.advanced.git.timeout`) &mdash; the clone now runs as long as it needs, and its progress notification can cancel it
+- Fixes branch-associated issues from self-managed Git hosts resolving through the wrong server when an older association has no host. These associations remain usable with a single configured host, and new Bitbucket Server issue associations retain their host ([#5883](https://github.com/gitkraken/vscode-gitlens/issues/5883))
+- Fixes Azure DevOps requests escaping the configured installation path with specially encoded remote names, and preserves names and branches containing spaces or reserved characters ([#5878](https://github.com/gitkraken/vscode-gitlens/issues/5878))
+- Fixes self-managed integrations dropping the installation path from API requests, including Azure DevOps Server virtual directories, while keeping existing connections usable ([#5871](https://github.com/gitkraken/vscode-gitlens/issues/5871))
+- Fixes _Start Work_ and _Launchpad_ reads covering only one host per supported self-managed provider ([#5873](https://github.com/gitkraken/vscode-gitlens/issues/5873)) &mdash; connected hosts are read independently, with open repository scopes kept on their matching host
+- Fixes _Launchpad_ mixing pins, snoozes, selections, and tree items between self-managed hosts whose pull requests share an identifier ([#5873](https://github.com/gitkraken/vscode-gitlens/issues/5873))
+- Fixes _Start Work_ and _Launchpad_ showing a raw `GraphqlResponseError` when GitHub's API rate limit is exhausted &mdash; they now report that the rate limit was reached and when to try again
+- Fixes the GitKraken MCP server staying in VS Code's _Configure Tools_ after turning off `gitlens.gitkraken.mcp.autoEnabled` or AI features ([#5961](https://github.com/gitkraken/vscode-gitlens/issues/5961))
+- Fixes _Start Work_, _Start Review_, and _Launchpad_ freezing after choosing _Open in an agent_ when agent detection stalls &mdash; the agent picker now opens right away while agents load, and agent detection gives up after 10 seconds instead of hanging, still offering the editor's chat and the _Claude Code_ extension
+- Fixes opening a renamed or added file from a comparison or a commit's file list &mdash; _Open File at Revision_, _Open File_, and file history now use the file's path at that revision, and the _Ahead_ files node no longer shows a rename as an added file ([#5975](https://github.com/gitkraken/vscode-gitlens/issues/5975))
+- Fixes the _Commit Graph_'s auto-fetch replacing `FETCH_HEAD` while a `git pull` you started is between its fetch and merge, which could make the pull merge the wrong changes
+
+---
+
+## Version 19.3
+
+#### Thursday, October 1, 2026
+
+GitLens 19.3 connects to Kepler, GitKraken's Agentic Development Environment (ADE). You can start a task on a repository, or a review of a pull request, in Kepler from the GitLens views, _Launchpad_, and the _Commit Graph_. Kepler opens with the repository or pull request ready to go. _Start Work_ and _Start PR Review_ can also send an issue or pull request to Kepler, and if Kepler isn't installed yet, GitLens offers to get it for you.
+
+You can now rebase all of your stacked pull requests in one action. _Rebase Stack..._ replays each layer onto the one below it, from the bottom up, so none get skipped. _Auto-Rebase Stack..._ does the same with AI resolving conflicts the whole way, and pauses for your help instead of unwinding. When the cascade is done, _Force Push Stack_ publishes every rewritten branch, and you can hold back any of them.
+
+Getting started takes fewer detours. With no repository open, the _Commit Graph_ now offers ways to begin: open a folder, clone a repository, or start a new project. _Start Work_ and _Start PR Review_ also work without a repository. They list your issues and pull requests across your connected integrations, then find the repository locally or clone it for you. When a sign-in or upgrade screen interrupts you, it now names the commit, branch, or comparison you were opening, and opens it for you once you have access.
+
+The rest of the release is polish and fixes. GitLens section headers match VS Code's Modern UI. _Hide Remote-only Branches_ in the graph now hides only what it says it does. A set of Azure DevOps link problems are fixed, and autolinked pull requests and issues no longer disappear after a single failed lookup.
+
+### Start Tasks and Reviews in Kepler
+
+Kepler is GitKraken's Agentic Development Environment (ADE), and GitLens can now hand work to it from wherever you are.
+
+**_Start Task in Kepler_** is available on repositories, and **_Start Review in Kepler_** is available on pull requests. Both appear in GitLens views, _Launchpad_, and the _Commit Graph_. Each one opens Kepler with the repository or pull request already loaded, so you can start working without setting anything up first.
+
+**Kepler in _Start Work_ and _Start PR Review_** &mdash; for items Kepler supports, both flows now offer _Open in Kepler_ alongside opening in an agent or continuing manually. If Kepler is always where you want to go, set `gitlens.ai.openInAgent` to `kepler` and both flows will go straight there.
+
+If Kepler isn't installed, GitLens offers to get it for you. Once it's installed, the _Try Kepler_ banner stops appearing.
+
+### Rebase Stacked Pull Requests
+
+Keeping stacked pull requests current used to mean rebasing them one branch at a time, in the right order, without missing one. **_Rebase Stack..._** now does the whole chain in one go. It replays each layer onto the one below it and the bottom layer onto the stack's trunk. If you haven't checked out a layer, it creates a local branch for it so the cascade stays unbroken. Every message tells you where you are (_Branch 2 of 4_), and when it finishes you're back on the branch you started from.
+
+**_Auto-Rebase Stack..._** hands conflicts to AI the whole way up. When it needs your help it pauses instead of unwinding. Once you've resolved the conflict, _Continue with Auto-Rebase_ carries on through the rest of the stack, not just the branch you fixed.
+
+**Publishing the result** &mdash; when the rebase completes, GitLens offers _Force Push Stack_ with every rewritten branch pre-checked, so you can uncheck any you want to hold back. The offer also appears on the _Auto-Rebase Summary_ and as the _Git Force Push Stacked Pull Requests..._ command, so dismissing the notification doesn't lose it. It goes away on its own once every branch is published.
+
+Stack rebasing is only offered when the stack has drifted from its trunk, either by falling behind or by conflicting with it, so a stack that's already current won't prompt you. You'll find it on the _Commit Graph_'s pull request sheet and side bar stack rows, in _Launchpad_, in the rebase quick pick, and as the _Git Rebase Stacked Pull Requests..._ and _Auto-Rebase Stacked Pull Requests..._ commands.
+
+### Start From Anywhere
+
+**A no-repository state that helps you begin** &mdash; when no repository is open, the _Commit Graph_'s empty state now offers grouped ways to start: open a folder, clone a repository, or start a new project by opening a remote repository on the web. _Start Work on an Issue_ and _Start Review on a PR_ sit alongside them.
+
+**_Start Work_ and _Start PR Review_ without a repository** &mdash; both now list your issues and pull requests across all your connected integrations, even with nothing open. Once you pick one, GitLens offers to locate the repository in a local folder, or to clone it when the integration provides a repository URL (every pull request, and GitHub issues). When an integration can't search issues across your whole account, _Start Work_ now says so. Bitbucket, for example, has no account-wide issue search, so instead of quietly contributing nothing to the list, it tells you and points you to open a repository.
+
+**Hand it to an agent, or don't** &mdash; _Start Work_ and _Start PR Review_ now follow the `gitlens.ai.openInAgent` setting. After you pick an issue or pull request, they ask whether to open it in an agent (or in Kepler, as described above) or continue yourself, unless you've already set a default. The agent pickers also remember your choice with a single _Always use this choice_ / _Always use this agent_ option, instead of a checkbox on every row.
+
+### Sign-in Screens That Remember What You Were Doing
+
+Opening something in the _Commit Graph_ while signed out, or before upgrading, used to land you on a generic screen and forget what you'd asked for. Now the sign-in and upgrade screens name the task that was interrupted, whether that's a commit, branch, tag, or stash, a file or folder's history, a comparison, your working changes, a branch focus, or an automatic rebase summary. Once you have access, it opens in the graph.
+
+That includes Ctrl-clicking a commit hash in the terminal: instead of an unexplained sign-in screen, you see which commit you clicked, and GitLens holds it until you're signed in. Comparisons and file or folder histories opened this way are no longer discarded, and if a second task arrives while the screen is open, the screen updates to describe it.
+
+### Everyday Improvements
+
+- Section headers in GitLens views, such as _Files Changed_ in _Inspect_ and the _Commit Graph_'s side bar panels, now match VS Code's Modern UI headers when Modern UI is on.
+- _Hide Remote-only Branches_ in the _Commit Graph_ now hides only remote branches with no local counterpart. Remote branches that your local branches track keep their pills and commits.
+- _Create Branch..._ with _Create Branch in New Worktree_ now always keeps the branch name you entered. Deleting a branch that has a worktree now deletes both in a single confirmation.
+- Azure DevOps pull request links are fixed: they're no longer malformed, they keep the collection when the server sits behind a virtual directory, and they always point at your configured organization.
+- Autolinked pull requests and issues no longer disappear from _Inspect_, hovers, and views after a failed lookup. GitLens retries the next time they're needed.
+- The _GitKraken AI_ usage meter now reads _Allowance used_ when your weekly allowance is fully spent, and shows enough precision to tell a nearly-spent allowance from a spent one.
+
+---
+
+### Added
+
+- Adds starting a task or a pull request review in Kepler, right from where you are in GitLens ([#5760](https://github.com/gitkraken/vscode-gitlens/issues/5760))
+  - Adds _Start Task in Kepler_ to repositories, and _Start Review in Kepler_ to pull requests in GitLens views, _Launchpad_, and the _Commit Graph_ &mdash; each opens Kepler with the repository or pull request ready to go
+  - Adds _Open in Kepler_ to _Start Work_ and _Start PR Review_ for items Kepler supports, alongside opening in an agent or continuing manually &mdash; or choose `kepler` for `gitlens.ai.openInAgent` to go straight there
+  - Offers to get the Kepler application when it isn't installed, and stops showing the _Try Kepler_ banner once it is
+- Adds rebasing an entire stacked pull request chain in one action ([#5838](https://github.com/gitkraken/vscode-gitlens/issues/5838))
+  - _Rebase Stack..._ cascades bottom to top, replaying each layer onto the one below it and the bottom layer onto the stack's trunk &mdash; and creates a local branch for any layer you haven't checked out, so no link in the chain is skipped
+  - _Auto-Rebase Stack..._ resolves conflicts with AI the whole way up, pausing instead of unwinding when it needs your help &mdash; _Continue with Auto-Rebase_ then picks up the rest of the stack, not just the branch you fixed
+  - Every message names where you are in the stack (_Branch 2 of 4_), and the cascade puts you back on the branch you started from
+  - Offers _Force Push Stack_ on completion, listing each rewritten branch pre-checked so you can hold any of them back &mdash; the offer also lives on the _Auto-Rebase Summary_ and as a _Git Force Push Stacked Pull Requests..._ command, so it survives the notification being dismissed, and retires itself once every branch is published
+  - Offered only when the stack has drifted from its trunk &mdash; behind it, or conflicting with it &mdash; so an already-current stack isn't invited into a rebase that would do nothing
+  - Reachable from the _Commit Graph_'s pull request sheet and side bar stack rows, _Launchpad_, the rebase quick pick, and the _Git Rebase Stacked Pull Requests..._ and _Auto-Rebase Stacked Pull Requests..._ commands
+- Adds start actions to the _Commit Graph_'s no-repository empty state &mdash; grouped ways to get going: open a folder, clone a repository, or start a new project (open a remote repository on the web), alongside _Start Work on an Issue_ and _Start Review on a PR_
+  - Adds _Start Work_ and _Start PR Review_ support when no repository is open &mdash; both now list your issues and pull requests across your connected integrations, and offer to locate the repository in a local folder before continuing, or to clone it when the integration supplies a repository URL (every pull request, and GitHub issues)
+  - _Start Work_ now tells you when a connected integration can't search issues account-wide, instead of letting it contribute nothing to a seemingly empty list &mdash; Bitbucket has no account-wide issue search, so it now says so and points you to open a repository
+- Adds task-specific context to the _Commit Graph_'s sign-in and upgrade screens when navigating to it from other areas of GitLens ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820), [#5784](https://github.com/gitkraken/vscode-gitlens/issues/5784))
+  - Names the task that was interrupted &mdash; opening a commit, branch, tag, or stash, a file or folder's history, a comparison, your working changes, a branch focus, or an automatic rebase summary &mdash; and confirms it will open in the _Commit Graph_ once you have access
+  - Ctrl-clicking a commit hash in the terminal now names the commit and holds it until you're signed in, instead of landing on an unexplained sign-in screen
+
+### Changed
+
+- Changes _Start Work_ and _Start PR Review_ to follow the `gitlens.ai.openInAgent` setting &mdash; after you pick an issue or pull request they now ask whether to open it in an agent or continue manually, unless you've set a default
+- Changes the agent pickers to remember your choice with a single _Always use this choice_ / _Always use this agent_ option, instead of a checkbox on every row
+- Changes section headers in GitLens views, such as _Files Changed_ in _Inspect_ and the _Commit Graph_'s sidebar panels, to match VS Code's Modern UI headers &mdash; with Modern UI on they use its 12px semibold header text in title case (or all caps when `workbench.experimental.modernUIUppercaseViewHeaders` is enabled), and they're unchanged when it's off
+
+### Fixed
+
+- Fixes GitKraken AI telling someone on a Pro trial to _Upgrade to GitLens Pro_ when a request is refused for lack of entitlement &mdash; it now names the trial and offers to upgrade to the trialed plan ([#5789](https://github.com/gitkraken/vscode-gitlens/issues/5789))
+- Fixes a comparison, or a file or folder history, opened in the _Commit Graph_ while signed out or before upgrading being discarded instead of opening once access is granted ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820))
+- Fixes the _Commit Graph_'s sign-in and upgrade screens still describing the previous task when a second one arrives while they're open ([#5820](https://github.com/gitkraken/vscode-gitlens/issues/5820))
+- Fixes _Create Branch..._ discarding the branch name you entered when you choose _Create Branch in New Worktree_ ([#4501](https://github.com/gitkraken/vscode-gitlens/issues/4501)) &mdash; from a remote base the worktree step replaced your name with the remote branch's own and re-prompted with _A branch named 'main' already exists_, and from a local base that isn't checked out anywhere it quietly created the worktree on that branch instead of a new one; a requested branch name is now always honored, including the `pr/` branch _Open Worktree for Pull Request_ asks for
+- Fixes _Delete Branch..._ on a branch that has a worktree deleting the worktree but leaving the branch behind &mdash; Git refuses to delete a branch that's checked out in a worktree, so both now happen together in a single confirm with _Delete Branch_ pre-checked; uncheck it to keep the branch. _Prune Branches..._ works the same way
+- Fixes the _Delete Worktree_ confirm offering to delete a branch's upstream when that upstream is already missing from the remote
+- Fixes the _GitKraken AI_ usage meter saying _Nearly out_ when the weekly allowance is spent in full &mdash; it now reads _Allowance used_ in the error color, in both _GitLens Settings_ and the _Commit Graph_'s account rollup
+  - Fixes the credits figure rounding a nearly-spent allowance to look identical to a fully-spent one (`3.2M of 3.2M credits` for either) &mdash; it now shows enough precision to tell the two counts apart, and the account rollup's percentage no longer rounds up to `100%` while credits remain
+- Fixes _Hide Remote-only Branches_ in the _Commit Graph_ hiding every remote branch ([#5852](https://github.com/gitkraken/vscode-gitlens/issues/5852)) &mdash; a remote branch that a local branch tracks isn't remote-only, so it now keeps its pill and its commits stay in the graph; only remote branches with no local counterpart are hidden
+  - Fixes a tracked remote branch still counting as remote-only when its local branch's tip sat outside the loaded commits &mdash; tracking is now resolved from all of your branches instead of only the ones the graph had walked, which also restores the upstream half of the ref pills it affected
+- Fixes the _Commit Graph_'s commit hover ignoring its minimum width &mdash; the width rule was invalid CSS and silently dropped, so a short commit message rendered as a narrow sliver instead of keeping the card's intended size
+- Fixes hard-to-read text on customized _Commit Graph_ lane colors &mdash; labels on a mid-lightness `gitlens.graphLaneNColor` color used white text where black was far more legible; they now pick whichever gives more contrast
+- Fixes Azure DevOps pull requests returning `undefined` for their base and head repository links &mdash; the repository reference Azure embeds in a pull request does not include a web URL, so the link is now built from the organization and server the pull request was read from ([#5839](https://github.com/gitkraken/vscode-gitlens/issues/5839))
+- Fixes Azure DevOps Server links dropping the collection when the server sits behind a virtual directory &mdash; `https://server/tfs/DefaultCollection/…` read `tfs` as the organization and lost everything after it ([#5840](https://github.com/gitkraken/vscode-gitlens/issues/5840))
+- Fixes an Azure DevOps pull request's repository links being able to point at another organization, or another server entirely, when the pull request payload said so &mdash; the links are built from the configured organization now, and a fork's link must belong to it ([#5842](https://github.com/gitkraken/vscode-gitlens/issues/5842))
+- Fixes malformed Azure DevOps pull request web URLs &mdash; the URL had a double slash after the host (both `dev.azure.com` and `*.visualstudio.com`) and left project and repository names unencoded, so a project or repository named with a space put a literal space in the link ([#5836](https://github.com/gitkraken/vscode-gitlens/issues/5836))
+- Fixes autolinked pull requests and issues disappearing from _Inspect_, hovers, and views until the window is reloaded &mdash; a failed lookup (a rate limit, server error, or timeout) was remembered as "not found" for the rest of the session, and enrichment done before an integration finished connecting was kept for 30 minutes; failed lookups are now retried the next time they're needed
+- Fixes files you uncheck in the _Commit Graph_'s _Review_ and _Compose_ modes getting checked again &mdash; the details panel refreshing reset your exclusions (and, in _Compose_, your excluded commits), so an unchecked file could quietly end up back in the review or commit plan
+- Fixes the commit range appearing twice at the top of the _Commit Graph_'s _Review_ results for a commit selection
+- Fixes the _Commit Graph_'s _Next steps_ permanently listing a branch's merged or closed pull request as something to act on ([#5846](https://github.com/gitkraken/vscode-gitlens/issues/5846)) &mdash; only an open pull request is offered now, and a branch whose pull request is merged or closed gets _Create a Pull Request_ instead; the header still shows the merged or closed pull request
+- Fixes entering a reference in the _Git Command Palette_'s _show_ command discarding it and going back to the command menu ([#5855](https://github.com/gitkraken/vscode-gitlens/issues/5855)) &mdash; pressing Enter before the reference finished resolving chose _Back_, and a branch or tag name never resolved at all; Enter now waits for the reference, branch and tag names resolve to their commit in every commit step, and a reference that doesn't resolve keeps what you typed
 
 ---
 
@@ -9279,8 +9684,6 @@ Recipients will see the patch in the **Cloud Patch** sidebar and can apply it di
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
-This feature is available with a GitLens Pro subscription or higher.
-
 ## Code Suggest `PRO`
 
 Code Suggest lets you propose edits to any file in a repository—regardless of whether the file was modified. You can submit these suggestions directly to another team member’s open pull request.
@@ -9297,8 +9700,6 @@ The PR creator can:
 - Review your suggestions
 - Apply them to their working directory
 - Commit and push the changes to the open pull request
-
-This feature is available with a GitLens Pro subscription or higher.
 
 ---
 
@@ -9463,6 +9864,75 @@ This makes it easier to develop or test different branches in parallel while min
 
 You can also [customize Worktrees settings](gitlens/gitlens-settings/#worktrees-view-settings) to fit your workflow.
 
+### Create a Worktree
+
+Select **Create Worktree...** in the **Worktrees** view, then choose the branch to create the worktree from. The final confirmation step shows where GitLens will create the worktree and what happens after it's created:
+
+- Under **Location**, select **Root Folder…** to choose a different root folder for worktrees, or **Specific Folder…** to create the worktree directly in an exact folder instead of under the root.
+- Under **After Creating**, choose **Open in New Window**, **Open in Current Window**, **Add to Workspace**, or **Don't Open**.
+
+GitLens saves your **After Creating** choice to the `gitlens.worktrees.openAfterCreate` setting, so the same option is selected the next time you create a worktree. The setting's default is `newWindow`.
+
+### Delete a Worktree
+
+Git can't delete a branch while a worktree has it checked out. When you delete a branch that's checked out in a worktree, for example with **Delete Branch...** in the **Branches** view or the Git Command Palette, GitLens deletes the branch and its worktree together in one step. The confirmation step is titled **Confirm Delete Branch & Worktree**:
+
+- The **Delete Branch & Worktree** row shows the branch and the worktree folder that will be deleted.
+- Under **Options**, turn on **Force** to delete the worktree even if it has uncommitted changes. GitLens warns you first when a worktree has uncommitted changes.
+- Under **Additional Actions**, **Delete Branch** starts out selected. Clear it to delete only the worktree and keep the branch. Turn on **Delete Upstream** to also delete the branch's upstream from the remote. **Delete Upstream** appears only when the upstream branch still exists.
+
+If you delete several branches at once and only some of them are checked out in worktrees, GitLens handles those branches and their worktrees in this step, then deletes the remaining branches. When you prune a branch instead of deleting it, the step reads **Prune Branch & Delete Worktree**.
+
+### Start an Agent Session in a Worktree
+
+Right-click a worktree in the **Worktrees** view, or a worktree's Working Changes row in the Commit Graph, and select one of the following:
+
+- **Start Agent Session...** starts a coding agent in that worktree. GitLens uses your default agent from the `gitlens.ai.defaultAgent` setting when one is set; otherwise, it asks you to choose an agent.
+- **Start Agent Session With...** always asks which agent to use.
+- **Resume Agent Session...** lists the worktree's agent sessions so you can open a live session or resume a past one.
+
+When GitLens asks you to choose an agent, the **Choose an Agent** list ends with an **Always use this agent** option. Select it, then choose an agent, to save that agent as your default so **Start Agent Session...** uses it from then on. Selecting the option on its own saves nothing, and you can change the default later with the `gitlens.ai.defaultAgent` setting.
+
+Saving a default agent from the agent picker
+
+A command-line agent starts in a new integrated terminal opened in the worktree folder. An agent that runs in VS Code chat or in an extension receives a prompt that asks it to work in the worktree. In the Commit Graph, a Working Changes row's context menu also includes **Copy Branch Name**.
+
+### Run a Task in a Worktree
+
+Right-click a worktree in the **Worktrees** view, or a worktree's Working Changes row in the Commit Graph, and select **Run Task on Worktree...** to run a VS Code task with the worktree as its working folder. In the task list, select the checkmark next to a task to set or unset it as the default task.
+
+In the Commit Graph, each Working Changes row also has a **Run Default Task** button. The button runs the default task, or asks you to choose one if you haven't set a default yet. Hold Alt (⌥ on macOS) while selecting the button to choose a different task. While a task runs, selecting the button shows the running task instead of starting another.
+
+## Worktrees in the Commit Graph
+
+The Commit Graph shows a Working Changes row for your worktrees, so you can follow and act on parallel work without switching windows.
+
+### Scope the Graph to a Worktree
+
+Scoping the Commit Graph to a worktree makes the graph treat that worktree as the one you have open. You see its branch and its working changes, and anything you commit, push, or pull from the graph happens in that worktree. To scope the graph, do one of the following:
+
+- In the **Worktrees** panel of the Commit Graph sidebar, select **Scope to Worktree** on the worktree's row.
+- Right-click the worktree's Working Changes row, or its row in the **Worktrees** panel, and select **Scope to Worktree**.
+- Double-click the worktree's Working Changes row or its pill in the overview bar.
+
+To return to your active worktree, select **Unscope Worktree** in the graph header. The `gitlens.graph.scopeBehavior` setting controls whether scoping also focuses the worktree's branch, and `gitlens.graph.doubleClickWorktreeAction` controls whether double-clicking scopes the graph or toggles branch focus. For more details, see [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/#scope-the-graph-to-a-worktree).
+
+### Follow the Active Terminal
+
+When the Commit Graph is visible, it follows the active terminal or Claude Code conversation tab. Switch to a terminal, and the graph selects the Working Changes row of the repository or worktree that the terminal is in. If an agent session is running in that terminal, the graph selects the agent session's worktree. The graph never opens itself to follow a terminal. The first time the graph follows a terminal, a **Following Your Active Terminal** tip explains the behavior and offers **Turn Off**.
+
+To stop following, select **Stop Following Active Terminal** from the Commit Graph's overflow menu, or set `gitlens.graph.followTerminal.enabled` to `false`. Select **Follow Active Terminal** to turn it back on. By default, the graph ignores terminals in other repositories. To let it switch repositories, set `gitlens.graph.followTerminal.allowRepositorySwitching` to `true`.
+
+### Open a Terminal's Worktree
+
+Right-click a terminal tab, or use the title bar of a terminal open in the editor area, to act on the worktree that terminal is in:
+
+- **Open in Commit Graph** opens the Commit Graph with the worktree's Working Changes row selected.
+- **Focus in Commit Graph** also scopes the graph to the worktree.
+- **Open in New Window** opens the worktree folder in a new VS Code window.
+
+The same actions are available from the title bar and tab context menu of a Claude Code conversation tab, where they act on the worktree of that conversation's agent session.
+
 ---
 
 ## Launchpad
@@ -9470,9 +9940,9 @@ You can also [customize Worktrees settings](gitlens/gitlens-settings/#worktrees-
 URL: https://help.gitkraken.com/gitlens/gl-launchpad/
 Description: Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
 
-Last updated: August 2025
+Last updated: September 2026
 
-## Launchpad `PRO`
+## Launchpad <code>PRO</code>
 
 The GitLens Launchpad helps you manage pull requests by status, so you can quickly identify bottlenecks, prioritize work, and take action.
 
@@ -9486,6 +9956,8 @@ GitLens Launchpad pull request overview
    - macOS: Cmd + Shift + P
    - Windows/Linux: Ctrl + Shift + P
 2. Search for **GitLens: Open Launchpad**, or select **Pull Request** from the status bar in VS Code.
+
+To learn more about Launchpad, select **Click to learn more about Launchpad** when Launchpad asks you to connect an integration, the **What is this?** icon in the Launchpad status bar tooltip, or **Learn about Launchpad...** in the Launchpad view. Each of these opens the GitLens **Welcome** view, which includes a Launchpad and Worktrees step.
 
 Accessing the Launchpad
 
@@ -9506,7 +9978,10 @@ Select a pull request to:
 - View detailed information
 - Open it in a browser
 - Merge it (if ready)
+- Rebase its stack with **Rebase Stack...**, for a GitHub stacked pull request
 - Switch to the branch or worktree
+
+To find a pull request that isn't in your list, select **Search for Pull Request...** and enter a term. Launchpad matches the term against pull request titles and descriptions. You can also paste a pull request URL to act on that pull request.
 
 Viewing pull request details
 
@@ -9532,7 +10007,7 @@ Pinning and snoozing pull requests
 
 ### Availability
 
-- Supported for **GitHub.com** and **GitLab.com** repositories only. Connect the [GitHub or GitLab integration](/gitlens/gitlens-features/#connecting-the-github-and-gitlab-integration) to use Launchpad.
+- Supported for pull requests on **GitHub**, **GitHub Enterprise**, **GitLab**, **GitLab Self-Hosted**, **Azure DevOps**, **Azure DevOps Server**, **Bitbucket**, and **Bitbucket Data Center**. Connect the [integration for your provider](/gitlens/gl-integrations/) to use Launchpad. **Search for Pull Request...** searches every connected provider.
 - Launchpad prioritizes items that require immediate action, placing them at the top. (This may change in future updates.)
 - This feature is available with a **Pro subscription tier or higher**.
 
@@ -9767,7 +10242,6 @@ Here, you can see pull requests that are open on your current branch, blocked, n
 To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree.
 
 Open the Launchpad in GitLens.
-
 This feature is only available for Pro subscription tiers or higher
 #### Worktrees
 
@@ -9796,7 +10270,6 @@ To create a cloud patch, make changes to any file in a repository and then save 
 When you select members to share it with, they will see this in the Cloud Patch sidebar to be able to apply to their working directory.
 
 Open the Cloud Patches View in GitLens.
-
 This feature is only available for Pro subscription tiers or higher
 
 #### Code Suggest `PRO`

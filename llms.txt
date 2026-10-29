@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): How to install and start using GitLens in Visual Studio Code
+- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): Install GitLens in VS Code or a VS Code-based IDE, sign in, connect your Git host, and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time.
 
 ## Documentation Pages
 
@@ -21,11 +21,11 @@
 - [Commit Graph is Home](https://help.gitkraken.com/gitlens/home-view/): GitLens Commit Graph: Your Development Workbench
 - [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Explore GitLens integrations with remote providers
 - [GitLens Interactive Code History](https://help.gitkraken.com/gitlens/gl-interactive-code-history/): Learn how GitLens helps you explore and understand your repository’s commit history.
-- [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in GitLens — integrated agent workflows, status pills, sessions panel, and Claude Code hooks
+- [AI Agents in Gitlens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in Gitlens
 - [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/): Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
 - [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Managing and Preparing branches to ship
 - [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Code Change to Merged branches all through GitLens
-- [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes (Current — v19.x and v18.x)
+- [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
 - [GitLens Security Information](https://help.gitkraken.com/gitlens/gl-security/): Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
