@@ -520,6 +520,8 @@ During the rebase, a progress animation appears in the graph to indicate the ope
 
 For GitHub and GitLab, the Commit Graph displays a Pull Request icon for any branch with an open pull request. To enable this, connect a [rich integration](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
+If the repository has no remotes yet, the sidebar's pull request panel explains that publishing it to GitHub, GitLab, Azure DevOps, or Bitbucket lets you see its pull requests there, and offers **Publish Repository…** in place of connecting an integration.
+
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
 When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
