@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): Install GitLens in VS Code or a VS Code-based IDE, sign in, connect your Git host, and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time.
+- [Get Started with GitLens](https://help.gitkraken.com/gitlens/gitlens-home/): Install GitLens in VS Code or a VS Code-based IDE and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time. No account is needed to start; sign in when you want to connect your Git host or start a Pro trial.
 
 ## Documentation Pages
 
@@ -21,7 +21,7 @@
 - [Commit Graph is Home](https://help.gitkraken.com/gitlens/home-view/): GitLens Commit Graph: Your Development Workbench
 - [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Explore GitLens integrations with remote providers
 - [GitLens Interactive Code History](https://help.gitkraken.com/gitlens/gl-interactive-code-history/): Learn how GitLens helps you explore and understand your repository’s commit history.
-- [AI Agents in Gitlens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in Gitlens
+- [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
 - [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/): Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
 - [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Managing and Preparing branches to ship
 - [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Code Change to Merged branches all through GitLens

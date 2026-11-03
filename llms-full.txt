@@ -2,16 +2,16 @@
 
 > GitLens documentation — the #1 Git extension for Visual Studio Code. Supercharge your Git workflows with blame, code history, commit graphs, and more.
 
-Generated: 2026-10-29
+Generated: 2026-11-03
 
 ---
 
 ## Get Started with GitLens
 
 URL: https://help.gitkraken.com/gitlens/gitlens-home/
-Description: Install GitLens in VS Code or a VS Code-based IDE, sign in, connect your Git host, and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time.
+Description: Install GitLens in VS Code or a VS Code-based IDE and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time. No account is needed to start; sign in when you want to connect your Git host or start a Pro trial.
 
-Last updated: September 2026
+Last updated: November 2026
 
 This guide takes you from installing GitLens to using its core features on your own repository. Each step shows where to find a feature and what to try first, then links to the page that covers it in full.
 
@@ -794,7 +794,7 @@ Note: Code Suggest is currently supported only for repositories on GitHub.com.
 URL: https://help.gitkraken.com/gitlens/gl-commit-graph/
 Description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 
-Last updated: October 2026
+Last updated: November 2026
 
 ## Commit Graph
 
@@ -1463,7 +1463,7 @@ Yes. Your GitLens Pro license is tied to your email address, not a specific devi
 URL: https://help.gitkraken.com/gitlens/gitlens-features/
 Description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
 
-Last updated: October 2026
+Last updated: November 2026
 
 Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
@@ -2491,7 +2491,7 @@ When you push several repositories at once, any without remotes are skipped, and
 When you add a remote with **Add Remote**, from the **Remote** command or the side bar's **Remotes** view, the name is pre-filled with `origin` if the repository has no remotes yet. Before adding the remote, GitLens checks that the URL can be reached. If it can't, the confirmation step reads *Cannot reach remote* with the reason, such as *The host could not be found*, and offers:
 
 - **Change URL** (selected) to go back and correct the URL.
-- **Add Remote Anyway** to add it without checking. A later fetch or push reports if the URL is wrong.
+- **Add Remote Anyway** to add it despite the failed reachability check. A later fetch or push reports if the URL is wrong.
 - **Retry**, the button at the end of the input box, to check again.
 
 Adding a remote whose URL can't be reached
@@ -2909,7 +2909,7 @@ VS Code 1.86 or later is required for these capabilities.
 URL: https://help.gitkraken.com/gitlens/home-view/
 Description: GitLens Commit Graph: Your Development Workbench
 
-Last updated: October 2026
+Last updated: November 2026
 
 The Commit Graph is your starting point for working in GitLens. More than a visualization of repository history, it brings your repository state, working changes, branches, worktrees, and supported coding agent activity together in one connected workbench.
 From here, you can understand what’s happening across your repository, coordinate parallel work, review and shape changes, and move work toward merge without rebuilding context across disconnected views and tools.
@@ -3242,12 +3242,12 @@ These features make it easier to navigate your repository, understand changes, a
 
 ---
 
-## AI Agents in Gitlens
+## AI Agents in GitLens
 
 URL: https://help.gitkraken.com/gitlens/gl-agents/
-Description: Using AI Agents in Gitlens
+Description: Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
 
-Last updated: September 2026
+Last updated: November 2026
 
 ## Using AI Agents in GitLens
 
@@ -9048,7 +9048,7 @@ Note: SOC 2 reports are only available for Business and Enterprise customers.
 URL: https://help.gitkraken.com/gitlens/gitlens-settings/
 Description: Learn how to access and customize GitLens settings in Visual Studio Code
 
-Last updated: October 2026
+Last updated: November 2026
 
 ## Overview
 
@@ -10495,7 +10495,7 @@ You make a well-informed change backed by Git intelligence, reducing risk and bu
 URL: https://help.gitkraken.com/gitlens/side-bar/
 Description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
 
-Last updated: October 2026
+Last updated: November 2026
 
 GitLens provides multiple sidebars that extend the functionality of Visual Studio Code, making it easier to navigate and understand your Git repositories. These include:
 
