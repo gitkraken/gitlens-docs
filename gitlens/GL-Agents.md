@@ -1,7 +1,7 @@
 ---
 
-title: AI Agents in Gitlens
-description: Using AI Agents in Gitlens
+title: AI Agents in GitLens
+description: Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
 taxonomy:
     category: gitlens
 last_updated: 2026-09

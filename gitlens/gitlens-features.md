@@ -1269,7 +1269,7 @@ When you push several repositories at once, any without remotes are skipped, and
 When you add a remote with **Add Remote**, from the **Remote** command or the side bar's **Remotes** view, the name is pre-filled with `origin` if the repository has no remotes yet. Before adding the remote, GitLens checks that the URL can be reached. If it can't, the confirmation step reads *Cannot reach remote* with the reason, such as *The host could not be found*, and offers:
 
 - **Change URL** (selected) to go back and correct the URL.
-- **Add Remote Anyway** to add it without checking. A later fetch or push reports if the URL is wrong.
+- **Add Remote Anyway** to add it despite the failed reachability check. A later fetch or push reports if the URL is wrong.
 - **Retry**, the button at the end of the input box, to check again.
 
 <figure>
