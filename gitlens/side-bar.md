@@ -4,6 +4,12 @@ description: Explore GitLens sidebar views for working with repositories, author
 taxonomy:
   category: gitlens
 last_updated: 2026-11
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "GitLens Views"
+    nav_order: 40
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

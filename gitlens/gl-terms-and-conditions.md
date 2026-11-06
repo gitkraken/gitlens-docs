@@ -6,6 +6,12 @@ taxonomy:
     category: gitlens
 last_updated: 2025-03
 
+custom_fields:
+    nav_category: "gl-terms-and-conditions"
+    nav_label: "Terms & Conditions"
+    nav_order: 120
+    nav_parent: ""
+    page_type: "content"
 ---
 
 

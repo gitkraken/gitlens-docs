@@ -5,6 +5,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-11
     
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Commit Graph is Home"
+    nav_order: 30
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

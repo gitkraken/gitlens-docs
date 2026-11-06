@@ -5,6 +5,12 @@ taxonomy:
     category: gitlens
 last_updated: 2025-08
 
+custom_fields:
+    nav_category: "gl-security"
+    nav_label: "Security"
+    nav_order: 100
+    nav_parent: ""
+    page_type: "content"
 ---
 
 <kbd>Last updated: August 2025</kbd>

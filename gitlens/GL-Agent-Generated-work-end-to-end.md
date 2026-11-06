@@ -6,6 +6,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-09
 
+custom_fields:
+    nav_category: "workflows"
+    nav_label: "Take Agent-Generated Work from Change to Merge"
+    nav_order: 20
+    nav_parent: "workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: September 2026</kbd>
 

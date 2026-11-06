@@ -4,6 +4,12 @@ description: Learn how GitLens helps you explore and understand your repositoryâ
 taxonomy:
   category: gitlens
 last_updated: 2025-07
+custom_fields:
+    nav_category: "workflows"
+    nav_label: "Interactive Code History"
+    nav_order: 40
+    nav_parent: "workflows"
+    page_type: "content"
 ---
 
 <kbd>Last updated: July 2025</kbd>

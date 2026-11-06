@@ -4,6 +4,12 @@ description: GitLens Release Notes for Version 16.x and earlier
 taxonomy:
   category: gitlens
 last_updated: 2026-05
+custom_fields:
+    nav_category: "gitlens-release-notes-current"
+    nav_label: "v16.x and older"
+    nav_order: 30
+    nav_parent: "gitlens-release-notes-current"
+    page_type: "content"
 ---
 
 <kbd>Last updated: May 2026</kbd>
