@@ -4,6 +4,12 @@ description: Frequently asked questions about GitLens and GitKraken account inte
 taxonomy:
   category: gitlens
 last_updated: 2026-09
+custom_fields:
+    nav_category: "gitlens-faq"
+    nav_label: "FAQs"
+    nav_order: 110
+    nav_parent: ""
+    page_type: "content"
 ---
 
 <kbd>Last updated: September 2026</kbd>

@@ -4,6 +4,12 @@ description: Apply Git intelligence and AI-aware context to manage complex histo
 taxonomy:
   category: gitlens
 last_updated: 2026-01
+custom_fields:
+    nav_category: "using-gitlens-features-to-enhance-your-workflows"
+    nav_label: "Orchestrating Complex Git Operations"
+    nav_order: 30
+    nav_parent: "using-gitlens-features-to-enhance-your-workflows"
+    page_type: "content"
 ---
 
 <kbd>Last updated: January 2026</kbd>

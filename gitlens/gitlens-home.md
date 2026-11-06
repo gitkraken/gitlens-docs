@@ -6,6 +6,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-11
     
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "Getting Started"
+    nav_order: 10
+    nav_parent: "start-here"
+    page_type: "main-index"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -6,6 +6,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-09
 
+custom_fields:
+    nav_category: "workflows"
+    nav_label: "Manage Parallel Development from the Commit Graph"
+    nav_order: 10
+    nav_parent: "workflows"
+    page_type: "content"
 ---
 <kbd>Last updated: September 2026</kbd>
 

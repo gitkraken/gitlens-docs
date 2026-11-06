@@ -6,6 +6,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-09
 
+custom_fields:
+    nav_category: "gl-gk-ai"
+    nav_label: "AI in GitLens"
+    nav_order: 60
+    nav_parent: ""
+    page_type: "content"
 ---
 
 <kbd>Last updated: September 2026</kbd>

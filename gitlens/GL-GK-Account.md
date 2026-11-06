@@ -4,6 +4,12 @@ description: Learn how to create and manage your GitKraken account for GitLens f
 taxonomy:
   category: gitlens
 last_updated: 2026-09
+custom_fields:
+    nav_category: "start-here"
+    nav_label: "GitKraken Account"
+    nav_order: 50
+    nav_parent: "start-here"
+    page_type: "content"
 ---
 
 <kbd>Last updated: September 2026</kbd>

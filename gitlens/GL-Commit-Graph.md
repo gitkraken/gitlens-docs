@@ -5,6 +5,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-11
 
+custom_fields:
+    nav_category: "popular-features"
+    nav_label: "Commit Graph"
+    nav_order: 10
+    nav_parent: "popular-features"
+    page_type: "content"
 ---
 
 <kbd>Last updated: November 2026</kbd>

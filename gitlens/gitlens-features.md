@@ -4,6 +4,12 @@ description: Learn how to use GitLens autolinks, terminal links, powerful Git co
 taxonomy:
   category: gitlens
 last_updated: 2026-11
+custom_fields:
+    nav_category: "gitlens-features"
+    nav_label: "All Features"
+    nav_order: 90
+    nav_parent: ""
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 

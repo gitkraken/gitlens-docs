@@ -5,6 +5,12 @@ taxonomy:
     category: gitlens
 last_updated: 2025-08
 
+custom_fields:
+    nav_category: "popular-features"
+    nav_label: "GitLens Code Suggest"
+    nav_order: 60
+    nav_parent: "popular-features"
+    page_type: "content"
 ---
 
 <kbd>Last updated: August 2025</kbd>

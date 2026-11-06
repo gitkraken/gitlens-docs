@@ -5,6 +5,12 @@ taxonomy:
     category: gitlens
 last_updated: 2026-09
 
+custom_fields:
+    nav_category: "popular-features"
+    nav_label: "Visual File History"
+    nav_order: 40
+    nav_parent: "popular-features"
+    page_type: "content"
 ---
 
 <kbd>Last updated: September 2026</kbd>

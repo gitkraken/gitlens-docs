@@ -4,6 +4,13 @@ description: GitLens Release Notes
 taxonomy:
   category: gitlens
 last_updated: 2026-10
+custom_fields:
+    nav_category: "gitlens-release-notes-current"
+    nav_label: "Release Notes"
+    nav_order: 40
+    nav_parent: ""
+    page_type: "content"
+    nav_also: ["gitlens-release-notes-current|10|Current v18.x"]
 ---
 
 <kbd>Last updated: October 2026</kbd>

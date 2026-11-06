@@ -4,6 +4,12 @@ description: Learn how to create and use Workspaces in GitLens to organize your 
 taxonomy:
     category: gitlens
 last_updated: 2026-09
+custom_fields:
+    nav_category: "popular-features"
+    nav_label: "Workspaces"
+    nav_order: 70
+    nav_parent: "popular-features"
+    page_type: "content"
 ---
 
 <kbd>Last updated: September 2026</kbd>
