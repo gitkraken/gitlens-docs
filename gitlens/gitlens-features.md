@@ -70,7 +70,7 @@ The sections of this page moved to the feature reference pages above. Find a sec
 | <span id="features"></span>Features | [Blame and Annotations](/gitlens/gl-features-blame-and-annotations/#features) |
 | <span id="file-changes"></span>File Changes | [Blame and Annotations](/gitlens/gl-features-blame-and-annotations/#file-changes) |
 | <span id="file-heatmap"></span>File Heatmap | [Blame and Annotations](/gitlens/gl-features-blame-and-annotations/#file-heatmap) |
-| <span id="code-suggest-preview"></span>Code Suggest PREVIEW | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest-preview) |
+| <span id="code-suggest-preview"></span>Code Suggest PREVIEW | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest) |
 | <span id="how-to-create-a-code-suggestion"></span>How to Create a Code Suggestion | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#how-to-create-a-code-suggestion) |
 | <span id="accepting-a-suggestion-locally"></span>Accepting a Suggestion Locally | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#accepting-a-suggestion-locally) |
 | <span id="accepting-a-suggestion-on-gitkraken-dev"></span>Accepting a Suggestion on gitkraken.dev | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#accepting-a-suggestion-on-gitkraken-dev) |
@@ -102,7 +102,7 @@ The sections of this page moved to the feature reference pages above. Find a sec
 | <span id="pull-request-indicators"></span>Pull Request Indicators | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#pull-request-indicators) |
 | <span id="hiding-remotes-branches-or-tags"></span>Hiding Remotes, Branches, or Tags | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#hiding-remotes-branches-or-tags) |
 | <span id="filtering-options"></span>Filtering Options | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#filtering-options) |
-| <span id="minimap-experimental"></span>Minimap (Experimental) | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#minimap-experimental) |
+| <span id="minimap-experimental"></span>Minimap (Experimental) | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#minimap) |
 | <span id="minimap-settings"></span>Minimap Settings | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#minimap-settings) |
 | <span id="minimap-legend"></span>Minimap Legend | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#minimap-legend) |
 | <span id="launchpad-pro"></span>Launchpad PRO | [Pull Requests and Collaboration](/gitlens/gl-features-pull-requests-and-collaboration/#launchpad-pro) |
@@ -114,13 +114,13 @@ The sections of this page moved to the feature reference pages above. Find a sec
 | <span id="visual-history"></span>Visual History | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#visual-history) |
 | <span id="how-to-read-the-graph"></span>How to Read the Graph | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#how-to-read-the-graph) |
 | <span id="gitkraken-ai"></span>GitKraken AI | [AI and Agents](/gitlens/gl-features-ai-and-agents/#gitkraken-ai) |
-| <span id="ai-generated-commit-messages"></span>AI-Generated Commit Messages | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-generated-commit-messages) |
+| <span id="ai-generated-commit-messages"></span>AI-Generated Commit Messages | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-generated-commit-messages-pro) |
 | <span id="ai-stash-messages-pro"></span>AI Stash Messages PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-stash-messages-pro) |
-| <span id="ai-explanations-preview"></span>AI Explanations PREVIEW | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-explanations-preview) |
+| <span id="ai-explanations-preview"></span>AI Explanations PREVIEW | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-explanations) |
 | <span id="ai-commit-explanations-pro"></span>AI Commit Explanations PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-commit-explanations-pro) |
-| <span id="ai-changelog-creation-advanced"></span>AI Changelog Creation ADVANCED | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-changelog-creation-advanced) |
-| <span id="ai-generate-commits-pro"></span>AI Generate Commits PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-generate-commits-pro) |
-| <span id="ai-rebase-pro"></span>AI Rebase PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-rebase-pro) |
+| <span id="ai-changelog-creation-advanced"></span>AI Changelog Creation ADVANCED | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-changelog-creation-pro) |
+| <span id="ai-generate-commits-pro"></span>AI Generate Commits PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) |
+| <span id="ai-rebase-pro"></span>AI Rebase PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) |
 | <span id="auto-rebase-pro"></span>Auto-Rebase PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#auto-rebase-pro) |
 | <span id="commit-composer-view-pro"></span>Commit Composer View Pro | [AI and Agents](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) |
 | <span id="interactive-draft-commits"></span>Interactive Draft Commits | [AI and Agents](/gitlens/gl-features-ai-and-agents/#interactive-draft-commits) |
@@ -155,7 +155,7 @@ The sections of this page moved to the feature reference pages above. Find a sec
 | <span id="commit-file-details-in-large-histories"></span>Commit File Details in Large Histories | [Commit Graph and History](/gitlens/gl-features-commit-graph-and-history/#commit-file-details-in-large-histories) |
 | <span id="display-language"></span>Display Language | [Interface and Customization](/gitlens/gl-features-interface-and-customization/#display-language) |
 | <span id="welcome-view"></span>Welcome View | [Interface and Customization](/gitlens/gl-features-interface-and-customization/#welcome-view) |
-| <span id="ai-agent-integration-pro"></span>AI Agent Integration PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-agent-integration-pro) |
+| <span id="ai-agent-integration-pro"></span>AI Agent Integration PRO | [AI and Agents](/gitlens/gl-features-ai-and-agents/#ai-agent-integration) |
 | <span id="supported-agents"></span>Supported Agents | [AI and Agents](/gitlens/gl-features-ai-and-agents/#supported-agents) |
 | <span id="agent-hooks"></span>Agent Hooks | [AI and Agents](/gitlens/gl-features-ai-and-agents/#agent-hooks) |
 | <span id="agent-sessions"></span>Agent Sessions | [AI and Agents](/gitlens/gl-features-ai-and-agents/#agent-sessions) |

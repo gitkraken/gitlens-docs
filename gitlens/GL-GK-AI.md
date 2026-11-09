@@ -12,12 +12,12 @@ git_hosts: [generic]
 integrations: [copilot, openai, google, mistral, azure-ai, ollama, openrouter]
 hosted_variant: both
 status: GA
-last_verified: 2026-09
+last_verified: 2026-11
 llms_include: true
 tags: [gitkraken-ai, ai, commit-messages, explain, changelog, ai-review, ai-providers, ai-credits]
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-11
 
 custom_fields:
     nav_category: "gl-gk-ai"
@@ -27,7 +27,7 @@ custom_fields:
     page_type: "content"
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 Merge cutting-edge AI capabilities with your Git workflow to save time, increase clarity, and enhance collaboration. GitLens' AI features transform how you create, understand, and document code changes.
 
@@ -77,7 +77,7 @@ Understand the reasoning behind changes with AI-generated explanations of commit
 
 <img src="/wp-content/uploads/GL-ai-commit-explain.png" class="help-center-img img-bordered">
 
-### AI Changes Explain `Preview`
+### AI Changes Explain
 Gitkraken AI can also be used to generate summaries for Commits, Branches, Working Changes, and Stashes.
 
 What a specific commit introduced – ✨Explain Commit
@@ -93,7 +93,7 @@ You’ll find ✨Explain options for commits, branches, stashes, and working cha
 - In editor blame hovers via the ✨Explain button
 
 ### AI Changelog Creation `Pro`
-**Available in:** Advanced and Business plans only
+**Available in:** Pro, Advanced, and Business plans
 
 Automatically generate comprehensive changelogs from selected commits in the Graph, perfect for release documentation. Maintain consistent and detailed changelogs without manual effort.
 

@@ -185,7 +185,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 
 ### Overview
 
-The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest-preview) when working on a pull request.
+The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest) when working on a pull request.
 
 <figure>
   <img src="/wp-content/uploads/gl-inspect-overview-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view showing the Overview of the working changes: the Compose and Review mode toggle, the Working row with its change counts, and the three modified TypeScript files">
