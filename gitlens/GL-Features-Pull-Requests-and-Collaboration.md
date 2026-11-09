@@ -86,7 +86,7 @@ To find a pull request that isn't in your groups, select **Search for Pull Reque
   <figcaption style="text-align: center; color: #888">Interact with pull requests directly in VS Code</figcaption>
 </figure>
 
-You can also start or review [Code Suggestions](#code-suggest-preview) directly from the PR action menu.
+You can also start or review [Code Suggestions](#code-suggest) directly from the PR action menu.
 
 <figure>
   <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
@@ -140,7 +140,7 @@ Click the icon again to unpin or unsnooze as needed.
 
 ***
 
-## Code Suggest <span style="color: #888;">`PREVIEW`</span>
+## Code Suggest
 
 For workflows and examples, see [Code Suggest](/gitlens/gl-code-suggest/).
 

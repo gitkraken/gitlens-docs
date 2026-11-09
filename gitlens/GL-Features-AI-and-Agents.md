@@ -28,8 +28,6 @@ custom_fields:
 
 Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
-Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) (Community, Pro, etc).
-
 ***
 
 ## GitKraken AI
@@ -40,7 +38,7 @@ GitKraken AI enhances your development workflow with automated commit messages, 
 
 ---
 
-### AI-Generated Commit Messages
+### AI-Generated Commit Messages `PRO`
 
 Automatically generate descriptive commit messages based on staged changes.
 
@@ -59,7 +57,7 @@ GitKraken AI will analyze the diff of staged changes to generate a message. You 
 You can customize behavior using [`gitlens.ai` settings](/gitlens/gitlens-settings/#misc-settings) for provider, model, and prompt preferences.
 
 <div class='callout callout--warning'>
-  <p>Pro users and above can optionally use a custom API key to connect to a different AI provider. GitKraken AI currently uses the Google Gemini model.</p>
+  <p>Pro users and above can optionally use a custom API key to connect to a different AI provider.</p>
 </div>
 
 ---
@@ -77,7 +75,7 @@ Automatically generate meaningful stash descriptions to make your stashes easier
 
 ---
 
-### AI Explanations `PREVIEW`
+### AI Explanations
 
 Let GitKraken AI help explain complex changes across your repo with natural language summaries.
 
@@ -116,9 +114,9 @@ Understand the purpose and context of commits with AI-generated summaries. These
 
 ---
 
-### AI Changelog Creation `ADVANCED`
+### AI Changelog Creation `PRO`
 
-*Available in:* **Advanced** and **Business** plans only
+*Available in:* **Pro**, **Advanced**, and **Business** plans
 
 Automatically generate detailed and structured changelogs from a set of selected commits—ideal for maintaining release documentation.
 
@@ -130,14 +128,6 @@ Automatically generate detailed and structured changelogs from a set of selected
 <div class='callout callout--basic'>
   <p>More questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for additional details.</p>
 </div>
-
-### AI Generate Commits `PRO`
-
-Generate well-structured commits from your working tree changes using AI analysis. The **Generate Commits** command analyzes your staged and unstaged changes, groups them logically, and creates commits with descriptive messages. A first-time confirmation dialog explains what the command will do, and an **Undo** button is available after generation to revert if needed.
-
-### AI Rebase `PRO`
-
-The **AI Rebase** command restructures commits on an existing branch onto a target commit using AI-generated commit grouping and messages. Like Generate Commits, it includes an undo button and a first-time confirmation dialog. Both commands produce markdown explanation documents summarizing the changes made.
 
 ### Auto-Rebase `PRO`
 
@@ -258,16 +248,16 @@ The Working Changes row also has a **Run Default Task** (play) button that runs 
 
 Commit Composer can also be launched via dedicated commands:
 
-- **Compose Commits** (`gitlens.compose`) — Opens the Commit Composer for working changes in the current repository, or from a Compose mode entry in the Commit Graph details panel.
-- **Recompose Branch** (`gitlens.recomposeBranch`) — Opens the Commit Composer scoped to an entire branch. GitKraken AI can propose a clearer, more intentional sequence of commits and messages for you to review and refine before applying the result.
-- **Recompose from Commit** (`gitlens.recomposeFromCommit`) — Scopes the same workflow to a specific commit onward.
-- **Recompose Selected Commits** (`gitlens.recomposeSelectedCommits`) — Scopes the same workflow to only the selected commits on a branch.
+- **Compose Commits...** (`gitlens.composeCommits`) — Opens the Commit Composer for working changes in the current repository, or from a Compose mode entry in the Commit Graph details panel.
+- **Recompose Commits...** (`gitlens.ai.recomposeBranch`) — Opens the Commit Composer scoped to an entire branch. GitKraken AI can propose a clearer, more intentional sequence of commits and messages for you to review and refine before applying the result.
+- **Recompose Commits from Here...** (`gitlens.ai.recomposeFromCommit`) — Scopes the same workflow to a specific commit onward.
+- **Recompose Selected Commits...** (`gitlens.ai.recomposeSelectedCommits`) — Scopes the same workflow to only the selected commits on a branch.
 
 These commands are available from the Commit Graph context menu, branch context menus throughout GitLens, and the Command Palette. Coach marks guide first-time users through the workflow.
 
 ***
 
-## AI Agent Integration `PRO`
+## AI Agent Integration
 
 For workflows and examples, see [AI Agents in GitLens](/gitlens/gl-agents/).
 
@@ -311,12 +301,12 @@ To pick up a past session where it left off, select **Resume in Terminal**, whic
 
 ### MCP Server Management
 
-GitLens manages the GitKraken MCP server installation on a per-agent basis. The **Connect Agents** flow walks you through installing the CLI, registering MCP for your current IDE, and connecting additional agents.
+GitLens manages the GitKraken MCP server installation on a per-agent basis. The **Connect AI Agents** flow walks you through installing the CLI, registering MCP for your current IDE, and connecting additional agents.
 
-- **Connect Agents** (`gitlens.mcp.connectAgents`) — Interactive flow to install and configure MCP for your agents
-- **Install MCP for All Agents** (`gitlens.mcp.installForAllAgents`) — Install the GitKraken MCP server for all detected agents
-- **Install MCP for Agent** (`gitlens.mcp.installForAgent`) — Install for a specific agent
-- **Uninstall MCP for Agent** (`gitlens.mcp.uninstallForAgent`) — Remove MCP from a specific agent
+- **Connect AI Agents (Install MCP and Hooks)** (`gitlens.ai.connectAgents`) — Interactive flow to install and configure MCP for your agents
+- **Connect GitKraken MCP to All Detected Agents** (`gitlens.ai.mcp.installForAllAgents`) — Install the GitKraken MCP server for all detected agents
+- **Install GitKraken MCP for Agent** (`gitlens.ai.mcp.installForAgent`) — Install for a specific agent
+- **Uninstall GitKraken MCP for Agent** (`gitlens.ai.mcp.uninstallForAgent`) — Remove MCP from a specific agent
 
 In VS Code 1.101 and later, GitLens also installs and enables the GitKraken MCP server for VS Code automatically. To turn this off, disable the `gitlens.gitkraken.mcp.autoEnabled` setting. Turning it off, or turning off GitLens AI features (`gitlens.ai.enabled`), removes the GitKraken MCP server from VS Code's **Configure Tools** list right away, without reloading the window; turning it back on adds the server again.
 

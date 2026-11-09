@@ -402,7 +402,7 @@ You can further control what is shown using the filter dropdown:
 
 ---
 
-### Minimap <span style="color: #888;">(Experimental)</span>
+### Minimap
 
 The **Minimap** gives you a visual summary of repository activity at a glance:
 

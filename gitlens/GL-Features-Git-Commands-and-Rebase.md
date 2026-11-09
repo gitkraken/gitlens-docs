@@ -240,9 +240,9 @@ The `${signature}` token is available in commit tooltip format strings to displa
 
 ### Allowed Signers Management
 
-The **Allowed Signers** webview (`gitlens.allowedSigners`) provides a dedicated panel for managing SSH trusted signers. It scans recent commits for SSH signatures, discovers candidate signers with their avatars, and lets you select which keys to trust. Trusted entries are saved to your SSH `allowed_signers` file.
+The **Allowed Signers** webview provides a dedicated panel for managing SSH trusted signers. It scans recent commits for SSH signatures, discovers candidate signers with their avatars, and lets you select which keys to trust. Trusted entries are saved to your SSH `allowed_signers` file.
 
-Access it from the Command Palette: `GitLens: Manage Allowed Signers`
+Access it from the Command Palette: `GitLens: Edit SSH Allowed Signers...` (`gitlens.git.editAllowedSigners`)
 
 ***
 
