@@ -1,6 +1,19 @@
 ---
 title: GitLens Release Notes
 description: GitLens Release Notes
+product: GitLens
+feature: Release Notes
+content_type: release-notes
+audience: all
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-10
+llms_include: true
+tags: [release-notes, changelog, v19, v18, whats-new]
 taxonomy:
   category: gitlens
 last_updated: 2026-10

@@ -1,6 +1,19 @@
 ---
 title: Using the GitLens Sidebar
 description: Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
+product: GitLens
+feature: Views
+content_type: reference
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [sidebar, views, inspect, commits, branches, file-history, worktrees, search-compare]
 taxonomy:
   category: gitlens
 last_updated: 2026-11

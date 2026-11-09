@@ -1,6 +1,19 @@
 ---
 title: Orchestrating Complex Git Operations
 description: Apply Git intelligence and AI-aware context to manage complex history safely
+product: GitLens
+feature: Workflows
+content_type: concept
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-01
+llms_include: true
+tags: [rebase, rebase-editor, cherry-pick, commit-graph, cloud-patches, mcp]
 taxonomy:
   category: gitlens
 last_updated: 2026-01

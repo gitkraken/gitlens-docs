@@ -2,6 +2,19 @@
 
 title: Manage Parallel Development from the Commit Graph
 description: Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
+product: GitLens
+feature: Workflows
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [parallel-development, worktrees, ai-agents, agent-sessions, commit-graph, ai-review, commit-composer]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

@@ -2,6 +2,19 @@
 
 title: AI Agents in GitLens
 description: Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
+product: GitLens
+feature: AI Agents
+content_type: how-to
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: false
+tags: [ai-agents, agent-sessions, gitkraken-hooks, commit-graph, worktrees, ai-review, commit-composer, kepler]
 taxonomy:
     category: gitlens
 last_updated: 2026-11

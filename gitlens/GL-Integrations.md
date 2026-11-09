@@ -1,6 +1,19 @@
 ---
 title: GitLens Integrations
 description: Explore GitLens integrations with remote providers
+product: GitLens
+feature: Integrations
+content_type: integration
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server, gitea, gerrit]
+integrations: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server, jira, jira-data-center, linear, trello]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [integrations, remote-providers, github, gitlab, jira, self-managed, autolinks]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

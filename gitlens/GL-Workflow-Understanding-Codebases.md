@@ -1,6 +1,19 @@
 ---
 title: Understanding an Unfamiliar Codebase
 description: Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
+product: GitLens
+feature: Workflows
+content_type: concept
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-01
+llms_include: true
+tags: [codebase, codelens, blame, commit-graph, launchpad, gitkraken-ai]
 
 taxonomy:
   category: gitlens

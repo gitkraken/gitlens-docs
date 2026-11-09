@@ -1,6 +1,19 @@
 ---
 title: Manage Multiple Repositories with GitLens Workspaces
 description: Learn how to create and use Workspaces in GitLens to organize your repositories
+product: GitLens
+feature: Workspaces
+content_type: how-to
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [workspaces, cloud-workspaces, repositories, multi-repo]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

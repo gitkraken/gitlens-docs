@@ -1,6 +1,19 @@
 ---
 title: GitLens Security Information
 description: Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
+product: GitLens
+feature: Security
+content_type: security
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: cloud
+status: GA
+last_verified: 2025-08
+llms_include: true
+tags: [security, data-collection, encryption, storage, soc-2]
 taxonomy:
     category: gitlens
 last_updated: 2025-08

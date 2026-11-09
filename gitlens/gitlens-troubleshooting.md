@@ -1,6 +1,19 @@
 ---
 title: GitLens Troubleshooting
 description: GitLens Troubleshooting
+product: GitLens
+feature: Troubleshooting
+content_type: troubleshooting
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [bitbucket]
+integrations: [bitbucket]
+hosted_variant: cloud
+status: GA
+last_verified: 2025-04
+llms_include: false
+tags: [troubleshooting, bitbucket, pull-requests, commits]
 taxonomy:
   category: gitlens
 last_updated: 2025-04

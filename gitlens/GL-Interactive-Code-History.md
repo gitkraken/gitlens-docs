@@ -1,6 +1,19 @@
 ---
 title: GitLens Interactive Code History
 description: Learn how GitLens helps you explore and understand your repository’s commit history.
+product: GitLens
+feature: Workflows
+content_type: concept
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2025-07
+llms_include: true
+tags: [code-history, commit-graph, inspect, blame, hovers]
 taxonomy:
   category: gitlens
 last_updated: 2025-07

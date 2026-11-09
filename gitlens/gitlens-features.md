@@ -1,6 +1,19 @@
 ---
 title: GitLens Features
 description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
+product: GitLens
+feature: All Features
+content_type: reference
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server, jira, jira-data-center, linear, trello, claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [features, blame, codelens, commit-graph, launchpad, gitkraken-ai, rebase-editor, autolinks]
 taxonomy:
   category: gitlens
 last_updated: 2026-11

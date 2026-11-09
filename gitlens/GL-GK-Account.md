@@ -1,6 +1,19 @@
 ---
 title: GitKraken Account – GitLens
 description: Learn how to create and manage your GitKraken account for GitLens features.
+product: GitLens
+feature: GitKraken Account
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: cloud
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [account, sign-in, gitkraken-dev, profile, delete-account]
 taxonomy:
   category: gitlens
 last_updated: 2026-09

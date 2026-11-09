@@ -2,6 +2,19 @@
 
 title: GitKraken AI Features in GitLens
 description: Learn more about the use of Gitkraken AI in Gitlens!
+product: GitLens
+feature: GitKraken AI
+content_type: how-to
+audience: developer
+plan_required: [Pro]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [copilot, openai, google, mistral, azure-ai, ollama, openrouter]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [gitkraken-ai, ai, commit-messages, explain, changelog, ai-review, ai-providers, ai-credits]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

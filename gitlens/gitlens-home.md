@@ -2,6 +2,19 @@
 
 title: Get Started with GitLens
 description: Install GitLens in VS Code or a VS Code-based IDE and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time. No account is needed to start; sign in when you want to connect your Git host or start a Pro trial.
+product: GitLens
+feature: Getting Started
+content_type: install
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, azure-devops, jira, linear, claude-code]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [getting-started, install, sign-in, commit-graph, launchpad, ai-review, cloud-patches]
 taxonomy:
     category: gitlens
 last_updated: 2026-11

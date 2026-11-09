@@ -1,6 +1,19 @@
 ---
 title: GitLens Worktrees
 description: Use GitLens Worktrees to develop and test multiple branches in VS Code without switching.
+product: GitLens
+feature: Worktrees
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [worktrees, branches, commit-graph, agent-sessions, tasks]
 taxonomy:
     category: gitlens
 last_updated: 2026-09
