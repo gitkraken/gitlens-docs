@@ -84,7 +84,7 @@ To find a pull request that isn't in your list, select **Search for Pull Request
 
 ### Code Suggestions
 
-You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from pull requests in the Launchpad.
+You can start or review [Code Suggestions](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest-preview) directly from pull requests in the Launchpad.
 
 <figure>
   <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="help-center-img img-bordered" alt="Launchpad pull request actions with Code Suggest option" />

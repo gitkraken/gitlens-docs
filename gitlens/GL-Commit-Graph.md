@@ -265,7 +265,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
-If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code can't publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
+If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code can't publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote, then publish main to it&quot; with Add Remote." />
@@ -403,7 +403,7 @@ Scroll markers highlight key points in the Commit Graph, including:
 - Search results
 - Working Changes rows
 
-Use scroll markers to quickly jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gitlens-features/#settings).
+Use scroll markers to quickly jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gl-features-commit-graph-and-history/#settings).
 
 The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree Working Changes rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
 

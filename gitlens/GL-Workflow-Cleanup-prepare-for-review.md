@@ -87,11 +87,11 @@ GitLens uses Git intelligence to help you ship work that is easier to review, re
 
 ## Key GitLens features used
 
-- [Commit Graph (visual branch and commit context)](https://help.gitkraken.com/gitlens/gitlens-features/#commit-graph-pro)
+- [Commit Graph (visual branch and commit context)](https://help.gitkraken.com/gitlens/gl-features-commit-graph-and-history/#commit-graph)
 
-- [Commit Composer with Selective Recomposition](https://help.gitkraken.com/gitlens/gitlens-features/###Commit-composer:-Selective-Recomposition)
+- [Commit Composer with Selective Recomposition](https://help.gitkraken.com/gitlens/gl-features-ai-and-agents/#commit-composer-selective-recomposition)
 
-- [Launchpad (PR and review awareness)](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro)
+- [Launchpad (PR and review awareness)](https://help.gitkraken.com/gitlens/gl-features-pull-requests-and-collaboration/#launchpad-pro)
 
 - [Start Review](/gitlens/gl-accelerate-pr-reviews/#start-review-pro) (quick-pick wizard to select a PR, check out branch or worktree, and optionally open AI review chat)
 

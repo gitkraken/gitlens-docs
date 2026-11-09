@@ -406,11 +406,11 @@ GitLens offers Kepler only for providers that Kepler supports: GitHub, GitHub En
 
 GitLens agent workflows work especially well alongside:
 
-- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro)
+- [Commit Composer](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro)
 - [AI Code Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph)
 - [Worktrees](/gitlens/gl-worktrees/)
 - [Launchpad](/gitlens/gl-launchpad/)
-- [Interactive Rebase](/gitlens/gitlens-features/#interactive-rebase-editor)
+- [Interactive Rebase](/gitlens/gl-features-git-commands-and-rebase/#interactive-rebase-editor)
 - [GitKraken MCP integrations](https://help.gitkraken.com/mcp/mcp-tools-reference/)
 
 These end-to-end workflows build on the same agent features:

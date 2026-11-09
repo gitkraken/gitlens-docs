@@ -105,7 +105,7 @@ GitLens Pro now supports integration with self-hosted GitHub Enterprise and GitL
 
 - Issues and pull/merge requests from GitHub Enterprise and GitLab Self-Managed will now appear in the GitLens [Home View](https://help.gitkraken.com/gitlens/home-view/) when linked to branches.
 - The [Start Work](https://help.gitkraken.com/gitlens/home-view/#starting-work-on-an-issue) flow now allows users to create branches and worktrees from issues in GitHub Enterprise and GitLab Self-Managed.
-- [Launchpad](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro) now supports searching for specific pull/merge requests in GitHub Enterprise and GitLab Self-Managed integrations.
+- [Launchpad](https://help.gitkraken.com/gitlens/gl-features-pull-requests-and-collaboration/#launchpad-pro) now supports searching for specific pull/merge requests in GitHub Enterprise and GitLab Self-Managed integrations.
 
 ### Home View Enhancements
 
@@ -133,11 +133,11 @@ GitLab and GitLab Self-Managed users can now search for specific merge requests 
 
 ### Improved Visual File History
 
-The [Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) has been completely rebuilt for a better more polished experience, with more consistent bubble sizing and easier to read hovers. We've also added new zoom in and out buttons and mouse wheel support. When you are zoomed in, drag to scrub (scroll) through the history.
+The [Visual File History](https://help.gitkraken.com/gitlens/gl-features-commit-graph-and-history/#visual-history) has been completely rebuilt for a better more polished experience, with more consistent bubble sizing and easier to read hovers. We've also added new zoom in and out buttons and mouse wheel support. When you are zoomed in, drag to scrub (scroll) through the history.
 
 ### New Visual Folder History
 
-[Visual File History](https://help.gitkraken.com/gitlens/gitlens-features/#visual-file-history-pro) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualization, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail. Access the Visual Folder History from the _Folder History_ > _Open Visual Folder History_ on folders in the _Explorer_, _Source Control_, and in GitLens views.
+[Visual File History](https://help.gitkraken.com/gitlens/gl-features-commit-graph-and-history/#visual-history) now supports interactive visualizations of an entire folder's change history, allowing you to track how a group of files has evolved over time. From the visualization, you can identify changes made by specific authors and jump directly to commits to inspect changes in detail. Access the Visual Folder History from the _Folder History_ > _Open Visual Folder History_ on folders in the _Explorer_, _Source Control_, and in GitLens views.
 
 <img src="/wp-content/uploads/visual-folder-history.png" class="help-center-img img-bordered">
 

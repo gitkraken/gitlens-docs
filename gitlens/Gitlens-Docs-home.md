@@ -81,7 +81,7 @@ From the Commit Graph, you can review a change as a whole with AI-powered Review
   <figcaption style="text-align:center; color:#888">Review your changes in the Commit Graph before you open a pull request.</figcaption>
 </figure>
 
-The [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) page covers every AI capability, and the [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) section of the features page explains how to compose commits.
+The [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) page covers every AI capability, and the [Commit Composer](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) section of the features page explains how to compose commits.
 
 ### Keep pull requests moving with Launchpad
 

@@ -139,7 +139,7 @@ Inline blame, hovers, and Git CodeLens are on by default and free for all reposi
 
 To turn these annotations off, run **GitLens: Toggle Line Blame Annotations** or **GitLens: Toggle Git CodeLens** (`Shift+Alt+B`).
 
-See [Current Line Blame](/gitlens/gitlens-features/#current-line-blame), [Hovers](/gitlens/gitlens-features/#hovers), and [GitLens Inspect](/gitlens/side-bar/#gitlens-inspect) for customization options, and [GitLens Visual File History](/gitlens/gl-visual-file-history/) for a timeline of how a file changed.
+See [Current Line Blame](/gitlens/gl-features-blame-and-annotations/#current-line-blame), [Hovers](/gitlens/gl-features-blame-and-annotations/#hovers), and [GitLens Inspect](/gitlens/side-bar/#gitlens-inspect) for customization options, and [GitLens Visual File History](/gitlens/gl-visual-file-history/) for a timeline of how a file changed.
 
 ***
 
@@ -167,7 +167,7 @@ Launchpad lists the pull requests you are involved in, grouped by what needs to 
 
 [Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
 
-To start a guided review instead, run **GitLens: Start Review**. It walks you through selecting a pull request, choosing whether to check out its branch or create a worktree, and optionally opening an AI chat with a review prompt. See [Start Review](/gitlens/gitlens-features/#start-review-pro).
+To start a guided review instead, run **GitLens: Start Review**. It walks you through selecting a pull request, choosing whether to check out its branch or create a worktree, and optionally opening an AI chat with a review prompt. See [Start Review](/gitlens/gl-features-pull-requests-and-collaboration/#start-review-pro).
 
 The [Launchpad](/gitlens/gl-launchpad/) page covers pinning, snoozing, and every status group.
 
@@ -210,13 +210,13 @@ See [Run AI Code Review in the Commit Graph](/gitlens/gl-agents/#run-ai-code-rev
 
 [Open the Commit Graph in Compose mode](vscode://eamodio.gitlens/link/command/graph?mode=compose)
 
-See [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) for other ways to open it, and [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) for AI commit messages, AI rebase, and other AI features.
+See [Commit Composer](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) for other ways to open it, and [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) for AI commit messages, AI rebase, and other AI features.
 
 ### Track Coding Agent Sessions `PRO`
 
 If you use a supported coding agent such as Claude Code, install its hooks so GitLens can show the agent's sessions in the Commit Graph. Select the integration prompt in the Commit Graph header, or run **GitLens: Install GitKraken Hooks for All AI Agents** from the Command Palette. Sessions then appear with their status in the Commit Graph and in the **Agent Sessions** panel.
 
-See [AI Agents in GitLens](/gitlens/gl-agents/) for setup and the [list of supported agents](/gitlens/gitlens-features/#supported-agents).
+See [AI Agents in GitLens](/gitlens/gl-agents/) for setup and the [list of supported agents](/gitlens/gl-features-ai-and-agents/#supported-agents).
 
 ***
 
@@ -280,7 +280,7 @@ For trackers without an integration, such as Zendesk or an internal tool, add a 
 ]
 ```
 
-See [Autolinks](/gitlens/gitlens-features/#autolinks) for all options.
+See [Autolinks](/gitlens/gl-features-integrations-and-links/#autolinks) for all options.
 
 ***
 
