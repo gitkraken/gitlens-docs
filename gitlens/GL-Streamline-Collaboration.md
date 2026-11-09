@@ -1,6 +1,19 @@
 ---
 title: GitLens Streamline Collaboration
 description: How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
+product: GitLens
+feature: Workflows
+content_type: how-to
+audience: developer
+plan_required: [Pro]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2025-07
+llms_include: true
+tags: [collaboration, cloud-patches, code-suggest, pull-requests]
 taxonomy:
   category: gitlens
 last_updated: 2025-07

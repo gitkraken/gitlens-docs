@@ -1,6 +1,19 @@
 ---
 title: GitLens Cloud Patches
 description: Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
+product: GitLens
+feature: Cloud Patches
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [cloud-patches, sharing, collaboration, patches, self-hosting]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

@@ -1,6 +1,19 @@
 ---
 title: GitLens FAQ
 description: Frequently asked questions about GitLens and GitKraken account integration.
+product: GitLens
+feature: FAQ
+content_type: faq
+audience: all
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [faq, sign-in, debug-logging, proxy, submodules, display-language, license]
 taxonomy:
   category: gitlens
 last_updated: 2026-09

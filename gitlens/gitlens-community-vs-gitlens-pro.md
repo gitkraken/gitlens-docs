@@ -1,6 +1,19 @@
 ---
 title: GitLens Community vs. GitLens Pro
 description: Learn the differences between GitLens Community and GitLens Pro
+product: GitLens
+feature: Plans
+content_type: concept
+audience: buyer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2025-07
+llms_include: true
+tags: [plans, pricing, community, pro, trial, comparison]
 taxonomy:
   category: gitlens
 last_updated: 2025-07

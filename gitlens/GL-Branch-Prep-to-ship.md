@@ -2,6 +2,19 @@
 
 title: Prepare Your Branch to Ship
 description: Managing and Preparing branches to ship
+product: GitLens
+feature: Workflows
+content_type: how-to
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [branches, compare, commit-composer, ai-rebase, merge-conflicts, ai-review, commit-graph]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

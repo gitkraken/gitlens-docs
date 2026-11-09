@@ -1,6 +1,19 @@
 ---
 title: GitLens Release Notes — Older Versions
 description: GitLens Release Notes for Version 16.x and earlier
+product: GitLens
+feature: Release Notes
+content_type: release-notes
+audience: all
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-05
+llms_include: true
+tags: [release-notes, changelog, v16, older-versions]
 taxonomy:
   category: gitlens
 last_updated: 2026-05

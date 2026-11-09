@@ -1,6 +1,19 @@
 ---
 title: Commit Graph is Home
 description: "GitLens Commit Graph: Your Development Workbench"
+product: GitLens
+feature: Commit Graph
+content_type: concept
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [commit-graph, home, welcome-view, agent-kanban, ai-agents, merge-target]
 taxonomy:
     category: gitlens
 last_updated: 2026-11

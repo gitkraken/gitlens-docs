@@ -2,6 +2,19 @@
 
 title: GitLens Support Terms and Conditions
 description: Learn about GitLens Support terms and conditions
+product: GitLens
+feature: Support
+content_type: policy
+audience: all
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [n/a]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2025-03
+llms_include: true
+tags: [support, terms, response-times, end-of-life, policy]
 taxonomy:
     category: gitlens
 last_updated: 2025-03

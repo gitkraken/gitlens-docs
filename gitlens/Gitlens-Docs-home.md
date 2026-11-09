@@ -2,6 +2,19 @@
 
 title: GitLens Documentation
 description: What GitLens is, what it does, and where to go in the GitLens Help Center for the Commit Graph, coding agents, worktrees, AI review, Launchpad, blame, integrations, settings, and support.
+product: GitLens
+feature: Docs Home
+content_type: home
+audience: all
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [github, gitlab, bitbucket, azure-devops, jira]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [overview, commit-graph, launchpad, worktrees, ai, blame, integrations]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

@@ -1,6 +1,19 @@
 ---
 title: Accelerate PR Reviews
 description: Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees.
+product: GitLens
+feature: Workflows
+content_type: how-to
+audience: developer
+plan_required: [Pro]
+os_support: [Windows, macOS, Linux]
+git_hosts: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server]
+integrations: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [pull-requests, code-review, launchpad, start-review, worktrees]
 taxonomy:
   category: gitlens
 last_updated: 2026-09

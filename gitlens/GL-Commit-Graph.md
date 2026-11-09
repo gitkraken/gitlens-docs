@@ -1,6 +1,19 @@
 ---
 title: GitLens Commit Graph
 description: Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
+product: GitLens
+feature: Commit Graph
+content_type: how-to
+audience: developer
+plan_required: [Community]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [commit-graph, history, branches, worktrees, commit-search, auto-rebase, minimap]
 taxonomy:
     category: gitlens
 last_updated: 2026-11

@@ -1,6 +1,19 @@
 ---
 title: Launchpad
 description: Use GitLens Launchpad to organize and prioritize pull requests in VS Code.
+product: GitLens
+feature: Launchpad
+content_type: how-to
+audience: developer
+plan_required: [Pro]
+os_support: [Windows, macOS, Linux]
+git_hosts: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server]
+integrations: [github, github-enterprise, gitlab, gitlab-self-managed, bitbucket, bitbucket-data-center, azure-devops, azure-devops-server]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [launchpad, pull-requests, code-review, pin, snooze]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

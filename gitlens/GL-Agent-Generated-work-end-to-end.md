@@ -2,6 +2,19 @@
 
 title: Take Agent-Generated Work from Change to Merge
 description: Code Change to Merged branches all through GitLens
+product: GitLens
+feature: Workflows
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [ai-agents, ai-review, commit-composer, compare, ai-rebase, commit-graph]
 taxonomy:
     category: gitlens
 last_updated: 2026-09

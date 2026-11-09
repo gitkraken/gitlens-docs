@@ -1,6 +1,19 @@
 ---
 title: Cleaning Up and Preparing Work for Review
 description: Use Git intelligence to transform iterative work into clean, reviewable history
+product: GitLens
+feature: Workflows
+content_type: concept
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: []
+hosted_variant: both
+status: GA
+last_verified: 2026-09
+llms_include: true
+tags: [commit-history, commit-composer, pull-requests, launchpad, worktrees, commit-graph]
 taxonomy:
   category: gitlens
 last_updated: 2026-09

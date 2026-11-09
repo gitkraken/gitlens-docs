@@ -1,6 +1,19 @@
 ---
 title: GitLens Code Suggest
 description: Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
+product: GitLens
+feature: Code Suggest
+content_type: how-to
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [github]
+integrations: [github]
+hosted_variant: cloud
+status: GA
+last_verified: 2025-08
+llms_include: true
+tags: [code-suggest, code-review, pull-requests, suggestions, gitkraken-dev]
 taxonomy:
     category: gitlens
 last_updated: 2025-08

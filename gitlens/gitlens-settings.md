@@ -1,6 +1,19 @@
 ---
 title: GitLens Settings Overview
 description: Learn how to access and customize GitLens settings in Visual Studio Code
+product: GitLens
+feature: Settings
+content_type: reference
+audience: developer
+plan_required: [all]
+os_support: [Windows, macOS, Linux]
+git_hosts: [generic]
+integrations: [github, gitlab, bitbucket, azure-devops, jira, jira-data-center, linear, trello, claude-code, codex, copilot-cli, opencode]
+hosted_variant: both
+status: GA
+last_verified: 2026-11
+llms_include: true
+tags: [settings, settings-editor, settings-json, views, blame, commit-graph, ai, keyboard-shortcuts]
 taxonomy:
     category: gitlens
 last_updated: 2026-11
