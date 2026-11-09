@@ -104,8 +104,8 @@ Automatically generate comprehensive changelogs from selected commits in the Gra
 
 <img src="/wp-content/uploads/GL-ai-generate-changelog.png" class="help-center-img img-bordered">
 
-### AI Open Pull Request `Advanced`
-**Available in:** Advanced and Business plans only
+### AI Open Pull Request `Pro`
+**Available in:** Pro, Advanced, and Business plans
 
 Open Pull Requests: Automatically generate clear PR titles and descriptions directly from your branch changes, speeding up review cycles.
 
