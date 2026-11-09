@@ -68,13 +68,13 @@ GitLens combines Git intelligence and AI-aware workflows to give you confidence 
 
 - [GitKraken MCP (Git-aware AI context)](https://help.gitkraken.com/mcp/mcp-getting-started/)
 
-- [Commit Graph (advanced history visualization)](https://help.gitkraken.com/gitlens/gitlens-features/#commit-graph-pro)
+- [Commit Graph (advanced history visualization)](https://help.gitkraken.com/gitlens/gl-features-commit-graph-and-history/#commit-graph)
 
-- [Rebase Editor (conflict-aware interactive rebasing)](https://help.gitkraken.com/gitlens/gitlens-features/#interactive-rebase-editor)
+- [Rebase Editor (conflict-aware interactive rebasing)](https://help.gitkraken.com/gitlens/gl-features-git-commands-and-rebase/#interactive-rebase-editor)
 
 - Cherry-picking (precise commit reuse)
 
-- [Cloud Patches (lightweight collaboration)](https://help.gitkraken.com/gitlens/gitlens-features/#cloud-patches-preview)
+- [Cloud Patches (lightweight collaboration)](https://help.gitkraken.com/gitlens/gl-features-pull-requests-and-collaboration/#cloud-patches-preview)
 
 ## Outcome
 

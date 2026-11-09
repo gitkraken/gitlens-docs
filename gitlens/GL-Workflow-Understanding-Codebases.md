@@ -89,15 +89,15 @@ GitLens turns Git history into actionable intelligence, helping you understand n
 
 ### Key GitLens features used
 
-- [CodeLens (inline commit and author context)](https://help.gitkraken.com/gitlens/gitlens-features/#git-codelens)
+- [CodeLens (inline commit and author context)](https://help.gitkraken.com/gitlens/gl-features-blame-and-annotations/#git-codelens)
 
-- [Inline Blame (line-level history and intent)](https://help.gitkraken.com/gitlens/gitlens-features/#current-line-blame)
+- [Inline Blame (line-level history and intent)](https://help.gitkraken.com/gitlens/gl-features-blame-and-annotations/#current-line-blame)
 
-- [Commit Graph (visual repository history)](https://help.gitkraken.com/gitlens/gitlens-features/#commit-graph-pro)
+- [Commit Graph (visual repository history)](https://help.gitkraken.com/gitlens/gl-features-commit-graph-and-history/#commit-graph)
 
-- [Launchpad (PR and branch awareness)](https://help.gitkraken.com/gitlens/gitlens-features/#launchpad-pro)
+- [Launchpad (PR and branch awareness)](https://help.gitkraken.com/gitlens/gl-features-pull-requests-and-collaboration/#launchpad-pro)
 
-- [GitKraken AI (explanations and summaries)](https://help.gitkraken.com/gitlens/gitlens-features/#gitkraken-ai)
+- [GitKraken AI (explanations and summaries)](https://help.gitkraken.com/gitlens/gl-features-ai-and-agents/#gitkraken-ai)
 
 ## Outcome
 

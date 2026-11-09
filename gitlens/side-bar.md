@@ -185,7 +185,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 
 ### Overview
 
-The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) when working on a pull request.
+The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gl-features-pull-requests-and-collaboration/#code-suggest-preview) when working on a pull request.
 
 <figure>
   <img src="/wp-content/uploads/gl-inspect-overview-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view showing the Overview of the working changes: the Compose and Review mode toggle, the Working row with its change counts, and the three modified TypeScript files">
@@ -305,7 +305,7 @@ The **Branches** view lists all local branches and includes:
   - **Changes to pull** — incoming commits
 - Associated pull request — shown when linked to a branch
 
-A branch that isn't published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
+A branch that isn't published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
 
 <figure>
   <img src="/wp-content/uploads/gl-views-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Branches view in the Source Control side bar listing two repositories, Playground2026 and release-notes, with the context menu open on release-notes' main branch. The repository has no remotes, so the menu offers Publish Repository (below Switch Branch... and Open in Commit Graph) and no Publish Branch." />

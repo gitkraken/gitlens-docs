@@ -189,9 +189,9 @@ Continue exploring the workflows available from the Commit Graph:
 - [Agent Sessions](/gitlens/gl-agents/#use-the-agent-sessions-panel) to monitor supported coding agent activity
 - [Worktrees](/gitlens/gl-worktrees/) to manage parallel development
 - [Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) to understand and validate changes
-- [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
+- [Commit Composer](/gitlens/gl-features-ai-and-agents/#commit-composer-view-pro) to shape changes into logical commits
 - [Compare](/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
-- [AI-powered Rebase](/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
+- [AI-powered Rebase](/gitlens/gl-features-git-commands-and-rebase/#interactive-rebase-editor) to automate and clean up rebases
 - [AI-assisted Conflict Resolution](/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
 - [Visual History](/gitlens/gl-visual-file-history/) to visualize how files, branches, or your entire repository evolved over time
 - [Launchpad](/gitlens/gl-launchpad/) to prioritize pull requests and move work toward merge
