@@ -1,6 +1,6 @@
 ---
 title: Commit Graph and History Features
-description: Technical reference for the GitLens Commit Graph, Visual History, and commit file details in large histories: commands, settings, layout, search, and filters.
+description: "Technical reference for the GitLens Commit Graph, Visual History, and commit file details in large histories: commands, settings, layout, search, and filters."
 product: GitLens
 feature: Commit Graph
 content_type: reference
