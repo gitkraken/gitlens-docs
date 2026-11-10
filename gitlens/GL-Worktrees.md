@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "GitLens Worktrees"
     nav_order: 30
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "folders"
+    card_color: "amber"
+    card_description: "Use GitLens Worktrees to develop and test multiple branches in VS Code without switching"
 ---
 
 <kbd>Last updated: September 2026</kbd>

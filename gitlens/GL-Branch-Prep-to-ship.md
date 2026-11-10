@@ -20,11 +20,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "workflows"
+    nav_category: "gl-workflows"
     nav_label: "Prepare Your Branch to Ship"
     nav_order: 30
-    nav_parent: "workflows"
+    nav_parent: "gl-workflows"
     page_type: "content"
+    card_icon: "ship"
+    card_color: "green"
+    card_description: "Managing and Preparing branches to ship"
 ---
 <kbd>Last updated: September 2026</kbd>
 

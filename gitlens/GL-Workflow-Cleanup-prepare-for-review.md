@@ -18,11 +18,14 @@ taxonomy:
   category: gitlens
 last_updated: 2026-09
 custom_fields:
-    nav_category: "using-gitlens-features-to-enhance-your-workflows"
+    nav_category: "gl-enhance-your-workflows"
     nav_label: "Cleaning Up and Preparing Work for Review"
     nav_order: 20
-    nav_parent: "using-gitlens-features-to-enhance-your-workflows"
+    nav_parent: "gl-enhance-your-workflows"
     page_type: "content"
+    card_icon: "wand"
+    card_color: "blue"
+    card_description: "Use Git intelligence to transform iterative work into clean, reviewable history"
 ---
 
 <kbd>Last updated: September 2026</kbd>

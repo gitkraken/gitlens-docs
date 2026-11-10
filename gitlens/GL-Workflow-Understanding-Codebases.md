@@ -19,11 +19,14 @@ taxonomy:
   category: gitlens
 last_updated: 2026-01
 custom_fields:
-    nav_category: "using-gitlens-features-to-enhance-your-workflows"
+    nav_category: "gl-enhance-your-workflows"
     nav_label: "Understanding an Unfamiliar Codebase"
     nav_order: 10
-    nav_parent: "using-gitlens-features-to-enhance-your-workflows"
+    nav_parent: "gl-enhance-your-workflows"
     page_type: "content"
+    card_icon: "search"
+    card_color: "blue"
+    card_description: "Use GitLens Git intelligence to gain context, reduce risk, and make confident changes"
 ---
 
 <kbd>Last updated: January 2026</kbd>

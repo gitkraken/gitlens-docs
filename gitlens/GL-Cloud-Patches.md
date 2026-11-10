@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "Cloud Patches"
     nav_order: 50
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "cloud-upload"
+    card_color: "amber"
+    card_description: "Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration"
 ---
 
 <kbd>Last updated: September 2026</kbd>

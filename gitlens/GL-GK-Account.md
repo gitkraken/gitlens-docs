@@ -18,11 +18,14 @@ taxonomy:
   category: gitlens
 last_updated: 2026-09
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "GitKraken Account"
     nav_order: 50
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "user-circle"
+    card_color: "purple"
+    card_description: "Learn how to create and manage your GitKraken account for GitLens features"
 ---
 
 <kbd>Last updated: September 2026</kbd>
