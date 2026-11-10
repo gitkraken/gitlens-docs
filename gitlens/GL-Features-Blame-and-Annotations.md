@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 20
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "code"
+    card_color: "red"
+    card_description: "Revision navigation, inline and status bar blame, CodeLens, hovers, and file annotations"
 ---
 <kbd>Last updated: November 2026</kbd>
 

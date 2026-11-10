@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 50
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "git-compare"
+    card_color: "red"
+    card_description: "The Git Command Palette, powerful commands, the Interactive Rebase Editor, signature verification, and submodules"
 ---
 <kbd>Last updated: November 2026</kbd>
 

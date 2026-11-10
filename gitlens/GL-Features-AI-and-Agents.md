@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 40
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "sparkles"
+    card_color: "red"
+    card_description: "GitKraken AI features, Auto-Rebase, the Commit Composer, and AI agent integration"
 ---
 <kbd>Last updated: November 2026</kbd>
 
