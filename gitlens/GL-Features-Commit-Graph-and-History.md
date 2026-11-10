@@ -87,11 +87,11 @@ From here, you can:
   <figcaption style="text-align: center; color: #888">Access key branch controls directly from the header</figcaption>
 </figure>
 
-<figure class='callout callout--basic'>
-  <p><strong>Note:</strong> The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.</br></br>
-  Only private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>. Signed out, you get a 3-day preview of the Commit Graph on privately hosted repositories first.</p>
-  <p>We welcome your input—join the discussion on <a href="https://github.com/gitkraken/vscode-gitlens/discussions/2158" target="_blank">GitHub</a>.</p>
-</figure>
+> **Note:** The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.
+>
+> Only private repository access requires a [GitLens Pro subscription or trial](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens). Signed out, you get a 3-day preview of the Commit Graph on privately hosted repositories first.
+>
+> We welcome your input—join the discussion on [GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
 
 ### Scope the Graph to a Worktree
 
@@ -442,9 +442,7 @@ Customize the Minimap via the **gear at the right end of the minimap**:
 | **Blue blocks (bottom)** | Local branches |
 | **Highlighted area** | Current view region |
 
-<div class='callout callout--basic'>
-  <p>Note: We welcome your feedback on the Minimap. Share your thoughts on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitLens GitHub Discussions</a>.</p>
-</div>
+> **Note:** We welcome your feedback on the Minimap. Share your thoughts on the [GitLens GitHub Discussions](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
 
 To send feedback from inside VS Code, select **Send Feedback...** (the feedback icon) in the Commit Graph toolbar, or **Send Feedback** in the header's account popover. In the dialog, choose **General**, **Bug**, or **Feature**, write your message, and select **Send Feedback**. You don't need to be signed in. When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add details.
 
@@ -488,9 +486,7 @@ Hover over a bubble or bar for detailed insights.
   <figcaption style="text-align: center; color: #888">View commit size, author, and message on hover</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>The Community plan supports Visual History only on public and local repositories.</p>
-</div>
+> **Warning:** The Community plan supports Visual History only on public and local repositories.
 
 ***
 

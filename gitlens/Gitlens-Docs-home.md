@@ -24,7 +24,7 @@ custom_fields:
     nav_label: "GitLens Docs Home"
     nav_order: 10
     nav_parent: ""
-    page_type: "content"
+    page_type: "main-index"
 ---
 
 <kbd>Last updated: September 2026</kbd>

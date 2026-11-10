@@ -24,7 +24,7 @@ custom_fields:
     nav_label: "Getting Started"
     nav_order: 10
     nav_parent: "start-here"
-    page_type: "main-index"
+    page_type: "content"
 ---
 <kbd>Last updated: November 2026</kbd>
 
@@ -155,9 +155,7 @@ See [Current Line Blame](/gitlens/gl-features-blame-and-annotations/#current-lin
 
 ### Open Launchpad `PRO`
 
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher and requires a connected integration. See <a href="/gitlens/gl-launchpad/#availability">Launchpad availability</a> for supported Git hosts.</p>
-</div>
+> **Warning:** This feature is only available for Pro subscription tiers or higher and requires a connected integration. See [Launchpad availability](/gitlens/gl-launchpad/#availability) for supported Git hosts.
 
 Launchpad lists the pull requests you are involved in, grouped by what needs to happen next.
 
@@ -173,9 +171,7 @@ The [Launchpad](/gitlens/gl-launchpad/) page covers pinning, snoozing, and every
 
 ### Open the Worktrees View
 
-<div class='callout callout--warning'>
-    <p>The Community plan supports only public and local repositories.</p>
-</div>
+> **Warning:** The Community plan supports only public and local repositories.
 
 Worktrees let you check out several branches at once, so you can review a pull request without stashing or committing the work in progress on your current branch. When you open a pull request in a worktree from Launchpad, GitLens creates the worktree for you. Each worktree then gets its own **Working Changes** row in the Commit Graph.
 
@@ -234,9 +230,7 @@ You can share changes without pushing a branch, and suggest edits on a pull requ
 
 ### Share a Cloud Patch `PRO`
 
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher.</p>
-</div>
+> **Warning:** This feature is only available for Pro subscription tiers or higher.
 
 1. Make and save changes to any file.
 2. Open the Command Palette and run **GitLens: Share as Cloud Patch...**. You can also choose **Share as Cloud Patch** from the **Share** submenu on working changes, commits, stashes, and comparisons in GitLens views.
@@ -248,9 +242,7 @@ See [GitLens Cloud Patches](/gitlens/gl-cloud-patches/) to apply and manage patc
 
 ### Suggest Changes on a Pull Request `PRO`
 
-<div class='callout callout--warning'>
-    <p>This feature is only available for Pro subscription tiers or higher and is supported only for repositories on GitHub.com.</p>
-</div>
+> **Warning:** This feature is only available for Pro subscription tiers or higher and is supported only for repositories on GitHub.com.
 
 1. Check out a branch with an open pull request.
 2. Open the Command Palette, run **GitLens: Show Inspect View**, and open the **Overview** tab.

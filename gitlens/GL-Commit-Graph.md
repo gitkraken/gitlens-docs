@@ -427,9 +427,7 @@ Search for **GitLens: Open Settings**.
   <figcaption style="text-align: center; color: #888">Opening Commit Graph settings</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-  <p>Note: The <code>gitlens.graph.showDetailsView</code> setting and the standalone Graph Details view have been removed. The details panel is now always embedded in the Commit Graph. The <code>gitlens.proxy</code> setting has also been removed.</p>
-</div>
+> **Note:** The `gitlens.graph.showDetailsView` setting and the standalone Graph Details view have been removed. The details panel is now always embedded in the Commit Graph. The `gitlens.proxy` setting has also been removed.
 
 ---
 
@@ -633,6 +631,4 @@ The Minimap provides a high-level overview of repository activity. It shows comm
   - Pink blocks = stashes  
   - Blue blocks = local branches  
 
-<div class='callout callout--basic'>
-  <p>Note: We’d love your feedback on the Minimap. Please share it on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitHub Discussion board</a>.</p>
-</div>
+> **Note:** We’d love your feedback on the Minimap. Please share it on the [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).

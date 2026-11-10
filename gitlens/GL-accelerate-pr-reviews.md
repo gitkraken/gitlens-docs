@@ -65,9 +65,7 @@ To start reviewing:
 
 [Open the Launchpad in GitLens](vscode://eamodio.gitlens/link/command/launchpad)
 
-<figure class='callout callout--warning'>
-  <p>This feature is available with a GitLens Pro subscription or higher.</p>
-</figure>
+> **Warning:** This feature is available with a GitLens Pro subscription or higher.
 
 
 ## Start Review `PRO`
@@ -84,9 +82,7 @@ To use Start Review:
 
 If GitLens can't find a local copy of the pull request's repository, it asks how to find it. Select **Clone Repository...** to clone it into a folder you choose, or **Choose a Local Folder...** to point GitLens at an existing clone. If the folder you choose doesn't look like a clone of that repository, GitLens asks you to confirm before using it.
 
-<figure class='callout callout--warning'>
-  <p>This feature is available with a GitLens Pro subscription or higher.</p>
-</figure>
+> **Warning:** This feature is available with a GitLens Pro subscription or higher.
 
 ## Worktrees
 
@@ -100,6 +96,4 @@ After opening a worktree, use the Pull Request sidebar to:
 
 [Open the Worktree View in GitLens](vscode://eamodio.gitlens/link/command/worktrees)
 
-<figure class='callout callout--warning'>
-  <p>The Community plan supports only public and local repositories.</p>
-</figure>
+> **Warning:** The Community plan supports only public and local repositories.

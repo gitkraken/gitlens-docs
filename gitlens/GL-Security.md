@@ -48,6 +48,4 @@ If you would like to request a copy of our SOC 2 report, please visit our [Trust
 
 Please note: an MNDA must be signed before we can provide a copy of the report.
 
-<div class='callout callout--info'>
-  <p><strong>Note:</strong> SOC 2 reports are only available for <strong>Business</strong> and <strong>Enterprise</strong> customers.</p>
-</div>
+> **Note:** SOC 2 reports are only available for **Business** and **Enterprise** customers.

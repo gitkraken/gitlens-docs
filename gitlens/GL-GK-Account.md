@@ -29,10 +29,9 @@ custom_fields:
 
 Your GitKraken account is your key to unlocking the most personal experience across GitKraken products.
 
-<figure class='callout callout--basic'>
-  <p><strong>Note:</strong> GitKraken accounts are not compatible with <a href="/git-integration-for-jira-cloud/git-integration-for-jira-home-gij-cloud/">Git Integration for Jira</a>.</p>
-  <p>We recommend creating and using a single GitKraken account per person. Avoid creating duplicate accounts or sharing your account with others.</p>
-</figure>
+> **Note:** GitKraken accounts are not compatible with [Git Integration for Jira](/git-integration-for-jira-cloud/git-integration-for-jira-home-gij-cloud/).
+>
+> We recommend creating and using a single GitKraken account per person. Avoid creating duplicate accounts or sharing your account with others.
 
 ***
 
@@ -77,9 +76,7 @@ You can personalize your GitKraken account to control how your profile appears t
 
 To change your avatar, click your profile picture. This will redirect you to [Gravatar](https://gravatar.com), where you can manage the avatar linked to your email address. GitKraken retrieves your avatar from Gravatar based on the shared email between accounts.
 
-<div class="note">
-Note: It may take several hours for avatar changes to appear in GitKraken or GitLens.
-</div>
+> **Note:** It may take several hours for avatar changes to appear in GitKraken or GitLens.
 
 <figure>
   <img src="/wp-content/uploads/gk-dev-account-personalization.png" srcset="/wp-content/uploads/gk-dev-account-personalization@2x.png" alt="GitKraken account personalization options" class="help-center-img center img-bordered">

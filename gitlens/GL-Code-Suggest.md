@@ -97,6 +97,4 @@ This creates a new commit on the remote branch (shown under **COMMIT SUGGESTIONS
 
 ## Availability
 
-<div class='callout callout--basic'>
-  <p><strong>Note:</strong> Code Suggest is currently supported only for repositories on <strong>GitHub.com</strong>.</p>
-</div>
+> **Note:** Code Suggest is currently supported only for repositories on **GitHub.com**.

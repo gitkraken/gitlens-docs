@@ -112,6 +112,4 @@ If you do not want Cloud Patch data stored on GitKraken servers, you can host Cl
 
 For configuration instructions, see [Self-Hosted Documentation](/gk-dev/gk-dev-home/#self-hosted).
 
-<div class='callout callout--basic'>
-  <p>Note: If you belong to multiple organizations, you can switch between them from the GitKraken Account view.</p>
-</div>
+> **Note:** If you belong to multiple organizations, you can switch between them from the GitKraken Account view.

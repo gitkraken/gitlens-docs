@@ -124,9 +124,7 @@ You can connect multiple integrations if needed, including multiple accounts for
   <figcaption style="text-align:center; color:#888">Select the service you want to integrate and finish setup</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>Community users are limited to basic functionality only.</p>
-</div>
+> **Warning:** Community users are limited to basic functionality only.
 
 ## GitHub PR Stacks `PRO`
 
@@ -195,9 +193,7 @@ GitLens Pro supports integration with Jira Cloud via your GitKraken Account. Thi
   <figcaption style="text-align:center; color:#888">Jira issues auto-linked in GitLens hovers and views</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>This feature is only available for Pro subscription tiers or higher.</p>
-</div>
+> **Warning:** This feature is only available for Pro subscription tiers or higher.
 
 ### Connect the Jira Integration
 
