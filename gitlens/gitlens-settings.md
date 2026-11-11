@@ -74,7 +74,7 @@ Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. Co
 **Cloud Integrations**: connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Jira Data Center, Linear, Trello, and Asana issue trackers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v4@2x.png" alt="The Cloud Integrations category of GitLens Settings listing each provider, from GitHub to Asana and including Jira Data Center and Trello, with Connected and Manage on the connected ones and a Connect button on the rest" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v5@2x.png" alt="The Cloud Integrations category of GitLens Settings listing each provider, from GitHub to Asana and including Jira Data Center and Trello, with Connected and Manage on the connected ones and a Connect button on the rest" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 

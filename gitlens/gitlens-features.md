@@ -1591,7 +1591,7 @@ To connect the integration:
 2. Select **Cloud Integrations** under **Integrations** in the GitLens Settings navigation. Each provider has a card. A provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v5@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center, Trello and Asana" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v6@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center, Trello and Asana" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Cloud Integrations in GitLens Settings, shown here with Jira already connected</figcaption>
 </figure>
 
