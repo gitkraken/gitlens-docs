@@ -34,6 +34,4 @@ To enable this feature, you need to visit any commit in the Bitbucket UI and cli
 <img src="/wp-content/uploads/gl-troubleshooting-bitbucket-pr-commit-links.png" class="help-center-img img-bordered">
 
 The click makes the application is activated and its takes some time for Bitbucket to index data on their side.
-After that PullRequests for commits will be shown in GitLens:
-
-<img src="/wp-content/uploads/gitlens-troubleshooting-bitbucket-pr-on-a-commit.png" class="help-center-img img-bordered">
+After that PullRequests for commits will be shown in GitLens.
