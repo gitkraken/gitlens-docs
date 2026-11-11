@@ -1,0 +1,17 @@
+{
+  "skill": "gkhc-docs-authoring",
+  "central_repo": "gitkraken/GK-WP-HC-Design",
+  "central_commit": "99f1836f76a08df76f5cce52e669624d106356e7",
+  "plugin_version": "2.0.0-dev.5",
+  "distributed_utc": "2026-11-11T16:36:23Z",
+  "files": {
+    "SKILL.md": "6408fd02d0c31f70a109a47028dd615e658f196904e34c2997a690763843b0ce",
+    "references/frontmatter.md": "e84fd81b156831164dc3301c9af78b883061e4ba95f3c69b100bd76b40aff428",
+    "references/metadata.md": "cebb4380f9c72eb98a2d208ff470771ab02580f6f3706ecf1136402f300d362a",
+    "references/patterns.md": "515137a4eba9944a968225fe797aa51b411bb5725ebb588457c0d220ed80999e",
+    "references/skeletons.md": "857b8b948389cdd3cce0e32194d46bc3d6e48acc88a3ab52c3be46c1057e23b0",
+    "scripts/check_pages.py": "4bdb7e6a6f82a51e408e4ff194f96259eeeadcff4e5ac8a2a01dc4f6adc158e5",
+    "scripts/schema.json": "f0421739497d4572a02c1b6e0920dbe7efa44dad6bef4cf2c19fdb8491ef8d09"
+  },
+  "note": "Shared files are owned by GK-WP-HC-Design. Edit them there, or edit here and run collect; product/ is yours."
+}

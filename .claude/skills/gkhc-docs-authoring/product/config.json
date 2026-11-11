@@ -1,0 +1,86 @@
+{
+  "_comment": "Product config of the gkhc-docs-authoring skill for this help center. Local to the docs repo (product/ is never overwritten by skillsync). Seeded by GK-WP-HC-Design skills/seed_products.py; check_pages.py and preview/ read it.",
+  "key": "gitlens",
+  "name": "GitLens",
+  "category": "gitlens",
+  "content_dir": "gitlens",
+  "images_dir": "_images",
+  "home_slug": "gitlens-docs-home",
+  "nav_file": "gitlens",
+  "max_depth": 5,
+  "toc_levels": [
+    2,
+    3
+  ],
+  "code_default_label": "Code",
+  "nav": {
+    "sections": null,
+    "section_fallback": false,
+    "parent_must_be_index": false,
+    "every_page_in_nav": false,
+    "card_fields_required": false,
+    "slug_prefix": ""
+  },
+  "features": {
+    "metric_pipeline": false,
+    "playbooks": false,
+    "settings_specs": false
+  },
+  "checks": {
+    "missing_link_target": "warn",
+    "missing_image": "error",
+    "figures_only": false,
+    "ignore_link_targets": []
+  },
+  "metadata": {
+    "check": "error",
+    "conditional": [
+      "os_support",
+      "git_hosts",
+      "integrations",
+      "hosted_variant"
+    ],
+    "optional": [
+      "og_image"
+    ],
+    "constants": {
+      "product": "GitLens"
+    },
+    "defaults": {
+      "os_support": "[Windows, macOS, Linux]"
+    },
+    "plan_required": [
+      "all",
+      "Community",
+      "Pro",
+      "Advanced",
+      "Business",
+      "Enterprise",
+      "insights-add-on"
+    ],
+    "plan_required_vocabulary": "error",
+    "aliases": {},
+    "extra_fields": [
+      "last_updated"
+    ]
+  },
+  "other_category_pages": {},
+  "known_wp_images": {
+    "/wp-content/uploads/SSO-setup.png": [
+      "gl-releases-old"
+    ],
+    "/wp-content/uploads/gk-dev-account-personalization.png": [
+      "gl-gk-account"
+    ],
+    "/wp-content/uploads/gk-dev-account-personalization@2x.png": [
+      "gl-gk-account"
+    ],
+    "/wp-content/uploads/gk-dev-create-account.png": [
+      "gl-gk-account"
+    ],
+    "/wp-content/uploads/gl-cloud-patch-create.webp": [
+      "gl-cloud-patches",
+      "gl-features-pull-requests-and-collaboration"
+    ]
+  }
+}
