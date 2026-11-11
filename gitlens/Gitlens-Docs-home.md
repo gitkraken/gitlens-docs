@@ -33,7 +33,7 @@ GitLens is an [open-source](https://github.com/gitkraken/vscode-gitlens) Git ext
 
 This page is the starting point for the GitLens Help Center. It explains what GitLens does and where to find the guide you need. It assumes you already use Git and Visual Studio Code or a VS Code-based IDE. It does not cover installation steps or individual settings, which the pages linked below describe in full.
 
-<a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens from the VS Code Marketplace</a>
+---
 
 ## What GitLens is
 

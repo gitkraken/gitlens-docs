@@ -26,6 +26,8 @@ custom_fields:
     card_icon: "code"
     card_color: "red"
     card_description: "Revision navigation, inline and status bar blame, CodeLens, hovers, and file annotations"
+    home_group: "features"
+    home_order: 60
 ---
 <kbd>Last updated: November 2026</kbd>
 

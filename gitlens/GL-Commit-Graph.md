@@ -27,6 +27,8 @@ custom_fields:
     card_icon: "git-commit"
     card_color: "amber"
     card_description: "Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code"
+    home_group: "features"
+    home_order: 10
 ---
 
 <kbd>Last updated: November 2026</kbd>
