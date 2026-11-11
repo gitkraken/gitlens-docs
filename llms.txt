@@ -11,25 +11,25 @@
 - [Accelerate PR Reviews](https://help.gitkraken.com/gitlens/gl-accelerate-pr-reviews/): Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees.
 - [Cleaning Up and Preparing Work for Review](https://help.gitkraken.com/gitlens/gl-workflow-cleanup-prepare-for-review/): Use Git intelligence to transform iterative work into clean, reviewable history
 - [GitKraken Account – GitLens](https://help.gitkraken.com/gitlens/gl-gk-account/): Learn how to create and manage your GitKraken account for GitLens features.
-- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/gl-gk-ai/): Learn more about the use of Gitkraken AI in Gitlens!
+- [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/gl-gk-ai/): Use GitKraken AI in GitLens to write commit and stash messages, explain changes, generate changelogs and pull requests, review changes, and resolve rebase conflicts.
 - [GitLens Cloud Patches](https://help.gitkraken.com/gitlens/gl-cloud-patches/): Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
 - [GitLens Code Suggest](https://help.gitkraken.com/gitlens/gl-code-suggest/): Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
 - [GitLens Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/): Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 - [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Learn the differences between GitLens Community and GitLens Pro
 - [GitLens FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens and GitKraken account integration.
-- [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
-- [Commit Graph is Home](https://help.gitkraken.com/gitlens/home-view/): GitLens Commit Graph: Your Development Workbench
-- [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Explore GitLens integrations with remote providers
+- [GitLens Features](https://help.gitkraken.com/gitlens/gitlens-features/): Learn how to use GitLens in VS Code to see blame and history, work in the Commit Graph and Launchpad, use GitKraken AI, run guided Git commands, and connect integrations.
+- [Commit Graph is Home](https://help.gitkraken.com/gitlens/home-view/): Start your GitLens work in the Commit Graph to see branches, worktrees and agent sessions, then review, compose, compare, rebase and resolve changes.
+- [GitLens Integrations](https://help.gitkraken.com/gitlens/gl-integrations/): Connect GitLens to remote providers and issue trackers, and open or copy remote URLs from VS Code.
 - [GitLens Interactive Code History](https://help.gitkraken.com/gitlens/gl-interactive-code-history/): Learn how GitLens helps you explore and understand your repository’s commit history.
-- [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
+- [AI Agents in GitLens](https://help.gitkraken.com/gitlens/gl-agents/): Monitor, resume, review and compose the work of Claude Code, Codex, GitHub Copilot CLI and OpenCode sessions in GitLens, with GitKraken Hooks, status pills and the Agent Sessions panel.
 - [Manage Parallel Development from the Commit Graph](https://help.gitkraken.com/gitlens/gl-parallel-dev-workflow/): Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees
-- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Managing and Preparing branches to ship
-- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Code Change to Merged branches all through GitLens
+- [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Check where your branch stands, compare it, clean up its commits, rebase, resolve conflicts and review it in the GitLens Commit Graph before you merge.
+- [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Review, revise, compose, compare, and rebase a coding agent's changes in the GitLens Commit Graph until the branch is ready to merge.
 - [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
 - [GitLens Security Information](https://help.gitkraken.com/gitlens/gl-security/): Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
-- [GitLens Settings Overview](https://help.gitkraken.com/gitlens/gitlens-settings/): Learn how to access and customize GitLens settings in Visual Studio Code
+- [GitLens Settings Overview](https://help.gitkraken.com/gitlens/gitlens-settings/): Open GitLens Settings to customize GitLens in Visual Studio Code, and look up each GitLens setting for settings.json.
 - [GitLens Streamline Collaboration](https://help.gitkraken.com/gitlens/gl-streamline-collaboration/): How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
 - [GitLens Support Terms and Conditions](https://help.gitkraken.com/gitlens/gl-terms-and-conditions/): Learn about GitLens Support terms and conditions
 - [GitLens Troubleshooting](https://help.gitkraken.com/gitlens/gitlens-troubleshooting/): GitLens Troubleshooting
@@ -41,3 +41,4 @@
 - [Start Here](https://help.gitkraken.com/gitlens/gitlens-start-here/): How to start working with GitLens
 - [Understanding an Unfamiliar Codebase](https://help.gitkraken.com/gitlens/gl-workflow-understanding-codebases/): Use GitLens Git intelligence to gain context, reduce risk, and make confident changes
 - [Using the GitLens Sidebar](https://help.gitkraken.com/gitlens/side-bar/): Explore GitLens sidebar views for working with repositories, authors, commits, and branches.
+- [Review Changes in the Commit Graph](https://help.gitkraken.com/gitlens/gl-review-changes/): Review working changes, commits, branches, and pull requests in the GitLens Commit Graph. Check off files as you read, step through diffs with keyboard shortcuts, and add an AI review or hand the changes to your coding agent.
