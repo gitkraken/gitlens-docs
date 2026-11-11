@@ -1,6 +1,6 @@
 ---
 title: GitLens Settings Overview
-description: Learn how to access and customize GitLens settings in Visual Studio Code
+description: Open GitLens Settings to customize GitLens in Visual Studio Code, and look up each GitLens setting for settings.json.
 taxonomy:
     category: gitlens
 last_updated: 2026-11
@@ -9,58 +9,87 @@ last_updated: 2026-11
 
 ## Overview
 
-GitLens is highly customizable. Nearly every feature can be tailored through the built-in **Visual Settings Editor** or by editing `settings.json` directly.
+You can customize most GitLens features in the **GitLens Settings** editor or by editing `settings.json` directly.
 
 To open the editor, run _GitLens: Open Settings_ (`gitlens.showSettingsPage`) from the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-01-v3@2x.png" alt="GitLens Visual Settings Editor showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
-  <figcaption style="text-align:center; color:#888">The Visual Settings Editor — Inline Blame category</figcaption>
+  <img src="/wp-content/uploads/gl-settings-01-v3@2x.png" alt="GitLens Settings showing the Inline Blame category with toggle controls and format options" class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">GitLens Settings, Inline Blame category</figcaption>
 </figure>
 
-The editor's navigation rail on the left lists **Account** and **Get Started** at the top, followed by four groups: **Integrations**, **Views**, **Editor**, and **General**. Each category shows its controls with live previews — changes apply immediately. A search bar at the top filters across all categories, and a **User / Workspace** scope toggle determines whether changes apply globally or to the current workspace.
-
-You can deep-link to any category by appending its anchor to the command: `gitlens.showSettingsPage!<anchor>` (for example, `gitlens.showSettingsPage!ai` opens the AI category directly).
+The editor's navigation rail on the left lists **Account**, **Notifications**, and **Get Started** at the top, followed by 4 groups: **Integrations**, **Views**, **Editor**, and **General**. Each category shows its controls with live previews, and changes apply immediately. Use the search bar at the top to filter across all categories, and the **User / Workspace** scope toggle to apply changes globally or to the current workspace only.
 
 ### Setup
 
-The **Account** and **Get Started** entries at the top of the navigation rail cover account management and onboarding.
+Use the **Account**, **Notifications**, and **Get Started** entries at the top of the navigation rail to manage your account, read messages from GitKraken, and get started with GitLens.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-account-01-v4@2x.png" alt="GitLens Settings with the Account category selected, stacked as cards: the signed-in identity with Manage Account and Sign Out, the plan card with its tier badge and included features, the GitKraken AI Usage card with its weekly credits bar and reset date, the active organization and a referral card; the name, e-mail and organization are placeholder values." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Account category</figcaption>
 </figure>
 
-**Account** (`account`) — view your plan and subscription status, manage your GitKraken account, sign in or out, and switch your active organization. The **GitKraken AI Usage** card shows how many of your weekly AI credits you have used and when the allowance resets. On a paid plan, select **Get more AI credits** to buy more; if you belong to an organization, only its owners, admins, and billing contacts can buy credits, and other members see a note to ask an admin or owner. **Get Started** (`setup`) — onboarding steps for new users and feature discovery.
+**Account**: view your plan and subscription status, manage your GitKraken account, sign in or out, and switch your active organization. The **GitKraken AI Usage** card shows how many of your weekly AI credits you have used and when the allowance resets. On a paid plan, select **Get more AI credits** to buy more. If you belong to an organization, only its owners, admins, and billing contacts can buy credits, and other members see a note to ask an admin or owner.
+
+**Get Started**: onboarding steps for new users and feature discovery.
+
+**Notifications**: read messages from GitKraken for your account and organization, such as tips, offers, security notices, and service updates. Sign in to your GitKraken account to see them. The number of unread notifications appears beside the entry in the navigation rail.
+
+- Filter the list with **All**, **Unread**, or **Read**.
+- Select **Mark All as Read**, or **Delete All Read** and then **Confirm** to clear notifications you have read.
+- Hover over a notification to **Mark as Read**, **Mark as Unread**, or **Delete** it.
+- Under **Preferences**, clear **Receive marketing notifications** to stop marketing messages. This option is available on paid plans only.
+
+When a new security or system notice arrives, GitLens also shows it as a VS Code notification with **View**, which opens the inbox, and **Dismiss**. You can also open the inbox from the notifications button in the [Commit Graph](/gitlens/gl-commit-graph/) header.
+
+<figure>
+  <img src="/wp-content/uploads/gl-settings-notifications.png" alt="GitLens Settings open on Notifications, with 4 unread beside the entry in the navigation rail. The inbox shows the All / Unread (4) / Read filter, Mark All as Read and Delete All Read, four unread notifications tagged Help, Offer, Security and System (the first showing its Mark as Read and Delete buttons on hover, two with Claim Offer and View Status buttons), and the Receive marketing notifications preference below." class="help-center-img img-bordered">
+  <figcaption style="text-align:center; color:#888">Notifications category</figcaption>
+</figure>
 
 ### Integrations
 
-Settings for AI, cloud integrations, and external service connections.
+Use the **Integrations** group to set up AI, agents, cloud integrations, and other external service connections.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-ai-01-v2.png" alt="GitLens Settings AI category showing AI provider selection and model configuration" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">AI category</figcaption>
 </figure>
 
-**AI** (`ai`) — choose your AI provider, configure models, and control AI-powered features like commit message generation and code explanations.
+**AI**: choose your AI provider, configure models, and control AI-powered features such as commit message generation and code explanations.
 
-**Agents** (`agents`) — lists the chat, extension, CLI, and editor agents GitLens detects. For each agent, choose whether it is the **Default** agent GitLens uses for AI features, install or uninstall the GitKraken MCP server (**MCP**), and install or uninstall GitKraken Hooks (**Hooks**), which let GitLens track the agent's sessions and coordinate permissions. Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. Codex won't run the hooks until you trust them by running `/hooks` in Codex, so a warning icon next to an installed Codex row shows that reminder and a button to start a Codex session.
+**Agents**: lists the chat, extension, CLI, and editor agents GitLens detects. For each agent, you can:
+
+- Choose whether it is the **Default** agent GitLens uses for AI features.
+- Install or uninstall the GitKraken MCP server (**MCP**).
+- Install or uninstall GitKraken Hooks (**Hooks**), which let GitLens track the agent's sessions and coordinate permissions.
+
+Hooks are available for Claude Code, Codex, GitHub Copilot CLI, and OpenCode. Codex does not run the hooks until you trust them by running `/hooks` in Codex. Until then, a warning icon next to an installed Codex row shows this reminder and a button to start a Codex session.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-agents-table-01-v2@2x.png" alt="The Agents category of GitLens Settings: a table of agents with Default, MCP and Hooks columns, listing Copilot Chat and the detected Claude Code, Codex, GitHub Copilot CLI and OpenCode CLIs with their GitKraken Hooks state, the Hooks column header ringed." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Agents category</figcaption>
 </figure>
 
-**Cloud Integrations** (`integrations`) — connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Jira Data Center, Linear, and Trello issue trackers.
+**Cloud Integrations**: connect GitHub, GitLab, Bitbucket, Azure DevOps, and other hosting providers for pull request information, avatars, and deep links, as well as the Jira, Jira Data Center, Linear, Trello, and Asana issue trackers.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-integrations-01-v4@2x.png" alt="The Cloud Integrations category of GitLens Settings listing each provider, from GitHub to Trello and including Jira Data Center, with Connected and Manage on the connected ones and a Connect button on the rest" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-integrations-01-v4@2x.png" alt="The Cloud Integrations category of GitLens Settings listing each provider, from GitHub to Asana and including Jira Data Center and Trello, with Connected and Manage on the connected ones and a Connect button on the rest" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Cloud Integrations category</figcaption>
 </figure>
 
-**Custom Remotes** (`remotes`) — define URL patterns for self-hosted or non-standard remote providers. **Autolinks** (`autolinks`) — create patterns that automatically turn issue references (like `JIRA-123`) into clickable links. **Launchpad** (`launchpad`) — configure the Launchpad status bar indicator and notification behavior. **Terminal Links** (`terminal-links`) — control how git references in the integrated terminal become clickable links.
+The group also includes:
 
-**Start Work** (`start-work`) — set the **Branch name format** Start Work uses to suggest a branch name when you start work on an issue (`gitlens.startWork.branchNameFormat`, default `${id}-${title}`). Use `${id}` for the issue ID and `${title}` for its lowercase, slugged title; pick them from the field's token list or type them, with the same prefix, suffix, and width modifiers as other GitLens format tokens. GitLens replaces characters that aren't valid in a Git branch name and keeps any `/` as branch folders, and the **Example** line previews the name for a sample issue. Leave the field blank to use the default. Start Work still lets you edit the suggested name before it creates the branch.
+- **Custom Remotes**: define URL patterns for self-hosted or non-standard remote providers.
+- **Autolinks**: create patterns that automatically turn issue references (such as `JIRA-123`) into clickable links.
+- **Launchpad**: configure the Launchpad status bar indicator and notification behavior.
+- **Terminal Links**: control how Git references in the integrated terminal become clickable links.
+
+**Start Work**: set the **Branch name format** that Start Work uses to suggest a branch name when you start work on an issue (`gitlens.startWork.branchNameFormat`, default `${id}-${title}`).
+
+- Use `${id}` for the issue ID and `${title}` for its lowercase, slugged title. Pick them from the field's token list or type them, with the same prefix, suffix, and width modifiers as other GitLens format tokens.
+- GitLens replaces characters that are not valid in a Git branch name and keeps any `/` as branch folders. The **Example** line previews the name for a sample issue.
+- Leave the field blank to use the default. Start Work still lets you edit the suggested name before it creates the branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-start-work-01-v2@2x.png" alt="The Start Work category of GitLens Settings, selected under Integrations, with the Branch name format field set to ${id}-${title} and its example branch name ABC-123-update-login-flow." class="help-center-img img-bordered">
@@ -69,56 +98,67 @@ Settings for AI, cloud integrations, and external service connections.
 
 ### Editor
 
-Annotation and decoration settings for the code editor.
+Use the **Editor** group to configure the annotations and decorations GitLens adds to the code editor.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-01-v3@2x.png" alt="GitLens Settings Inline Blame category showing current line blame annotation options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Inline Blame category — the default view</figcaption>
 </figure>
 
-**Inline Blame** (`current-line`) — configure the blame annotation shown at the end of the current line, including format, date style, and pull request information. **Git CodeLens** (`code-lens`) — toggle and format the authorship and change indicators above code blocks. **Status Bar Blame** (`status-bar`) — control the blame summary in the VS Code status bar. **Hovers** (`hovers`) — configure hover tooltips that appear over blame annotations and code, including details, changes, and pull request information.
+- **Inline Blame**: configure the blame annotation shown at the end of the current line, including format, date style, and pull request information.
+- **Git CodeLens**: turn on or off and format the authorship and change indicators above code blocks.
+- **Status Bar Blame**: control the blame summary in the VS Code status bar.
+- **Hovers**: configure hover tooltips that appear over blame annotations and code, including details, changes, and pull request information.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-hovers-01-v2@2x.png" alt="GitLens Settings Hovers category showing hover annotation toggles" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Hovers category</figcaption>
 </figure>
 
-**File Blame** (`blame`) — gutter annotations showing per-line authorship across the entire file. **File Changes** (`changes`) — gutter indicators highlighting additions, deletions, and modifications relative to the previous commit. **File Heatmap** (`heatmap`) — color-coded gutter annotations showing the relative age of each line of code.
+The group also includes the file annotations:
+
+- **File Blame**: gutter annotations showing per-line authorship across the entire file.
+- **File Changes**: gutter indicators highlighting additions, deletions, and modifications relative to the previous commit.
+- **File Heatmap**: color-coded gutter annotations showing the relative age of each line of code.
 
 ### Views
 
-Configuration for Commit Graph and source control tree views.
+Use the **Views** group to configure the Commit Graph and the GitLens views in the Side Bar.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-commit-graph-01-v3@2x.png" alt="GitLens Settings on the Commit Graph category: the live preview of graph rows with branch and tag pills at the top, then the setting for where the Commit Graph opens, the row paging limits and the setting that shows markers" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commit Graph category</figcaption>
 </figure>
 
-**Commit Graph** (`commit-graph`) — layout, columns, minimap, scroll markers, branch and tag pill layout, details panel position, and graph style (table, list, or auto). This is a Pro feature. **GitLens SCM** (`scm-views`) — configure the Source Control Manager view integration. **Commits** (`commits-view`) — format templates for the Commits view (commit label, description, and tooltip formats; file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings. **Stashes** (`stashes-view`) — configure the Stashes view layout and display options.
+- **Commit Graph**: layout, columns, minimap, scroll markers, branch and tag pill layout, details panel position, and graph style (table, list, or auto). The Commit Graph is a Pro feature.
+- **GitLens SCM**: configure the Source Control Manager view integration.
+- **Commits**: format templates for the Commits view (commit label, description, and tooltip formats, and file and file description formats), with a link to the VS Code Settings UI for the view's remaining `gitlens.views.commits` settings.
+- **Stashes**: configure the Stashes view layout and display options.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-views-01-v3@2x.png" alt="GitLens Settings with the Commits view category selected in the Views group: format templates for the commit label, commit description, commit tooltip, file rows and file description, each with a token picker, and a footer link to the full gitlens.views.commits options in the VS Code Settings UI" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Commits view category</figcaption>
 </figure>
 
-> **Note:** In v19.0, ten view-specific settings categories (Repositories, Branches, Remotes, Tags, Worktrees, Contributors, File History, Line History, Search & Compare, and File Annotations) moved to VS Code's native settings. Configure them in `settings.json` or through _Preferences: Open Settings (UI)_ by searching for `gitlens.views`.
+> **Note:** GitLens Settings has no category for the Repositories, Branches, Remotes, Tags, Worktrees, Contributors, File History, Line History, and Search & Compare views, or for File Annotations. Configure them in `settings.json`, or in _Preferences: Open Settings (UI)_ by searching for `gitlens.views`, or `gitlens.fileAnnotations` for File Annotations.
 
 ### General
 
-Date formatting and UI customization.
+Use the **General** group to configure date formatting and the GitLens items in menus and toolbars.
 
 <figure>
   <img src="/wp-content/uploads/gl-settings-dates-01-v2.png" alt="GitLens Settings Dates and Times category showing date format options" class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Dates & Times category</figcaption>
 </figure>
 
-**Dates & Times** (`dates`) — control absolute and relative date formatting across all GitLens surfaces. **Menus & Toolbars** (`menus`) — show or hide GitLens items in editor context menus, title bars, and toolbars.
+- **Dates & Times**: control absolute and relative date formatting across GitLens.
+- **Menus & Toolbars**: show or hide GitLens items in editor context menus, title bars, and toolbars.
 
 ***
 
 ## Settings Reference
 
-The sections below document every `settings.json` parameter grouped by feature area. You can edit these directly in `settings.json` or use the Visual Settings Editor above.
+Look up a GitLens setting by feature area. Edit any of these settings directly in `settings.json`, or change the ones GitLens Settings shows in that editor.
 
 ## Current Line Blame Settings
 
@@ -142,7 +182,7 @@ Use these settings to customize how GitLens displays blame annotations for the c
 </tr>
 <tr>
 <td><code>gitlens.currentLine.format</code></td>
-<td>Sets the display format for the annotation. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> for supported placeholders. Date format is managed by <code>gitlens.currentLine.dateFormat</code>.</td>
+<td>Sets the display format for the annotation. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> for supported placeholders. Date format is managed by <code>gitlens.currentLine.dateFormat</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.currentLine.pullRequests.enabled</code></td>
@@ -217,9 +257,9 @@ These settings control GitLens CodeLens overlays, which provide inline contextua
 <tr>
 <td><code>gitlens.codeLens.scopes</code></td>
 <td>Controls where Git CodeLens is displayed:<br>
-<code>document</code> – top of the file<br>
-<code>containers</code> – start of container symbols (e.g., classes, interfaces)<br>
-<code>blocks</code> – start of block symbols (e.g., functions, methods)</td>
+<code>document</code>: top of the file<br>
+<code>containers</code>: start of container symbols (e.g., classes, interfaces)<br>
+<code>blocks</code>: start of block symbols (e.g., functions, methods)</td>
 </tr>
 <tr>
 <td><code>gitlens.codeLens.symbolScopes</code></td>
@@ -244,12 +284,12 @@ These settings control how GitLens displays blame information in the status bar,
 <tbody>
 <tr>
 <td><code>gitlens.statusBar.alignment</code></td>
-<td>Controls where the blame annotation appears in the status bar.<br><br><code>left</code> – aligns to the left<br><code>right</code> – aligns to the right</td>
+<td>Controls where the blame annotation appears in the status bar.<br><br><code>left</code>: aligns to the left<br><code>right</code>: aligns to the right</td>
 </tr>
 <tr>
 <td><code>gitlens.statusBar.command</code></td>
-<td>Specifies the command executed when clicking the blame status bar item. Default is <code>gitlens.toggleFileBlame</code>. You can choose from a list of commands, such as:<br><br>
-<code>gitlens.toggleFileBlame</code>, <code>gitlens.toggleFileHeatmap</code>, <code>gitlens.toggleFileChanges</code>, <code>gitlens.toggleFileChangesOnly</code>, <code>gitlens.diffWithPrevious</code>, <code>gitlens.revealCommitInView</code>, <code>gitlens.showCommitsInView</code>, <code>gitlens.showQuickCommitDetails</code>, <code>gitlens.showQuickCommitFileDetails</code>, <code>gitlens.showQuickFileHistory</code>, <code>gitlens.showQuickRepoHistory</code>, <code>gitlens.openCommitOnRemote</code>, <code>gitlens.copyRemoteCommitUrl</code>, <code>gitlens.openFileOnRemote</code>, <code>gitlens.copyRemoteFileUrl</code></td>
+<td>Specifies the command executed when clicking the blame status bar item. Default is <code>gitlens.showQuickCommitDetails</code>. Available commands:<br><br>
+<code>gitlens.toggleFileBlame</code>, <code>gitlens.toggleFileHeatmap</code>, <code>gitlens.toggleFileChanges</code>, <code>gitlens.toggleFileChangesOnly</code>, <code>gitlens.toggleCodeLens</code>, <code>gitlens.diffWithPrevious</code>, <code>gitlens.diffWithWorking</code>, <code>gitlens.revealCommitInView</code>, <code>gitlens.showCommitsInView</code>, <code>gitlens.showQuickCommitDetails</code>, <code>gitlens.showQuickCommitFileDetails</code>, <code>gitlens.showQuickFileHistory</code>, <code>gitlens.showQuickRepoHistory</code>, <code>gitlens.openCommitOnRemote</code>, <code>gitlens.copyRemoteCommitUrl</code>, <code>gitlens.openFileOnRemote</code>, <code>gitlens.copyRemoteFileUrl</code></td>
 </tr>
 <tr>
 <td><code>gitlens.statusBar.dateFormat</code></td>
@@ -261,7 +301,7 @@ These settings control how GitLens displays blame information in the status bar,
 </tr>
 <tr>
 <td><code>gitlens.statusBar.format</code></td>
-<td>Defines the display format of blame data in the status bar. Refer to <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>. Controlled alongside <code>gitlens.statusBar.dateFormat</code>.</td>
+<td>Defines the display format of blame data in the status bar. Refer to <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>. Controlled alongside <code>gitlens.statusBar.dateFormat</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.statusBar.pullRequests.enabled</code></td>
@@ -273,7 +313,7 @@ These settings control how GitLens displays blame information in the status bar,
 </tr>
 <tr>
 <td><code>gitlens.statusBar.tooltipFormat</code></td>
-<td>Specifies the markdown format used in the hover tooltip over blame info. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>.</td>
+<td>Specifies the markdown format used in the hover tooltip over blame info. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>.</td>
 </tr>
 </tbody>
 </table>
@@ -306,7 +346,7 @@ Use these settings to control when and how GitLens displays hover popups that sh
 </tr>
 <tr>
 <td><code>gitlens.hovers.annotations.over</code></td>
-<td>Controls when annotation hovers trigger:<br><br><code>annotation</code> – hover only on the annotation<br><code>line</code> – hover anywhere on the line</td>
+<td>Controls when annotation hovers trigger:<br><br><code>annotation</code>: hover only on the annotation<br><code>line</code>: hover anywhere on the line</td>
 </tr>
 <tr>
 <td><code>gitlens.hovers.avatars</code></td>
@@ -318,7 +358,7 @@ Use these settings to control when and how GitLens displays hover popups that sh
 </tr>
 <tr>
 <td><code>gitlens.hovers.changesDiff</code></td>
-<td>Controls the diff content shown in hovers:<br><br><code>line</code> – shows only changes to the line<br><code>hunk</code> – shows related changes (code hunk)</td>
+<td>Controls the diff content shown in hovers:<br><br><code>line</code>: shows only changes to the line<br><code>hunk</code>: shows related changes (code hunk)</td>
 </tr>
 <tr>
 <td><code>gitlens.hovers.currentLine.changes</code></td>
@@ -334,11 +374,11 @@ Use these settings to control when and how GitLens displays hover popups that sh
 </tr>
 <tr>
 <td><code>gitlens.hovers.currentLine.over</code></td>
-<td>Controls when hovers appear on the current line:<br><br><code>annotation</code> – hover only on the annotation<br><code>line</code> – hover anywhere on the line</td>
+<td>Controls when hovers appear on the current line:<br><br><code>annotation</code>: hover only on the annotation<br><code>line</code>: hover anywhere on the line</td>
 </tr>
 <tr>
 <td><code>gitlens.hovers.detailsMarkdownFormat</code></td>
-<td>Defines the markdown format used for <em>commit details</em> hovers. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>.</td>
+<td>Defines the markdown format used for <em>commit details</em> hovers. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>.</td>
 </tr>
 <tr>
 <td><code>gitlens.hovers.enabled</code></td>
@@ -359,7 +399,6 @@ Use these settings to control when and how GitLens displays hover popups that sh
 </tbody>
 </table>
 
-</table>
 ***
 
 ## View Settings
@@ -378,27 +417,27 @@ Use these settings to control when and how GitLens displays hover popups that sh
 </tr>
 <tr>
 <td><code>gitlens.views.formats.commits.label</code></td>
-<td>Specifies the format of commits in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the format of commits in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.commits.description</code></td>
-<td>Specifies the description format of commits in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the description format of commits in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.files.label</code></td>
-<td>Specifies the format of a file in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#file-tokens"><em>File Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the format of a file in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#file-tokens"><em>File Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.files.description</code></td>
-<td>Specifies the description format of a file in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#file-tokens"><em>File Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the description format of a file in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#file-tokens"><em>File Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.stashes.label</code></td>
-<td>Specifies the format of stashes in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the format of stashes in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.stashes.description</code></td>
-<td>Specifies the description format of stashes in the views. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
+<td>Specifies the description format of stashes in the views. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a> in the GitLens docs.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.formats.stashes.tooltip</code></td>
@@ -425,7 +464,7 @@ Use these settings to control when and how GitLens displays hover popups that sh
 <td>Specifies how the Branches view displays file icons.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.formats.files.label</code></td>
+<td><code>gitlens.views.remotes.files.icon</code></td>
 <td>Specifies how the Remotes view displays file icons.</td>
 </tr>
 <tr>
@@ -453,8 +492,8 @@ Use these settings to control when and how GitLens displays hover popups that sh
 <td>Specifies whether to collapse opened worktrees into a single repository in views when possible.</td>
 </tr>
 <tr>
-<td><code>Gitlens.views.showCurrentBranchOnTo</code></td>
-<td>Specifies whether the current branch is shown at the top of views.</td>
+<td><code>gitlens.views.showCurrentBranchOnTop</code></td>
+<td>Specifies whether to always show the current branch at the top of views.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.scm.grouped.default</code></td>
@@ -495,9 +534,9 @@ These settings control how the GitLens <em>Commits</em> view displays commit dat
 <tr>
 <td><code>gitlens.views.commits.files.layout</code></td>
 <td>Controls how files are displayed:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> based on the <code>threshold</code><br>
-<code>list</code> – displays a flat file list<br>
-<code>tree</code> – displays a hierarchical file structure</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> based on the <code>threshold</code><br>
+<code>list</code>: displays a flat file list<br>
+<code>tree</code>: displays a hierarchical file structure</td>
 </tr>
 <tr>
 <td><code>gitlens.views.commits.files.threshold</code></td>
@@ -522,13 +561,13 @@ These settings control how the GitLens <em>Commits</em> view displays commit dat
 <tr>
 <td><code>gitlens.views.commits.showBranchComparison</code></td>
 <td>Controls whether to display branch or working tree comparisons:<br><br>
-<code>false</code> – hides comparison section<br>
-<code>branch</code> – compares current branch to another reference<br>
-<code>working</code> – compares working tree to a selected reference</td>
+<code>false</code>: hides comparison section<br>
+<code>branch</code>: compares current branch to another reference<br>
+<code>working</code>: compares working tree to a selected reference</td>
 </tr>
 <tr>
-<td><code>gitlens.views.commits.showSignatureVerification</code></td>
-<td>Shows commit signature verification status in views.</td>
+<td><code>gitlens.signing.showSignatureBadges</code></td>
+<td>Shows signature verification badges on commits in the Commit Graph and other views.</td>
 </tr>
 </tbody>
 </table>
@@ -564,8 +603,8 @@ These settings customize how repositories are displayed and interacted with in t
 <tr>
 <td><code>gitlens.views.repositories.branches.layout</code></td>
 <td>Controls branch layout:<br><br>
-<code>list</code> – shows all branches in a list<br>
-<code>tree</code> – groups branches in a tree structure if names contain <code>/</code></td>
+<code>list</code>: shows all branches in a list<br>
+<code>tree</code>: groups branches in a tree structure if names contain <code>/</code></td>
 </tr>
 <tr>
 <td><code>gitlens.views.repositories.branches.showBranchComparison</code></td>
@@ -582,9 +621,9 @@ These settings customize how repositories are displayed and interacted with in t
 <tr>
 <td><code>gitlens.views.repositories.files.layout</code></td>
 <td>Controls file display layout:<br><br>
-<code>auto</code> – switches based on file count and nesting<br>
-<code>list</code> – flat file list<br>
-<code>tree</code> – hierarchical file view</td>
+<code>auto</code>: switches based on file count and nesting<br>
+<code>list</code>: flat file list<br>
+<code>tree</code>: hierarchical file view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.repositories.files.threshold</code></td>
@@ -603,7 +642,7 @@ These settings customize how repositories are displayed and interacted with in t
 <td>Shows branches for each repository.</td>
 </tr>
 <tr>
-<td><code>itlens.views.repositories.showCommits</code></td>
+<td><code>gitlens.views.repositories.showCommits</code></td>
 <td>Displays commits from the current branch for each repository.</td>
 </tr>
 <tr>
@@ -659,11 +698,11 @@ These settings configure the behavior and display options for the GitLens <em>Fi
 </tr>
 <tr>
 <td><code>gitlens.advanced.fileHistoryShowMergeCommits</code></td>
-<td>Controls whether merge commits are shown in file history:<br><br><code>show</code> – includes merge commits<br><code>hide</code> – excludes merge commits</td>
+<td>Shows merge commits in file histories. Default: <code>false</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.fileHistory.mode</code></td>
-<td>Controls the display mode — <code>commits</code> shows commit history, <code>contributors</code> groups by contributor.</td>
+<td>Controls the default display mode:<br><br><code>commits</code>: shows commits for the selected file or folder<br><code>contributors</code>: shows contributors for the selected file or folder</td>
 </tr>
 </tbody>
 </table>
@@ -715,8 +754,8 @@ These settings configure the display and behavior of the GitLens <em>Branches</e
 <tr>
 <td><code>gitlens.views.branches.branches.layout</code></td>
 <td>Controls how branches are displayed:<br><br>
-<code>list</code> – shows branches as a list<br>
-<code>tree</code> – groups branches into a tree structure</td>
+<code>list</code>: shows branches as a list<br>
+<code>tree</code>: groups branches into a tree structure</td>
 </tr>
 <tr>
 <td><code>gitlens.views.branches.files.compact</code></td>
@@ -725,9 +764,9 @@ These settings configure the display and behavior of the GitLens <em>Branches</e
 <tr>
 <td><code>gitlens.views.branches.files.layout</code></td>
 <td>Controls file display layout:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> based on the <code>threshold</code><br>
-<code>list</code> – displays a flat list<br>
-<code>tree</code> – displays files hierarchically</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> based on the <code>threshold</code><br>
+<code>list</code>: displays a flat list<br>
+<code>tree</code>: displays files hierarchically</td>
 </tr>
 <tr>
 <td><code>gitlens.views.branches.files.threshold</code></td>
@@ -752,11 +791,11 @@ These settings configure the display and behavior of the GitLens <em>Branches</e
 <tr>
 <td><code>gitlens.views.branches.showBranchComparison</code></td>
 <td>Controls display of branch comparisons:<br><br>
-<code>false</code> – hides comparisons<br>
-<code>branch</code> – compares the current branch with a selected reference</td>
+<code>false</code>: hides comparisons<br>
+<code>branch</code>: compares the current branch with a selected reference</td>
 </tr>
 <tr>
-<td><code>gitlens.views.branches.compact</code></td>
+<td><code>gitlens.views.branches.branches.compact</code></td>
 <td>Flattens branch folders when using tree layout, combining single-child folders into a single entry.</td>
 </tr>
 </tbody>
@@ -785,8 +824,8 @@ These settings define how branches, files, and pull requests appear in the GitLe
 <tr>
 <td><code>gitlens.views.remotes.branches.layout</code></td>
 <td>Controls how branches are displayed:<br><br>
-<code>list</code> – shows branches in a flat list<br>
-<code>tree</code> – groups branches hierarchically</td>
+<code>list</code>: shows branches in a flat list<br>
+<code>tree</code>: groups branches hierarchically</td>
 </tr>
 <tr>
 <td><code>gitlens.views.remotes.files.compact</code></td>
@@ -795,9 +834,9 @@ These settings define how branches, files, and pull requests appear in the GitLe
 <tr>
 <td><code>gitlens.views.remotes.files.layout</code></td>
 <td>Controls file display layout:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> depending on nesting<br>
-<code>list</code> – flat file list<br>
-<code>tree</code> – hierarchical file view</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> depending on nesting<br>
+<code>list</code>: flat file list<br>
+<code>tree</code>: hierarchical file view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.remotes.files.threshold</code></td>
@@ -820,17 +859,12 @@ These settings define how branches, files, and pull requests appear in the GitLe
 <td>Determines whether remotes appear in the <em>Remotes</em> view or are shown in the <em>Repositories</em> view.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.remotes.showBranchComparison</code></td>
-<td>Controls display of branch comparisons:<br><br>
-<code>false</code> – hides comparisons<br>
-<code>branch</code> – compares the current branch with a selected reference</td>
-</tr>
-<tr>
-<td><code>gitlens.views.remotes.compact</code></td>
+<td><code>gitlens.views.remotes.branches.compact</code></td>
 <td>Flattens branch folders when using tree layout, combining single-child folders into a single entry.</td>
 </tr>
 </tbody>
 </table>
+
 ***
 
 ## Stashes View Settings
@@ -854,9 +888,9 @@ These settings control how files and stash entries are displayed in the GitLens 
 <tr>
 <td><code>gitlens.views.stashes.files.layout</code></td>
 <td>Controls file display layout:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> layouts based on nesting<br>
-<code>list</code> – shows a flat list<br>
-<code>tree</code> – shows a hierarchical view</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> layouts based on nesting<br>
+<code>list</code>: shows a flat list<br>
+<code>tree</code>: shows a hierarchical view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.stashes.files.threshold</code></td>
@@ -892,8 +926,8 @@ These settings control how Git tags and related files appear in the GitLens <em>
 <tr>
 <td><code>gitlens.views.tags.branches.layout</code></td>
 <td>Controls tag layout:<br><br>
-<code>list</code> – displays tags as a flat list<br>
-<code>tree</code> – groups tags hierarchically</td>
+<code>list</code>: displays tags as a flat list<br>
+<code>tree</code>: groups tags hierarchically</td>
 </tr>
 <tr>
 <td><code>gitlens.views.tags.files.compact</code></td>
@@ -902,9 +936,9 @@ These settings control how Git tags and related files appear in the GitLens <em>
 <tr>
 <td><code>gitlens.views.tags.files.layout</code></td>
 <td>Controls file display layout:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> layouts based on nesting<br>
-<code>list</code> – shows a flat list<br>
-<code>tree</code> – shows a hierarchical view</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> layouts based on nesting<br>
+<code>list</code>: shows a flat list<br>
+<code>tree</code>: shows a hierarchical view</td>
 </tr>
 <tr>
 <td><code>gitlens.views.tags.files.threshold</code></td>
@@ -915,8 +949,8 @@ These settings control how Git tags and related files appear in the GitLens <em>
 <td>Determines whether tags are shown in the <em>Tags</em> view or revealed in the <em>Repositories</em> view.</td>
 </tr>
 <tr>
-<td><code>gitlens.views.tags.compact</code></td>
-<td>Flattens branch folders when using tree layout, combining single-child folders into a single entry.</td>
+<td><code>gitlens.views.tags.branches.compact</code></td>
+<td>Flattens tag folders when using tree layout, combining single-child folders into a single entry.</td>
 </tr>
 </tbody>
 </table>
@@ -948,9 +982,9 @@ These settings control how worktrees and related information appear in the GitLe
 <tr>
 <td><code>gitlens.views.worktrees.files.layout</code></td>
 <td>Controls how files are displayed:<br><br>
-<code>auto</code> – automatically switches between <code>tree</code> and <code>list</code> views based on the <code>threshold</code><br>
-<code>list</code> – shows files in a flat list<br>
-<code>tree</code> – shows files hierarchically</td>
+<code>auto</code>: automatically switches between <code>tree</code> and <code>list</code> views based on the <code>threshold</code><br>
+<code>list</code>: shows files in a flat list<br>
+<code>tree</code>: shows files hierarchically</td>
 </tr>
 <tr>
 <td><code>gitlens.views.worktrees.files.threshold</code></td>
@@ -975,8 +1009,8 @@ These settings control how worktrees and related information appear in the GitLe
 <tr>
 <td><code>gitlens.views.worktrees.showBranchComparison</code></td>
 <td>Shows a comparison of the current branch with a user-selected reference:<br><br>
-<code>false</code> – hides comparisons<br>
-<code>branch</code> – compares with a selected reference (e.g., tag or branch)</td>
+<code>false</code>: hides comparisons<br>
+<code>branch</code>: compares with a selected reference (e.g., tag or branch)</td>
 </tr>
 </tbody>
 </table>
@@ -985,7 +1019,7 @@ These settings control how worktrees and related information appear in the GitLe
 
 ## Contributors View Settings
 
-See also [View Settings](/gitlens/gitlens-settings/#view-settings)
+See also [View Settings](/gitlens/gitlens-settings/#view-settings).
 
 <table>
 <thead>
@@ -997,35 +1031,35 @@ See also [View Settings](/gitlens/gitlens-settings/#view-settings)
 <tbody>
 <tr>
 <td><code>gitlens.views.contributors.avatars</code></td>
-<td>Specifies whether to show avatar images instead of commit (or status) icons in the <em>Contributors</em> view</td>
+<td>Shows avatar images instead of commit or status icons in the <em>Contributors</em> view.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.files.compact</code></td>
-<td>Specifies whether to compact (flatten) unnecessary file nesting in the <em>Contributors</em> view. Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>tree</code> or <code>auto</code></td>
+<td>Flattens unnecessary file nesting in the <em>Contributors</em> view. Applies only when <code>gitlens.views.contributors.files.layout</code> is set to <code>tree</code> or <code>auto</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.files.layout</code></td>
-<td>Specifies how the <em>Contributors</em> view will display files<br><br><code>auto</code> - automatically switches between displaying files as a <code>tree</code> or <code>list</code> based on the <code>gitlens.views.commits.files.threshold</code> value and the number of files at each nesting level<br><code>list</code> - displays files as a list<br><code>tree</code> - displays files as a tree</td>
+<td>Controls how the <em>Contributors</em> view displays files:<br><br><code>auto</code>: switches between <code>tree</code> and <code>list</code> based on the <code>gitlens.views.contributors.files.threshold</code> value and the number of files at each nesting level<br><code>list</code>: displays files as a list<br><code>tree</code>: displays files as a tree</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.files.threshold</code></td>
-<td>Specifies when to switch between displaying files as a <code>tree</code> or <code>list</code> based on the number of files in a nesting level in the <em>Contributors</em> view. Only applies when <code>gitlens.views.commits.files.layout</code> is set to <code>auto</code></td>
+<td>Defines when to switch between <code>tree</code> and <code>list</code> layouts based on the number of files in a nesting level in the <em>Contributors</em> view. Applies only when <code>gitlens.views.contributors.files.layout</code> is set to <code>auto</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.pullRequests.enabled</code></td>
-<td>Specifies whether to query for pull requests associated with the current branch and commits in the <em>Contributors</em> view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+<td>Enables querying for pull requests associated with branches and commits in the <em>Contributors</em> view. Requires a connection to a supported remote service, such as GitHub.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.pullRequests.showForCommits</code></td>
-<td>Specifies whether to show pull requests (if any) associated with the current branch in the <em>Contributors</em> view. Requires a connection to a supported remote service (e.g. GitHub)</td>
+<td>Shows pull requests associated with commits in the <em>Contributors</em> view. Requires a connection to a supported remote service, such as GitHub.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.showAllBranches</code></td>
-<td>Specifies whether to show commits from all branches in the <em>Contributors</em> view</td>
+<td>Shows commits from all branches in the <em>Contributors</em> view.</td>
 </tr>
 <tr>
 <td><code>gitlens.views.contributors.showStatistics</code></td>
-<td>Specifies whether to show contributor statistics in the <em>Contributors</em> view. This can take a while to compute depending on the repository size</td>
+<td>Shows contributor statistics in the <em>Contributors</em> view. Computing the statistics can take a while in large repositories.</td>
 </tr>
 </tbody>
 </table>
@@ -1054,9 +1088,9 @@ These settings control how files and avatars are displayed, and what clicking a 
 <tr>
 <td><code>gitlens.views.searchAndCompare.files.layout</code></td>
 <td>Controls file display in the <em>Search &amp; Compare</em> view:<br><br>
-<code>auto</code> – switches between <code>tree</code> and <code>list</code> based on nesting and threshold<br>
-<code>list</code> – shows files in a flat list<br>
-<code>tree</code> – shows files hierarchically</td>
+<code>auto</code>: switches between <code>tree</code> and <code>list</code> based on nesting and threshold<br>
+<code>list</code>: shows files in a flat list<br>
+<code>tree</code>: shows files hierarchically</td>
 </tr>
 <tr>
 <td><code>gitlens.views.searchAndCompare.files.threshold</code></td>
@@ -1099,7 +1133,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.blame.format</code></td>
-<td>Specifies the display format of blame annotations. See <a href="https://github.com/eamodio/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>. Date format is controlled by <code>gitlens.blame.dateFormat</code>.</td>
+<td>Specifies the display format of blame annotations. See <a href="https://github.com/gitkraken/vscode-gitlens/wiki/Custom-Formatting#commit-tokens"><em>Commit Tokens</em></a>. Date format is controlled by <code>gitlens.blame.dateFormat</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.heatmap.enabled</code></td>
@@ -1107,7 +1141,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.blame.heatmap.location</code></td>
-<td>Determines heatmap indicator placement:<br><br><code>left</code> – left edge of annotations<br><code>right</code> – right edge of annotations</td>
+<td>Determines heatmap indicator placement:<br><br><code>left</code>: left edge of annotations<br><code>right</code>: right edge of annotations</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.highlight.enabled</code></td>
@@ -1115,7 +1149,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.blame.highlight.locations</code></td>
-<td>Specifies where highlights appear:<br><br><code>file</code> – file indicator<br><code>line</code> – full-line background highlight<br><code>overview</code> – decoration in the overview ruler</td>
+<td>Specifies where highlights appear:<br><br><code>gutter</code>: adds an indicator to the gutter<br><code>line</code>: full-line background highlight<br><code>overview</code>: decoration in the overview ruler</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.ignoreWhitespace</code></td>
@@ -1127,7 +1161,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.blame.toggleMode</code></td>
-<td>Determines toggle scope:<br><br><code>file</code> – toggles blame per file<br><code>window</code> – toggles blame for all files in the window</td>
+<td>Determines toggle scope:<br><br><code>file</code>: toggles blame per file<br><code>window</code>: toggles blame for all files in the window</td>
 </tr>
 <tr>
 <td><code>gitlens.blame.fontFamily</code></td>
@@ -1162,11 +1196,11 @@ These settings control how files and avatars are displayed, and what clicking a 
 <tbody>
 <tr>
 <td><code>gitlens.changes.locations</code></td>
-<td>Controls where file changes indicators appear:<br><br><code>gutter</code> – shows a file indicator in the gutter<br><code>overview</code> – adds a decoration in the overview ruler (scroll bar)</td>
+<td>Controls where file changes indicators appear:<br><br><code>gutter</code>: shows a file indicator in the gutter<br><code>line</code>: adds a full-line background highlight<br><code>overview</code>: adds a decoration in the overview ruler (scroll bar)</td>
 </tr>
 <tr>
 <td><code>gitlens.changes.toggleMode</code></td>
-<td>Determines toggle scope for file changes annotations:<br><br><code>file</code> – toggles annotations per file<br><code>window</code> – toggles annotations for all files in the window</td>
+<td>Determines toggle scope for file changes annotations:<br><br><code>file</code>: toggles annotations per file<br><code>window</code>: toggles annotations for all files in the window</td>
 </tr>
 </tbody>
 </table>
@@ -1197,11 +1231,11 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.heatmap.locations</code></td>
-<td>Specifies where heatmap indicators appear:<br><br><code>gutter</code> – shows indicator in the gutter<br><code>overview</code> – adds a decoration in the overview ruler (scroll bar)</td>
+<td>Specifies where heatmap indicators appear:<br><br><code>gutter</code>: shows indicator in the gutter<br><code>line</code>: adds a full-line background highlight<br><code>overview</code>: adds a decoration in the overview ruler (scroll bar)</td>
 </tr>
 <tr>
 <td><code>gitlens.heatmap.toggleMode</code></td>
-<td>Determines toggle scope for file heatmap annotations:<br><br><code>file</code> – toggles annotations per file<br><code>window</code> – toggles annotations for all files in the window</td>
+<td>Determines toggle scope for file heatmap annotations:<br><br><code>file</code>: toggles annotations per file<br><code>window</code>: toggles annotations for all files in the window</td>
 </tr>
 </tbody>
 </table>
@@ -1244,7 +1278,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.sortBy</code></td>
-<td>Specifies sorting order of commands in the <em>Git Command Palette</em>:<br><br><code>name</code> – alphabetically by command name<br><code>usage</code> – by last used date</td>
+<td>Specifies sorting order of commands in the <em>Git Command Palette</em>:<br><br><code>name</code>: alphabetically by command name<br><code>usage</code>: by last used date</td>
 </tr>
 </tbody>
 </table>
@@ -1268,9 +1302,9 @@ These settings control how files and avatars are displayed, and what clicking a 
 <tr>
 <td><code>gitlens.terminalLinks.showIn</code></td>
 <td>Controls where terminal link references open.<br><br>
-<code>graph</code> – opens in the Commit Graph<br>
-<code>inspect</code> – opens in the Inspect view<br>
-<code>quickpick</code> – opens in a quick pick menu</td>
+<code>graph</code>: opens in the Commit Graph<br>
+<code>inspect</code>: opens in the Inspect view<br>
+<code>quickpick</code>: opens in a quick pick menu</td>
 </tr>
 </tbody>
 </table>
@@ -1289,30 +1323,35 @@ These settings control how files and avatars are displayed, and what clicking a 
 <tbody>
 <tr>
 <td><code>gitlens.rebaseEditor.openOnPausedRebase</code></td>
-<td>Controls whether the rebase editor auto-opens when a rebase is paused. The <code>auto</code> option only opens for rebases started within GitLens.<br><br>
-<code>true</code> – always opens<br>
-<code>false</code> – never opens<br>
-<code>auto</code> – only opens for rebases started within GitLens</td>
+<td>Controls whether the Interactive Rebase Editor opens automatically when GitLens detects a paused rebase. For a rebase paused on conflicts, GitLens opens the Commit Graph instead, when it can.<br><br>
+<code>true</code>: opens for any paused rebase<br>
+<code>false</code>: never opens<br>
+<code>auto</code> (default): opens only for rebases started or acted on from GitLens<br>
+<code>interactive</code>: opens only for interactive rebases</td>
 </tr>
 <tr>
 <td><code>gitlens.rebaseEditor.revealLocation</code></td>
-<td>Controls where the rebase editor opens.</td>
+<td>Controls where the Interactive Rebase Editor reveals commits and references:<br><br>
+<code>graph</code> (default): in the Commit Graph<br>
+<code>inspect</code>: in the Inspect view</td>
 </tr>
 <tr>
 <td><code>gitlens.rebaseEditor.revealBehavior</code></td>
-<td>Controls how the rebase editor reveals itself.</td>
+<td>Controls when the Interactive Rebase Editor reveals commits in the location set by <code>gitlens.rebaseEditor.revealLocation</code>:<br><br>
+<code>onDoubleClick</code> (default): when you double-click a row<br>
+<code>onSelection</code>: when the selection changes or when you double-click a row</td>
 </tr>
 <tr>
 <td><code>gitlens.rebaseEditor.density</code></td>
 <td>Controls the visual density of commits in the rebase editor.<br><br>
-<code>compact</code> – compact display<br>
-<code>comfortable</code> – comfortable display with more spacing</td>
+<code>compact</code>: compact display<br>
+<code>comfortable</code>: comfortable display with more spacing</td>
 </tr>
 <tr>
 <td><code>gitlens.rebaseEditor.openBehavior</code></td>
-<td>Controls whether the rebase editor opens beside the current editor.<br><br>
-<code>auto</code> – automatically determined<br>
-<code>beside</code> – opens beside the current editor</td>
+<td>Controls which editor group the Interactive Rebase Editor opens in when it reopens automatically on a paused rebase:<br><br>
+<code>auto</code> (default): opens beside the commit message editor when a multi-pane layout already exists, otherwise in the active editor group<br>
+<code>beside</code>: always opens beside the active editor, creating a new editor group if needed</td>
 </tr>
 </tbody>
 </table>
@@ -1450,10 +1489,10 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.fileAnnotations.command</code></td>
 <td>Controls the behavior of the file annotations button in the editor title:<br><br>
-<code>null</code> (default) – shows a menu to select which file annotations to toggle<br>
-<code>blame</code> – toggles file blame annotations<br>
-<code>heatmap</code> – toggles file heatmap annotations<br>
-<code>changes</code> – toggles file changes annotations
+<code>null</code> (default): shows a menu to select which file annotations to toggle<br>
+<code>blame</code>: toggles file blame annotations<br>
+<code>heatmap</code>: toggles file heatmap annotations<br>
+<code>changes</code>: toggles file changes annotations
 </td>
 </tr>
 </tbody>
@@ -1474,9 +1513,9 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.keymap</code></td>
 <td>Specifies the keymap used for GitLens shortcuts:<br><br>
-<code>alternate</code> – adds alternate shortcuts starting with <kbd>Alt</kbd> (⌥ on macOS)<br>
-<code>chorded</code> – adds chorded shortcuts starting with <kbd>Ctrl+Shift+G</kbd> (⌥⌘G on macOS)<br>
-<code>none</code> – disables all GitLens shortcut keys
+<code>alternate</code>: adds alternate shortcuts starting with <kbd>Alt</kbd> (⌥ on macOS)<br>
+<code>chorded</code>: adds chorded shortcuts starting with <kbd>Ctrl+Shift+G</kbd> (⌥⌘G on macOS)<br>
+<code>none</code>: disables all GitLens shortcut keys
 </td>
 </tr>
 <tr>
@@ -1509,8 +1548,8 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.mode.statusBar.alignment</code></td>
 <td>Controls alignment of the active mode display in the status bar:<br><br>
-<code>left</code> – aligns left<br>
-<code>right</code> – aligns right</td>
+<code>left</code>: aligns left<br>
+<code>right</code>: aligns right</td>
 </tr>
 <tr>
 <td><code>gitlens.modes</code></td>
@@ -1568,135 +1607,83 @@ Another custom example:<br>
 <tbody>
 <tr>
 <td><code>gitlens.ai.enabled</code></td>
-<td>Specifies whether to enable GitLens' AI-powered features<br>
-</td>
+<td>Specifies whether to enable GitLens' AI-powered features.</td>
 </tr>
 <tr>
 <td><code>gitlens.gitkraken.mcp.autoEnabled</code></td>
-<td>Specifies whether to automatically install and enable the GitKraken MCP server. Applies to VS Code 1.101 and later. Default: <code>true</code>. Turning this setting off, or turning off <code>gitlens.ai.enabled</code>, removes the GitKraken MCP server from VS Code's <strong>Configure Tools</strong> list without reloading the window.<br>
-</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.experimental.composer.enabled</code></td>
-<td>Specifies whether to enable the experimental version of the commit composer<br>
-</td>
+<td>Specifies whether to automatically install and enable the GitKraken MCP server. Applies to VS Code 1.101 and later. Default: <code>true</code>. Turning this setting off, or turning off <code>gitlens.ai.enabled</code>, removes the GitKraken MCP server from VS Code's <strong>Configure Tools</strong> list without reloading the window.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.model</code></td>
-<td>Specifies the AI provider and model to use for GitLens' AI features. Should be formatted as <code>provider:model</code>(e.g. <code>openai:gpt-4o</code> or <code>anthropic:claude-3-5-sonnet-latest</code>, <code>gitkraken</code> for GitKraken AI provided models, or <code>vscode</code> for models provided by the VS Code extension API (e.g. Copilot)"<br>
-<code>vscode</code><br>
-<code>openai:gpt-4</code><br>
-<code>openai:gpt-4o</code><br>
-<code>xai:grok-beta</code><br>
-<code>openai:gpt-4-32k</code><br>
-<code>anthropic:claude-2</code><br>
-<code>openai:gpt-4-turbo</code><br>
-<code>openai:gpt-4o-mini</code><br>
-<code>anthropic:claude-2.1</code><br>
-<code>openai:gpt-3.5-turbo</code><br>
-<code>google:gemini-1.0-pro</code><br>
-<code>openai:gpt-3.5-turbo-16k</code><br>
-<code>anthropic:claude-instant-1</code><br>
-<code>openai:gpt-4-turbo-preview</code><br>
-<code>google:gemini-1.5-pro-latest</code><br>
-<code>anthropic:claude-3-opus-latest</code><br>
-<code>google:gemini-1.5-flash-latest</code><br>
-<code>anthropic:claude-3-opus-20240229</code><br>
-<code>anthropic:claude-3-haiku-20240307</code><br>
-<code>anthropic:claude-3-5-sonnet-latest</code><br>
-<code>anthropic:claude-3-sonnet-20240229</code><br>
-<code>anthropic:claude-3-5-sonnet-20240620</code><br>
-<code>anthropic:claude-3-5-sonnet-20241022</code>
-</td>
+<td>Specifies the AI provider and model to use for GitLens' AI features, formatted as <code>provider:model</code> (for example, <code>openai:gpt-5.5</code> or <code>anthropic:claude-sonnet-5</code>). Use <code>gitkraken</code> for models provided by GitKraken AI, or <code>vscode</code> for models provided through the VS Code extension API, such as Copilot.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.gitkraken.model</code></td>
-<td>Specifies the AI provider and model to use for GitLens' AI features. Should be formatted as <code>provider:model</code>(e.g. <code>openai:gpt-4o</code> or <code>anthropic:claude-3-5-sonnet-latest</code>, <code>gitkraken</code> for GitKraken AI provided models, or <code>vscode</code> for models provided by the VS Code extension API (e.g. Copilot)"<br>
-</td>
+<td>Specifies the GitKraken AI provided model to use for GitLens' AI features, formatted as <code>provider:model</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.vscode.model</code></td>
-<td>Specifies the VS Code provided model to use for GitLens' AI features, formatted as <code>provider:model</code><br>
-</td>
+<td>Specifies the VS Code provided model to use for GitLens' AI features, formatted as <code>provider:model</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.ollama.url</code></td>
-<td>Specifies the Ollama URL to use for access<br>
-</td>
+<td>Specifies the Ollama URL to use for access.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.openai.url</code></td>
-<td>Specifies a custom URL to use for access to an OpenAI model.<br>
-</td>
+<td>Specifies a custom URL to use for access to an OpenAI model.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.azure.url</code></td>
-<td>Specifies a custom URL to use for access to an Azure OpenAI model. Azure URLs should be in the following format: https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}<br>
-</td>
+<td>Specifies a custom URL to use for access to an Azure OpenAI model, in this format: <code>https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}</code></td>
 </tr>
 <tr>
 <td><code>gitlens.ai.openaicompatible.url</code></td>
-<td>Specifies a custom URL to use for access to an OpenAI-compatible model.<br>
-</td>
+<td>Specifies a custom URL to use for access to an OpenAI-compatible model.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.largePromptWarningThreshold</code></td>
-<td>Specifies the threshold (in tokens) for when to show a warning about the prompt being too large<br>
-</td>
+<td>Specifies the prompt size (in tokens) above which GitLens warns that the prompt is too large.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.modelOptions.temperature</code></td>
-<td>Specifies the temperature, a measure of output randomness, to use for the AI model. Higher values result in more randomness, e.g. creativity, while lower values are more deterministic<br>
-</td>
+<td>Specifies the temperature, a measure of output randomness, to use for the AI model. Higher values give more random (creative) output, and lower values give more deterministic output.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.explainChanges.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a summary of changes<br>
-</td>
+<td>Specifies custom instructions to give the AI provider when generating a summary of changes.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.generateChangelog.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a changelog from a set of changes<br>
-</td>
+<td>Specifies custom instructions to give the AI provider when generating a changelog from a set of changes.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.generateCommits.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating commits<br>
-</td>
+<td>Specifies custom instructions to give the AI provider when generating commits.</td>
 </tr>
 <tr>
-<td><code>gitlens.ai.generateStashMessage.customInstruction</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a stash message<br>
-</td>
+<td><code>gitlens.ai.generateStashMessage.customInstructions</code></td>
+<td>Specifies custom instructions to give the AI provider when generating a stash message.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.generateCreateCloudPatch.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a cloud patch title and description<br>
-</td>
-</tr>
-<tr>
-<td><code>gitlens.ai.generateCreateCodeSuggest.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a code suggest title and description<br>
-</td>
+<td>Specifies custom instructions to give the AI provider when generating a cloud patch title and description.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.generateCreatePullRequest.customInstructions</code></td>
-<td>Specifies custom instructions to provide to the AI provider when generating a pull request title and description<br>
-</td>
+<td>Specifies custom instructions to give the AI provider when generating a pull request title and description.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.openInAgent</code></td>
-<td>Specifies the default route for Start Work and Start PR Review when opening in an agent is offered<br><br>
-<code>ask</code> — asks each time (default)<br>
-<code>manual</code> — always continues manually<br>
-<code>agent</code> — always opens in an agent, using <code>gitlens.ai.defaultAgent</code> when it's set<br>
-<code>kepler</code> — always starts a task in Kepler, without creating a branch or worktree, when Kepler supports the item; otherwise asks
-</td>
+<td>Specifies the default route for Start Work and Start PR Review when opening in an agent is offered:<br><br>
+<code>ask</code>: asks each time (default)<br>
+<code>manual</code>: always continues manually<br>
+<code>agent</code>: always opens in an agent, using <code>gitlens.ai.defaultAgent</code> when it is set<br>
+<code>kepler</code>: always starts a task in Kepler, without creating a branch or worktree, when Kepler supports the item; otherwise asks</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.defaultAgent</code></td>
-<td>Specifies the default agent for Start Work, Start PR Review, and starting an agent session. When the saved agent is no longer available, GitLens asks you to choose one. Set it by selecting <strong>Always use this agent</strong> in the agent picker
-</td>
+<td>Specifies the default agent for Start Work, Start PR Review, and starting an agent session. When the saved agent is no longer available, GitLens asks you to choose one. Set it by selecting <strong>Always use this agent</strong> in the agent picker.</td>
 </tr>
 <tr>
 <td><code>gitlens.ai.exclude.files</code></td>
@@ -1721,25 +1708,17 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.defaultGravatarsStyle</code></td>
 <td>Specifies the style of default (fallback) gravatar images:<br><br>
-<code>identicon</code> – geometric pattern<br>
-<code>mp</code> – cartoon-style silhouette (same for all emails)<br>
-<code>monsterid</code> – colorful monster faces<br>
-<code>retro</code> – 8-bit pixelated faces<br>
-<code>robohash</code> – robot faces with variations<br>
-<code>wavatar</code> – faces with different features and backgrounds
+<code>identicon</code>: geometric pattern<br>
+<code>mp</code>: cartoon-style silhouette (same for all emails)<br>
+<code>monsterid</code>: colorful monster faces<br>
+<code>retro</code>: 8-bit pixelated faces<br>
+<code>robohash</code>: robot faces with variations<br>
+<code>wavatar</code>: faces with different features and backgrounds
 </td>
 </tr>
 <tr>
 <td><code>gitlens.liveshare.allowGuestAccess</code></td>
 <td>Allows guest access to GitLens features during Visual Studio Live Share sessions.</td>
-</tr>
-<tr>
-<td><code>gitlens.outputLevel</code></td>
-<td><strong>Removed in v17.11</strong> — This setting has been removed. Use the VS Code native output channel log level instead.</td>
-</tr>
-<tr>
-<td><code>gitlens.showWelcomeOnInstall</code></td>
-<td>Shows the Welcome (Quick Setup) experience on first install.</td>
 </tr>
 <tr>
 <td><code>gitlens.showWhatsNewAfterUpgrades</code></td>
@@ -1775,7 +1754,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.fileAnnotations.preserveWhileEditing</code></td>
-<td>Allows file annotations on unsaved (dirty) files. The <code>gitlens.advanced.blame.delayAfterEdit</code> setting controls the delay before updating annotations, which applies only if the file size is under <code>gitlens.advanced.sizeThresholdAfterEdit</code> (default 5000 lines).</td>
+<td>Keeps file annotations while you edit a file. The <code>gitlens.advanced.blame.delayAfterEdit</code> setting controls how long GitLens waits before updating the annotations of an unsaved file, which applies only if the file is under <code>gitlens.advanced.blame.sizeThresholdAfterEdit</code> (default 5000 lines).</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.blame.delayAfterEdit</code></td>
@@ -1786,23 +1765,19 @@ Another custom example:<br>
 <td>Maximum document size (lines) to re-blame after an edit while still unsaved. Use 0 for no maximum.</td>
 </tr>
 <tr>
-<td><code>gitlens.advanced.caching.enabled</code></td>
-<td>Enables caching of git output (changing this is not recommended).</td>
-</tr>
-<tr>
 <td><code>gitlens.advanced.commitOrdering</code></td>
 <td>Ordering method for commits (default is reverse chronological by commit date):<br><br>
-<code>date</code> – reverse chronological by commit timestamp<br>
-<code>author-date</code> – reverse chronological by author timestamp<br>
-<code>topo</code> – reverse chronological but avoids mixing multiple lines of history
+<code>date</code>: reverse chronological by commit timestamp<br>
+<code>author-date</code>: reverse chronological by author timestamp<br>
+<code>topo</code>: reverse chronological but avoids mixing multiple lines of history
 </td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.commits.delayLoadingFileDetails</code></td>
 <td>Specifies whether to delay loading commit file details until they are shown. Delaying makes large histories open faster but adds a Git call each time a commit's files are shown.<br><br>
-<code>null</code> (default) – delays only in repositories where loading file details has been slow (requires <code>gitlens.gitOptimizations.enabled</code>)<br>
-<code>true</code> – always delays<br>
-<code>false</code> – never delays</td>
+<code>null</code> (default): delays only in repositories where loading file details has been slow (requires <code>gitlens.gitOptimizations.enabled</code>)<br>
+<code>true</code>: always delays<br>
+<code>false</code>: never delays</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.externalDiffTool</code></td>
@@ -1859,19 +1834,19 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
 <td>Path variables:<br><br>
-<code>${userHome}</code> – user's home directory<br>
-<code>${workspaceFolder}</code> – path of the opened folder in VS Code containing the repository<br>
-<code>${workspaceFolderBasename}</code> – name of the opened folder in VS Code without slashes
+<code>${userHome}</code>: user's home directory<br>
+<code>${workspaceFolder}</code>: path of the opened folder in VS Code containing the repository<br>
+<code>${workspaceFolderBasename}</code>: name of the opened folder in VS Code without slashes
 </td>
 </tr>
 <tr>
 <td><code>gitlens.worktrees.openAfterCreate</code></td>
 <td>Specifies how and when to open a worktree after it is created. Choosing an <em>After Creating</em> option (<em>Open in New Window</em>, <em>Open in Current Window</em>, <em>Add to Workspace</em>, or <em>Don't Open</em>) in the Create Worktree dialog updates this setting.<br><br>
-<code>newWindow</code> (default) – always open the new worktree in a new window<br>
-<code>currentWindow</code> – always open the new worktree in the current window<br>
-<code>addToWorkspace</code> – always add the new worktree to the current workspace<br>
-<code>none</code> – never open the new worktree<br>
-<code>onlyWhenEmpty</code> – open the new worktree in the current window only when no folder is opened, otherwise in a new window</td>
+<code>newWindow</code> (default): always open the new worktree in a new window<br>
+<code>currentWindow</code>: always open the new worktree in the current window<br>
+<code>addToWorkspace</code>: always add the new worktree to the current workspace<br>
+<code>none</code>: never open the new worktree<br>
+<code>onlyWhenEmpty</code>: open the new worktree in the current window only when no folder is opened, otherwise in a new window</td>
 </tr>
 <tr>
 <td><code>gitlens.visualHistory.allowMultiple</code></td>
@@ -1882,16 +1857,8 @@ Another custom example:<br>
 <td>Enables integration with Visual Studio Live Share.</td>
 </tr>
 <tr>
-<td><code>multiDiffEditor.experimental.enabled</code></td>
-<td>Enables VS Code's experimental multi-diff editor (requires VS Code 1.85+).</td>
-</tr>
-<tr>
 <td><code>gitlens.views.openChangesInMultiDiffEditor</code></td>
-<td>Controls whether to open multiple changes in VS Code's multi-diff editor (single tab) or individual diff editors (multiple tabs). Requires <code>multiDiffEditor.experimental.enabled</code> and VS Code 1.85+.</td>
-</tr>
-<tr>
-<td><code>gitlens.experimental.cloudIntegrations.enabled</code></td>
-<td>Enables GitHub integration via GitKraken account cloud integration.</td>
+<td>Controls whether to open multiple changes in VS Code's multi-diff editor (single tab) or individual diff editors (multiple tabs).</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.git.maxConcurrentProcesses</code></td>
@@ -1916,8 +1883,8 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.sortWorkingChangesBy</code></td>
 <td>Controls how working changes are sorted.<br><br>
-<code>stage</code> – sorts by staging status<br>
-<code>flat</code> – flat sort order</td>
+<code>stage</code>: sorts by staging status<br>
+<code>flat</code>: flat sort order</td>
 </tr>
 <tr>
 <td><code>gitlens.visualHistory.editorOpeningBehavior</code></td>
@@ -1931,15 +1898,15 @@ This is the same routine work Git performs during <code>git gc</code> or <code>g
 <tr>
 <td><code>gitlens.openInTerminalLocation</code></td>
 <td>Specifies where GitLens opens the terminals it creates, such as agent session terminals and <em>Open in Integrated Terminal</em>. The first time GitLens creates a terminal, it offers <em>Use Editor Tabs</em> to switch this setting to <code>editor</code>.<br><br>
-<code>panel</code> (default) – open in the terminal panel<br>
-<code>editor</code> – open as an editor tab</td>
+<code>panel</code> (default): open in the terminal panel<br>
+<code>editor</code>: open as an editor tab</td>
 </tr>
 <tr>
 <td><code>gitlens.agents.resumeTarget</code></td>
 <td><strong>Preview</strong> — Specifies where a past agent session is resumed when both a terminal and the agent's VS Code extension could open it. Actions that name a destination, such as <em>Resume in Terminal</em>, are unaffected.<br><br>
-<code>null</code> (default) – ask which to use the first time a session can be resumed in either place, with an option to remember<br>
-<code>terminal</code> – always resume in a new integrated terminal<br>
-<code>extension</code> – resume in the agent's VS Code extension when it can open the session, otherwise in a terminal</td>
+<code>null</code> (default): ask which to use the first time a session can be resumed in either place, with an option to remember<br>
+<code>terminal</code>: always resume in a new integrated terminal<br>
+<code>extension</code>: resume in the agent's VS Code extension when it can open the session, otherwise in a terminal</td>
 </tr>
 </tbody>
 </table>
@@ -1948,7 +1915,7 @@ This is the same routine work Git performs during <code>git gc</code> or <code>g
 
 ## Themable Colors
 
-GitLens defines a set of themable colors that can be provided by VS Code themes or customized by users via `workbench.colorCustomizations`.
+GitLens defines themable colors. VS Code themes can set them, and you can customize them with `workbench.colorCustomizations`.
 
 <table>
 <thead>
@@ -1986,10 +1953,6 @@ GitLens defines a set of themable colors that can be provided by VS Code themes 
 <td><code>gitlens.lineHighlightOverviewRulerColor</code></td>
 <td>Overview ruler color for associated line highlights in blame annotations.</td>
 </tr>
-<tr>
-<td><code>gitlens.focus.allowMultiple</code></td>
-<td>Allows opening multiple instances of the Focus feature in the editor area.</td>
-</tr>
 </tbody>
 </table>
 
@@ -2011,8 +1974,8 @@ GitLens defines a set of themable colors that can be provided by VS Code themes 
 <td>Enables or disables upstream (ahead/behind) indicators on branches.</td>
 </tr>
 <tr>
-<td><code>gitlens.graph.pullRequests</code></td>
-<td>Enables or disables pull request icons in the Commit Graph.</td>
+<td><code>gitlens.graph.pullRequests.enabled</code></td>
+<td>Shows associated pull requests on remote branches in the Commit Graph. Requires a connection to a supported remote service, such as GitHub.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.dimMergeCommits</code></td>
@@ -2023,17 +1986,10 @@ GitLens defines a set of themable colors that can be provided by VS Code themes 
 <td>Number of rows from the edge at which the graph scrolls when changing the selected row via keyboard or search.</td>
 </tr>
 <tr>
-<td><code>gitlens.graph.experimental.location</code></td>
-<td>Location where the Commit Graph is shown:<br><br>
-<code>tab</code> – in a tab in the editor area<br>
-<code>view</code> – in the side bar, draggable to side bar, secondary side bar, or panel locations
-</td>
-</tr>
-<tr>
 <td><code>gitlens.graph.layout</code></td>
 <td>Default layout for the Commit Graph. Options:<br><br>
-<code>panel</code> (default) – shows in a panel<br>
-<code>editor</code> – shows in the editor area.<br>
+<code>panel</code> (default): shows in a panel<br>
+<code>editor</code>: shows in the editor area.<br>
 Honored when opening the Commit Graph from the command palette.
 </td>
 </tr>
@@ -2047,11 +2003,11 @@ Honored when opening the Commit Graph from the command palette.
 </tr>
 <tr>
 <td><code>gitlens.graph.stickyTimeline</code></td>
-<td>Pins the timeline panel to stay visible while scrolling the graph.</td>
+<td>Shows a sticky timeline header that stays visible at the top while you scroll the Commit Graph.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.autoFetch.enabled</code></td>
-<td>Enables periodic automatic git fetch in the Commit Graph.</td>
+<td>Auto-fetches the repository while the Commit Graph is in view, at the interval set by VS Code's <code>git.autofetchPeriod</code> setting. If <code>git.autofetch</code> is enabled, VS Code handles auto-fetching and this setting has no effect.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.followTerminal.enabled</code></td>
@@ -2064,13 +2020,13 @@ Honored when opening the Commit Graph from the command palette.
 <tr>
 <td><code>gitlens.graph.details.location</code></td>
 <td>Controls where the details panel appears relative to the graph.<br><br>
-<code>right</code> – details panel on the right<br>
-<code>bottom</code> – details panel on the bottom<br>
-<code>auto</code> – automatically positioned</td>
+<code>right</code>: shows the details panel to the right of the Commit Graph<br>
+<code>bottom</code>: shows the details panel below the Commit Graph<br>
+<code>auto</code> (default): places the details panel to the right of or below the Commit Graph automatically</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.details.maximizeOnMode</code></td>
-<td>Automatically maximizes the details panel when entering Compose or Review mode.</td>
+<td>Automatically maximizes the details panel when you enter a mode, such as Compose, Review, Resolve, or Compare, and restores it when you leave. Applies only when the details panel is docked to the bottom.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.editorOpeningBehavior</code></td>
@@ -2091,58 +2047,58 @@ Honored when opening the Commit Graph from the command palette.
 <tr>
 <td><code>gitlens.graph.minimap.defaultVisibility</code></td>
 <td>Controls when the minimap is visible by default.<br><br>
-<code>hidden</code> – minimap is hidden<br>
-<code>onSearch</code> – minimap appears during search<br>
-<code>always</code> – minimap is always visible</td>
+<code>hidden</code>: minimap is hidden<br>
+<code>onSearch</code>: minimap appears during search<br>
+<code>always</code>: minimap is always visible</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.overviewBar.visibility</code></td>
 <td>Specifies when to show the overview bar above the Commit Graph: the per-worktree <em>WIP</em> pills and the HEAD, upstream, and merge target jumps. When shown, the primary worktree is always included.<br><br>
-<code>always</code> – always shown, with every secondary worktree<br>
-<code>worktrees</code> – shown when the repository has more than one worktree, with every secondary worktree<br>
-<code>dirtyWorktrees</code> (default) – shown when another worktree has working changes or unpushed commits, and includes only those worktrees<br>
-<code>never</code> – never shown</td>
+<code>always</code>: always shown, with every secondary worktree<br>
+<code>worktrees</code>: shown when the repository has more than one worktree, with every secondary worktree<br>
+<code>dirtyWorktrees</code> (default): shown when another worktree has working changes or unpushed commits, and includes only those worktrees<br>
+<code>never</code>: never shown</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.scopeBehavior</code></td>
 <td>Specifies what <em>Scope to Worktree</em> does in the Commit Graph.<br><br>
-<code>scope</code> – only moves HEAD-derived state onto the worktree, leaving every commit visible<br>
-<code>scopeAndFocus</code> (default) – also focuses the worktree's branch, narrowing the visible rows</td>
+<code>scope</code>: only moves HEAD-derived state onto the worktree, leaving every commit visible<br>
+<code>scopeAndFocus</code> (default): also focuses the worktree's branch, narrowing the visible rows</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.doubleClickWorktreeAction</code></td>
 <td>Specifies what double-clicking a secondary worktree's working changes row, its overview bar pill, or its sidebar row does in the Commit Graph.<br><br>
-<code>scope</code> (default) – scopes the Commit Graph to the worktree, as set by <code>gitlens.graph.scopeBehavior</code><br>
-<code>focus</code> – toggles the classic branch focus without scoping</td>
+<code>scope</code> (default): scopes the Commit Graph to the worktree, as set by <code>gitlens.graph.scopeBehavior</code><br>
+<code>focus</code>: toggles the classic branch focus without scoping</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.refFindAutoHide</code></td>
-<td>Auto-hides the ref-finder widget after selection.</td>
+<td>Closes the Commit Graph's Branch / Tag finder when it loses focus.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.style</code></td>
-<td>Controls the graph display style.<br><br>
-<code>table</code> – table layout<br>
-<code>list</code> – list layout<br>
-<code>auto</code> – automatically selected</td>
+<td>Controls the graph display style (row layout):<br><br>
+<code>table</code>: single-line rows with columns (message, author, date, SHA)<br>
+<code>list</code>: stacked two-line rows with no columns<br>
+<code>auto</code> (default): switches to <code>list</code> when the graph is too narrow for the columns</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.changesColumn.enabled</code></td>
-<td>Shows or hides the Changes column in the graph.</td>
+<td>Computes file and line change statistics for the Changes column. Computing changes can be slow in large repositories. When this setting is off, the Changes column offers a one-time opt-in.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.changesColumn.mode</code></td>
 <td>Controls how changes are visualized in the Changes column.<br><br>
-<code>numbers</code> – shows numeric counts<br>
-<code>squares</code> – shows colored squares<br>
-<code>bar</code> – shows a bar indicator<br>
-<code>bipolar</code> – shows a bipolar indicator</td>
+<code>numbers</code>: shows numeric counts<br>
+<code>squares</code>: shows colored squares<br>
+<code>bar</code>: shows a bar indicator<br>
+<code>bipolar</code>: shows a bipolar indicator</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.refs.layout</code></td>
 <td>Specifies how branch and tag pills are laid out on each row of the Commit Graph.<br><br>
-<code>inline</code> (default) – shows pills inline with the commit row<br>
-<code>stacked</code> – shows pills on their own line above the commit, growing the row</td>
+<code>inline</code> (default): shows pills inline with the commit row<br>
+<code>stacked</code>: shows pills on their own line above the commit, growing the row</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.refs.maxInline</code></td>
@@ -2198,7 +2154,7 @@ Set an id to a key combination, a list of them, or <code>false</code> to disable
 <tbody>
 <tr>
 <td><code>gitlens.startWork.branchNameFormat</code></td>
-<td>Specifies the branch name format when starting work on an issue. Use <code>${id}</code> for the issue ID and <code>${title}</code> for its lowercase, slugged title; the GitLens token prefix, suffix, and width modifiers are supported. Characters that aren't valid in a Git branch name are replaced, and <code>/</code> keeps branch folders. Leave blank to use the default, <code>${id}-${title}</code>. You can edit the suggested name before the branch is created.</td>
+<td>Specifies the branch name format when starting work on an issue. Use <code>${id}</code> for the issue ID and <code>${title}</code> for its lowercase, slugged title; the GitLens token prefix, suffix, and width modifiers are supported. GitLens replaces characters that are not valid in a Git branch name, and <code>/</code> keeps branch folders. Leave blank to use the default, <code>${id}-${title}</code>. You can edit the suggested name before the branch is created.</td>
 </tr>
 </tbody>
 </table>
@@ -2225,7 +2181,7 @@ Set an id to a key combination, a list of them, or <code>false</code> to disable
 </tr>
 <tr>
 <td><code>gitlens.launchpad.staleThreshold</code></td>
-<td>Number of days after which a pull request is considered stale and moved to the "Other" category.</td>
+<td>Number of days after which Launchpad considers a pull request stale and moves it to the <strong>Other</strong> group.</td>
 </tr>
 <tr>
 <td><code>gitlens.launchpad.indicator.enabled</code></td>
@@ -2248,24 +2204,20 @@ Set an id to a key combination, a list of them, or <code>false</code> to disable
 <td>Enables color usage in the Launchpad indicator.</td>
 </tr>
 <tr>
-<td><code>gitlens.launchpad.indicator.openInEditor</code></td>
-<td>Opens the Launchpad in the editor when the indicator is clicked.</td>
-</tr>
-<tr>
 <td><code>gitlens.launchpad.indicator.polling.enabled</code></td>
 <td>Enables regular polling for pull request changes.</td>
 </tr>
 <tr>
 <td><code>gitlens.launchpad.indicator.polling.interval</code></td>
-<td>Polling interval in minutes for checking pull request changes.</td>
-</tr>
-<tr>
-<td><code>gitlens.views.launchpad.enabled</code></td>
-<td>(Experimental) Enables the experimental Launchpad view.</td>
+<td>Polling interval in minutes for checking pull request changes. Use 0 to turn off automatic polling.</td>
 </tr>
 <tr>
 <td><code>gitlens.launchpad.includedOrganizations</code></td>
-<td>Organizations to include in Launchpad.</td>
+<td>Organizations to include in Launchpad. If the list is empty, Launchpad includes all organizations.</td>
+</tr>
+<tr>
+<td><code>gitlens.launchpad.allowMultiple</code></td>
+<td>Allows opening multiple instances of Launchpad as editor tabs.</td>
 </tr>
 </tbody>
 </table>

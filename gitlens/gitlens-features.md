@@ -1,6 +1,6 @@
 ---
 title: GitLens Features
-description: Learn how to use GitLens autolinks, terminal links, powerful Git commands, remote provider integrations, and UI customizations to enhance your Git workflow in VS Code.
+description: Learn how to use GitLens in VS Code to see blame and history, work in the Commit Graph and Launchpad, use GitKraken AI, run guided Git commands, and connect integrations.
 taxonomy:
   category: gitlens
 last_updated: 2026-11
@@ -9,7 +9,7 @@ last_updated: 2026-11
 
 Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
-Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) (Community, Pro, etc).
+Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens), such as Community or Pro.
 
 ***
 
@@ -20,7 +20,7 @@ Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKr
   <figcaption style="text-align: center; color: #888">Step through revisions using built-in navigation commands</figcaption>
 </figure>
 
-Revision Navigation allows you to quickly compare different versions of a file or specific lines.
+Use Revision Navigation to compare different versions of a file or of specific lines.
 
 Available commands:
 
@@ -55,7 +55,7 @@ Available commands:
   <figcaption style="text-align: center; color: #888">Blame annotation showing author, date, and commit message</figcaption>
 </figure>
 
-Current Line Blame adds a subtle, [customizable](/gitlens/gitlens-settings/#current-line-blame-settings), and [themable](/gitlens/gitlens-settings/#themable-colors) annotation at the end of the active line.
+Current Line Blame adds a [customizable](/gitlens/gitlens-settings/#current-line-blame-settings), and [themable](/gitlens/gitlens-settings/#themable-colors) annotation at the end of the active line.
 
 By default, the annotation displays:
 
@@ -65,7 +65,7 @@ By default, the annotation displays:
 
 You can control visibility with the command:
 
-- **Toggle Line Blame Annotations** (`gitlens.toggleLineBlame`)
+- **Toggle Line Blame** (`gitlens.toggleLineBlame`)
 
 
 ***
@@ -77,7 +77,7 @@ You can control visibility with the command:
   <figcaption style="text-align: center; color: #888">Inline Git insights for authorship and history</figcaption>
 </figure>
 
-Git CodeLens displays inline Git insights at the top of each file and above code blocks (enabled by [default](/gitlens/gitlens-settings/#git-codelens-settings), and [customizable](/gitlens/gitlens-settings/#git-codelens-settings)).
+Git CodeLens shows Git information at the top of each file and above code blocks. It is on by [default](/gitlens/gitlens-settings/#git-codelens-settings), and you can [customize](/gitlens/gitlens-settings/#git-codelens-settings) it.
 
 ### CodeLens Types
 
@@ -88,11 +88,11 @@ Git CodeLens displays inline Git insights at the top of each file and above code
 - **Authors**  
   Displays the number of contributors and the most prominent author.  
   - Click to toggle Git blame annotations across the file.  
-  - Automatically hides if there's only one author (to reduce visual noise).
+  - Hidden when the file or block has only one author.
 
 ### CodeLens Behavior
 
-Click behavior for each CodeLens is fully [customizable](/gitlens/gitlens-settings/#git-codelens-settings). You can choose from:
+You can [customize](/gitlens/gitlens-settings/#git-codelens-settings) what each CodeLens does when you click it. Choose from:
 
 - Toggle file blame annotations
 - Compare the current commit to the previous one
@@ -113,7 +113,7 @@ Click behavior for each CodeLens is fully [customizable](/gitlens/gitlens-settin
   <figcaption style="text-align: center; color: #888">Quick access to blame details in the VS Code status bar</figcaption>
 </figure>
 
-The **Status Bar Blame** displays Git blame details for the current line directly in the VS Code status bar. This feature is enabled by default and fully customizable.
+The **Status Bar Blame** shows Git blame details for the current line in the VS Code status bar. It is on by default, and you can customize it.
 
 ### Default Behavior
 
@@ -126,8 +126,8 @@ You can configure what happens when the status bar item is clicked:
 
 - Toggle file blame annotations
 - Toggle Git CodeLens on and off
-- Compare the line’s commit to the previous one
-- Compare the line’s commit to the working tree
+- Compare the line's commit to the previous one
+- Compare the line's commit to the working tree
 - Show a quick pick menu with:
   - Commit details and actions *(default)*
   - File-level commit details
@@ -139,7 +139,7 @@ You can configure what happens when the status bar item is clicked:
 
 ## Hovers
 
-GitLens provides rich, [customizable](/gitlens/gitlens-settings/#hover-settings) hover annotations to surface Git information directly in your editor. These hovers are enabled by default and support both blame and diff insights.
+GitLens shows [customizable](/gitlens/gitlens-settings/#hover-settings) hovers with Git information in your editor. Hovers are on by default and show both blame details and changes.
 
 ### Current Line Hovers
 
@@ -183,7 +183,7 @@ Displays the previous version of the current line.
   <figcaption style="text-align: center; color: #888">Hover insights while annotating with blame</figcaption>
 </figure>
 
-Accessible when blame annotations are active, these hovers provide the same detail and diff options.
+When blame annotations are on, hovering an annotation shows the same details and changes hovers.
 
 #### Details Hover
 
@@ -227,7 +227,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 - Displays **commit message** and **commit date** per line (enabled by [default](/gitlens/gitlens-settings/#file-blame-settings)).
 - Adds a **heatmap (age) indicator** along the right edge to show how recently each line was changed.  
   _(See [File Heatmap](/gitlens/gitlens-features/#file-heatmap) for more info.)_
-- Easily toggle annotations with:
+- Toggle annotations with:
 
   - **Command**: `gitlens.toggleFileBlame`
   - **Shortcut**: <kbd>Alt+B</kbd>
@@ -243,9 +243,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
   <figcaption style="text-align: center; color: #888">Highlight unpublished or most recent changes</figcaption>
 </figure>
 
-The File Changes annotation highlights lines that have been changed either locally (unpublished) or by the most recent commit.
-
-This feature is [customizable](/gitlens/gitlens-settings/#file-changes-settings) and [themable](/gitlens/gitlens-settings/#themable-colors), and is designed for quick visual inspection of file updates.
+The File Changes annotation highlights the lines you changed locally (unpublished) or that the most recent commit changed, so you can see which lines in a file changed. File Changes is [customizable](/gitlens/gitlens-settings/#file-changes-settings) and [themable](/gitlens/gitlens-settings/#themable-colors).
 
 ### Features
 
@@ -263,14 +261,14 @@ This feature is [customizable](/gitlens/gitlens-settings/#file-changes-settings)
   <figcaption style="text-align: center; color: #888">Visualize how recently each line was modified</figcaption>
 </figure>
 
-The File Heatmap adds a color-coded bar to the edge of your file, helping you quickly spot older versus more recent changes.
+The File Heatmap adds a color-coded bar to the edge of your file that shows which lines changed recently and which are older.
 
 ### Features
 
 - Heatmap colors are [customizable](/gitlens/gitlens-settings/#file-heatmap-settings) and reflect line age:
   - **Hot (bright)** for recent changes
   - **Cold (dim)** for older changes  
-    _(Lines default to “cold” after 90 days.)_
+    _(Lines default to "cold" after 90 days.)_
 - Brightness adjusts dynamically based on the **median age** of all changes in the file.
 - Toggle with the command: `gitlens.toggleFileHeatmap`
 - Press <kbd>Escape</kbd> to hide the heatmap annotations
@@ -279,9 +277,9 @@ The File Heatmap adds a color-coded bar to the edge of your file, helping you qu
 
 ## Code Suggest <span style="color: #888;">`PREVIEW`</span>
 
-GitKraken Code Suggest simplifies code review by enabling you to propose edits across an entire project—not just the lines changed—in GitLens, GitKraken Desktop, or [gitkraken.dev](https://gitkraken.dev).
+Use GitKraken Code Suggest to propose edits to any file in a project, including lines that a pull request did not change. You can suggest changes from GitLens, GitKraken Desktop, or [gitkraken.dev](https://gitkraken.dev).
 
-When a pull request is open, you can make suggestions that collaborators can review and apply directly to the PR.
+When a pull request is open, collaborators can review your suggestions and apply them to the pull request.
 
 <figure class='callout callout--basic'>
   <p><strong>Note:</strong> Code Suggest is currently supported only for repositories hosted on <strong>github.com</strong>.</p>
@@ -305,7 +303,7 @@ When a pull request is open, you can make suggestions that collaborators can rev
   <figcaption style="text-align: center; color: #888">Create a suggestion from your local changes</figcaption>
 </figure>
 
-Once submitted, the pull request will receive a comment with two options:
+After you submit the suggestion, the pull request receives a comment with 2 options:
 
 - **Code Suggestion for #PR** — opens in gitkraken.dev
 - **Locally on your machine** — opens in GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes)
@@ -331,7 +329,7 @@ Once submitted, the pull request will receive a comment with two options:
 
 1. Select **Code Suggestion for #PR** in the PR comment.
 2. Review the changes on gitkraken.dev.
-3. Click **Commit Suggestions** to commit the patch directly to the PR’s branch.
+3. Click **Commit Suggestions** to commit the patch directly to the PR's branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-accept-code-suggestion.gif" alt="Committing suggestions from gitkraken.dev" class="help-center-img img-bordered">
@@ -343,17 +341,19 @@ Once submitted, the pull request will receive a comment with two options:
 
 ## Cloud Patches <span style="color: #888;">`PREVIEW`</span>
 
+Use Cloud Patches to share in-progress work with your team before you open a pull request.
+
 ### What Are Cloud Patches and Why Use Them?
 
-Cloud Patches are Git patches that GitKraken securely stores for easy sharing across GitLens, GitKraken Desktop, and the GitKraken CLI. The patch is uploaded directly from your machine into secure cloud storage.
+Cloud Patches are Git patches that GitKraken stores in secure cloud storage, so you can share them across GitLens, GitKraken Desktop, and the GitKraken CLI. GitLens uploads the patch directly from your machine.
 
-This feature enables early collaboration—before a pull request is created—by letting you share in-progress work with your team. It helps streamline feedback cycles and reduce delays in PR reviews.
+Because you can share work before a pull request exists, your team can give feedback earlier.
 
 ---
 
 ### How to Set Up Cloud Patches
 
-Cloud Patches are enabled by default, but you can manage this per client.
+Cloud Patches are on by default. You turn them on or off separately in each GitKraken app. To manage them in GitLens:
 
 1. Open the Command Palette:  
    `Ctrl`/`Command` + `Shift` + `P` → **Preferences: Open User Settings (JSON)**
@@ -367,7 +367,7 @@ To disable Cloud Patches, change the value to `false`.
 
 ### How to Work with Cloud Patches
 
-Cloud Patches are accessible from the **Cloud Patches** view in the GitLens sidebar.
+Your Cloud Patches are in the **Cloud Patches** view in the GitLens side bar.
 
 <figure>
   <img src="/wp-content/uploads/gl-cloud-patch-create.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
@@ -392,9 +392,9 @@ To create one, use **Share as Cloud Patch** from the command palette or the **Sh
 
 Choose how your patch can be accessed:
 
-- **Anyone with the link** – Public access without login.
-- **Anyone in my org** – Restricted to users in your GitKraken organization (GitKraken login required).
-- **Only collaborators** – Restricted to selected organization members. Use **Invite** to choose recipients.
+- **Anyone with the link** — Public access without signing in.
+- **Anyone in my org** — Restricted to users in your GitKraken organization (GitKraken sign-in required).
+- **Only collaborators** — Restricted to selected organization members. Use **Invite** to choose recipients.
 
 Cloud Patches shared with you appear under the **Shared with Me** section.
 
@@ -407,11 +407,11 @@ Cloud Patches shared with you appear under the **Shared with Me** section.
   <figcaption style="text-align: center; color: #888">Control access to shared patches by role</figcaption>
 </figure>
 
-You can also apply Cloud Patches directly from a shared URL. Simply click or paste the link, then follow GitLens prompts to apply it to your working directory or to a new/existing branch.
+You can also apply a Cloud Patch from a shared URL. Click or paste the link, then follow the GitLens prompts to apply it to your working directory or to a new/existing branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-apply-patch-example.gif" alt="Apply a cloud patch animation" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Apply patches seamlessly to your current repo</figcaption>
+  <figcaption style="text-align: center; color: #888">Apply a patch to your current repo</figcaption>
 </figure>
 
 To delete a Cloud Patch, right-click it and choose **Delete Cloud Patch...**.
@@ -424,21 +424,17 @@ To delete a Cloud Patch, right-click it and choose **Delete Cloud Patch...**.
 
 ### Self-Hosting Cloud Patch Data
 
-If you prefer not to store Cloud Patch data on GitKraken servers, you can configure GitLens to use your own AWS S3 storage.
-
-Learn how to configure this in our [Self-Hosting Guide](/gk-dev/gk-dev-home/#self-hosted).
+If you prefer not to store Cloud Patch data on GitKraken servers, you can configure GitLens to use your own AWS S3 storage. To set it up, see the [Self-Hosting Guide](/gk-dev/gk-dev-home/#self-hosted).
 
 ***
 
 ## Commit Graph
 
-The Commit Graph is the starting point for working in GitLens. It brings repository history, branches, worktrees, Working Changes, pull requests, and supported agent activity into one connected workbench, so you can understand what's happening and move changes toward merge without rebuilding context across tools.
+The Commit Graph is the starting point for working in GitLens. It shows your repository's history, branches, worktrees, Working Changes, pull requests, and supported agent activity in one view, so you can follow what is happening and move changes toward merge without switching tools. The graph stays responsive on large repositories.
 
-Built on a high-performance rendering engine, the graph stays responsive on large repositories, showing commits, branches, and contributors in one place.
+The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories, with no account required. You need a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> only for private repositories.
 
-The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> is required only for private repositories.
-
-If you aren't signed in, opening the Commit Graph on a privately hosted repository for the first time starts a 3-day preview. A banner above the graph shows how much of the preview is left, with a **Sign In** link. When the 3 days are up, the graph shows **Commit Graph Preview Ended** for privately hosted repositories until you sign in or start a free Pro trial. The preview is only for signed-out use; a signed-in account without a Pro trial or paid plan sees the upgrade prompt on private repositories.
+If you are not signed in, opening the Commit Graph on a privately hosted repository for the first time starts a 3-day preview. A banner above the graph shows how much of the preview is left, with a **Sign In** link. When the 3 days are up, the graph shows **Commit Graph Preview Ended** for privately hosted repositories until you sign in or start a free Pro trial. The preview is only for signed-out use; a signed-in account without a Pro trial or paid plan sees the upgrade prompt on private repositories.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-01-v4@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
@@ -466,7 +462,7 @@ The Commit Graph opens automatically when you click the GitLens icon in the Acti
 
 ### Commit Graph Header
 
-At the top of the graph, you’ll see:
+The Commit Graph header shows:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch**
@@ -477,8 +473,8 @@ From here, you can:
 
 - Click the branch name to switch branches
 - Click **Fetch** to update commit data
-- Click **Publish Repository** to open the Git Command Palette's **Publish** step with **Publish Repository…** selected, which creates a repository on a hosting provider and publishes the current branch to it; choose **Add Remote…** there instead to add a remote of your own (see [Git Command Palette](#git-command-palette)). It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then
-- Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that aren't set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
+- Click **Publish Repository** to open the Git Command Palette's **Publish** step with **Publish Repository…** selected. That choice creates a repository on a hosting provider and publishes the current branch to it. To add a remote of your own instead, choose **Add Remote…** (see [Git Command Palette](#git-command-palette)). **Publish Repository** replaces **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then.
+- Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that are not set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-info-01-v3@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v3@2x.png" alt="The top of the Commit Graph in the editor area: the tab reads &quot;Commit Graph: Playground2026&quot;, the header shows the current branch (main) with Push and &quot;Fetch (1wk ago)&quot; buttons, and the Fetch button's hover popover lists the upstream (origin/main on GitHub), &quot;Last fetched last week&quot; and the Auto-fetch option" class="help-center-img img-bordered">
@@ -486,9 +482,7 @@ From here, you can:
 </figure>
 
 <figure class='callout callout--basic'>
-  <p><strong>Note:</strong> The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.</br></br>
-  Only private repository access requires a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a>. Signed out, you get a 3-day preview of the Commit Graph on privately hosted repositories first.</p>
-  <p>We welcome your input—join the discussion on <a href="https://github.com/gitkraken/vscode-gitlens/discussions/2158" target="_blank">GitHub</a>.</p>
+  <p><strong>Note:</strong> To share feedback on the Commit Graph, join the <a href="https://github.com/gitkraken/vscode-gitlens/discussions/2158" target="_blank">Commit Graph discussion on GitHub</a>.</p>
 </figure>
 
 ### Scope the Graph to a Worktree
@@ -517,13 +511,13 @@ When the Commit Graph is already visible, it follows the terminal you're working
 
 ### Configuration and Layout
 
-The Commit Graph offers extensive layout and configuration options so you can tailor the view to fit your workflow.
+You can change the Commit Graph's columns, where it opens, and how compact it is.
 
 ---
 
 #### Column Customization
 
-All columns in the Commit Graph are fully customizable:
+You can customize every column in the Commit Graph:
 
 - Drag and drop column headers to rearrange the layout.
 - Right-click a column header to toggle columns on or off.
@@ -553,7 +547,7 @@ To switch layouts:
 1. Open the **More Actions…** (⋯) menu in the top-right of the Commit Graph editor tab (or of the Commit Graph view in the side bar).
 2. Select **Prefer Commit Graph in Editor** or **Prefer Commit Graph as a View**.
 
-You can even open both layouts simultaneously.
+You can also open both layouts at the same time.
 
 <figure>
   <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" class="help-center-img img-bordered">
@@ -587,7 +581,7 @@ Scroll markers appear alongside the Commit Graph scrollbar to highlight:
 - Selected rows
 - Search matches
 
-They provide quick navigation to key locations like `HEAD` or specific refs.
+Use them to jump to locations such as `HEAD` or specific refs.
 
 You can toggle scroll markers in [Commit Graph settings](/gitlens/gitlens-features/#settings).
 
@@ -599,7 +593,7 @@ You can toggle scroll markers in [Commit Graph settings](/gitlens/gitlens-featur
 
 ### Settings
 
-You can adjust Commit Graph preferences through the GitLens Settings panel.
+You can adjust Commit Graph preferences in GitLens Settings:
 
 1. Open the Command Palette:  
    <kbd>Cmd/Ctrl + Shift + P</kbd>
@@ -616,7 +610,7 @@ You can adjust Commit Graph preferences through the GitLens Settings panel.
 
 ### Repository Health
 
-GitLens keeps Git fast in your repositories. While VS Code is open, it runs safe, repository-local Git maintenance in the background at most once a day: it packs loose objects, repacks incrementally, and writes the commit-graph cache. This is the same routine work that `git gc` and `git maintenance` do, and it doesn't change your history. To turn it off, set `gitlens.gitOptimizations.enabled` to `false`, which also turns off Repository Health.
+GitLens keeps Git fast in your repositories. While VS Code is open, GitLens runs routine Git maintenance on each repository in the background. This is the same kind of work that `git gc` and `git maintenance` do, and it does not change your history. To turn it off, set `gitlens.gitOptimizations.enabled` to `false`, which also turns off Repository Health.
 
 The **Repository Health** visualization in the Commit Graph shows the state of each optimization and suggests the ones that would help your repository. To open it, run `GitLens: Show Repository Health` from the Command Palette, or select **Show Visualizations & Health** in the Commit Graph side bar and choose **Repository Health**.
 
@@ -635,15 +629,15 @@ Select **Run Maintenance Now** to run the maintenance tasks immediately. When Gi
 
 ### Rich Commit Search
 
-The Commit Graph includes a powerful search bar to locate commits by message, author, file, or even specific code changes.
+Use the Commit Graph search bar to find commits by message, author, file, or specific code changes.
 
 #### Natural Language Search `PRO`
 
 You can type plain-language queries (e.g., "changes to the login page last week") and GitKraken AI converts them into structured Git search operators automatically. Natural language search works in the Commit Graph search bar, the Search & Compare view, and the Search Commits command.
 
-In the Commit Graph, hover the query to see how GitKraken AI interpreted your request. Phrasing such as "only my commits" turns on filtering for that search, and "take me to…" jumps to the first match. If a natural language search finds nothing, the search box suggests ways to widen it, such as dropping the date filter or searching across all branches, each with its result count. If AI isn't available, select **Search as text instead** to run your words as a plain message search.
+In the Commit Graph, hover the query to see how GitKraken AI interpreted your request. Phrasing such as "only my commits" turns on filtering for that search, and "take me to…" jumps to the first match. If a natural language search finds nothing, the search box suggests ways to widen it, such as dropping the date filter or searching across all branches, each with its result count. If AI is not available, select **Search as text instead** to run your words as a plain message search.
 
-If a pattern with **Regular expression** turned on isn't valid regex, the Commit Graph matches it literally and dims the regex toggle. When that search finds nothing, you can choose **Match literally**, or **Fix with AI** to have GitKraken AI repair the pattern. A results bar under the graph shows how many matches are loaded (for example, "Showing 25 of 60 results"), with **Load More Results…** to load the rest.
+If a pattern with **Regular expression** turned on is not valid regex, the Commit Graph matches it literally and dims the regex toggle. When that search finds nothing, you can choose **Match literally**, or **Fix with AI** to have GitKraken AI repair the pattern. A results bar under the graph shows how many matches are loaded (for example, "Showing 25 of 60 results"), with **Load More Results…** to load the rest.
 
 #### Search Prefixes
 
@@ -651,7 +645,7 @@ Use the following search prefixes:
 
 - `commit:`
 - `message:`
-- `-message:` (excludes commits whose message contains the term; can't be combined with `message:` in the same query)
+- `-message:` (excludes commits whose message contains the term; cannot be combined with `message:` in the same query)
 - `author:`
 - `committer:` (also accepts `@me`)
 - `file:`
@@ -708,12 +702,12 @@ The Commit Graph supports right-click actions on branches, commits, tags, author
   <figcaption style="text-align: center; color: #888">Use context menus for advanced Git actions</figcaption>
 </figure>
 
-Popular options include:
+The context menus include these actions:
 
 - **Compare with Common Base** — View changes between the current and selected branches based on their shared ancestor.
 - **Open All Changes with Common Base** — Launch a multi-diff view showing all changes that would be merged.
 - **Squash**, **Drop**, **Reword**, and **Modify Commits** — Run interactive rebase operations directly from the graph without opening the Rebase Editor. Select one or more commits, right-click, and choose the desired operation.
-- **Fixup Commit...** — Right-click a commit to select the Working Changes row and pre-fill the commit message with `fixup! <subject>` of that commit. The commit button becomes **Commit Fixup**, and its menu adds **Commit Fixup & Squash**.
+- **Fixup Commit...** — Right-click a commit and select this action to select the Working Changes row and pre-fill the commit message with `fixup! <subject>` of that commit. The commit button becomes **Commit Fixup**, and its menu adds **Commit Fixup & Squash**.
 - **Squash Fixups...** — Right-click the current branch to fold its `fixup!` commits into the commits they target, after a confirmation.
 - **Undo Commit** — Appears as an inline action on the HEAD commit row to soft-reset the latest commit.
 - **Push to Commit** — Appears as an inline action on unpushed commit rows to push up to that specific commit.
@@ -722,13 +716,13 @@ Popular options include:
 
 ### Compare Mode `PRO`
 
-Compare mode lets you view comparisons directly inside the Commit Graph rather than switching to the Search & Compare view. Select two references to see Ahead, Behind, and All views inline within the graph details panel.
+Use Compare mode to view comparisons inside the Commit Graph instead of switching to the Search & Compare view. Select two references to see Ahead, Behind, and All views inline within the graph details panel.
 
 ---
 
 ### Compose Mode `PRO`
 
-Compose mode integrates commit composition directly within the Commit Graph. Select the Working Changes row to see your uncommitted work, then switch to Compose mode in the details panel to create commits from those changes or to reorganize branch history. GitKraken AI can propose the commits and messages for you to review and refine before applying them.
+Use Compose mode to compose commits inside the Commit Graph. Select the Working Changes row to see your uncommitted work, then switch to Compose mode in the details panel to create commits from those changes or to reorganize branch history. GitKraken AI can propose the commits and messages for you to review and refine before applying them.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v6@2x.png" alt="Commit Graph in Compose mode: the ringed Compose (wand) action on the Working Changes row, and the composer panel beside the graph listing Staged changes and Unstaged changes entries, the changed files, and the Instructions box with the Compose button" class="help-center-img img-bordered">
@@ -746,16 +740,13 @@ Click the **Compose** button to generate an AI-assisted commit message based on 
 
 ### Multi-File Selection
 
-The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. Selected files can be batch-operated on with stage, unstage, discard, and stash actions. Inline per-file action buttons are also available for individual operations.
+The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. You can stage, unstage, discard, or stash all the selected files at once. Each file also has its own inline action buttons.
 
-To ignore untracked files, right-click one or more of them in Working Changes and select **Add to .gitignore**. GitLens appends an entry for each file to the `.gitignore` at the repository root, creates that file if it doesn't exist, and opens it so you can review the change.
+To ignore untracked files, right-click one or more of them in Working Changes and select **Add to .gitignore**. GitLens appends an entry for each file to the `.gitignore` at the repository root, creates that file if it does not exist, and opens it so you can review the change.
 
 ### Pull Request Indicators
 
-For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with active pull requests. To enable this:
-
-1. Connect your account using [rich integration settings](/gitlens/gitlens-settings/#remote-provider-integration-settings).
-2. The icon will appear next to branches in the graph once linked.
+For GitHub and GitLab, GitLens shows a **Pull Request icon** on branches with active pull requests. To show the icon, connect your account using [rich integration settings](/gitlens/gitlens-settings/#remote-provider-integration-settings). The icon then appears next to linked branches in the graph.
 
 <figure>
   <img src="/wp-content/uploads/gl-pull-request-icon-01-v3@2x.png" alt="The Commit Graph with the fixture/code-suggest-demo branch pill ringed: after the branch name and its origin remote the pill carries the pull-request icon, which marks the branch as having an associated open pull request" class="help-center-img img-bordered">
@@ -766,14 +757,14 @@ For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with
 
 ### Hiding Remotes, Branches, or Tags
 
-You can hide individual remotes, branches, or tags from the Commit Graph to reduce clutter and focus your view.
+You can hide individual remotes, branches, or tags from the Commit Graph to show only the refs you are working with.
 
 - **To hide**: Right-click a branch or tag pill and select **Hide Local Branch**, **Hide Remote Branch**, or **Hide Tag**. To hide every branch of a remote, including branches added later, right-click a remote branch pill or a remote in the side bar's **Remotes** panel and select **Hide Remote**. To hide whole classes of refs, use the scope/filter popover next to the search box.
-- **To show again**: Use the **Hide** panel at the top of the graph and reselect the ref. Hidden refs also stay listed, dimmed, in the side bar's **Branches**, **Remotes**, and **Tags** panels; right-click one and select **Show Local Branch**, **Show Remote Branch**, **Show Tag**, or **Show Remote**. Showing one branch of a hidden remote keeps the rest of that remote hidden.
+- **To show again**: In the Commit Graph header, select the hidden refs button (its tooltip reads, for example, *2 hidden branches and tags*) to open the **Hidden Branches / Tags** menu, then select the ref, or select **Show All**. Hidden refs also stay listed, dimmed, in the side bar's **Branches**, **Remotes**, and **Tags** panels; right-click one and select **Show Local Branch**, **Show Remote Branch**, **Show Tag**, or **Show Remote**. Showing one branch of a hidden remote keeps the rest of that remote hidden.
 
 <figure>
   <img src="/wp-content/uploads/gl-hide-refs-01-v3@2x.gif" alt="Hiding a branch in the Commit Graph: right-clicking the conflict-branch ref opens its context menu, and choosing Hide Local Branch removes the ref from the graph" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Use the “Hide” option to declutter the graph</figcaption>
+  <figcaption style="text-align: center; color: #888">Hide a branch from the graph</figcaption>
 </figure>
 
 #### Filtering Options
@@ -786,7 +777,7 @@ You can further control what is shown using the filter dropdown:
 - **Agent Branches** — Display only branches with currently running agents or agents idle for less than 24 hours
 - **Favorited Branches** — Display only the branches you starred as favorites
 
-  The Agent Branches and Favorited Branches modes don't add the current branch automatically. When a mode narrows the graph, a bar under the graph shows how many of the matching branches are loaded (for example, "Showing 3 of 8 branches"), with **Load More…** to load the rest.
+  The Agent Branches and Favorited Branches modes do not add the current branch automatically. When a mode narrows the graph, a bar under the graph shows how many of the matching branches are loaded (for example, "Showing 3 of 8 branches"), with **Load More…** to load the rest.
 - Toggle visibility of:
   - Remote-only branches
   - Tags
@@ -802,11 +793,11 @@ You can further control what is shown using the filter dropdown:
 
 ### Minimap <span style="color: #888;">(Experimental)</span>
 
-The **Minimap** gives you a visual summary of repository activity at a glance:
+The **Minimap** shows a summary of repository activity over time:
 
-- Quickly locate `HEAD`, remotes, tags, and stashes
-- Jump to any region in the graph using visual cues
-- Toggle it via the **Minimap icon** in the top right
+- Locate `HEAD`, remotes, tags, and stashes
+- Jump to any region in the graph
+- Toggle it with the **Minimap icon** in the top right
 
 <figure>
   <img src="/wp-content/uploads/gl-minimap-2.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
@@ -841,17 +832,17 @@ Customize the Minimap via the **gear at the right end of the minimap**:
 | **Highlighted area** | Current view region |
 
 <div class='callout callout--basic'>
-  <p>Note: We welcome your feedback on the Minimap. Share your thoughts on the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>GitLens GitHub Discussions</a>.</p>
+  <p>Note: To share feedback on the Minimap, join the <a href='https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133' target='_blank'>Minimap discussion in GitLens GitHub Discussions</a>.</p>
 </div>
 
-To send feedback from inside VS Code, select **Send Feedback...** (the feedback icon) in the Commit Graph toolbar, or **Send Feedback** in the header's account popover. In the dialog, choose **General**, **Bug**, or **Feature**, write your message, and select **Send Feedback**. You don't need to be signed in. When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add details.
+To send feedback from inside VS Code, select **Send Feedback...** (the feedback icon) in the Commit Graph toolbar, or **Send Feedback** in the header's account popover. In the dialog, choose **General**, **Bug**, or **Feature**, write your message, and select **Send Feedback**. You do not need to be signed in. When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add details.
 
 
 ***
 
 ## Launchpad `PRO`
 
-Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
+Launchpad groups your pull requests (PRs) by status, so you can see which ones need your action first and act on them without leaving VS Code.
 
 <figure>
   <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="The Launchpad quick pick with pull requests grouped by status" class="help-center-img img-bordered">
@@ -867,7 +858,7 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 ### Accessing Launchpad
 
 - From the **Command Palette**: `Command/Ctrl + Shift + P` → `GitLens: Open Launchpad`
-- Or select the **Pull Request status bar item** in VS Code
+- From the **Pull Request status bar item** in VS Code
 
 <figure>
   <img src="/wp-content/uploads/gl-access-launchpad.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
@@ -878,23 +869,29 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 
 ### Using Launchpad
 
-View PRs by grouped statuses:
+Launchpad groups PRs by these statuses:
+
 - Ready to merge
 - Blocked
 - Requires follow-up
 - Needs your review
 - Waiting for review
+- In merge queue
 - Draft
 - Snoozed
 
 Click a PR to:
+
 - View full details
 - Open in your browser
-- Merge (if eligible)
+- Merge (if eligible), or add it to the merge queue with **Add to Merge Queue...** when its base branch requires one
+- Take it out of the merge queue with **Remove from Merge Queue...**
 - Rebase the stack (for a GitHub stacked pull request)
 - Switch to the branch or open in a worktree
 
-To find a pull request that isn't in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term. You can also paste a pull request's URL to open that pull request; this works for every connected provider, including Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
+To find a pull request that is not in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term. You can also paste a pull request's URL to open that pull request. Pasting a URL works for every connected provider, including Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
+
+For repositories on GitHub.com that merge through a merge queue, queued pull requests appear in the **In Merge Queue** group with their queue status, and pull requests failing in the queue appear under **Blocked** as **Failing in Merge Queue**. Merge queues are not supported for GitHub Enterprise. For details, see [GitHub Merge Queue](/gitlens/gl-integrations/#github-merge-queue).
 
 <figure>
   <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
@@ -908,15 +905,19 @@ You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
-*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)*
+*Launchpad is also available through the [GitKraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/).*
 
 ---
 
 ### Start Review `PRO`
 
-The **Start Review** command (`gitlens.startReview`) provides a guided wizard for beginning a pull request review. It walks you through selecting a PR from your connected integration, choosing whether to check out the branch or create a worktree, and optionally launching an AI chat pre-filled with a review prompt.
+The **Start PR Review** command (`gitlens.startReview`) guides you through starting a pull request review:
 
-Access it from the Command Palette: `GitLens: Start Review`
+1. Select a PR from your connected integration.
+2. Choose whether to check out the branch or create a worktree.
+3. Optionally, open an AI chat pre-filled with a review prompt.
+
+Access it from the Command Palette: `GitLens: Start PR Review`
 
 When AI features are enabled, Start Review asks whether to open the review in an agent, continue manually, or, when Kepler supports the pull request's provider, open it in [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler). Select **Always use this choice** to skip that step next time; the `gitlens.ai.openInAgent` setting stores your choice. If no local clone of the pull request's repository is found, Start Review offers **Clone Repository...** and **Choose a Local Folder...** instead of stopping.
 
@@ -924,7 +925,7 @@ When AI features are enabled, Start Review asks whether to open the review in an
 
 ### Start Work `PRO`
 
-The **Start Work** command (`gitlens.startWork`) starts work on an issue from your connected integrations: pick the issue, and GitLens creates a branch for it. If you aren't signed in, Start Work first asks you to sign in or start a Pro trial before it offers to connect an integration.
+The **Start Work** command (`gitlens.startWork`) starts work on an issue from your connected integrations: pick the issue, and GitLens creates a branch for it. If you are not signed in, Start Work first asks you to sign in or start a Pro trial before it offers to connect an integration.
 
 Access it from the Command Palette: `GitLens: Start Work`
 
@@ -946,7 +947,7 @@ Click the icon again to unpin or unsnooze as needed.
 </figure>
 
 <div class='callout callout--basic'>
-  <p>Note: Launchpad prioritizes items requiring action by elevating them to the top of the list. This behavior may change in future updates.</p>
+  <p>Note: Launchpad lists the items that need your action at the top of the list.</p>
 </div>
 
 <div class='callout callout--warning'>
@@ -958,7 +959,7 @@ Click the icon again to unpin or unsnooze as needed.
 
 ## Visual History
 
-Visual History (formerly Visual File History) provides a clear timeline of changes—showing when, what, and who modified your code—helping you quickly understand how a file, folder, repository, or branch evolved.
+Visual History (formerly Visual File History) shows a timeline of changes to a file, folder, repository, or branch: when the code changed, what changed, and who changed it.
 
 Visual History supports multiple scopes:
 
@@ -967,12 +968,13 @@ Visual History supports multiple scopes:
 - **Repository** — View the history of the entire repository
 - **Branch** — Slice the history by branch to focus on specific lines of work
 
-To open Visual History:
-- Use the GitLens **Inspect Sidebar**, or
-- From the **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
+To open Visual History, use one of the following:
+
+- The **GitLens Inspect** side bar
+- The **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
 
 <figure>
-  <img src="/wp-content/uploads/gl-visual-file-history-01-v3@2x.png" alt="Visual History view for CHANGELOG.md showing eight commits by four authors plotted as colour-coded bubbles over the last four weeks, with the additions and deletions of each commit shown as bars" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-visual-file-history-01-v3@2x.png" alt="Visual History view for CHANGELOG.md showing eight commits by four authors plotted as color-coded bubbles over the last four weeks, with the additions and deletions of each commit shown as bars" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Track authorship, size, and timing of file changes</figcaption>
 </figure>
 
@@ -985,7 +987,7 @@ To open Visual History:
 - **Bubbles:** Color-coded per author; bubble size reflects the magnitude of changes
 - **Bars (right y-axis):** Line additions (green) and deletions (red)
 
-Hover over a bubble or bar for detailed insights.
+Hover over a bubble or bar to see the commit's details.
 
 <figure>
   <img src="/wp-content/uploads/visual-file-history-hover.png" alt="Hover over commit for details" class="help-center-img img-bordered">
@@ -1001,25 +1003,25 @@ Hover over a bubble or bar for detailed insights.
 
 ## GitKraken AI
 
-GitKraken AI enhances your development workflow with automated commit messages, intelligent stash descriptions, and code change explanations.
+GitKraken AI writes commit messages and stash descriptions, explains code changes, and helps you compose commits and rebase.
 
 ---
 
 ### AI-Generated Commit Messages
 
-Automatically generate descriptive commit messages based on staged changes.
+Generate a commit message from your staged changes.
 
 <figure>
   <img src="/wp-content/uploads/gl-ai-generated-commit-message-01-v2.gif" alt="The Source Control view with a staged file: the empty commit message box, then an AI-generated commit message appearing in it" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-generated commit messages from staged changes</figcaption>
 </figure>
 
-To use:
-- Stage your changes.
-- In the Source Control view, open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**, or
-- Use the Command Palette: `GitLens: Generate Commit Message`
+To generate a commit message:
 
-GitKraken AI will analyze the diff of staged changes to generate a message. You may provide additional context in the commit box to improve results.
+1. Stage your changes.
+2. In the Source Control view, open the GitLens sparkle menu in the Changes header and choose **Generate Commit Message**. Or run `GitLens: Generate Commit Message` from the Command Palette.
+
+GitKraken AI reads the diff of your staged changes and writes a message. To improve the result, add context in the commit box first.
 
 You can customize behavior using [`gitlens.ai` settings](/gitlens/gitlens-settings/#misc-settings) for provider, model, and prompt preferences.
 
@@ -1033,7 +1035,7 @@ You can customize behavior using [`gitlens.ai` settings](/gitlens/gitlens-settin
 
 Available in **Pro**, **Advanced**, and **Business** plans.
 
-Automatically generate meaningful stash descriptions to make your stashes easier to identify later.
+Generate stash descriptions so you can identify your stashes later.
 
 **How to access:**
 - From the Command Palette: `GitLens: Generate Stash Message with AI`
@@ -1044,18 +1046,19 @@ Automatically generate meaningful stash descriptions to make your stashes easier
 
 ### AI Explanations `PREVIEW`
 
-Let GitKraken AI help explain complex changes across your repo with natural language summaries.
+GitKraken AI explains changes across your repo in plain-language summaries.
 
 <figure>
   <img src="/wp-content/uploads/ai-branch-summary.png" alt="AI branch summary explanation" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI summaries in rendered markdown for improved clarity</figcaption>
 </figure>
 
-Standalone **Explain** commands provide markdown summaries for:
-- Commits — **Explain Commit**
-- Branches — **Explain Branch**
-- Working changes — **Explain Working Changes**
-- Stashes — **Explain Stash**
+The **Explain** commands write markdown summaries for:
+
+- Commits — **Explain Commit Changes...**
+- Branches — **Explain Branch Changes...**
+- Working changes — **Explain Working Changes...**
+- Stashes — **Explain Stash Changes...**
 
 **Where to find it:**
 - Commit Graph
@@ -1063,16 +1066,18 @@ Standalone **Explain** commands provide markdown summaries for:
 - GitLens views: Commits, Branches, Stashes, Search & Compare
 - Editor blame hovers (sparkle Explain button)
 
-With GitKraken AI explanations, you can quickly understand:
+Use GitKraken AI explanations to understand:
+
 - The purpose and impact of individual commits
 - What changed across all commits in a branch
-- What you've modified in your working directory
+- What you have modified in your working directory
 - What your previous stashes contain
+
 #### AI Commit Explanations `PRO`
 
 *Available in:* **Pro**, **Advanced**, and **Business** plans
 
-Understand the purpose and context of commits with AI-generated summaries. These explanations help you grasp the intent behind complex commits without manually reviewing all changes.
+AI-generated summaries explain the purpose and context of a commit, so you can understand its intent without reviewing every change yourself.
 
 **How to access:**
 - **Commit Details** view: See the AI explanation panel
@@ -1085,12 +1090,12 @@ Understand the purpose and context of commits with AI-generated summaries. These
 
 *Available in:* **Advanced** and **Business** plans only
 
-Automatically generate detailed and structured changelogs from a set of selected commits—ideal for maintaining release documentation.
+Generate a structured changelog from a set of selected commits, for example for your release notes.
 
 **How to access:**
 - **Search/Compare** view: Click the inline button on the commits line
 - **Commit Graph**: Select multiple commits, right-click, then choose **Generate Changelog**
-- **Command Palette**: `GitLens: Generate Changelog from Commits`
+- **Command Palette**: `GitLens: Generate Changelog...`
 
 <div class='callout callout--basic'>
   <p>More questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for additional details.</p>
@@ -1098,23 +1103,23 @@ Automatically generate detailed and structured changelogs from a set of selected
 
 ### AI Generate Commits `PRO`
 
-Generate well-structured commits from your working tree changes using AI analysis. The **Generate Commits** command analyzes your staged and unstaged changes, groups them logically, and creates commits with descriptive messages. A first-time confirmation dialog explains what the command will do, and an **Undo** button is available after generation to revert if needed.
+The **Generate Commits** command turns your staged and unstaged changes into commits. GitKraken AI groups related changes and writes a message for each commit. The first time you run the command, a confirmation dialog explains what it does. After the commits are created, select **Undo** to revert them.
 
 ### AI Rebase `PRO`
 
-The **AI Rebase** command restructures commits on an existing branch onto a target commit using AI-generated commit grouping and messages. Like Generate Commits, it includes an undo button and a first-time confirmation dialog. Both commands produce markdown explanation documents summarizing the changes made.
+The **AI Rebase** command restructures the commits on an existing branch onto a target commit, with GitKraken AI grouping the changes and writing the messages. Like Generate Commits, it shows a confirmation dialog the first time and offers **Undo** afterward. Both commands produce a markdown document that summarizes the changes they made.
 
 ### Auto-Rebase `PRO`
 
-Auto-Rebase (`gitlens.ai.autoRebase`) carries a rebase forward through the conflicts GitKraken AI can resolve confidently, and hands the rest back to you. When a rebase encounters a conflict, AI analyzes it and resolves it only when its confidence meets the threshold you set; anything below that threshold pauses the rebase so you can resolve the conflict yourself and continue. Every run is reviewable and reversible.
+Auto-Rebase (`gitlens.ai.autoRebase`) continues a rebase through the conflicts GitKraken AI can resolve confidently, and leaves the rest for you. When a rebase hits a conflict, AI analyzes it and resolves it only when its confidence meets the threshold you set; anything below that threshold pauses the rebase so you can resolve the conflict yourself and continue. Every run is reviewable and reversible.
 
 Key capabilities:
 
 - **Confidence threshold** — Configure `gitlens.ai.autoRebase.confidenceThreshold` (0 to 1) to control how confident the AI must be before resolving a conflict on its own. Raise it to keep more decisions in your hands.
 - **Stops rather than guesses** — Conflicts that fall below the threshold are left for you to resolve manually, with the rebase paused at that point.
-- **Custom instructions** — Use `gitlens.ai.resolveConflicts.customInstructions` to provide project-specific guidance for conflict resolution
-- **Rebase summary sheet** — After the rebase completes, a summary sheet shows what was resolved and how, so you can review each decision
-- **Full undo support** — Undo the entire Auto-Rebase with **Undo Auto-Rebase** (`gitlens.ai.autoRebase.undo`) to return to the pre-rebase state if the results are not what you wanted
+- **Custom instructions** — Use `gitlens.ai.resolveConflicts.customInstructions` to give project-specific guidance for resolving conflicts.
+- **Rebase summary sheet** — After the rebase completes, a summary sheet shows what was resolved and how, so you can review each decision.
+- **Full undo support** — Undo the entire Auto-Rebase with **Undo Auto-Rebase** (`gitlens.ai.autoRebase.undo`) to return to the pre-rebase state if the results are not what you wanted.
 - **Your messages and edit stops** — When a `reword` or `squash` step needs a new commit message, Auto-Rebase opens the message in VS Code for you to edit. At a commit you marked `edit`, it resolves and stages any conflicts, then pauses so you can make your changes before you continue.
 
 To start Auto-Rebase, run `GitLens: Auto-Rebase...` from the Command Palette, choose the **Auto-Rebase** option in the Git Command Palette's rebase confirmation, or select **Start Auto-Rebase** in the [Interactive Rebase Editor](#interactive-rebase-editor). If a rebase is already paused, run `GitLens: Continue with Auto-Rebase`.
@@ -1123,8 +1128,9 @@ For a GitHub [stacked pull request](/gitlens/gl-commit-graph/#pull-request-infor
 
 When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
 
-### Commit Composer View `Pro`
-The Commit Composer has evolved from a simple one-step process into a comprehensive drafting and review experience. Previously, AI would analyze your changes and immediately create commits. Now, the Commit Composer gives you complete control over the composition process, with options to auto-compose with AI or compose manually. It is integrated directly into the Commit Graph details panel as Compose mode, and is also available as a standalone view.
+### Commit Composer View `PRO`
+
+Use the Commit Composer to draft and review commits before you create them. Let GitKraken AI compose them, or compose them yourself. The Commit Composer opens in the Commit Graph details panel as Compose mode, and as a standalone view.
 
 Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlens/discussions/4530) and provide feedback.
 
@@ -1135,26 +1141,26 @@ Join the [Commit Composer discussion](https://github.com/gitkraken/vscode-gitlen
 
 #### Interactive Draft Commits
 
-When composing commits, GitLens now creates "draft" commits that you can review, modify, and refine before applying them to your repository. This new workflow lets you:
+When you compose commits, GitLens creates draft commits that you can review, change, and refine before you apply them to your repository. With draft commits, you can:
 
-- **Preview before committing**: See exactly what will be committed before it touches your repository
-- **Switch Models**: Try composition with different AI models
-- **Guide the AI**: Provide custom instructions to match your team's conventions and preferences  
-- **Iterate and refine**: Regenerate individual messages or entire commit compositions
-- **Review and edit**: Manually tweak any commit message or approach
+- **Preview before committing**: See exactly what will be committed before anything changes in your repository
+- **Switch models**: Try composing with different AI models
+- **Guide the AI**: Give custom instructions that match your team's conventions
+- **Iterate and refine**: Regenerate individual messages or the whole set of commits
+- **Review and edit**: Edit any commit message or how the changes are grouped
 
 <figure>
   <img src="/wp-content/uploads/commit-composer-composed-17-4.png" alt="Commit Composer with AI-composed commit message populated and ready for review" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">AI-composed commit message ready for review</figcaption>
 </figure>
 
-You can launch the new Commit Composer view from several places in GitLens:
+You can open the Commit Composer view from these places in GitLens:
 
 - **GitLens commit details view**
 - **Context menu on the Working Changes row** in the GitLens Commit Graph  
 - **Commit Graph details panel**: Switch to **Compose** mode
 - **✨ icon in the SCM view header**
-- **Command palette**: Search for "Compose Commits"
+- **Command Palette**: Search for **Compose Commits**
 
 <figure>
   <img src="/wp-content/uploads/gl-access-composer-1-17-4-01-v3@2x.png" alt="Commit Graph toolbar showing the Compose button entry point" class="help-center-img img-bordered">
@@ -1166,13 +1172,9 @@ You can launch the new Commit Composer view from several places in GitLens:
   <figcaption style="text-align: center; color: #888">Or switch to Compose mode in the Working Changes details panel</figcaption>
 </figure>
 
-The foundation is now in place for even more powerful composition features in future releases, including intuitive drag-and-drop functionality for moving lines and hunks between commits, creating new draft commits on the fly, and reordering commit sequences.
-
-Whether you prefer to let AI handle the heavy lifting or want granular control over every detail, Commit Composer provides the flexibility to create well-structured commit histories that make code reviews more effective and repository history easier to understand.
-
 ### Commit Composer: Branch Recomposition
 
-Commit Composer now lets you clean up and reorganize commits on existing branches, making it perfect for preparing pull requests or refining your commit history before pushing.
+Use Commit Composer to clean up and reorganize the commits on an existing branch, for example before you open a pull request or push.
 
 <figure>
   <img src="/wp-content/uploads/gl-17-7-recompose-branch-01-v4@2x.png" alt="The Commit Composer opened for the feature/spending-insights branch: its four commits sit in the scope list with drag handles, main's commits are dimmed beneath them above the base, the three changed files are listed, and the Instructions box with the Compose button waits at the bottom" class="help-center-img img-bordered">
@@ -1183,50 +1185,58 @@ Commit Composer now lets you clean up and reorganize commits on existing branche
 
 Open Commit Composer from any branch in the Commit Graph (or anywhere branches appear in GitLens) to inspect and reorganize its commits. The composer creates draft commits you can review before applying changes to your repository.
 
-**Auto-Recompose with AI**: Let AI analyze your branch and restructure commits into logical, well-documented units. Choose your preferred model and provide custom instructions to match your team's conventions. (Pro tip: Set default instructions in the "Generate Commits: Custom Instructions" setting to save time.)
+**Auto-Recompose with AI**: GitKraken AI analyzes your branch and restructures its commits into logical units with clear messages. Choose your model and give custom instructions that match your team's conventions. To reuse the same instructions every time, set them in the **Generate Commits: Custom Instructions** setting (`gitlens.ai.generateCommits.customInstructions`).
 
-**Manual Control**: Review AI suggestions, regenerate specific commit messages, or manually edit messages and change organization. The composer gives you complete flexibility to craft the commit story that works best.
+**Manual Control**: Review the AI's suggestions, regenerate specific commit messages, or edit messages and how the changes are grouped yourself.
 
 <video src="/wp-content/uploads/gl-17-7-recompose-example.mp4" autoplay loop controls muted class="help-center-video"></video>
 
 #### Enhanced Composer Capabilities
 
-Commit Composer now handles edge cases that previously blocked composition:
+Commit Composer also handles these cases:
 
-- **Untracked files**: Working changes now include untracked files, so all modifications can be composed together
-- **New repositories**: Compose your initial commits even before a base commit exists
-- **Performance boost**: Significantly faster rendering when working with changes across many files
+- **Untracked files**: Working changes include untracked files, so you can compose all your changes together
+- **New repositories**: Compose your first commits before a base commit exists
 
 ### Commit Composer: Selective Recomposition
 
-Commit Composer now lets you recompose specific commits within a branch, giving you precise control over cleaning up your commit history.
+Use Commit Composer to recompose only specific commits within a branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-17-8-recompose-selected-commits-01-v5@2x.png" alt="The Commit Composer scoped to two selected commits of the feature/spending-insights branch — &quot;fix(insights): exclude refunds from spending totals&quot; and &quot;feat(insights): add budget threshold alerts&quot; — shown in the scope list with drag handles while the branch's other commits are dimmed, above the changed files and the Compose instructions box" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Select specific commits to recompose</figcaption>
 </figure>
 
-Previously, you could only recompose all working changes or an entire branch. Now you can select specific commits that need refinement—like those quick "wip" or "fix" commits made during rapid iteration—and let AI restructure just those changes with better messages.
+Select the commits that need work, such as quick "wip" or "fix" commits, and let GitKraken AI restructure only those changes with clearer messages.
 
-Select multiple contiguous commits on the same branch using <kbd>Shift</kbd> or <kbd>Cmd</kbd> click, then right-click and choose "Recompose Selected Commits." Commit Composer opens with only your selected commits as drafts, ready for AI-powered or manual refinement.
+1. Select multiple contiguous commits on the same branch with <kbd>Shift</kbd>-click or <kbd>Cmd</kbd>-click.
+2. Right-click and choose **Recompose Selected Commits...**.
 
-Commit Composer is also more discoverable, with a new wand button on the Working Changes row in the Commit Graph that opens the composer for all working directory changes. Additionally, when rebasing, you can now switch directly into Commit Composer from the Rebase Editor, canceling your rebase to let AI handle the composition instead.
+Commit Composer opens with only your selected commits as drafts, ready for you or GitKraken AI to refine.
+
+To open the composer for all your working changes, select the **Compose** (wand) button on the Working Changes row in the Commit Graph. While you rebase, you can also switch from the Rebase Editor to Commit Composer with **Recompose Commits...**, which cancels the rebase and lets AI compose the commits instead.
 
 <figure>
   <img src="/wp-content/uploads/gl-17-8-compose-in-wip-01-v5@2x.png" alt="The Commit Graph's Working Changes row with its action buttons, Compose ringed between Run Default Task and Review." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Open Commit Composer from the Working Changes row</figcaption>
 </figure>
 
-The Working Changes row also has a **Run Default Task** (play) button that runs a VS Code task in that row's worktree. The first time you select it, GitLens asks you to choose the default task, then runs that task on later clicks. <kbd>Alt</kbd>-click the button to choose a different task. While the task runs, the button reads **Running:** and the task name, and clicking it shows the running task instead of starting another. To pick a task from a list, right-click a Working Changes row in the Commit Graph, or a worktree in the side bar views, and select **Run Task on Worktree...**. In that list, select a task's checkmark button (**Set as Default Task**) to make it the default.
+The Working Changes row also has a **Run Default Task** (play) button that runs a VS Code task in that row's worktree:
+
+- The first time you select it, GitLens asks you to choose the default task. Later clicks run that task.
+- <kbd>Alt</kbd>-click the button to choose a different task.
+- While the task runs, the button reads **Running:** and the task name. Clicking it then shows the running task instead of starting another.
+
+To pick a task from a list, right-click a Working Changes row in the Commit Graph, or a worktree in the side bar views, and select **Run Task on Worktree...**. In that list, select a task's checkmark button (**Set as Default Task**) to make it the default.
 
 ### Compose and Recompose Commands
 
-Commit Composer can also be launched via dedicated commands:
+You can also open Commit Composer with these commands:
 
-- **Compose Commits** (`gitlens.compose`) — Opens the Commit Composer for working changes in the current repository, or from a Compose mode entry in the Commit Graph details panel.
-- **Recompose Branch** (`gitlens.recomposeBranch`) — Opens the Commit Composer scoped to an entire branch. GitKraken AI can propose a clearer, more intentional sequence of commits and messages for you to review and refine before applying the result.
-- **Recompose from Commit** (`gitlens.recomposeFromCommit`) — Scopes the same workflow to a specific commit onward.
-- **Recompose Selected Commits** (`gitlens.recomposeSelectedCommits`) — Scopes the same workflow to only the selected commits on a branch.
+- **Compose Commits...** (`gitlens.composeCommits`) — Opens the Commit Composer for working changes in the current repository, or from a Compose mode entry in the Commit Graph details panel.
+- **Recompose Commits...** (`gitlens.ai.recomposeBranch`) — Opens the Commit Composer scoped to an entire branch. GitKraken AI can propose a clearer, more intentional sequence of commits and messages for you to review and refine before applying the result.
+- **Recompose Commits from Here...** (`gitlens.ai.recomposeFromCommit`) — Scopes the same workflow to a specific commit onward.
+- **Recompose Selected Commits...** (`gitlens.ai.recomposeSelectedCommits`) — Scopes the same workflow to only the selected commits on a branch.
 
 These commands are available from the Commit Graph context menu, branch context menus throughout GitLens, and the Command Palette. Coach marks guide first-time users through the workflow.
 
@@ -1239,9 +1249,20 @@ These commands are available from the Commit Graph context menu, branch context 
   <figcaption style="text-align: center; color: #888">Guided Git commands through the Command Palette</figcaption>
 </figure>
 
-Adds a [customizable](/gitlens/gitlens-settings/#git-command-palette-settings) Git Command Palette (`gitlens.gitCommands`) for guided, step-by-step access to many common Git commands. Quickly navigate Git actions, explore commit history, manage stashes, and more—all through intuitive, confirmable menus.
+The [customizable](/gitlens/gitlens-settings/#git-command-palette-settings) Git Command Palette (`gitlens.gitCommands`) guides you step by step through common Git commands. Use it to run Git actions, explore commit history, manage stashes, and more, with a confirmation before each command runs.
 
-On a command's confirmation step, choose the action row, then turn options on or off with the checkbox toggles under the **Options** separator. Examples include **Prune** for Fetch, **Force** for Push Tags and branch deletion, **Keep Staged** for stashes, **Fast-forward** and **Don't Commit** for Merge, **Update Branches** and **Autosquash** for Rebase, and **In a New Worktree** for Switch. Where a matching Git config value exists, such as `fetch.prune`, `merge.ff`, `rebase.updateRefs`, or `rebase.autosquash`, the toggle starts from that value. Some commands also offer a **Don't Ask Again** toggle, which adds the command to [`gitlens.gitCommands.skipConfirmations`](/gitlens/gitlens-settings/#git-command-palette-settings) so the confirmation is skipped from then on. Steps that ask you to choose between different actions, such as Push's **Publish** step, and warning steps whose safe choice is selected for you don't offer **Don't Ask Again**.
+On a command's confirmation step, choose the action row, then turn options on or off with the checkbox toggles under the **Options** separator. For example:
+
+- **Prune** for Fetch
+- **Force** for Push Tags and branch deletion
+- **Keep Staged** for stashes
+- **Fast-forward** and **Don't Commit** for Merge
+- **Update Branches** and **Autosquash** for Rebase
+- **In a New Worktree** for Switch
+
+Where a matching Git config value exists, such as `fetch.prune`, `merge.ff`, `rebase.updateRefs`, or `rebase.autosquash`, the toggle starts from that value.
+
+Some commands also offer a **Don't Ask Again** toggle, which adds the command to [`gitlens.gitCommands.skipConfirmations`](/gitlens/gitlens-settings/#git-command-palette-settings) so the confirmation is skipped from then on. **Don't Ask Again** is not offered on steps that ask you to choose between different actions, such as Push's **Publish** step, or on warning steps whose safe choice is selected for you.
 
 <figure>
   <img src="/wp-content/uploads/gl-git-command-palette-confirm-options-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Fetch step with the Fetch and Fetch All Remotes rows above an Options separator and the ringed Prune checkbox toggle, which removes remote-tracking branches that no longer exist on the remote." />
@@ -1253,7 +1274,7 @@ To push tags to a remote, run the **Tag** command and choose **Push Tags**. Pick
   <img src="/wp-content/uploads/gl-git-command-palette-push-tags-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Push Tags step, titled Push Tags, asking to choose tags to push with the repository's v1.0.0, v1.1.0 and v2.0.0 tags listed as selectable rows." />
 </figure>
 
-When you run **Push** on a branch that hasn't been published yet, the command shows a publish step (**Confirm Publish**) so you can choose the remote to publish the branch to. If the repository has no remotes, the **Publish** step reads *Cannot publish; No remotes found* and offers two ways forward:
+When you run **Push** on a branch that has not been published yet, the command shows a publish step (**Confirm Publish**) so you can choose the remote to publish the branch to. If the repository has no remotes, the **Publish** step reads *Cannot publish; No remotes found* and offers two ways forward:
 
 - **Publish Repository…** creates a new remote repository and publishes the current branch to it. It's selected by default when you push the current branch. If you push another branch, it still publishes the current branch, and **Add Remote…** is selected instead.
 - **Add Remote…** walks you through adding a remote, then continues to **Confirm Publish** so you can publish the branch to it.
@@ -1266,7 +1287,7 @@ When you run **Push** on a branch that hasn't been published yet, the command sh
 
 When you push several repositories at once, any without remotes are skipped, and the confirmation step lists them. If none of them has a remote, the step reads *Cannot push; No remotes found*.
 
-When you add a remote with **Add Remote**, from the **Remote** command or the side bar's **Remotes** view, the name is pre-filled with `origin` if the repository has no remotes yet. Before adding the remote, GitLens checks that the URL can be reached. If it can't, the confirmation step reads *Cannot reach remote* with the reason, such as *The host could not be found*, and offers:
+When you add a remote with **Add Remote**, from the **Remote** command or the side bar's **Remotes** view, the name is pre-filled with `origin` if the repository has no remotes yet. Before adding the remote, GitLens checks that the URL can be reached. If it cannot, the confirmation step reads *Cannot reach remote* with the reason, such as *The host could not be found*, and offers:
 
 - **Change URL** (selected) to go back and correct the URL.
 - **Add Remote Anyway** to add it despite the failed reachability check. A later fetch or push reports if the URL is wrong.
@@ -1274,10 +1295,10 @@ When you add a remote with **Add Remote**, from the **Remote** command or the si
 
 <figure>
   <img src="/wp-content/uploads/gl-add-remote-unreachable-01-v2@2x.png" class="help-center-img img-bordered" alt="The Git Command Palette's Confirm Add Remote step for a URL that can't be reached: placeholder &quot;Cannot reach remote; The host could not be found&quot;, the message &quot;Check the URL, or add the remote anyway&quot;, the row &quot;Unable to reach https://nonexistent.invalid/acme/release-notes.git&quot;, Add Remote Anyway (&quot;Will add origin without checking it; a later fetch or push will report if it is wrong&quot;) and Change URL selected, with a Retry button at the end of the input box." />
-  <figcaption style="text-align: center; color: #888">Adding a remote whose URL can't be reached</figcaption>
+  <figcaption style="text-align: center; color: #888">Adding a remote whose URL cannot be reached</figcaption>
 </figure>
 
-If the remote is added but the first fetch from it fails, a warning offers **Remove Remote**. Likewise, if a push can't reach a remote you have never fetched from, for example one you just added with a mistyped URL, the error offers **Remove Remote**. That button doesn't appear for an established remote, where a failure usually means a network problem.
+If the remote is added but the first fetch from it fails, a warning offers **Remove Remote**. Likewise, if a push cannot reach a remote you have never fetched from, for example one you just added with a mistyped URL, the error offers **Remove Remote**. That button does not appear for a remote you have fetched from before.
 
 ---
 
@@ -1285,7 +1306,7 @@ If the remote is added but the first fetch from it fails, a warning offers **Rem
 
 - **Show Branch History** (`gitlens.showQuickBranchHistory`): Explore the commit history of any selected branch.
   
-  <img src="/wp-content/uploads/menu-branch-history.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-branch-history.png" alt="The Commits quick pick for branch main, listing commits with their author, date and SHA under Choose a commit" class="help-center-img img-bordered">
 
 - **Show Current Branch History** (`gitlens.showQuickRepoHistory`): View the commit history of your current branch.
 - **Show File History** (`gitlens.showQuickFileHistory`): Access the full commit history of the current file. The File History view supports a **contributors mode** (`gitlens.views.fileHistory.mode`) that shows all contributors to the file instead of the commit list.
@@ -1307,13 +1328,13 @@ If the remote is added but the first fetch from it fails, a warning offers **Rem
 
   Refer to the [Git log documentation](https://git-scm.com/docs/git-log) for advanced usage.
 
-- **Show Commit Details** (`gitlens.showQuickCommitDetails`): Review commit information and actions.
+- **Quick Show Commit** (`gitlens.showQuickCommitDetails`): Review commit information and actions.
 
   <img src="/wp-content/uploads/gl-menu-commit-details-01-v2@2x.png" alt="Commit Details QuickPick showing the commit message, author, SHA, and changed-file count, with actions including Revert, Reset, Create Branch, and Create Tag" class="help-center-img img-bordered">
 
-- **Show Line Commit Details** (`gitlens.showQuickCommitFileDetails`): Explore the file's commit and take action on it.
+- **Quick Show Line Commit** (`gitlens.showQuickCommitFileDetails`): Explore the file's commit and take action on it.
 
-  <img src="/wp-content/uploads/menu-commit-file-details.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-commit-file-details.png" alt="The quick pick for code.ts in a commit, with actions such as Reveal Commit in Side Bar, Apply Changes, Open Changes and Open File on GitHub" class="help-center-img img-bordered">
 
 
 ### Quick Stash Access
@@ -1326,16 +1347,16 @@ If the remote is added but the first fetch from it fails, a warning offers **Rem
   <img src="/wp-content/uploads/gl-menu-stash-details-01-v3@2x.png" alt="Stash details QuickPick for stash #0 showing its files-changed summary and the Apply Stash, Rename Stash, Drop Stash, Copy Message, Open, Compare and Browse Repository actions" class="help-center-img img-bordered">
 </figure>
 
-- Adds a _Show Stashes_ command (`gitlens.showQuickStashList`) to show a quick pick menu to explore your stashes.
+- **Show Stashes** (`gitlens.showQuickStashList`): Explore your stashes in a quick pick menu.
 
 ---
 
 ### Quick Status Access
 
-- Adds a _Show Repository Status_ command (`gitlens.showQuickRepoStatus`) to show a quick pick menu for visualizing the current repository status.
+- **Show Repository Status** (`gitlens.showQuickRepoStatus`): See the current repository status in a quick pick menu.
 
 <figure>
-  <img src="/wp-content/uploads/menu-repo-status.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-repo-status.png" alt="The Status quick pick for branch main, showing that main is ahead of origin/main by 2 commits with 1 unstaged file, and actions to open or close changed files" class="help-center-img img-bordered">
 </figure>
 
 ---
@@ -1346,15 +1367,15 @@ If the remote is added but the first fetch from it fails, a warning offers **Rem
   <img src="/wp-content/uploads/gl-rebase-01-v4@2x.gif" alt="GitLens interactive rebase editor: five commits each with an action dropdown, the second entry's dropdown open on pick / reword / edit / squash / fixup / drop, and then squash applied to it; the footer lists the keyboard shortcuts including alt + up/down to move a commit" class="help-center-img img-bordered">
 </figure>
 
-Adds a user-friendly interactive rebase editor to easily configure an interactive rebase session:
+Use the GitLens interactive rebase editor to set up an interactive rebase:
 
-- Quickly re-order, edit, squash, and drop commits.
-- Includes drag & drop support.
-- Toolbar commands for **Abort**, **Continue**, **Reopen as Interactive Editor**, and **Reopen as Text Editor**.
+- Reorder, edit, squash, and drop commits.
+- Drag and drop commits to reorder them.
+- Use the toolbar commands **Abort**, **Continue**, **Reopen as Interactive Editor**, and **Reopen as Text Editor**.
 
 ### Start or Continue with Auto-Rebase `PRO`
 
-When AI features are allowed, the editor footer shows a **Start Auto-Rebase** split button next to **Start Rebase**. Start Auto-Rebase runs the rebase with [Auto-Rebase](#auto-rebase-pro), which resolves conflicts it's confident about and pauses at commits you marked `edit` or when its confidence is low. After a rebase has started, the footer shows **Continue with Auto-Rebase** beside **Continue** and **Skip**. The chevron menu of each split button holds **Recompose Commits...**, which aborts the rebase and opens the Commit Composer.
+When AI features are allowed, the editor footer shows a **Start Auto-Rebase** split button next to **Start Rebase**. Start Auto-Rebase runs the rebase with [Auto-Rebase](#auto-rebase-pro), which resolves the conflicts it is confident about and pauses at commits you marked `edit` or when its confidence is low. After a rebase has started, the footer shows **Continue with Auto-Rebase** beside **Continue** and **Skip**. The chevron menu of each split button holds **Recompose Commits...**, which aborts the rebase and opens the Commit Composer.
 
 <figure>
   <img src="/wp-content/uploads/gl-rebase-auto-rebase-start-01-v2@2x.png" class="help-center-img img-bordered" alt="The Interactive Rebase Editor before a rebase starts, with the footer's Start Rebase button beside the ringed Start Auto-Rebase split button, whose chevron menu holds Recompose Commits, and Abort." />
@@ -1362,11 +1383,11 @@ When AI features are allowed, the editor footer shows a **Start Auto-Rebase** sp
 
 ### Conflict Detection
 
-The rebase editor includes a **conflict files panel** that displays files with potential conflicts along with per-file conflict counts and status indicators. **Predictive conflict detection** warns about upcoming conflicts against the current base before you start the rebase, helping you prepare for issues in advance.
+The rebase editor includes a **conflict files panel** that lists files with potential conflicts, with per-file conflict counts and status indicators. Before you start the rebase, **predictive conflict detection** warns you about conflicts against the current base, so you can prepare for them.
 
 ### Rebase Editor Settings
 
-The rebase editor offers several configuration options:
+These settings control the rebase editor:
 
 - `gitlens.rebaseEditor.openOnPausedRebase` — Automatically open the rebase editor when a rebase is paused (e.g., due to conflicts).
 - `gitlens.rebaseEditor.openBehavior` — Controls how the rebase editor opens: `auto` (default) or `beside` (opens alongside the current editor).
@@ -1376,9 +1397,11 @@ The rebase editor offers several configuration options:
 
 ### Conflict Resolution Actions
 
-When a rebase is paused due to conflicts, the rebase editor provides inline actions to **stage current changes** or **stage incoming changes** directly, streamlining the conflict resolution workflow.
+When a rebase is paused because of conflicts, the rebase editor offers inline actions to **stage current changes** or **stage incoming changes**.
 
-### To use this directly from your terminal (e.g., when running `git rebase -i`):
+### Use the Rebase Editor from the Terminal
+
+To open the rebase editor when you run an interactive rebase from your terminal (for example, `git rebase -i`):
 
 - Set VS Code as your default Git editor:
   ```bash
@@ -1397,7 +1420,7 @@ When a rebase is paused due to conflicts, the rebase editor provides inline acti
 
 ## Commit Signature Verification `PRO`
 
-GitLens verifies commit signatures using GPG, SSH, and X.509 certificates, displaying verification badges directly in the Commit Details view, Graph Details panel, and inline blame hovers.
+GitLens verifies GPG, SSH, and X.509 commit signatures and shows a verification badge in the Commit Details view, the Graph Details panel, and inline blame hovers.
 
 ### Verification Badges
 
@@ -1407,20 +1430,20 @@ Each signed commit shows a badge indicating its verification status:
 - **Unverified** — The signature could not be verified (missing key, untrusted signer, etc.)
 - **Unsigned** — The commit has no signature
 
-The `${signature}` token is available in commit tooltip format strings to display signature status in custom tooltip layouts.
+To show the signature status in a custom commit tooltip, use the `${signature}` token in the tooltip format string.
 
 ### Allowed Signers Management
 
-The **Allowed Signers** webview (`gitlens.allowedSigners`) provides a dedicated panel for managing SSH trusted signers. It scans recent commits for SSH signatures, discovers candidate signers with their avatars, and lets you select which keys to trust. Trusted entries are saved to your SSH `allowed_signers` file.
+Use the **SSH Allowed Signers** editor to manage your trusted SSH signers. The editor lists the signers of SSH-signed commits from your recent history, with their avatars, and you select which keys to trust. GitLens saves the trusted entries to your SSH `allowed_signers` file.
 
-Access it from the Command Palette: `GitLens: Manage Allowed Signers`
+Open it from the Command Palette with `GitLens: Edit SSH Allowed Signers...` (`gitlens.git.editAllowedSigners`).
 
 
 ***
 
 ## Autolinks
 
-Use autolinks to convert external references—such as Jira issues or Zendesk tickets—into clickable links directly from commit messages.
+Use autolinks to turn external references in commit messages, such as Jira issues or Zendesk tickets, into clickable links.
 
 <figure>
   <img src="/wp-content/uploads/gl-autolinks-01-v4@2x.png" alt="Commit details in the GitLens Inspect view for a commit whose message ends in &quot;Closes #7&quot;: the #7 reference is a link, and the Autolinks section below the message shows the #7 chip with its hover popover naming the open pull request &quot;fix: add types and config to rate limiter&quot;" class="help-center-img img-bordered">
@@ -1434,16 +1457,16 @@ Use autolinks to convert external references—such as Jira issues or Zendesk ti
   <figcaption style="text-align: center; color: #888;">Autolinks in the integrated terminal</figcaption>
 </figure>
 
-Terminal links optionally provide clickable references in the integrated terminal:
+Terminal links make Git references in the integrated terminal clickable. You can turn them on or off for:
 
-- [Branches, tags, and commit ranges](/gitlens/gitlens-settings/#terminal-links-settings): Quickly explore their commit history.
+- [Branches, tags, and commit ranges](/gitlens/gitlens-settings/#terminal-links-settings): Explore their commit history.
 - [Individual commits](/gitlens/gitlens-settings/#terminal-links-settings): Review commit details and take further action.
 
 ***
 
 ## Remote Provider Integrations
 
-GitLens provides rich integrations with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/gitlens-settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
+GitLens integrates with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/gitlens-settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 Basic integrations offer issue and pull request autolinking. Richer integrations, like GitHub or GitLab, include:
 
@@ -1452,10 +1475,10 @@ Basic integrations offer issue and pull request autolinking. Richer integrations
 - Pull request association with branches and commits
 - Avatars for authors and commenters
 
-These integrations also support various commands to open or copy URLs for files, commits, branches, and repositories:
+These integrations also add commands to open or copy URLs for files, commits, branches, and repositories:
 
 - **Open File from Remote** (`gitlens.openFileFromRemote`) — Open a local file from a URL on a remote provider
-- **Open Revision from Remote** (`gitlens.openRevisionFromRemote`) — Open the specific file revision referenced by a remote URL, rather than the working copy
+- **Open File at Revision from Remote** (`gitlens.openRevisionFromRemote`) — Open the specific file revision referenced by a remote URL, rather than the working copy
 - **Open File on Remote** (`gitlens.openFileOnRemote`) — Open a file or revision on the remote provider
 - **Copy Remote File URL** (`gitlens.copyRemoteFileUrlToClipboard`) — Copy the URL of a file or revision
 - **Open File on Remote From...** (`gitlens.openFileOnRemoteFrom`) — Open a file or revision from a specific branch or tag
@@ -1480,17 +1503,18 @@ The GitHub and GitLab integrations connect through your GitKraken account at [gi
 To connect an integration:
 
 1. Open the Command Palette (`Cmd`/`Ctrl`+`Shift`+`P`).
-2. Run `GitLens: Manage Integrations`.
-3. Alternatively, select the account button (your avatar and plan) in the Commit Graph header, then select the **Integrations** row (or **Set up integrations** if none are connected) to open the integrations settings in GitLens Settings.
+2. Run `GitLens: Manage Integrations...`.
+
+Or select the account button (your avatar and plan) in the Commit Graph header, then select the **Integrations** row (or **Set up integrations** if none are connected) to open the integrations settings in GitLens Settings.
 
 <figure>
   <img src="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" srcset="/wp-content/uploads/gl-connect-remote-integration-01-v4@2x.png" alt="The Commit Graph header's account button with its menu open and the Integrations row ringed, a row of provider icons that opens GitLens Settings > Integrations." class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Open your integrations from the Commit Graph account menu</figcaption>
 </figure>
 
-If you're not already signed in, you'll be prompted to log in to your GitKraken account. Then, select **Connect with GitHub** or **Connect with GitLab**, and follow the sign-in steps. You can connect multiple integrations if needed.
+If you are not signed in yet, GitLens asks you to sign in to your GitKraken account. Then select **Connect with GitHub** or **Connect with GitLab**, and follow the sign-in steps. You can connect more than one integration.
 
-Finish the process by selecting **Complete Setup** to return to VS Code and begin using the integrations.
+To finish, select **Complete Setup** to return to VS Code and start using the integrations.
 
 <figure>
   <img src="/wp-content/uploads/gl-connect-remote-integration-manager.png" alt="The GitKraken integrations page with Connect buttons for GitLab, Azure DevOps, Bitbucket, Jira Cloud and Trello and a Complete Setup button" class="help-center-img img-bordered">
@@ -1498,7 +1522,7 @@ Finish the process by selecting **Complete Setup** to return to VS Code and begi
 </figure>
 
 <div class='callout callout--warning'>
-  <p>Community users are limited to basic functionality only.</p>
+  <p>On the Community plan, integrations offer basic functionality only.</p>
 </div>
 
 
@@ -1506,7 +1530,7 @@ Finish the process by selecting **Complete Setup** to return to VS Code and begi
 
 GitLens Pro offers a richer integration with GitHub Enterprise Server and GitLab Self-Managed.
 
-Once authenticated, GitLens enhances autolinks in hovers with additional context. You’ll see your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, and a summary of pull request or issue details. Sidebar views for commits or branches also show this contextual information.
+After you connect, autolink hovers show more context: your GitHub Enterprise Server or GitLab Self-Managed avatar, links to related pull requests, and a summary of pull request or issue details. The side bar views for commits and branches show the same information.
 
 <figure>
   <img src="/wp-content/uploads/gl-gitlab-github-integration-01-v4@2x.png" alt="The Commit Graph with the pull-request hover card open over the #7 badge of the fixture/code-suggest-demo branch pill: the pull request's title &quot;fix: add types and config to rate limiter&quot;, its number, who opened it and when it was last updated — metadata supplied by the connected GitHub integration" class="help-center-img img-bordered">
@@ -1550,10 +1574,10 @@ Or
 
 ## Jira Integration `PRO`
 
-The Jira Integration, connected through your GitKraken Account, enables Jira [Autolinks](/gitlens/gitlens-features#autolinks) wherever autolinks are supported in GitLens. Once connected, GitLens automatically converts Jira issue keys (e.g., `ABC-123`) in commit messages into clickable links.
+Connect the Jira Integration through your GitKraken Account to get Jira [autolinks](/gitlens/gitlens-features#autolinks) wherever GitLens shows autolinks. After you connect, GitLens turns Jira issue keys (for example, `ABC-123`) in commit messages into clickable links.
 
 <figure>
-  <img src="/wp-content/uploads/gl-jira-integration.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-jira-integration.png" alt="A GitLens commit hover in which the Jira issue key HC-132 is autolinked, with the linked issue Add Jira integration and when it was opened" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Jira autolinks in commit messages</figcaption>
 </figure>
 
@@ -1564,32 +1588,40 @@ The Jira Integration, connected through your GitKraken Account, enables Jira [Au
 To connect the integration:
 
 1. Open the GitLens Settings editor (run _GitLens: Open Settings_ from the Command Palette).
-2. Select **Cloud Integrations** under **Integrations** in the navigation rail. Each provider has a card: a provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
+2. Select **Cloud Integrations** under **Integrations** in the GitLens Settings navigation. Each provider has a card. A provider you have not connected shows **Connect**, and a connected one shows **Connected** and **Manage**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-cloud-integrations-01-v5@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center and Trello" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-cloud-integrations-01-v5@2x.png" alt="GitLens Settings open on Cloud Integrations, with GitHub, Azure DevOps, Bitbucket, Jira and Linear connected and Connect buttons for GitHub Enterprise, GitLab, GitLab Self-Hosted, Azure DevOps Server, Bitbucket Data Center, Jira Data Center, Trello and Asana" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Cloud Integrations in GitLens Settings, shown here with Jira already connected</figcaption>
 </figure>
 
 3. Select **Connect** on the **Jira** card, and authorize access to your Atlassian Account.
-4. Alternatively, visit your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) in a browser.
 
-You can also connect **Trello** (a Pro integration) from the same **Cloud Integrations** list. Once Trello is connected, branches associated with Trello cards show a Trello badge on their Commit Graph pills. GitLens doesn't create autolinks for Trello cards.
+Or connect Jira from your [Integration Settings](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens) on gitkraken.dev in a browser.
 
-To connect a self-hosted Jira (Jira Data Center or Jira Server), select **Connect** on the **Jira Data Center** card in the same list. Like the other self-hosted integrations, it is a Pro integration connected through your GitKraken Account, and each Jira host is its own connection; instances served under a context path, such as `https://jira.example.com/jira`, are supported. For now, a connected Jira Data Center instance is used only to show the issues associated with a branch: it doesn't create autolinks, and Start Work and the Commit Graph's issue tracker picker don't list it yet.
+You can also connect **Trello** and **Asana** (both Pro integrations) from the same **Cloud Integrations** list. Select **Connect** on the card and finish connecting on gitkraken.dev in your browser. After Trello or Asana is connected, branches associated with a Trello card or an Asana task show it on their Commit Graph pills. GitLens does not create autolinks for Trello cards or Asana tasks, and it does not list them in Start Work or Launchpad.
+
+To connect a self-hosted Jira (Jira Data Center or Jira Server), select **Connect** on the **Jira Data Center** card in the same list. Like the other self-hosted integrations, Jira Data Center is a Pro integration connected through your GitKraken Account. Each Jira host is its own connection. Instances served under a context path, such as `https://jira.example.com/jira`, are supported.
+
+A connected Jira Data Center instance:
+
+- Shows the issues associated with a branch.
+- Autolinks its projects' issue keys (for example, `ABC-123`) in commit messages and branch names to the issue on your instance.
+
+Start Work and the Commit Graph's issue tracker picker do not list Jira Data Center issues yet.
 
 
 ***
 
 ## Powerful Commands
 
-GitLens provides powerful commands to improve your workflow:
+GitLens adds these commands to VS Code:
 
-- **Add Co-authors** (`gitlens.addAuthors`) — Add a co-author to the commit message input box.
+- **Add Co-authors...** (`gitlens.addAuthors`) — Add a co-author to the commit message input box.
 - **Copy SHA** (`gitlens.copyShaToClipboard`) — Copy the commit SHA of the current line or the latest commit.
 - **Copy Message** (`gitlens.copyMessageToClipboard`) — Copy the commit message from the current line or latest commit.
-- **Copy Current Branch** (`gitlens.copyCurrentBranch`) — Copy the current branch name to the clipboard.
-- **Switch to Another Branch** (`gitlens.views.switchToAnotherBranch`) — Quickly switch branches.
+- **Copy Current Branch Name** (`gitlens.copyCurrentBranch`) — Copy the current branch name to the clipboard.
+- **Switch Branch...** (`gitlens.switchToAnotherBranch:views`) — Switch to another branch.
 - **Compare References...** (`gitlens.compareWith`) — Compare two references.
 - **Compare HEAD with...** (`gitlens.compareHeadWith`) — Compare HEAD with a selected reference.
 - **Compare Working Tree with...** (`gitlens.compareWorkingWith`) — Compare the working tree with a selected reference.
@@ -1598,34 +1630,34 @@ GitLens provides powerful commands to improve your workflow:
 - **Open Directory Compare (difftool)** (`gitlens.diffDirectoryWithHead`) — Compare working tree with HEAD using a difftool.
 - **Open Directory Compare (difftool) with...** (`gitlens.diffDirectory`) — Compare with a selected reference.
 - **Open File** (`gitlens.openWorkingFile`) — Open the working version of the current file.
-- **Open Revision...** (`gitlens.openFileRevision`) — Open a selected file revision.
-- **Open Revision from...** (`gitlens.openFileRevisionFrom`) — Open a revision from a specific reference.
+- **Open File at Revision...** (`gitlens.openFileRevision`) — Open a selected file revision.
+- **Open File at Revision from...** (`gitlens.openFileRevisionFrom`) — Open a revision from a specific reference.
 - **Open Blame Prior to Change** (`gitlens.openBlamePriorToChange`) — Show blame for the prior revision of a line.
 - **Open Changed Files** (`gitlens.openChangedFiles`) — Open all changed files in the working tree.
 - **Close Unchanged Files** (`gitlens.closeUnchangedFiles`) — Close all files without changes.
-- **Enable Debug Logging** (`gitlens.enableDebugLogging`) — Enable debug logging in the GitLens output.
-- **Disable Debug Logging** (`gitlens.disableDebugLogging`) — Disable debug logging.
-- **Copy as Patch** (`gitlens.copyPatchToClipboard`) — Copy patch data from views, changes, or stashes.
-- **Apply Copied Patch** (`gitlens.applyPatchFromClipboard`) — Apply a patch from clipboard contents.
-- **Change Branch Merge Target** (`gitlens.changeBranchMergeTarget`) — A multi-step wizard to set or reset a branch's merge target. Pick a local branch, then select a remote branch as its merge target, or reset an existing target.
-- **Copy Changes to Worktree** (`gitlens.worktree.copyChanges`) — Copy working changes from one worktree to another.
-- **Unlock Worktree** (`gitlens.worktree.unlock`) — Unlock a locked worktree from the tree view context menu.
+- **Enable Debug (Trace) Logging** (`gitlens.enableDebugLogging`) — Enable debug logging in the GitLens output.
+- **Disable Debug (Trace) Logging** (`gitlens.disableDebugLogging`) — Disable debug logging.
+- **Copy Changes (Patch)** (`gitlens.copyPatchToClipboard`) — Copy patch data from views, changes, or stashes.
+- **Apply Copied Changes (Patch)** (`gitlens.applyPatchFromClipboard`) — Apply a patch from clipboard contents.
+- **Git Change Branch Merge Target...** (`gitlens.git.branch.setMergeTarget`) — Set or reset a branch's merge target in a few steps. Pick a local branch, then select a remote branch as its merge target, or reset an existing target.
+- **Copy Working Changes to Worktree...** (`gitlens.copyWorkingChangesToWorktree`) — Copy working changes from one worktree to another.
+- **Unlock Worktree** (`gitlens.views.unlockWorktree`) — Unlock a locked worktree from its context menu in the side bar views.
 
 
 ***
 
 ## Deep Links
 
-Deep Links are URLs that open specific GitLens resources, improving collaboration by sharing direct links to repositories, files, comparisons, and more. Resources that support Deep Linking include:
+Deep Links are URLs that open specific GitLens resources. Share them to point teammates directly to repositories, files, comparisons, and more. You can copy Deep Links to these resources:
 
 - **Search & Compare** — Link to comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view). Right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_.
 - **GitKraken Workspaces** — Link to a [GitKraken Workspace](/gitlens/side-bar/#workspaces-☁%ef%b8%8f). Right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_.
-- **Commit Graph** — Link to remote repositories, commits, branches, and tags in the [Commit Graph](gitlens/gitlens-features/#commit-graph-%60pro%60). Right-click the resource, hover over _Share_, and select _Copy Link to <resource>_.
+- **Commit Graph** — Link to remote repositories, commits, branches, and tags in the [Commit Graph](/gitlens/gitlens-features/#commit-graph). Right-click the resource, hover over _Share_, and select _Copy Link to <resource>_.
 - **Files or Lines** — Link to specific files or lines of code. Right-click highlighted lines or a file, hover over _Share_, and select _Copy vscode.dev Link_.
 - **Cloud Patches** — Link to a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). After generating a Cloud Patch, click _Copy Link_ from the success prompt.
 
 <figure>
-  <img src="/wp-content/uploads/gl-deep-link-example.gif" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-deep-link-example.gif" alt="Animation that starts in the Commit Graph in VS Code and shows a GitLens deep link being generated and used" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888;">Example of generating and using Deep Links</figcaption>
 </figure>
 
@@ -1633,13 +1665,13 @@ Deep Links are URLs that open specific GitLens resources, improving collaboratio
 
 ## Git Submodule Support
 
-GitLens provides basic support for Git submodules. Submodule repositories are automatically discovered and tracked when you open a project that contains them. In the sidebar views, submodule repositories are distinguished with dedicated icons and tooltips. Submodule changes are handled in diffs so you can see when a submodule reference has been updated.
+GitLens has basic support for Git submodules. When you open a project that contains submodules, GitLens finds and tracks their repositories. In the side bar views, submodule repositories have their own icons and tooltips. Diffs show when a submodule reference has been updated.
 
 ***
 
 ## Commit File Details in Large Histories
 
-In repositories where loading commit file details has been slow, the Commits view and other history views load a commit's or stash's file details only when they're shown. This makes large histories open faster, at the cost of one extra Git call each time you view a commit's files. GitLens applies this automatically only in repositories where it has recorded slow file-detail loading, and only while `gitlens.gitOptimizations.enabled` is on.
+In repositories where loading commit file details has been slow, the Commits view and other history views load a commit's or stash's file details only when they are shown. Large histories then open faster. GitLens does this automatically only in those repositories, and only while `gitlens.gitOptimizations.enabled` is on.
 
 To choose the behavior yourself, set `gitlens.advanced.commits.delayLoadingFileDetails`: `true` always delays loading file details, `false` never delays, and `null` (the default) lets GitLens decide per repository.
 
@@ -1647,7 +1679,7 @@ To choose the behavior yourself, set `gitlens.advanced.commits.delayLoadingFileD
 
 ## Display Language
 
-GitLens follows the VS Code display language. Experimental Spanish, Simplified Chinese, and Traditional Chinese translations are available, and any text that isn't translated yet appears in English. GitLens has no separate language setting.
+GitLens follows the VS Code display language. Experimental Spanish, Simplified Chinese, and Traditional Chinese translations are available, and any text that is not translated yet appears in English. GitLens has no separate language setting.
 
 To switch languages, install Microsoft's language pack for that language, run **Configure Display Language** from the Command Palette, choose the language, and restart VS Code. The `gitlens.defaultDateLocale` setting still controls only how dates are formatted.
 
@@ -1655,15 +1687,15 @@ To switch languages, install Microsoft's language pack for that language, run **
 
 ## Welcome View
 
-The **Welcome** sidebar view is the place to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content adapts based on your subscription level. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
+Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
 
-Open it from the GitLens sidebar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
+Open it from the GitLens side bar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
 
 ***
 
 ## AI Agent Integration `PRO`
 
-GitLens integrates with AI coding agents to monitor their activity and coordinate their work alongside your own development workflow.
+GitLens shows the activity of your AI coding agents beside your own work, so you can follow and manage what they do.
 
 ### Supported Agents
 
@@ -1685,7 +1717,7 @@ GitLens installs GitKraken Hooks for your AI agents so their activity is tracked
 - **Uninstall GitKraken Hooks for All AI Agents** (`gitlens.agents.uninstallHooks`) — Remove hooks for all agents
 - **Uninstall GitKraken Hooks for Agent** (`gitlens.agents.uninstallHooksForAgent`) — Remove hooks for a specific agent
 
-Codex doesn't run newly installed hooks until you trust them. After you install hooks for Codex, run `/hooks` in Codex to trust them, and trust them again whenever the hooks are reinstalled. GitLens shows this reminder in the install notification, with a **Start Codex Session** button, and in the Agents table of GitLens Settings.
+Codex does not run newly installed hooks until you trust them. After you install hooks for Codex, run `/hooks` in Codex to trust them, and trust them again whenever the hooks are reinstalled. GitLens shows this reminder in the install notification, with a **Start Codex Session** button, and in the Agents table of GitLens Settings.
 
 ### Agent Sessions
 
@@ -1703,16 +1735,16 @@ To pick up a past session where it left off, select **Resume in Terminal**, whic
 
 ### MCP Server Management
 
-GitLens manages the GitKraken MCP server installation on a per-agent basis. The **Connect Agents** flow walks you through installing the CLI, registering MCP for your current IDE, and connecting additional agents.
+GitLens installs the GitKraken MCP server separately for each agent. The **Connect AI Agents (Install MCP and Hooks)** command walks you through installing the CLI, registering MCP for your current IDE, and connecting additional agents.
 
-- **Connect Agents** (`gitlens.mcp.connectAgents`) — Interactive flow to install and configure MCP for your agents
-- **Install MCP for All Agents** (`gitlens.mcp.installForAllAgents`) — Install the GitKraken MCP server for all detected agents
-- **Install MCP for Agent** (`gitlens.mcp.installForAgent`) — Install for a specific agent
-- **Uninstall MCP for Agent** (`gitlens.mcp.uninstallForAgent`) — Remove MCP from a specific agent
+- **Connect AI Agents (Install MCP and Hooks)** (`gitlens.ai.connectAgents`) — Install and configure MCP for your agents, step by step
+- **Connect GitKraken MCP to All Detected Agents** (`gitlens.ai.mcp.installForAllAgents`) — Install the GitKraken MCP server for all detected agents
+- **Install GitKraken MCP for Agent** (`gitlens.ai.mcp.installForAgent`) — Install for a specific agent
+- **Uninstall GitKraken MCP for Agent** (`gitlens.ai.mcp.uninstallForAgent`) — Remove MCP from a specific agent
 
 In VS Code 1.101 and later, GitLens also installs and enables the GitKraken MCP server for VS Code automatically. To turn this off, disable the `gitlens.gitkraken.mcp.autoEnabled` setting. Turning it off, or turning off GitLens AI features (`gitlens.ai.enabled`), removes the GitKraken MCP server from VS Code's **Configure Tools** list right away, without reloading the window; turning it back on adds the server again.
 
-The agent settings panel provides a centralized view for managing agent configurations.
+To manage your agents' settings in one place, open the **Agents** category under **Integrations** in GitLens Settings.
 
 ***
 
@@ -1723,7 +1755,7 @@ The agent settings panel provides a centralized view for managing agent configur
   <figcaption style="text-align: center; color: #888;">GitLens menu and toolbar options</figcaption>
 </figure>
 
-GitLens provides [customizable](/gitlens/gitlens-settings/#menu-and-toolbar-settings) menu and toolbar contributions to let you control where GitLens commands appear. You can easily manage these settings via the [interactive settings editor](/gitlens/gitlens-settings/).
+You can [customize](/gitlens/gitlens-settings/#menu-and-toolbar-settings) where GitLens commands appear in VS Code menus and toolbars. Manage these settings in the [interactive settings editor](/gitlens/gitlens-settings/).
 
 For example, disabling **Add to the editor group toolbar** removes those items from the toolbar:
 
@@ -1732,20 +1764,20 @@ For example, disabling **Add to the editor group toolbar** removes those items f
   <figcaption style="text-align: center; color: #888;">Editor group toolbar items removed</figcaption>
 </figure>
 
-You can also expand each section to customize visibility and placement more granularly.
+Expand each section to choose individual menus and toolbars.
 
 ***
 
 ## Modes
 
-GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes for quickly toggling between sets of settings.
+GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes, so you can switch between sets of settings.
 
-- Shows the active mode in the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), enabled by default)
-  - **Toggle Review Mode** (`gitlens.toggleReviewMode`) — Quickly toggle Review mode.
-- **Switch Mode** (`gitlens.switchMode`) — Quickly switch between modes.
-- **Zen Mode** — Disables many visual elements for a focused experience.
+- Shows the active mode in the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
+- **Switch Mode** (`gitlens.switchMode`) — Switch between modes.
+- **Zen Mode** — Turns off many visual elements so you can focus on your code.
   - **Toggle Zen Mode** (`gitlens.toggleZenMode`) — Toggle Zen mode.
-- **Review Mode** — Enables visual elements for code review.
+- **Review Mode** — Turns on visual elements for code review.
+  - **Toggle Review Mode** (`gitlens.toggleReviewMode`) — Toggle Review mode.
 
 ### Experimental Multi-diff Editor
 
@@ -1755,5 +1787,5 @@ VS Code 1.86 or later is required for these capabilities.
 
 - **Open Folder Changes with Revision...** and **Open Folder Changes with Branch or Tag...** via Command Palette, Explorer, and Source Control views.
 - Inline **Open All Changes** in commits, stashes, and comparison views.
-- **Open All Changes** and **Open All Changes with Working Tree** — Use the new multi-diff editor.
-- **Open All Changes, Individually** and **Open All Changes with Working Tree, Individually** — Provide legacy behavior.
+- **Open All Changes** and **Open All Changes with Working Tree** — Open the changes in the multi-diff editor.
+- **Open All Changes, Individually** and **Open All Changes with Working Tree, Individually** — Open each file's changes in its own diff editor.

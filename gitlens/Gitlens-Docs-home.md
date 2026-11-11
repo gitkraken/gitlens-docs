@@ -4,15 +4,15 @@ title: GitLens Documentation
 description: What GitLens is, what it does, and where to go in the GitLens Help Center for the Commit Graph, coding agents, worktrees, AI review, Launchpad, blame, integrations, settings, and support.
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-11
 
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 GitLens is an [open-source](https://github.com/gitkraken/vscode-gitlens) Git extension for Visual Studio Code, built and maintained by GitKraken. It is the most installed Git extension for VS Code, and it also runs in VS Code-based IDEs such as Cursor, Windsurf, Trae, and Kiro.
 
-This page is the starting point for the GitLens Help Center. It explains what GitLens does and where to find the guide you need. It assumes you already use Git and Visual Studio Code or a VS Code-based IDE. It does not cover installation steps or individual settings, which the pages linked below describe in full.
+Start here to learn what GitLens does and to find the guide for your task. The guides assume you already use Git and Visual Studio Code or a VS Code-based IDE. For installation steps, see [Get Started with GitLens](/gitlens/gitlens-home/), and for individual settings, see the [GitLens Settings Overview](/gitlens/gitlens-settings/).
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens from the VS Code Marketplace</a>
 
@@ -29,7 +29,7 @@ GitLens Community is free and open source. GitLens Pro unlocks the Commit Graph,
 
 ## What GitLens does
 
-GitLens covers the full arc of a change, from understanding a line of code to landing a pull request. The sections below summarize each capability and link to the page that documents it.
+GitLens helps at every stage of a change, from understanding a line of code to merging a pull request.
 
 ### See everything in one place with the Commit Graph
 
@@ -55,14 +55,14 @@ Read [AI Agents in GitLens](/gitlens/gl-agents/) for agent sessions, Start Work 
 
 ### Review, compose, and compare before you merge
 
-From the Commit Graph, you can review a change as a whole with AI-powered Review, send findings back to your coding agent for another pass, sort a pile of working changes into separate commits with Commit Composer, and compare any two revisions. GitKraken AI also generates commit messages, stash messages, pull request descriptions, and changelogs, explains what a commit or branch did, and automates rebases and conflict resolution.
+From the Commit Graph, you can review a change file by file, add an AI review or hand the review to your coding agent, send findings back to your agent for another pass, sort a pile of working changes into separate commits with Commit Composer, and compare any two revisions. GitKraken AI also generates commit messages, stash messages, pull request descriptions, and changelogs, explains what a commit or branch did, and automates rebases and conflict resolution.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="The Reviewing Changes panel in the Commit Graph, listing unstaged changes and four changed files, with an instructions field and a Start Review button at the bottom." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Review your changes in the Commit Graph before you open a pull request.</figcaption>
 </figure>
 
-The [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) page covers every AI capability, and the [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) section of the features page explains how to compose commits.
+See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/) to work through a review. The [GitKraken AI Features in GitLens](/gitlens/gl-gk-ai/) page covers every AI capability, and the [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) section of the features page explains how to compose commits.
 
 ### Keep pull requests moving with Launchpad
 
