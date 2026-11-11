@@ -42,7 +42,7 @@ GitKraken AI writes a stash message that describes your stashed changes, so you 
 - When creating a stash: Select **Generate Stash Message** (sparkle button) in the stash message input
 - From the stash view: Generate descriptions for existing stashes
 
-<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" alt="Push Stash QuickPick with an AI-generated stash message filled into the message input by GitKraken AI." class="help-center-img img-bordered">
+<img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" alt="The Push Stash quick pick with the stash message &quot;Adds AI Messaging section to README&quot; in its input and the sparkle button at the end of the input ringed." class="help-center-img img-bordered">
 
 ### AI Commit Explain `Pro`
 **Available in:** Pro, Advanced, and Business plans

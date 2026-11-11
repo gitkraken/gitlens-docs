@@ -1356,7 +1356,7 @@ If the remote is added but the first fetch from it fails, a warning offers **Rem
 - **Show Repository Status** (`gitlens.showQuickRepoStatus`): See the current repository status in a quick pick menu.
 
 <figure>
-  <img src="/wp-content/uploads/menu-repo-status.png" alt="The Status quick pick for branch main, showing that main is ahead of origin/main by 2 commits with 1 unstaged file, and actions to open or close changed files" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/menu-repo-status.png" alt="The Status quick pick for branch main, showing that main is ahead of origin/main by 2 commits with 1 unstaged file, and actions to open all changed files, open unstaged files or close unchanged files" class="help-center-img img-bordered">
 </figure>
 
 ---

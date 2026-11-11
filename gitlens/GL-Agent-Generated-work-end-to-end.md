@@ -24,7 +24,7 @@ If the agent's session has already ended, it stays listed as a Past session, so 
 
 ## 2. Review the Work While It's Fresh
 <figure>
-  <img src="/wp-content/uploads/gl-review-findings-01-v2@2x.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-findings-01-v2@2x.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files, three with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   </figure>
 Use Review Changes in the Commit Graph to check the agent-generated changes before they become a pull request. Select **Review Changes…** on the agent's Working Changes row to get a checklist of the changed files.
 

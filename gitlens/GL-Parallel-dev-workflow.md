@@ -132,7 +132,7 @@ As parallel branches come back together, GitLens helps you handle the Git work r
 Use [Auto-Rebase](/gitlens/gl-gk-ai/#auto-rebase-pro) to rebase with GitKraken AI while you stay in control of the result. If overlapping work creates merge conflicts, use AI-assisted conflict resolution to understand and resolve the competing changes with the surrounding repository context in view.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Commit Graph's Resolving Conflicts panel during a paused rebase: 14 of 14 conflicts resolved by AI, each file with its resolution, confidence and View Changes, above the Apply 14 Resolutions button" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Commit Graph's Resolving Conflicts panel during a paused rebase: 14 of 14 conflicts resolved, each listed file with its resolution, confidence and View Changes, above the Apply 14 Resolutions button" class="help-center-img img-bordered">
 </figure>
 
 You finish the work in the same Commit Graph where you monitored and reviewed it, without leaving it to untangle the final steps by hand.

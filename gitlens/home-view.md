@@ -138,7 +138,7 @@ Compare branches, commits, revisions, and working changes to understand exactly 
 Use Auto-Rebase to automate tedious rebasing while you stay in control of how your commit history is prepared.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Resolving Conflicts panel for a rebase paused at 2/173, with 14 of 14 conflicts resolved by AI: each file is labeled Merged, Took Incoming or Kept Current, with a high confidence rating, an explanation and View Changes, above Refine Resolutions and Apply 14 Resolutions." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Resolving Conflicts panel for a rebase paused at 2/173, showing 14 of 14 conflicts resolved: each listed file is labeled Merged, Took Incoming or Kept Current, with a high confidence rating, an explanation and View Changes, above Refine Resolutions and Apply 14 Resolutions." class="help-center-img img-bordered">
 </figure>
 
 ### 6. Resolve

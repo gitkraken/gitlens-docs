@@ -115,7 +115,7 @@ The results open in the **Findings** pane under the checklist: an overview, then
 The model chip in the instructions box shows the model Review Diff and Orient use. Select it to choose a different model for reviews; the Commit Composer and other AI features keep their own model. To give every review the same instructions, set `gitlens.ai.reviewChanges.customInstructions`.
 
 <figure>
-  <img src="/wp-content/uploads/gl-review-findings-01-v2@2x.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-findings-01-v2@2x.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files, three with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Findings from Review Diff, grouped by focus area.</figcaption>
 </figure>
 

@@ -71,7 +71,7 @@ A cleaner commit structure shows reviewers what changed and why.
 When upstream work has moved ahead, use Auto-Rebase to bring your branch up to date and prepare its history for merge. Instead of stepping through a traditional interactive rebase by hand, you let GitLens automate the rebase with AI, and you stay in control of the result.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Resolving Conflicts panel for a rebase paused at 2/173, with 14 of 14 conflicts resolved by AI: each file is labeled Merged, Took Incoming or Kept Current, with a high confidence rating, an explanation and View Changes, above Refine Resolutions and Apply 14 Resolutions." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Resolving Conflicts panel for a rebase paused at 2/173, showing 14 of 14 conflicts resolved: each listed file is labeled Merged, Took Incoming or Kept Current, with a high confidence rating, an explanation and View Changes, above Refine Resolutions and Apply 14 Resolutions." class="help-center-img img-bordered">
 </figure>
 
 Auto-Rebase cuts down the repetitive work of updating and cleaning up your branch before it ships.
