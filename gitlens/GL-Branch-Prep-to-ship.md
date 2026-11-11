@@ -95,7 +95,7 @@ After you update your branch and resolve its conflicts, give the resulting chang
 Use [Review Changes](/gitlens/gl-review-changes/) to read each changed file and check it off as viewed. With GitKraken AI, select **Review Diff** to surface findings tagged by severity before you open or update your pull request.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
 </figure>
 
 If something needs another pass, address it yourself or send the findings back to your coding agent with **Address Findings with Agent** before the branch moves forward.

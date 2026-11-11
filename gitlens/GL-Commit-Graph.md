@@ -71,7 +71,7 @@ You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` set
 </figure>
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-notifications.png" class="help-center-img img-bordered" alt="The Commit Graph header's notifications bell with an unread badge of 4, its Notifications popover open below it: Mark All as Read at the top, four unread notifications tagged Help, Offer, Security and System, each with Mark as Read (two also with Claim Offer and View Status), and View All Notifications at the bottom." />
+  <img src="/wp-content/uploads/gl-graph-notifications-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph header's notifications bell with an unread badge of 4, its Notifications popover open below it: Mark All as Read at the top, four unread notifications tagged Help, Offer, Security and System, each with Mark as Read (two also with Claim Offer and View Status), and View All Notifications at the bottom." />
   <figcaption style="text-align: center; color: #888">GitKraken notifications in the Commit Graph header</figcaption>
 </figure>
 
@@ -253,7 +253,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 When the branch's work has landed in its merge target, cleaning it up becomes the next step. The list shows **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree). Because nothing is left to publish, push, or rebase, those steps no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-next-steps-merged.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on feature/settlement-export, whose Next steps list opens with the ringed &quot;Branch Merged into origin/main&quot; step and its Delete Branch button, followed only by Review Changes." />
+  <img src="/wp-content/uploads/gl-graph-next-steps-merged-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on feature/settlement-export, whose Next steps list opens with the ringed &quot;Branch Merged into origin/main&quot; step and its Delete Branch button, followed only by Review Changes." />
   <figcaption style="text-align: center; color: #888">Next steps for a branch whose work has landed</figcaption>
 </figure>
 
@@ -567,7 +567,7 @@ For github.com repositories whose base branch merges through a merge queue, the 
 While a pull request is queued, the Commit Graph stops suggesting changes to its branch (see [Next Steps](#next-steps)). Launchpad also tracks queued pull requests; see [Launchpad](/gitlens/gl-launchpad/#pull-requests-in-a-github-merge-queue).
 
 <figure>
-  <img src="/wp-content/uploads/gl-graph-pr-sheet-merge-queue.png" class="help-center-img img-bordered" alt="The Commit Graph pull request sheet for Add a release checklist #13, labeled In Merge Queue, with the In merge queue verdict reading &quot;#1 in the merge queue, checks running&quot; and the View Merge Queue and Remove from Merge Queue... buttons." />
+  <img src="/wp-content/uploads/gl-graph-pr-sheet-merge-queue-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph pull request sheet for Add a release checklist #13, labeled In Merge Queue, with the In merge queue verdict reading &quot;#1 in the merge queue, checks running&quot; and the View Merge Queue and Remove from Merge Queue... buttons." />
   <figcaption style="text-align: center; color: #888">A queued pull request in the PR sheet</figcaption>
 </figure>
 

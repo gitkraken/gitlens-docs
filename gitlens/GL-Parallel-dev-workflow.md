@@ -110,7 +110,7 @@ You do not have to wait until parallel work becomes a pull request to understand
 Select **Review Changes…** on a Working Changes row to review human or agent-generated work while it is still in progress. Read the changed files and mark each one viewed, add an AI review with **Review Diff**, or hand the review to your coding agent with **Review in Repo**. When another pass is needed, send the whole review, a focus area, or a single finding to your agent with the **Address … with Agent** actions. See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
 </figure>
 
 Reviewing work earlier helps keep changes understandable before multiple streams of development come back together.

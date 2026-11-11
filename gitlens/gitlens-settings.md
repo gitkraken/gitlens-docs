@@ -43,7 +43,7 @@ Use the **Account**, **Notifications**, and **Get Started** entries at the top o
 When a new security or system notice arrives, GitLens also shows it as a VS Code notification with **View**, which opens the inbox, and **Dismiss**. You can also open the inbox from the notifications button in the [Commit Graph](/gitlens/gl-commit-graph/) header.
 
 <figure>
-  <img src="/wp-content/uploads/gl-settings-notifications.png" alt="GitLens Settings open on Notifications, with 4 unread beside the entry in the navigation rail. The inbox shows the All / Unread (4) / Read filter, Mark All as Read and Delete All Read, four unread notifications tagged Help, Offer, Security and System (the first showing its Mark as Read and Delete buttons on hover, two with Claim Offer and View Status buttons), and the Receive marketing notifications preference below." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-settings-notifications-01-v2@2x.png" alt="GitLens Settings open on Notifications, with 4 unread beside the entry in the navigation rail. The inbox shows the All / Unread (4) / Read filter, Mark All as Read and Delete All Read, four unread notifications tagged Help, Offer, Security and System (the first showing its Mark as Read and Delete buttons on hover, two with Claim Offer and View Status buttons), and the Receive marketing notifications preference below." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Notifications category</figcaption>
 </figure>
 

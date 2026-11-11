@@ -15,7 +15,7 @@ last_updated: 2026-11
 Review Changes turns a set of changes into a checklist you work through in the Commit Graph. You pick what to review, read each file's diff, and mark it viewed. When you want a second reader, GitKraken AI can review the diff or plan a reading order, and your coding agent can review the changes in the repository.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">A review in progress: one file viewed, one excluded.</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ When you review a **Working Changes** row, the top of the panel shows the uncomm
 The selected preset is the current scope. GitLens hides a preset that would select the same changes as another one. For example, on a branch with no upstream, **Unpushed** would match **Branch**, so only **Branch** shows.
 
 <figure>
-  <img src="/wp-content/uploads/gl-review-scope-presets.png" alt="The Review scope presets Uncommitted, Unpushed and Branch above the scope picker, with Unpushed selected so the highlighted range covers the unstaged changes and the one unpushed commit, while the branch's pushed commits and its merge base sit below it." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-scope-presets-01-v2@2x.png" alt="The Review scope presets Uncommitted, Unpushed and Branch above the scope picker, with Unpushed selected so the highlighted range covers the unstaged changes and the one unpushed commit, while the branch's pushed commits and its merge base sit below it." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Unpushed selects the uncommitted changes and the unpushed commit.</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ When you open a file from the review, its diff editor shows three buttons first 
 While a review diff is open, the checklist header in the Commit Graph follows it. It reads **Reading 2 of 4** with the file's path, and offers the same three steps, with **Mark Viewed & Next** between the arrows.
 
 <figure>
-  <img src="/wp-content/uploads/gl-review-reading-controls.png" alt="The Commit Graph in Review mode beside the diff of reports.ts. The diff editor's title bar leads with the ringed Previous File in Review, Mark File as Viewed and Go to Next and Next File in Review buttons, and the review checklist header in the graph reads &quot;Reading 2 of 4&quot; with the file's path and Previous, Mark Viewed &amp; Next and Next buttons." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-reading-controls-01-v2@2x.png" alt="The Commit Graph in Review mode beside the diff of reports.ts. The diff editor's title bar leads with the ringed Previous File in Review, Mark File as Viewed and Go to Next and Next File in Review buttons, and the review checklist header in the graph reads &quot;Reading 2 of 4&quot; with the file's path and Previous, Mark Viewed & Next and Next buttons." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">The reading controls in the diff editor and the Commit Graph.</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ The results open in the **Findings** pane under the checklist: an overview, then
 The model chip in the instructions box shows the model Review Diff and Orient use. Select it to choose a different model for reviews; the Commit Composer and other AI features keep their own model. To give every review the same instructions, set `gitlens.ai.reviewChanges.customInstructions`.
 
 <figure>
-  <img src="/wp-content/uploads/GL-review-send-to-agent-1.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-findings-01-v2@2x.png" alt="Review panel after Review Diff: the Checklist pane lists four changed files with finding-count marks, and the Findings pane shows &quot;3 findings open&quot;, an overview, and the expanded focus area &quot;Admin report and account actions&quot; with a CRITICAL and a WARNING finding card, each with Copy Finding, Address with Agent, Leave a Comment, Dismiss Finding and Delete Finding icons. Below are Address Findings with Agent and the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Findings from Review Diff, grouped by focus area.</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ To act on everything at once, use the buttons above the instructions box or in t
 When you open the diff of a file with findings, each finding appears as a comment thread on the lines it is about. The thread is labeled with the finding's severity and signed **GitLens AI Review**, or **Agent** for findings from Review in Repo.
 
 <figure>
-  <img src="/wp-content/uploads/gl-review-diff-thread.png" alt="Inline diff of reports.ts opened from a review finding, with the finding shown as a comment thread under the changed query lines: labelled Critical, written by GitLens AI Review, with Dismiss Finding, Address Finding with Agent and Delete Thread in its title bar, and a reply box with Address with Agent, Ask Reviewer and Leave a Comment." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-diff-thread-01-v2@2x.png" alt="Inline diff of reports.ts opened from a review finding, with the finding shown as a comment thread under the changed query lines: labelled Critical, written by GitLens AI Review, with Dismiss Finding, Address Finding with Agent and Delete Thread in its title bar, and a reply box with Address with Agent, Ask Reviewer and Leave a Comment." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">A finding as a comment thread in the diff.</figcaption>
 </figure>
 
@@ -161,7 +161,7 @@ You can also comment on lines yourself. In the right side of a review file's dif
 The checklist becomes a **Reading plan**: an overview, then groups of files in the order to read them. Each group has a short summary and each file a one-line note. Files the plan did not place are listed under **Not in the plan**.
 
 <figure>
-  <img src="/wp-content/uploads/gl-review-orient-plan.png" alt="The review checklist after Orient: a Reading plan with its overview and a Dismiss Plan button, then three groups (Report Queries, Admin and Insights Updates, Documentation), each with a one-line summary and its files listed in reading order with a short note beside each file, above the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-review-orient-plan-01-v2@2x.png" alt="The review checklist after Orient: a Reading plan with its overview and a Dismiss Plan button, then three groups (Report Queries, Admin and Insights Updates, Documentation), each with a one-line summary and its files listed in reading order with a short note beside each file, above the instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">An Orient reading plan with three groups.</figcaption>
 </figure>
 

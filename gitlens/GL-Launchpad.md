@@ -78,7 +78,7 @@ If a repository on GitHub.com merges through a merge queue, Launchpad shows wher
 - To take a pull request out of the queue, select it and then select **Remove from Merge Queue...**. The pull request loses its place in the queue.
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-merge-queue.png" class="help-center-img img-bordered" alt="Launchpad open on a queued pull request, Add a release checklist #13, whose status reads &quot;#1 in the merge queue, checks running&quot;, with Remove from Merge Queue... (Will remove this pull request from the merge queue, losing its place) among its actions." />
+  <img src="/wp-content/uploads/gl-launchpad-merge-queue-01-v2@2x.png" class="help-center-img img-bordered" alt="Launchpad open on a queued pull request, Add a release checklist #13, whose status reads &quot;#1 in the merge queue, checks running&quot;, with Remove from Merge Queue... (Will remove this pull request from the merge queue, losing its place) among its actions." />
   <figcaption style="text-align: center; color: #888">Removing a queued pull request from the merge queue</figcaption>
 </figure>
 

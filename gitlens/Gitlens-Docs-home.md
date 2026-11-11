@@ -58,7 +58,7 @@ Read [AI Agents in GitLens](/gitlens/gl-agents/) for agent sessions, Start Work 
 From the Commit Graph, you can review a change file by file, add an AI review or hand the review to your coding agent, send findings back to your agent for another pass, sort a pile of working changes into separate commits with Commit Composer, and compare any two revisions. GitKraken AI also generates commit messages, stash messages, pull request descriptions, and changelogs, explains what a commit or branch did, and automates rebases and conflict resolution.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">Review your changes in the Commit Graph before you open a pull request.</figcaption>
 </figure>
 

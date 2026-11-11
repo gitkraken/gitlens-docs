@@ -1378,7 +1378,7 @@ Use the GitLens interactive rebase editor to set up an interactive rebase:
 When AI features are allowed, the editor footer shows a **Start Auto-Rebase** split button next to **Start Rebase**. Start Auto-Rebase runs the rebase with [Auto-Rebase](#auto-rebase-pro), which resolves the conflicts it is confident about and pauses at commits you marked `edit` or when its confidence is low. After a rebase has started, the footer shows **Continue with Auto-Rebase** beside **Continue** and **Skip**. The chevron menu of each split button holds **Recompose Commits...**, which aborts the rebase and opens the Commit Composer.
 
 <figure>
-  <img src="/wp-content/uploads/gl-rebase-auto-rebase-start-01-v2@2x.png" class="help-center-img img-bordered" alt="The Interactive Rebase Editor before a rebase starts, with the footer's Start Rebase button beside the ringed Start Auto-Rebase split button, whose chevron menu holds Recompose Commits, and Abort." />
+  <img src="/wp-content/uploads/gl-rebase-auto-rebase-start-01-v3@2x.png" class="help-center-img img-bordered" alt="The Interactive Rebase Editor before a rebase starts, with the footer's Start Rebase button beside the ringed Start Auto-Rebase split button, whose chevron menu holds Recompose Commits, and Abort." />
 </figure>
 
 ### Conflict Detection
