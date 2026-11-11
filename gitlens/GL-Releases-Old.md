@@ -23,6 +23,7 @@ custom_fields:
     nav_order: 30
     nav_parent: "gitlens-release-notes-current"
     page_type: "content"
+    layout: "release-notes"
 ---
 
 <kbd>Last updated: May 2026</kbd>
