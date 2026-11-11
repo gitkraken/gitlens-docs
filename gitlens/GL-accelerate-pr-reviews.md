@@ -26,6 +26,9 @@ custom_fields:
     card_icon: "git-pull-request"
     card_color: "green"
     card_description: "Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees"
+    entry_title: "Accelerate PR Reviews"
+    entry_desc: "Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees"
+    entry_order: 40
 ---
 
 <kbd>Last updated: September 2026</kbd>

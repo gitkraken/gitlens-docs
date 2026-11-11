@@ -26,6 +26,8 @@ custom_fields:
     card_icon: "plug-connected"
     card_color: "purple"
     card_description: "Explore GitLens integrations with remote providers"
+    home_group: "features"
+    home_order: 80
 ---
 
 <kbd>Last updated: September 2026</kbd>

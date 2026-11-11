@@ -27,6 +27,8 @@ custom_fields:
     card_icon: "folders"
     card_color: "amber"
     card_description: "Use GitLens Worktrees to develop and test multiple branches in VS Code without switching"
+    home_group: "features"
+    home_order: 30
 ---
 
 <kbd>Last updated: September 2026</kbd>

@@ -27,6 +27,8 @@ custom_fields:
     card_icon: "layout-dashboard"
     card_color: "amber"
     card_description: "Use GitLens Launchpad to organize and prioritize pull requests in VS Code"
+    home_group: "features"
+    home_order: 50
 ---
 
 <kbd>Last updated: September 2026</kbd>

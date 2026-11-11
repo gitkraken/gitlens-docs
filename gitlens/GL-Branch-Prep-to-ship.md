@@ -28,6 +28,9 @@ custom_fields:
     card_icon: "ship"
     card_color: "green"
     card_description: "Managing and Preparing branches to ship"
+    entry_title: "Prepare Your Branch to Ship"
+    entry_desc: "Managing and Preparing branches to ship"
+    entry_order: 30
 ---
 <kbd>Last updated: September 2026</kbd>
 

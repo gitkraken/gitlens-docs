@@ -24,6 +24,11 @@ custom_fields:
     nav_order: 10
     nav_parent: "gl-gk-ai"
     page_type: "content"
+    card_icon: "robot"
+    card_color: "purple"
+    card_description: "Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode"
+    home_group: "features"
+    home_order: 20
 
 ---
 

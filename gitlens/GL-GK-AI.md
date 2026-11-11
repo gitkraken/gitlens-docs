@@ -25,6 +25,11 @@ custom_fields:
     nav_order: 60
     nav_parent: ""
     page_type: "content"
+    card_icon: "sparkles"
+    card_color: "purple"
+    card_description: "Learn more about the use of Gitkraken AI in Gitlens"
+    home_group: "features"
+    home_order: 40
 ---
 
 <kbd>Last updated: November 2026</kbd>

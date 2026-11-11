@@ -27,6 +27,8 @@ custom_fields:
     card_icon: "chart-bubble"
     card_color: "amber"
     card_description: "Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code"
+    home_group: "features"
+    home_order: 70
 ---
 
 <kbd>Last updated: September 2026</kbd>
