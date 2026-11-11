@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 60
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "link"
+    card_color: "red"
+    card_description: "Remote provider, GitHub Enterprise Server, GitLab Self-Managed, and Jira integrations, plus autolinks, terminal links, and deep links"
 ---
 <kbd>Last updated: November 2026</kbd>
 

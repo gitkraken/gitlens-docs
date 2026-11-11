@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 10
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "red"
+    card_description: "The Commit Graph, its layout, search and filters, Visual History, and large-history performance"
 ---
 <kbd>Last updated: November 2026</kbd>
 
