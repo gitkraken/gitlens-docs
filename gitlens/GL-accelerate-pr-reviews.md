@@ -18,11 +18,14 @@ taxonomy:
   category: gitlens
 last_updated: 2026-09
 custom_fields:
-    nav_category: "workflows"
+    nav_category: "gl-workflows"
     nav_label: "Accelerate PR Reviews"
     nav_order: 50
-    nav_parent: "workflows"
+    nav_parent: "gl-workflows"
     page_type: "content"
+    card_icon: "git-pull-request"
+    card_color: "green"
+    card_description: "Explore how GitLens helps streamline pull request reviews using Launchpad and Worktrees"
 ---
 
 <kbd>Last updated: September 2026</kbd>

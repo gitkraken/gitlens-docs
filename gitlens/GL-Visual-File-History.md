@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "Visual History"
     nav_order: 40
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "chart-bubble"
+    card_color: "amber"
+    card_description: "Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code"
 ---
 
 <kbd>Last updated: September 2026</kbd>

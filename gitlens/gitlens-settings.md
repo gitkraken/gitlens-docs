@@ -18,11 +18,14 @@ taxonomy:
     category: gitlens
 last_updated: 2026-11
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "GitLens Settings Overview"
     nav_order: 60
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "settings"
+    card_color: "purple"
+    card_description: "Learn how to access and customize GitLens settings in Visual Studio Code"
 ---
 <kbd>Last updated: November 2026</kbd>
 

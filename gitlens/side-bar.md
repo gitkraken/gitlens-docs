@@ -18,11 +18,14 @@ taxonomy:
   category: gitlens
 last_updated: 2026-11
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "GitLens Views"
     nav_order: 40
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "layout-sidebar"
+    card_color: "purple"
+    card_description: "Explore GitLens sidebar views for working with repositories, authors, commits, and branches"
 ---
 
 <kbd>Last updated: November 2026</kbd>

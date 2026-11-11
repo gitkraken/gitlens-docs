@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2025-08
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "GitLens Code Suggest"
     nav_order: 60
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "message-code"
+    card_color: "amber"
+    card_description: "Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories"
 ---
 
 <kbd>Last updated: August 2025</kbd>

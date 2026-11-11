@@ -20,11 +20,14 @@ taxonomy:
 last_updated: 2026-11
     
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "Getting Started"
     nav_order: 10
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "rocket"
+    card_color: "purple"
+    card_description: "Install GitLens in VS Code or a VS Code-based IDE and try the Commit Graph, inline blame, Launchpad, worktrees, AI Review, Commit Composer, and collaboration features for the first time"
 ---
 <kbd>Last updated: November 2026</kbd>
 

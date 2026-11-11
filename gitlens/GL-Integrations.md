@@ -18,11 +18,14 @@ taxonomy:
     category: gitlens
 last_updated: 2026-09
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "Integrations"
     nav_order: 20
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "plug-connected"
+    card_color: "purple"
+    card_description: "Explore GitLens integrations with remote providers"
 ---
 
 <kbd>Last updated: September 2026</kbd>

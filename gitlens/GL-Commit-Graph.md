@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-11
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "Commit Graph"
     nav_order: 10
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "git-commit"
+    card_color: "amber"
+    card_description: "Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code"
 ---
 
 <kbd>Last updated: November 2026</kbd>

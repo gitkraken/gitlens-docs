@@ -20,11 +20,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "workflows"
+    nav_category: "gl-workflows"
     nav_label: "Take Agent-Generated Work from Change to Merge"
     nav_order: 20
-    nav_parent: "workflows"
+    nav_parent: "gl-workflows"
     page_type: "content"
+    card_icon: "robot"
+    card_color: "green"
+    card_description: "Code Change to Merged branches all through GitLens"
 ---
 <kbd>Last updated: September 2026</kbd>
 

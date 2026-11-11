@@ -20,11 +20,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "workflows"
+    nav_category: "gl-workflows"
     nav_label: "Manage Parallel Development from the Commit Graph"
     nav_order: 10
-    nav_parent: "workflows"
+    nav_parent: "gl-workflows"
     page_type: "content"
+    card_icon: "git-branch"
+    card_color: "green"
+    card_description: "Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees"
 ---
 <kbd>Last updated: September 2026</kbd>
 

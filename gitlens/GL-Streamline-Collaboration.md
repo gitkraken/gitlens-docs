@@ -18,11 +18,14 @@ taxonomy:
   category: gitlens
 last_updated: 2025-07
 custom_fields:
-    nav_category: "workflows"
+    nav_category: "gl-workflows"
     nav_label: "Streamline Collaboration"
     nav_order: 60
-    nav_parent: "workflows"
+    nav_parent: "gl-workflows"
     page_type: "content"
+    card_icon: "users"
+    card_color: "green"
+    card_description: "How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest"
 ---
 <kbd>Last updated: July 2025</kbd>
 

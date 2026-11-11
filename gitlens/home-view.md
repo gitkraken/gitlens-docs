@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-11
     
 custom_fields:
-    nav_category: "start-here"
+    nav_category: "gl-start-here"
     nav_label: "Commit Graph is Home"
     nav_order: 30
-    nav_parent: "start-here"
+    nav_parent: "gl-start-here"
     page_type: "content"
+    card_icon: "home"
+    card_color: "purple"
+    card_description: "GitLens Commit Graph: Your Development Workbench"
 ---
 
 <kbd>Last updated: November 2026</kbd>

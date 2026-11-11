@@ -19,11 +19,14 @@ taxonomy:
 last_updated: 2026-09
 
 custom_fields:
-    nav_category: "popular-features"
+    nav_category: "gl-popular-features"
     nav_label: "Launchpad"
     nav_order: 20
-    nav_parent: "popular-features"
+    nav_parent: "gl-popular-features"
     page_type: "content"
+    card_icon: "layout-dashboard"
+    card_color: "amber"
+    card_description: "Use GitLens Launchpad to organize and prioritize pull requests in VS Code"
 ---
 
 <kbd>Last updated: September 2026</kbd>
