@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 30
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "git-pull-request"
+    card_color: "red"
+    card_description: "Launchpad, Start Review and Start Work, Code Suggest, and Cloud Patches"
 ---
 <kbd>Last updated: November 2026</kbd>
 

@@ -23,6 +23,9 @@ custom_fields:
     nav_order: 70
     nav_parent: "gitlens-features"
     page_type: "content"
+    card_icon: "adjustments-horizontal"
+    card_color: "red"
+    card_description: "Menus and toolbars, modes, the Welcome view, and display language"
 ---
 <kbd>Last updated: November 2026</kbd>
 
