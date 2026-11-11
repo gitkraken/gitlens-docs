@@ -56,9 +56,7 @@ GitKraken AI will analyze the diff of staged changes to generate a message. You 
 
 You can customize behavior using [`gitlens.ai` settings](/gitlens/gitlens-settings/#misc-settings) for provider, model, and prompt preferences.
 
-<div class='callout callout--warning'>
-  <p>Pro users and above can optionally use a custom API key to connect to a different AI provider.</p>
-</div>
+> **Warning:** Pro users and above can optionally use a custom API key to connect to a different AI provider.
 
 ---
 
@@ -125,9 +123,7 @@ Automatically generate detailed and structured changelogs from a set of selected
 - **Commit Graph**: Select multiple commits, right-click, then choose **Generate Changelog**
 - **Command Palette**: `GitLens: Generate Changelog from Commits`
 
-<div class='callout callout--basic'>
-  <p>More questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for additional details.</p>
-</div>
+> **Note:** More questions about GitKraken AI? See the [GitKraken AI FAQ](https://help.gitkraken.com/general/gitkraken-ai-faq/) for additional details.
 
 ### Auto-Rebase `PRO`
 

@@ -223,6 +223,4 @@ Control which files are included in AI context to protect sensitive data:
 - **Credit allocation management**: Distribute credits across teams and projects
 
 ---
-<div class='callout callout--basic'>
-    <p>More questions about Gitkraken AI? Please see our <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ page</a> for more details. For additional questions or support regarding GitKraken AI features, please contact our support team or visit the <a href="https://forum.gitkraken.com/">GitKraken Community forum</a>.</p>
-</div>
+> **Note:** More questions about Gitkraken AI? Please see our [GitKraken AI FAQ page](https://help.gitkraken.com/general/gitkraken-ai-faq/) for more details. For additional questions or support regarding GitKraken AI features, please contact our support team or visit the [GitKraken Community forum](https://forum.gitkraken.com/).

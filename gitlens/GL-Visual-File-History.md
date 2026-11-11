@@ -84,6 +84,4 @@ Hover over any commit bubble or bar to see details about:
 
 ### Availability
 
-<div class='callout callout--warning'>
-  <p>The Community plan supports <strong>Public</strong> and <strong>Local</strong> repositories only. A paid GitLens subscription is required for private repositories.</p>
-</div>
+> **Warning:** The Community plan supports **Public** and **Local** repositories only. A paid GitLens subscription is required for private repositories.

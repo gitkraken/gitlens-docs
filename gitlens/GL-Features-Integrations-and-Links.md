@@ -88,9 +88,7 @@ Finish the process by selecting **Complete Setup** to return to VS Code and begi
   <figcaption style="text-align: center; color: #888;">Manage your connected integrations</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>Community users are limited to basic functionality only.</p>
-</div>
+> **Warning:** Community users are limited to basic functionality only.
 
 ***
 
@@ -151,9 +149,7 @@ The Jira Integration, connected through your GitKraken Account, enables Jira [Au
   <figcaption style="text-align: center; color: #888;">Jira autolinks in commit messages</figcaption>
 </figure>
 
-<div class='callout callout--warning'>
-  <p>This feature is only available for Pro subscription tiers or higher.</p>
-</div>
+> **Warning:** This feature is only available for Pro subscription tiers or higher.
 
 To connect the integration:
 

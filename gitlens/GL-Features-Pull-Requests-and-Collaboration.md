@@ -43,9 +43,7 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
   <figcaption style="text-align: center; color: #888">View and act on PRs based on current status</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-  <p>Launchpad supports GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center repositories. To use it, connect your Git provider, for example with the <a href="https://help.gitkraken.com/gitlens/gl-features-integrations-and-links/#connecting-the-github-and-gitlab-integration">GitHub or GitLab Integration</a>.</p>
-</div>
+> **Note:** Launchpad supports GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center repositories. To use it, connect your Git provider, for example with the [GitHub or GitLab Integration](https://help.gitkraken.com/gitlens/gl-features-integrations-and-links/#connecting-the-github-and-gitlab-integration).
 
 ---
 
@@ -130,13 +128,9 @@ Click the icon again to unpin or unsnooze as needed.
   <figcaption style="text-align: center; color: #888">Pin or snooze PRs to manage your workflow</figcaption>
 </figure>
 
-<div class='callout callout--basic'>
-  <p>Note: Launchpad prioritizes items requiring action by elevating them to the top of the list. This behavior may change in future updates.</p>
-</div>
+> **Note:** Launchpad prioritizes items requiring action by elevating them to the top of the list. This behavior may change in future updates.
 
-<div class='callout callout--warning'>
-  <p>This feature is only available on GitLens Pro subscription tiers or higher.</p>
-</div>
+> **Warning:** This feature is only available on GitLens Pro subscription tiers or higher.
 
 ***
 
@@ -148,9 +142,7 @@ GitKraken Code Suggest simplifies code review by enabling you to propose edits a
 
 When a pull request is open, you can make suggestions that collaborators can review and apply directly to the PR.
 
-<figure class='callout callout--basic'>
-  <p><strong>Note:</strong> Code Suggest is currently supported only for repositories hosted on <strong>github.com</strong>.</p>
-</figure>
+> **Note:** Code Suggest is currently supported only for repositories hosted on **github.com**.
 
 <figure>
   <img src="/wp-content/uploads/gl-code-suggest.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
@@ -264,9 +256,7 @@ Choose how your patch can be accessed:
 
 Cloud Patches shared with you appear under the **Shared with Me** section.
 
-<figure class='callout callout--basic'>
-  <p><strong>Note:</strong> If you're a member of multiple organizations, you can switch organizations from the GitKraken Account view.</p>
-</figure>
+> **Note:** If you're a member of multiple organizations, you can switch organizations from the GitKraken Account view.
 
 <figure>
   <img src="/wp-content/uploads/gl-cloud-patch-sharing-options-2.png" alt="Cloud patch share dialog with access levels" class="help-center-img img-bordered">

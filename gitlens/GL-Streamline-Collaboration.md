@@ -54,9 +54,7 @@ Recipients will see the patch in the **Cloud Patch** sidebar and can apply it di
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
-<figure class='callout callout--warning'>
-  <p>This feature is available with a GitLens Pro subscription or higher.</p>
-</figure>
+> **Warning:** This feature is available with a GitLens Pro subscription or higher.
 
 
 ## Code Suggest <span style="color: #888;">`PRO`</span>
@@ -76,7 +74,5 @@ The PR creator can:
 - Apply them to their working directory
 - Commit and push the changes to the open pull request
 
-<figure class='callout callout--warning'>
-  <p>This feature is available with a GitLens Pro subscription or higher.</p>
-</figure>
+> **Warning:** This feature is available with a GitLens Pro subscription or higher.
 
