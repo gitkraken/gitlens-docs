@@ -1674,6 +1674,14 @@ Another custom example:<br>
 <td>Specifies custom instructions to give the AI provider when generating a pull request title and description.</td>
 </tr>
 <tr>
+<td><code>gitlens.ai.resolveConflicts.customInstructions</code></td>
+<td>Specifies custom instructions to give the AI provider when resolving merge or rebase conflicts. Applies to every conflict AI resolves, in the Commit Graph's resolve panel and during Auto-Rebase. Guidance you give for a single run in the resolve panel takes priority over these instructions.</td>
+</tr>
+<tr>
+<td><code>gitlens.ai.autoRebase.confidenceThreshold</code></td>
+<td>Specifies the minimum AI confidence, from <code>0</code> to <code>1</code>, required to apply a conflict resolution automatically during Auto-Rebase. Below this value, the rebase pauses and hands off to the Commit Graph's resolve panel for your review. Default: <code>0.8</code>.</td>
+</tr>
+<tr>
 <td><code>gitlens.ai.openInAgent</code></td>
 <td>Specifies the default route for Start Work and Start PR Review when opening in an agent is offered:<br><br>
 <code>ask</code>: asks each time (default)<br>
@@ -1810,6 +1818,10 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.advanced.quickPick.closeOnFocusOut</code></td>
 <td>Dismisses quick pick menus when focus is lost. If disabled, press <kbd>ESC</kbd> to dismiss manually.</td>
+</tr>
+<tr>
+<td><code>gitlens.advanced.repositorySearch.enabled</code></td>
+<td>Specifies whether GitLens automatically scans workspace folders to discover Git repositories. When disabled, GitLens uses only the repositories that VS Code's built-in source control reports. Enabled by default.</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.repositorySearchDepth</code></td>
@@ -1978,12 +1990,96 @@ GitLens defines themable colors. VS Code themes can set them, and you can custom
 <td>Shows associated pull requests on remote branches in the Commit Graph. Requires a connection to a supported remote service, such as GitHub.</td>
 </tr>
 <tr>
+<td><code>gitlens.graph.issues.enabled</code></td>
+<td>Shows associated issues on branches in the Commit Graph. Requires a connection to a supported issue service, such as GitHub. Enabled by default.</td>
+</tr>
+<tr>
 <td><code>gitlens.graph.dimMergeCommits</code></td>
 <td>Dims (deemphasizes) merge commit rows in the graph.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.scrollRowPadding</code></td>
 <td>Number of rows from the edge at which the graph scrolls when changing the selected row via keyboard or search.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.branchesVisibility</code></td>
+<td>Specifies which branches the Commit Graph shows.<br><br>
+<code>all</code> (default): shows all branches<br>
+<code>smart</code>: shows only relevant branches<br>
+<code>current</code>: shows only the current branch<br>
+<code>favorited</code>: shows only favorited branches<br>
+<code>agents</code>: shows only branches associated with active agents (running, or idle for less than 24 hours)</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.initialRowSelection</code></td>
+<td>Specifies which row the Commit Graph selects by default.<br><br>
+<code>wip</code> (default): selects the working changes (<em>WIP</em>) row<br>
+<code>head</code>: selects the HEAD row</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.multiselect</code></td>
+<td>Specifies whether you can select multiple commits in the Commit Graph, and whether the selection follows the graph's topology.<br><br>
+<code>topological</code> (default): allows selecting multiple commits topologically<br>
+<code>true</code>: allows selecting multiple commits without restriction<br>
+<code>false</code>: allows selecting only one commit</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.commitOrdering</code></td>
+<td>Specifies the order in which the Commit Graph shows commits.<br><br>
+<code>date</code> (default): reverse chronological order of the commit timestamp<br>
+<code>author-date</code>: reverse chronological order of the author timestamp<br>
+<code>topo</code>: reverse chronological order of the commit timestamp, without intermixing multiple lines of history</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.onlyFollowFirstParent</code></td>
+<td>Specifies whether the Commit Graph follows only the first parent when showing commits. Disabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.dateStyle</code></td>
+<td>Specifies how the Commit Graph shows dates.<br><br>
+<code>null</code> (default): uses <code>gitlens.defaultDateStyle</code><br>
+<code>relative</code>: for example, <em>1 day ago</em><br>
+<code>absolute</code>: for example, <em>July 25th, 2018 7:18pm</em></td>
+</tr>
+<tr>
+<td><code>gitlens.graph.dateFormat</code></td>
+<td>Specifies how the Commit Graph formats absolute dates. Use <code>full</code>, <code>long</code>, <code>medium</code>, <code>short</code>, or a custom format, such as <code>MMMM Do, YYYY h:mma</code>. See the <a href="https://momentjs.com/docs/#/displaying/format/" rel="nofollow">Moment.js documentation</a> for valid format strings. When not set (the default), <code>gitlens.defaultDateFormat</code> is used. Applies only when <code>gitlens.graph.dateStyle</code> is <code>absolute</code>.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.defaultItemLimit</code></td>
+<td>Specifies the number of items the Commit Graph shows by default. Use 0 for no limit. Default: <code>500</code>.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.pageItemLimit</code></td>
+<td>Specifies the number of additional items the Commit Graph loads each time it loads more. Use 0 for no limit. Default: <code>200</code>.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.searchItemLimit</code></td>
+<td>Specifies the number of results to gather when you search in the Commit Graph. Use 0 for no limit. Default: <code>0</code>.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.searchAutocompleteOnFocus</code></td>
+<td>Shows search autocomplete suggestions as soon as the Commit Graph search box is focused. When disabled, suggestions appear only once you start typing. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.avatars</code></td>
+<td>Shows avatar images instead of author initials and remote icons in the Commit Graph. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.showRemoteNames</code></td>
+<td>Shows remote names on remote branches in the Commit Graph. Disabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.showGhostRefsOnRowHover</code></td>
+<td>When you hover over or select a commit row that has no branch or tag of its own, shows a faded pill with a dashed outline that names the branch or tag at the tip of that row's lane. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.showWorkingTreeBadge</code></td>
+<td>Shows a badge with the number of working tree changes on the Commit Graph view. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.statusBar.enabled</code></td>
+<td>Shows a Commit Graph icon in the status bar. Select it to open the Commit Graph. Enabled by default.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.layout</code></td>
@@ -2004,6 +2100,10 @@ Honored when opening the Commit Graph from the command palette.
 <tr>
 <td><code>gitlens.graph.stickyTimeline</code></td>
 <td>Shows a sticky timeline header that stays visible at the top while you scroll the Commit Graph.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.timelineSeparators</code></td>
+<td>Shows separator lines between date groups in the Commit Graph. Enabled by default.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.autoFetch.enabled</code></td>
@@ -2041,6 +2141,10 @@ Honored when opening the Commit Graph from the command palette.
 <td>Shows working tree change statistics on WIP rows.</td>
 </tr>
 <tr>
+<td><code>gitlens.graph.minimap.enabled</code></td>
+<td>Specifies whether the minimap of commit activity is available in the Commit Graph. When disabled, the minimap is never shown and its toggle is removed from the header. Use <code>gitlens.graph.minimap.defaultVisibility</code> to control when an available minimap is shown. Enabled by default.</td>
+</tr>
+<tr>
 <td><code>gitlens.graph.minimap.reversed</code></td>
 <td>Reverses the minimap direction.</td>
 </tr>
@@ -2050,6 +2154,36 @@ Honored when opening the Commit Graph from the command palette.
 <code>hidden</code>: minimap is hidden<br>
 <code>onSearch</code>: minimap appears during search<br>
 <code>always</code>: minimap is always visible</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.minimap.dataType</code></td>
+<td>Specifies the data the minimap shows.<br><br>
+<code>commits</code> (default): the number of commits per day<br>
+<code>lines</code>: the number of lines changed per day</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.minimap.additionalTypes</code></td>
+<td>Specifies additional markers to show on the minimap. Default: <code>localBranches</code>, <code>stashes</code>, and <code>worktree</code>.<br><br>
+<code>localBranches</code>: marks the location of local branches<br>
+<code>remoteBranches</code>: marks the location of remote branches<br>
+<code>pullRequests</code>: marks the location of pull requests<br>
+<code>stashes</code>: marks the location of stashes<br>
+<code>tags</code>: marks the location of tags<br>
+<code>worktree</code>: marks where other worktrees are checked out</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.scrollMarkers.enabled</code></td>
+<td>Shows markers on the Commit Graph scrollbar. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.scrollMarkers.additionalTypes</code></td>
+<td>Specifies additional markers to show on the Commit Graph scrollbar. By default, none are added.<br><br>
+<code>localBranches</code>: marks the location of local branches<br>
+<code>remoteBranches</code>: marks the location of remote branches<br>
+<code>pullRequests</code>: marks the location of pull requests<br>
+<code>stashes</code>: marks the location of stashes<br>
+<code>tags</code>: marks the location of tags<br>
+<code>wip</code>: marks the location of working changes (<em>WIP</em>) rows</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.overviewBar.visibility</code></td>
@@ -2107,6 +2241,31 @@ Honored when opening the Commit Graph from the command palette.
 <tr>
 <td><code>gitlens.graph.refs.maxStacked</code></td>
 <td>Specifies the maximum number of branch and tag pills to show on the stacked pill line when <code>gitlens.graph.refs.layout</code> is <code>stacked</code>: <code>1</code> to <code>10</code>, or <code>auto</code> (default) to fit as many pills as the line allows. Additional refs are collapsed behind a <em>+N</em> counter on the last pill.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.lanes.density</code></td>
+<td>Specifies the horizontal spacing of lanes in the graph column of the Commit Graph.<br><br>
+<code>compact</code> (default): packs lanes tightly to fit more branches in a narrower graph column<br>
+<code>expanded</code>: spaces lanes out for easier tracing of branch lines</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.lanes.folding.enabled</code></td>
+<td>Specifies whether you can fold lanes in the Commit Graph. When enabled, lane segments that can be collapsed show expand and collapse chevrons in a fold strip beside the graph. Enabled by default.</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.lanes.folding.default</code></td>
+<td>Specifies which lanes the Commit Graph folds when it loads. Lanes you fold or expand yourself keep that state until the Commit Graph is reloaded. Requires <code>gitlens.graph.lanes.folding.enabled</code>.<br><br>
+<code>none</code> (default): keeps every lane expanded<br>
+<code>all</code>: folds every foldable lane segment into a chip<br>
+<code>auto</code>: folds lane segments whose tip is reachable from HEAD by first parent (merged and done); the segment that contains HEAD is never folded automatically</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.lanes.grouped.min</code></td>
+<td>Specifies the minimum number of lanes the Commit Graph shows inline when the Graph column is grouped with another column (right-click a column header and select <strong>Group Graph Column</strong>), if the graph has that many lanes. On a row with more lanes than fit, the extra lanes collapse to the edge of the column. Default: <code>10</code> (minimum <code>1</code>).</td>
+</tr>
+<tr>
+<td><code>gitlens.graph.lanes.grouped.max</code></td>
+<td>Specifies the maximum share of the row's width, as a percentage, that inline lanes can take in the Commit Graph when the Graph column is grouped with another column (<strong>Group Graph Column</strong>). Wider views show more lanes automatically. When <code>gitlens.graph.lanes.grouped.min</code> needs more room than this allows, it takes priority. Default: <code>40</code> (from <code>5</code> to <code>100</code>).</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.shortcuts.enabled</code></td>
