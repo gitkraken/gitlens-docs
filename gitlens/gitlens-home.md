@@ -9,7 +9,7 @@ last_updated: 2026-11
 ---
 <kbd>Last updated: November 2026</kbd>
 
-This guide takes you from installing GitLens to using its core features on your own repository. Each step shows where to find a feature and what to try first, then links to the page that covers it in full.
+Install GitLens, then try its core features on your own repository: the Commit Graph, code history in the editor, pull request reviews, AI review and commits, sharing with your team, and links to your issues. Each step shows where to find a feature and what to try first.
 
 For an overview of what GitLens is and what each feature does, see the [GitLens Documentation](/gitlens/gitlens-docs-home/).
 
@@ -118,7 +118,7 @@ Inline blame, hovers, and Git CodeLens are on by default and free for all reposi
 
 [Open the Inspect View in GitLens](vscode://eamodio.gitlens/link/command/inspect)
 
-To turn these annotations off, run **GitLens: Toggle Line Blame Annotations** or **GitLens: Toggle Git CodeLens** (`Shift+Alt+B`).
+To turn these annotations off, run **GitLens: Toggle Line Blame Annotations** or **GitLens: Toggle Git CodeLens** (`Ctrl+Shift+G` `Shift+B`, or `Cmd+Alt+G` `Shift+B` on macOS).
 
 See [Current Line Blame](/gitlens/gitlens-features/#current-line-blame), [Hovers](/gitlens/gitlens-features/#hovers), and [GitLens Inspect](/gitlens/side-bar/#gitlens-inspect) for customization options, and [GitLens Visual File History](/gitlens/gl-visual-file-history/) for a timeline of how a file changed.
 
@@ -173,14 +173,14 @@ Once you have working changes, you can review them and turn them into clean comm
 ### Run an AI Review `PRO`
 
 1. Open the Commit Graph.
-2. Select the **Working Changes** row or a commit.
-3. Open the details panel, then switch to **Review** mode.
+2. On the **Working Changes** row, select **Review Changes…**. The details panel lists the changed files as a checklist.
+3. Select **Review Diff** in the instructions box.
 
-GitLens returns a review summary, suggested focus areas, and findings tagged by severity, so you can fix issues before you commit or open a pull request.
+GitLens returns an overview and findings tagged by severity, grouped into focus areas, so you can fix issues before you commit or open a pull request. You can also read the files yourself and mark each one viewed, without AI.
 
 [Open the Commit Graph in Review mode](vscode://eamodio.gitlens/link/command/graph?mode=review)
 
-See [Run AI Code Review in the Commit Graph](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph) for details, and [AI Review](/gitlens/gl-gk-ai/#ai-review-pro) for custom review instructions and plan requirements.
+See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/) for the full review workflow, and [AI Review](/gitlens/gl-gk-ai/#ai-review-pro) for plan requirements.
 
 ### Compose Commits `PRO`
 
@@ -269,4 +269,4 @@ See [Autolinks](/gitlens/gitlens-features/#autolinks) for all options.
 
 You have now used the main parts of GitLens. To put them together into complete tasks, follow one of the end-to-end workflow guides listed on the [GitLens Documentation](/gitlens/gitlens-docs-home/#follow-a-complete-workflow), such as [Manage Parallel Development from the Commit Graph](/gitlens/gl-parallel-dev-workflow/).
 
-If something doesn't work as expected, see [GitLens Troubleshooting](/gitlens/gitlens-troubleshooting/) or the other help resources on the [GitLens Documentation](/gitlens/gitlens-docs-home/#get-help).
+If something does not work as expected, see [GitLens Troubleshooting](/gitlens/gitlens-troubleshooting/) or the other help resources on the [GitLens Documentation](/gitlens/gitlens-docs-home/#get-help).

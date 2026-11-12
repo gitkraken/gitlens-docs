@@ -4,11 +4,11 @@ title: Start Here
 description: How to start working with GitLens
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-11
     
 ---
 
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 ---
 
@@ -18,11 +18,11 @@ GitLens is the #1 most downloaded [Visual Studio Code](https://marketplace.visua
 
 <a class="button button--basic" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">Install GitLens</a> 
 
-GitLens is known for its blame, hover, and annotations, but there’s much more to the extension. Users are leveraging its rich features to increase their developer productivity, which you can learn more about in the popular workflows below. 
+GitLens is known for its blame, hover, and annotations, but there’s much more to the extension. The popular workflows below show how developers use its features to work faster. 
 
-* [Interactive Code History](/gitlens/gitlens-home/#interactive-code-history)
-* [Accelerate PR Reviews](/gitlens/gitlens-home/#accelerate-pr-reviews)
-* [Streamline Collaboration](/gitlens/gitlens-home/#streamline-collaboration)
+* [Interactive Code History](#interactive-code-history)
+* [Accelerate PR Reviews](#accelerate-pr-reviews)
+* [Streamline Collaboration](#streamline-collaboration)
 
 ***
 
@@ -34,7 +34,7 @@ GitLens is known for its blame, hover, and annotations, but there’s much more 
 
 <p> &nbsp; </p>
 
-Understanding code history can be difficult when looking at complex repositories with multiple branches and contributors. Developers can struggle to easily see who made changes, why, and when. With the use of The Commit Graph, GitLens Inspect, and Inline Blame and Hovers, GitLens offers the ability to easily navigate through your repository to provide insights about the history and interact with it to better manage your code. 
+Understanding code history can be difficult when looking at complex repositories with multiple branches and contributors. Developers can struggle to easily see who made changes, why, and when. With the use of the Commit Graph, GitLens Inspect, and Inline Blame and Hovers, GitLens offers the ability to easily navigate through your repository to provide insights about the history and interact with it to better manage your code. 
 
 #### Commit Graph
 
@@ -62,15 +62,15 @@ From inside a file, Inline Blame and Hovers provide the answers to who exactly c
 
 <p> &nbsp; </p>
 
-Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and utilize worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
+Reviewing pull requests can be cumbersome due to needing to context switch to a browser to search through pull requests that are irrelevant to you. Email notification updates can interrupt your workflows when checking out branches if you have work in progress. With the use of Launchpad and Worktrees, GitLens offers the ability to see all pull requests that are organized in groups of actions that you need to take and use worktrees to simultaneously have separate working directories, all without leaving Visual Studio Code. 
 
 #### Launchpad `PRO`
 
-To begin working with the Launchpad, connect the [GitHub Integration](gitkraken.dev/settings/integrations?source=help_center&product=gitlens). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
+To begin working with the Launchpad, connect the [GitHub Integration](https://gitkraken.dev/settings/integrations?source=help_center&product=gitlens). Once connected, you can access the Launchpad from the command palette (command/ctrl + shift + P) > _GitLens: Open Launchpad_.
 
 Here, you can see pull requests that are open on your current branch, blocked, need your review, require follow-up, waiting for a review, and in draft.
 
-To begin reviewing a pull request, simply select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
+To begin reviewing a pull request, select a pull request and then Open in Worktree or Switch to Branch or Worktree. 
 
 <a href="vscode://eamodio.gitlens/link/command/launchpad">Open the Launchpad in GitLens</a>.
 <div class='callout callout--warning'>
@@ -78,7 +78,7 @@ To begin reviewing a pull request, simply select a pull request and then Open in
 </div>
 #### Worktrees
 
-Worktrees allow you to have separate working directories, meaning you can check out and work in multiple branches at once. This allows you to not need to commit or stash changes you are currently working on in order to review a pull request.
+Worktrees allow you to have separate working directories, meaning you can check out and work in multiple branches at once. This allows you to not need to commit or stash changes you are currently working on to review a pull request.
 
 Once you have opened a worktree, you can easily begin reviewing all changes made in the Pull Request sidebar. You can see what commits have been made, what files have been changed, open the file diffs, and more. 
 
@@ -117,7 +117,7 @@ When you select members to share it with, they will see this in the Cloud Patch 
 
 Code Suggest allows you to make edits across the entire repository that can be submitted to anyone's open pull request. 
 
-To create a Code Suggestion, have a branch checked out with an open pull request, make changes to any files and save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Show inspect view_ > Suggest Changes for PR. 
+To create a Code Suggestion, have a branch checked out with an open pull request, make changes to any files and save those changes. Then, use the command palette (command/ctrl + shift + P) > _GitLens: Show Inspect View_ > Suggest Changes for PR. 
 
 The pull request creator can then review these changes, apply them to their working directory to continue updating them, and accept the changes to commit/push them to the pull request.
 
@@ -135,7 +135,7 @@ The pull request creator can then review these changes, apply them to their work
 
 <p> &nbsp; </p>
 
-Enhance your productivity in GitLens by reducing context switching and automating your workflow with Integrations and Autolinks. By connecting to platforms like GitHub, GitLab, Azure DevOps, and Bitbucket, you can seamlessly sync repositories and track issues within Launchpad—your PR hub. Additionally, Autolinks enables automatic linking to external services, making it easy to reference issues from platforms like Jira and Trello directly in your workflow. 
+Enhance your productivity in GitLens by reducing context switching and automating your workflow with Integrations and Autolinks. By connecting to platforms like GitHub, GitLab, Azure DevOps, and Bitbucket, you can sync repositories and track issues within Launchpad—your PR hub. Additionally, Autolinks enables automatic linking to external services, making it easy to reference issues from platforms like Jira and Trello directly in your workflow. 
 
 #### Integrations
 
@@ -157,5 +157,5 @@ Looking to submit a feature request or bug report? Check out the GitHub.com publ
 Join our public slack community and interact with other GitKraken GitLens users from around the world 🌐.
 [GitKraken Slack](https://slack.gitkraken.com/)
 
-Didn't find what you're looking for in all of our documentation and help articles? Paid users can reach out to our support team.
+Did not find what you're looking for in all of our documentation and help articles? Paid users can reach out to our support team.
 [Contact Support](https://help.gitkraken.com/gitlens/gl-contact-support)

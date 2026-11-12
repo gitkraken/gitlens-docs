@@ -1,7 +1,7 @@
 ---
 
 title: AI Agents in GitLens
-description: Using AI Agents in GitLens — integrated agent workflows, status pills, the Agent Sessions panel, and GitKraken Hooks for Claude Code, Codex, GitHub Copilot CLI, and OpenCode
+description: Monitor, resume, review and compose the work of Claude Code, Codex, GitHub Copilot CLI and OpenCode sessions in GitLens, with GitKraken Hooks, status pills and the Agent Sessions panel.
 taxonomy:
     category: gitlens
 last_updated: 2026-11
@@ -12,7 +12,7 @@ last_updated: 2026-11
 
 ## Using AI Agents in GitLens
 
-GitLens 18 introduces integrated AI agent workflows directly inside your IDE. Instead of managing coding agents through scattered terminal tabs, external apps, or separate extensions, GitLens surfaces agent status, worktree context, and actionable Git workflows directly within the Commit Graph.
+Follow and act on your AI coding agents from the Commit Graph, inside your IDE. GitLens shows each agent's status, its worktree, and the Git actions you can take on its work, so you do not have to manage agents through separate terminal tabs, apps, or extensions.
 
 With GitLens, you can:
 
@@ -20,7 +20,7 @@ With GitLens, you can:
 - Track agent sessions tied to branches and worktrees
 - Review AI-generated changes inside the Commit Graph
 - Compose commits directly from agent-produced work
-- Quickly identify sessions waiting for input
+- Identify sessions waiting for input
 - Manage parallel worktrees and Working Changes visually
 
 GitLens tracks sessions from Claude Code, Codex, GitHub Copilot CLI, and OpenCode through GitKraken Hooks.
@@ -29,9 +29,7 @@ GitLens tracks sessions from Claude Code, Codex, GitHub Copilot CLI, and OpenCod
 
 ## Understand Agent Sessions
 
-An agent session represents an active AI coding workflow associated with a repository, branch, or worktree.
-
-GitLens tracks these sessions and surfaces their status throughout the interface so you can monitor progress and act on changes without switching between terminals, chat panels, or external applications.
+An agent session is a run of an AI coding agent in a repository, branch, or worktree. GitLens shows each session's status in several places, so you can monitor progress and act on changes without switching between terminals, chat panels, or external applications.
 
 Agent sessions appear in:
 
@@ -39,7 +37,7 @@ Agent sessions appear in:
 - The Commit Graph details panel
 - The Agent Sessions sidebar panel
 
-Each session displays contextual Git information including:
+Each session shows its Git context, including:
 
 - Associated branch
 - Worktree
@@ -56,9 +54,9 @@ GitLens tracks agent sessions using GitKraken Hooks, which give GitLens real-tim
 
 You can install hooks from several locations in GitLens:
 
-- Commit Graph header
-- Agent Sessions sidebar banner
-- Integrations menu
+- The Commit Graph header
+- The Agent Sessions sidebar banner
+- The Integrations menu
 - The Command Palette
 - The **Agents** section of the GitLens settings, which lists each detected agent with its hooks status
 
@@ -66,13 +64,13 @@ You can install hooks from several locations in GitLens:
 
 1. Open the Command Palette.
 2. Run `GitLens: Install GitKraken Hooks for All AI Agents`.
-3. Reload VS Code or your IDE if prompted.
+3. If prompted, reload VS Code or your IDE.
 
 GitLens installs hooks for every supported agent it detects on your machine. To install hooks for a single agent, select **Manage Agents** in the Agent Sessions panel toolbar, then use the install button in that agent's **Hooks** column.
 
-Once installed, GitLens automatically detects sessions from those agents and surfaces their state throughout the UI.
+After you install the hooks, GitLens detects sessions from those agents and shows their state.
 
-Codex doesn't run the installed hooks until you trust them. Run `/hooks` in Codex to trust the hooks, and trust them again after you reinstall them. GitLens shows this reminder when the install finishes, with a **Start Codex Session** button.
+Codex does not run the installed hooks until you trust them. Run `/hooks` in Codex to trust the hooks, and trust them again after you reinstall them. GitLens shows this reminder when the install finishes, with a **Start Codex Session** button.
 
 GitLens can answer permission requests directly only for Claude Code sessions. For other agents, GitLens shows the pending request, and you answer it in the agent's session.
 
@@ -87,19 +85,19 @@ To uninstall hooks for a single agent, use the uninstall button in that agent's 
 
 ## Understand Agent Status Pills
 
-GitLens surfaces agent activity through status pills shown throughout the interface. Status pills are color-coded and animated to help you quickly identify what requires attention.
+Status pills show each agent's activity wherever its session appears. Status pills use color and animation to show which sessions need your attention.
 
 ### Running
 
-The agent is actively processing changes or generating code. Running sessions display subtle pulse animations.
+The agent is processing changes or generating code. Running sessions show a pulse animation.
 
 ### Waiting for Input
 
-The agent requires your input before continuing. Waiting sessions display attention-grabbing animations and appear prominently in overview cards.
+The agent needs your input before it continues. Waiting sessions show an animation that draws attention and appear prominently in overview cards.
 
 ### Idle
 
-The session is connected but not currently performing actions.
+The session is connected but is not performing actions.
 
 ### Past
 
@@ -138,7 +136,7 @@ A past session's sheet in the Commit Graph details panel shows a **Resume** butt
 
 ## Use the Agent Sessions Panel
 
-GitLens 18 adds a dedicated Agent Sessions panel available from the Commit Graph sidebar, where it appears as **Agents**. The panel provides a centralized place to monitor all active sessions.
+Monitor all your active sessions in one place from the Agent Sessions panel. The panel opens from the Commit Graph sidebar, where it appears as **Agents**.
 
 ### Panel Features
 
@@ -153,7 +151,7 @@ The panel includes:
 
 ### Switch Between List and Tree Layouts
 
-Use the layout toggle in the Agent Sessions panel toolbar to switch between list and tree layouts. Tree layout is especially useful when working across multiple repositories or worktrees.
+Use the layout toggle in the Agent Sessions panel toolbar to switch between list and tree layouts. Use the tree layout when you work across multiple repositories or worktrees.
 
 ### Act on a Session from Its Context Menu
 
@@ -162,6 +160,7 @@ Right-click a session in the Agent Sessions panel or in the Commit Graph details
 - **Allow**, **Always Allow**, and **Deny** answer a pending permission request.
 - **Approve Plan**, **Reject Plan**, and **View Plan** handle a plan the agent proposed.
 - **Open Session** opens a live session. For a past session, **Resume in Terminal** or **Resume in Claude Code Extension** resumes it.
+- **Open Session in Kepler** opens the session in [Kepler](#start-tasks-and-reviews-in-kepler). It appears when Kepler is installed, for Claude Code, Codex, GitHub Copilot CLI, and OpenCode sessions.
 - **Open in Integrated Terminal**, **Open Worktree**, and **Open Worktree in New Window** open the session's worktree.
 - **Copy Last Prompt** and **Copy Session ID** copy session details to the clipboard.
 - **Archive Session** removes a past session from the list.
@@ -175,7 +174,7 @@ Right-click a session in the Agent Sessions panel or in the Commit Graph details
 Select a session card in the Agents section of the Commit Graph details panel to open that session's sheet in the details panel. The sheet gathers what you need to follow or pick up a session:
 
 - The session's status, agent, and the worktree and branch it runs in
-- Actions for the session's current state, such as **Open Session**, **Allow** and **Deny** for a pending request, or **Resume** and **Archive** for a past session
+- Actions for the session's current state, such as **Open Session**, **Allow** and **Deny** for a pending request, or **Resume** and **Archive** for a past session. When Kepler is installed, the Kepler button (**Open Session in Kepler**) opens the session in Kepler.
 - What the agent is doing now, and **File Activity** listing the files it read and edited
 - The **Last prompt** and **First prompt**
 - **Also worked in**, which lists other worktrees the session visited
@@ -190,9 +189,7 @@ Use the previous and next arrows in the sheet to move between agent sessions.
 
 ## Review Agent-Generated Code
 
-GitLens 18 turns the Commit Graph into a full review surface for AI-assisted workflows.
-
-From the Commit Graph details panel you can:
+Review the work of your agents in the Commit Graph. From the Commit Graph details panel, you can:
 
 - Inspect working changes
 - Compare revisions
@@ -205,9 +202,9 @@ From the Commit Graph details panel you can:
 
 1. Open the Commit Graph.
 2. Select a commit, branch, or Working Changes row.
-3. Toggle the details panel if it is hidden.
+3. If the details panel is hidden, toggle it.
 
-The panel can be docked on the right side or at the bottom of the Commit Graph. Hold `Alt` while toggling the panel to switch docking locations.
+You can dock the details panel in 2 places: the right side or the bottom of the Commit Graph. To switch between them, hold `Alt` while you toggle the panel.
 
 ### Jump from a Terminal to Its Worktree
 
@@ -217,37 +214,23 @@ When an agent runs in a terminal or a Claude Code conversation tab, you can go s
 - **Focus in Commit Graph** also focuses the Commit Graph on the worktree's branch.
 - **Open in New Window** opens the worktree folder in a new window.
 
-GitLens resolves the worktree from the agent session running in the terminal, or otherwise from the terminal's current folder. For a Claude Code tab, GitLens matches the tab to its agent session.
+GitLens uses the worktree of the agent session running in the terminal. If no agent session runs there, GitLens uses the terminal's current folder. For a Claude Code tab, GitLens uses the worktree of the tab's agent session.
 
 ---
 
 ## Run AI Code Review in the Commit Graph
 
-GitLens 18 adds AI-powered review workflows directly inside the Commit Graph.
+Review an agent's changes in the Commit Graph before you commit them or open a pull request. Select a Working Changes row, a commit, or a range of commits, and select **Review** in the details panel. Open each file to read its diff, mark it as viewed with its checkbox, or use **Exclude from Review** to set it aside. The checklist shows how many files you have viewed until the review is complete.
 
-### Start an AI Code Review
+With GitKraken AI, select **Review Diff** to get findings grouped into focus areas and tagged by severity. Dismiss the findings you disagree with, comment on the ones you want to discuss, and send work back to your coding agent with **Address Findings with Agent**, **Address Focus Area with Agent**, or **Address with Agent** on a single finding. **Delete Findings** clears the AI findings, with any replies you left on them, and keeps your viewed files and your own comments.
 
-1. Open the Commit Graph.
-2. Select a Working Changes row or commit.
-3. Open the details panel.
-4. Switch to Review mode.
-
-GitLens generates:
-
-- Review summaries
-- Suggested focus areas
-- Severity indicators
-- File-level context
-
-This helps you validate AI-generated changes before committing or opening a pull request.
-
-> AI Code Review requires GitLens Pro.
+Reading and checking off files works without AI. **Review Diff** uses GitKraken AI and requires GitLens Pro. For the full workflow, see [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
 
 ---
 
 ## Compose Commits from Agent Changes
 
-Commit Composer is integrated directly into the Commit Graph details panel. You can generate structured commits from working changes without leaving the Commit Graph.
+Use Commit Composer in the Commit Graph details panel to turn working changes into structured commits without leaving the Commit Graph.
 
 ### Compose a Commit
 
@@ -256,7 +239,7 @@ Commit Composer is integrated directly into the Commit Graph details panel. You 
 3. Open the details panel.
 4. Switch to Compose mode.
 5. Review proposed commit groupings.
-6. Edit the generated commit message if needed.
+6. If needed, edit the generated commit message.
 7. Commit the changes.
 
 Compose mode supports:
@@ -270,9 +253,7 @@ Compose mode supports:
 
 ## Manage Multi-Worktree Workflows
 
-GitLens 18 introduces multi-worktree Working Changes rows in the Commit Graph. Instead of showing changes only for the active worktree, the Commit Graph displays a Working Changes row for every connected worktree.
-
-This makes it easier to:
+The Commit Graph shows a Working Changes row for every connected worktree, not only for the active one. Use these rows to:
 
 - Monitor parallel agent workflows
 - Compare work across tasks
@@ -312,7 +293,7 @@ The Commit Graph minimap includes scroll markers that highlight Working Changes 
 
 ## Use Focus Branch Mode
 
-Focus Branch mode reduces Commit Graph noise when working on a specific branch or task. When enabled, the Commit Graph focuses on the branch you select.
+Use Focus Branch mode to show less of the Commit Graph while you work on a specific branch or task. When Focus Branch mode is on, the Commit Graph focuses on the branch you select.
 
 ### Enable Focus Branch Mode
 
@@ -322,7 +303,7 @@ Focus Branch mode reduces Commit Graph noise when working on a specific branch o
 
 You can also right-click a branch and select **Focus on Branch**.
 
-While focused:
+While a branch is focused:
 
 - The Commit Graph follows the branch's first-parent history
 - The minimap zooms to the relevant commit range
@@ -335,16 +316,12 @@ Focusing a branch is separate from scoping the Commit Graph to a worktree with *
 
 ## Pin a Branch in the Commit Graph
 
-GitLens 18 allows you to pin an important branch to the leftmost column of the Commit Graph. This keeps long-lived reference branches like `main` or `develop` visible while you navigate complex histories.
+Pin an important branch to the leftmost column of the Commit Graph. Pinning keeps a long-lived reference branch, such as `main` or `develop`, visible while you move through a complex history.
 
 ### Pin a Branch
 
 1. Right-click a branch row.
-2. Select:
-
-```text
-Pin Branch
-```
+2. Select **Pin Branch**.
 
 Pinned branches remain visible across Commit Graph sessions.
 
@@ -352,27 +329,28 @@ Pinned branches remain visible across Commit Graph sessions.
 
 ## Resolve Conflicts in the Commit Graph
 
-Conflict resolution workflows extend directly into the Commit Graph. You can resolve merge conflicts from Commit Graph Working Changes rows or the Interactive Rebase editor. Conflict states appear inline inside the details panel.
+Resolve merge conflicts from a Working Changes row in the Commit Graph or from the Interactive Rebase editor. Conflict states appear in the details panel.
 
 ---
 
 ## Open the Commit Graph in a New Window
 
-GitLens 18 adds support for opening the Commit Graph in a detached window. This is especially useful for multi-monitor setups, large repositories, persistent review workflows, and parallel agent workflows.
+Open the Commit Graph in a separate window, for example to:
+
+- Use it on a second monitor
+- Work in a large repository
+- Keep a review open
+- Follow parallel agent work
 
 ### Open in a New Window
 
-From the Commit Graph menu, select:
-
-```text
-Open in New Window
-```
+From the Commit Graph menu, select **Open in New Window**.
 
 ---
 
 ## Start Tasks and Reviews in Kepler
 
-Kepler is GitKraken's agentic development environment, a desktop app that runs AI agents across a task, from an issue or pull request to a merged change. If you use Kepler, GitLens can hand an issue, a pull request, or a repository to Kepler's task composer, so you set up and run the work there instead of in VS Code. Kepler creates its own worktree for the task, so GitLens doesn't create a branch or worktree.
+Kepler is GitKraken's agentic development environment, a desktop app that runs AI agents across a task, from an issue or pull request to a merged change. If you use Kepler, GitLens can hand an issue, a pull request, or a repository to Kepler's **New task** composer, so you set up and run the work there instead of in VS Code. Kepler creates its own worktree for the task, so GitLens does not create a branch or worktree.
 
 You can start a Kepler task from these places:
 
@@ -385,16 +363,33 @@ You can start a Kepler task from these places:
   <figcaption style="text-align: center; color: #888">Starting a Kepler task from a repository</figcaption>
 </figure>
 
-GitLens offers Kepler only for providers that Kepler supports: GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, and Bitbucket for pull requests, and the same providers except Bitbucket, plus Jira, Linear, and Trello, for issues. Kepler options don't appear in VS Code for the Web. If Kepler isn't installed, GitLens shows a message with a **Get Kepler** button. When GitLens detects Kepler on your computer, the Kepler step in the Welcome view counts as complete.
+GitLens offers Kepler only for providers that Kepler supports:
+
+- **Pull requests**: GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, and Bitbucket
+- **Issues**: GitHub, GitHub Enterprise, GitLab, GitLab Self-Managed, Azure DevOps, Jira, Linear, and Trello
+
+Kepler options are not available in VS Code for the Web.
+
+If you choose a Kepler option before Kepler is installed, GitLens asks how to continue:
+
+- **Install Kepler** downloads and installs Kepler, shows the version and download size, and then carries on with your task. In a remote window, it opens the Kepler download page in your browser instead.
+- **Learn More** opens the Kepler page in your browser.
+- For a pull request review, **Start PR Review with Agent** and **Start PR Review** continue without Kepler.
+
+You can also install Kepler at any time by running **GitLens: Install Kepler** from the Command Palette. When the install finishes, select **Open Kepler** in the notification to open it.
+
+When Kepler is installed, you can open an agent session in Kepler too: select **Open Session in Kepler** in the session's [context menu](#act-on-a-session-from-its-context-menu), or the Kepler button on its session card or [session sheet](#open-a-session-sheet).
+
+When GitLens detects Kepler on your computer, the Kepler step in the Welcome view counts as complete.
 
 ---
 
 ## Related Features
 
-GitLens agent workflows work especially well alongside:
+These features work with GitLens agent workflows:
 
 - [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro)
-- [AI Code Review](/gitlens/gl-agents/#run-ai-code-review-in-the-commit-graph)
+- [Review Changes](/gitlens/gl-review-changes/)
 - [Worktrees](/gitlens/gl-worktrees/)
 - [Launchpad](/gitlens/gl-launchpad/)
 - [Interactive Rebase](/gitlens/gitlens-features/#interactive-rebase-editor)
