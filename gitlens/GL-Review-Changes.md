@@ -129,7 +129,7 @@ Each finding card has these actions:
 
 A finding tagged **changed since review** points at a file that changed after the review ran, so it may no longer apply.
 
-To act on everything at once, use the buttons above the instructions box or in the **Findings** header: **Address Findings with Agent**, **Copy Review Findings**, and **Delete Findings**. Each focus area has **Copy Focus Area Findings** and **Address Focus Area with Agent**. **Delete Findings** removes the AI and agent findings only. Your viewed marks, excluded files, and comments stay.
+To act on everything at once, use the buttons above the instructions box or in the **Findings** header: **Address Findings with Agent**, **Copy Review Findings**, and **Delete Findings**. Each focus area has **Copy Focus Area Findings** and **Address Focus Area with Agent**. **Delete Findings** removes the AI and agent findings, along with any replies you left on them. Your viewed marks, excluded files, and your own comments stay.
 
 ***
 
@@ -150,7 +150,7 @@ From the thread you can:
 
 The panel and the threads stay in step: dismiss a finding in one and it is dismissed in the other.
 
-You can also comment on lines yourself. In the right side of a review file's diff, select the **+** in the gutter next to a line. Your comments and your replies collect under **Your comments** at the top of the **Findings** pane. They stay after **Delete Findings** and a new review, and go with the findings when you copy them or send them to your agent.
+You can also comment on lines yourself. In the right side of a review file's diff, select the **+** in the gutter next to a line. Your comments and your replies collect under **Your comments** at the top of the **Findings** pane, and go with the findings when you copy them or send them to your agent. Your own comments stay after **Delete Findings** and a new review. A reply belongs to the finding it answers, so **Delete Findings** removes your replies on AI and agent findings along with those findings.
 
 ***
 

@@ -36,8 +36,9 @@ When you have no uncommitted changes, the Working Changes details panel shows a 
 - **Pull** or **Force Push**, when the branch has diverged from its upstream
 - **Create PR** when a published branch has no open pull request, or **View** when it has one. If you added commits after the branch's pull request merged, the step reads **Create a Pull Request for N New Commits**
 - **Rebase** or **Merge**, when the branch is in sync with its upstream but behind its merge target or likely to conflict with it. Checking for likely conflicts requires a GitLens Pro trial or paid plan; the ahead and behind counts are available to everyone
-- **Delete Branch** or **Delete Worktree**, when the branch's work has landed in its merge target, directly or through a merged pull request. The step reads **Branch Merged into** the merge target, and only **Review** can appear beside it
-- **Review** and **Recompose**, to review the branch's changes or recompose its commits. **Recompose** is not offered once the branch has landed
+- **Delete Branch** or **Delete Worktree**, when the branch's work has landed in its merge target. The step reads **Branch Merged into** the merge target, directly or through a merged pull request. It reads **Branch Likely Merged into** the merge target when the target has the same changes as different commits, for example after a squash merge. GitLens does not mark a likely-merged branch safe to delete, so check its changes first
+- **Push** for your local copy of the merge target, when the branch's work has landed only there. The step reads **Branch Merged Locally into** the merge target, and **Delete Branch** or **Delete Worktree** is the alternate action
+- **Review** and **Recompose**, to review the branch's changes or recompose its commits. **Recompose** is not offered once the branch has landed, and only **Review** appears beside a landed branch's step
 
 A diverged branch shows a step that reads **Diverged from** its remote, followed by how many commits the branch is behind and ahead. **Pull** is the main action for this step. If you want to replace the remote branch with your local commits instead, for example after a rebase, select **Force Push**, the secondary action on the same split button.
 

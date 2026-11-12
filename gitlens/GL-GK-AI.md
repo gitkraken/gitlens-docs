@@ -40,7 +40,6 @@ GitKraken AI writes a stash message that describes your stashed changes, so you 
 
 **How to access:**
 - When creating a stash: Select **Generate Stash Message** (sparkle button) in the stash message input
-- From the stash view: Generate descriptions for existing stashes
 
 <img src="/wp-content/uploads/gl-ai-stash-01-v2@2x.png" alt="The Push Stash quick pick with the stash message &quot;Adds AI Messaging section to README&quot; in its input and the sparkle button at the end of the input ringed." class="help-center-img img-bordered">
 
@@ -72,7 +71,7 @@ The ✨Explain options are in these places:
 - In editor blame hovers via the ✨Explain button
 
 ### AI Changelog Creation `Pro`
-**Available in:** Advanced and Business plans only
+**Available in:** Pro, Advanced, and Business plans
 
 GitKraken AI writes a changelog from the commits you select, for example for release notes.
 
@@ -83,8 +82,8 @@ GitKraken AI writes a changelog from the commits you select, for example for rel
 
 <img src="/wp-content/uploads/GL-ai-generate-changelog.png" alt="A comparison in the GitLens Search &amp; Compare view with the Generate Changelog button on the Ahead commits line, and the generated changelog open in an editor." class="help-center-img img-bordered">
 
-### AI Open Pull Request `Advanced`
-**Available in:** Advanced and Business plans only
+### AI Open Pull Request `Pro`
+**Available in:** Pro, Advanced, and Business plans
 
 GitKraken AI writes the title and description of a pull request from your branch's changes.
 

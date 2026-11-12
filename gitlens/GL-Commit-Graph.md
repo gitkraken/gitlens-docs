@@ -134,7 +134,10 @@ Select **Show Past Sessions** in the **Agents** panel to include sessions that h
 
 Clicking a branch, pull request, comparison, or agent session opens a slide-out detail sheet:
 
-- **Branch sheet**: Shows branch details, tracking status, and recent commits. When the branch's work has landed in its merge target, the merge target card shows **Merged** and **Safe to delete**, with **Delete Branch** (or **Delete Worktree**) as its action.
+- **Branch sheet**: Shows branch details, tracking status, and recent commits. When the branch's work has landed in its merge target, the merge target card shows how sure GitLens is and offers **Delete Branch** (or **Delete Worktree**):
+  - **Merged** and **Safe to delete**: the branch's commits are in the target, or its pull request merged.
+  - **Likely Merged** and **Squashed or rebased**: the target has the same changes as different commits.
+  - **Merged Locally** and **Not yet pushed to the remote**: the work is only in your local copy of the target. The card also offers **Push** for that local branch, for example **Push main**.
 - **Pull request sheet**: Displays PR description, reviewers, status checks, and stacked PR information when applicable. For a pull request in a GitHub merge queue, it shows the pull request's place in the queue (see [Pull Request Information](#pull-request-information)).
 - **Compare sheet**: Shows file-level comparison between branches or commits, with a pinned mode to keep the comparison visible while navigating.
 - **Rebase summary sheet**: Appears after a rebase operation, summarizing what changed.
@@ -250,7 +253,13 @@ When you select a Working Changes row that has no uncommitted changes, the detai
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
-When the branch's work has landed in its merge target, cleaning it up becomes the next step. The list shows **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree). Because nothing is left to publish, push, or rebase, those steps no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
+When the branch's work has landed in its merge target, cleaning it up becomes the next step. The step says how the work landed:
+
+- **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree).
+- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first.
+- **Branch Merged Locally into &lt;target&gt;** (or **Branch Likely Merged Locally into &lt;target&gt;**) when the work is only in your local copy of the target, which has not been pushed. The step offers **Push** for your local target branch first, for example **Push main**, with **Delete Branch** (or **Delete Worktree**) as the alternate action.
+
+The publish, push, rebase, and recompose steps for the branch no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-next-steps-merged-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on feature/settlement-export, whose Next steps list opens with the ringed &quot;Branch Merged into origin/main&quot; step and its Delete Branch button, followed only by Review Changes." />

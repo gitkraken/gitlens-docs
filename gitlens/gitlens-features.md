@@ -1037,10 +1037,7 @@ Available in **Pro**, **Advanced**, and **Business** plans.
 
 Generate stash descriptions so you can identify your stashes later.
 
-**How to access:**
-- From the Command Palette: `GitLens: Generate Stash Message with AI`
-- During stash creation: Use the AI option in the stash interface
-- In the Stash view: Generate AI-powered descriptions for existing stashes
+**How to access:** When you stash changes with GitLens, select the **Generate Stash Message** sparkle button in the stash message input.
 
 ---
 
@@ -1086,9 +1083,9 @@ AI-generated summaries explain the purpose and context of a commit, so you can u
 
 ---
 
-### AI Changelog Creation `ADVANCED`
+### AI Changelog Creation `PRO`
 
-*Available in:* **Advanced** and **Business** plans only
+*Available in:* **Pro**, **Advanced**, and **Business** plans
 
 Generate a structured changelog from a set of selected commits, for example for your release notes.
 
@@ -1101,13 +1098,14 @@ Generate a structured changelog from a set of selected commits, for example for 
   <p>More questions about GitKraken AI? See the <a href="https://help.gitkraken.com/general/gitkraken-ai-faq/">GitKraken AI FAQ</a> for additional details.</p>
 </div>
 
-### AI Generate Commits `PRO`
+### AI Commit Composition `PRO`
 
-The **Generate Commits** command turns your staged and unstaged changes into commits. GitKraken AI groups related changes and writes a message for each commit. The first time you run the command, a confirmation dialog explains what it does. After the commits are created, select **Undo** to revert them.
+GitKraken AI can turn your changes into commits, or restructure the commits on a branch, in the [Commit Composer](#commit-composer-view-pro). You review every proposed commit and message before anything is applied.
 
-### AI Rebase `PRO`
+- To commit your working changes, run `GitLens: Compose Commits...`.
+- To rework the commits already on a branch, run `GitLens: Recompose Commits...`, or use **Recompose Commits from Here...** and **Recompose Selected Commits...** from the Commit Graph's context menu.
 
-The **AI Rebase** command restructures the commits on an existing branch onto a target commit, with GitKraken AI grouping the changes and writing the messages. Like Generate Commits, it shows a confirmation dialog the first time and offers **Undo** afterward. Both commands produce a markdown document that summarizes the changes they made.
+See [Compose and Recompose Commands](#compose-and-recompose-commands) for where each command is available. To resolve rebase conflicts with AI, use [Auto-Rebase](#auto-rebase-pro).
 
 ### Auto-Rebase `PRO`
 

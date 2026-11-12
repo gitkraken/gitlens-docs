@@ -222,7 +222,7 @@ GitLens uses the worktree of the agent session running in the terminal. If no ag
 
 Review an agent's changes in the Commit Graph before you commit them or open a pull request. Select a Working Changes row, a commit, or a range of commits, and select **Review** in the details panel. Open each file to read its diff, mark it as viewed with its checkbox, or use **Exclude from Review** to set it aside. The checklist shows how many files you have viewed until the review is complete.
 
-With GitKraken AI, select **Review Diff** to get findings grouped into focus areas and tagged by severity. Dismiss the findings you disagree with, comment on the ones you want to discuss, and send work back to your coding agent with **Address Findings with Agent**, **Address Focus Area with Agent**, or **Address with Agent** on a single finding. **Delete Findings** clears the AI findings and keeps your viewed files and your own comments.
+With GitKraken AI, select **Review Diff** to get findings grouped into focus areas and tagged by severity. Dismiss the findings you disagree with, comment on the ones you want to discuss, and send work back to your coding agent with **Address Findings with Agent**, **Address Focus Area with Agent**, or **Address with Agent** on a single finding. **Delete Findings** clears the AI findings, with any replies you left on them, and keeps your viewed files and your own comments.
 
 Reading and checking off files works without AI. **Review Diff** uses GitKraken AI and requires GitLens Pro. For the full workflow, see [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
 
