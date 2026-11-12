@@ -191,7 +191,7 @@ Continue exploring the workflows available from the Commit Graph:
 - [Worktrees](/gitlens/gl-worktrees/) to manage parallel development
 - [Review](/gitlens/gl-review-changes/) to understand and validate changes
 - [Commit Composer](/gitlens/gitlens-features/#commit-composer-view-pro) to shape changes into logical commits
-- [Compare](/gitlens/side-bar/#search-and-compare-view) to understand differences across your work
+- [Compare](/gitlens/side-bar/#search-compare-view) to understand differences across your work
 - [Auto-Rebase](/gitlens/gitlens-features/#interactive-rebase-editor) to automate and clean up rebases
 - [AI conflict resolution](/gitlens/gl-agents/#resolve-conflicts-in-the-commit-graph) to resolve overlapping work
 - [Visual History](/gitlens/gl-visual-file-history/) to visualize how files, branches, or your entire repository evolved over time

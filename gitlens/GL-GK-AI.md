@@ -111,7 +111,7 @@ Move a rebase forward with AI-assisted conflict resolution. Auto-Rebase resolves
 
 Auto-Rebase respects the steps you plan in the Interactive Rebase Editor. When a `reword` or `squash` step needs a new commit message, Auto-Rebase opens the message in VS Code and waits until you finish editing it. At a commit you marked `edit`, it resolves and stages any conflicts, then pauses so you can make your changes before you continue the rebase.
 
-When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
+When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed. **Review & Resolve** opens the Commit Graph's resolve panel. Once every conflict there has a resolution, select **Apply & Resume with AI** to apply the resolutions and let Auto-Rebase finish the rebase.
 
 **How to access:**
 - From the Command Palette: `GitLens: Auto-Rebase...`

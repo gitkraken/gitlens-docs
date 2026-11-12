@@ -1124,7 +1124,7 @@ To start Auto-Rebase, run `GitLens: Auto-Rebase...` from the Command Palette, ch
 
 For a GitHub [stacked pull request](/gitlens/gl-commit-graph/#pull-request-information), **Auto-Rebase Stack** rebases every branch in the stack from the bottom up, each onto the one below it, and resolves conflicts with AI along the way. **Rebase Stack** does the same but stops at each conflict for you to resolve. Start either one from the Commit Graph pull request sheet, from Launchpad, from the Git Command Palette's rebase confirmation when the current branch belongs to a stack, or with `GitLens: Git Rebase Stacked Pull Requests...` or `GitLens: Auto-Rebase Stacked Pull Requests...`. When the rebase finishes, GitLens offers **Force Push Stack** so you can publish the rebased branches.
 
-When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed.
+When Auto-Rebase pauses, its notification offers **Review & Resolve** and **Abort Rebase**, plus **Resume with AI** when AI features are allowed. **Review & Resolve** opens the Commit Graph's resolve panel. Once every conflict there has a resolution, select **Apply & Resume with AI** to apply the resolutions and let Auto-Rebase finish the rebase.
 
 ### Commit Composer View `PRO`
 
@@ -1649,10 +1649,10 @@ GitLens adds these commands to VS Code:
 Deep Links are URLs that open specific GitLens resources. Share them to point teammates directly to repositories, files, comparisons, and more. You can copy Deep Links to these resources:
 
 - **Search & Compare** — Link to comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view). Right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_.
-- **GitKraken Workspaces** — Link to a [GitKraken Workspace](/gitlens/side-bar/#workspaces-☁%ef%b8%8f). Right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_.
+- **GitKraken Workspaces** — Link to a [GitKraken Workspace](/gitlens/side-bar/#workspaces). Right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_.
 - **Commit Graph** — Link to remote repositories, commits, branches, and tags in the [Commit Graph](/gitlens/gitlens-features/#commit-graph). Right-click the resource, hover over _Share_, and select _Copy Link to <resource>_.
 - **Files or Lines** — Link to specific files or lines of code. Right-click highlighted lines or a file, hover over _Share_, and select _Copy vscode.dev Link_.
-- **Cloud Patches** — Link to a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview-%e2%98%81%ef%b8%8f). After generating a Cloud Patch, click _Copy Link_ from the success prompt.
+- **Cloud Patches** — Link to a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview). After generating a Cloud Patch, click _Copy Link_ from the success prompt.
 
 <figure>
   <img src="/wp-content/uploads/gl-deep-link-example.gif" alt="Animation that starts in the Commit Graph in VS Code and shows a GitLens deep link being generated and used" class="help-center-img img-bordered">

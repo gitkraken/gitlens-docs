@@ -532,6 +532,7 @@ Auto-Rebase carries a rebase forward through the conflicts GitKraken AI can reso
 - The `gitlens.ai.autoRebase.confidenceThreshold` setting (0 to 1) controls how confident the AI must be before automatically applying a resolution.
 - Use `gitlens.ai.resolveConflicts.customInstructions` to provide custom instructions that guide how the AI resolves conflicts.
 - When Auto-Rebase pauses, its notification offers **Review & Resolve**, **Resume with AI**, and **Abort Rebase**. The resolve panel in the graph also offers **Resume with AI** and **Abort Rebase**.
+- **Review & Resolve** opens the resolve panel with the conflicts from the paused step. Once every conflict has a resolution, select **Apply & Resume with AI** to apply the resolutions and let Auto-Rebase finish the rest of the rebase. To apply them without resuming, select **Apply Resolutions** (its label shows the count, for example **Apply 3 Resolutions**).
 - If the result is unsatisfactory, select **Undo** in the completion notification or **Undo Rebase** in the rebase summary sheet to reset the branch to its pre-rebase state.
 
 During the rebase, a progress animation appears in the graph to indicate the operation is in progress. A rebase summary sheet opens in the sidebar when the operation completes.
