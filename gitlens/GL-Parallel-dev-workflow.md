@@ -17,7 +17,7 @@ llms_include: true
 tags: [parallel-development, worktrees, ai-agents, agent-sessions, commit-graph, ai-review, commit-composer]
 taxonomy:
     category: gitlens
-last_updated: 2026-09
+last_updated: 2026-11
 
 custom_fields:
     nav_category: "gl-workflows"
@@ -32,11 +32,11 @@ custom_fields:
     entry_desc: "Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees"
     entry_order: 10
 ---
-<kbd>Last updated: September 2026</kbd>
+<kbd>Last updated: November 2026</kbd>
 
-Modern development rarely happens in a single branch. Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time, creating more parallel streams of work to understand and coordinate.
+Developers and coding agents can work across multiple branches, worktrees, and tasks at the same time. Each one adds a parallel stream of work to understand and coordinate.
 
-The Commit Graph brings those streams together in one development workbench. See what’s changing, understand where work is happening, identify what needs your attention, and move work forward without jumping between branches, terminal sessions, and disconnected views.
+The Commit Graph shows those streams together in one place. See what is changing and where, find what needs your attention, and move work forward without switching between branches, terminal sessions, and separate views.
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-full-01-v2@2x.png" alt="The Commit Graph in the GitLens side bar: the branch toolbar with Push and Fetch, the natural-language search box, the selected Working Changes row, and commit rows with their branch and tag pills." class="help-center-img img-bordered">
   <figcaption style="text-align:center; color:#888">GitLens Commit Graph</figcaption>
@@ -44,13 +44,13 @@ The Commit Graph brings those streams together in one development workbench. See
 
 ## 1. See All Active Work
 Start in the Commit Graph to get a connected view of your repository and the work happening across it.
-See branches, worktrees, working changes, commits, HEAD, upstream, merge targets, and ahead and behind status together, giving you the context to understand how each stream of work relates to the rest of your repository.
+See branches, worktrees, working changes, commits, HEAD, upstream, merge targets, and ahead and behind status together, so you can tell how each stream of work relates to the rest of your repository.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Worktrees-tab-open.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Worktrees-tab-open.png" alt="The Worktrees sidebar in the Commit Graph, listing five worktrees with the feature-addition worktree selected" class="help-center-img img-bordered">
 </figure>
 
-Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you aren’t currently working in that worktree. Each worktree's **Working Changes** row shows the worktree's branch as a pill inside the row; select the pill to jump to that branch. A **Worktree** marker beside the row names the worktree it belongs to. When a rebase, merge, or similar operation is paused in a worktree, its row shows that state, such as the number of conflicts left to resolve.
+Multi-worktree WIP also surfaces working changes across your worktrees, so active work stays visible even when you are not working in that worktree. Each worktree's **Working Changes** row shows the worktree's branch as a pill inside the row; select the pill to jump to that branch. A **Worktree** marker beside the row names the worktree it belongs to. When a rebase, merge, or similar operation is paused in a worktree, its row shows that state, such as the number of conflicts left to resolve.
 
 <figure>
   <img src="/wp-content/uploads/gl-worktrees-multi-wip-01-v4@2x.png" alt="Commit Graph with a Working Changes row for each of three worktrees: the main worktree's row at the top, then the feature/api-hardening and docs/contributing-refresh worktree rows, each with its changed-file count and inline branch pill, above that branch's unpushed commit" class="help-center-img img-bordered">
@@ -105,9 +105,9 @@ If both destinations are available and you resume without choosing one, for exam
 ## 3. Understand Changes Across Worktrees
 Worktrees let developers and agents work on multiple branches from the same repository without constantly switching branches or stashing changes.
 
-GitLens brings work in progress across those worktrees into the Commit Graph, giving you visibility into parallel development from one place.
+GitLens shows the work in progress in those worktrees in the Commit Graph, so you can follow parallel development from one place.
 
-Use Multi-WIP to see working changes across multiple worktrees, understand which branches have active work, and move between parallel streams without losing sight of the bigger picture.
+Use Multi-WIP to see working changes across multiple worktrees, find which branches have active work, and move between parallel streams without losing track of the rest of the repository.
 
 ### Scope the Graph to a Worktree
 Scope the Commit Graph to another worktree to act in that worktree without switching windows. While the graph is scoped, it treats that worktree as the one you have open: you see its branch and its working changes, and anything you commit, push, or pull from the graph happens in that worktree. To scope the graph, do one of the following:
@@ -130,12 +130,12 @@ Each Working Changes row has a **Run Default Task** button that runs a VS Code t
 You can also right-click a worktree's Working Changes row, or a worktree in the **Worktrees** view, and select **Run Task on Worktree...**. In the task list, select the checkmark next to a task to set or unset it as the default.
 
 ## 4. Review Work as It Happens
-You don’t have to wait until parallel work becomes a pull request to understand what changed.
+You do not have to wait until parallel work becomes a pull request to understand what changed.
 
-Open working changes from the Commit Graph and use AI-powered Review to analyze human or agent-generated work while it’s still in progress. Surface meaningful findings, investigate specific areas, ask follow-up questions, and send an entire review or individual finding back to your coding agent when another pass is needed.
+Select **Review Changes…** on a Working Changes row to review human or agent-generated work while it is still in progress. Read the changed files and mark each one viewed, add an AI review with **Review Diff**, or hand the review to your coding agent with **Review in Repo**. When another pass is needed, send the whole review, a focus area, or a single finding to your agent with the **Address … with Agent** actions. See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Review.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-graph-review-01-v2@2x.png" alt="Commit Graph in Review mode: the Reviewing Changes panel with Uncommitted and Branch scope presets above the unstaged changes and the unpushed commit, a checklist reading &quot;1 of 3 viewed&quot; with one file checked as viewed and README.md marked excluded, and an instructions box with Review Diff, Orient and Review in Repo." class="help-center-img img-bordered">
 </figure>
 
 Reviewing work earlier helps keep changes understandable before multiple streams of development come back together.
@@ -143,28 +143,31 @@ Reviewing work earlier helps keep changes understandable before multiple streams
 ## 5. Shape and Compare the Work
 Once changes are ready, use Commit Composer to turn scattered work into clean, logical commits that are easier to understand and review.
 
-Organize related changes, move work between commits, reorder and refine commits, and use AI assistance to help shape the resulting history.
+Organize related changes, move work between commits, reorder and refine commits, and use GitKraken AI to shape the resulting history.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Graph-Compare.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Graph-Compare.png" alt="The Commit Graph's Comparing References panel comparing origin/main with a branch, showing its Ahead, Behind and All Files tabs, the ahead commits, and the changed files" class="help-center-img img-bordered">
 </figure>
 
-Then use Compare directly from the Commit Graph to compare commits, branches, revisions, and working changes so you can understand exactly what’s different before moving forward.
+Then use Compare directly from the Commit Graph to compare commits, branches, revisions, and working changes so you can see exactly what is different before moving forward.
 
 ## 6. Prepare Parallel Work to Land
 As parallel branches come back together, GitLens helps you handle the Git work required to prepare them for merge.
 
-Use AI-powered Rebase to automate tedious rebasing while staying in control of the result. If overlapping work creates merge conflicts, AI-assisted conflict resolution helps you understand and resolve competing changes while keeping the surrounding repository context in view.
+Use [Auto-Rebase](/gitlens/gl-gk-ai/#auto-rebase-pro) to rebase with GitKraken AI while you stay in control of the result. If overlapping work creates merge conflicts, use AI-assisted conflict resolution to understand and resolve the competing changes with the surrounding repository context in view.
 
 <figure>
-  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/GL-Auto-AI-rebase.png" alt="The Commit Graph's Resolving Conflicts panel during a paused rebase: 14 of 14 conflicts resolved, each listed file with its resolution, confidence and View Changes, above the Apply 14 Resolutions button" class="help-center-img img-bordered">
 </figure>
 
-Instead of leaving your workflow to manually untangle the final steps, you can continue moving the work forward from the same workbench where you’ve been monitoring and reviewing it.
+You finish the work in the same Commit Graph where you monitored and reviewed it, without leaving it to untangle the final steps by hand.
 
 ## Keep Parallel Development Under Control
-The Commit Graph gives you one place to follow parallel development from active work to merge readiness.
+The Commit Graph gives you one place to follow parallel development from active work to merge readiness. From it, you can:
 
-**See every stream of work. Know what needs your attention. Review and shape the changes. Get parallel work ready to merge from one connected workbench.**
+- See every stream of work
+- Know what needs your attention
+- Review and shape the changes
+- Get parallel work ready to merge
 
 

@@ -39,7 +39,7 @@ Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKr
 
 For workflows and examples, see [Launchpad](/gitlens/gl-launchpad/) and [Accelerate PR Reviews](/gitlens/gl-accelerate-pr-reviews/).
 
-Launchpad organizes pull requests (PRs) by status to help you identify bottlenecks and take prioritized actions. This streamlined view allows you to manage PRs quickly, directly within VS Code.
+Launchpad groups your pull requests (PRs) by status, so you can see which ones need your action first and act on them without leaving VS Code.
 
 <figure>
   <img src="/wp-content/uploads/gl-launchpad-quickpick.png" alt="The Launchpad quick pick with pull requests grouped by status" class="help-center-img img-bordered">
@@ -53,7 +53,7 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 ### Accessing Launchpad
 
 - From the **Command Palette**: `Command/Ctrl + Shift + P` → `GitLens: Open Launchpad`
-- Or select the **Pull Request status bar item** in VS Code
+- From the **Pull Request status bar item** in VS Code
 
 <figure>
   <img src="/wp-content/uploads/gl-access-launchpad.gif" alt="Opening Launchpad from status bar" class="help-center-img img-bordered">
@@ -64,23 +64,29 @@ Launchpad organizes pull requests (PRs) by status to help you identify bottlenec
 
 ### Using Launchpad
 
-View PRs by grouped statuses:
+Launchpad groups PRs by these statuses:
+
 - Ready to merge
 - Blocked
 - Requires follow-up
 - Needs your review
 - Waiting for review
+- In merge queue
 - Draft
 - Snoozed
 
 Click a PR to:
+
 - View full details
 - Open in your browser
-- Merge (if eligible)
+- Merge (if eligible), or add it to the merge queue with **Add to Merge Queue...** when its base branch requires one
+- Take it out of the merge queue with **Remove from Merge Queue...**
 - Rebase the stack (for a GitHub stacked pull request)
 - Switch to the branch or open in a worktree
 
-To find a pull request that isn't in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term. You can also paste a pull request's URL to open that pull request; this works for every connected provider, including Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
+To find a pull request that is not in your groups, select **Search for Pull Request...** and enter a term. Launchpad searches the pull requests of all your connected providers, including Azure DevOps and Bitbucket Data Center, for that term. You can also paste a pull request's URL to open that pull request. Pasting a URL works for every connected provider, including Azure DevOps, Azure DevOps Server, Bitbucket, and Bitbucket Data Center.
+
+For repositories on GitHub.com that merge through a merge queue, queued pull requests appear in the **In Merge Queue** group with their queue status, and pull requests failing in the queue appear under **Blocked** as **Failing in Merge Queue**. Merge queues are not supported for GitHub Enterprise. For details, see [GitHub Merge Queue](/gitlens/gl-integrations/#github-merge-queue).
 
 <figure>
   <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
@@ -94,15 +100,19 @@ You can also start or review [Code Suggestions](#code-suggest) directly from the
   <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
-*This feature is available through the [Gitkraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/)*
+*Launchpad is also available through the [GitKraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/).*
 
 ---
 
 ### Start Review `PRO`
 
-The **Start Review** command (`gitlens.startReview`) provides a guided wizard for beginning a pull request review. It walks you through selecting a PR from your connected integration, choosing whether to check out the branch or create a worktree, and optionally launching an AI chat pre-filled with a review prompt.
+The **Start PR Review** command (`gitlens.startReview`) guides you through starting a pull request review:
 
-Access it from the Command Palette: `GitLens: Start Review`
+1. Select a PR from your connected integration.
+2. Choose whether to check out the branch or create a worktree.
+3. Optionally, open an AI chat pre-filled with a review prompt.
+
+Access it from the Command Palette: `GitLens: Start PR Review`
 
 When AI features are enabled, Start Review asks whether to open the review in an agent, continue manually, or, when Kepler supports the pull request's provider, open it in [Kepler](/gitlens/gl-agents/#start-tasks-and-reviews-in-kepler). Select **Always use this choice** to skip that step next time; the `gitlens.ai.openInAgent` setting stores your choice. If no local clone of the pull request's repository is found, Start Review offers **Clone Repository...** and **Choose a Local Folder...** instead of stopping.
 
@@ -110,7 +120,7 @@ When AI features are enabled, Start Review asks whether to open the review in an
 
 ### Start Work `PRO`
 
-The **Start Work** command (`gitlens.startWork`) starts work on an issue from your connected integrations: pick the issue, and GitLens creates a branch for it. If you aren't signed in, Start Work first asks you to sign in or start a Pro trial before it offers to connect an integration.
+The **Start Work** command (`gitlens.startWork`) starts work on an issue from your connected integrations: pick the issue, and GitLens creates a branch for it. If you are not signed in, Start Work first asks you to sign in or start a Pro trial before it offers to connect an integration.
 
 Access it from the Command Palette: `GitLens: Start Work`
 
@@ -131,7 +141,7 @@ Click the icon again to unpin or unsnooze as needed.
   <figcaption style="text-align: center; color: #888">Pin or snooze PRs to manage your workflow</figcaption>
 </figure>
 
-> **Note:** Launchpad prioritizes items requiring action by elevating them to the top of the list. This behavior may change in future updates.
+> **Note:** Launchpad lists the items that need your action at the top of the list.
 
 > **Warning:** This feature is only available on GitLens Pro subscription tiers or higher.
 
@@ -141,9 +151,9 @@ Click the icon again to unpin or unsnooze as needed.
 
 For workflows and examples, see [Code Suggest](/gitlens/gl-code-suggest/).
 
-GitKraken Code Suggest simplifies code review by enabling you to propose edits across an entire project—not just the lines changed—in GitLens, GitKraken Desktop, or [gitkraken.dev](https://gitkraken.dev).
+Use GitKraken Code Suggest to propose edits to any file in a project, including lines that a pull request did not change. You can suggest changes from GitLens, GitKraken Desktop, or [gitkraken.dev](https://gitkraken.dev).
 
-When a pull request is open, you can make suggestions that collaborators can review and apply directly to the PR.
+When a pull request is open, collaborators can review your suggestions and apply them to the pull request.
 
 > **Note:** Code Suggest is currently supported only for repositories hosted on **github.com**.
 
@@ -165,7 +175,7 @@ When a pull request is open, you can make suggestions that collaborators can rev
   <figcaption style="text-align: center; color: #888">Create a suggestion from your local changes</figcaption>
 </figure>
 
-Once submitted, the pull request will receive a comment with two options:
+After you submit the suggestion, the pull request receives a comment with 2 options:
 
 - **Code Suggestion for #PR** — opens in gitkraken.dev
 - **Locally on your machine** — opens in GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes)
@@ -191,7 +201,7 @@ Once submitted, the pull request will receive a comment with two options:
 
 1. Select **Code Suggestion for #PR** in the PR comment.
 2. Review the changes on gitkraken.dev.
-3. Click **Commit Suggestions** to commit the patch directly to the PR’s branch.
+3. Click **Commit Suggestions** to commit the patch directly to the PR's branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-accept-code-suggestion.gif" alt="Committing suggestions from gitkraken.dev" class="help-center-img img-bordered">
@@ -204,17 +214,19 @@ Once submitted, the pull request will receive a comment with two options:
 
 For workflows and examples, see [Cloud Patches](/gitlens/gl-cloud-patches/).
 
+Use Cloud Patches to share in-progress work with your team before you open a pull request.
+
 ### What Are Cloud Patches and Why Use Them?
 
-Cloud Patches are Git patches that GitKraken securely stores for easy sharing across GitLens, GitKraken Desktop, and the GitKraken CLI. The patch is uploaded directly from your machine into secure cloud storage.
+Cloud Patches are Git patches that GitKraken stores in secure cloud storage, so you can share them across GitLens, GitKraken Desktop, and the GitKraken CLI. GitLens uploads the patch directly from your machine.
 
-This feature enables early collaboration—before a pull request is created—by letting you share in-progress work with your team. It helps streamline feedback cycles and reduce delays in PR reviews.
+Because you can share work before a pull request exists, your team can give feedback earlier.
 
 ---
 
 ### How to Set Up Cloud Patches
 
-Cloud Patches are enabled by default, but you can manage this per client.
+Cloud Patches are on by default. You turn them on or off separately in each GitKraken app. To manage them in GitLens:
 
 1. Open the Command Palette:  
    `Ctrl`/`Command` + `Shift` + `P` → **Preferences: Open User Settings (JSON)**
@@ -228,7 +240,7 @@ To disable Cloud Patches, change the value to `false`.
 
 ### How to Work with Cloud Patches
 
-Cloud Patches are accessible from the **Cloud Patches** view in the GitLens sidebar.
+Your Cloud Patches are in the **Cloud Patches** view in the GitLens side bar.
 
 <figure>
   <img src="/wp-content/uploads/gl-cloud-patch-create.webp" alt="GitLens Cloud Patch creation screen" class="help-center-img img-bordered">
@@ -253,9 +265,9 @@ To create one, use **Share as Cloud Patch** from the command palette or the **Sh
 
 Choose how your patch can be accessed:
 
-- **Anyone with the link** – Public access without login.
-- **Anyone in my org** – Restricted to users in your GitKraken organization (GitKraken login required).
-- **Only collaborators** – Restricted to selected organization members. Use **Invite** to choose recipients.
+- **Anyone with the link** — Public access without signing in.
+- **Anyone in my org** — Restricted to users in your GitKraken organization (GitKraken sign-in required).
+- **Only collaborators** — Restricted to selected organization members. Use **Invite** to choose recipients.
 
 Cloud Patches shared with you appear under the **Shared with Me** section.
 
@@ -266,11 +278,11 @@ Cloud Patches shared with you appear under the **Shared with Me** section.
   <figcaption style="text-align: center; color: #888">Control access to shared patches by role</figcaption>
 </figure>
 
-You can also apply Cloud Patches directly from a shared URL. Simply click or paste the link, then follow GitLens prompts to apply it to your working directory or to a new/existing branch.
+You can also apply a Cloud Patch from a shared URL. Click or paste the link, then follow the GitLens prompts to apply it to your working directory or to a new/existing branch.
 
 <figure>
   <img src="/wp-content/uploads/gl-apply-patch-example.gif" alt="Apply a cloud patch animation" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Apply patches seamlessly to your current repo</figcaption>
+  <figcaption style="text-align: center; color: #888">Apply a patch to your current repo</figcaption>
 </figure>
 
 To delete a Cloud Patch, right-click it and choose **Delete Cloud Patch...**.
@@ -283,6 +295,4 @@ To delete a Cloud Patch, right-click it and choose **Delete Cloud Patch...**.
 
 ### Self-Hosting Cloud Patch Data
 
-If you prefer not to store Cloud Patch data on GitKraken servers, you can configure GitLens to use your own AWS S3 storage.
-
-Learn how to configure this in our [Self-Hosting Guide](/gk-dev/gk-dev-home/#self-hosted).
+If you prefer not to store Cloud Patch data on GitKraken servers, you can configure GitLens to use your own AWS S3 storage. To set it up, see the [Self-Hosting Guide](/gk-dev/gk-dev-home/#self-hosted).

@@ -36,7 +36,7 @@ custom_fields:
   <figcaption style="text-align: center; color: #888;">GitLens menu and toolbar options</figcaption>
 </figure>
 
-GitLens provides [customizable](/gitlens/gitlens-settings/#menu-and-toolbar-settings) menu and toolbar contributions to let you control where GitLens commands appear. You can easily manage these settings via the [interactive settings editor](/gitlens/gitlens-settings/).
+You can [customize](/gitlens/gitlens-settings/#menu-and-toolbar-settings) where GitLens commands appear in VS Code menus and toolbars. Manage these settings in the [interactive settings editor](/gitlens/gitlens-settings/).
 
 For example, disabling **Add to the editor group toolbar** removes those items from the toolbar:
 
@@ -45,20 +45,20 @@ For example, disabling **Add to the editor group toolbar** removes those items f
   <figcaption style="text-align: center; color: #888;">Editor group toolbar items removed</figcaption>
 </figure>
 
-You can also expand each section to customize visibility and placement more granularly.
+Expand each section to choose individual menus and toolbars.
 
 ***
 
 ## Modes
 
-GitLens supports [user-defined](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings') modes for quickly toggling between sets of settings.
+GitLens supports [user-defined](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings') modes, so you can switch between sets of settings.
 
-- Shows the active mode in the **status bar** ([optional](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings'), enabled by default)
-  - **Toggle Review Mode** (`gitlens.toggleReviewMode`) — Quickly toggle Review mode.
-- **Switch Mode** (`gitlens.switchMode`) — Quickly switch between modes.
-- **Zen Mode** — Disables many visual elements for a focused experience.
+- Shows the active mode in the **status bar** ([optional](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings'), on by default)
+- **Switch Mode** (`gitlens.switchMode`) — Switch between modes.
+- **Zen Mode** — Turns off many visual elements so you can focus on your code.
   - **Toggle Zen Mode** (`gitlens.toggleZenMode`) — Toggle Zen mode.
-- **Review Mode** — Enables visual elements for code review.
+- **Review Mode** — Turns on visual elements for code review.
+  - **Toggle Review Mode** (`gitlens.toggleReviewMode`) — Toggle Review mode.
 
 ### Experimental Multi-diff Editor
 
@@ -68,21 +68,21 @@ VS Code 1.86 or later is required for these capabilities.
 
 - **Open Folder Changes with Revision...** and **Open Folder Changes with Branch or Tag...** via Command Palette, Explorer, and Source Control views.
 - Inline **Open All Changes** in commits, stashes, and comparison views.
-- **Open All Changes** and **Open All Changes with Working Tree** — Use the new multi-diff editor.
-- **Open All Changes, Individually** and **Open All Changes with Working Tree, Individually** — Provide legacy behavior.
+- **Open All Changes** and **Open All Changes with Working Tree** — Open the changes in the multi-diff editor.
+- **Open All Changes, Individually** and **Open All Changes with Working Tree, Individually** — Open each file's changes in its own diff editor.
 
 ***
 
 ## Welcome View
 
-The **Welcome** sidebar view is the place to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content adapts based on your subscription level. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
+Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
 
-Open it from the GitLens sidebar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
+Open it from the GitLens side bar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
 
 ***
 
 ## Display Language
 
-GitLens follows the VS Code display language. Experimental Spanish, Simplified Chinese, and Traditional Chinese translations are available, and any text that isn't translated yet appears in English. GitLens has no separate language setting.
+GitLens follows the VS Code display language. Experimental Spanish, Simplified Chinese, and Traditional Chinese translations are available, and any text that is not translated yet appears in English. GitLens has no separate language setting.
 
 To switch languages, install Microsoft's language pack for that language, run **Configure Display Language** from the Command Palette, choose the language, and restart VS Code. The `gitlens.defaultDateLocale` setting still controls only how dates are formatted.
