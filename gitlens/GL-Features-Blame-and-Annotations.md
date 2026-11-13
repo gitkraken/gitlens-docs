@@ -38,7 +38,7 @@ custom_fields:
   <figcaption style="text-align: center; color: #888">Step through revisions using built-in navigation commands</figcaption>
 </figure>
 
-Revision Navigation allows you to quickly compare different versions of a file or specific lines.
+Use Revision Navigation to compare different versions of a file or of specific lines.
 
 Available commands:
 
@@ -72,7 +72,7 @@ Available commands:
   <figcaption style="text-align: center; color: #888">Blame annotation showing author, date, and commit message</figcaption>
 </figure>
 
-Current Line Blame adds a subtle, [customizable](/gitlens/gitlens-settings/#current-line-blame-settings), and [themable](/gitlens/gitlens-settings/#themable-colors) annotation at the end of the active line.
+Current Line Blame adds a [customizable](/gitlens/gitlens-settings/#current-line-blame-settings), and [themable](/gitlens/gitlens-settings/#themable-colors) annotation at the end of the active line.
 
 By default, the annotation displays:
 
@@ -82,7 +82,7 @@ By default, the annotation displays:
 
 You can control visibility with the command:
 
-- **Toggle Line Blame Annotations** (`gitlens.toggleLineBlame`)
+- **Toggle Line Blame** (`gitlens.toggleLineBlame`)
 
 ***
 
@@ -93,7 +93,7 @@ You can control visibility with the command:
   <figcaption style="text-align: center; color: #888">Inline Git insights for authorship and history</figcaption>
 </figure>
 
-Git CodeLens displays inline Git insights at the top of each file and above code blocks (enabled by [default](/gitlens/gitlens-settings/#git-codelens-settings), and [customizable](/gitlens/gitlens-settings/#git-codelens-settings)).
+Git CodeLens shows Git information at the top of each file and above code blocks. It is on by [default](/gitlens/gitlens-settings/#git-codelens-settings), and you can [customize](/gitlens/gitlens-settings/#git-codelens-settings) it.
 
 ### CodeLens Types
 
@@ -104,11 +104,11 @@ Git CodeLens displays inline Git insights at the top of each file and above code
 - **Authors**  
   Displays the number of contributors and the most prominent author.  
   - Click to toggle Git blame annotations across the file.  
-  - Automatically hides if there's only one author (to reduce visual noise).
+  - Hidden when the file or block has only one author.
 
 ### CodeLens Behavior
 
-Click behavior for each CodeLens is fully [customizable](/gitlens/gitlens-settings/#git-codelens-settings). You can choose from:
+You can [customize](/gitlens/gitlens-settings/#git-codelens-settings) what each CodeLens does when you click it. Choose from:
 
 - Toggle file blame annotations
 - Compare the current commit to the previous one
@@ -129,7 +129,7 @@ Click behavior for each CodeLens is fully [customizable](/gitlens/gitlens-settin
   <figcaption style="text-align: center; color: #888">Quick access to blame details in the VS Code status bar</figcaption>
 </figure>
 
-The **Status Bar Blame** displays Git blame details for the current line directly in the VS Code status bar. This feature is enabled by default and fully customizable.
+The **Status Bar Blame** shows Git blame details for the current line in the VS Code status bar. It is on by default, and you can customize it.
 
 ### Default Behavior
 
@@ -142,8 +142,8 @@ You can configure what happens when the status bar item is clicked:
 
 - Toggle file blame annotations
 - Toggle Git CodeLens on and off
-- Compare the line’s commit to the previous one
-- Compare the line’s commit to the working tree
+- Compare the line's commit to the previous one
+- Compare the line's commit to the working tree
 - Show a quick pick menu with:
   - Commit details and actions *(default)*
   - File-level commit details
@@ -154,7 +154,7 @@ You can configure what happens when the status bar item is clicked:
 
 ## Hovers
 
-GitLens provides rich, [customizable](/gitlens/gitlens-settings/#hover-settings) hover annotations to surface Git information directly in your editor. These hovers are enabled by default and support both blame and diff insights.
+GitLens shows [customizable](/gitlens/gitlens-settings/#hover-settings) hovers with Git information in your editor. Hovers are on by default and show both blame details and changes.
 
 ### Current Line Hovers
 
@@ -198,7 +198,7 @@ Displays the previous version of the current line.
   <figcaption style="text-align: center; color: #888">Hover insights while annotating with blame</figcaption>
 </figure>
 
-Accessible when blame annotations are active, these hovers provide the same detail and diff options.
+When blame annotations are on, hovering an annotation shows the same details and changes hovers.
 
 #### Details Hover
 
@@ -241,7 +241,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 - Displays **commit message** and **commit date** per line (enabled by [default](/gitlens/gitlens-settings/#file-blame-settings)).
 - Adds a **heatmap (age) indicator** along the right edge to show how recently each line was changed.  
   _(See [File Heatmap](#file-heatmap) for more info.)_
-- Easily toggle annotations with:
+- Toggle annotations with:
 
   - **Command**: `gitlens.toggleFileBlame`
   - **Shortcut**: <kbd>Alt+B</kbd>
@@ -256,9 +256,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
   <figcaption style="text-align: center; color: #888">Highlight unpublished or most recent changes</figcaption>
 </figure>
 
-The File Changes annotation highlights lines that have been changed either locally (unpublished) or by the most recent commit.
-
-This feature is [customizable](/gitlens/gitlens-settings/#file-changes-settings) and [themable](/gitlens/gitlens-settings/#themable-colors), and is designed for quick visual inspection of file updates.
+The File Changes annotation highlights the lines you changed locally (unpublished) or that the most recent commit changed, so you can see which lines in a file changed. File Changes is [customizable](/gitlens/gitlens-settings/#file-changes-settings) and [themable](/gitlens/gitlens-settings/#themable-colors).
 
 ### Features
 
@@ -275,14 +273,14 @@ This feature is [customizable](/gitlens/gitlens-settings/#file-changes-settings)
   <figcaption style="text-align: center; color: #888">Visualize how recently each line was modified</figcaption>
 </figure>
 
-The File Heatmap adds a color-coded bar to the edge of your file, helping you quickly spot older versus more recent changes.
+The File Heatmap adds a color-coded bar to the edge of your file that shows which lines changed recently and which are older.
 
 ### Features
 
 - Heatmap colors are [customizable](/gitlens/gitlens-settings/#file-heatmap-settings) and reflect line age:
   - **Hot (bright)** for recent changes
   - **Cold (dim)** for older changes  
-    _(Lines default to “cold” after 90 days.)_
+    _(Lines default to "cold" after 90 days.)_
 - Brightness adjusts dynamically based on the **median age** of all changes in the file.
 - Toggle with the command: `gitlens.toggleFileHeatmap`
 - Press <kbd>Escape</kbd> to hide the heatmap annotations

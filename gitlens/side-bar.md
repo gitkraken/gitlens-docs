@@ -36,8 +36,8 @@ GitLens provides multiple sidebars that extend the functionality of Visual Studi
 - **GitLens** — Access features like commit history, branches, and remotes.
 - **Source Control** — Integrates with GitLens to enhance the built-in source control panel.
 
-Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos
-Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos.
+Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), such as Community or Pro.
 
 ***
 
@@ -114,7 +114,7 @@ This sidebar includes:
   <img src="/wp-content/uploads/gl-source-control.gif" class="help-center-img img-bordered" alt="GitLens Source Control sidebar with enhanced Git views">
 </figure>
 
-Views can be detached from the sidebar and [moved](/gitlens/side-bar/#moving-views) or reattached using the ellipsis icon menu.
+Views can be detached from the sidebar and [moved](/gitlens/side-bar/#move-views-between-sidebars) or reattached using the ellipsis icon menu.
 
 <figure>
   <img src="/wp-content/uploads/gl-source-control-detach.png" class="help-center-img img-bordered" alt="Detaching GitLens views from the Source Control sidebar">
@@ -122,7 +122,7 @@ Views can be detached from the sidebar and [moved](/gitlens/side-bar/#moving-vie
 
 ### Move Views Between Sidebars
 
-You can move any GitLens view between the GitLens Inspect, GitLens, and Source Control sidebars. To move a view, simply drag and drop it to the desired sidebar.
+You can move any GitLens view between the GitLens Inspect, GitLens, and Source Control sidebars. To move a view, drag and drop it to the desired sidebar.
 
 <figure>
   <img src="/wp-content/uploads/move-view.gif" class="help-center-img img-bordered" alt="Drag and drop GitLens views to reposition them between sidebars">
@@ -308,7 +308,7 @@ The **Branches** view lists all local branches and includes:
   - **Changes to pull** — incoming commits
 - Associated pull request — shown when linked to a branch
 
-A branch that isn't published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
+A branch that is not published yet offers **Publish Branch**, inline and in its context menu. If the branch's repository has no remotes at all, **Publish Repository** takes its place; it opens the Git Command Palette's **Publish** step, where you can create a repository on a hosting provider or add a remote (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). Each repository is judged on its own, so in a workspace with several repositories, branches of a published repository still offer **Publish Branch**. Worktree rows in the **Worktrees** view work the same way.
 
 <figure>
   <img src="/wp-content/uploads/gl-views-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Branches view in the Source Control side bar listing two repositories, Playground2026 and release-notes, with the context menu open on release-notes' main branch. The repository has no remotes, so the menu offers Publish Repository (below Switch Branch... and Open in Commit Graph) and no Publish Branch." />
@@ -368,12 +368,12 @@ When you push tags, GitLens asks you to choose a remote if the repository has mo
 ## Launchpad View `PRO`
 
 <figure>
-  <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="help-center-img img-bordered" alt="GitLens Launchpad view (experimental)">
+  <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="help-center-img img-bordered" alt="The Launchpad view with its pull request groups Blocked, Requires Follow-up, Needs Your Review, Waiting for Review, Draft, and Other; Waiting for Review and Draft are expanded to show one pull request each">
 </figure>
 
 The **Launchpad** view provides an always-visible panel for pull request activity. You can view pull request details in a tree format and take action directly from the sidebar.
 
-To enable this experimental feature, either run the _Show Launchpad View_ command or set `gitlens.views.launchpad.enabled` to `true` in your settings file.
+The view is hidden by default. To open it, run `GitLens: Show Launchpad View` from the Command Palette.
 
 ***
 
@@ -474,7 +474,7 @@ To manually add repositories, use the **Add Repositories from Linked Workspace**
   <img src="/wp-content/uploads/gl-worktrees-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
 </figure>
 
-A [customizable](gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
+A [customizable](/gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
 
 ### Create a Worktree
 
@@ -529,21 +529,21 @@ The **Search & Compare** view displays pinnable results from search or compariso
 
 ### Pinnable Search
 
-Search commits by message, author, committer, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges. If GitLens can't build a search from your description, it shows the reason and returns you to the search box with your description intact, so you can reword it. The Commit Graph search box offers more help, such as broader alternatives when a natural language search finds nothing and a **Match literally** option when a pattern isn't a valid regular expression. For details, see [Rich Commit Search](/gitlens/gl-commit-graph/#rich-commit-search).
+Search commits by message, author, committer, file, ID, patch, or natural language query. AI-powered natural language search converts plain English queries into structured Git search operators, so you can search for commits by describing what you are looking for. Time-based search operators are also available for filtering by date ranges. If GitLens cannot build a search from your description, it shows the reason and returns you to the search box with your description intact, so you can reword it. The Commit Graph search box offers more help, such as broader alternatives when a natural language search finds nothing and a **Match literally** option when a pattern is not a valid regular expression. For details, see [Rich Commit Search](/gitlens/gl-commit-graph/#rich-commit-search).
 
 Search using:
 
-- **Search Commits** (`gitlens.showCommitSearch`):
+- **Search Commits**:
   - `<message>` — message match
-  - `-message:<message>` — excludes commits whose message contains the term. You can't combine `message:` and `-message:` in the same query.
+  - `-message:<message>` — excludes commits whose message contains the term. You cannot combine `message:` and `-message:` in the same query.
   - `author:<author>` or `@:<author>` — author match
   - `committer:<committer>` — committer match. Use `committer:@me` to match commits where you are the committer.
   - `commit:<sha>` or `#:<sha>` — commit SHA
   - `file:<glob>` or `?:<glob>` — filename pattern
   - `change:<pattern>` or `~:<pattern>` — patch content match
   - `type:merge` (or `is:merge`) — merge commits only
-- **Show File History** (`gitlens.showQuickFileHistory`)
-- **Show Commit** (`gitlens.showQuickCommitDetails`)
+- **Show File History**
+- **Quick Show Commit**
 
 ### Pinnable Comparison
 
@@ -555,11 +555,11 @@ Compare any two references:
 
 Comparison commands include:
 
-- `gitlens.views.compareWithUpstream`
-- `gitlens.views.compareWithWorking`
-- `gitlens.views.compareWithHead`
-- `gitlens.views.compareWithSelected`
-- `gitlens.views.compareAncestryWithWorking`
+- **Compare with Upstream**
+- **Compare Working Tree to Here**
+- **Compare to/from HEAD**
+- **Compare with Selected**
+- **Compare Working Tree to Common Base**
 
 You can use checkboxes next to files to track review progress.
 

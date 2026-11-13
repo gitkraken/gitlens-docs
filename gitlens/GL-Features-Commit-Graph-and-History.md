@@ -37,13 +37,11 @@ Features marked with <span style="color: #888;">`PRO`</span> require a [trial or
 
 For workflows and examples, see [Commit Graph](/gitlens/gl-commit-graph/) and [Commit Graph is Home](/gitlens/home-view/).
 
-The Commit Graph is the starting point for working in GitLens. It brings repository history, branches, worktrees, Working Changes, pull requests, and supported agent activity into one connected workbench, so you can understand what's happening and move changes toward merge without rebuilding context across tools.
+The Commit Graph is the starting point for working in GitLens. It shows your repository's history, branches, worktrees, Working Changes, pull requests, and supported agent activity in one view, so you can follow what is happening and move changes toward merge without switching tools. The graph stays responsive on large repositories.
 
-Built on a high-performance rendering engine, the graph stays responsive on large repositories, showing commits, branches, and contributors in one place.
+The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories, with no account required. You need a <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> only for private repositories.
 
-The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A <a href="https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens" target="_blank">GitLens Pro subscription or trial</a> is required only for private repositories.
-
-If you aren't signed in, opening the Commit Graph on a privately hosted repository for the first time starts a 3-day preview. A banner above the graph shows how much of the preview is left, with a **Sign In** link. When the 3 days are up, the graph shows **Commit Graph Preview Ended** for privately hosted repositories until you sign in or start a free Pro trial. The preview is only for signed-out use; a signed-in account without a Pro trial or paid plan sees the upgrade prompt on private repositories.
+If you are not signed in, opening the Commit Graph on a privately hosted repository for the first time starts a 3-day preview. A banner above the graph shows how much of the preview is left, with a **Sign In** link. When the 3 days are up, the graph shows **Commit Graph Preview Ended** for privately hosted repositories until you sign in or start a free Pro trial. The preview is only for signed-out use; a signed-in account without a Pro trial or paid plan sees the upgrade prompt on private repositories.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-01-v4@2x.png" alt="Commit Graph in GitLens showing branches and commits" class="help-center-img img-bordered">
@@ -71,7 +69,7 @@ The Commit Graph opens automatically when you click the GitLens icon in the Acti
 
 ### Commit Graph Header
 
-At the top of the graph, you’ll see:
+The Commit Graph header shows:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch**
@@ -82,19 +80,15 @@ From here, you can:
 
 - Click the branch name to switch branches
 - Click **Fetch** to update commit data
-- Click **Publish Repository** to open the Git Command Palette's **Publish** step with **Publish Repository…** selected, which creates a repository on a hosting provider and publishes the current branch to it; choose **Add Remote…** there instead to add a remote of your own (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). It appears in place of **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then
-- Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that aren't set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
+- Click **Publish Repository** to open the Git Command Palette's **Publish** step with **Publish Repository…** selected. That choice creates a repository on a hosting provider and publishes the current branch to it. To add a remote of your own instead, choose **Add Remote…** (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). **Publish Repository** replaces **Publish Branch** when the repository has no remotes, and **Fetch** is hidden then.
+- Click the account button to open its popover. The popover holds your account actions (**Synchronize Status**, **Manage Account**, **Send Feedback**, and **Sign Out**), the AI model you use and your GitKraken AI usage, your agents, and your connected integrations. Sections that are not set up yet offer **Set up AI**, **Set up agents**, or **Set up integrations**, which open GitLens Settings.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-info-01-v3@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v3@2x.png" alt="The top of the Commit Graph in the editor area: the tab reads &quot;Commit Graph: Playground2026&quot;, the header shows the current branch (main) with Push and &quot;Fetch (1wk ago)&quot; buttons, and the Fetch button's hover popover lists the upstream (origin/main on GitHub), &quot;Last fetched last week&quot; and the Auto-fetch option" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Access key branch controls directly from the header</figcaption>
 </figure>
 
-> **Note:** The Commit Graph is included in GitLens Community and available to all users on public or local repositories, without needing an account.
->
-> Only private repository access requires a [GitLens Pro subscription or trial](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens). Signed out, you get a 3-day preview of the Commit Graph on privately hosted repositories first.
->
-> We welcome your input—join the discussion on [GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
+> **Note:** To share feedback on the Commit Graph, join the [Commit Graph discussion on GitHub](https://github.com/gitkraken/vscode-gitlens/discussions/2158).
 
 ### Scope the Graph to a Worktree
 
@@ -122,13 +116,13 @@ When the Commit Graph is already visible, it follows the terminal you're working
 
 ### Configuration and Layout
 
-The Commit Graph offers extensive layout and configuration options so you can tailor the view to fit your workflow.
+You can change the Commit Graph's columns, where it opens, and how compact it is.
 
 ---
 
 #### Column Customization
 
-All columns in the Commit Graph are fully customizable:
+You can customize every column in the Commit Graph:
 
 - Drag and drop column headers to rearrange the layout.
 - Right-click a column header to toggle columns on or off.
@@ -158,7 +152,7 @@ To switch layouts:
 1. Open the **More Actions…** (⋯) menu in the top-right of the Commit Graph editor tab (or of the Commit Graph view in the side bar).
 2. Select **Prefer Commit Graph in Editor** or **Prefer Commit Graph as a View**.
 
-You can even open both layouts simultaneously.
+You can also open both layouts at the same time.
 
 <figure>
   <img src="/wp-content/uploads/gl-prefer-commit-graph-location-01-v4@2x.png" alt="The Commit Graph open in the editor area with the tab's More Actions (…) menu expanded, listing Prefer Commit Graph in Editor and Prefer Commit Graph as a View among the editor actions" class="help-center-img img-bordered">
@@ -192,7 +186,7 @@ Scroll markers appear alongside the Commit Graph scrollbar to highlight:
 - Selected rows
 - Search matches
 
-They provide quick navigation to key locations like `HEAD` or specific refs.
+Use them to jump to locations such as `HEAD` or specific refs.
 
 You can toggle scroll markers in [Commit Graph settings](#settings).
 
@@ -204,7 +198,7 @@ You can toggle scroll markers in [Commit Graph settings](#settings).
 
 ### Settings
 
-You can adjust Commit Graph preferences through the GitLens Settings panel.
+You can adjust Commit Graph preferences in GitLens Settings:
 
 1. Open the Command Palette:  
    <kbd>Cmd/Ctrl + Shift + P</kbd>
@@ -221,7 +215,7 @@ You can adjust Commit Graph preferences through the GitLens Settings panel.
 
 ### Repository Health
 
-GitLens keeps Git fast in your repositories. While VS Code is open, it runs safe, repository-local Git maintenance in the background at most once a day: it packs loose objects, repacks incrementally, and writes the commit-graph cache. This is the same routine work that `git gc` and `git maintenance` do, and it doesn't change your history. To turn it off, set `gitlens.gitOptimizations.enabled` to `false`, which also turns off Repository Health.
+GitLens keeps Git fast in your repositories. While VS Code is open, GitLens runs routine Git maintenance on each repository in the background. This is the same kind of work that `git gc` and `git maintenance` do, and it does not change your history. To turn it off, set `gitlens.gitOptimizations.enabled` to `false`, which also turns off Repository Health.
 
 The **Repository Health** visualization in the Commit Graph shows the state of each optimization and suggests the ones that would help your repository. To open it, run `GitLens: Show Repository Health` from the Command Palette, or select **Show Visualizations & Health** in the Commit Graph side bar and choose **Repository Health**.
 
@@ -240,15 +234,15 @@ Select **Run Maintenance Now** to run the maintenance tasks immediately. When Gi
 
 ### Rich Commit Search
 
-The Commit Graph includes a powerful search bar to locate commits by message, author, file, or even specific code changes.
+Use the Commit Graph search bar to find commits by message, author, file, or specific code changes.
 
 #### Natural Language Search `PRO`
 
 You can type plain-language queries (e.g., "changes to the login page last week") and GitKraken AI converts them into structured Git search operators automatically. Natural language search works in the Commit Graph search bar, the Search & Compare view, and the Search Commits command.
 
-In the Commit Graph, hover the query to see how GitKraken AI interpreted your request. Phrasing such as "only my commits" turns on filtering for that search, and "take me to…" jumps to the first match. If a natural language search finds nothing, the search box suggests ways to widen it, such as dropping the date filter or searching across all branches, each with its result count. If AI isn't available, select **Search as text instead** to run your words as a plain message search.
+In the Commit Graph, hover the query to see how GitKraken AI interpreted your request. Phrasing such as "only my commits" turns on filtering for that search, and "take me to…" jumps to the first match. If a natural language search finds nothing, the search box suggests ways to widen it, such as dropping the date filter or searching across all branches, each with its result count. If AI is not available, select **Search as text instead** to run your words as a plain message search.
 
-If a pattern with **Regular expression** turned on isn't valid regex, the Commit Graph matches it literally and dims the regex toggle. When that search finds nothing, you can choose **Match literally**, or **Fix with AI** to have GitKraken AI repair the pattern. A results bar under the graph shows how many matches are loaded (for example, "Showing 25 of 60 results"), with **Load More Results…** to load the rest.
+If a pattern with **Regular expression** turned on is not valid regex, the Commit Graph matches it literally and dims the regex toggle. When that search finds nothing, you can choose **Match literally**, or **Fix with AI** to have GitKraken AI repair the pattern. A results bar under the graph shows how many matches are loaded (for example, "Showing 25 of 60 results"), with **Load More Results…** to load the rest.
 
 #### Search Prefixes
 
@@ -256,7 +250,7 @@ Use the following search prefixes:
 
 - `commit:`
 - `message:`
-- `-message:` (excludes commits whose message contains the term; can't be combined with `message:` in the same query)
+- `-message:` (excludes commits whose message contains the term; cannot be combined with `message:` in the same query)
 - `author:`
 - `committer:` (also accepts `@me`)
 - `file:`
@@ -313,12 +307,12 @@ The Commit Graph supports right-click actions on branches, commits, tags, author
   <figcaption style="text-align: center; color: #888">Use context menus for advanced Git actions</figcaption>
 </figure>
 
-Popular options include:
+The context menus include these actions:
 
 - **Compare with Common Base** — View changes between the current and selected branches based on their shared ancestor.
 - **Open All Changes with Common Base** — Launch a multi-diff view showing all changes that would be merged.
 - **Squash**, **Drop**, **Reword**, and **Modify Commits** — Run interactive rebase operations directly from the graph without opening the Rebase Editor. Select one or more commits, right-click, and choose the desired operation.
-- **Fixup Commit...** — Right-click a commit to select the Working Changes row and pre-fill the commit message with `fixup! <subject>` of that commit. The commit button becomes **Commit Fixup**, and its menu adds **Commit Fixup & Squash**.
+- **Fixup Commit...** — Right-click a commit and select this action to select the Working Changes row and pre-fill the commit message with `fixup! <subject>` of that commit. The commit button becomes **Commit Fixup**, and its menu adds **Commit Fixup & Squash**.
 - **Squash Fixups...** — Right-click the current branch to fold its `fixup!` commits into the commits they target, after a confirmation.
 - **Undo Commit** — Appears as an inline action on the HEAD commit row to soft-reset the latest commit.
 - **Push to Commit** — Appears as an inline action on unpushed commit rows to push up to that specific commit.
@@ -327,13 +321,13 @@ Popular options include:
 
 ### Compare Mode `PRO`
 
-Compare mode lets you view comparisons directly inside the Commit Graph rather than switching to the Search & Compare view. Select two references to see Ahead, Behind, and All views inline within the graph details panel.
+Use Compare mode to view comparisons inside the Commit Graph instead of switching to the Search & Compare view. Select two references to see Ahead, Behind, and All views inline within the graph details panel.
 
 ---
 
 ### Compose Mode `PRO`
 
-Compose mode integrates commit composition directly within the Commit Graph. Select the Working Changes row to see your uncommitted work, then switch to Compose mode in the details panel to create commits from those changes or to reorganize branch history. GitKraken AI can propose the commits and messages for you to review and refine before applying them.
+Use Compose mode to compose commits inside the Commit Graph. Select the Working Changes row to see your uncommitted work, then switch to Compose mode in the details panel to create commits from those changes or to reorganize branch history. GitKraken AI can propose the commits and messages for you to review and refine before applying them.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-composer-17-4-01-v6@2x.png" alt="Commit Graph in Compose mode: the ringed Compose (wand) action on the Working Changes row, and the composer panel beside the graph listing Staged changes and Unstaged changes entries, the changed files, and the Instructions box with the Compose button" class="help-center-img img-bordered">
@@ -351,16 +345,13 @@ Click the **Compose** button to generate an AI-assisted commit message based on 
 
 ### Multi-File Selection
 
-The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. Selected files can be batch-operated on with stage, unstage, discard, and stash actions. Inline per-file action buttons are also available for individual operations.
+The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. You can stage, unstage, discard, or stash all the selected files at once. Each file also has its own inline action buttons.
 
-To ignore untracked files, right-click one or more of them in Working Changes and select **Add to .gitignore**. GitLens appends an entry for each file to the `.gitignore` at the repository root, creates that file if it doesn't exist, and opens it so you can review the change.
+To ignore untracked files, right-click one or more of them in Working Changes and select **Add to .gitignore**. GitLens appends an entry for each file to the `.gitignore` at the repository root, creates that file if it does not exist, and opens it so you can review the change.
 
 ### Pull Request Indicators
 
-For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with active pull requests. To enable this:
-
-1. Connect your account using [rich integration settings](/gitlens/gitlens-settings/#remote-provider-integration-settings).
-2. The icon will appear next to branches in the graph once linked.
+For GitHub and GitLab, GitLens shows a **Pull Request icon** on branches with active pull requests. To show the icon, connect your account using [rich integration settings](/gitlens/gitlens-settings/#remote-provider-integration-settings). The icon then appears next to linked branches in the graph.
 
 <figure>
   <img src="/wp-content/uploads/gl-pull-request-icon-01-v3@2x.png" alt="The Commit Graph with the fixture/code-suggest-demo branch pill ringed: after the branch name and its origin remote the pill carries the pull-request icon, which marks the branch as having an associated open pull request" class="help-center-img img-bordered">
@@ -371,14 +362,14 @@ For GitHub and GitLab, GitLens displays a **Pull Request icon** on branches with
 
 ### Hiding Remotes, Branches, or Tags
 
-You can hide individual remotes, branches, or tags from the Commit Graph to reduce clutter and focus your view.
+You can hide individual remotes, branches, or tags from the Commit Graph to show only the refs you are working with.
 
 - **To hide**: Right-click a branch or tag pill and select **Hide Local Branch**, **Hide Remote Branch**, or **Hide Tag**. To hide every branch of a remote, including branches added later, right-click a remote branch pill or a remote in the side bar's **Remotes** panel and select **Hide Remote**. To hide whole classes of refs, use the scope/filter popover next to the search box.
-- **To show again**: Use the **Hide** panel at the top of the graph and reselect the ref. Hidden refs also stay listed, dimmed, in the side bar's **Branches**, **Remotes**, and **Tags** panels; right-click one and select **Show Local Branch**, **Show Remote Branch**, **Show Tag**, or **Show Remote**. Showing one branch of a hidden remote keeps the rest of that remote hidden.
+- **To show again**: In the Commit Graph header, select the hidden refs button (its tooltip reads, for example, *2 hidden branches and tags*) to open the **Hidden Branches / Tags** menu, then select the ref, or select **Show All**. Hidden refs also stay listed, dimmed, in the side bar's **Branches**, **Remotes**, and **Tags** panels; right-click one and select **Show Local Branch**, **Show Remote Branch**, **Show Tag**, or **Show Remote**. Showing one branch of a hidden remote keeps the rest of that remote hidden.
 
 <figure>
   <img src="/wp-content/uploads/gl-hide-refs-01-v3@2x.gif" alt="Hiding a branch in the Commit Graph: right-clicking the conflict-branch ref opens its context menu, and choosing Hide Local Branch removes the ref from the graph" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Use the “Hide” option to declutter the graph</figcaption>
+  <figcaption style="text-align: center; color: #888">Hide a branch from the graph</figcaption>
 </figure>
 
 #### Filtering Options
@@ -391,7 +382,7 @@ You can further control what is shown using the filter dropdown:
 - **Agent Branches** — Display only branches with currently running agents or agents idle for less than 24 hours
 - **Favorited Branches** — Display only the branches you starred as favorites
 
-  The Agent Branches and Favorited Branches modes don't add the current branch automatically. When a mode narrows the graph, a bar under the graph shows how many of the matching branches are loaded (for example, "Showing 3 of 8 branches"), with **Load More…** to load the rest.
+  The Agent Branches and Favorited Branches modes do not add the current branch automatically. When a mode narrows the graph, a bar under the graph shows how many of the matching branches are loaded (for example, "Showing 3 of 8 branches"), with **Load More…** to load the rest.
 - Toggle visibility of:
   - Remote-only branches
   - Tags
@@ -407,11 +398,11 @@ You can further control what is shown using the filter dropdown:
 
 ### Minimap
 
-The **Minimap** gives you a visual summary of repository activity at a glance:
+The **Minimap** shows a summary of repository activity over time:
 
-- Quickly locate `HEAD`, remotes, tags, and stashes
-- Jump to any region in the graph using visual cues
-- Toggle it via the **Minimap icon** in the top right
+- Locate `HEAD`, remotes, tags, and stashes
+- Jump to any region in the graph
+- Toggle it with the **Minimap icon** in the top right
 
 <figure>
   <img src="/wp-content/uploads/gl-minimap-2.png" alt="Minimap view in Commit Graph" class="help-center-img img-bordered">
@@ -445,9 +436,9 @@ Customize the Minimap via the **gear at the right end of the minimap**:
 | **Blue blocks (bottom)** | Local branches |
 | **Highlighted area** | Current view region |
 
-> **Note:** We welcome your feedback on the Minimap. Share your thoughts on the [GitLens GitHub Discussions](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
+> **Note:** To share feedback on the Minimap, join the [Minimap discussion in GitLens GitHub Discussions](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
 
-To send feedback from inside VS Code, select **Send Feedback...** (the feedback icon) in the Commit Graph toolbar, or **Send Feedback** in the header's account popover. In the dialog, choose **General**, **Bug**, or **Feature**, write your message, and select **Send Feedback**. You don't need to be signed in. When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add details.
+To send feedback from inside VS Code, select **Send Feedback...** (the feedback icon) in the Commit Graph toolbar, or **Send Feedback** in the header's account popover. In the dialog, choose **General**, **Bug**, or **Feature**, write your message, and select **Send Feedback**. You do not need to be signed in. When you send a bug report, GitLens also opens a GitHub issue prefilled with your message so you can add details.
 
 ***
 
@@ -455,7 +446,7 @@ To send feedback from inside VS Code, select **Send Feedback...** (the feedback 
 
 For workflows and examples, see [Visual History](/gitlens/gl-visual-file-history/).
 
-Visual History (formerly Visual File History) provides a clear timeline of changes—showing when, what, and who modified your code—helping you quickly understand how a file, folder, repository, or branch evolved.
+Visual History (formerly Visual File History) shows a timeline of changes to a file, folder, repository, or branch: when the code changed, what changed, and who changed it.
 
 Visual History supports multiple scopes:
 
@@ -464,12 +455,13 @@ Visual History supports multiple scopes:
 - **Repository** — View the history of the entire repository
 - **Branch** — Slice the history by branch to focus on specific lines of work
 
-To open Visual History:
-- Use the GitLens **Inspect Sidebar**, or
-- From the **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
+To open Visual History, use one of the following:
+
+- The **GitLens Inspect** side bar
+- The **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
 
 <figure>
-  <img src="/wp-content/uploads/gl-visual-file-history-01-v3@2x.png" alt="Visual History view for CHANGELOG.md showing eight commits by four authors plotted as colour-coded bubbles over the last four weeks, with the additions and deletions of each commit shown as bars" class="help-center-img img-bordered">
+  <img src="/wp-content/uploads/gl-visual-file-history-01-v3@2x.png" alt="Visual History view for CHANGELOG.md showing eight commits by four authors plotted as color-coded bubbles over the last four weeks, with the additions and deletions of each commit shown as bars" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Track authorship, size, and timing of file changes</figcaption>
 </figure>
 
@@ -482,7 +474,7 @@ To open Visual History:
 - **Bubbles:** Color-coded per author; bubble size reflects the magnitude of changes
 - **Bars (right y-axis):** Line additions (green) and deletions (red)
 
-Hover over a bubble or bar for detailed insights.
+Hover over a bubble or bar to see the commit's details.
 
 <figure>
   <img src="/wp-content/uploads/visual-file-history-hover.png" alt="Hover over commit for details" class="help-center-img img-bordered">
@@ -495,6 +487,6 @@ Hover over a bubble or bar for detailed insights.
 
 ## Commit File Details in Large Histories
 
-In repositories where loading commit file details has been slow, the Commits view and other history views load a commit's or stash's file details only when they're shown. This makes large histories open faster, at the cost of one extra Git call each time you view a commit's files. GitLens applies this automatically only in repositories where it has recorded slow file-detail loading, and only while `gitlens.gitOptimizations.enabled` is on.
+In repositories where loading commit file details has been slow, the Commits view and other history views load a commit's or stash's file details only when they are shown. Large histories then open faster. GitLens does this automatically only in those repositories, and only while `gitlens.gitOptimizations.enabled` is on.
 
 To choose the behavior yourself, set `gitlens.advanced.commits.delayLoadingFileDetails`: `true` always delays loading file details, `false` never delays, and `null` (the default) lets GitLens decide per repository.

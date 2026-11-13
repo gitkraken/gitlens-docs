@@ -35,9 +35,7 @@ custom_fields:
 
 ## Commit Graph
 
-The Commit Graph is the starting point for working in GitLens. It brings repository history, branches, worktrees, Working Changes, pull requests, and supported agent activity into one connected workbench, so you can understand what's happening and move changes toward merge without rebuilding context across tools.
-
-Built on a high-performance rendering engine, the graph stays responsive on large repositories, showing commits, branches, and collaborators in one place.
+Start your work in GitLens from the Commit Graph. It shows repository history, branches, collaborators, worktrees, Working Changes, pull requests, and supported agent activity together, so you can see what is happening and move changes toward merge from one place. The graph stays responsive on large repositories.
 
 The Commit Graph is included in **GitLens Community** and available to everyone on public and local repositories &mdash; no account required. A GitLens Pro subscription or trial is required only for private repositories.
 
@@ -68,14 +66,14 @@ The Commit Graph opens in a new tab, where you can scroll through history and re
 If no repository is open, the Commit Graph shows **No repository open** with two groups of ways to get going:
 
 - **Get started**: **Open a Folder**, **Clone a Repository**, or **Start a New Project**. In VS Code for the Web, this group offers **Open a Remote Repository** instead.
-- **Start from your work**: **Start Work on an Issue** picks an issue from your connected integrations and creates a branch for it, and **Start Review on a PR** checks out a pull request for review. This group isn't available in VS Code for the Web.
+- **Start from your work**: **Start Work on an Issue** picks an issue from your connected integrations and creates a branch for it, and **Start Review on a PR** checks out a pull request for review. This group is not available in VS Code for the Web.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-no-repo-empty-state-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with no repository open: the GitLens logo, No repository open, and two groups of start actions — Get started (Open a Folder, Clone a Repository, Start a New Project) and Start from your work (Start Work on an Issue, Start Review on a PR)." />
   <figcaption style="text-align: center; color: #888">The Commit Graph when no repository is open</figcaption>
 </figure>
 
-With no repository open, Start Work lists issues from all of your connected integrations. If GitLens can't find the repository of the issue you pick, it asks how to find it: select **Clone Repository...** or **Choose a Local Folder...**, then continue to create the branch. Start Review offers the same two options when it can't find a local copy of the pull request's repository.
+With no repository open, Start Work lists issues from all of your connected integrations. If GitLens cannot find the repository of the issue you pick, it asks how to find it: select **Clone Repository...** or **Choose a Local Folder...**, then continue to create the branch. Start Review offers the same two options when it cannot find a local copy of the pull request's repository.
 
 ---
 
@@ -85,14 +83,20 @@ At the top of the Commit Graph, you’ll see:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch** (click to switch branches)
-- **Last fetched time** — shown beside **Fetch** and in its hover (click **Fetch** to update). A repository with no remotes has nothing to fetch, so **Fetch** isn't shown; instead the header offers **Publish Repository** (see [Next steps](#next-steps))
+- **Last fetched time** — shown beside **Fetch** and in its hover (click **Fetch** to update). A repository with no remotes has nothing to fetch, so **Fetch** is not shown; instead the header offers **Publish Repository** (see [Next steps](#next-steps))
+- **Notifications** — when you're signed in, a bell shows how many unread messages from GitKraken you have. Select it to see the newest notifications, select **Mark as Read** or **Mark All as Read**, or select **View All Notifications** to open the Notifications inbox in [GitLens Settings](/gitlens/gitlens-settings/)
 - **Account** — the account button opens a popover with your plan and the **Synchronize Status**, **Manage Account**, **Sign Out**, and **Send Feedback** actions, plus rows for your connected integrations, your AI model and GitKraken AI usage, and your agents
 
-You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` setting. When enabled, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, keeping your view up to date without manual refreshes.
+You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` setting. When the setting is on, GitLens periodically runs `git fetch` for repositories visible in the Commit Graph, so the graph stays up to date without manual refreshes.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-info-01-v3@2x.png" srcset="/wp-content/uploads/gl-graph-info-01-v3@2x.png" class="help-center-img img-bordered" alt="The top of the Commit Graph in the editor area: the tab reads &quot;Commit Graph: Playground2026&quot;, the header shows the current branch (main) with Push and &quot;Fetch (1wk ago)&quot; buttons, and the Fetch button's hover popover lists the upstream (origin/main on GitHub), &quot;Last fetched last week&quot; and the Auto-fetch option" />
   <figcaption style="text-align: center; color: #888">Repository details in the Commit Graph toolbar</figcaption>
+</figure>
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-notifications-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph header's notifications bell with an unread badge of 4, its Notifications popover open below it: Mark All as Read at the top, four unread notifications tagged Help, Offer, Security and System, each with Mark as Read (two also with Claim Offer and View Status), and View All Notifications at the bottom." />
+  <figcaption style="text-align: center; color: #888">GitKraken notifications in the Commit Graph header</figcaption>
 </figure>
 
 ---
@@ -101,7 +105,7 @@ You can enable automatic fetching with the `gitlens.graph.autoFetch.enabled` set
 
 - The Commit Graph is included in **GitLens Community** and available to all users on **public** and **local** repositories, with no account required.
 - A **GitLens Pro subscription or trial** is required only for use with **private repositories**.
-- If you aren't signed in, the first time you open the Commit Graph on a privately hosted repository a 3-day preview starts automatically. While it runs, a banner above the graph shows how much time is left (for example, *Previewing the Commit Graph on privately hosted repos — 3 days left.*) with a **Sign In** link. The 3 days run continuously from the first open.
+- If you are not signed in, the first time you open the Commit Graph on a privately hosted repository a 3-day preview starts automatically. While it runs, a banner above the graph shows how much time is left (for example, *Previewing the Commit Graph on privately hosted repos — 3 days left.*) with a **Sign In** link. The 3 days run continuously from the first open.
 - When the preview ends, the Commit Graph shows **Commit Graph Preview Ended** for privately hosted repositories. Sign in or start a free Pro trial to keep using it there. If your workspace also has public or local repositories, select **Switch Repos** to keep working in one of them.
 - The preview applies only while you're signed out. If you're signed in without a Pro trial or paid plan, private repositories show the upgrade prompt instead.
 
@@ -129,12 +133,12 @@ You can also share ideas in the [GitLens Commit Graph discussion on GitHub](http
 
 ### Graph Sidebar
 
-The Commit Graph includes an expandable sidebar panel that provides quick access to your repository refs. The sidebar lists branches, remotes, stashes, tags, and worktrees in both list and tree views. Click the sidebar toggle to expand or collapse it, or use the `gitlens.graph.sidebar.pinned` setting to keep it pinned open.
+The Commit Graph includes an expandable sidebar panel that lists your repository refs. The sidebar lists branches, remotes, stashes, tags, and worktrees in both list and tree views. Click the sidebar toggle to expand or collapse it, or use the `gitlens.graph.sidebar.pinned` setting to keep it pinned open.
 
 The sidebar contains several panels, including:
 
-- **Overview**: Displays branch cards with Working Changes stats and upstream tracking information at a glance.
-- **Agents**: Lists agent sessions so you can monitor and manage them. Branches with running agent sessions display status pills directly in the graph, so you can track agent activity at a glance. Select **Show Agent Kanban** in the sidebar to see sessions as a Kanban board.
+- **Overview**: Displays branch cards with Working Changes stats and upstream tracking information.
+- **Agents**: Lists agent sessions so you can monitor and manage them. Branches with running agent sessions display status pills directly in the graph, so you can track agent activity. Select **Show Agent Kanban** in the sidebar to see sessions as a Kanban board.
 - **Worktrees**: Lists your worktrees. Hover a worktree and select **Scope to Worktree** to work in it from the graph (see [Scope to a Worktree](#scope-to-a-worktree)).
 - **Pull Requests**: Lists the repository's pull requests. If the repository has no remotes yet, the panel explains that publishing comes first and offers a **Publish Repository…** button, which opens the same Publish step as **Publish Repository** in [Next steps](#next-steps).
 
@@ -152,10 +156,13 @@ Select **Show Past Sessions** in the **Agents** panel to include sessions that h
 
 #### Detail Sheets
 
-Clicking on a branch, pull request, comparison, or agent session opens a slide-out detail sheet with rich information:
+Clicking a branch, pull request, comparison, or agent session opens a slide-out detail sheet:
 
-- **Branch sheet**: Shows branch details, tracking status, and recent commits.
-- **Pull request sheet**: Displays PR description, reviewers, status checks, and stacked PR information when applicable.
+- **Branch sheet**: Shows branch details, tracking status, and recent commits. When the branch's work has landed in its merge target, the merge target card shows how sure GitLens is and offers **Delete Branch** (or **Delete Worktree**):
+  - **Merged** and **Safe to delete**: the branch's commits are in the target, or its pull request merged.
+  - **Likely Merged** and **Squashed or rebased**: the target has the same changes as different commits.
+  - **Merged Locally** and **Not yet pushed to the remote**: the work is only in your local copy of the target. The card also offers **Push** for that local branch, for example **Push main**.
+- **Pull request sheet**: Displays PR description, reviewers, status checks, and stacked PR information when applicable. For a pull request in a GitHub merge queue, it shows the pull request's place in the queue (see [Pull Request Information](#pull-request-information)).
 - **Compare sheet**: Shows file-level comparison between branches or commits, with a pinned mode to keep the comparison visible while navigating.
 - **Rebase summary sheet**: Appears after a rebase operation, summarizing what changed.
 - **WIP conflict sheet**: Surfaces during conflict resolution to help resolve working changes.
@@ -227,7 +234,7 @@ Two settings control scoping. You can open them from **Worktree Scope Settings..
 
 #### Follow the Active Terminal
 
-When the Commit Graph is visible, it follows your active terminal. Switching to a terminal, or to a Claude Code conversation tab, selects the Working Changes row of the repository or worktree that the terminal is in. If an agent session runs in the terminal, the graph follows the session's worktree. The graph doesn't open itself to follow a terminal.
+When the Commit Graph is visible, it follows your active terminal. Switching to a terminal, or to a Claude Code conversation tab, selects the Working Changes row of the repository or worktree that the terminal is in. If an agent session runs in the terminal, the graph follows the session's worktree. The graph does not open itself to follow a terminal.
 
 - To turn following off, select **Stop Following Active Terminal** in the **More Actions…** (⋯) menu of the Commit Graph editor tab or view. Select **Follow Active Terminal** to turn it back on. Both commands change the `gitlens.graph.followTerminal.enabled` setting, which is on by default.
 - By default, the graph ignores terminals in other repositories. Enable `gitlens.graph.followTerminal.allowRepositorySwitching` to let the graph switch to another repository.
@@ -239,7 +246,7 @@ When the Commit Graph is visible, it follows your active terminal. Switching to 
 
 #### Ref Find
 
-The ref-finder widget provides a typeahead search for quickly jumping to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
+The ref-finder widget is a typeahead search that jumps to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
 
 ---
 
@@ -252,9 +259,9 @@ When you select a commit, the details panel displays the commit message, author,
 The details panel supports multiple modes:
 
 - **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits. This replaces navigating to the standalone Search and Compare view for graph comparisons.
-- **Compose mode**: Provides an integrated commit composition experience, letting you craft commit messages and select files to commit without leaving the graph. You can also access Compose from the graph context menu.
+- **Compose mode**: Lets you write commit messages and select files to commit without leaving the graph. You can also access Compose from the graph context menu.
 - **Recompose**: Helps clean up existing branch history by reorganizing selected commits into a clearer, more intentional sequence. GitKraken AI can propose the new structure and commit messages for you to review and refine before applying the result. Available from the graph context menu, Recompose can operate on an entire branch, from a specific commit, or on selected commits.
-- **Review mode**: Helps you inspect commits or Working Changes before they move forward. GitKraken AI can surface potential bugs, security issues, and other areas that deserve attention &mdash; tagged by severity &mdash; while you decide what needs to change. You can configure separate AI models for compose and review using per-feature model scoping, and customize review behavior with the `gitlens.ai.reviewChanges.customInstructions` setting.
+- **Review mode**: Lets you work through the changes in Working Changes, a commit, or a range of commits file by file. Mark each file as viewed with its checkbox, set files aside with **Exclude from Review**, and follow your progress until the review is complete. With GitKraken AI, **Review Diff** adds findings tagged by severity that you can dismiss, comment on, or hand to a coding agent with **Address Findings with Agent**. Reading and checking off files works without AI. See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-details-panel-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with the embedded details panel on the right, showing commit message, author, and changed files for the selected commit" />
@@ -270,7 +277,26 @@ When you select a Working Changes row that has no uncommitted changes, the detai
   <figcaption style="text-align: center; color: #888">The diverged-branch step in Next steps</figcaption>
 </figure>
 
-If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code can't publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
+When the branch's work has landed in its merge target, cleaning it up becomes the next step. The step says how the work landed:
+
+- **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree).
+- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first.
+- **Branch Merged Locally into &lt;target&gt;** (or **Branch Likely Merged Locally into &lt;target&gt;**) when the work is only in your local copy of the target, which has not been pushed. The step offers **Push** for your local target branch first, for example **Push main**, with **Delete Branch** (or **Delete Worktree**) as the alternate action.
+
+The publish, push, rebase, and recompose steps for the branch no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-next-steps-merged-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel for a clean Working Changes row on feature/settlement-export, whose Next steps list opens with the ringed &quot;Branch Merged into origin/main&quot; step and its Delete Branch button, followed only by Review Changes." />
+  <figcaption style="text-align: center; color: #888">Next steps for a branch whose work has landed</figcaption>
+</figure>
+
+Other branch states change the list too:
+
+- If the branch's remote branch was deleted, for example after its pull request merged, the list starts with **&lt;branch&gt; is missing from the remote** and offers **Delete Local Branch**, with **Publish** as the alternate action.
+- If you added commits after the branch's pull request merged, the pull request step reads **Create a Pull Request for N New Commits**.
+- While the branch's pull request is in a GitHub merge queue, the list holds back push, force push, rebase, merge, and recompose steps and shows *This pull request is in the merge queue, so changes to its branch aren't suggested until it merges or leaves the queue.* (see [Pull Request Information](#pull-request-information)).
+
+If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gl-features-git-commands-and-rebase/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code cannot publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-publish-repository-01-v4@2x.png" class="help-center-img img-bordered" alt="The Commit Graph for a repository with no remotes: the header shows Publish Repository with no Fetch button, and the Working Changes details list the Next steps &quot;Create a remote repository and publish main to it&quot; with Publish Repository and &quot;Add a remote, then publish main to it&quot; with Add Remote." />
@@ -279,9 +305,9 @@ If the repository has no remotes yet, the list instead offers **Create a remote 
 
 #### Multi-file Selection
 
-File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for quick single-file operations.
+File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for single-file operations.
 
-To ignore an untracked file, right-click it in the Working Changes file list and select **Add to .gitignore**. With several files selected, the action applies to the untracked ones. GitLens adds each file as a pattern anchored to the repository root, such as `/local-config.json`, to the `.gitignore` file at the root of the repository. GitLens creates the file if it doesn't exist and opens it so you can see what was added.
+To ignore an untracked file, right-click it in the Working Changes file list and select **Add to .gitignore**. With several files selected, the action applies to the untracked ones. GitLens adds each file as a pattern anchored to the repository root, such as `/local-config.json`, to the `.gitignore` file at the root of the repository. If the file does not exist, GitLens creates it, and then opens it so you can see what was added.
 
 <figure>
   <img src="/wp-content/uploads/gl-wip-add-to-gitignore-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph details panel listing the Working Changes files, with the context menu open on the untracked local-config.json and its ringed Add to .gitignore action beneath the stage and discard actions." />
@@ -335,7 +361,7 @@ The `gitlens.graph.style` setting controls the overall row layout of the graph. 
 
 #### Lane Colors and Row Markers
 
-The graph uses perceptually-uniform lane colors that are tuned for both dark and high-contrast themes. Row markers indicate important commits at a glance:
+The graph's lane colors are tuned for both dark and high-contrast themes. Row markers indicate important commits:
 - **Green marker**: HEAD commit
 - **Blue marker**: upstream tracking commit
 - **Worktree marker**: Working Changes row of another worktree
@@ -408,7 +434,7 @@ Scroll markers highlight key points in the Commit Graph, including:
 - Search results
 - Working Changes rows
 
-Use scroll markers to quickly jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gl-features-commit-graph-and-history/#settings).
+Use scroll markers to jump to important points such as `HEAD` or refs. You can toggle this feature in the [Commit Graph settings](/gitlens/gl-features-commit-graph-and-history/#settings).
 
 The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete statistics on worktree Working Changes rows. The `gitlens.graph.minimap.reversed` setting reverses the minimap direction.
 
@@ -431,8 +457,6 @@ Search for **GitLens: Open Settings**.
   <img src="/wp-content/uploads/gl-commit-graph-settings-01-v4@2x.png" class="help-center-img img-bordered" alt="VS Code Command Palette filtered to &quot;GitLens: Settings&quot; with the GitLens: Open Settings command highlighted, the step that opens the GitLens settings for the Commit Graph" />
   <figcaption style="text-align: center; color: #888">Opening Commit Graph settings</figcaption>
 </figure>
-
-> **Note:** The `gitlens.graph.showDetailsView` setting and the standalone Graph Details view have been removed. The details panel is now always embedded in the Commit Graph. The `gitlens.proxy` setting has also been removed.
 
 ---
 
@@ -463,7 +487,7 @@ You can also:
 Use these filters in the search bar:
 - `commit:`
 - `message:`
-- `-message:` excludes commits whose message contains a term (you can't combine it with `message:`)
+- `-message:` excludes commits whose message contains a term (you cannot combine it with `message:`)
 - `author:`
 - `committer:` filters by the person who committed the change (supports `@me`)
 - `file:`
@@ -471,14 +495,14 @@ Use these filters in the search bar:
 - `type:merge` shows only merge commits (`is:merge` also works)
 - `@me`
 
-You can also use **natural language search** to describe what you are looking for in plain English. GitLens uses AI to convert your query into the appropriate structured search operators; hover the search query to see how GitLens interpreted it. A request such as "only my commits" filters the graph to the matches, and a request such as "take me to" jumps to the first match. If a natural-language search finds nothing, GitLens suggests broader searches with their result counts, such as searching without the date filter or across all branches. If AI isn't available, select **Search as text instead**. Time-based operators such as `after:` and `before:` are available for filtering commits by date.
+You can also use **natural language search** to describe what you are looking for in plain English. GitLens uses AI to convert your query into the appropriate structured search operators; hover the search query to see how GitLens interpreted it. A request such as "only my commits" filters the graph to the matches, and a request such as "take me to" jumps to the first match. If a natural-language search finds nothing, GitLens suggests broader searches with their result counts, such as searching without the date filter or across all branches. If AI is not available, select **Search as text instead**. Time-based operators such as `after:` and `before:` are available for filtering commits by date.
 
 Additional options:
 - Match all
 - Match case
 - Use regular expressions
 
-If a regular expression isn't valid, GitLens matches the pattern literally instead. When that search finds nothing, select **Match literally** to turn off regular expressions, or **Fix with AI** to have AI repair the pattern. When there are more results than the graph has loaded, a bar shows how many results are loaded, with **Load More Results…** to load the rest.
+If a regular expression is not valid, GitLens matches the pattern literally instead. When that search finds nothing, select **Match literally** to turn off regular expressions, or **Fix with AI** to have AI repair the pattern. When there are more results than the graph has loaded, a bar shows how many results are loaded, with **Load More Results…** to load the rest.
 
 <figure>
   <img src="/wp-content/uploads/gl-search-options-01-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph search box with the query &quot;fix&quot; and a ring around the search option toggles at its right end: Match Case, Match Whole Word, Use Regular Expression and Match All, next to the 1 of 6 result counter" />
@@ -516,7 +540,7 @@ Helpful context menu actions include:
 
 Right-click a Working Changes row for actions on its worktree:
 
-- **Start Agent Session...**: Starts a session in the worktree with your default agent, or asks you to choose an agent if you haven't set one. Select **Always use this agent** in that list before you choose to make the agent your default. A CLI agent starts in a terminal at the worktree.
+- **Start Agent Session...**: Starts a session in the worktree with your default agent, or asks you to choose an agent if you have not set one. Select **Always use this agent** in that list before you choose to make the agent your default. A CLI agent starts in a terminal at the worktree.
 - **Start Agent Session With...**: Asks you to choose the agent before starting the session.
 - **Run Task on Worktree...**: Runs a VS Code task in the worktree (see [Working Changes Rows](#working-changes-rows)).
 - **Copy Branch Name**: Copies the name of the branch checked out in the worktree.
@@ -532,6 +556,7 @@ Auto-Rebase carries a rebase forward through the conflicts GitKraken AI can reso
 - The `gitlens.ai.autoRebase.confidenceThreshold` setting (0 to 1) controls how confident the AI must be before automatically applying a resolution.
 - Use `gitlens.ai.resolveConflicts.customInstructions` to provide custom instructions that guide how the AI resolves conflicts.
 - When Auto-Rebase pauses, its notification offers **Review & Resolve**, **Resume with AI**, and **Abort Rebase**. The resolve panel in the graph also offers **Resume with AI** and **Abort Rebase**.
+- **Review & Resolve** opens the resolve panel with the conflicts from the paused step. Once every conflict has a resolution, select **Apply & Resume with AI** to apply the resolutions and let Auto-Rebase finish the rest of the rebase. To apply them without resuming, select **Apply Resolutions** (its label shows the count, for example **Apply 3 Resolutions**).
 - If the result is unsatisfactory, select **Undo** in the completion notification or **Undo Rebase** in the rebase summary sheet to reset the branch to its pre-rebase state.
 
 During the rebase, a progress animation appears in the graph to indicate the operation is in progress. A rebase summary sheet opens in the sidebar when the operation completes.
@@ -546,7 +571,7 @@ If the repository has no remotes yet, the sidebar's pull request panel explains 
 
 For GitHub repositories, the graph also recognizes **stacked pull requests**. When a branch is part of a PR stack, the PR sheet in the sidebar shows the stack ID, the total number of PRs in the stack, and the current PR's position. Merge operations are stack-aware, distinguishing between merging a single layer and merging the entire stack.
 
-When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you don't have locally is created from its remote branch first. Commit or stash your changes before you start.
+When a stack has fallen behind its base branch or conflicts with it, the PR sheet shows a **Rebase Stack...** button beside **Merge Stack**, and the stack's row in the sidebar's pull request panel offers **Rebase Stack...** as an action. The button's menu holds **Auto-Rebase Stack...**. GitLens rebases every branch in the stack from the bottom up: the bottom branch onto the base branch, then each branch onto the one below it. Branches whose pull requests are already merged are skipped, and a branch you do not have locally is created from its remote branch first. Commit or stash your changes before you start.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-pr-sheet-rebase-stack-01-v3@2x.png" class="help-center-img img-bordered" alt="The pull request sheet for Document rate limiting, the top pull request in a three-layer stack, with the Rebase Stack split button and its stack count ringed beside Merge Stack." />
@@ -563,6 +588,21 @@ When the rebase finishes, GitLens switches back to the branch you started on and
 <figure>
   <img src="/wp-content/uploads/gl-pull-request-icon-01-v3@2x.png" class="help-center-img img-bordered" alt="The Commit Graph with the fixture/code-suggest-demo branch pill ringed: after the branch name and its origin remote the pill carries the pull-request icon, which marks the branch as having an associated open pull request" />
   <figcaption style="text-align: center; color: #888">Pull request icon in Commit Graph</figcaption>
+</figure>
+
+#### Pull Requests in a GitHub Merge Queue
+
+For github.com repositories whose base branch merges through a merge queue, the PR sheet works with the queue. Merge queues are supported on github.com only, not on GitHub Enterprise.
+
+- When the base branch merges only through its merge queue, a ready pull request offers **Add to Merge Queue...** in place of a merge button.
+- A queued pull request shows the **In merge queue** verdict with its place in the queue and the state of its checks, a **View Merge Queue** button that opens the queue on GitHub, and **Remove from Merge Queue...**. Removing a pull request loses its place; adding it back puts it at the end of the queue.
+- If the queue removes the pull request because its checks failed, the sheet shows **Failed in the merge queue**, and you can add it back after a fix.
+
+While a pull request is queued, the Commit Graph stops suggesting changes to its branch (see [Next Steps](#next-steps)). Launchpad also tracks queued pull requests; see [Launchpad](/gitlens/gl-launchpad/#pull-requests-in-a-github-merge-queue).
+
+<figure>
+  <img src="/wp-content/uploads/gl-graph-pr-sheet-merge-queue-01-v2@2x.png" class="help-center-img img-bordered" alt="The Commit Graph pull request sheet for Add a release checklist #13, labeled In Merge Queue, with the In merge queue verdict reading &quot;#1 in the merge queue, checks running&quot; and the View Merge Queue and Remove from Merge Queue... buttons." />
+  <figcaption style="text-align: center; color: #888">A queued pull request in the PR sheet</figcaption>
 </figure>
 
 ---
@@ -607,7 +647,7 @@ You can also dim merge commit rows for clarity.
 
 ### Minimap
 
-The Minimap provides a high-level overview of repository activity. It shows commits, branches, HEAD/upstream, and more, letting you quickly jump to points of interest.
+The Minimap provides a high-level overview of repository activity. It shows commits, branches, HEAD/upstream, and more, and lets you jump to points of interest.
 
 - Select the **Toggle Minimap** icon in the Commit Graph toolbar to enable or disable it.  
 - Use the gear at the right end of the minimap to switch between **Commits** or **Lines Changed** views.  
@@ -636,4 +676,4 @@ The Minimap provides a high-level overview of repository activity. It shows comm
   - Pink blocks = stashes  
   - Blue blocks = local branches  
 
-> **Note:** We’d love your feedback on the Minimap. Please share it on the [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).
+> **Note:** Share your feedback on the Minimap on the [GitHub Discussion board](https://github.com/gitkraken/vscode-gitlens/discussions/2477#discussion-4807133).

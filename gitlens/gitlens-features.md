@@ -94,8 +94,10 @@ custom_fields:
         - "ai-explanations-preview|gl-features-ai-and-agents#ai-explanations"
         - "ai-commit-explanations-pro|gl-features-ai-and-agents#ai-commit-explanations-pro"
         - "ai-changelog-creation-advanced|gl-features-ai-and-agents#ai-changelog-creation-pro"
-        - "ai-generate-commits-pro|gl-features-ai-and-agents#commit-composer-view-pro"
-        - "ai-rebase-pro|gl-features-ai-and-agents#commit-composer-view-pro"
+        - "ai-changelog-creation-pro|gl-features-ai-and-agents#ai-changelog-creation-pro"
+        - "ai-commit-composition-pro|gl-features-ai-and-agents#ai-commit-composition-pro"
+        - "ai-generate-commits-pro|gl-features-ai-and-agents#ai-commit-composition-pro"
+        - "ai-rebase-pro|gl-features-ai-and-agents#ai-commit-composition-pro"
         - "auto-rebase-pro|gl-features-ai-and-agents#auto-rebase-pro"
         - "commit-composer-view-pro|gl-features-ai-and-agents#commit-composer-view-pro"
         - "interactive-draft-commits|gl-features-ai-and-agents#interactive-draft-commits"
@@ -113,7 +115,8 @@ custom_fields:
         - "conflict-detection|gl-features-git-commands-and-rebase#conflict-detection"
         - "rebase-editor-settings|gl-features-git-commands-and-rebase#rebase-editor-settings"
         - "conflict-resolution-actions|gl-features-git-commands-and-rebase#conflict-resolution-actions"
-        - "to-use-this-directly-from-your-terminal-e-g-when-running-git-rebase-i|gl-features-git-commands-and-rebase#to-use-this-directly-from-your-terminal-e-g-when-running-git-rebase-i"
+        - "use-the-rebase-editor-from-the-terminal|gl-features-git-commands-and-rebase#use-the-rebase-editor-from-the-terminal"
+        - "to-use-this-directly-from-your-terminal-e-g-when-running-git-rebase-i|gl-features-git-commands-and-rebase#use-the-rebase-editor-from-the-terminal"
         - "commit-signature-verification-pro|gl-features-git-commands-and-rebase#commit-signature-verification-pro"
         - "verification-badges|gl-features-git-commands-and-rebase#verification-badges"
         - "allowed-signers-management|gl-features-git-commands-and-rebase#allowed-signers-management"
@@ -148,4 +151,4 @@ The GitLens feature reference is split by feature type. Each page below holds th
 
 Features marked with <span style="color: #888;">`PRO`</span> require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) for use on privately hosted repositories.
 
-Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens) (Community, Pro, etc).
+Features marked with <span style="color: #888;">`PREVIEW`</span> require a GitKraken Account, with access based on your [plan level](https://www.gitkraken.com/gitlens/pricing?source=help_center&product=gitlens), such as Community or Pro.
