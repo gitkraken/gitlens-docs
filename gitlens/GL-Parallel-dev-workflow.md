@@ -28,7 +28,7 @@ custom_fields:
     card_icon: "git-branch"
     card_color: "green"
     card_description: "Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees"
-    entry_title: "Manage Parallel Development from the Commit Graph"
+    entry_title: "Manage Parallel Development"
     entry_desc: "Use the GitLens Commit Graph to see, monitor, review, and land parallel human and agent work across branches and worktrees"
     entry_order: 10
 ---
