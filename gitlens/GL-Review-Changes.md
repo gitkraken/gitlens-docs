@@ -1,7 +1,7 @@
 ---
 
 title: Review Changes in the Commit Graph
-description: Review working changes, commits, branches, and pull requests in the GitLens Commit Graph. Check off files as you read, step through diffs with keyboard shortcuts, and add an AI review or hand the changes to your coding agent.
+description: Review working changes, commits, branches, and pull requests in the GitLens Commit Graph, and add an AI review or hand the changes to your coding agent.
 product: GitLens
 feature: Review Changes
 content_type: how-to
