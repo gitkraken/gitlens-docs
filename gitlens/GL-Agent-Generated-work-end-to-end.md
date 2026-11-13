@@ -28,7 +28,7 @@ custom_fields:
     card_icon: "robot"
     card_color: "green"
     card_description: "Code Change to Merged branches all through GitLens"
-    entry_title: "Take Agent-Generated Work from Change to Merge"
+    entry_title: "Take Agent Work to Merge"
     entry_desc: "Code Change to Merged branches all through GitLens"
     entry_order: 20
 ---
