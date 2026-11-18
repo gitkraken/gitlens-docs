@@ -1,0 +1,22 @@
+{
+  "about": "The owner's standing polish policy for final visual judgements, every product. Judges file a note in a ship-as-is class under `within_policy` (the verdict stays PASS); only notes in an act class make an image PASS-POLISH, each `polish` item starting with its [tag]. merge-judgements.py enforces the tags. Source: the owner's calls on Kepler PR #43 (2026-10-21), #44 (2026-10-29), #47 (2026-10-30), GKD #113 (2026-11-02), Insights PR #3 (2026-10-16), GitLens PR #165 (2026-09-25), restated for Kepler PR #55 (2026-11-10: 'apply the same rules/line that we have previously established ... update the system tolerances to account for the repeat decisions'). Edge fragments judged by the spec's subject/context, and the legibility act class: Kepler-Docs PR #62 review (Jonathan, 2026-11-12; the owner's decision the same day).",
+  "ship_as_is": {
+    "edge-fragment": "A fragment the crop cannot avoid: content BEHIND an overlay running past the frame edge (rows under a menu, the page behind a dialog or popover), unless it covers the subject or shows a real person's identity (that is a FAIL). Judge by the record's spec_subject/spec_context (docs-audit §2b): a sliver of something the context says does not belong in the frame is NOT this class: it is cut-component or crop-whitespace.",
+    "padding": "Tight, uneven or flush padding; a crop sitting on a border; a slightly loose crop.",
+    "inner-whitespace": "Empty space inside a panel, list, pane or card that can only be removed by cropping through that component, or that a whole-window figure inherently has.",
+    "hover-leftover": "A leftover hover, focus or pointer state (a hover button, focus ring, hover-only icon) that hides nothing the intent needs.",
+    "fixture-state": "A staged-state oddity the page does not contradict, e.g. a 'running · 0m' timer, an unread dot, a placeholder count.",
+    "product-glyph": "The product's own icon, placeholder or truncation rendering as the product draws it, e.g. a generic account glyph, an unlabelled icon the prose names.",
+    "public-names": "Names production itself shows every user (public theme authors, the GitKraken org name)."
+  },
+  "act": {
+    "crop-whitespace": "Empty whitespace OUTSIDE the subject that a manual crop of the shipped file can remove without cutting any component. Also a sliver at the edge that the spec's context says does not belong and that a tighter crop removes without cutting a component: any non-subject control on a `context: none` figure, anything beyond the nearest landmark on a `locating` figure. Fix by cropping to what the context calls for.",
+    "shorter-frame": "A large empty share of the frame (empty gutters, an empty band) that a smaller viewport or tighter crop in the spec removes; easy recapture, saves a lot of space.",
+    "ring": "The subject is too small to find in its frame (a small control in a wide window): add a HOUSE-1 ring in the spec.",
+    "add-context": "The frame lacks context the reader needs to locate the subject (e.g. a menu without the row it opens from): widen it.",
+    "cut-component": "The crop slices through a component or hides part of the subject without failing the intent. Check that the component really ends there: a section that continues below is inner-whitespace, not this. Also a sliced non-subject control at the edge that the context says does not belong (`none`: anything but the subject; `locating`: anything beyond the nearest landmark): crop to what the context calls for. On a `relational` figure the surroundings are part of the subject, so slicing them already counts here.",
+    "text-fix": "The alt or caption is slightly off from the pixels without misleading (if it misleads, FAIL).",
+    "legibility": "A frame so wide that the subject's text cannot be read at page width: roughly over 1600 CSS px for a text-heavy subject (a conversation, table or form). Fix by cropping to the subject or using a smaller viewport. A whole-window `relational` figure whose labels stay readable is exempt."
+  },
+  "remediation": "Act on act-class notes only when the fix is easy (a crop of the shipped file, or a one-line spec change and recapture); otherwise leave it. Never crop through a component. A shipped-file crop leaves the spec on the old frame: note it so the next recapture does not bring the area back."
+}
