@@ -1,0 +1,181 @@
+{
+  "about": "Generated from gk-docs-automation src/core/registry.ts by src/core/standards-export.ts; do not edit. Per product: the image prefix for new image names, the source repo and the stable release tag pattern (verify claims at the newest tag that matches), the index files each docs repo keeps, and the internal terms (lint H-90) and internal-only syntax (lint H-96) that never reach a page. docsRepos keys are the checkout directory names the registry uses.",
+  "products": {
+    "cli": {
+      "name": "GitKraken CLI",
+      "imagePrefix": "gkcli",
+      "sourceRepo": "gkcli",
+      "stableTagPattern": "^v\\d+\\.\\d+\\.\\d+$",
+      "docsRepos": {
+        "gk-cli-docs": {
+          "pagesDir": "cli",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "desktop": {
+      "name": "GitKraken Desktop",
+      "imagePrefix": "gkd",
+      "sourceRepo": "gitkraken-client",
+      "stableTagPattern": "^v?\\d+\\.\\d+\\.\\d+$",
+      "docsRepos": {
+        "gitkraken-desktop-docs": {
+          "pagesDir": "gitkraken-desktop",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": "gitkraken-desktop/current.md"
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "gij-cloud": {
+      "name": "Git Integration for Jira — Cloud",
+      "imagePrefix": "gij",
+      "sourceRepo": "jiragitcloud",
+      "stableTagPattern": "^r\\/\\d{4}\\/r\\d{4}-\\d{2}-\\d{2}-\\d{4}$",
+      "docsRepos": {
+        "git-integration-for-jira-cloud-docs": {
+          "pagesDir": "git-integration-for-jira-cloud",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "gij-dc": {
+      "name": "Git Integration for Jira — Self-Managed",
+      "imagePrefix": "gij-dc",
+      "sourceRepo": "jira-git-plugin",
+      "stableTagPattern": "^release6\\.\\d+\\.\\d+$",
+      "docsRepos": {
+        "git-integration-for-jira-self-managed-docs": {
+          "pagesDir": "git-integration-for-jira-self-managed",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "gitlens": {
+      "name": "GitLens",
+      "imagePrefix": "gl",
+      "sourceRepo": "vscode-gitlens",
+      "stableTagPattern": "^v\\d+\\.\\d+(\\.\\d+)?$",
+      "docsRepos": {
+        "gitlens-docs": {
+          "pagesDir": "gitlens",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "gkdev": {
+      "name": "GitKraken.dev",
+      "imagePrefix": "gkdev",
+      "sourceRepo": "gitkraken.dev",
+      "stableTagPattern": null,
+      "docsRepos": {
+        "gk-dev-docs": {
+          "pagesDir": "gk-dev",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "insights": {
+      "name": "GitKraken Insights",
+      "imagePrefix": "gki",
+      "sourceRepo": "gitkraken.dev",
+      "stableTagPattern": null,
+      "docsRepos": {
+        "gk-insights-docs-expo": {
+          "pagesDir": "gk-insights-expo",
+          "indexFiles": "none",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    },
+    "kepler": {
+      "name": "GitKraken ADE",
+      "imagePrefix": "ade",
+      "sourceRepo": "kepler",
+      "stableTagPattern": "^v\\d+\\.\\d+\\.\\d+$",
+      "docsRepos": {
+        "kepler-docs": {
+          "pagesDir": "kepler",
+          "indexFiles": "generator: python scripts/build-llms.py",
+          "releaseNotesPage": "kepler/release-notes-current.md"
+        }
+      },
+      "internalTerms": [
+        {
+          "term": "worktree pill",
+          "use": "the worktree button (it shows the branch name; label \"Worktree actions for {branch}\")"
+        },
+        {
+          "term": "Task Composer",
+          "use": "the New task composer (the UI never names it \"Task Composer\")",
+          "allow": [
+            "New task composer"
+          ]
+        },
+        {
+          "term": "rail",
+          "use": "the UI's name: the task page's rail is the context panel (\"Hide context panel\"); the list of Settings pages is the Settings sidebar; the Agent Graph's is its side panel"
+        }
+      ],
+      "internalPatterns": [
+        {
+          "pattern": "kepler://settings",
+          "why": "no UI creates or copies a settings link; say that clicking a setting Ask Kepler names opens it in Settings"
+        },
+        {
+          "pattern": "kepler://session\\?",
+          "why": "the agent=/id= session link has no UI producer; Copy session link gives kepler://session/<id>"
+        },
+        {
+          "pattern": "@id:",
+          "why": "no UI shows a setting id, so users cannot search by one; describe search by name"
+        },
+        {
+          "pattern": "/settings/[a-z-]+#|#setting-[A-Za-z0-9_-]+\\.",
+          "why": "Settings hash routes and anchors (setting-<id>, ids hold a dot) are internal navigation; docs heading anchors such as #setting-an-actions-agent are not"
+        },
+        {
+          "pattern": "[?&]host=",
+          "why": "an internal link parameter; say that a link copied on a remote machine opens on that machine"
+        },
+        {
+          "pattern": "\\bOSC 7501\\b",
+          "why": "a terminal protocol detail; say that some terminal programs report their own status"
+        }
+      ]
+    },
+    "mcp": {
+      "name": "GitKraken MCP Server",
+      "imagePrefix": "gkmcp",
+      "sourceRepo": "mcp",
+      "stableTagPattern": null,
+      "docsRepos": {
+        "MCP-Docs": {
+          "pagesDir": "mcp",
+          "indexFiles": "llms.txt, llms-full.txt, sitemap.xml",
+          "releaseNotesPage": null
+        }
+      },
+      "internalTerms": [],
+      "internalPatterns": []
+    }
+  }
+}

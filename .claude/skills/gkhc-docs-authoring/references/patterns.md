@@ -228,7 +228,7 @@ Insights runs none of the adapters.
 | `<style>`/`<script>` copy-button blocks (`.copy-btn`) | removed; code panels have a Copy button |
 | a leading `<kbd>Last updated: …</kbd>` | the muted page-meta line under the H1 |
 | `**On this page:**` / `**What's on this page:**` lists of `#anchor` links | removed: the right-hand TOC lists the same headings |
-| `**Requirements and limits**` + a list where **every** item is `Key: value` | spec panel (any other list is left as a list). **Off by default**: Desktop keeps the block as written (decided 2026-11-09) |
+| `**Requirements and limits**` + a list where **every** item is `Key: value` | spec panel (any other list is left as a list). **Off by default**: Desktop keeps the block as written (decided 2026-11-09). Old markup only: a bold line used as a heading breaks the writing standard (H-51, an error on any page you change), so new and edited pages write `## Requirements and limits` |
 | `### Problem` / `Diagnosis` / `Cause` / `Solution` (2+ at one level) | issue rows: label column + body |
 | `` `PRO` `` / `` `PREVIEW` `` / `` `ADVANCED` `` / `` `BETA` `` / `` `EXPERIMENTAL` `` in a heading | badge, left out of the TOC text. **Off by default** (GitLens declined badges, 2026-11-09) |
 | tables headed `Setting` / `Control` / `Option` / `Field` | settings table (stacks on narrow screens) |
@@ -264,10 +264,16 @@ the page keep working, so don't map an anchor whose heading is still there
 
 ```html
 <figure>
-  <img src="/wp-content/uploads/gkhc-board-metrics-page-01-v4@2x.png" class="help-center-img img-bordered" alt="Full description of what the screenshot shows" />
+  <img src="/wp-content/uploads/gkhc-board-metrics-page-01-v4@2x.png" class="help-center-img img-bordered" alt="The Board Metrics page, with KPI tiles above the trend charts." />
   <figcaption>Board Metrics — KPI tiles, then …</figcaption>
 </figure>
 ```
+
+Alt text is a short phrase or one or two sentences, never more (H-63, an
+error): what the reader sees and what it shows, named the way the product
+names it, without repeating the caption. The full rules, with naming, the
+annotation color, and privacy, are in
+[../standards/IMAGE-STANDARDS.md](../standards/IMAGE-STANDARDS.md).
 
 The image file lives in `_images/<name>`. The preview maps
 `/wp-content/uploads/<name>` there, and `check_pages.py` checks it exists.

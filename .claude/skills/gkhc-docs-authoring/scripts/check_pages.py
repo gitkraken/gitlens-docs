@@ -12,6 +12,15 @@ order) and the plugin's other fields (page_type, card_*, entry_*,
 home_group/home_order, git_hosts, anchor_map, layout), the callout standard,
 copy-button blocks, scripts, internal links and images, and, where the
 product has the metric pipeline (Insights), the metric-page skeleton.
+
+The house writing and image standards (../standards/, synced from
+gk-docs-automation) run through prose_rules.py, the same rules and severities
+as `gkdocs lint`: on the pages you name, or else on the pages this branch
+changed since its base (the nearer of origin/main and origin/expo, or --base).
+On a branch they also report a published image modified or deleted in
+_images/ (ERROR), a changed page whose "Last updated" month is old, and pages
+changed without the repo's llms.txt / llms-full.txt / sitemap.xml (WARN).
+Pages nobody changed are not held to rules added after they were written.
 Standard library only.
 
     python .claude/skills/gkhc-docs-authoring/scripts/check_pages.py            # every page
@@ -23,6 +32,9 @@ Standard library only.
   --nav-file PATH   the product nav file, GK-WP-HC-Plugin/config/products/<key>.json. Default: found
                     through $GKHC_DESIGN_DIR, or a GK-WP-HC-Design checkout beside the docs repo
   --summary         print only the totals
+  --prose MODE      house standards on: changed (default: the named pages, else the branch's changed
+                    pages), all (every page: a report of existing debt), off
+  --base REF        what "changed" is measured against (default: the nearer of origin/main, origin/expo)
 
 Slugs are the file names as WordPress stores them: sanitize_title() of the
 file stem (lowercase). Exit status 0 when clean, 1 if any ERROR was reported
@@ -735,6 +747,111 @@ def check_metric(slug, prose, pages, fields):
 
 # ------------------------------------------------------------------ setup
 
+# ------------------------------------------------------------------ house standards (standards/, prose_rules.py)
+
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+          'November', 'December']
+
+
+def git_out(root, *args):
+    import subprocess
+    try:
+        out = subprocess.run(['git', '-C', root, *args], capture_output=True, text=True, encoding='utf-8')
+    except OSError:
+        return None
+    return out.stdout.strip() if out.returncode == 0 else None
+
+
+def find_base(root, explicit):
+    """The merge base with the branch this work comes from: --base, else the nearest of origin/main and origin/expo."""
+    cands = [explicit] if explicit else ['origin/main', 'origin/expo']
+    best = None
+    for ref in cands:
+        mb = git_out(root, 'merge-base', 'HEAD', ref)
+        if not mb:
+            continue
+        ahead = int(git_out(root, 'rev-list', '--count', f'{mb}..HEAD') or 0)
+        if best is None or ahead < best[1]:
+            best = (mb, ahead, ref)
+    return best
+
+
+def changed_since(root, base):
+    """{path relative to root: status letter} for files changed since base, uncommitted and untracked included."""
+    out = {}
+    diff = git_out(root, 'diff', '--name-status', '--no-renames', base) or ''
+    for line in diff.splitlines():
+        status, _, path = line.partition('\t')
+        out[path] = status[:1]
+    for path in (git_out(root, 'ls-files', '--others', '--exclude-standard') or '').splitlines():
+        out[path] = 'A'
+    return out
+
+
+def check_standards(root, pages, files, opts):
+    """The house writing and image standards (standards/), on the pages named or the pages this branch changed."""
+    import prose_rules
+    mode = opts['prose']
+    if mode == 'off':
+        return set()
+    product = prose_rules.product_for_key(CFG.get('key'))
+    terms, patterns = prose_rules.product_rules(product) if product else ([], [])
+    base = find_base(root, opts['base'])
+    changed = changed_since(root, base[0]) if base else None
+    content_rel = CFG['content_dir'].strip('/')
+    changed_pages = set()
+    if changed is not None:
+        for path, status in changed.items():
+            if status != 'D' and path.startswith(content_rel + '/') and path.endswith('.md') and '/' not in path[len(content_rel) + 1:]:
+                changed_pages.add(slugify(os.path.basename(path)[:-3]))
+
+    if files:
+        targets = {slugify(os.path.splitext(os.path.basename(a))[0]) for a in files}
+    elif mode == 'all':
+        targets = set(pages)
+    elif changed is None:
+        report('INFO', '(site)', 'no git base found (origin/main, origin/expo): prose and image rules ran on no page. '
+                                 'Name the pages, or pass --base REF or --prose all')
+        targets = set()
+    else:
+        targets = changed_pages
+    for slug in sorted(targets & set(pages)):
+        page = pages[slug]
+        if not page.get('in_help_center'):
+            continue
+        with open(os.path.join(root, content_rel, page['file']), encoding='utf-8', errors='replace') as fh:
+            raw = fh.read()
+        for f in prose_rules.lint_text(raw, terms, patterns):
+            level = 'ERROR' if f['severity'] == 'error' else 'WARN'
+            report(level, slug, f'{f["rule"]} line {f["line"]}: {f["message"]}' + (f' ({f["hint"]})' if f['hint'] else ''))
+        if slug in changed_pages:
+            m = re.search(r'<kbd>\s*Last updated:\s*([A-Za-z]+)\s+(\d{4})\s*</kbd>', raw)
+            import datetime
+            today = datetime.date.today()
+            now = f'{MONTHS[today.month - 1]} {today.year}'
+            if m and f'{m.group(1)} {m.group(2)}' != now:
+                report('WARN', slug, f'changed on this branch but says "Last updated: {m.group(1)} {m.group(2)}": set it to '
+                                     f'{now} if the change is substantive (standards/PAGE-RULES.md section 5)')
+
+    if changed is not None:
+        images_rel = (CFG.get('images_dir') or '_images').strip('/')
+        for path, status in sorted(changed.items()):
+            if path.startswith(images_rel + '/') and status in ('M', 'D'):
+                report('ERROR', '(site)', f'{path} is a published image and was {"modified" if status == "M" else "deleted"} '
+                                          f'(since {base[2]}). Never overwrite or delete one: give the new capture a new file '
+                                          f'name and rewrite the references (standards/IMAGE-STANDARDS.md section 6)')
+        index_files = ('llms.txt', 'llms-full.txt', 'sitemap.xml')
+        no_index = product and all(r.get('indexFiles') == 'none' for r in
+                                   ((prose_rules.load_json('products.json') or {}).get('products', {}).get(product, {})
+                                    .get('docsRepos') or {'': {}}).values())
+        touched = {path for path in changed if path.startswith(content_rel + '/') and path.endswith('.md')}
+        if touched and not no_index and any(os.path.exists(os.path.join(root, f)) for f in index_files) \
+                and not any(f in changed for f in index_files):
+            report('WARN', '(site)', f'{len(touched)} page(s) changed since {base[2]} but llms.txt, llms-full.txt and '
+                                     'sitemap.xml did not: bring them up to date (standards/PAGE-RULES.md section 5)')
+    return targets
+
+
 def find_nav_file(explicit, root):
     if explicit:
         return explicit
@@ -762,11 +879,12 @@ def load_nav_file(path):
 
 
 def parse_args(argv):
-    opts = {'config': None, 'product': None, 'root': None, 'nav_file': None, 'summary': False}
+    opts = {'config': None, 'product': None, 'root': None, 'nav_file': None, 'summary': False,
+            'prose': 'changed', 'base': None}
     files, i = [], 0
     while i < len(argv):
         a = argv[i]
-        if a in ('--config', '--product', '--root', '--nav-file'):
+        if a in ('--config', '--product', '--root', '--nav-file', '--prose', '--base'):
             if i + 1 >= len(argv):
                 print(f'{a} needs a value')
                 sys.exit(2)
@@ -833,6 +951,12 @@ def main(argv):
         if page['in_help_center']:
             check_body(slug, page, pages, images, archived)
     check_hierarchy(pages)
+    if opts['prose'] not in ('changed', 'all', 'off'):
+        print('--prose is changed, all or off')
+        return 2
+    sys.path.insert(0, HERE)
+    sys.dont_write_bytecode = True  # no __pycache__ inside the skill folder of a docs repo
+    check_standards(root, pages, files, opts)
 
     shown = [p for p in problems if only is None or p[1] in only or p[1] == '(site)']
     order = {'ERROR': 0, 'WARN': 1, 'INFO': 2}
