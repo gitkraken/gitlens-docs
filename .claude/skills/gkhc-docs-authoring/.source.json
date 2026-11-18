@@ -1,9 +1,9 @@
 {
   "skill": "gkhc-docs-authoring",
   "central_repo": "gitkraken/GK-WP-HC-Design",
-  "central_commit": "5224bf9f398628f2ee1083c5542937a325be64a2",
+  "central_commit": "c25d02612d168ccc55531c12f394fdd2c4986445",
   "plugin_version": "2.0.0-dev.9",
-  "distributed_utc": "2026-11-18T20:16:38Z",
+  "distributed_utc": "2026-11-18T21:08:01Z",
   "files": {
     "SKILL.md": "aadca45d1706deb22ad7b3e89eb82328b8907f85d12cb6cf17c184006cf13df0",
     "references/frontmatter.md": "e84fd81b156831164dc3301c9af78b883061e4ba95f3c69b100bd76b40aff428",
@@ -16,7 +16,7 @@
     "standards/EDITORIAL-PASS.md": "a11456358301a5ecd8db130c7de1b692007a4abef9ea6208250fd9dc95ffa0e7",
     "standards/IMAGE-STANDARDS.md": "e1696881cf019c108de00eb2df1cca9ede90a9a3eda6c9fc729e1d42c36ab16c",
     "standards/PAGE-RULES.md": "6912831bdb9ecff1d37b12f1ed5a8778362273244081860a82cfb09793302ddd",
-    "standards/SOURCE.json": "01c4ff7ff582e26ef22c5d03a1a388b6d5aa047680f48c62f3160d5a655e930b",
+    "standards/SOURCE.json": "a9502c2513bea018d602d65cf369e4cb4e03423e39b9ac83b3901f8ff1ec469f",
     "standards/WRITING-STANDARDS.md": "1de5310cd9372a113f2f6c1e0a2208d56e555d61a119006631d58c9388336b82",
     "standards/conformance.json": "7289cba78de2c628e84e3e22bdb945cf6cf00fe628e871c5fa1f755db39e8313",
     "standards/polish-policy.json": "b8cdb6dbcd26652040abd9b124cb3164ac7a61c2631f19e51917a1df22e93a6b",

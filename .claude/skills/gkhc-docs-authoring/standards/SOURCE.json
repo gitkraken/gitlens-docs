@@ -1,8 +1,8 @@
 {
   "_comment": "Written by GK-WP-HC-Design skills/standards_sync.py pull. The standards in this folder are copies of gk-docs-automation at this commit; edit them there.",
   "source": "https://github.com/Roberto-Vizcarra/gk-docs-automation.git",
-  "ref": "origin/standards/lint-ids-and-standalone",
-  "commit": "369ed4310fc9315d3df2cd7591a8fcab04f86a2a",
+  "ref": "origin/main",
+  "commit": "404dd5eb35fc687ae19a18b4d5c98069e21762d5",
   "files": {
     "EDITORIAL-PASS.md": "a11456358301a5ecd8db130c7de1b692007a4abef9ea6208250fd9dc95ffa0e7",
     "IMAGE-STANDARDS.md": "e1696881cf019c108de00eb2df1cca9ede90a9a3eda6c9fc729e1d42c36ab16c",
