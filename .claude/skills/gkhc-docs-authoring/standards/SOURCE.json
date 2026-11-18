@@ -1,0 +1,18 @@
+{
+  "_comment": "Written by GK-WP-HC-Design skills/standards_sync.py pull. The standards in this folder are copies of gk-docs-automation at this commit; edit them there.",
+  "source": "https://github.com/Roberto-Vizcarra/gk-docs-automation.git",
+  "ref": "origin/standards/lint-ids-and-standalone",
+  "commit": "369ed4310fc9315d3df2cd7591a8fcab04f86a2a",
+  "files": {
+    "EDITORIAL-PASS.md": "a11456358301a5ecd8db130c7de1b692007a4abef9ea6208250fd9dc95ffa0e7",
+    "IMAGE-STANDARDS.md": "e1696881cf019c108de00eb2df1cca9ede90a9a3eda6c9fc729e1d42c36ab16c",
+    "PAGE-RULES.md": "6912831bdb9ecff1d37b12f1ed5a8778362273244081860a82cfb09793302ddd",
+    "WRITING-STANDARDS.md": "1de5310cd9372a113f2f6c1e0a2208d56e555d61a119006631d58c9388336b82",
+    "conformance.json": "7289cba78de2c628e84e3e22bdb945cf6cf00fe628e871c5fa1f755db39e8313",
+    "polish-policy.json": "b8cdb6dbcd26652040abd9b124cb3164ac7a61c2631f19e51917a1df22e93a6b",
+    "products.json": "969d580512df3f03efc899c24882c3b5d149d5c911a0a6746f116b2caa9d97fa",
+    "products/insights.md": "3d459bb3ec22b8133905d804701b8f7ab63d89fbc7827264c32c20584b546556",
+    "products/kepler.md": "a56fe74d26e96cb49b0b6a708bf47386d6d0863b934cc61abb9d5865d587d4a8",
+    "repo-products.json": "d90c92d0849c2a843376db31d40a1bc1ff50c73644fdbb65e5e101bf53f0c866"
+  }
+}
