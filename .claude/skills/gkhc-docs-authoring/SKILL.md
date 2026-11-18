@@ -1,6 +1,6 @@
 ---
 name: gkhc-docs-authoring
-description: Write, add, move, split, archive or edit pages of a GitKraken help center (help.gitkraken.com, rendered by the GK-WP-HC-Plugin WordPress plugin through Git It Write) so they render and navigate correctly. Covers the front matter metadata schema (checked in CI), the custom_fields that build the nav, breadcrumbs, card landing pages, home page and search; page types; the Markdown patterns the plugin turns into components; the callout standard; Git It Write's rules for renames, archives, slugs and clearing fields; and the check_pages.py lint and preview to run before committing. This help center's own facts are in product/ (PRODUCT.md, config.json). Use for any content change in a help center docs repo. For changes to the plugin's PHP, CSS or JS, use the gkhc-plugin-design skill in GK-WP-HC-Design instead.
+description: Write, add, move, split, archive or edit pages of a GitKraken help center (help.gitkraken.com, rendered by the GK-WP-HC-Plugin WordPress plugin through Git It Write) so they render and navigate correctly. Covers the front matter metadata schema (checked in CI), the custom_fields that build the nav, breadcrumbs, card landing pages, home page and search; page types; the Markdown patterns the plugin turns into components; the callout standard; Git It Write's rules for renames, archives, slugs and clearing fields; the house writing, page and image standards (standards/, synced from gk-docs-automation: alt text, serial commas, no pseudo-headings, numerals, scope, claims checked at the latest release tag, image naming and privacy); and the check_pages.py lint (structure plus the same prose and image rules as gkdocs lint), the editorial pass and preview to run before committing. This help center's own facts are in product/ (PRODUCT.md, config.json). Use for any content change in a help center docs repo. For changes to the plugin's PHP, CSS or JS, use the gkhc-plugin-design skill in GK-WP-HC-Design instead.
 ---
 
 # Authoring help center pages
@@ -45,9 +45,27 @@ repo and is never overwritten. It holds:
 shared files came from. In GK-WP-HC-Design itself there is no `product/`:
 the seeds are in `skills/products/<key>/`.
 
+## The house standards (`standards/`)
+
+Every help center is written to the same standards, and this skill carries
+them in `standards/`: a synced copy of gk-docs-automation's own files, the
+ones its audits enforce. Read them before you write. Do not edit them here
+(`standards/SOURCE.json` records where they came from); GK-WP-HC-Design
+`skills/standards_sync.py` brings changes down.
+
+| File | What it governs |
+|---|---|
+| `standards/WRITING-STANDARDS.md` | How a page is written. §2 (HARD rules; §2.11 lists what the checker tests), §3, §8 and §9 (GitKraken's rubric and house rulings: no negative contractions, numerals except at a sentence start, US spelling, UI names) are the parts most often missed. §4 is alt text |
+| `standards/PAGE-RULES.md` | What a page may claim (**check every claim against the product source at its latest release tag**), the scope rule (only what users can see, do, or affect), detail level, names, last-updated markers and index files, and what to run before committing |
+| `standards/IMAGE-STANDARDS.md` | Alt text, the teal annotation, what a figure shows, the polish policy, privacy and identity, image names, and never overwriting a published image |
+| `standards/EDITORIAL-PASS.md` | The editor's brief for the judgment rules |
+| `standards/products.json` | Per product: internal terms and syntax that never reach a page, the image prefix, the release tag pattern, and the index files |
+| `standards/products/<id>.md` | A product's own detail level and "not documented on purpose" list, where it has one |
+
 ## Before you start
 
-- Follow the repo's writing standards and `CLAUDE.md`. Don't invent product
+- Read `standards/PAGE-RULES.md` and the parts of `standards/WRITING-STANDARDS.md`
+  named above, plus `CLAUDE.md` if the repo has one. Don't invent product
   behaviour, don't add, rename or remove images without being asked, and
   don't rewrite text you were only asked to move.
 - Look at two or three sibling pages in the same nav section. Copy their
@@ -78,18 +96,37 @@ the seeds are in `skills/products/<key>/`.
    Links plugin makes it (patterns.md, "Heading ids").
 6. **Lint:**
    `python .claude/skills/gkhc-docs-authoring/scripts/check_pages.py [files…]`.
-   With no arguments it checks every page and the whole hierarchy. **Fix
-   every `ERROR`: CI fails on them.** Read each `WARN` and either fix it or
-   know why it's fine. To resolve `nav_parent` keys that are nav-file groups
-   it needs a GK-WP-HC-Design checkout beside this repo (or
-   `GKHC_DESIGN_DIR`, or `--nav-file`).
-7. **Preview** with GK-WP-HC-Design's `preview/`, run from that checkout:
+   With no arguments it checks every page and the whole hierarchy, and runs
+   the house standards (`scripts/prose_rules.py`: the same rules and
+   severities as gk-docs-automation's `gkdocs lint`) on every page your
+   branch changed; name files to check those. It also stops a published
+   image from being overwritten. **Fix every `ERROR`: CI fails on them.**
+   Read each `WARN` and either fix it or know why it's fine; the serial-comma
+   warning (H-30) is a heuristic, so check each one. To resolve `nav_parent`
+   keys that are nav-file groups it needs a GK-WP-HC-Design checkout beside
+   this repo (or `GKHC_DESIGN_DIR`, or `--nav-file`). It needs nothing else:
+   no gk-docs-automation checkout, no Node.
+7. **Editorial pass (required before you commit).** Someone who did not
+   write the change, or you in a fresh read, reads each changed page whole
+   against `standards/EDITORIAL-PASS.md`: scope first (HOUSE-7), then style,
+   then the humanizer. Then run the lint again. Record it:
+   - with a gk-docs-automation checkout: `gkdocs style review <product>
+     <page-file> --standalone --reason "…" --scope "…" --humanizer "…"`, then
+     `gkdocs check <page-file>` (strict: lint errors or a missing pass fail).
+     This needs no audit and writes nothing to one;
+   - without one: in the PR description, under "Editorial pass", per page:
+     reason, scope, and humanizer.
+   If you changed or added an image, it also gets the image review
+   (`standards/IMAGE-STANDARDS.md` section 7). Set the changed pages'
+   `Last updated` markers and bring the repo's index files up to date
+   (`standards/PAGE-RULES.md` section 5).
+8. **Preview** with GK-WP-HC-Design's `preview/`, run from that checkout:
    `python preview/build.py --product <key> --tree <this repo>` (or
    `--ref origin/<branch>`). It renders every page with the plugin's own PHP
    and exits non-zero on a broken internal link or a missing image. Open the
    page you changed and check its nav position, breadcrumb, card,
    components and TOC.
-8. **Commit** on your branch and open a PR into `expo`. Tell the user about
+9. **Commit** on your branch and open a PR into `expo`. Tell the user about
    any WordPress-side cleanup the change needs (next section).
 
 ## Git It Write: rules that follow from how it publishes
@@ -130,7 +167,7 @@ GK-WP-HC-Design `redesign-expansion/WORKFLOW.md`).
 | Turn a group into a landing page | patterns.md, "Index pages in every help center": a new product-prefixed slug, the children re-pointed, the group removed from the nav file. |
 | Home blocks, home cards that aren't pages | The nav file's `home_blocks` / `home_cards`: plugin work. Pages join home card sets with `home_group`. |
 | A page needs a component no pattern produces | Don't add HTML to the Markdown. The transform has to learn a pattern: plugin work (gkhc-plugin-design skill). |
-| New screenshot | Out of scope for this skill. Screenshots come from the docs-audit capture flow. |
+| New screenshot | Screenshots normally come from the docs-audit capture flow. Any new image follows `standards/IMAGE-STANDARDS.md`: a new file name (never overwrite a published image), no real identity in frame, alt text of one or two sentences. |
 
 ## Rules that are easy to miss
 
