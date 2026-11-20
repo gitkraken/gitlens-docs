@@ -102,7 +102,7 @@ You can [customize](/gitlens/gitlens-settings/#git-codelens-settings) what each 
 ### Related Command
 
 - **Toggle Git CodeLens** (`gitlens.toggleCodeLens`)  
-  Shortcut: `Shift+Alt+B`
+  Shortcut: <kbd>Alt/⌥ + Shift + B</kbd>
 
 ***
 
@@ -230,7 +230,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 - Toggle annotations with:
 
   - **Command**: `gitlens.toggleFileBlame`
-  - **Shortcut**: <kbd>Alt+B</kbd>
+  - **Shortcut**: <kbd>Alt/⌥ + B</kbd>
   - **Dismiss**: <kbd>Escape</kbd>
 
 
@@ -275,50 +275,35 @@ The File Heatmap adds a color-coded bar to the edge of your file that shows whic
 
 ***
 
-## Code Suggest <span style="color: #888;">`PREVIEW`</span>
+## Code Suggest <span style="color: #888;">`PRO`</span>
 
-Use GitKraken Code Suggest to propose edits to any file in a project, including lines that a pull request did not change. You can suggest changes from GitLens, GitKraken Desktop, or [gitkraken.dev](https://gitkraken.dev).
-
-When a pull request is open, collaborators can review your suggestions and apply them to the pull request.
+A Code Suggestion proposes edits to any file in a repository, including lines that a pull request did not change. Reviewers create Code Suggestions in [GitKraken Desktop](/gitkraken-desktop/pull-requests/#how-to-accept-or-reject-suggestions). In GitLens, you find the suggestions on your pull requests, apply them, and accept or reject them.
 
 <figure class='callout callout--basic'>
   <p><strong>Note:</strong> Code Suggest is currently supported only for repositories hosted on <strong>github.com</strong>.</p>
 </figure>
 
-<figure>
-  <img src="/wp-content/uploads/gl-code-suggest.png" alt="GitLens Code Suggest UI showing a PR suggestion in progress" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Suggest changes beyond just modified lines</figcaption>
-</figure>
+### How to Find Code Suggestions
 
-### How to Create a Code Suggestion
+When someone adds a Code Suggestion, the pull request receives a comment with 2 links:
 
-1. Open the [GitLens Inspect Overview](/gitlens/side-bar/#overview) for the repository.
-2. Check out a branch that has an open pull request.
-3. Click **Start Review for PR #PR**.
-4. Modify and save any files to include in the suggestion.
-5. When ready, select **Suggest Changes for PR**, add a title, and click **Create Code Suggestion**.
-
-<figure>
-  <img src="/wp-content/uploads/gl-code-suggest-create.gif" alt="Creating a code suggestion in GitLens" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Create a suggestion from your local changes</figcaption>
-</figure>
-
-After you submit the suggestion, the pull request receives a comment with 2 options:
-
-- **Code Suggestion for #PR** — opens in gitkraken.dev
-- **Locally on your machine** — opens in GitLens or [GitKraken Desktop](/gitkraken-client/pull-requests/#review-code-and-suggest-changes)
+- **Code Suggestion for #PR** opens the suggestion on gitkraken.dev.
+- **locally on your machine** opens the suggestion in GitLens or GitKraken Desktop.
 
 <figure>
   <img src="/wp-content/uploads/gl-code-suggest-comment.png" alt="Comment with code suggestion options" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Collaborators can choose where to review and apply suggestions</figcaption>
 </figure>
 
+In the GitLens views, expand a branch, commit, or worktree that has a pull request, expand the pull request, then expand **Code Suggestions**. Select a suggestion to open it in **Patch Details**.
+
 ### Accepting a Suggestion Locally
 
-1. Open the suggestion in GitLens or GitKraken Desktop.
+1. Open the suggestion in **Patch Details**.
 2. Review each modified file.
-3. Select **Apply** to apply the patch to your current branch.  
-   Or use the dropdown to **Apply to a Branch**.
+3. Select **Apply Patch** to apply the changes to your current branch.
+   Or open the **Apply Patch Options...** menu and select **Apply to a Branch**.
+4. Select **Accept** to mark the suggestion accepted, or **Reject** to decline it.
 
 <figure>
   <img src="/wp-content/uploads/gl-accept-code-suggestion-from-gl.gif" alt="Accepting suggestions from GitLens" class="help-center-img img-bordered">
@@ -356,7 +341,7 @@ Because you can share work before a pull request exists, your team can give feed
 Cloud Patches are on by default. You turn them on or off separately in each GitKraken app. To manage them in GitLens:
 
 1. Open the Command Palette:  
-   `Ctrl`/`Command` + `Shift` + `P` → **Preferences: Open User Settings (JSON)**
+   <kbd>Ctrl/⌘ + Shift + P</kbd> → **Preferences: Open User Settings (JSON)**
 
 2. Add the following line to your settings:
 
@@ -448,7 +433,7 @@ If you are not signed in, opening the Commit Graph on a privately hosted reposit
 The Commit Graph opens automatically when you click the GitLens icon in the Activity Bar. You can also open it from the Command Palette:
 
 1. Open the Command Palette:  
-   <kbd>Cmd/Ctrl + Shift + P</kbd>
+   <kbd>Ctrl/⌘ + Shift + P</kbd>
 
 2. Type:  
    `GitLens: Show Commit Graph`
@@ -489,7 +474,7 @@ From here, you can:
 
 Scoping re-centers the Commit Graph on another worktree of the same repository, so that worktree's `HEAD` and Working Changes are treated as the current ones. To scope the graph, do any of the following:
 
-- Select **Scope to Worktree** on a worktree row in the side bar's **Worktrees** panel. <kbd>Alt</kbd>-click the same button to use **Focus on Branch** instead.
+- Select **Scope to Worktree** on a worktree row in the side bar's **Worktrees** panel. <kbd>Alt/⌥</kbd>-click the same button to use **Focus on Branch** instead.
 - Right-click a worktree row, or the Working Changes row of another worktree, and select **Scope to Worktree** or **Focus on Branch**.
 - Double-click the Working Changes row of another worktree, or its pill in the overview bar above the graph.
 
@@ -596,7 +581,7 @@ You can toggle scroll markers in [Commit Graph settings](/gitlens/gitlens-featur
 You can adjust Commit Graph preferences in GitLens Settings:
 
 1. Open the Command Palette:  
-   <kbd>Cmd/Ctrl + Shift + P</kbd>
+   <kbd>Ctrl/⌘ + Shift + P</kbd>
 
 2. Search for:  
    `GitLens: Open Settings`
@@ -661,17 +646,17 @@ Use the following search prefixes:
 
 Use keyboard shortcuts to navigate results:
 
-- <kbd>F3</kbd> / <kbd>Cmd+G</kbd> — next result  
-- <kbd>Shift+F3</kbd> / <kbd>Shift+Cmd+G</kbd> — previous result  
+- <kbd>F3</kbd>, or <kbd>⌘ + G</kbd> on macOS — next result  
+- <kbd>Shift + F3</kbd>, or <kbd>⌘ + ⇧ + G</kbd> on macOS — previous result  
 - Hold <kbd>Shift</kbd> and click arrows to jump to first or last match
 
 The Commit Graph has more keyboard shortcuts. Press <kbd>?</kbd> in the graph to open the keyboard shortcuts reference, which includes the following:
 
 - <kbd>/</kbd> — find a branch, tag, or worktree
-- <kbd>Ctrl/Cmd+F</kbd> — search commits
-- <kbd>1</kbd> through <kbd>9</kbd>, and <kbd>0</kbd> — jump to a recent worktree
-- <kbd>Alt+1</kbd> through <kbd>Alt+8</kbd> — toggle a side bar panel
-- <kbd>Alt+M</kbd>, <kbd>Alt+S</kbd>, and <kbd>Alt+D</kbd> — toggle the minimap, side bar, and details panel
+- <kbd>Ctrl/⌘ + F</kbd> — search commits
+- Number keys <kbd>1</kbd> through <kbd>9</kbd>, and <kbd>0</kbd> — jump to a recent worktree
+- <kbd>Alt/⌥ + 1</kbd> through <kbd>Alt/⌥ + 8</kbd> — toggle a side bar panel
+- <kbd>Alt/⌥ + M</kbd>, <kbd>Alt/⌥ + S</kbd>, and <kbd>Alt/⌥ + D</kbd> — toggle the minimap, side bar, and details panel
 
 To change or turn off a shortcut, hover it in the reference to see its shortcut id, then set that id in `gitlens.graph.shortcuts.overrides` to a new key combination or to `false`. The reference's **Customize…** link opens these settings. To turn off all customizable shortcuts, set `gitlens.graph.shortcuts.enabled` to `false`; navigation keys such as the arrows, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.
 
@@ -740,7 +725,7 @@ Click the **Compose** button to generate an AI-assisted commit message based on 
 
 ### Multi-File Selection
 
-The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. You can stage, unstage, discard, or stash all the selected files at once. Each file also has its own inline action buttons.
+The Commit Graph and Inspect panels support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl/⌘</kbd>-click in Working Changes, commit details, compare, compose, and review file lists. You can stage, unstage, discard, or stash all the selected files at once. Each file also has its own inline action buttons.
 
 To ignore untracked files, right-click one or more of them in Working Changes and select **Add to .gitignore**. GitLens appends an entry for each file to the `.gitignore` at the repository root, creates that file if it does not exist, and opens it so you can review the change.
 
@@ -857,7 +842,7 @@ Launchpad groups your pull requests (PRs) by status, so you can see which ones n
 
 ### Accessing Launchpad
 
-- From the **Command Palette**: `Command/Ctrl + Shift + P` → `GitLens: Open Launchpad`
+- From the **Command Palette**: <kbd>Ctrl/⌘ + Shift + P</kbd> → `GitLens: Open Launchpad`
 - From the **Pull Request status bar item** in VS Code
 
 <figure>
@@ -896,13 +881,6 @@ For repositories on GitHub.com that merge through a merge queue, queued pull req
 <figure>
   <img src="/wp-content/uploads/gl-view-pull-request.png" alt="PR detail view in Launchpad" class="help-center-img img-bordered">
   <figcaption style="text-align: center; color: #888">Interact with pull requests directly in VS Code</figcaption>
-</figure>
-
-You can also start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) directly from the PR action menu.
-
-<figure>
-  <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" alt="Launchpad with Code Suggest options" class="help-center-img img-bordered">
-  <figcaption style="text-align: center; color: #888">Suggest code edits from within the Launchpad</figcaption>
 </figure>
 
 *Launchpad is also available through the [GitKraken MCP](https://help.gitkraken.com/mcp/mcp-tools-reference/).*
@@ -971,7 +949,7 @@ Visual History supports multiple scopes:
 To open Visual History, use one of the following:
 
 - The **GitLens Inspect** side bar
-- The **Command Palette**: `Cmd/Ctrl + Shift + P` → `GitLens: Show Visual History View`
+- The **Command Palette**: <kbd>Ctrl/⌘ + Shift + P</kbd> → `GitLens: Show Visual History View`
 
 <figure>
   <img src="/wp-content/uploads/gl-visual-file-history-01-v3@2x.png" alt="Visual History view for CHANGELOG.md showing eight commits by four authors plotted as color-coded bubbles over the last four weeks, with the additions and deletions of each commit shown as bars" class="help-center-img img-bordered">
@@ -1207,7 +1185,7 @@ Use Commit Composer to recompose only specific commits within a branch.
 
 Select the commits that need work, such as quick "wip" or "fix" commits, and let GitKraken AI restructure only those changes with clearer messages.
 
-1. Select multiple contiguous commits on the same branch with <kbd>Shift</kbd>-click or <kbd>Cmd</kbd>-click.
+1. Select multiple contiguous commits on the same branch with <kbd>Shift</kbd>-click, or <kbd>⌘</kbd>-click on macOS.
 2. Right-click and choose **Recompose Selected Commits...**.
 
 Commit Composer opens with only your selected commits as drafts, ready for you or GitKraken AI to refine.
@@ -1222,7 +1200,7 @@ To open the composer for all your working changes, select the **Compose** (wand)
 The Working Changes row also has a **Run Default Task** (play) button that runs a VS Code task in that row's worktree:
 
 - The first time you select it, GitLens asks you to choose the default task. Later clicks run that task.
-- <kbd>Alt</kbd>-click the button to choose a different task.
+- <kbd>Alt/⌥</kbd>-click the button to choose a different task.
 - While the task runs, the button reads **Running:** and the task name. Clicking it then shows the running task instead of starting another.
 
 To pick a task from a list, right-click a Working Changes row in the Commit Graph, or a worktree in the side bar views, and select **Run Task on Worktree...**. In that list, select a task's checkmark button (**Set as Default Task**) to make it the default.
@@ -1464,7 +1442,7 @@ Terminal links make Git references in the integrated terminal clickable. You can
 
 ## Remote Provider Integrations
 
-GitLens integrates with many remote providers, including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/gitlens-settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
+GitLens integrates with remote providers including GitHub, GitHub Enterprise, GitLab, Gitea, Gerrit, Bitbucket, Bitbucket Server, and Azure DevOps. You can also define [custom remote providers](/gitlens/gitlens-settings/#remote-provider-integration-settings) or [remote providers with custom domains](/gitlens/gitlens-settings/#remote-provider-integration-settings).
 
 Basic integrations offer issue and pull request autolinking. Richer integrations, like GitHub or GitLab, include:
 
@@ -1500,7 +1478,7 @@ The GitHub and GitLab integrations connect through your GitKraken account at [gi
 
 To connect an integration:
 
-1. Open the Command Palette (`Cmd`/`Ctrl`+`Shift`+`P`).
+1. Open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>).
 2. Run `GitLens: Manage Integrations...`.
 
 Or select the account button (your avatar and plan) in the Commit Graph header, then select the **Integrations** row (or **Set up integrations** if none are connected) to open the integrations settings in GitLens Settings.
@@ -1540,7 +1518,7 @@ After you connect, autolink hovers show more context: your GitHub Enterprise Ser
 To connect either integration:
 
 1. Open `settings.json`:
-   - Use the Command Palette (`Cmd`/`Ctrl` + `Shift` + `P`) > **Preferences: Open User Settings (JSON)**
+   - Use the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>) > **Preferences: Open User Settings (JSON)**
 
 2. Add a `gitlens.remotes` entry specifying the domain and type:
 

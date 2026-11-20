@@ -35,7 +35,7 @@ GitLens helps at every stage of a change, from understanding a line of code to m
 
 The Commit Graph shows commits, branches, working changes, worktrees, upstream state, and supported coding agent activity in one connected view. Every row carries live state, such as ahead and behind counts and unpushed or unpulled changes, and you can act on a row directly to branch, merge, rebase, cherry-pick, stash, push, pull, or open a pull request. Commit search understands Git filters such as `message:`, `author:`, `file:`, and `change:`, and also accepts natural language.
 
-The [GitLens Commit Graph](/gitlens/gl-commit-graph/) page describes the graph in full, and the [Commit Graph is Home](/gitlens/home-view/) page explains how the graph replaced the earlier Home view as the starting point in GitLens.
+The [GitLens Commit Graph](/gitlens/gl-commit-graph/) page describes the graph in full, and the [Commit Graph is Home](/gitlens/home-view/) page explains how to start your work in GitLens from the graph.
 
 ### Keep human and agent work visible
 
@@ -94,7 +94,8 @@ Pick the guide that matches what you want to do:
 | Browse every feature in one reference | [GitLens Features](/gitlens/gitlens-features/) |
 | Look up a setting | [GitLens Settings Overview](/gitlens/gitlens-settings/) |
 | Sign in or manage your plan | [GitKraken Account](/gitlens/gl-gk-account/) |
-| Share work without pushing a branch | [GitLens Cloud Patches](/gitlens/gl-cloud-patches/) and [GitLens Code Suggest](/gitlens/gl-code-suggest/) |
+| Share work without pushing a branch | [GitLens Cloud Patches](/gitlens/gl-cloud-patches/) |
+| Find and apply Code Suggestions on your pull request | [GitLens Code Suggest](/gitlens/gl-code-suggest/) |
 | Group repositories across machines | [GitLens Workspaces](/gitlens/gl-workspaces/) |
 | Review how GitLens handles your data | [GitLens Security Information](/gitlens/gl-security/) |
 | See what changed in the latest release | [GitLens Release Notes](/gitlens/gitlens-release-notes-current/) |

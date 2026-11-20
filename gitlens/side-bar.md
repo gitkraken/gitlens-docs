@@ -8,7 +8,7 @@ last_updated: 2026-11
 
 <kbd>Last updated: November 2026</kbd>
 
-GitLens provides multiple sidebars that extend the functionality of Visual Studio Code, making it easier to navigate and understand your Git repositories. These include:
+GitLens views appear in 3 sidebars in Visual Studio Code:
 
 - **GitLens Inspect** — View blame annotations, code lenses, and commit details.
 - **GitLens** — Access features like commit history, branches, and remotes.
@@ -21,11 +21,11 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 ## Use the GitLens Sidebars
 
-GitLens offers three sidebars in Visual Studio Code that enhance Git workflows with rich visualizations, insights, and collaboration tools.
+Each sidebar holds a set of GitLens views, and you can [move views between sidebars](#move-views-between-sidebars).
 
 ### GitLens Inspect Sidebar
 
-The **GitLens Inspect** sidebar provides contextual information about your current file, line, or repository activity. Use it to dive into commit details, history, and comparisons.
+The **GitLens Inspect** sidebar provides contextual information about your current file, line, or repository activity. Use it to explore commit details, history, and comparisons.
 
 This sidebar includes:
 
@@ -52,11 +52,7 @@ This sidebar includes:
 - **Cloud Patches** `PRO` — Hidden by default
 - **Cloud Workspaces** — Hidden by default
 
-GitLens 19.2 removed the Home view. Your GitKraken account and the setup status of AI, agents, and integrations now appear in the account menu in the Commit Graph header. Links that used to open the Home view open the Commit Graph instead.
-
-<figure>
-  <img src="/wp-content/uploads/gl-home-view-v16.png" class="help-center-img img-bordered" alt="GitLens sidebar">
-</figure>
+To check your GitKraken account and the setup status of AI, agents, and integrations, open the account menu in the Commit Graph header.
 
 #### Start in the Commit Graph
 
@@ -75,7 +71,7 @@ From the Commit Graph you can see:
 
 ### Source Control Sidebar
 
-The **Source Control** sidebar enhances VS Code’s native Git interface with additional GitLens-powered views.
+GitLens adds its own views to the **Source Control** sidebar, next to the built-in Git views in VS Code.
 
 This sidebar includes:
 
@@ -106,7 +102,7 @@ You can move any GitLens view between the GitLens Inspect, GitLens, and Source C
   <img src="/wp-content/uploads/move-view.gif" class="help-center-img img-bordered" alt="Drag and drop GitLens views to reposition them between sidebars">
 </figure>
 
-To restore the default layout, open the Command Palette (<kbd>Cmd/Ctrl + Shift + P</kbd>) and run:
+To restore the default layout, open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>) and run:
 
 <kbd>View: Reset View Locations</kbd>
 
@@ -150,9 +146,9 @@ In repositories where loading commit file details has been slow, the Commits vie
 
 ## GitLens Inspect
 
-The **GitLens Inspect** sidebar focuses on providing contextual insights related to the code you're working on. It includes two tabs: **Commit Details** and **Overview**.
+The **GitLens Inspect** sidebar shows details about the code you are working on. It includes 2 tabs: **Commit Details** and **Overview**.
 
-To open GitLens Inspect, launch the Command Palette (<kbd>Cmd/Ctrl + Shift + P</kbd>) and run:
+To open GitLens Inspect, open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>) and run:
 
 <kbd>GitLens: Show Inspect View</kbd>
 
@@ -166,7 +162,7 @@ The **Commit Details** tab updates as you move your cursor through the file or s
 
 ### Overview
 
-The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. You can also [suggest changes or view Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) when working on a pull request.
+The **Overview** tab helps you stage or unstage changes, open files to view modifications, and access associated pull requests. To review the [Code Suggestions](/gitlens/gl-code-suggest/) on a pull request, expand the pull request in a GitLens view, and then expand **Code Suggestions**.
 
 <figure>
   <img src="/wp-content/uploads/gl-inspect-overview-01-v3@2x.png" class="help-center-img img-bordered" alt="GitLens Inspect view showing the Overview of the working changes: the Compose and Review mode toggle, the Working row with its change counts, and the three modified TypeScript files">
@@ -197,7 +193,7 @@ The **Repositories** view lists all open Git repositories. It includes:
   - **Ahead** — commits present in current branch only
 - Optionally show:
   - Changed files in the working tree
-  - Current branch status with upstream (e.g., publish, up to date, changes to pull or push)
+  - Current branch status with upstream, such as publish, up to date, or changes to pull or push
   - Associated pull request
   - Commit history (like the Commits view)
   - Local branches (like the Branches view)
@@ -349,7 +345,7 @@ When you push tags, GitLens asks you to choose a remote if the repository has mo
   <img src="/wp-content/uploads/gl-launchpad-view-experimental.png" class="help-center-img img-bordered" alt="The Launchpad view with its pull request groups Blocked, Requires Follow-up, Needs Your Review, Waiting for Review, Draft, and Other; Waiting for Review and Draft are expanded to show one pull request each">
 </figure>
 
-The **Launchpad** view provides an always-visible panel for pull request activity. You can view pull request details in a tree format and take action directly from the sidebar.
+The **Launchpad** view lists your pull requests as a tree in the sidebar. You can view pull request details and act on a pull request directly from the view.
 
 The view is hidden by default. To open it, run `GitLens: Show Launchpad View` from the Command Palette.
 
@@ -357,9 +353,9 @@ The view is hidden by default. To open it, run `GitLens: Show Launchpad View` fr
 
 ## Workspaces
 
-Workspaces offer a convenient way to group and manage multiple repositories for easy access. Whether working solo or as part of a team, Workspaces help streamline your development process. You can include local repositories or GitKraken Workspaces—cloud-hosted repositories or those managed through GitKraken services.
+Workspaces group several repositories so you can open and manage them together. A Workspace can include local repositories or GitKraken Workspaces, which are cloud-hosted repositories or repositories managed through GitKraken services.
 
-To access Workspaces, open the GitLens sidebar and find them in the lower-left panel. Alternatively, search "Workspaces" via the Command Palette.
+To open Workspaces, run **GitLens: Show Cloud Workspaces View** from the Command Palette. The **Cloud Workspaces** view opens in the GitLens sidebar.
 
 > Note: Using cloud Workspaces requires a GitKraken account. Sharing cloud Workspaces requires a trial or paid subscription.
 
@@ -385,7 +381,7 @@ Add repositories to your Workspace using the **+** icon under the Workspace tab.
 
 ### Locating Repositories
 
-To find a repository’s location on disk, click the **Locate Repositories** (pin icon). Select a parent folder, and GitLens will scan it for repositories.
+To find a repository's location on disk, click **Locate Repositories...** (pin icon). Select a parent folder, and GitLens scans it for repositories.
 
 <figure>
   <img src="/wp-content/uploads/gl-locate-repo-in-workspace.png" class="help-center-img img-bordered" alt="Locate a repo in a Workspace">
@@ -395,7 +391,7 @@ To find a repository’s location on disk, click the **Locate Repositories** (pi
 
 To open a repository, click the **Open Repository in New Window** icon. 
 
-> Pro Tip: Hold <kbd>Alt/Option</kbd> while clicking to open in the current window.
+> Pro Tip: Hold <kbd>Alt/⌥</kbd> while clicking to open in the current window.
 
 <figure>
   <img src="/wp-content/uploads/gl-open-as-vscode-workspace.png" class="help-center-img img-bordered" alt="Open Workspace repository in VS Code">
@@ -403,7 +399,7 @@ To open a repository, click the **Open Repository in New Window** icon.
 
 ### Removing Repositories
 
-Right-click a repository and choose **Remove repository from Workspace** to remove it.
+Right-click a repository and choose **Remove from Workspace...** to remove it.
 
 <figure>
   <img src="/wp-content/uploads/gl-remove-repo-from-wrokspace.png" class="help-center-img img-bordered" alt="Remove repository from Workspace">
@@ -411,7 +407,7 @@ Right-click a repository and choose **Remove repository from Workspace** to remo
 
 ### Converting to Cloud Workspaces
 
-To convert a local Workspace, click **Convert to Cloud Workspace**, add a name and description, and save. Your Workspace will be available across GitKraken tools.
+To convert a local Workspace, click **Convert to Cloud Workspace...**, add a name and description, and save. Your Workspace is then available across GitKraken tools.
 
 <figure>
   <img src="/wp-content/uploads/gl-convert-workspace-to-cloud.png" class="help-center-img img-bordered" alt="Convert local Workspace to GitKraken Cloud">
@@ -433,15 +429,15 @@ You can link a GitKraken Workspace to a VS Code workspace.
   <img src="/wp-content/uploads/gl-create-vs-workspace-from-gl.png" class="help-center-img img-bordered" alt="Create a VS Code Workspace from GitKraken">
 </figure>
 
-Linked VS Code workspaces can be opened from their cloud counterpart using **Open VS Code Workspace in New Window** (hold <kbd>Alt</kbd> to open in the current window).
+Linked VS Code workspaces can be opened from their cloud counterpart using **Open VS Code Workspace in New Window...** (hold <kbd>Alt/⌥</kbd> to open in the current window).
 
-When you add repositories to a GitKraken Workspace, they can be auto-added to its linked VS Code workspace. You choose the auto-add behavior when creating the workspace and can modify it later via the **Change Linked Workspace Auto-Add Behavior** command.
+When you add repositories to a GitKraken Workspace, GitLens can add them to its linked VS Code workspace automatically. You choose the auto-add behavior when you create the workspace, and you can change it later with the **Change Linked Workspace Auto-Add Behavior...** command.
 
 <figure>
   <img src="/wp-content/uploads/gl-link-repositories-in-workspaces.png" class="help-center-img img-bordered" alt="Link repositories to VS Code workspace">
 </figure>
 
-To manually add repositories, use the **Add Repositories from Linked Workspace** command.
+To manually add repositories, use the **Add Repositories from Linked Workspace...** command.
 
 
 ***
@@ -452,7 +448,7 @@ To manually add repositories, use the **Add Repositories from Linked Workspace**
   <img src="/wp-content/uploads/gl-worktrees-view-01-v2@2x.png" class="help-center-img img-bordered" alt="GitLens Worktrees view">
 </figure>
 
-A [customizable](/gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). Worktrees allow you to check out multiple branches at once within the same repository—useful for parallel development or testing workflows without switching branches.
+A [customizable](/gitlens/gitlens-settings/#worktrees-view-settings) view to create, view, and manage [Git worktrees](https://www.gitkraken.com/learn/git/git-worktree). With worktrees, you can check out several branches of the same repository at once, so you can develop or test in parallel without switching branches.
 
 ### Create a Worktree
 
