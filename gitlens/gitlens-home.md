@@ -31,7 +31,7 @@ Features marked `PRO` in this guide require a GitLens Pro plan or a free 14-day 
 
 **To install GitLens in VS Code:**
 
-1. Open the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+1. Open the Extensions view (**Ctrl/⌘ + Shift + X**).
 2. Search for **GitLens**.
 3. Select **GitLens** by GitKraken, then select **Install**.
 
@@ -49,7 +49,7 @@ You can use the Commit Graph, inline blame, and hovers without an account. Sign 
 
 ### Sign In to GitKraken
 
-1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+1. Open the Command Palette (**Ctrl/⌘ + Shift + P**).
 2. Run **GitLens: Sign In to GitKraken...**.
 3. Sign in, or create an account with GitHub, GitLab, Bitbucket, Azure DevOps, Google, email, or SSO.
 
@@ -90,7 +90,7 @@ The Commit Graph is where most work in GitLens starts. It shows your branches, c
 1. Select a commit. The details panel opens with the commit message, author, and changed files.
 2. Select the **Working Changes** row at the top of the graph to see your uncommitted changes.
 3. Right-click a branch or commit to see the actions you can take, such as merge, rebase, and cherry-pick.
-4. In the search bar, type `@me` to find your own commits, or use a filter such as `message:fix` or `file:README.md`. Press `F3` (`Cmd+G` on macOS) to move to the next result.
+4. In the search bar, type `@me` to find your own commits, or use a filter such as `message:fix` or `file:README.md`. Press **F3** (or **⌘ + G** on macOS) to move to the next result.
 
 To use a larger view, open the **More Actions** (⋯) menu on the Commit Graph and choose **Prefer Commit Graph in Editor**.
 
@@ -118,7 +118,7 @@ Inline blame, hovers, and Git CodeLens are on by default and free for all reposi
 
 [Open the Inspect View in GitLens](vscode://eamodio.gitlens/link/command/inspect)
 
-To turn these annotations off, run **GitLens: Toggle Line Blame Annotations** or **GitLens: Toggle Git CodeLens** (`Ctrl+Shift+G` `Shift+B`, or `Cmd+Alt+G` `Shift+B` on macOS).
+To turn these annotations off, run **GitLens: Toggle Line Blame** or **GitLens: Toggle Git CodeLens** (**Ctrl + Shift + G**, then **Shift + B**; on macOS, **⌘ + ⌥ + G**, then **Shift + B**).
 
 See [Current Line Blame](/gitlens/gitlens-features/#current-line-blame), [Hovers](/gitlens/gitlens-features/#hovers), and [GitLens Inspect](/gitlens/side-bar/#gitlens-inspect) for customization options, and [GitLens Visual File History](/gitlens/gl-visual-file-history/) for a timeline of how a file changed.
 
@@ -211,7 +211,7 @@ See [AI Agents in GitLens](/gitlens/gl-agents/) for setup and the [list of suppo
 <figcaption style="text-align:center; color:#888">Video: Share code and suggest changes in GitLens</figcaption>
 </figure>
 
-You can share changes without pushing a branch, and suggest edits on a pull request, even on files the pull request did not change.
+You can share changes without pushing a branch, and apply the edits reviewers suggest on your pull requests, even on files the pull request did not change.
 
 ### Share a Cloud Patch `PRO`
 
@@ -221,24 +221,25 @@ You can share changes without pushing a branch, and suggest edits on a pull requ
 
 1. Make and save changes to any file.
 2. Open the Command Palette and run **GitLens: Share as Cloud Patch...**. You can also choose **Share as Cloud Patch** from the **Share** submenu on working changes, commits, stashes, and comparisons in GitLens views.
-3. Choose who can open it: **Anyone with the link**, **Anyone in my org**, or **Only collaborators**.
+3. Choose who can open it: **Anyone with the link**, **Members of my Org with the link**, or **Collaborators only**.
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
 See [GitLens Cloud Patches](/gitlens/gl-cloud-patches/) to apply and manage patches.
 
-### Suggest Changes on a Pull Request `PRO`
+### Review Code Suggestions on a Pull Request `PRO`
 
 <div class='callout callout--warning'>
     <p>This feature is only available for Pro subscription tiers or higher and is supported only for repositories on GitHub.com.</p>
 </div>
 
-1. Check out a branch with an open pull request.
-2. Open the Command Palette, run **GitLens: Show Inspect View**, and open the **Overview** tab.
-3. Select **Start Review for PR #**, then make and save your proposed changes.
-4. Select **Suggest Changes for PR**, add a title, and select **Create Code Suggestion**.
+Reviewers create Code Suggestions in GitKraken Desktop. To review them in GitLens:
 
-The pull request owner can then review, apply, and commit your suggestions. See [GitLens Code Suggest](/gitlens/gl-code-suggest/).
+1. In a GitLens view, expand the branch that has the pull request, then expand the pull request.
+2. Expand **Code Suggestions** and select a suggestion to open it in **Patch Details**.
+3. Select **Apply Patch** to apply the changes, then **Accept** or **Reject** the suggestion.
+
+See [GitLens Code Suggest](/gitlens/gl-code-suggest/).
 
 ***
 

@@ -1,11 +1,11 @@
 ---
 title: GitLens Streamline Collaboration
-description: How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
+description: Share uncommitted changes with Cloud Patches and review Code Suggestions on your pull requests in GitLens.
 taxonomy:
   category: gitlens
-last_updated: 2025-07
+last_updated: 2026-11
 ---
-<kbd>Last updated: July 2025</kbd>
+<kbd>Last updated: November 2026</kbd>
 
 <figure class='embed-container embed-container--16-9'>
   <iframe width='560' height='315' src='https://www.youtube.com/embed/ljKEzaCMEow?si=YFf7oME8PG926kET' frameborder='0' allowfullscreen title="GitLens Streamline Collaboration video overview"></iframe>
@@ -13,25 +13,23 @@ last_updated: 2025-07
 
 &nbsp;
 
-Collaborating in a repository can be tricky—especially when you want to share work without flooding the remote with temporary commits or branches. Traditional pull request workflows also limit which files you can review or comment on—typically only those that have changed.
+GitLens lets you share work without pushing temporary commits or branches to the remote. A pull request review covers only the files that changed, but with GitLens you can also review edits suggested on other files.
 
-GitLens helps streamline collaboration through:
-
-- **Cloud Patches** – Share uncommitted code changes without pushing to a remote.
-- **Code Suggest** – Propose changes on any file, not just modified ones.
+- **Cloud Patches**: share uncommitted code changes without pushing to a remote.
+- **Code Suggest**: review and apply changes that reviewers suggest on any file, including files the pull request did not modify.
 
 ## Cloud Patches <span style="color: #888;">`PRO`</span>
 
-Cloud Patches are Git patches that can be shared with anyone in your GitKraken organization. Teammates can apply them directly to their working directory—ideal for reviewing or collaborating on code before it’s committed.
+Cloud Patches are Git patches that you share with anyone in your GitKraken organization. Teammates apply them to their working directory to review or collaborate on code before it is committed.
 
 To create a Cloud Patch:
 
 1. Make and save changes to any file.
-2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-3. Run: `GitLens: Share as Cloud Patch…`
+2. Open the Command Palette (**Ctrl/⌘ + Shift + P**).
+3. Run **GitLens: Share as Cloud Patch...**.
 4. Select teammates to share with.
 
-Recipients will see the patch in the **Cloud Patch** sidebar and can apply it directly to their workspace.
+Recipients see the patch in the **Cloud Patches** view and can apply it to their working directory.
 
 [Open the Cloud Patches View in GitLens](vscode://eamodio.gitlens/link/command/cloud-patches)
 
@@ -42,20 +40,16 @@ Recipients will see the patch in the **Cloud Patch** sidebar and can apply it di
 
 ## Code Suggest <span style="color: #888;">`PRO`</span>
 
-Code Suggest lets you propose edits to any file in a repository—regardless of whether the file was modified. You can submit these suggestions directly to another team member’s open pull request.
+A Code Suggestion proposes edits to any file in a repository, whether or not the pull request changed it. Reviewers create Code Suggestions in GitKraken Desktop and attach them to an open pull request.
 
-To create a Code Suggestion:
+To review a Code Suggestion in GitLens:
 
-1. Check out a branch that has an open pull request.
-2. Make and save changes to any file.
-3. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-4. Run: `GitLens: Show Inspect View` > **Suggest Changes for PR**.
+1. In a GitLens view, expand the branch that has the pull request, then expand the pull request.
+2. Expand **Code Suggestions** and select a suggestion to open it in **Patch Details**.
+3. Select **Apply Patch** to apply the changes to your working tree.
+4. Select **Accept** or **Reject** to close the suggestion.
 
-The PR creator can:
-
-- Review your suggestions
-- Apply them to their working directory
-- Commit and push the changes to the open pull request
+See [GitLens Code Suggest](/gitlens/gl-code-suggest/).
 
 <figure class='callout callout--warning'>
   <p>This feature is available with a GitLens Pro subscription or higher.</p>

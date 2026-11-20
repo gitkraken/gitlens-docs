@@ -22,9 +22,7 @@ Use the GitLens Launchpad to see your pull requests grouped by status, so you ca
 
 ### Open the Launchpad
 
-1. Open the Command Palette:
-   - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
-   - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+1. Open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>).
 2. Search for **GitLens: Open Launchpad**, or select **Pull Request** from the status bar in VS Code.
 
 To learn more about Launchpad, open the GitLens **Welcome** view, which includes a Launchpad and Worktrees step. Select any of these to open it:
@@ -83,17 +81,6 @@ If a repository on GitHub.com merges through a merge queue, Launchpad shows wher
 </figure>
 
 GitLens supports merge queues on GitHub.com only, not on GitHub Enterprise. For details, see [GitHub Merge Queue](/gitlens/gl-integrations/#github-merge-queue).
-
----
-
-### Code Suggestions
-
-You can start or review [Code Suggestions](/gitlens/gitlens-features/#code-suggest-preview) from pull requests in the Launchpad.
-
-<figure>
-  <img src="/wp-content/uploads/gl-launchpad-code-suggest.png" class="help-center-img img-bordered" alt="Launchpad pull request actions with Code Suggest option" />
-  <figcaption style="text-align: center; color: #888">Starting or reviewing Code Suggestions</figcaption>
-</figure>
 
 ---
 
