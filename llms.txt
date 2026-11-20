@@ -13,7 +13,7 @@
 - [GitKraken Account – GitLens](https://help.gitkraken.com/gitlens/gl-gk-account/): Learn how to create and manage your GitKraken account for GitLens features.
 - [GitKraken AI Features in GitLens](https://help.gitkraken.com/gitlens/gl-gk-ai/): Use GitKraken AI in GitLens to write commit and stash messages, explain changes, generate changelogs and pull requests, review changes, and resolve rebase conflicts.
 - [GitLens Cloud Patches](https://help.gitkraken.com/gitlens/gl-cloud-patches/): Use GitLens Cloud Patches to securely share work-in-progress changes across GitKraken tools for early collaboration.
-- [GitLens Code Suggest](https://help.gitkraken.com/gitlens/gl-code-suggest/): Use GitLens Code Suggest to propose edits and code review suggestions across entire projects in GitHub repositories.
+- [GitLens Code Suggest](https://help.gitkraken.com/gitlens/gl-code-suggest/): Find, apply, and accept or reject Code Suggestions on your GitHub pull requests in GitLens.
 - [GitLens Commit Graph](https://help.gitkraken.com/gitlens/gl-commit-graph/): Visualize your repository history, branches, and collaborators with the GitLens Commit Graph in VS Code.
 - [GitLens Community vs. GitLens Pro](https://help.gitkraken.com/gitlens/gitlens-community-vs-gitlens-pro/): Learn the differences between GitLens Community and GitLens Pro
 - [GitLens FAQ](https://help.gitkraken.com/gitlens/gitlens-faq/): Frequently asked questions about GitLens and GitKraken account integration.
@@ -30,7 +30,7 @@
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
 - [GitLens Security Information](https://help.gitkraken.com/gitlens/gl-security/): Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.
 - [GitLens Settings Overview](https://help.gitkraken.com/gitlens/gitlens-settings/): Open GitLens Settings to customize GitLens in Visual Studio Code, and look up each GitLens setting for settings.json.
-- [GitLens Streamline Collaboration](https://help.gitkraken.com/gitlens/gl-streamline-collaboration/): How GitLens helps teams collaborate efficiently using Cloud Patches and Code Suggest.
+- [GitLens Streamline Collaboration](https://help.gitkraken.com/gitlens/gl-streamline-collaboration/): Share uncommitted changes with Cloud Patches and review Code Suggestions on your pull requests in GitLens.
 - [GitLens Support Terms and Conditions](https://help.gitkraken.com/gitlens/gl-terms-and-conditions/): Learn about GitLens Support terms and conditions
 - [GitLens Troubleshooting](https://help.gitkraken.com/gitlens/gitlens-troubleshooting/): GitLens Troubleshooting
 - [GitLens Visual File History](https://help.gitkraken.com/gitlens/gl-visual-file-history/): Use GitLens Visual File History to explore file evolution, changes, and authorship over time in VS Code.
