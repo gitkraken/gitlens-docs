@@ -26,6 +26,7 @@
 - [Prepare Your Branch to Ship](https://help.gitkraken.com/gitlens/gl-branch-prep-to-ship/): Check where your branch stands, compare it, clean up its commits, rebase, resolve conflicts and review it in the GitLens Commit Graph before you merge.
 - [Take Agent-Generated Work from Change to Merge](https://help.gitkraken.com/gitlens/gl-agent-generated-work-end-to-end/): Review, revise, compose, compare, and rebase a coding agent's changes in the GitLens Commit Graph until the branch is ready to merge.
 - [GitLens Release Notes](https://help.gitkraken.com/gitlens/gitlens-release-notes-current/): GitLens Release Notes
+- [GitLens Release Notes — Version 18](https://help.gitkraken.com/gitlens/GL-Release-v18-x/): GitLens Release Notes for Version 18.x
 - [GitLens Release Notes — Version 17](https://help.gitkraken.com/gitlens/GL-Release-v17-x/): GitLens Release Notes for Version 17.x
 - [GitLens Release Notes — Older Versions](https://help.gitkraken.com/gitlens/GL-Releases-Old/): GitLens Release Notes for Version 16.x and earlier
 - [GitLens Security Information](https://help.gitkraken.com/gitlens/gl-security/): Learn how GitLens secures your data, including collection, transfer, storage, and SOC 2 certification.

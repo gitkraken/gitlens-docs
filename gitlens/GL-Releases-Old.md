@@ -10,7 +10,7 @@ last_updated: 2026-05
 
 Release notes for older GitLens versions (v16.x and earlier).
 
-[Current Release Notes (v18.x)](/gitlens/gitlens-release-notes-current) | [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
+[Current Release Notes (v19.x)](/gitlens/gitlens-release-notes-current) | [Version 18.x Release Notes](/gitlens/GL-Release-v18-x) | [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
 
 ---
 
