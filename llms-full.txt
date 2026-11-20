@@ -5039,6 +5039,27 @@ The _GitLens Settings_ page rebuilt in 18.3 gains new sections and a reorganized
 
 ---
 
+### Previous Release Notes
+
+- [Version 18.x Release Notes](/gitlens/GL-Release-v18-x)
+- [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
+- [Older Release Notes (v16.x and earlier)](/gitlens/GL-Releases-Old)
+
+---
+
+## GitLens Release Notes — Version 18
+
+URL: https://help.gitkraken.com/gitlens/GL-Release-v18-x/
+Description: GitLens Release Notes for Version 18.x
+
+Last updated: November 2026
+
+Release notes for GitLens version 18.x releases.
+
+[Current Release Notes (v19.x)](/gitlens/gitlens-release-notes-current) | [Version 17.x Release Notes](/gitlens/GL-Release-v17-x) | [Older Release Notes (v16.x and earlier)](/gitlens/GL-Releases-Old)
+
+---
+
 ## Version 18.3
 
 #### Thursday, July 9, 2026
@@ -5514,13 +5535,6 @@ GitLens 18 continues to invest in performance and stability improvements:
 
 ---
 
-### Previous Release Notes
-
-- [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
-- [Older Release Notes (v16.x and earlier)](/gitlens/GL-Releases-Old)
-
----
-
 ## GitLens Release Notes — Version 17
 
 URL: https://help.gitkraken.com/gitlens/GL-Release-v17-x/
@@ -5530,7 +5544,7 @@ Last updated: May 2026
 
 Release notes for GitLens version 17.x releases.
 
-[Current Release Notes (v18.x)](/gitlens/gitlens-release-notes-current) | [Older Release Notes (v16.x and earlier)](/gitlens/GL-Releases-Old)
+[Current Release Notes (v19.x)](/gitlens/gitlens-release-notes-current) | [Version 18.x Release Notes](/gitlens/GL-Release-v18-x) | [Older Release Notes (v16.x and earlier)](/gitlens/GL-Releases-Old)
 
 ---
 
@@ -6810,7 +6824,7 @@ Last updated: May 2026
 
 Release notes for older GitLens versions (v16.x and earlier).
 
-[Current Release Notes (v18.x)](/gitlens/gitlens-release-notes-current) | [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
+[Current Release Notes (v19.x)](/gitlens/gitlens-release-notes-current) | [Version 18.x Release Notes](/gitlens/GL-Release-v18-x) | [Version 17.x Release Notes](/gitlens/GL-Release-v17-x)
 
 ---
 
