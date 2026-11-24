@@ -27,7 +27,7 @@ Features marked with `PREVIEW` require a GitKraken Account, with access level ba
 
 GitLens 19.7 makes it easier to clean up merged branches in the _Commit Graph_, improves contrast in light and high contrast themes, and uses less memory when reading Git history. It also fixes interrupted history reads, Git operations that stalled after a timeout on Windows, and several long-standing _Commit Graph_ issues.
 
-<img src="/wp-content/uploads/gl-19-7-hero.png" class="help-center-img img-bordered" alt="GitLens 19.7 highlights: more consistent branch cleanup, clearer in light and high contrast themes, and steadier Git with lighter history.">
+<img src="/wp-content/uploads/gl-19-7-hero.png" class="help-center-img img-bordered" alt="GitLens 19.7 highlights: smarter branch cleanup, sharper in light themes, and lighter, steadier Git, beside the Commit Graph in a high contrast light theme.">
 
 ### More Consistent Branch Cleanup
 
