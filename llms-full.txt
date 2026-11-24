@@ -2,7 +2,7 @@
 
 > GitLens documentation — the #1 Git extension for Visual Studio Code. Supercharge your Git workflows with blame, code history, commit graphs, and more.
 
-Generated: 2026-11-20
+Generated: 2026-11-24
 
 ---
 
@@ -808,9 +808,7 @@ Commit Graph overview in GitLens
 The Commit Graph is the leading view in the GitLens sidebar. Click the GitLens icon in the Activity Bar to open it directly.
 
 You can also open it from the Command Palette:
-1. Open the Command Palette:
-   - macOS: Cmd + Shift + P
-   - Windows/Linux: Ctrl + Shift + P
+1. Open the Command Palette (Ctrl/⌘ + Shift + P).
 2. Type **Show Commit Graph** and select it.
 
 The Commit Graph opens in a new tab, where you can scroll through history and resize column widths.
@@ -830,7 +828,7 @@ With no repository open, Start Work lists issues from all of your connected inte
 
 ### Repository Information
 
-At the top of the Commit Graph, you’ll see:
+At the top of the Commit Graph, you'll see:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch** (click to switch branches)
@@ -895,6 +893,7 @@ Clicking a branch, pull request, comparison, or agent session opens a slide-out 
   - **Merged** and **Safe to delete**: the branch's commits are in the target, or its pull request merged.
   - **Likely Merged** and **Squashed or rebased**: the target has the same changes as different commits.
   - **Merged Locally** and **Not yet pushed to the remote**: the work is only in your local copy of the target. The card also offers **Push** for that local branch, for example **Push main**.
+  - If the branch's work has not landed but its pull request merged into a branch other than its merge target, the card notes *Pull request #&lt;number&gt; was merged into &lt;base&gt;*.
 - **Pull request sheet**: Displays PR description, reviewers, status checks, and stacked PR information when applicable. For a pull request in a GitHub merge queue, it shows the pull request's place in the queue (see [Pull Request Information](#pull-request-information)).
 - **Compare sheet**: Shows file-level comparison between branches or commits, with a pinned mode to keep the comparison visible while navigating.
 - **Rebase summary sheet**: Appears after a rebase operation, summarizing what changed.
@@ -923,7 +922,7 @@ Worktree pills above the graph
 
 Each worktree's uncommitted work appears on a **Working Changes** row, which shows the worktree's branch as an inline pill. Working Changes rows of other worktrees carry a worktree row marker; hover it to see the worktree's name. When a rebase, merge, cherry-pick, or revert is paused in a worktree, its row shows a status pill such as **Rebase Paused** or **Resolve conflicts to continue rebasing**.
 
-To run a VS Code task in a worktree, select the **Run Default Task** (play) button on its Working Changes row. The first time, GitLens asks you to choose the default task. Alt-click the button to choose a different task to run. While the task runs, the button reads **Running: &lt;task&gt;**, and clicking it shows the running task.
+To run a VS Code task in a worktree, select the **Run Default Task** (play) button on its Working Changes row. The first time, GitLens asks you to choose the default task. Alt/⌥-click the button to choose a different task to run. While the task runs, the button reads **Running: &lt;task&gt;**, and clicking it shows the running task.
 
 Running the default task on a Working Changes row
 
@@ -935,7 +934,7 @@ Choosing a task and setting the default
 
 Scope the graph to another worktree to work in it without leaving the Commit Graph. While the graph is scoped, it acts as if you had opened that worktree: you see its branch and its changes, and anything you commit, push, or pull happens there. To scope the graph, do one of the following:
 
-- In the sidebar **Worktrees** panel, hover a worktree and select **Scope to Worktree**. Alt-click the action to focus on the worktree's branch instead.
+- In the sidebar **Worktrees** panel, hover a worktree and select **Scope to Worktree**. Alt/⌥-click the action to focus on the worktree's branch instead.
 - Right-click a worktree's Working Changes row and select **Scope to Worktree**.
 - Double-click another worktree's Working Changes row or its pill in the overview bar.
 
@@ -961,19 +960,19 @@ The Commit Graph following the active terminal
 
 #### Ref Find
 
-The ref-finder widget is a typeahead search that jumps to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
+Press / to open the **Find a branch, tag, or worktree** box, a typeahead search that jumps to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the box closes when it loses focus.
 
 ---
 
 ### Details Panel
 
-The Commit Graph includes an embedded details panel that shows information about the selected commit or your current working changes. The details panel replaces the former standalone Graph Details view and is integrated directly within the graph.
+The Commit Graph includes an embedded details panel that shows information about the selected commit or your current working changes.
 
 When you select a commit, the details panel displays the commit message, author, changed files, and diff. When viewing working changes, it shows your uncommitted modifications. The panel can be positioned to the right or bottom of the graph using the `gitlens.graph.details.location` setting. An `auto` option is also available, which switches between right and bottom placement based on the graph width. The `gitlens.graph.details.maximizeOnMode` setting automatically maximizes the details panel when entering compose, review, or resolve modes.
 
 The details panel supports multiple modes:
 
-- **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits. This replaces navigating to the standalone Search and Compare view for graph comparisons.
+- **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits.
 - **Compose mode**: Lets you write commit messages and select files to commit without leaving the graph. You can also access Compose from the graph context menu.
 - **Recompose**: Helps clean up existing branch history by reorganizing selected commits into a clearer, more intentional sequence. GitKraken AI can propose the new structure and commit messages for you to review and refine before applying the result. Available from the graph context menu, Recompose can operate on an entire branch, from a specific commit, or on selected commits.
 - **Review mode**: Lets you work through the changes in Working Changes, a commit, or a range of commits file by file. Mark each file as viewed with its checkbox, set files aside with **Exclude from Review**, and follow your progress until the review is complete. With GitKraken AI, **Review Diff** adds findings tagged by severity that you can dismiss, comment on, or hand to a coding agent with **Address Findings with Agent**. Reading and checking off files works without AI. See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
@@ -989,7 +988,7 @@ The diverged-branch step in Next steps
 When the branch's work has landed in its merge target, cleaning it up becomes the next step. The step says how the work landed:
 
 - **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree).
-- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first.
+- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first. If GitLens asks you to confirm deleting a branch that is not fully merged, the prompt says where its changes are, for example *Its changes are in 'main' (likely squash or rebase merged)*.
 - **Branch Merged Locally into &lt;target&gt;** (or **Branch Likely Merged Locally into &lt;target&gt;**) when the work is only in your local copy of the target, which has not been pushed. The step offers **Push** for your local target branch first, for example **Push main**, with **Delete Branch** (or **Delete Worktree**) as the alternate action.
 
 The publish, push, rebase, and recompose steps for the branch no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
@@ -998,8 +997,8 @@ Next steps for a branch whose work has landed
 
 Other branch states change the list too:
 
-- If the branch's remote branch was deleted, for example after its pull request merged, the list starts with **&lt;branch&gt; is missing from the remote** and offers **Delete Local Branch**, with **Publish** as the alternate action.
-- If you added commits after the branch's pull request merged, the pull request step reads **Create a Pull Request for N New Commits**.
+- If the branch's remote branch was deleted, for example after its pull request merged, the list starts with **&lt;branch&gt; is missing from the remote** and offers **Delete Local Branch** (**Delete Worktree** for a branch in its own worktree), with **Publish** as the alternate action.
+- If you added commits after the branch's pull request merged, the pull request step reads **Create a Pull Request for N New Commits**. If the remote branch was also deleted, those commits exist only on your machine, so the list starts with **Publish N New Commits** instead and offers no delete step.
 - While the branch's pull request is in a GitHub merge queue, the list holds back push, force push, rebase, merge, and recompose steps and shows *This pull request is in the merge queue, so changes to its branch aren't suggested until it merges or leaves the queue.* (see [Pull Request Information](#pull-request-information)).
 
 If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code cannot publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
@@ -1008,7 +1007,7 @@ Next steps for a repository with no remotes
 
 #### Multi-file Selection
 
-File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using Shift-click and Ctrl/Cmd-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for single-file operations.
+File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using Shift-click and Ctrl/⌘-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for single-file operations.
 
 To ignore an untracked file, right-click it in the Working Changes file list and select **Add to .gitignore**. With several files selected, the action applies to the untracked ones. GitLens adds each file as a pattern anchored to the repository root, such as `/local-config.json`, to the `.gitignore` file at the root of the repository. If the file does not exist, GitLens creates it, and then opens it so you can see what was added.
 
@@ -1025,13 +1024,13 @@ The details panel includes back and forward navigation buttons for browsing thro
 Press ? in the Commit Graph to open the **Keyboard Shortcuts** sheet, which lists all graph shortcuts organized by category. Frequently used shortcuts include:
 
 - /: Find a branch, tag, or worktree.
-- Ctrl/Cmd + F: Search commits.
-- 1 through 0: Jump to a recent worktree.
-- Alt + 1 through Alt + 8: Toggle a sidebar panel.
-- Alt + K, V, M, S, or D: Toggle the Agent Kanban, visualizations, minimap, sidebar, or details panel.
-- Ctrl/Cmd + Up/Down: Follow the branch to the previous or next commit.
-- Alt + Up/Down: Jump to the previous or next fork point.
-- Ctrl/Cmd + Left/Right: Switch branch at a fork.
+- Ctrl/⌘ + F: Search commits.
+- Number keys 1 through 0: Jump to a recent worktree.
+- Alt/⌥ + 1 through Alt/⌥ + 8: Toggle a sidebar panel.
+- Alt/⌥ + K, V, M, S, or D: Toggle the Agent Kanban, visualizations, minimap, sidebar, or details panel.
+- Ctrl/⌘ + ↑ / ↓: Follow the branch to the previous or next commit.
+- Alt/⌥ + ↑ / ↓: Jump to the previous or next fork point.
+- Ctrl/⌘ + ← / →: Switch branch at a fork.
 
 Hold Ctrl or Alt while you hover a commit to highlight its lane and the commits in its chain, dimming the rest of the graph.
 
@@ -1123,11 +1122,7 @@ Scroll markers in the Commit Graph
 
 ### Settings
 
-Adjust Commit Graph settings from the Command Palette:
-- macOS: Cmd + Shift + P
-- Windows/Linux: Ctrl + Shift + P
-
-Search for **GitLens: Open Settings**.
+To adjust Commit Graph settings, open the Command Palette (Ctrl/⌘ + Shift + P) and search for **GitLens: Open Settings**.
 
 Opening Commit Graph settings
 
@@ -1140,8 +1135,8 @@ The Commit Graph supports rich search across your entire repository. You can sea
 #### How to Search
 1. Type search criteria in the search bar.
 2. Use the arrow icons or keyboard shortcuts to navigate results:
-   - Next result: F3 (Windows/Linux) or Cmd + G (macOS)
-   - Previous result: Shift + F3 (Windows/Linux) or Shift + Cmd + G (macOS)
+   - Next result: F3, or ⌘ + G on macOS
+   - Previous result: Shift + F3, or ⌘ + ⇧ + G on macOS
 
 Searching commits in the Commit Graph
 
@@ -1577,7 +1572,7 @@ You can [customize](/gitlens/gitlens-settings/#git-codelens-settings) what each 
 ### Related Command
 
 - **Toggle Git CodeLens** (`gitlens.toggleCodeLens`)
-  Shortcut: Alt/⌥ + Shift + B
+  Shortcut: Ctrl + Shift + G, then Shift + B (on macOS, ⌘ + ⌥ + G, then Shift + B)
 
 ***
 
@@ -1679,7 +1674,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 - Toggle annotations with:
 
   - **Command**: `gitlens.toggleFileBlame`
-  - **Shortcut**: Alt/⌥ + B
+  - **Shortcut**: Ctrl + Shift + G, then B (on macOS, ⌘ + ⌥ + G, then B)
   - **Dismiss**: Escape
 
 ***
@@ -2464,7 +2459,7 @@ Select specific commits to recompose
 
 Select the commits that need work, such as quick "wip" or "fix" commits, and let GitKraken AI restructure only those changes with clearer messages.
 
-1. Select multiple contiguous commits on the same branch with Shift-click, or ⌘-click on macOS.
+1. Select multiple contiguous commits on the same branch with Shift-click or Ctrl/⌘-click.
 2. Right-click and choose **Recompose Selected Commits...**.
 
 Commit Composer opens with only your selected commits as drafts, ready for you or GitKraken AI to refine.
@@ -2821,7 +2816,7 @@ Deep Links are URLs that open specific GitLens resources. Share them to point te
 - **Search & Compare** — Link to comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view). Right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_.
 - **GitKraken Workspaces** — Link to a [GitKraken Workspace](/gitlens/side-bar/#workspaces). Right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_.
 - **Commit Graph** — Link to remote repositories, commits, branches, and tags in the [Commit Graph](/gitlens/gitlens-features/#commit-graph). Right-click the resource, hover over _Share_, and select _Copy Link to <resource>_.
-- **Files or Lines** — Link to specific files or lines of code. Right-click highlighted lines or a file, hover over _Share_, and select _Copy vscode.dev Link_.
+- **Files or Lines** — Link to specific files or lines of code. Select the lines, right-click the line numbers, hover over _Share_, and select _Copy Link to Code_. To link to the whole file, select _Copy Link to File_ instead. In GitLens views, right-click a file, hover over _Share_, and select _Copy Link to File_.
 - **Cloud Patches** — Link to a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview). After generating a Cloud Patch, click _Copy Link_ from the success prompt.
 
 Example of generating and using Deep Links
@@ -2852,7 +2847,17 @@ To switch languages, install Microsoft's language pack for that language, run **
 
 ## Welcome View
 
-Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
+Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers:
+
+- Getting started with GitLens
+- The Commit Graph
+- AI features
+- Git Blame
+- Launchpad and worktrees
+- Kepler for agent workflows
+- The GitKraken MCP server
+
+The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
 
 Open it from the GitLens side bar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
 
@@ -2929,9 +2934,9 @@ Expand each section to choose individual menus and toolbars.
 
 ## Modes
 
-GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes, so you can switch between sets of settings.
+GitLens supports [user-defined](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings') modes, so you can switch between sets of settings.
 
-- Shows the active mode in the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
+- Shows the active mode in the **status bar** ([optional](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings'), on by default)
 - **Switch Mode** (`gitlens.switchMode`) — Switch between modes.
 - **Zen Mode** — Turns off many visual elements so you can focus on your code.
   - **Toggle Zen Mode** (`gitlens.toggleZenMode`) — Toggle Zen mode.
@@ -3837,7 +3842,7 @@ The Commit Graph shows HEAD, the upstream, the merge target, incoming work, and 
 When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
 
 - **Publish**, when the branch has no upstream yet
-- **Delete Local Branch**, when the branch's remote branch was deleted, for example after its pull request merged. **Publish** is the alternate action on the same button
+- **Delete Local Branch** (**Delete Worktree** for a branch in its own worktree), when the branch's remote branch was deleted, for example after its pull request merged. **Publish** is the alternate action on the same button. If you added commits after the pull request merged, the list leads with **Publish N New Commits** instead
 - **Publish Repository** or **Add Remote**, when the repository has no remotes yet
 - **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
 - **Pull** or **Force Push**, when the branch has diverged from its upstream
@@ -3886,9 +3891,7 @@ If something needs another pass, address it yourself or send the findings back t
 
 ## Workflow Summary
 
-From finished code to a branch that is ready to merge, the Commit Graph covers these steps in order:
-
-**Understand → Compare → Compose → Rebase → Resolve → Review**
+From finished code to a branch that is ready to merge, the Commit Graph covers these steps in order: **Understand → Compare → Compose → Rebase → Resolve → Review**.
 
 ---
 
@@ -3982,6 +3985,135 @@ Install Current Version Now
 
 Features marked with `PRO` require a [trial or paid plan](https://www.gitkraken.com/gitlens/pricing) for use on privately hosted repos \
 Features marked with `PREVIEW` require a GitKraken Account, with access level based on your [plan](https://www.gitkraken.com/gitlens/pricing), e.g. Community, Pro, etc
+
+---
+
+## Version 19.7
+
+#### Tuesday, November 24, 2026
+
+GitLens 19.7 makes it easier to clean up merged branches in the _Commit Graph_, improves contrast in light and high contrast themes, and uses less memory when reading Git history. It also fixes interrupted history reads, Git operations that stalled after a timeout on Windows, and several long-standing _Commit Graph_ issues.
+
+### More Consistent Branch Cleanup
+
+Version 19.6 added cleanup actions for branches whose work has landed. In 19.7, the _Commit Graph_ makes those actions easier to find and more consistent.
+
+- The header and _Working Changes_ use the same check for whether the current branch landed, and its _Overview_ card shows cleanup without a hover. The header's _Publish Branch_ updates when you change the merge target.
+- Once GitLens confirms a branch has landed, the Commit Graph offers to delete it and no longer suggests _Force Push_, _Switch to Branch_, _Create a Pull Request_, or _Recompose Branch_.
+- While a pull request is in the merge queue, the graph no longer offers _Push_ or _Force Push_.
+- If you've added commits since a branch's pull request merged and its remote branch was deleted, GitLens leads with _Publish N New Commits_ instead of offering to delete the branch.
+- When a pull request merged into a branch other than the merge target, such as a stacked parent, the merge target popover and branch details say which one. Deleting a branch that landed by squash, rebase, or fast-forward merge says where its work went, and each cleanup action says whether it deletes the branch or its worktree.
+
+### Clearer in Light and High Contrast Themes
+
+GitLens adds dedicated high contrast light defaults. Blame text, branch status decorations, pull request and issue icons, and _Commit Graph_ lanes stand out more clearly against white, and _Launchpad_'s attention and mergeable indicators have stronger contrast.
+
+In light themes, _Commit Graph_ branch and tag names are darkened just enough to stay legible while keeping their lane's color, and the current branch no longer puts white text on light green. Inline blame annotations are also easier to read in high contrast dark themes.
+
+### Steadier Git, Lighter History
+
+- Reading history uses less memory, especially for searches that match only a few commits, and commits with very large patches or file lists are read faster.
+- With Git 2.46 or later, background diff checks no longer lock the index when a tool such as a formatter touches a file without changing it, which could make your own `git add` or commit fail.
+- Git operations on Windows now finish when they time out or are cancelled, such as a fetch from a remote that never responds.
+- Commit lists, _File History_, contributors, and the _Commit Graph_ no longer show cut-short results with nothing more to load after a read is cancelled partway through.
+- GitLens tries again after a failed pull request lookup, instead of treating the commit as having no pull request until reload. It also looks up a remote's default branch without prompting for credentials.
+- Patches, cloud patches, and AI commit messages now work with Git configurations that use external diff tools or custom diff prefixes.
+- GitLens detects changes in repositories and worktrees inside a `node_modules` folder or a folder whose name ends in `.git`, such as worktrees kept inside a bare repository.
+
+### Everyday Improvements
+
+- AI custom instructions and the commit and stash tooltip formats can now be edited in a multi-line text box in the Settings editor.
+- Pull requests waiting in a merge queue get their own icon, a pull request with a clock, across the _Commit Graph_, views, hovers, autolinks, and _Launchpad_.
+- _Launchpad_ clears "needs reviewers" when GitHub confirms a repository does not require a review, and the _Commit Graph_'s _Pull Requests_ panel accounts for pending code owner or team reviews when GitHub reports them.
+- The _Inspect_ view now autolinks issues and pull requests in the first commit it shows.
+- When the _Branches / Tags_ column is last, branch and tag pills expand to the left if that keeps them inside the _Commit Graph_, and the hidden branches and tags menu scrolls and keeps _Show All_ in reach.
+- _Compare Working Tree to Here_ works on commits, stashes, and tags in the _Commit Graph_. The _Commit Graph_ button in _Source Control_ opens the right graph for nested repositories and appears for GitHub repositories opened with _Remote Repositories_.
+- Repositories cloned through the port 443 SSH hosts of Bitbucket, GitHub, and GitLab (such as `ssh.github.com`) now get working remote links and deep links.
+- _Copy Remote File URL_ and _Open File on Remote_ link to the current line when the cursor is at its start, and _Copy Link to Code_ leaves out the next line when a selection ends at its start.
+- Links in commit messages and pull request and issue text can only open web or mail addresses.
+- Claude Sonnet 4.5 is removed from the Anthropic provider ahead of its November 30, 2026 retirement. If a GitLens AI feature was set to use it, GitLens asks you to choose a replacement when you next run that feature's AI action, and each feature's model choice is now saved independently.
+
+---
+
+### Changed
+
+- Changes the icon for a pull request waiting in a merge queue to a pull request with a clock badge, so it reads as queued at a glance in the _Commit Graph_, views, hovers, autolinks, and _Launchpad_ ([#6126](https://github.com/gitkraken/vscode-gitlens/issues/6126))
+- Improves editing of multi-line settings in the Settings editor &mdash; the AI custom instructions and the commit and stash tooltip formats now use a multi-line text box ([#1586](https://github.com/gitkraken/vscode-gitlens/issues/1586))
+- Adds high contrast light defaults for GitLens' theme colors &mdash; blame text, branch status decorations, pull request and issue icons, _Commit Graph_ lanes and pale markers, and _Launchpad_'s attention and mergeable indicators now stand out more clearly against white ([#2119](https://github.com/gitkraken/vscode-gitlens/issues/2119))
+- Removes an unused inline script from the _Interactive Rebase Editor_ and _Cloud Patch_ details webviews ([#6201](https://github.com/gitkraken/vscode-gitlens/issues/6201))
+- Hardens how commit messages and pull request and issue text are rendered in hovers, view tooltips, the _Commit Graph_ and _Inspect_ &mdash; links in that text can only open web or mail addresses, and only GitLens' own actions can run commands ([#6200](https://github.com/gitkraken/vscode-gitlens/issues/6200))
+- Changes _Commit Graph_ shortcut overrides (`gitlens.graph.shortcuts.overrides`) to accept modifier and key names in any case, as VS Code keybindings do &mdash; `Alt+KeyM`, `alt+arrowup` and `f3` now work; single characters still match exactly, so `h` and `H` stay distinct
+- Improves memory use and large-commit performance when reading commit history &mdash; GitLens retains less of Git's raw output, especially when a search keeps only a small share of the commits it reads, and commits with very large patches or file lists are parsed more efficiently ([#5659](https://github.com/gitkraken/vscode-gitlens/issues/5659))
+
+### Removed
+
+- Removes Claude Sonnet 4.5 from the Anthropic provider ahead of Anthropic's November 30, 2026 retirement &mdash; if a GitLens AI feature was set to use it, GitLens asks you to choose a replacement when you next run that feature's AI action ([#6164](https://github.com/gitkraken/vscode-gitlens/issues/6164))
+
+### Fixed
+
+- Fixes choosing an AI model for composing commits, reviewing changes, resolving conflicts, or as the default not being saved when it matched a model just chosen elsewhere &mdash; each choice is now saved independently ([#6332](https://github.com/gitkraken/vscode-gitlens/issues/6332))
+- Fixes the _Create Cloud Patch_ button staying disabled after dismissing the account prompt or submitting without a title ([#6242](https://github.com/gitkraken/vscode-gitlens/issues/6242))
+- Fixes the confirmation toggle in _Launchpad_ adding an invalid `launchpad:command` value to `gitlens.gitCommands.skipConfirmations` that made selecting a pull request do nothing &mdash; _Launchpad_, _Start Work_ and _Start PR Review_ no longer offer the toggle, _Stash Apply_ and _Stash Pop_ now honor their documented values, and the setting now accepts the add remote, rename stash and open worktree values ([#5645](https://github.com/gitkraken/vscode-gitlens/issues/5645))
+- Fixes the _Commit Graph_ showing a blank view and editor with a Git version older than 2.17, which lacks worktree support ([#4363](https://github.com/gitkraken/vscode-gitlens/issues/4363))
+- Fixes the _Show Commit Graph_ button in _Source Control_ opening the parent repository's graph for a submodule or nested repository that GitLens hasn't detected yet ([#4566](https://github.com/gitkraken/vscode-gitlens/issues/4566))
+- Fixes the _Commit Graph_ details panel continuing to show the previous repository's commit after switching repositories ([#5362](https://github.com/gitkraken/vscode-gitlens/issues/5362))
+- Fixes _Commit Graph_ branch and tag pills expanding past the graph's right edge on hover when the _Branches / Tags_ column is last &mdash; the expanded pill now grows leftward when that keeps it inside the graph ([#2667](https://github.com/gitkraken/vscode-gitlens/issues/2667))
+- Fixes _Launchpad_ showing "needs reviewers" for GitHub pull requests on repositories that don't require a review ([#5863](https://github.com/gitkraken/vscode-gitlens/issues/5863))
+- Fixes the _Commit Graph_ side bar's _Pull Requests_ panel showing GitHub pull requests that are waiting on code owner or team reviews as needing reviewers or ready to merge ([#6206](https://github.com/gitkraken/vscode-gitlens/issues/6206))
+- Fixes hard-to-read branch and tag names in the _Commit Graph_ with light themes &mdash; lane-colored names are darkened just enough to stay legible while keeping their lane's hue, and the current branch's pill and marker no longer put white text on a light green ([#4548](https://github.com/gitkraken/vscode-gitlens/issues/4548))
+- Fixes faint inline blame annotations in high contrast dark themes ([#2058](https://github.com/gitkraken/vscode-gitlens/issues/2058))
+- Fixes _Commit Graph_ ref pills keeping highlights that no longer describe them ([#5764](https://github.com/gitkraken/vscode-gitlens/issues/5764))
+  - Stops painting another branch or tag in the current branch's color when the current branch is hidden behind the _+N_ badge
+  - Clears a branch, tag, or worktree's find highlight as soon as the query no longer matches it, instead of when the finder closes
+- Fixes a remote URL with an `@` in its path being recognized as a repository on a different host &mdash; e.g. `https://example.com/x@github.com/owner/repo.git` as GitHub's `owner/repo` ([#6185](https://github.com/gitkraken/vscode-gitlens/issues/6185))
+- Fixes the _Commit Graph_'s branch details offering _Create a Pull Request_ and _Recompose Branch_ for a branch whose work already landed in its merge target ([#6190](https://github.com/gitkraken/vscode-gitlens/issues/6190))
+- Fixes the _Commit Graph_ header hiding _Publish Branch_ for a branch whose pull request merged into a branch other than its merge target, such as a stacked parent ([#6191](https://github.com/gitkraken/vscode-gitlens/issues/6191))
+- Fixes the _Commit Graph_ header's _Publish Branch_ going stale after the branch's merge target changes, and depending on whether _Working Changes_ was selected ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+  - Shows or hides _Publish Branch_ as soon as _Change Merge Target_ changes whether the branch's work landed, without reopening the _Commit Graph_
+  - Hides _Publish Branch_ for a branch that landed by squash or fast-forward merge whichever row is selected, not only while _Working Changes_ is
+  - Stops _Publish Branch_ from briefly appearing when a fetch prunes the remote branch of a branch that already landed, or when _Working Changes_ refreshes
+- Fixes the _Commit Graph_'s _Overview_ cards not showing that a branch landed, or offering its cleanup, until hovered &mdash; the current branch's card now offers _Delete Branch_ (or _Delete Worktree_) in place of _Publish_, _Push_ and _Pull_ as soon as its work lands, and a branch's merged state on its card or hover updates when its merge target changes or it gets new commits
+- Fixes the _Commit Graph_'s branch details, merge target popover and _Working Changes_ disagreeing on whether cleaning up a landed branch deletes the branch or its worktree &mdash; each now names what the action actually deletes
+- Fixes the _Commit Graph_'s branch details and _Working Changes_ offering to delete a branch that has new commits since its pull request merged and its remote branch was deleted &mdash; they now lead with _Publish N New Commits_, and _Create a Pull Request_ follows once published ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+- Fixes the merge target popover and the _Commit Graph_'s branch details not saying when a branch's pull request merged into a branch other than its merge target ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+- Fixes deleting a branch that landed by squash, rebase or fast-forward merge giving no reason why it counts as merged &mdash; the delete confirmation, and git's _not fully merged_ prompt, now say where its work landed, including when the branch's worktree is deleted from another window ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+- Fixes the merge target popover offering _Rebase_ and _Merge_ onto the branch's own upstream, which _Pull_ handles, and its compact tooltip saying _Merged_ for a branch that is only likely merged or merged locally ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+- Fixes the merge target status chip having no accessible name or role for screen readers ([#6205](https://github.com/gitkraken/vscode-gitlens/issues/6205))
+- Fixes the _Commit Graph_ header, _Overview_ cards and _Working Changes_ offering _Push_ and _Force Push_ for a branch whose pull request is in the merge queue
+- Fixes the _Commit Graph_ offering _Force Push_ for a branch whose work already landed in its merge target, where all it could do is overwrite what the remote branch gained since
+- Fixes the _Commit Graph_'s _Working Changes_ and branch details briefly offering _Publish_, _Delete Local Branch_, _Push_ or _Create a Pull Request_ while still checking whether the branch landed
+- Fixes the _Commit Graph_'s branch details, _Overview_ cards and branch hovers suggesting _Switch to Branch_ for a branch whose work already landed &mdash; its _Overview_ card offers _Delete Branch_ instead
+- Fixes the _Inspect_ view not autolinking issues and pull requests in the first commit it shows, and changes to the `gitlens.views.commitDetails.autolinks.enabled` setting not applying to the commit already shown ([#6204](https://github.com/gitkraken/vscode-gitlens/issues/6204))
+- Fixes merge, cherry-pick, and revert conflicts &mdash; and _Show conflicts_ in the _Interactive Rebase Editor_ &mdash; opening a _Commit Graph_ that can't show them when it isn't available for the account or repository; the conflict now opens in the _Source Control_ view instead ([#5675](https://github.com/gitkraken/vscode-gitlens/issues/5675))
+- Fixes the _Delay Loading File Details_ setting (`gitlens.advanced.commits.delayLoadingFileDetails`) not being editable from the Settings editor &mdash; it now shows a dropdown again ([#5816](https://github.com/gitkraken/vscode-gitlens/issues/5816))
+- Fixes errors in blame, views, and remote links when a custom remote's (`gitlens.remotes`) `regex` matches the full remote URL without capturing both the domain and the path &mdash; the entry is now skipped for that remote, and the _Settings_ editor explains that full URL matches need two capture groups ([#4852](https://github.com/gitkraken/vscode-gitlens/issues/4852))
+- Fixes _Compare Working Tree to Here_ doing nothing on a commit, stash, or tag in the _Commit Graph_ &mdash; it only worked on branches ([#5352](https://github.com/gitkraken/vscode-gitlens/issues/5352))
+- Fixes the _Commit Graph_'s _Changes_ column opt-in prompt squashing its _Show_ button and cutting off its _Hide_ link when the rows area is short &mdash; the prompt now drops its explanation, then the _Hide_ link, rather than clipping them ([#5607](https://github.com/gitkraken/vscode-gitlens/issues/5607))
+- Fixes the _Commit Graph_'s hidden branches and tags menu running off the screen when many refs are hidden &mdash; the list now scrolls and _Show All_ stays in reach ([#2925](https://github.com/gitkraken/vscode-gitlens/issues/2925))
+- Fixes the _Commit Graph_ button missing from the _Source Control_ view for GitHub repositories opened with _Remote Repositories_ ([#3144](https://github.com/gitkraken/vscode-gitlens/issues/3144))
+- Fixes opening and copying remote links for repositories cloned through the SSH hosts for port 443 of Bitbucket (`altssh.bitbucket.org`), GitHub (`ssh.github.com`), and GitLab (`altssh.gitlab.com`) &mdash; Bitbucket and GitHub repositories weren't recognized at all, and GitLab links pointed at the SSH host ([#6174](https://github.com/gitkraken/vscode-gitlens/issues/6174))
+- Fixes links to a repository cloned through the SSH hosts for port 443 of Bitbucket (`altssh.bitbucket.org`), GitHub (`ssh.github.com`), and GitLab (`altssh.gitlab.com`) asking to add a new remote when opened in a clone of the same repository that uses the regular address ([#6234](https://github.com/gitkraken/vscode-gitlens/issues/6234))
+- Fixes a _Commit Graph_ shortcut override (`gitlens.graph.shortcuts.overrides`) with a misspelled or unknown key name (e.g. `alt+Bogus`) silently replacing a working shortcut with one that can never fire &mdash; the override is now ignored and the default shortcut kept, as with an unknown modifier, and the reason is logged to the _GitLens_ output channel ([#5831](https://github.com/gitkraken/vscode-gitlens/issues/5831))
+- Fixes _File History_ and the _Commit Graph_ erroring or skipping a commit whose message or author name contains an ASCII record (0x1E) or group (0x1D) separator character &mdash; also fixes tags and stashes with these characters in their messages, _Line History_ treating a commit as changing nothing when its history read was cut short, and a commit's changed files going missing when its diff contains these characters ([#5659](https://github.com/gitkraken/vscode-gitlens/issues/5659))
+- Fixes _Copy Remote File URL_ and _Open File on Remote_ linking to a backwards line range (e.g. `#L3-L2` instead of `#L3`) when the cursor is at the start of a line with nothing selected ([#6186](https://github.com/gitkraken/vscode-gitlens/issues/6186))
+- Fixes _Copy Link to Code_ including an extra line when the selection ends at the start of a line (e.g. `lines=2-5` instead of `lines=2-4`) ([#6278](https://github.com/gitkraken/vscode-gitlens/issues/6278))
+- Fixes Jira and Linear autolinks not picking up projects or teams added or removed on the tracker for as long as you keep viewing commits, and up to an hour after ([#6183](https://github.com/gitkraken/vscode-gitlens/issues/6183))
+- Fixes _Commit Graph_ branch pills sometimes never getting their pull request badge or upstream status after the graph opens ([#6281](https://github.com/gitkraken/vscode-gitlens/issues/6281))
+- Fixes the _Search Commits_ results location (`gitlens.gitCommands.search.showResultsInSideBar`) and _GitKraken CLI Insiders_ (`gitlens.gitkraken.cli.insiders.enabled`) settings not being editable from the Settings editor &mdash; they now show dropdowns again ([#6235](https://github.com/gitkraken/vscode-gitlens/issues/6235))
+- Fixes GitLens briefly locking the Git index (`index.lock`) in the background when files are touched without changing, such as by a formatter, which could make your own `git add` or commit fail at the same moment (Git 2.46 or later)
+- Fixes file changes going undetected, leaving views, the _Commit Graph_ and _Inspect_ stale, for a repository or worktree inside a folder whose name ends in `.git` (such as worktrees kept inside a bare repository) or inside a `node_modules` folder
+- Fixes the _Branches_ and _Worktrees_ views showing a branch as still checked out in a worktree after that worktree switched branches outside of GitLens
+- Fixes commit lists, _File History_, contributors, and the _Commit Graph_ sometimes showing cut-short results with nothing more to load after a Git read was cancelled partway through
+- Fixes _Create Patch_, _Copy as Patch_, cloud patches, stashing selected files, copying changes to a worktree, and AI commit messages and explanations getting wrong or empty changes when Git is configured with an external diff tool (`diff.external`), `diff.noprefix` or custom diff prefixes, `diff.suppressBlankEmpty`, or `diff.submodule=log`
+- Fixes commit details never loading, and commit lists stalling for minutes, for a commit that moves and edits thousands of files &mdash; GitLens now falls back to Git's default rename limit for that read
+- Fixes a page of commits coming back empty when one of its commits changes an unusually large number of files
+- Fixes Git commands on Windows not stopping when they time out or are cancelled, such as a fetch from a remote that never responds
+- Fixes unexpected credential prompts, and waits of up to a minute, when looking up a remote's default branch for a repository missing `refs/remotes/<remote>/HEAD` &mdash; the lookup no longer prompts, each network request times out after 10 seconds, and GitLens waits up to a minute after a failure before trying again
+- Fixes incorrect or missing file names in commit and stash file lists, diffs, blame, and _File History_, including names with quotes or tabs
+- Fixes a commit's pull request going missing from hovers, _Inspect_ and other views after a single failed lookup &mdash; a server error, network failure, or rate limit was remembered as the commit having no pull request until reload; failed lookups are now retried with a back-off, and _Open Pull Request on Remote_ reports a failed lookup instead of saying the commit has no pull request
+  - Fixes GitHub pull requests not being found for a commit when the remote's owner is spelled in a different letter case than on GitHub
+  - Fixes Bitbucket Cloud never showing its notice about the missing commit links app
+  - Fixes a failed GitLab project lookup hiding that repository's merge requests, metadata, and issues
 
 ---
 
@@ -9778,12 +9910,12 @@ These settings control how files and avatars are displayed, and what clicking a 
 
 | Name | Description |
 | --- | --- |
-| gitlens.gitCommands.closeOnFocusOut | Determines whether the Git Commands Palette dismisses automatically when focus is lost. If disabled, press ESC to dismiss manually. |
+| gitlens.gitCommands.closeOnFocusOut | Determines whether the Git Commands Palette dismisses automatically when focus is lost. If disabled, press Esc to dismiss manually. |
 | gitlens.gitCommands.search.matchAll | Controls whether commit message searches match all patterns or any pattern. |
 | gitlens.gitCommands.search.matchCase | Enables case-sensitive matching for commit message searches. |
 | gitlens.gitCommands.search.matchRegex | Enables regular expression matching for commit message searches. |
 | gitlens.gitCommands.search.showResultsInSideBar | Controls where commit search results display: in the quick pick menu, the Side Bar, or context-dependent. |
-| gitlens.gitCommands.skipConfirmations | Specifies which (and when) Git commands skip the confirmation step, using the format git-command-name:(menu\|command). Supported commands are branch-create, co-authors, fetch, pull, push, stash-apply, stash-pop, stash-push, switch, tag-create, and tag-push. You can also select the Don't Ask Again toggle under Options in a supported confirmation step to add or remove that command here; its gear button opens this setting. |
+| gitlens.gitCommands.skipConfirmations | Specifies which (and when) Git commands skip the confirmation step, using the format git-command-name:(menu\|command). Supported commands are branch-create, co-authors, fetch, pull, push, remote-add, stash-apply, stash-pop, stash-push, stash-rename, switch, tag-create, tag-push, and worktree-open. You can also select the Don't Ask Again toggle under Options in a supported confirmation step to add or remove that command here; its gear button opens this setting. |
 | gitlens.gitCommands.sortBy | Specifies sorting order of commands in the Git Command Palette: name: alphabetically by command name usage: by last used date |
 
 ***
@@ -9844,8 +9976,8 @@ These settings control how files and avatars are displayed, and what clicking a 
 
 | Name | Description |
 | --- | --- |
-| gitlens.keymap | Specifies the keymap used for GitLens shortcuts: alternate: adds alternate shortcuts starting with Alt (⌥ on macOS) chorded: adds chorded shortcuts starting with Ctrl+Shift+G (⌥⌘G on macOS) none: disables all GitLens shortcut keys |
-| gitlens.fileAnnotations.dismissOnEscape | Determines whether pressing ESC dismisses active file annotations. |
+| gitlens.keymap | Specifies the keymap used for GitLens shortcuts: alternate: adds alternate shortcuts starting with Alt/⌥ chorded: adds chorded shortcuts starting with Ctrl + Shift + G (⌘ + ⌥ + G on macOS) none: disables all GitLens shortcut keys |
+| gitlens.fileAnnotations.dismissOnEscape | Determines whether pressing Esc dismisses active file annotations. |
 
 ***
 
@@ -9923,26 +10055,26 @@ These settings control how files and avatars are displayed, and what clicking a 
 | gitlens.advanced.maxListItems | Maximum number of items shown in lists. Use 0 for no limit. |
 | gitlens.advanced.maxSearchItems | Maximum number of items shown in search results. Use 0 for no limit. |
 | gitlens.advanced.messages | Specifies which messages to suppress. |
-| gitlens.advanced.quickPick.closeOnFocusOut | Dismisses quick pick menus when focus is lost. If disabled, press ESC to dismiss manually. |
+| gitlens.advanced.quickPick.closeOnFocusOut | Dismisses quick pick menus when focus is lost. If disabled, press Esc to dismiss manually. |
 | gitlens.advanced.repositorySearch.enabled | Specifies whether GitLens automatically scans workspace folders to discover Git repositories. When disabled, GitLens uses only the repositories that VS Code's built-in source control reports. Enabled by default. |
 | gitlens.advanced.repositorySearchDepth | Depth (number of folders) to search for repositories. |
 | gitlens.advanced.similarityThreshold | Percent similarity required for a deleted and added file pair to be considered a rename. |
 | gitlens.strings.codeLens.unsavedChanges.recentChangeAndAuthors | String shown in place of both recent change and authors CodeLens when there are unsaved changes. |
 | gitlens.strings.codeLens.unsavedChanges.recentChangeOnly | String shown in place of the recent change CodeLens when there are unsaved changes. |
 | gitlens.strings.codeLens.unsavedChanges.authorsOnly | String shown in place of the authors CodeLens when there are unsaved changes. |
-| gitlens.worktrees.defaultLocation | Path variables: ${userHome}: user's home directory ${workspaceFolder}: path of the opened folder in VS Code containing the repository ${workspaceFolderBasename}: name of the opened folder in VS Code without slashes |
+| gitlens.worktrees.defaultLocation | Specifies the default path where GitLens creates new worktrees. You can use these path variables: ${userHome}: user's home directory ${workspaceFolder}: path of the opened folder in VS Code containing the repository ${workspaceFolderBasename}: name of the opened folder in VS Code without slashes |
 | gitlens.worktrees.openAfterCreate | Specifies how and when to open a worktree after it is created. Choosing an After Creating option (Open in New Window, Open in Current Window, Add to Workspace, or Don't Open) in the Create Worktree dialog updates this setting. newWindow (default): always open the new worktree in a new window currentWindow: always open the new worktree in the current window addToWorkspace: always add the new worktree to the current workspace none: never open the new worktree onlyWhenEmpty: open the new worktree in the current window only when no folder is opened, otherwise in a new window |
 | gitlens.visualHistory.allowMultiple | Allows opening multiple Visual History instances in the editor area. |
 | gitlens.liveshare.enabled | Enables integration with Visual Studio Live Share. |
 | gitlens.views.openChangesInMultiDiffEditor | Controls whether to open multiple changes in VS Code's multi-diff editor (single tab) or individual diff editors (multiple tabs). |
-| gitlens.advanced.git.maxConcurrentProcesses | Maximum number of concurrent git processes, with priority-based queuing. |
+| gitlens.advanced.git.maxConcurrentProcesses | Maximum number of background Git processes that can run at the same time. Lower it if large repositories slow down your system. |
 | gitlens.defaultCurrentUserNameStyle | Controls how the current user's name is displayed across blame, hovers, views, and graph. |
-| gitlens.advanced.git.timeout | Specifies the timeout (in seconds) for Git commands. Use 0 to disable the timeout. Some long-running operations like merge, rebase, and revert always have the timeout disabled. Default: 60. With 0, background reads that set a time limit of their own still stop at it. |
+| gitlens.advanced.git.timeout | Specifies the timeout (in seconds) for Git commands. Use 0 to disable the timeout. Some long-running operations like merge, rebase, and revert always have the timeout disabled. Default: 60. With 0, some background operations still stop at their own time limit. |
 | gitlens.advanced.resolveSymlinks | Resolves symbolic links before performing git operations. |
 | gitlens.advanced.skipOnboarding | Skips onboarding experiences, such as the Welcome view. Useful for ephemeral environments like containers or sandboxes. |
 | gitlens.sortWorkingChangesBy | Controls how working changes are sorted. stage: sorts by staging status flat: flat sort order |
 | gitlens.visualHistory.editorOpeningBehavior | Controls how files open from the Visual History view. |
-| gitlens.gitOptimizations.enabled | Specifies whether GitLens automatically applies safe, repo-local Git performance optimizations in the background (loose-object packing, incremental repack, and commit-graph) while VS Code is open. Enabled by default. This is the same routine work Git performs during git gc or git maintenance: packing and repacking reorganize objects the repository already contains without altering history, and the commit-graph is an acceleration cache that can be deleted at any time. More invasive optimizations (untracked cache, FSMonitor, system-scheduled maintenance, feature.manyFiles) are never applied automatically. Turning this off also turns off Repository Health in the Commit Graph and the automatic behavior of gitlens.advanced.commits.delayLoadingFileDetails. |
+| gitlens.gitOptimizations.enabled | Specifies whether GitLens automatically applies safe, repo-local Git performance optimizations in the background (loose-object packing, incremental repack, and commit-graph) while VS Code is open. Enabled by default. This is the same routine work Git does during git gc or git maintenance. It reorganizes objects the repository already contains and does not change history. GitLens never applies more invasive optimizations automatically, such as the untracked cache, FSMonitor, system-scheduled maintenance, or feature.manyFiles. Turning this off also turns off Repository Health in the Commit Graph and the automatic behavior of gitlens.advanced.commits.delayLoadingFileDetails. |
 | gitlens.openInTerminalLocation | Specifies where GitLens opens the terminals it creates, such as agent session terminals and Open in Integrated Terminal. The first time GitLens creates a terminal, it offers Use Editor Tabs to switch this setting to editor. panel (default): open in the terminal panel editor: open as an editor tab |
 | gitlens.agents.resumeTarget | Preview — Specifies where a past agent session is resumed when both a terminal and the agent's VS Code extension could open it. Actions that name a destination, such as Resume in Terminal, are unaffected. null (default): ask which to use the first time a session can be resumed in either place, with an option to remember terminal: always resume in a new integrated terminal extension: resume in the agent's VS Code extension when it can open the session, otherwise in a terminal |
 
@@ -10024,8 +10156,8 @@ GitLens defines themable colors. VS Code themes can set them, and you can custom
 | gitlens.graph.lanes.folding.default | Specifies which lanes the Commit Graph folds when it loads. Lanes you fold or expand yourself keep that state until the Commit Graph is reloaded. Requires gitlens.graph.lanes.folding.enabled. none (default): keeps every lane expanded all: folds every foldable lane segment into a chip auto: folds lane segments whose tip is reachable from HEAD by first parent (merged and done); the segment that contains HEAD is never folded automatically |
 | gitlens.graph.lanes.grouped.min | Specifies the minimum number of lanes the Commit Graph shows inline when the Graph column is grouped with another column (right-click a column header and select Group Graph Column), if the graph has that many lanes. On a row with more lanes than fit, the extra lanes collapse to the edge of the column. Default: 10 (minimum 1). |
 | gitlens.graph.lanes.grouped.max | Specifies the maximum share of the row's width, as a percentage, that inline lanes can take in the Commit Graph when the Graph column is grouped with another column (Group Graph Column). Wider views show more lanes automatically. When gitlens.graph.lanes.grouped.min needs more room than this allows, it takes priority. Default: 40 (from 5 to 100). |
-| gitlens.graph.shortcuts.enabled | Specifies whether the customizable keyboard shortcuts of the Commit Graph (those using Ctrl, Alt, or ⌘, such as Alt+M or Ctrl+↑) are enabled. Navigation keys such as the arrows, Enter, and Esc always work. |
-| gitlens.graph.shortcuts.overrides | Changes or disables individual Commit Graph keyboard shortcuts, keyed by shortcut id. To see an id, press ? in the Commit Graph and hover a shortcut; only shortcuts that show an id can be changed. Set an id to a key combination, a list of them, or false to disable it. A key ending in .* set to false disables every shortcut with that prefix (for example, "panels.*": false), and "*": false disables them all; wildcards cannot rebind. Key combinations join modifiers (ctrl, alt, shift, meta, or mod for Ctrl, or ⌘ on macOS) with + before a key, for example "mod+shift+ArrowUp". Letters and digits use physical key names (KeyA to KeyZ, Digit0 to Digit9); other keys use their KeyboardEvent.key value (ArrowUp, Enter, /). |
+| gitlens.graph.shortcuts.enabled | Specifies whether the customizable keyboard shortcuts of the Commit Graph (those that use Ctrl/⌘ or Alt/⌥, such as Alt/⌥ + M or Ctrl/⌘ + ↑) are enabled. Navigation keys such as the arrows, Enter, and Esc always work. |
+| gitlens.graph.shortcuts.overrides | Changes or disables individual Commit Graph keyboard shortcuts, keyed by shortcut id. To see an id, press ? in the Commit Graph and hover a shortcut; only shortcuts that show an id can be changed. Set an id to a key combination, a list of them, or false to disable it. A key ending in .* set to false disables every shortcut with that prefix (for example, "panels.*": false), and "*": false disables them all; wildcards cannot rebind. Key combinations join modifiers (ctrl, alt, shift, meta, or mod for Ctrl/⌘) with + before a key, for example "mod+shift+ArrowUp". Letters and digits use physical key names (KeyA to KeyZ, Digit0 to Digit9); other keys use their KeyboardEvent.key value (ArrowUp, Enter, /, or " " for Space). Modifier and key names are not case-sensitive ("ALT+keym" works like "alt+KeyM"), but a single character is matched exactly. If a combination has an unknown modifier or key name, GitLens ignores it, keeps the shortcut's default keys, and writes the reason to the GitLens output channel. |
 
 ***
 
