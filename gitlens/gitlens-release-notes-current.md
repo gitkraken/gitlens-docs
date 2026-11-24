@@ -34,7 +34,8 @@ GitLens 19.7 makes it easier to clean up merged branches in the _Commit Graph_, 
 Version 19.6 added cleanup actions for branches whose work has landed. In 19.7, the _Commit Graph_ makes those actions easier to find and more consistent.
 
 - The header and _Working Changes_ use the same check for whether the current branch landed, and its _Overview_ card shows cleanup without a hover. The header's _Publish Branch_ updates when you change the merge target.
-- When GitLens confirms a branch has landed, the header and _Working Changes_ hold back _Force Push_, and branch details hold back _Switch to Branch_, _Create a Pull Request_, and _Recompose Branch_. While a pull request is in the merge queue, the graph holds back _Push_ and _Force Push_ in its branch actions.
+- Once GitLens confirms a branch has landed, the Commit Graph offers to delete it and no longer suggests _Force Push_, _Switch to Branch_, _Create a Pull Request_, or _Recompose Branch_.
+- While a pull request is in the merge queue, the graph no longer offers _Push_ or _Force Push_.
 - If you've added commits since a branch's pull request merged and its remote branch was deleted, GitLens leads with _Publish N New Commits_ instead of offering to delete the branch.
 - When a pull request merged into a branch other than the merge target, such as a stacked parent, the merge target popover and branch details say which one. Deleting a branch that landed by squash, rebase, or fast-forward merge says where its work went, and each cleanup action says whether it deletes the branch or its worktree.
 
@@ -46,7 +47,7 @@ In light themes, _Commit Graph_ branch and tag names are darkened just enough to
 
 ### Steadier Git, Lighter History
 
-- GitLens keeps less of Git's output in memory when reading history, most of all when a search keeps only a small share of the commits it reads. It also parses commits with very large patches or file lists more efficiently.
+- Reading history uses less memory, especially for searches that match only a few commits, and commits with very large patches or file lists are read faster.
 - With Git 2.46 or later, background diff checks no longer lock the index when a tool such as a formatter touches a file without changing it, which could make your own `git add` or commit fail.
 - Git operations on Windows now finish when they time out or are cancelled, such as a fetch from a remote that never responds.
 - Commit lists, _File History_, contributors, and the _Commit Graph_ no longer show cut-short results with nothing more to load after a read is cancelled partway through.
