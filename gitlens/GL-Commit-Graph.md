@@ -27,9 +27,7 @@ The Commit Graph is included in **GitLens Community** and available to everyone 
 The Commit Graph is the leading view in the GitLens sidebar. Click the GitLens icon in the Activity Bar to open it directly.
 
 You can also open it from the Command Palette:
-1. Open the Command Palette:
-   - macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
-   - Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+1. Open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>).
 2. Type **Show Commit Graph** and select it.
 
 The Commit Graph opens in a new tab, where you can scroll through history and resize column widths.
@@ -55,7 +53,7 @@ With no repository open, Start Work lists issues from all of your connected inte
 
 ### Repository Information
 
-At the top of the Commit Graph, you’ll see:
+At the top of the Commit Graph, you'll see:
 
 - **Repository** — the hosting provider's icon (hover it for the repository name; the editor tab is titled *Commit Graph: &lt;repository&gt;*)
 - **Checked-out branch** (click to switch branches)
@@ -138,6 +136,7 @@ Clicking a branch, pull request, comparison, or agent session opens a slide-out 
   - **Merged** and **Safe to delete**: the branch's commits are in the target, or its pull request merged.
   - **Likely Merged** and **Squashed or rebased**: the target has the same changes as different commits.
   - **Merged Locally** and **Not yet pushed to the remote**: the work is only in your local copy of the target. The card also offers **Push** for that local branch, for example **Push main**.
+  - If the branch's work has not landed but its pull request merged into a branch other than its merge target, the card notes *Pull request #&lt;number&gt; was merged into &lt;base&gt;*.
 - **Pull request sheet**: Displays PR description, reviewers, status checks, and stacked PR information when applicable. For a pull request in a GitHub merge queue, it shows the pull request's place in the queue (see [Pull Request Information](#pull-request-information)).
 - **Compare sheet**: Shows file-level comparison between branches or commits, with a pinned mode to keep the comparison visible while navigating.
 - **Rebase summary sheet**: Appears after a rebase operation, summarizing what changed.
@@ -169,7 +168,7 @@ Each pill shows the branch name, a dirty indicator when there are uncommitted ch
 
 Each worktree's uncommitted work appears on a **Working Changes** row, which shows the worktree's branch as an inline pill. Working Changes rows of other worktrees carry a worktree row marker; hover it to see the worktree's name. When a rebase, merge, cherry-pick, or revert is paused in a worktree, its row shows a status pill such as **Rebase Paused** or **Resolve conflicts to continue rebasing**.
 
-To run a VS Code task in a worktree, select the **Run Default Task** (play) button on its Working Changes row. The first time, GitLens asks you to choose the default task. <kbd>Alt</kbd>-click the button to choose a different task to run. While the task runs, the button reads **Running: &lt;task&gt;**, and clicking it shows the running task.
+To run a VS Code task in a worktree, select the **Run Default Task** (play) button on its Working Changes row. The first time, GitLens asks you to choose the default task. <kbd>Alt/⌥</kbd>-click the button to choose a different task to run. While the task runs, the button reads **Running: &lt;task&gt;**, and clicking it shows the running task.
 
 <figure>
   <img src="/wp-content/uploads/gl-graph-wip-run-default-task-01-v2@2x.png" class="help-center-img img-bordered" alt="The selected Working Changes row in the Commit Graph with its row actions showing; the ringed play button's tooltip reads Run Default Task, with Alt-click offering Choose Task to Run." />
@@ -187,7 +186,7 @@ You can also right-click a worktree's Working Changes row and select **Run Task 
 
 Scope the graph to another worktree to work in it without leaving the Commit Graph. While the graph is scoped, it acts as if you had opened that worktree: you see its branch and its changes, and anything you commit, push, or pull happens there. To scope the graph, do one of the following:
 
-- In the sidebar **Worktrees** panel, hover a worktree and select **Scope to Worktree**. <kbd>Alt</kbd>-click the action to focus on the worktree's branch instead.
+- In the sidebar **Worktrees** panel, hover a worktree and select **Scope to Worktree**. <kbd>Alt/⌥</kbd>-click the action to focus on the worktree's branch instead.
 - Right-click a worktree's Working Changes row and select **Scope to Worktree**.
 - Double-click another worktree's Working Changes row or its pill in the overview bar.
 
@@ -222,19 +221,19 @@ When the Commit Graph is visible, it follows your active terminal. Switching to 
 
 #### Ref Find
 
-The ref-finder widget is a typeahead search that jumps to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the widget auto-hides after selecting a result.
+Press <kbd>/</kbd> to open the **Find a branch, tag, or worktree** box, a typeahead search that jumps to any branch, tag, or Working Changes row in the graph. The `gitlens.graph.refFindAutoHide` setting controls whether the box closes when it loses focus.
 
 ---
 
 ### Details Panel
 
-The Commit Graph includes an embedded details panel that shows information about the selected commit or your current working changes. The details panel replaces the former standalone Graph Details view and is integrated directly within the graph.
+The Commit Graph includes an embedded details panel that shows information about the selected commit or your current working changes.
 
 When you select a commit, the details panel displays the commit message, author, changed files, and diff. When viewing working changes, it shows your uncommitted modifications. The panel can be positioned to the right or bottom of the graph using the `gitlens.graph.details.location` setting. An `auto` option is also available, which switches between right and bottom placement based on the graph width. The `gitlens.graph.details.maximizeOnMode` setting automatically maximizes the details panel when entering compose, review, or resolve modes.
 
 The details panel supports multiple modes:
 
-- **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits. This replaces navigating to the standalone Search and Compare view for graph comparisons.
+- **Compare mode**: Opens comparisons directly within the graph, showing Ahead, Behind, and All views between branches or commits.
 - **Compose mode**: Lets you write commit messages and select files to commit without leaving the graph. You can also access Compose from the graph context menu.
 - **Recompose**: Helps clean up existing branch history by reorganizing selected commits into a clearer, more intentional sequence. GitKraken AI can propose the new structure and commit messages for you to review and refine before applying the result. Available from the graph context menu, Recompose can operate on an entire branch, from a specific commit, or on selected commits.
 - **Review mode**: Lets you work through the changes in Working Changes, a commit, or a range of commits file by file. Mark each file as viewed with its checkbox, set files aside with **Exclude from Review**, and follow your progress until the review is complete. With GitKraken AI, **Review Diff** adds findings tagged by severity that you can dismiss, comment on, or hand to a coding agent with **Address Findings with Agent**. Reading and checking off files works without AI. See [Review Changes in the Commit Graph](/gitlens/gl-review-changes/).
@@ -256,7 +255,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 When the branch's work has landed in its merge target, cleaning it up becomes the next step. The step says how the work landed:
 
 - **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree).
-- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first.
+- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first. If GitLens asks you to confirm deleting a branch that is not fully merged, the prompt says where its changes are, for example *Its changes are in 'main' (likely squash or rebase merged)*.
 - **Branch Merged Locally into &lt;target&gt;** (or **Branch Likely Merged Locally into &lt;target&gt;**) when the work is only in your local copy of the target, which has not been pushed. The step offers **Push** for your local target branch first, for example **Push main**, with **Delete Branch** (or **Delete Worktree**) as the alternate action.
 
 The publish, push, rebase, and recompose steps for the branch no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
@@ -268,8 +267,8 @@ The publish, push, rebase, and recompose steps for the branch no longer appear, 
 
 Other branch states change the list too:
 
-- If the branch's remote branch was deleted, for example after its pull request merged, the list starts with **&lt;branch&gt; is missing from the remote** and offers **Delete Local Branch**, with **Publish** as the alternate action.
-- If you added commits after the branch's pull request merged, the pull request step reads **Create a Pull Request for N New Commits**.
+- If the branch's remote branch was deleted, for example after its pull request merged, the list starts with **&lt;branch&gt; is missing from the remote** and offers **Delete Local Branch** (**Delete Worktree** for a branch in its own worktree), with **Publish** as the alternate action.
+- If you added commits after the branch's pull request merged, the pull request step reads **Create a Pull Request for N New Commits**. If the remote branch was also deleted, those commits exist only on your machine, so the list starts with **Publish N New Commits** instead and offers no delete step.
 - While the branch's pull request is in a GitHub merge queue, the list holds back push, force push, rebase, merge, and recompose steps and shows *This pull request is in the merge queue, so changes to its branch aren't suggested until it merges or leaves the queue.* (see [Pull Request Information](#pull-request-information)).
 
 If the repository has no remotes yet, the list instead offers **Create a remote repository and publish &lt;branch&gt; to it** with a **Publish Repository** button, and **Add a remote, then publish &lt;branch&gt; to it** with an **Add Remote** button. Both open the Git Command Palette's **Publish** step with your choice already selected (see [Git Command Palette](/gitlens/gitlens-features/#git-command-palette)). **Publish Repository…** creates the repository on a hosting provider, adds it as a remote, and pushes the current branch. **Add Remote…** adds a remote you enter, which suits a host VS Code cannot publish to, and then continues to **Confirm Publish** for the branch. In a repository with no remotes, **Publish Repository** also replaces **Publish Branch** in the Commit Graph header and in a branch's context menu, and **Fetch** is hidden. In a branch's details, **Publish Repository** appears only for the current branch, and in the Working Changes header only for the current worktree.
@@ -281,7 +280,7 @@ If the repository has no remotes yet, the list instead offers **Create a remote 
 
 #### Multi-file Selection
 
-File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for single-file operations.
+File lists in the details panel (Working Changes, commit details, compare, compose, and review panels) support multi-file selection using <kbd>Shift</kbd>-click and <kbd>Ctrl/⌘</kbd>-click. With multiple files selected, you can perform batch operations including stage, unstage, discard changes, and stash. Individual files also show inline action buttons for single-file operations.
 
 To ignore an untracked file, right-click it in the Working Changes file list and select **Add to .gitignore**. With several files selected, the action applies to the untracked ones. GitLens adds each file as a pattern anchored to the repository root, such as `/local-config.json`, to the `.gitignore` file at the root of the repository. If the file does not exist, GitLens creates it, and then opens it so you can see what was added.
 
@@ -301,13 +300,13 @@ The details panel includes back and forward navigation buttons for browsing thro
 Press <kbd>?</kbd> in the Commit Graph to open the **Keyboard Shortcuts** sheet, which lists all graph shortcuts organized by category. Frequently used shortcuts include:
 
 - <kbd>/</kbd>: Find a branch, tag, or worktree.
-- <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>F</kbd>: Search commits.
-- <kbd>1</kbd> through <kbd>0</kbd>: Jump to a recent worktree.
-- <kbd>Alt</kbd> + <kbd>1</kbd> through <kbd>Alt</kbd> + <kbd>8</kbd>: Toggle a sidebar panel.
-- <kbd>Alt</kbd> + <kbd>K</kbd>, <kbd>V</kbd>, <kbd>M</kbd>, <kbd>S</kbd>, or <kbd>D</kbd>: Toggle the Agent Kanban, visualizations, minimap, sidebar, or details panel.
-- <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Up</kbd>/<kbd>Down</kbd>: Follow the branch to the previous or next commit.
-- <kbd>Alt</kbd> + <kbd>Up</kbd>/<kbd>Down</kbd>: Jump to the previous or next fork point.
-- <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>Left</kbd>/<kbd>Right</kbd>: Switch branch at a fork.
+- <kbd>Ctrl/⌘ + F</kbd>: Search commits.
+- Number keys <kbd>1</kbd> through <kbd>0</kbd>: Jump to a recent worktree.
+- <kbd>Alt/⌥ + 1</kbd> through <kbd>Alt/⌥ + 8</kbd>: Toggle a sidebar panel.
+- <kbd>Alt/⌥ + K</kbd>, <kbd>V</kbd>, <kbd>M</kbd>, <kbd>S</kbd>, or <kbd>D</kbd>: Toggle the Agent Kanban, visualizations, minimap, sidebar, or details panel.
+- <kbd>Ctrl/⌘ + ↑ / ↓</kbd>: Follow the branch to the previous or next commit.
+- <kbd>Alt/⌥ + ↑ / ↓</kbd>: Jump to the previous or next fork point.
+- <kbd>Ctrl/⌘ + ← / →</kbd>: Switch branch at a fork.
 
 Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> while you hover a commit to highlight its lane and the commits in its chain, dimming the rest of the graph.
 
@@ -423,11 +422,7 @@ The `gitlens.graph.showWorktreeWipStats` setting displays file add/change/delete
 
 ### Settings
 
-Adjust Commit Graph settings from the Command Palette:
-- macOS: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
-- Windows/Linux: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
-
-Search for **GitLens: Open Settings**.
+To adjust Commit Graph settings, open the Command Palette (<kbd>Ctrl/⌘ + Shift + P</kbd>) and search for **GitLens: Open Settings**.
 
 <figure>
   <img src="/wp-content/uploads/gl-commit-graph-settings-01-v4@2x.png" class="help-center-img img-bordered" alt="VS Code Command Palette filtered to &quot;GitLens: Settings&quot; with the GitLens: Open Settings command highlighted, the step that opens the GitLens settings for the Commit Graph" />
@@ -443,8 +438,8 @@ The Commit Graph supports rich search across your entire repository. You can sea
 #### How to Search
 1. Type search criteria in the search bar.
 2. Use the arrow icons or keyboard shortcuts to navigate results:
-   - Next result: <kbd>F3</kbd> (Windows/Linux) or <kbd>Cmd</kbd> + <kbd>G</kbd> (macOS)
-   - Previous result: <kbd>Shift</kbd> + <kbd>F3</kbd> (Windows/Linux) or <kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>G</kbd> (macOS)
+   - Next result: <kbd>F3</kbd>, or <kbd>⌘ + G</kbd> on macOS
+   - Previous result: <kbd>Shift + F3</kbd>, or <kbd>⌘ + ⇧ + G</kbd> on macOS
 
 <figure>
   <img src="/wp-content/uploads/gl-rich-commit-search-02-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph search bar highlighting results" />

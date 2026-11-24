@@ -30,7 +30,7 @@ The Commit Graph shows HEAD, the upstream, the merge target, incoming work, and 
 When you have no uncommitted changes, the Working Changes details panel shows a **Next steps** list. The list suggests only the actions that apply to your branch right now:
 
 - **Publish**, when the branch has no upstream yet
-- **Delete Local Branch**, when the branch's remote branch was deleted, for example after its pull request merged. **Publish** is the alternate action on the same button
+- **Delete Local Branch** (**Delete Worktree** for a branch in its own worktree), when the branch's remote branch was deleted, for example after its pull request merged. **Publish** is the alternate action on the same button. If you added commits after the pull request merged, the list leads with **Publish N New Commits** instead
 - **Publish Repository** or **Add Remote**, when the repository has no remotes yet
 - **Pull** or **Push**, when the branch is only behind or only ahead of its upstream
 - **Pull** or **Force Push**, when the branch has diverged from its upstream
@@ -103,6 +103,4 @@ If something needs another pass, address it yourself or send the findings back t
 
 ## Workflow Summary
 
-From finished code to a branch that is ready to merge, the Commit Graph covers these steps in order:
-
-**Understand → Compare → Compose → Rebase → Resolve → Review**
+From finished code to a branch that is ready to merge, the Commit Graph covers these steps in order: **Understand → Compare → Compose → Rebase → Resolve → Review**.
