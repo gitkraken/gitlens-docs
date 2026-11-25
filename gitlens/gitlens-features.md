@@ -102,7 +102,7 @@ You can [customize](/gitlens/gitlens-settings/#git-codelens-settings) what each 
 ### Related Command
 
 - **Toggle Git CodeLens** (`gitlens.toggleCodeLens`)  
-  Shortcut: <kbd>Alt/⌥ + Shift + B</kbd>
+  Shortcut: <kbd>Ctrl + Shift + G</kbd>, then <kbd>Shift + B</kbd> (on macOS, <kbd>⌘ + ⌥ + G</kbd>, then <kbd>Shift + B</kbd>)
 
 ***
 
@@ -230,8 +230,8 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 - Toggle annotations with:
 
   - **Command**: `gitlens.toggleFileBlame`
-  - **Shortcut**: <kbd>Alt/⌥ + B</kbd>
-  - **Dismiss**: <kbd>Escape</kbd>
+  - **Shortcut**: <kbd>Ctrl + Shift + G</kbd>, then <kbd>B</kbd> (on macOS, <kbd>⌘ + ⌥ + G</kbd>, then <kbd>B</kbd>)
+  - **Dismiss**: <kbd>Esc</kbd>
 
 
 ***
@@ -249,7 +249,7 @@ The File Changes annotation highlights the lines you changed locally (unpublishe
 
 - **Highlights local changes** and recent commit modifications.
 - Toggle with the command: `gitlens.toggleFileChanges`
-- Press <kbd>Escape</kbd> to disable the annotations
+- Press <kbd>Esc</kbd> to disable the annotations
 
 
 ***
@@ -271,7 +271,7 @@ The File Heatmap adds a color-coded bar to the edge of your file that shows whic
     _(Lines default to "cold" after 90 days.)_
 - Brightness adjusts dynamically based on the **median age** of all changes in the file.
 - Toggle with the command: `gitlens.toggleFileHeatmap`
-- Press <kbd>Escape</kbd> to hide the heatmap annotations
+- Press <kbd>Esc</kbd> to hide the heatmap annotations
 
 ***
 
@@ -647,7 +647,7 @@ Use the following search prefixes:
 Use keyboard shortcuts to navigate results:
 
 - <kbd>F3</kbd>, or <kbd>⌘ + G</kbd> on macOS — next result  
-- <kbd>Shift + F3</kbd>, or <kbd>⌘ + ⇧ + G</kbd> on macOS — previous result  
+- <kbd>Shift + F3</kbd> — previous result  
 - Hold <kbd>Shift</kbd> and click arrows to jump to first or last match
 
 The Commit Graph has more keyboard shortcuts. Press <kbd>?</kbd> in the graph to open the keyboard shortcuts reference, which includes the following:
@@ -1185,7 +1185,7 @@ Use Commit Composer to recompose only specific commits within a branch.
 
 Select the commits that need work, such as quick "wip" or "fix" commits, and let GitKraken AI restructure only those changes with clearer messages.
 
-1. Select multiple contiguous commits on the same branch with <kbd>Shift</kbd>-click, or <kbd>⌘</kbd>-click on macOS.
+1. Select multiple contiguous commits on the same branch with <kbd>Shift</kbd>-click or <kbd>Ctrl/⌘</kbd>-click.
 2. Right-click and choose **Recompose Selected Commits...**.
 
 Commit Composer opens with only your selected commits as drafts, ready for you or GitKraken AI to refine.
@@ -1629,7 +1629,7 @@ Deep Links are URLs that open specific GitLens resources. Share them to point te
 - **Search & Compare** — Link to comparisons in the [Search & Compare view](/gitlens/side-bar/#search-compare-view). Right-click a comparison, hover over _Share_, and select _Copy Link to Comparison_.
 - **GitKraken Workspaces** — Link to a [GitKraken Workspace](/gitlens/side-bar/#workspaces). Right-click a Workspace, hover over _Share_, and select _Copy Link to Workspace_.
 - **Commit Graph** — Link to remote repositories, commits, branches, and tags in the [Commit Graph](/gitlens/gitlens-features/#commit-graph). Right-click the resource, hover over _Share_, and select _Copy Link to <resource>_.
-- **Files or Lines** — Link to specific files or lines of code. Right-click highlighted lines or a file, hover over _Share_, and select _Copy vscode.dev Link_.
+- **Files or Lines** — Link to specific files or lines of code. Select the lines, right-click the line numbers, hover over _Share_, and select _Copy Link to Code_. To link to the whole file, select _Copy Link to File_ instead. In GitLens views, right-click a file, hover over _Share_, and select _Copy Link to File_.
 - **Cloud Patches** — Link to a [Cloud Patch](/gitlens/gitlens-features/#cloud-patches-preview). After generating a Cloud Patch, click _Copy Link_ from the success prompt.
 
 <figure>
@@ -1663,7 +1663,17 @@ To switch languages, install Microsoft's language pack for that language, run **
 
 ## Welcome View
 
-Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers getting started with GitLens, the Commit Graph, AI features, Git Blame, Launchpad and worktrees, Kepler for agent workflows, and the GitKraken MCP server. The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
+Use the **Welcome** side bar view to get started with GitLens. Its guided walkthrough covers:
+
+- Getting started with GitLens
+- The Commit Graph
+- AI features
+- Git Blame
+- Launchpad and worktrees
+- Kepler for agent workflows
+- The GitKraken MCP server
+
+The getting-started content depends on your plan. Select **Get Started with the Commit Graph →** for a second walkthrough of the graph's agent monitoring, parallel work, Review, Compose, and Compare features.
 
 Open it from the GitLens side bar. VS Code's **Get Started** walkthrough for GitLens and the Launchpad's learn-more links also open the Welcome view.
 
@@ -1746,9 +1756,9 @@ Expand each section to choose individual menus and toolbars.
 
 ## Modes
 
-GitLens supports [user-defined](#modes-settings- 'Jump to the Modes settings') modes, so you can switch between sets of settings.
+GitLens supports [user-defined](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings') modes, so you can switch between sets of settings.
 
-- Shows the active mode in the **status bar** ([optional](#modes-settings- 'Jump to the Modes settings'), on by default)
+- Shows the active mode in the **status bar** ([optional](/gitlens/gitlens-settings/#modes-settings 'Jump to the Modes settings'), on by default)
 - **Switch Mode** (`gitlens.switchMode`) — Switch between modes.
 - **Zen Mode** — Turns off many visual elements so you can focus on your code.
   - **Toggle Zen Mode** (`gitlens.toggleZenMode`) — Toggle Zen mode.

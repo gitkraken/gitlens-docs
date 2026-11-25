@@ -1254,7 +1254,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 <tbody>
 <tr>
 <td><code>gitlens.gitCommands.closeOnFocusOut</code></td>
-<td>Determines whether the <em>Git Commands Palette</em> dismisses automatically when focus is lost. If disabled, press <kbd>ESC</kbd> to dismiss manually.</td>
+<td>Determines whether the <em>Git Commands Palette</em> dismisses automatically when focus is lost. If disabled, press <kbd>Esc</kbd> to dismiss manually.</td>
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.search.matchAll</code></td>
@@ -1274,7 +1274,7 @@ These settings control how files and avatars are displayed, and what clicking a 
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.skipConfirmations</code></td>
-<td>Specifies which (and when) Git commands skip the confirmation step, using the format <code>git-command-name:(menu|command)</code>. Supported commands are <code>branch-create</code>, <code>co-authors</code>, <code>fetch</code>, <code>pull</code>, <code>push</code>, <code>stash-apply</code>, <code>stash-pop</code>, <code>stash-push</code>, <code>switch</code>, <code>tag-create</code>, and <code>tag-push</code>.<br><br>You can also select the <em>Don't Ask Again</em> toggle under <em>Options</em> in a supported confirmation step to add or remove that command here; its gear button opens this setting.</td>
+<td>Specifies which (and when) Git commands skip the confirmation step, using the format <code>git-command-name:(menu|command)</code>. Supported commands are <code>branch-create</code>, <code>co-authors</code>, <code>fetch</code>, <code>pull</code>, <code>push</code>, <code>remote-add</code>, <code>stash-apply</code>, <code>stash-pop</code>, <code>stash-push</code>, <code>stash-rename</code>, <code>switch</code>, <code>tag-create</code>, <code>tag-push</code>, and <code>worktree-open</code>.<br><br>You can also select the <em>Don't Ask Again</em> toggle under <em>Options</em> in a supported confirmation step to add or remove that command here; its gear button opens this setting.</td>
 </tr>
 <tr>
 <td><code>gitlens.gitCommands.sortBy</code></td>
@@ -1513,14 +1513,14 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.keymap</code></td>
 <td>Specifies the keymap used for GitLens shortcuts:<br><br>
-<code>alternate</code>: adds alternate shortcuts starting with <kbd>Alt</kbd> (⌥ on macOS)<br>
-<code>chorded</code>: adds chorded shortcuts starting with <kbd>Ctrl+Shift+G</kbd> (⌥⌘G on macOS)<br>
+<code>alternate</code>: adds alternate shortcuts starting with <kbd>Alt/⌥</kbd><br>
+<code>chorded</code>: adds chorded shortcuts starting with <kbd>Ctrl + Shift + G</kbd> (<kbd>⌘ + ⌥ + G</kbd> on macOS)<br>
 <code>none</code>: disables all GitLens shortcut keys
 </td>
 </tr>
 <tr>
 <td><code>gitlens.fileAnnotations.dismissOnEscape</code></td>
-<td>Determines whether pressing <kbd>ESC</kbd> dismisses active file annotations.</td>
+<td>Determines whether pressing <kbd>Esc</kbd> dismisses active file annotations.</td>
 </tr>
 </tbody>
 </table>
@@ -1817,7 +1817,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.advanced.quickPick.closeOnFocusOut</code></td>
-<td>Dismisses quick pick menus when focus is lost. If disabled, press <kbd>ESC</kbd> to dismiss manually.</td>
+<td>Dismisses quick pick menus when focus is lost. If disabled, press <kbd>Esc</kbd> to dismiss manually.</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.repositorySearch.enabled</code></td>
@@ -1845,7 +1845,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.worktrees.defaultLocation</code></td>
-<td>Path variables:<br><br>
+<td>Specifies the default path where GitLens creates new worktrees. You can use these path variables:<br><br>
 <code>${userHome}</code>: user's home directory<br>
 <code>${workspaceFolder}</code>: path of the opened folder in VS Code containing the repository<br>
 <code>${workspaceFolderBasename}</code>: name of the opened folder in VS Code without slashes
@@ -1874,7 +1874,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.advanced.git.maxConcurrentProcesses</code></td>
-<td>Maximum number of concurrent git processes, with priority-based queuing.</td>
+<td>Maximum number of background Git processes that can run at the same time. Lower it if large repositories slow down your system.</td>
 </tr>
 <tr>
 <td><code>gitlens.defaultCurrentUserNameStyle</code></td>
@@ -1882,7 +1882,7 @@ Another custom example:<br>
 </tr>
 <tr>
 <td><code>gitlens.advanced.git.timeout</code></td>
-<td>Specifies the timeout (in seconds) for Git commands. Use 0 to disable the timeout. Some long-running operations like merge, rebase, and revert always have the timeout disabled. Default: 60. With 0, background reads that set a time limit of their own still stop at it.</td>
+<td>Specifies the timeout (in seconds) for Git commands. Use 0 to disable the timeout. Some long-running operations like merge, rebase, and revert always have the timeout disabled. Default: 60. With 0, some background operations still stop at their own time limit.</td>
 </tr>
 <tr>
 <td><code>gitlens.advanced.resolveSymlinks</code></td>
@@ -1905,7 +1905,7 @@ Another custom example:<br>
 <tr>
 <td><code>gitlens.gitOptimizations.enabled</code></td>
 <td>Specifies whether GitLens automatically applies safe, repo-local Git performance optimizations in the background (loose-object packing, incremental repack, and commit-graph) while VS Code is open. Enabled by default.<br><br>
-This is the same routine work Git performs during <code>git gc</code> or <code>git maintenance</code>: packing and repacking reorganize objects the repository already contains without altering history, and the commit-graph is an acceleration cache that can be deleted at any time. More invasive optimizations (untracked cache, FSMonitor, system-scheduled maintenance, <code>feature.manyFiles</code>) are never applied automatically. Turning this off also turns off Repository Health in the Commit Graph and the automatic behavior of <code>gitlens.advanced.commits.delayLoadingFileDetails</code>.</td>
+This is the same routine work Git does during <code>git gc</code> or <code>git maintenance</code>. It reorganizes objects the repository already contains and does not change history. GitLens never applies more invasive optimizations automatically, such as the untracked cache, FSMonitor, system-scheduled maintenance, or <code>feature.manyFiles</code>. Turning this off also turns off Repository Health in the Commit Graph and the automatic behavior of <code>gitlens.advanced.commits.delayLoadingFileDetails</code>.</td>
 </tr>
 <tr>
 <td><code>gitlens.openInTerminalLocation</code></td>
@@ -2269,12 +2269,13 @@ Honored when opening the Commit Graph from the command palette.
 </tr>
 <tr>
 <td><code>gitlens.graph.shortcuts.enabled</code></td>
-<td>Specifies whether the customizable keyboard shortcuts of the Commit Graph (those using <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, or <kbd>⌘</kbd>, such as <kbd>Alt+M</kbd> or <kbd>Ctrl+↑</kbd>) are enabled. Navigation keys such as the arrows, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.</td>
+<td>Specifies whether the customizable keyboard shortcuts of the Commit Graph (those that use <kbd>Ctrl/⌘</kbd> or <kbd>Alt/⌥</kbd>, such as <kbd>Alt/⌥ + M</kbd> or <kbd>Ctrl/⌘ + ↑</kbd>) are enabled. Navigation keys such as the arrows, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.</td>
 </tr>
 <tr>
 <td><code>gitlens.graph.shortcuts.overrides</code></td>
 <td>Changes or disables individual Commit Graph keyboard shortcuts, keyed by shortcut id. To see an id, press <kbd>?</kbd> in the Commit Graph and hover a shortcut; only shortcuts that show an id can be changed.<br><br>
-Set an id to a key combination, a list of them, or <code>false</code> to disable it. A key ending in <code>.*</code> set to <code>false</code> disables every shortcut with that prefix (for example, <code>"panels.*": false</code>), and <code>"*": false</code> disables them all; wildcards cannot rebind. Key combinations join modifiers (<code>ctrl</code>, <code>alt</code>, <code>shift</code>, <code>meta</code>, or <code>mod</code> for <kbd>Ctrl</kbd>, or <kbd>⌘</kbd> on macOS) with <code>+</code> before a key, for example <code>"mod+shift+ArrowUp"</code>. Letters and digits use physical key names (<code>KeyA</code> to <code>KeyZ</code>, <code>Digit0</code> to <code>Digit9</code>); other keys use their <code>KeyboardEvent.key</code> value (<code>ArrowUp</code>, <code>Enter</code>, <code>/</code>).</td>
+Set an id to a key combination, a list of them, or <code>false</code> to disable it. A key ending in <code>.*</code> set to <code>false</code> disables every shortcut with that prefix (for example, <code>"panels.*": false</code>), and <code>"*": false</code> disables them all; wildcards cannot rebind. Key combinations join modifiers (<code>ctrl</code>, <code>alt</code>, <code>shift</code>, <code>meta</code>, or <code>mod</code> for <kbd>Ctrl/⌘</kbd>) with <code>+</code> before a key, for example <code>"mod+shift+ArrowUp"</code>. Letters and digits use physical key names (<code>KeyA</code> to <code>KeyZ</code>, <code>Digit0</code> to <code>Digit9</code>); other keys use their <code>KeyboardEvent.key</code> value (<code>ArrowUp</code>, <code>Enter</code>, <code>/</code>, or <code>" "</code> for Space). Modifier and key names are not case-sensitive (<code>"ALT+keym"</code> works like <code>"alt+KeyM"</code>), but a single character is matched exactly.<br><br>
+If a combination has an unknown modifier or key name, GitLens ignores it, keeps the shortcut's default keys, and writes the reason to the <em>GitLens</em> output channel.</td>
 </tr>
 </tbody>
 </table>
