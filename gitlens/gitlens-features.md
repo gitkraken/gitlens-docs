@@ -231,7 +231,7 @@ File Blame adds [customizable](/gitlens/gitlens-settings/#file-blame-settings), 
 
   - **Command**: `gitlens.toggleFileBlame`
   - **Shortcut**: <kbd>Ctrl + Shift + G</kbd>, then <kbd>B</kbd> (on macOS, <kbd>⌘ + ⌥ + G</kbd>, then <kbd>B</kbd>)
-  - **Dismiss**: <kbd>Escape</kbd>
+  - **Dismiss**: <kbd>Esc</kbd>
 
 
 ***
@@ -249,7 +249,7 @@ The File Changes annotation highlights the lines you changed locally (unpublishe
 
 - **Highlights local changes** and recent commit modifications.
 - Toggle with the command: `gitlens.toggleFileChanges`
-- Press <kbd>Escape</kbd> to disable the annotations
+- Press <kbd>Esc</kbd> to disable the annotations
 
 
 ***
@@ -271,7 +271,7 @@ The File Heatmap adds a color-coded bar to the edge of your file that shows whic
     _(Lines default to "cold" after 90 days.)_
 - Brightness adjusts dynamically based on the **median age** of all changes in the file.
 - Toggle with the command: `gitlens.toggleFileHeatmap`
-- Press <kbd>Escape</kbd> to hide the heatmap annotations
+- Press <kbd>Esc</kbd> to hide the heatmap annotations
 
 ***
 
@@ -647,7 +647,7 @@ Use the following search prefixes:
 Use keyboard shortcuts to navigate results:
 
 - <kbd>F3</kbd>, or <kbd>⌘ + G</kbd> on macOS — next result  
-- <kbd>Shift + F3</kbd>, or <kbd>⌘ + ⇧ + G</kbd> on macOS — previous result  
+- <kbd>Shift + F3</kbd> — previous result  
 - Hold <kbd>Shift</kbd> and click arrows to jump to first or last match
 
 The Commit Graph has more keyboard shortcuts. Press <kbd>?</kbd> in the graph to open the keyboard shortcuts reference, which includes the following:

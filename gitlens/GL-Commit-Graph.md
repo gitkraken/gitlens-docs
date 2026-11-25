@@ -255,7 +255,7 @@ When you select a Working Changes row that has no uncommitted changes, the detai
 When the branch's work has landed in its merge target, cleaning it up becomes the next step. The step says how the work landed:
 
 - **Branch Merged into &lt;target&gt;**, or **Branch Merged into &lt;target&gt; via Pull Request #&lt;number&gt;** when its pull request was merged, with **Delete Branch** (**Delete Worktree** for a branch in its own worktree).
-- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first. If GitLens asks you to confirm deleting a branch that is not fully merged, the prompt says where its changes are, for example *Its changes are in 'main' (likely squash or rebase merged)*.
+- **Branch Likely Merged into &lt;target&gt;** when the target has the same changes as different commits, for example after a squash or rebase merge. **Delete Branch** is offered, but GitLens does not mark the branch safe to delete, so check its changes first. If you delete it from this step and Git reports the branch as not fully merged, the confirmation says where its changes are, for example *Its changes are in 'main' (likely squash or rebase merged)*.
 - **Branch Merged Locally into &lt;target&gt;** (or **Branch Likely Merged Locally into &lt;target&gt;**) when the work is only in your local copy of the target, which has not been pushed. The step offers **Push** for your local target branch first, for example **Push main**, with **Delete Branch** (or **Delete Worktree**) as the alternate action.
 
 The publish, push, rebase, and recompose steps for the branch no longer appear, and only **Review Changes** stays beside it. If you delete the branch you have checked out, GitLens first switches you to another branch, usually its merge target.
@@ -308,7 +308,7 @@ Press <kbd>?</kbd> in the Commit Graph to open the **Keyboard Shortcuts** sheet,
 - <kbd>Alt/⌥ + ↑ / ↓</kbd>: Jump to the previous or next fork point.
 - <kbd>Ctrl/⌘ + ← / →</kbd>: Switch branch at a fork.
 
-Hold <kbd>Ctrl</kbd> or <kbd>Alt</kbd> while you hover a commit to highlight its lane and the commits in its chain, dimming the rest of the graph.
+Hold <kbd>Ctrl</kbd> or <kbd>Alt/⌥</kbd> while you hover a commit to highlight its lane and the commits in its chain, dimming the rest of the graph.
 
 To change or turn off shortcuts, select **Customize…** in the Keyboard Shortcuts sheet to open the `gitlens.graph.shortcuts` settings. Hover a shortcut in the sheet to see its id. In `gitlens.graph.shortcuts.overrides`, set an id to a different key combination, or to `false` to turn it off. To turn off all customizable shortcuts, disable `gitlens.graph.shortcuts.enabled`. Navigation keys such as the arrow keys, <kbd>Enter</kbd>, and <kbd>Esc</kbd> always work.
 
@@ -439,7 +439,7 @@ The Commit Graph supports rich search across your entire repository. You can sea
 1. Type search criteria in the search bar.
 2. Use the arrow icons or keyboard shortcuts to navigate results:
    - Next result: <kbd>F3</kbd>, or <kbd>⌘ + G</kbd> on macOS
-   - Previous result: <kbd>Shift + F3</kbd>, or <kbd>⌘ + ⇧ + G</kbd> on macOS
+   - Previous result: <kbd>Shift + F3</kbd>
 
 <figure>
   <img src="/wp-content/uploads/gl-rich-commit-search-02-v3@2x.png" class="help-center-img img-bordered" alt="Commit Graph search bar highlighting results" />
